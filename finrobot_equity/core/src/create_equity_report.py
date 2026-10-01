@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# Modified by FinEvoLab. Attribution is retained in NOTICE.
 
 import argparse
 import os
@@ -14,10 +15,9 @@ from modules.report_data_loader import load_analysis_csv, load_text_from_file
 from modules.html_renderer import render_html_report, render_combined_html_report, HTML_TEMPLATE_PAGE_1, HTML_TEMPLATE_PAGE_2_FINANCIAL_SUMMARY, HTML_TEMPLATE_PAGE_3_PEER_COMPARISON, HTML_TEMPLATE_PAGE_4_SENSITIVITY_CATALYST, HTML_TEMPLATE_PAGE_5_NEWS_CHARTS, HTML_TEMPLATE_COMBINED, format_dataframe_to_html_table
 from modules.html_template_professional import render_professional_html_report
 from modules.chart_generator import (
-    generate_revenue_ebitda_chart, 
-    generate_ev_ebitda_peer_chart, 
+    generate_revenue_ebitda_chart,
+    generate_ev_ebitda_peer_chart,
     generate_eps_pe_chart,
-    # 高级图表函数
     generate_stock_price_chart,
     generate_financial_radar_chart,
     generate_time_series_chart,
@@ -29,10 +29,8 @@ from modules.chart_generator import (
 )
 from modules.market_data_api import get_comprehensive_company_metrics, get_technical_indicators
 
-# Import the single, unified text generation function
 from modules.text_generator_agents import generate_text_section
 
-# 新增模块导入
 from modules.enhanced_chart_generator import EnhancedChartGenerator, ChartConfig
 from modules.valuation_engine import ValuationEngine
 from modules.report_structure import ReportStructureManager
@@ -71,7 +69,7 @@ def load_credit_cashflow_metrics_from_csv(file_path: str) -> pd.DataFrame:
         year_cols = sorted(df['calendarYear'].unique())
 
         for year in year_cols:
-            year_str = f"{year}A" # Append 'A' to match existing format
+            year_str = f"{year}A" # Mark observed fiscal years with 'A' to distinguish estimates.
             credit_metrics_data[year_str] = []
             year_data = df[df['calendarYear'] == year].iloc[0]
 
@@ -169,14 +167,14 @@ def validate_and_fix_text_content(text_content: str, text_type: str, company_nam
     if not text_content or text_content.strip() == "":
         print(f"⚠️ Warning: {text_type} is empty")
         return ""
-    
+
     # Check if content looks like CSV data (especially for competitor_analysis and major_takeaways)
     if text_type in ["competitor_analysis", "major_takeaways"]:
         content_lower = text_content.lower().strip()
-        # Detect CSV-like patterns (more robust detection)
+        # Identify delimited rows and financial CSV headers.
         first_line = content_lower.split('\n')[0] if '\n' in content_lower else content_lower
         is_csv_like = (
-            content_lower.startswith("year,") or 
+            content_lower.startswith("year,") or
             content_lower.startswith("ticker,") or
             content_lower.startswith("date,") or
             content_lower.count(",") > 20 or  # Many commas suggest CSV
@@ -185,17 +183,16 @@ def validate_and_fix_text_content(text_content: str, text_type: str, company_nam
         if is_csv_like:
             print(f"⚠️ Warning: {text_type} contains CSV-like data, marking for regeneration")
             return ""  # Return empty to trigger regeneration
-    
+
     print(f"✅ {text_type} validation passed ({len(text_content)} chars)")
     return text_content
 
 
-def regenerate_text_if_needed(text_content: str, text_type: str, company_name: str, company_ticker: str, 
-                             analysis_df: pd.DataFrame, peer_ebitda_df: pd.DataFrame, 
+def regenerate_text_if_needed(text_content: str, text_type: str, company_name: str, company_ticker: str,
+                             analysis_df: pd.DataFrame, peer_ebitda_df: pd.DataFrame,
                              peer_ev_ebitda_df: pd.DataFrame, api_key: str = None) -> str:
-    """Generate text content using AI, calling the single unified function."""
-    
-    # This function now handles all text types through the same logic if regeneration is enabled.
+    """Generate and validate one narrative report section."""
+
     if text_type in ["competitor_analysis", "major_takeaways"] and api_key:
         try:
             # Prepare data for generation
@@ -204,17 +201,16 @@ def regenerate_text_if_needed(text_content: str, text_type: str, company_name: s
                 "peer_ebitda": peer_ebitda_df,
                 "peer_ev_ebitda": peer_ev_ebitda_df,
             }
-            
+
             print(f"🤖 Regenerating '{text_type}' using AI...")
-            # Call the single, unified text generation function
             generated_text = generate_text_section(
-                data_for_generation, 
-                text_type, 
-                api_key, 
-                company_name, 
+                data_for_generation,
+                text_type,
+                api_key,
+                company_name,
                 company_ticker
             )
-            
+
             # Basic validation of the generated content
             if generated_text and len(generated_text.strip()) > 50:
                 print(f"✅ Successfully regenerated '{text_type}' using AI")
@@ -222,20 +218,20 @@ def regenerate_text_if_needed(text_content: str, text_type: str, company_name: s
             else:
                 print(f"❌ AI regenerated '{text_type}' is insufficient, using original content from file.")
                 return validate_and_fix_text_content(text_content, text_type, company_name, company_ticker)
-            
+
         except Exception as e:
             print(f"❌ Failed to regenerate '{text_type}' with AI: {e}")
             return validate_and_fix_text_content(text_content, text_type, company_name, company_ticker)
-    
+
     # For other text types or if regeneration is off, just validate the content from the file.
     return validate_and_fix_text_content(text_content, text_type, company_name, company_ticker)
 
 
 def process_text_content(args, analysis_df, peer_ebitda_df, peer_ev_ebitda_df, openai_api_key):
-    """Process all text content with enhanced AI generation for competitor analysis and takeaways."""
-    
+    """Load report sections and regenerate missing or tabular narrative content."""
+
     print("📖 Loading and processing text content...")
-    
+
     # Load raw text content
     raw_texts = {
         "tagline": load_text_from_file(args.tagline_file),
@@ -247,24 +243,24 @@ def process_text_content(args, analysis_df, peer_ebitda_df, peer_ev_ebitda_df, o
         "major_takeaways": load_text_from_file(args.major_takeaways_file),
         "news_summary": load_text_from_file(args.news_summary_file) if args.news_summary_file else ""
     }
-    
+
     # Process text content
     processed_texts = {}
     for text_type, raw_content in raw_texts.items():
         print(f"📝 Processing {text_type}...")
-        
+
         # Check if content looks like CSV data (for competitor_analysis and major_takeaways)
         if text_type in ["competitor_analysis", "major_takeaways"] and raw_content:
             content_lower = raw_content.lower().strip()
             first_line = content_lower.split('\n')[0] if '\n' in content_lower else content_lower
             is_csv_data = (
-                content_lower.startswith("year,") or 
+                content_lower.startswith("year,") or
                 content_lower.startswith("ticker,") or
                 content_lower.startswith("date,") or
                 content_lower.count(",") > 20 or
                 (first_line.count(",") >= 3 and not any(word in first_line for word in ["the", "and", "is", "are", "has", "have"]))
             )
-            
+
             # Force regeneration for CSV-like data even without the flag
             if is_csv_data and openai_api_key:
                 print(f"⚠️ Detected CSV data in {text_type}, forcing AI regeneration...")
@@ -359,11 +355,10 @@ def main():
 
     # Auto-fetch control
     parser.add_argument("--skip-auto-fetch", action="store_true", help="Skip automatic fetching of market data from FMP API.")
-    
+
     # Text regeneration option
     parser.add_argument("--enable-text-regeneration", action="store_true", help="Enable AI text regeneration if content quality is poor.")
-    
-    # 新增增强功能选项
+
     parser.add_argument("--enable-enhanced-charts", action="store_true", help="Enable enhanced chart generation with 11 professional chart types.")
     parser.add_argument("--enable-valuation-analysis", action="store_true", help="Enable multi-method valuation analysis.")
     parser.add_argument("--sensitivity-analysis-file", type=str, default=None, help="Path to sensitivity analysis JSON file.")
@@ -466,18 +461,18 @@ def main():
 
     # Process text content with AI enhancement
     processed_texts = process_text_content(args, analysis_df, peer_ebitda_df, peer_ev_ebitda_df, openai_api_key)
-    
-    # Fix stale dates in cached text (e.g. "June 2024" → actual report date)
+
+    # Align cached heading dates with the report date.
     import re as _re
-    _report_date_label = args.report_date  # e.g. "March 2026"
+    _report_date_label = args.report_date
     _stale_date_pattern = _re.compile(
         r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}')
     def _fix_stale_dates(text: str) -> str:
-        """Replace old month-year dates in title lines with current report date."""
+        """Align month-year strings in report headings with the report date."""
         if not text:
             return text
         lines = text.split('\n')
-        # Only fix the first 3 lines (titles/headers)
+        # Restrict date normalization to the first three heading lines.
         for i in range(min(3, len(lines))):
             if _stale_date_pattern.search(lines[i]):
                 lines[i] = _stale_date_pattern.sub(_report_date_label, lines[i])
@@ -491,7 +486,7 @@ def main():
     risks_text = processed_texts["risks"]
     competitor_analysis_text = processed_texts["competitor_analysis"]
     major_takeaways_text = processed_texts["major_takeaways"]
-    news_summary_text = processed_texts["news_summary"]  # NEW
+    news_summary_text = processed_texts["news_summary"]
 
     # --- Compute technical indicators ---
     technical_indicators = {}
@@ -527,7 +522,7 @@ def main():
         "risks": risks_text,
         "competitor_analysis": competitor_analysis_text,
         "major_takeaways": major_takeaways_text,
-        "news_summary": news_summary_text,  # NEW
+        "news_summary": news_summary_text,
         "research_source": args.research_source,
         "data_source_text": args.data_source_text,
         "disclaimer_text": args.disclaimer_text,
@@ -564,14 +559,14 @@ def main():
     else:
         report_data['ev_ebitda_chart_path'] = ""
 
-    # --- Enhanced Charts Generation ---
+    # Supplementary financial charts.
     if args.enable_enhanced_charts:
         print("Generating enhanced charts...")
         try:
             chart_config = ChartConfig()
             enhanced_chart_gen = EnhancedChartGenerator(chart_config)
             enhanced_charts = {}
-            
+
             # Prepare financial data dict for generate_all_charts
             # Load income statement data if available
             income_csv_path = os.path.join(os.path.dirname(args.analysis_csv), "income_statement_raw_data.csv")
@@ -579,21 +574,21 @@ def main():
             if os.path.exists(income_csv_path):
                 income_df = pd.read_csv(income_csv_path)
                 print(f"✅ Loaded income statement data from {income_csv_path}")
-            
+
             # Load price data if available
             price_csv_path = os.path.join(os.path.dirname(args.analysis_csv), "historical_price_full.csv")
             price_df = pd.DataFrame()
             if os.path.exists(price_csv_path):
                 price_df = pd.read_csv(price_csv_path)
                 print(f"✅ Loaded price data from {price_csv_path}")
-            
+
             financial_data_for_charts = {
                 'analysis': analysis_df,
                 'income_statement': income_df,
                 'peer_data': {},
                 'valuation_data': {}
             }
-            
+
             # Generate EPS × PE chart (works with analysis_df)
             eps_pe_result = enhanced_chart_gen.generate_eps_pe_chart(
                 analysis_df, args.company_ticker, output_dir
@@ -601,7 +596,7 @@ def main():
             if eps_pe_result:
                 enhanced_charts['eps_pe'] = eps_pe_result
                 print(f"✅ Generated EPS × PE chart")
-            
+
             # Generate charts that work with income_df if available
             if not income_df.empty:
                 # Revenue YoY chart
@@ -611,7 +606,7 @@ def main():
                 if revenue_yoy_result:
                     enhanced_charts['revenue_yoy'] = revenue_yoy_result
                     print(f"✅ Generated Revenue YoY chart")
-                
+
                 # EBITDA Margin chart
                 ebitda_margin_result = enhanced_chart_gen.generate_ebitda_margin_chart(
                     income_df, args.company_ticker, output_dir
@@ -619,11 +614,9 @@ def main():
                 if ebitda_margin_result:
                     enhanced_charts['ebitda_margin'] = ebitda_margin_result
                     print(f"✅ Generated EBITDA Margin chart")
-            
-            # ========== 高级图表生成 ==========
+
             print("Generating advanced charts...")
-            
-            # 1. 股价走势图（含移动平均线和成交量）
+
             if not price_df.empty:
                 stock_price_path = os.path.join(output_dir, f"{args.company_ticker}_stock_price_chart.png")
                 stock_price_result = generate_stock_price_chart(
@@ -632,8 +625,7 @@ def main():
                 if stock_price_result:
                     enhanced_charts['stock_price'] = stock_price_result
                     print(f"✅ Generated Stock Price chart")
-                
-                # 2. 技术指标图（RSI, MACD）
+
                 tech_indicators_path = os.path.join(output_dir, f"{args.company_ticker}_technical_indicators.png")
                 tech_result = generate_technical_indicators_chart(
                     price_df, tech_indicators_path, args.company_ticker
@@ -641,11 +633,9 @@ def main():
                 if tech_result:
                     enhanced_charts['technical_indicators'] = tech_result
                     print(f"✅ Generated Technical Indicators chart")
-            
-            # 3. 财务比率雷达图
+
             financial_ratios = {}
             if analysis_df is not None and not analysis_df.empty:
-                # 从分析数据中提取财务比率
                 ratio_metrics = ['EBITDA Margin', 'Contribution Margin', 'SG&A Margin', 'Revenue Growth']
                 year_cols = [col for col in analysis_df.columns if col.endswith('A')]
                 if year_cols:
@@ -660,8 +650,7 @@ def main():
                                 financial_ratios[metric] = float(val)
                             except:
                                 pass
-                
-                # 添加其他比率
+
                 if roe and roe != 'N/A':
                     try:
                         financial_ratios['ROE'] = float(str(roe).replace('%', ''))
@@ -672,7 +661,7 @@ def main():
                         financial_ratios['P/E Ratio'] = float(str(fwd_pe).replace('x', ''))
                     except:
                         pass
-            
+
             if financial_ratios:
                 radar_path = os.path.join(output_dir, f"{args.company_ticker}_financial_radar.png")
                 radar_result = generate_financial_radar_chart(
@@ -681,8 +670,7 @@ def main():
                 if radar_result:
                     enhanced_charts['financial_radar'] = radar_result
                     print(f"✅ Generated Financial Radar chart")
-            
-            # 4. 敏感性热力图（如果有敏感性分析数据）
+
             if report_data.get('sensitivity_analysis'):
                 sensitivity_data = report_data['sensitivity_analysis']
                 if 'matrix' in sensitivity_data:
@@ -694,11 +682,9 @@ def main():
                     if heatmap_result:
                         enhanced_charts['sensitivity_heatmap'] = heatmap_result
                         print(f"✅ Generated Sensitivity Heatmap")
-            
-            # 5. 估值瀑布图（如果有估值分析数据）
+
             if report_data.get('valuation_analysis'):
                 valuation_data = report_data['valuation_analysis']
-                # 构建瀑布图数据
                 waterfall_data = {}
                 if 'ev_ebitda' in valuation_data:
                     waterfall_data['EV/EBITDA'] = valuation_data['ev_ebitda'].get('target_price', 0)
@@ -706,7 +692,7 @@ def main():
                     waterfall_data['DCF'] = valuation_data['dcf'].get('target_price', 0)
                 if 'peer_comparison' in valuation_data:
                     waterfall_data['Peer Comp'] = valuation_data['peer_comparison'].get('target_price', 0)
-                
+
                 if waterfall_data:
                     waterfall_path = os.path.join(output_dir, f"{args.company_ticker}_valuation_waterfall.png")
                     waterfall_result = generate_valuation_waterfall_chart(
@@ -715,21 +701,19 @@ def main():
                     if waterfall_result:
                         enhanced_charts['valuation_waterfall'] = waterfall_result
                         print(f"✅ Generated Valuation Waterfall chart")
-            
-            # 6. 现金流分析图（如果有现金流数据）
+
             cashflow_csv_path = os.path.join(os.path.dirname(args.analysis_csv), "cash_flow_statement_raw_data.csv")
             if os.path.exists(cashflow_csv_path):
                 try:
                     cashflow_df = pd.read_csv(cashflow_csv_path)
                     if not cashflow_df.empty:
-                        # 提取现金流数据
                         cf_data = {
                             'periods': cashflow_df['calendarYear'].tolist() if 'calendarYear' in cashflow_df.columns else [],
                             'Operating': cashflow_df['operatingCashFlow'].tolist() if 'operatingCashFlow' in cashflow_df.columns else [],
                             'Investing': cashflow_df['netCashUsedForInvestingActivites'].tolist() if 'netCashUsedForInvestingActivites' in cashflow_df.columns else [],
                             'Financing': cashflow_df['netCashUsedProvidedByFinancingActivities'].tolist() if 'netCashUsedProvidedByFinancingActivities' in cashflow_df.columns else []
                         }
-                        
+
                         if cf_data['Operating']:
                             cashflow_path = os.path.join(output_dir, f"{args.company_ticker}_cash_flow_chart.png")
                             cf_result = generate_cash_flow_chart(
@@ -740,7 +724,7 @@ def main():
                                 print(f"✅ Generated Cash Flow chart")
                 except Exception as e:
                     print(f"⚠️ Error generating cash flow chart: {e}")
-            
+
             report_data['enhanced_charts'] = enhanced_charts
             print(f"✅ Generated {len(enhanced_charts)} enhanced charts total")
         except Exception as e:
@@ -804,9 +788,9 @@ def main():
             traceback.print_exc()
             report_data['valuation_analysis'] = {}
 
-    # --- Load Enhanced Analysis Files ---
+    # Sensitivity and catalyst analysis inputs.
     import json
-    
+
     # Load sensitivity analysis
     if args.sensitivity_analysis_file and os.path.exists(args.sensitivity_analysis_file):
         print(f"Loading sensitivity analysis from {args.sensitivity_analysis_file}...")
@@ -817,14 +801,14 @@ def main():
         except Exception as e:
             print(f"⚠️ Error loading sensitivity analysis: {e}")
             report_data['sensitivity_analysis'] = {}
-    
+
     # Load catalyst analysis
     if args.catalyst_analysis_file and os.path.exists(args.catalyst_analysis_file):
         print(f"Loading catalyst analysis from {args.catalyst_analysis_file}...")
         try:
             with open(args.catalyst_analysis_file, 'r', encoding='utf-8') as f:
                 catalyst_data = json.load(f)
-            # Re-classify sentiments for cached data (fix analyst action misclassification)
+            # Classify cached catalyst entries by their text.
             _pos_patterns = ['acquires new holdings', 'initiates coverage', 'initiate coverage',
                              'starts coverage', 'begins coverage', 'upgrades to', 'builds position',
                              'overweight', 'buy rating', 'outperform', 'top pick', 'new position']
@@ -834,13 +818,11 @@ def main():
                     if p in dl:
                         return 'positive'
                 return None
-            # Fix catalysts list
             if 'catalysts' in catalyst_data:
                 for cat in catalyst_data['catalysts']:
                     fix = _fix_sentiment(cat.get('description', ''))
                     if fix:
                         cat['sentiment'] = fix
-            # Fix categorized lists
             if 'categorized' in catalyst_data:
                 moved = []
                 for cat_item in catalyst_data['categorized'].get('negative', []):
@@ -851,7 +833,6 @@ def main():
                 for m in moved:
                     catalyst_data['categorized']['negative'].remove(m)
                     catalyst_data['categorized'].setdefault('positive', []).append(m)
-            # Fix top_catalysts
             if 'top_catalysts' in catalyst_data:
                 for tc in catalyst_data['top_catalysts']:
                     fix = _fix_sentiment(tc.get('catalyst', ''))
@@ -863,8 +844,8 @@ def main():
         except Exception as e:
             print(f"⚠️ Error loading catalyst analysis: {e}")
             report_data['catalyst_analysis'] = {}
-    
-    # Load enhanced news
+
+    # Read categorized news and its analysis summary.
     if args.enhanced_news_file and os.path.exists(args.enhanced_news_file):
         print(f"Loading enhanced news from {args.enhanced_news_file}...")
         try:
@@ -918,7 +899,7 @@ def main():
         print("❌ Failed to load Credit & Cashflow metrics from CSV")
 
 
-    # Handle peer data for tables - fix the filtering issue
+    # Format peer tables using all available fiscal columns.
     if peer_ebitda_df is not None and not peer_ebitda_df.empty:
         print(f"Processing peer EBITDA data with shape: {peer_ebitda_df.shape}")
         print(f"Peer EBITDA columns: {peer_ebitda_df.columns.tolist()}")
@@ -950,7 +931,7 @@ def main():
         print(f"Peer EV/EBITDA index: {peer_ev_ebitda_df.index.tolist()}")
 
         if not peer_ev_ebitda_df.empty:
-            # Replace negative EV/EBITDA with "N/M" (not meaningful — negative EBITDA)
+            # Display negative EV/EBITDA multiples as 'N/M'.
             peer_ev_ebitda_display = peer_ev_ebitda_df.copy()
             _nm_func = lambda x: "N/M" if isinstance(x, (int, float)) and x < 0 else x
             peer_ev_ebitda_display = peer_ev_ebitda_display.apply(lambda col: col.map(_nm_func))
@@ -965,35 +946,35 @@ def main():
 
     # --- Generate Professional HTML Report (matching PDF structure) ---
     print("Generating professional HTML report (matching PDF structure)...")
-    
+
     # Add additional data needed for professional template
     report_data['revenue_analysis_text'] = f"{report_data.get('company_name_full', 'The company')} has demonstrated consistent revenue performance over the analysis period. Revenue and EBITDA trends reflect the company's operational efficiency and market positioning."
     report_data['eps_analysis_text'] = f"{report_data.get('company_name_full', 'The company')}'s earnings trajectory reflects the company's profitability trends, while valuation multiples indicate market expectations for future growth."
-    
+
     # Extract key figures from analysis_df
     if analysis_df is not None and not analysis_df.empty:
         years = [col for col in analysis_df.columns if col.endswith('A')]
         latest_year = years[-1] if years else None
-        
+
         revenue_figures = {}
         eps_figures = {}
-        
+
         if latest_year:
             for metric in ['Revenue', 'EBITDA', 'Revenue Growth']:
                 row = analysis_df[analysis_df['metrics'] == metric]
                 if not row.empty:
                     val = row[latest_year].values[0]
                     revenue_figures[f"{metric} ({latest_year})"] = str(val)
-            
+
             for metric in ['EPS', 'PE Ratio']:
                 row = analysis_df[analysis_df['metrics'] == metric]
                 if not row.empty:
                     val = row[latest_year].values[0]
                     eps_figures[f"{metric} ({latest_year})"] = str(val)
-        
+
         report_data['revenue_key_figures'] = revenue_figures
         report_data['eps_key_figures'] = eps_figures
-    
+
     # Generate professional HTML report
     professional_html_path = os.path.join(output_dir, f"Professional_Equity_Report_{args.company_ticker}.html")
     professional_html_content = render_professional_html_report(report_data)
@@ -1009,28 +990,28 @@ def main():
         f.write(combined_html_content)
     print(f"✅ Generated Combined HTML Report: {combined_html_path}")
 
-    # --- Also render legacy HTML pages for backward compatibility ---
+    # Render the section-specific HTML report pages.
     print("Rendering legacy HTML pages...")
     templates = [HTML_TEMPLATE_PAGE_1, HTML_TEMPLATE_PAGE_2_FINANCIAL_SUMMARY, HTML_TEMPLATE_PAGE_3_PEER_COMPARISON]
-    
+
     # Add Page 4 (Sensitivity & Catalyst) if enabled
     has_sensitivity_catalyst = (
-        report_data.get('sensitivity_analysis') or 
+        report_data.get('sensitivity_analysis') or
         report_data.get('catalyst_analysis')
     )
     if has_sensitivity_catalyst:
         templates.append(HTML_TEMPLATE_PAGE_4_SENSITIVITY_CATALYST)
         print("✅ Sensitivity/Catalyst content detected, adding Page 4")
-    
+
     # Add Page 5 (News & Charts) if enabled
     has_news_charts = (
-        report_data.get('enhanced_news') or 
+        report_data.get('enhanced_news') or
         report_data.get('enhanced_charts')
     )
     if has_news_charts:
         templates.append(HTML_TEMPLATE_PAGE_5_NEWS_CHARTS)
         print("✅ News/Charts content detected, adding Page 5")
-    
+
     for page_num, template in enumerate(templates, 1):
         page_path = os.path.join(output_dir, f"{args.html_report_prefix}_Page{page_num}_{args.company_ticker}.html")
         html_content = render_html_report(template, report_data)

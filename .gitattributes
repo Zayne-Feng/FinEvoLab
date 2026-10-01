@@ -1,0 +1,92 @@
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.dockerignore text eol=lf
+.gitmodules text eol=lf
+README.md text eol=lf
+README_CN.md text eol=lf
+AGENTS.md text eol=lf
+
+LICENSE -text
+NOTICE -text
+COPYRIGHT -text
+TRADEMARK_POLICY.md -text
+
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.pdf -text
+*.npy -text
+*.safetensors -text
+*.zip -text
+data/raw/** -text
+finevolab/** text eol=lf
+scripts/*.py text eol=lf
+scripts/*.ps1 text eol=lf
+tests/*.py text eol=lf
+prompts/** text eol=lf
+prompts/candidates/** -text whitespace=cr-at-eol
+project_notes/optimization/**/selected_candidate.json -text whitespace=cr-at-eol
+project_notes/experiments/component-*/** -text whitespace=cr-at-eol
+project_notes/evaluations/component-*/** -text whitespace=cr-at-eol
+project_notes/run_logs/component_*.json -text whitespace=cr-at-eol
+configs/** text eol=lf
+data/*.json -text whitespace=cr-at-eol
+data/acceptance_sources.json -text whitespace=cr-at-eol
+data/processed/** -text whitespace=cr-at-eol
+data/indexes/*.json -text whitespace=cr-at-eol
+data/indexes/contextual/*.json -text whitespace=cr-at-eol
+project_notes/experiments/scope-*/** -text whitespace=cr-at-eol
+project_notes/evaluations/scope-*/** -text whitespace=cr-at-eol
+project_notes/run_logs/scope_*.json -text whitespace=cr-at-eol
+project_notes/run_logs/contextual_index.json -text whitespace=cr-at-eol
+project_notes/data/scope_*.json -text whitespace=cr-at-eol
+data/evaluation/** -text whitespace=cr-at-eol
+requirements/** text eol=lf
+environments/** text eol=lf
+configs/provider_pricing.json -text whitespace=cr-at-eol
+project_notes/run_logs/dashboard_*.json -text whitespace=cr-at-eol
+project_notes/run_logs/final_delivery_*.json -text whitespace=cr-at-eol
+project_notes/run_logs/final_release_*.json -text whitespace=cr-at-eol
+project_notes/run_logs/initial_completion_release_reaudit.json -text whitespace=cr-at-eol
+project_notes/run_logs/fmp_readiness.json -text whitespace=cr-at-eol
+project_notes/evaluations/project_costs.json -text whitespace=cr-at-eol
+project_notes/evaluations/deepseek_costs.json -text whitespace=cr-at-eol
+project_notes/evaluations/closure_usage.json -text whitespace=cr-at-eol
+project_notes/run_logs/model_verification.json -text whitespace=cr-at-eol
+project_notes/run_logs/financial_analysis.json -text whitespace=cr-at-eol
+project_notes/run_logs/workflow_smoke.json -text whitespace=cr-at-eol
+project_notes/run_logs/general_workflow.json -text whitespace=cr-at-eol
+project_notes/run_logs/web_question_smoke.json -text whitespace=cr-at-eol
+project_notes/run_logs/fmp_*.json -text whitespace=cr-at-eol
+data/raw/fmp/** -text whitespace=cr-at-eol
+finrobot_equity/core/src/modules/fmp_client.py text eol=lf
+finrobot_equity/core/src/modules/market_data_api.py text eol=lf
+finrobot_equity/core/src/modules/professional_pdf_report.py text eol=lf
+finrobot_equity/core/src/generate_financial_analysis.py text eol=lf
+finrobot_equity/core/src/generate_pdf_report.py -text whitespace=cr-at-eol
+project_notes/experiments/upstream-*/** -text whitespace=cr-at-eol
+project_notes/experiments/upload-*/** -text whitespace=cr-at-eol
+project_notes/evaluations/upload-*/** -text whitespace=cr-at-eol
+project_notes/evaluations/followup_costs.json -text whitespace=cr-at-eol
+project_notes/run_logs/followup_*.json -text whitespace=cr-at-eol
+project_notes/experiments/renewed*/** -text whitespace=cr-at-eol
+project_notes/evaluations/renewed-*/** -text whitespace=cr-at-eol
+project_notes/optimization/renewed-*/** -text whitespace=cr-at-eol
+project_notes/run_logs/renewed_*.json -text whitespace=cr-at-eol
+project_notes/evaluations/experiment_inventory.json -text whitespace=cr-at-eol
+data/training/planner_pilot/** -text whitespace=cr-at-eol
+data/training/planner_formal/** -text whitespace=cr-at-eol
+project_notes/experiments/planner-*/** -text whitespace=cr-at-eol
+project_notes/evaluations/planner*.json -text whitespace=cr-at-eol
+project_notes/run_logs/planner*.json -text whitespace=cr-at-eol
+project_notes/run_logs/planner*.jsonl -text whitespace=cr-at-eol
+project_notes/run_logs/planner*.txt -text whitespace=cr-at-eol
+project_notes/run_logs/project_closure*.json -text whitespace=cr-at-eol
+project_notes/run_logs/repository_distribution*.json -text whitespace=cr-at-eol
+project_notes/evaluations/planner*.md -text whitespace=cr-at-eol
+finevolab/planner_benchmark.py -text whitespace=cr-at-eol
+finevolab/planning.py -text whitespace=cr-at-eol
+scripts/*planner*.py -text whitespace=cr-at-eol
+scripts/*quantization*.py -text whitespace=cr-at-eol
+configs/planner*.json -text whitespace=cr-at-eol
+tests/frontend/** text eol=lf

@@ -1,46 +1,109 @@
+# Modified by FinEvoLab. Attribution is retained in NOTICE.
+
+# Credentials and private connection settings
 OAI_CONFIG_LIST
 PERSONAL_KEYS
 config_api_keys
+.env
+.env.*
+!.env.example
+config.ini
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Python environments, caches, and build products
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .cache/
-*.csv
-*.jpg
-*.png
-!finrobot_equity/web_app/static/*.png
-!figs/*.png
-quant/
-coding/
 *.egg-info/
-.DS_Store
-
-# Editor config (personal, not shared)
-.vscode/
-projects/
+venv/
+.venv/
+build/
 dist/
-tmp/
-filings/
 
-# Compiled Python
-*.pyc
-
-# Databases
+# Local tools and generated application state
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.app.pid
 *.db
 *.sqlite
 *.sqlite3
-
-# Logs
 *.log
-
-# Environment & secrets
-.env
-.env.*
-config.ini
-venv/
-.venv/
-
-# Runtime files
-.app.pid
+*.tmp
+*.bak
+/output/
+/tmp/
+/projects/
+/quant/
+/coding/
+/filings/
 finrobot_equity/logs/
-finrobot_equity/web_app/data/*.db
+finrobot_equity/web_app/data/*
+!finrobot_equity/web_app/data/.gitkeep
 finrobot_equity/core/output/build/
+finrobot_equity/core/tests/test_output/
+
+# Rebuildable models, vectors, and user uploads
+/data/models/
+/data/indexes/*.npy
+/data/indexes/contextual/*.npy
+/data/uploads/
+
+# Provider responses retained for local use
+/data/raw/fmp/
+
+# Local explanatory Markdown; functional and legal Markdown is allowlisted.
+*.md
+!/README.md
+!/README_CN.md
+!/AGENTS.md
+!/TRADEMARK_POLICY.md
+!/finrobot_desktop/README.md
+!/finrobot_desktop/finrobot/engine/data/datasets/README.md
+!/finrobot_desktop/finrobot/engine/instructions.md
+!/finrobot_desktop/finrobot/engine/agents/instructions/*.md
+!/finrobot_desktop/skills/**/SKILL.md
+!/finrobot_desktop/skills/ATTRIBUTION.md
+!/finrobot_desktop/tests/fixtures/skills/**/SKILL.md
+/project_notes/**/*.md
+/templates/
+
+# Local maintenance inventories and one-off helpers
+/project_notes/evaluations/artifact_lineage.json
+/project_notes/run_logs/component_archive.json
+/project_notes/run_logs/component_service.json
+/project_notes/run_logs/frozen_blob_audit.json
+/project_notes/run_logs/planner_formal_preflight.json
+/project_notes/run_logs/planner_formal_preparation.json
+/project_notes/run_logs/planner_preflight.json
+/project_notes/run_logs/planner_preparation.json
+/project_notes/run_logs/planner_quantization_export_manifest.json
+/project_notes/run_logs/planner_runtime_export_manifest.json
+/project_notes/run_logs/file_cleanup_*
+/project_notes/run_logs/markdown_*.json
+/project_notes/run_logs/license_readme_review.json
+/project_notes/run_logs/repository_distribution.json
+/scripts/inventory_repository_cleanup.py
+/scripts/prepare_repository_cleanup.py
+/scripts/verify_repository_cleanup.py
+
+# Local cloud connection and process state
+/project_notes/run_logs/vast_connection_check.json
+/project_notes/run_logs/planner_instance_stop.json
+/project_notes/run_logs/planner_service_health.json
+/project_notes/run_logs/planner_service_launch.txt
+/project_notes/run_logs/planner_service_supervisor.txt
+
+# Transient test transcripts; referenced verification receipts remain included
+/project_notes/experiments/**/execution.lock
+/project_notes/run_logs/*_unit_tests.txt
+/project_notes/run_logs/renewed_boundary_red.txt

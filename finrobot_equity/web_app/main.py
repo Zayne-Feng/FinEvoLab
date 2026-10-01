@@ -1,3 +1,5 @@
+# Modified by FinEvoLab. Attribution is retained in NOTICE.
+
 import os
 import sys
 import subprocess
@@ -32,12 +34,12 @@ SRC_ROOT = CORE_ROOT  # SRC_ROOT points to core directory, scripts are in core/s
 OUTPUT_DIR = os.path.join(CORE_ROOT, "output")
 CONFIG_DIR = os.path.join(CORE_ROOT, "config")
 DATA_DIR = os.path.join(PROJECT_ROOT, "web_app", "data")
-LOGS_DIR = os.path.join(PROJECT_ROOT, "logs")  # 统一日志目录：finrobot_equity/logs/
+LOGS_DIR = os.path.join(PROJECT_ROOT, "logs")
 
 # Ensure directories exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
-os.makedirs(LOGS_DIR, exist_ok=True)  # 新增：创建日志目录
+os.makedirs(LOGS_DIR, exist_ok=True)
 
 app = FastAPI(title="FinRobot Equity Research", version="1.0.0")
 
@@ -52,7 +54,7 @@ from .database import crud
 from .database.models import ReportRequest
 from .auth import (
     get_current_user, require_auth, create_user_session, delete_user_session,
-    authenticate_user, register_user, get_or_create_github_user, 
+    authenticate_user, register_user, get_or_create_github_user,
     change_user_password, init_default_admin
 )
 from .middleware import RequestLoggerMiddleware
@@ -79,14 +81,13 @@ class RegisterRequest(BaseModel):
     password: str
     name: str
 
-# ============== 日志文件持久化功能 ==============
 
 def get_log_file_path(task_id: str) -> str:
-    """获取任务日志文件路径"""
+    """Return the persistent log path for a task identifier."""
     return os.path.join(LOGS_DIR, f"task_{task_id}.log")
 
 def write_log_to_file(task_id: str, message: str):
-    """将日志写入文件"""
+    """Append a timestamped entry to the task's UTF-8 log file."""
     log_path = get_log_file_path(task_id)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
@@ -96,7 +97,7 @@ def write_log_to_file(task_id: str, message: str):
         logger.warning(f"Failed to write log to file: {e}")
 
 def read_log_from_file(task_id: str) -> List[str]:
-    """从文件读取日志"""
+    """Read persisted task log entries, returning an empty list when unavailable."""
     log_path = get_log_file_path(task_id)
     if not os.path.exists(log_path):
         return []
@@ -108,11 +109,9 @@ def read_log_from_file(task_id: str) -> List[str]:
         return []
 
 def append_task_log(task_id: str, message: str):
-    """同时写入内存和文件的日志函数"""
-    # 写入内存
+    """Append a task log entry to both memory and persistent storage."""
     if task_id in tasks:
         tasks[task_id]["logs"].append(message)
-    # 写入文件
     write_log_to_file(task_id, message)
 
 # ============== Auth Routes ==============
@@ -120,10 +119,10 @@ def append_task_log(task_id: str, message: str):
 @app.post("/api/auth/login")
 async def login(req: LoginRequest, request: Request, response: Response):
     user = authenticate_user(req.email, req.password)
-    
+
     if not user:
         raise HTTPException(status_code=401, detail="Invalid email or password")
-    
+
     # Create session
     ip_address = request.client.host if request.client else None
     user_agent = request.headers.get("user-agent", "")[:500]
@@ -133,7 +132,7 @@ async def login(req: LoginRequest, request: Request, response: Response):
         user_agent=user_agent,
         remember=req.remember
     )
-    
+
     # Set cookie
     max_age = 30 * 24 * 60 * 60 if req.remember else 7 * 24 * 60 * 60
     response.set_cookie(
@@ -143,16 +142,16 @@ async def login(req: LoginRequest, request: Request, response: Response):
         max_age=max_age,
         samesite="lax"
     )
-    
+
     return {"success": True, "user": {"email": user.email, "name": user.name}}
 
 @app.post("/api/auth/register")
 async def register(req: RegisterRequest, request: Request, response: Response):
     user = register_user(req.email, req.password, req.name)
-    
+
     if not user:
         raise HTTPException(status_code=400, detail="Email already registered")
-    
+
     # Auto login after register
     ip_address = request.client.host if request.client else None
     user_agent = request.headers.get("user-agent", "")[:500]
@@ -161,7 +160,7 @@ async def register(req: RegisterRequest, request: Request, response: Response):
         ip_address=ip_address,
         user_agent=user_agent
     )
-    
+
     response.set_cookie(
         key="session_id",
         value=session_id,
@@ -169,7 +168,7 @@ async def register(req: RegisterRequest, request: Request, response: Response):
         max_age=7 * 24 * 60 * 60,
         samesite="lax"
     )
-    
+
     return {"success": True, "user": {"email": user.email, "name": user.name}}
 
 @app.post("/api/auth/logout")
@@ -177,7 +176,7 @@ async def logout(request: Request, response: Response):
     session_id = request.cookies.get("session_id")
     if session_id:
         delete_user_session(session_id)
-    
+
     response.delete_cookie("session_id")
     return {"success": True}
 
@@ -197,16 +196,16 @@ async def change_password_route(req: ChangePasswordRequest, request: Request):
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     # GitHub users cannot change password
     if user.get("provider") == "github" or user["email"].startswith("github:"):
         raise HTTPException(status_code=400, detail="GitHub users cannot change password")
-    
+
     success = change_user_password(user["id"], req.currentPassword, req.newPassword)
-    
+
     if not success:
         raise HTTPException(status_code=401, detail="Current password is incorrect")
-    
+
     return {"success": True, "message": "Password changed successfully"}
 
 # ============== GitHub OAuth Routes ==============
@@ -216,7 +215,7 @@ async def github_login():
     """Redirect to GitHub OAuth authorization page"""
     if GITHUB_CLIENT_ID == "YOUR_GITHUB_CLIENT_ID":
         raise HTTPException(status_code=500, detail="GitHub OAuth not configured. Please set GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET.")
-    
+
     github_auth_url = (
         f"https://github.com/login/oauth/authorize"
         f"?client_id={GITHUB_CLIENT_ID}"
@@ -230,7 +229,7 @@ async def github_callback(code: str, response: Response):
     """Handle GitHub OAuth callback"""
     if not code:
         raise HTTPException(status_code=400, detail="No code provided")
-    
+
     # Exchange code for access token
     async with httpx.AsyncClient() as client:
         token_response = await client.post(
@@ -244,12 +243,12 @@ async def github_callback(code: str, response: Response):
             headers={"Accept": "application/json"}
         )
         token_data = token_response.json()
-        
+
         if "error" in token_data:
             raise HTTPException(status_code=400, detail=token_data.get("error_description", "Failed to get access token"))
-        
+
         access_token = token_data.get("access_token")
-        
+
         # Get user info from GitHub
         user_response = await client.get(
             "https://api.github.com/user",
@@ -259,7 +258,7 @@ async def github_callback(code: str, response: Response):
             }
         )
         github_user = user_response.json()
-        
+
         # Get user email (might be private)
         email_response = await client.get(
             "https://api.github.com/user/emails",
@@ -269,17 +268,17 @@ async def github_callback(code: str, response: Response):
             }
         )
         emails = email_response.json()
-        
+
         # Find primary email
         primary_email = None
         for email_obj in emails:
             if email_obj.get("primary"):
                 primary_email = email_obj.get("email")
                 break
-        
+
         if not primary_email:
             primary_email = github_user.get("email") or f"{github_user['login']}@github.local"
-        
+
         # Create or update user in database
         user = get_or_create_github_user(
             email=primary_email,
@@ -287,10 +286,10 @@ async def github_callback(code: str, response: Response):
             avatar_url=github_user.get("avatar_url"),
             github_id=github_user.get("id")
         )
-        
+
         # Create session
         session_id = create_user_session(user_id=user.id)
-        
+
         # Create redirect response with cookie
         redirect_response = RedirectResponse(url="/", status_code=302)
         redirect_response.set_cookie(
@@ -300,7 +299,7 @@ async def github_callback(code: str, response: Response):
             max_age=7 * 24 * 60 * 60,
             samesite="lax"
         )
-        
+
         return redirect_response
 
 # ============== Page Routes ==============
@@ -352,7 +351,6 @@ class AnalysisRequest(BaseModel):
     generate_pdf: bool = True
     fmp_api_key: Optional[str] = None
     openai_api_key: Optional[str] = None
-    # 新增增强功能选项
     enable_sensitivity_analysis: bool = True
     enable_catalyst_analysis: bool = True
     enable_enhanced_news: bool = True
@@ -362,12 +360,12 @@ class AnalysisRequest(BaseModel):
 def run_process(command, task_id, cwd=None):
     """Run a shell command and capture output to the task logs."""
     logger.info(f"Task {task_id}: Running command: {' '.join(command)}")
-    append_task_log(task_id, f"Executing: {' '.join(command)}")  # 修改：使用新函数
-    
+    append_task_log(task_id, f"Executing: {' '.join(command)}")
+
     try:
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
-        
+
         process = subprocess.Popen(
             command,
             stdout=subprocess.PIPE,
@@ -378,25 +376,25 @@ def run_process(command, task_id, cwd=None):
             env=env,
             cwd=cwd or SRC_ROOT
         )
-        
+
         for line in process.stdout:
-            append_task_log(task_id, line.strip())  # 修改：使用新函数
-            
+            append_task_log(task_id, line.strip())
+
         process.wait()
-        
+
         if process.returncode != 0:
             raise Exception(f"Command failed with return code {process.returncode}")
-            
+
         return True
     except Exception as e:
-        append_task_log(task_id, f"Error: {str(e)}")  # 修改：使用新函数
+        append_task_log(task_id, f"Error: {str(e)}")
         tasks[task_id]["status"] = "failed"
         return False
 
 def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
     tasks[task_id]["status"] = "running"
-    append_task_log(task_id, "Starting analysis pipeline...")  # 修改：使用新函数
-    
+    append_task_log(task_id, "Starting analysis pipeline...")
+
     # Update report status in database
     try:
         db = SessionLocal()
@@ -404,18 +402,18 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
         db.close()
     except Exception as e:
         logger.warning(f"Failed to update report status: {e}")
-    
+
     python_exe = sys.executable
-    src_dir = os.path.join(SRC_ROOT, "src")  # Now points to core/src
+    src_dir = os.path.join(SRC_ROOT, "src")
     config_file = os.path.join(CONFIG_DIR, "config.ini")
-    
+
     # Create output directories
     analysis_output_dir = os.path.join(OUTPUT_DIR, req.ticker, "analysis")
     report_output_dir = os.path.join(OUTPUT_DIR, req.ticker, "report")
     os.makedirs(analysis_output_dir, exist_ok=True)
     os.makedirs(report_output_dir, exist_ok=True)
-    
-    # Step 1: Generate Financial Analysis
+
+    # Financial-analysis subprocess.
     cmd_analysis = [
         python_exe,
         os.path.join(src_dir, "generate_financial_analysis.py"),
@@ -428,22 +426,21 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
         "--margin-improvement", str(req.margin_improvement),
         "--output-dir", analysis_output_dir
     ]
-    
+
     if req.peers:
         cmd_analysis.append("--peer-tickers")
         cmd_analysis.extend(req.peers)
-        
+
     if req.generate_text:
         cmd_analysis.append("--generate-text-sections")
-    
-    # 新增增强功能选项
+
     if req.enable_sensitivity_analysis:
         cmd_analysis.append("--enable-sensitivity-analysis")
     if req.enable_catalyst_analysis:
         cmd_analysis.append("--enable-catalyst-analysis")
     if req.enable_enhanced_news:
         cmd_analysis.append("--enable-enhanced-news")
-        
+
     cmd_analysis.extend(["--config-file", config_file])
 
     if not run_process(cmd_analysis, task_id, cwd=SRC_ROOT):
@@ -456,9 +453,9 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
             logger.warning(f"Failed to update report status: {e}")
         return
 
-    # Step 2: Create Equity Report
+    # HTML-report subprocess.
     base_output_dir = analysis_output_dir
-    
+
     cmd_report = [
         python_exe,
         os.path.join(src_dir, "create_equity_report.py"),
@@ -477,29 +474,27 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
         "--config-file", config_file,
         "--enable-text-regeneration"
     ]
-    
-    # 新增增强功能选项
+
     if req.enable_enhanced_charts:
         cmd_report.append("--enable-enhanced-charts")
     if req.enable_valuation_analysis:
         cmd_report.append("--enable-valuation-analysis")
-    
-    # 添加增强分析文件路径
+
     if req.enable_sensitivity_analysis:
         sensitivity_file = os.path.join(base_output_dir, "sensitivity_analysis.json")
         if os.path.exists(sensitivity_file):
             cmd_report.extend(["--sensitivity-analysis-file", sensitivity_file])
-    
+
     if req.enable_catalyst_analysis:
         catalyst_file = os.path.join(base_output_dir, "catalyst_analysis.json")
         if os.path.exists(catalyst_file):
             cmd_report.extend(["--catalyst-analysis-file", catalyst_file])
-    
+
     if req.enable_enhanced_news:
         enhanced_news_file = os.path.join(base_output_dir, "enhanced_news.json")
         if os.path.exists(enhanced_news_file):
             cmd_report.extend(["--enhanced-news-file", enhanced_news_file])
-    
+
     if req.peers:
         cmd_report.extend([
             "--peer-ebitda-csv", os.path.join(base_output_dir, "peer_ebitda_comparison.csv"),
@@ -516,9 +511,9 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
             logger.warning(f"Failed to update report status: {e}")
         return
 
-    # Step 3: Generate PDF Report
+    # PDF-report subprocess.
     if req.generate_pdf:
-        append_task_log(task_id, "Generating PDF report...")  # 修改：使用新函数
+        append_task_log(task_id, "Generating PDF report...")
         cmd_pdf = [
             python_exe,
             os.path.join(src_dir, "generate_pdf_report.py"),
@@ -528,13 +523,13 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
             "--output-dir", report_output_dir,
             "--config-file", config_file
         ]
-        
+
         if not run_process(cmd_pdf, task_id, cwd=SRC_ROOT):
-            append_task_log(task_id, "Warning: PDF generation failed, but HTML reports are available.")  # 修改：使用新函数
+            append_task_log(task_id, "Warning: PDF generation failed, but HTML reports are available.")
 
     tasks[task_id]["status"] = "completed"
-    append_task_log(task_id, "Pipeline completed successfully!")  # 修改：使用新函数
-    
+    append_task_log(task_id, "Pipeline completed successfully!")
+
     # Update report status in database
     try:
         db = SessionLocal()
@@ -542,12 +537,12 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
         db.close()
     except Exception as e:
         logger.warning(f"Failed to update report status: {e}")
-    
+
     # Get report files
     report_files = []
     if os.path.exists(report_output_dir):
         report_files = [f for f in os.listdir(report_output_dir) if f.endswith((".html", ".pdf"))]
-    
+
     # Separate HTML and PDF files — only Professional reports
     html_files = [f for f in report_files if f.endswith('.html')]
     pdf_files = [f for f in report_files if f.endswith('.pdf')]
@@ -561,7 +556,7 @@ def execute_analysis_pipeline(task_id: str, req: AnalysisRequest):
     if not prof_pdfs:
         prof_pdfs = [f for f in pdf_files if 'Equity_Report' in f]
     sorted_pdfs = prof_pdfs
-    
+
     tasks[task_id]["result"] = {
         "report_dir": report_output_dir,
         "ticker": req.ticker,
@@ -574,14 +569,13 @@ async def run_analysis(req: AnalysisRequest, request: Request, background_tasks:
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     task_id = str(uuid.uuid4())
     tasks[task_id] = {"status": "pending", "logs": [], "result": None, "user": user["email"]}
-    
-    # 初始化日志文件
+
     write_log_to_file(task_id, f"Task created by user: {user['email']}")
     write_log_to_file(task_id, f"Ticker: {req.ticker}, Company: {req.company_name}")
-    
+
     # Record report request in database
     try:
         db = SessionLocal()
@@ -601,7 +595,7 @@ async def run_analysis(req: AnalysisRequest, request: Request, background_tasks:
         db.close()
     except Exception as e:
         logger.warning(f"Failed to record report request: {e}")
-    
+
     background_tasks.add_task(execute_analysis_pipeline, task_id, req)
     return {"task_id": task_id}
 
@@ -610,9 +604,9 @@ async def get_status(task_id: str, request: Request):
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     if task_id not in tasks:
-        # 尝试从文件读取日志（用于服务器重启后的恢复）
+        # Read persisted logs when the task is absent from memory.
         file_logs = read_log_from_file(task_id)
         if file_logs:
             return {
@@ -624,19 +618,19 @@ async def get_status(task_id: str, request: Request):
         return JSONResponse(status_code=404, content={"message": "Task not found"})
     return tasks[task_id]
 
-# ============== 新增：日志文件读取API ==============
+# Task log endpoints.
 
 @app.get("/api/logs/{task_id}")
 async def get_task_logs(task_id: str, request: Request):
-    """获取任务的持久化日志"""
+    """Return persisted log entries for a task."""
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     log_path = get_log_file_path(task_id)
     if not os.path.exists(log_path):
         raise HTTPException(status_code=404, detail="Log file not found")
-    
+
     logs = read_log_from_file(task_id)
     return {
         "task_id": task_id,
@@ -647,15 +641,15 @@ async def get_task_logs(task_id: str, request: Request):
 
 @app.get("/api/logs/{task_id}/download")
 async def download_task_logs(task_id: str, request: Request):
-    """下载任务日志文件"""
+    """Download the persistent log file for a task."""
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     log_path = get_log_file_path(task_id)
     if not os.path.exists(log_path):
         raise HTTPException(status_code=404, detail="Log file not found")
-    
+
     return FileResponse(
         path=log_path,
         filename=f"task_{task_id}.log",
@@ -664,18 +658,18 @@ async def download_task_logs(task_id: str, request: Request):
 
 @app.get("/api/logs")
 async def list_all_logs(request: Request):
-    """列出所有日志文件"""
+    """List persistent log files for authorized administrators."""
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
-    # 只有管理员可以查看所有日志
+
+    # Restrict log enumeration to configured administrator addresses.
     # Admin emails can be configured via FINROBOT_ADMIN_EMAILS env var (comma-separated)
     admin_emails = os.getenv("FINROBOT_ADMIN_EMAILS", "admin@finrobot.com").split(",")
     admin_emails = [e.strip() for e in admin_emails]
     if user.get("email") not in admin_emails:
         raise HTTPException(status_code=403, detail="Admin access required")
-    
+
     log_files = []
     if os.path.exists(LOGS_DIR):
         for filename in os.listdir(LOGS_DIR):
@@ -689,10 +683,10 @@ async def list_all_logs(request: Request):
                     "created_at": datetime.fromtimestamp(stat.st_ctime).isoformat(),
                     "modified_at": datetime.fromtimestamp(stat.st_mtime).isoformat()
                 })
-    
-    # 按修改时间倒序排列
+
+    # Order log files by descending modification time.
     log_files.sort(key=lambda x: x["modified_at"], reverse=True)
-    
+
     return {
         "logs_dir": LOGS_DIR,
         "total_files": len(log_files),
@@ -701,7 +695,7 @@ async def list_all_logs(request: Request):
 
 @app.get("/api/history")
 async def get_history(request: Request):
-    """返回当前用户的历史报告列表，供前端刷新后恢复。"""
+    """Return the user's latest available report entry for each ticker."""
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
@@ -711,21 +705,20 @@ async def get_history(request: Request):
         result = []
         seen_tickers = set()
         for r in reports:
-            # 同一 ticker 只显示一条（最新的），因为输出文件是覆盖的
+            # Report files are shared by ticker, so retain only its latest history entry.
             if r.ticker in seen_tickers:
                 continue
             seen_tickers.add(r.ticker)
-            # 检查报告文件是否存在
             report_dir = os.path.join(OUTPUT_DIR, r.ticker, "report")
             html_files = []
             pdf_files = []
             if os.path.exists(report_dir):
                 all_files = os.listdir(report_dir)
-                # 只要 Professional 报告，排除 Combined
+                # Prefer Professional HTML over other report variants.
                 prof_html = [f for f in all_files if f.endswith('.html') and 'Professional' in f]
                 other_html = [f for f in all_files if f.endswith('.html') and 'Professional' not in f] if not prof_html else []
                 html_files = prof_html + other_html
-                # 只要 Professional PDF 报告，排除图表 PDF
+                # Select report PDFs and exclude standalone chart PDFs.
                 prof_pdf = [f for f in all_files if f.endswith('.pdf') and 'Professional_Equity_Report' in f]
                 other_pdf = [f for f in all_files if f.endswith('.pdf') and 'Equity_Report' in f and f not in prof_pdf] if not prof_pdf else []
                 pdf_files = prof_pdf + other_pdf
@@ -747,13 +740,12 @@ async def get_history(request: Request):
 
 @app.delete("/api/history/{task_id}")
 async def delete_history(task_id: str, request: Request):
-    """删除指定的历史报告记录（同时删除同一 ticker 的所有记录）"""
+    """Delete the user's database entries for the selected task's ticker."""
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
     try:
         db = SessionLocal()
-        # 先找到该 task_id 对应的 ticker
         report = db.query(ReportRequest).filter(
             ReportRequest.task_id == task_id,
             ReportRequest.user_id == user["id"]
@@ -762,14 +754,12 @@ async def delete_history(task_id: str, request: Request):
             db.close()
             raise HTTPException(status_code=404, detail="Report not found")
         ticker = report.ticker
-        # 删除该用户该 ticker 的所有记录
         db.query(ReportRequest).filter(
             ReportRequest.ticker == ticker,
             ReportRequest.user_id == user["id"]
         ).delete()
         db.commit()
         db.close()
-        # 同时从内存中移除
         if task_id in tasks:
             del tasks[task_id]
         return {"success": True}
@@ -785,10 +775,10 @@ async def list_reports(ticker: str, request: Request):
     user = get_current_user(request)
     if not user:
         raise HTTPException(status_code=401, detail="Not authenticated")
-    
+
     report_dir = os.path.join(OUTPUT_DIR, ticker, "report")
     if not os.path.exists(report_dir):
         return {"reports": []}
-    
+
     reports = [f for f in os.listdir(report_dir) if f.endswith((".html", ".pdf"))]
     return {"reports": reports}
