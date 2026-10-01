@@ -1,0 +1,8 @@
+-r planner_runtime.in
+torch>=2.6,<3
+transformers==4.57.6
+peft==0.17.1
+accelerate==1.10.1
+bitsandbytes==0.48.1
+fastapi==0.161.1
+uvicorn==0.54.0
