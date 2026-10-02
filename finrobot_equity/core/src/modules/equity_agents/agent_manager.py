@@ -1,8 +1,9 @@
+# Modified by FinEvoLab. Attribution is retained in NOTICE.
 import pandas as pd
 import json
 import os
 from typing import Dict, Optional
-from agents import Runner, RunConfig, ModelSettings  # Import from openai-agents package
+from agents import Runner, RunConfig  # Import from openai-agents package
 
 # Import from local equity_agents
 from .tagline_agent import tagline_agent
@@ -79,9 +80,7 @@ class EquityResearchAgentManager:
         
         # Run the agent with optional custom model
         if custom_model:
-            run_config = RunConfig(
-                model_settings=ModelSettings(model=custom_model)
-            )
+            run_config = RunConfig(model=custom_model)
             result = await Runner.run(agent, financial_prompt, run_config=run_config)
         else:
             result = await Runner.run(agent, financial_prompt)
