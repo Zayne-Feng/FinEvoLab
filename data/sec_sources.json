@@ -1,0 +1,72 @@
+[
+  {
+    "company": "MSFT",
+    "cik": "0000789019",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+    "path": "data/raw/msft_companyfacts.json",
+    "sha256": "dd0308149a8e96497989ed7c690b5a49a00bef9ceafbb24638bda41e8ae938dd",
+    "bytes": 4888108,
+    "entity_name": "Microsoft Corporation",
+    "fiscal_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "company": "AAPL",
+    "cik": "0000320193",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "path": "data/raw/aapl_companyfacts.json",
+    "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "bytes": 3789099,
+    "entity_name": "Apple Inc.",
+    "fiscal_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "company": "GOOGL",
+    "cik": "0001652044",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+    "path": "data/raw/googl_companyfacts.json",
+    "sha256": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+    "bytes": 3164517,
+    "entity_name": "Alphabet Inc.",
+    "fiscal_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "company": "AMZN",
+    "cik": "0001018724",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+    "path": "data/raw/amzn_companyfacts.json",
+    "sha256": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+    "bytes": 4478611,
+    "entity_name": "AMAZON COM INC",
+    "fiscal_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "company": "META",
+    "cik": "0001326801",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+    "path": "data/raw/meta_companyfacts.json",
+    "sha256": "ecbeee451a002c65e854fd89c68c5e5762740427f9edba01f015d6bc668c3e43",
+    "bytes": 2801546,
+    "entity_name": "Meta Platforms, Inc.",
+    "fiscal_years": [
+      2022,
+      2023,
+      2024
+    ]
+  }
+]
