@@ -1,0 +1,41 @@
+{
+  "run_id": "checkpoint",
+  "commit": "0c1e868636512c0feacd809e4d64d8a8d3ca88de",
+  "verified_snapshots": 22,
+  "vectors": {
+    "fixed": [
+      12670,
+      384
+    ],
+    "structured": [
+      13426,
+      384
+    ]
+  },
+  "credential_exclusion": "passed",
+  "pdf_pages": 1,
+  "pdf_sha256": "9fb8a77f7631f8779b7be783abdc14f781c37d2ae83fa313b2823e6b6bc07878",
+  "source_files_sha256": {
+    "finevolab/agent.py": "dffbe833fad1b315a264284969412b36a8463119140b85431b8a5150a6a98449",
+    "finevolab/config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "3fbd01db46892d9e18db41939a608696d186b06b4bc16e4b9a00d3c9cda317d7",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "c49c0c20942edf1233d035b6b2ce0aaf9f67fbbc2bbb1b121346c13670e58c41",
+    "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+    "finevolab/reporting.py": "0cb17092005ffa1b44190adb6cf46be01b1ebe6d3019035b3f0983abf29cc281",
+    "finevolab/retrieval.py": "398ccaaf85288809c161fd3f03296e8f45347cf3ccc73225df45e9bcdb9fd411",
+    "finevolab/runtime.py": "24f0b5d9b95c414e851ed1e7682910ae2ee2c6899e08e10f5c4b0a3266c78608",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/tools.py": "a58fa439307985cbad98bf43497f5accfa60356b9800e5ba3a982e8a3ee5a649",
+    "finevolab/uploads.py": "f51a7a907c84911e7a73a5431bb66afdd05ad4d24ab1a210889df98bac17109d",
+    "finevolab/web.py": "ee9e594ae4ed8023046fcec79341c4761bf50531373aebb20ebd021c5dc73032",
+    "finevolab/workflow.py": "e202916568b98549a78107a2874097ace9b09acdf1b75f72cb5f1ace8b6b6a3e",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "finevolab/templates/dashboard.html": "bf781d40feb117ea34eb10f946c9f6027ddab64d4c1c03592d0a614f2001dcbd",
+    "finevolab/templates/report.html": "0cf8dc0b694ad9257205f635cfd23e3a69a23f97796920b7da3f0afaf1f5dfad"
+  }
+}
