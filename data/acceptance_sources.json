@@ -1,0 +1,113 @@
+[
+  {
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2023,
+    "report_type": "10-K",
+    "accession": "0001045810-23-000017",
+    "document": "nvda-20230129.htm",
+    "period_end": "2023-01-29",
+    "publication_date": "2023-02-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm",
+    "path": "data/raw/acceptance_sec_nvda_2023.html",
+    "sha256": "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f",
+    "bytes": 2669706
+  },
+  {
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2024,
+    "report_type": "10-K",
+    "accession": "0001045810-24-000029",
+    "document": "nvda-20240128.htm",
+    "period_end": "2024-01-28",
+    "publication_date": "2024-02-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+    "path": "data/raw/acceptance_sec_nvda_2024.html",
+    "sha256": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060",
+    "bytes": 2086033
+  },
+  {
+    "company": "NVDA",
+    "cik": "0001045810",
+    "report_type": "companyfacts",
+    "path": "data/raw/acceptance_nvda_companyfacts.json",
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "bytes": 4092966,
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+  },
+  {
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2023,
+    "report_type": "10-K",
+    "accession": "0001628280-24-002390",
+    "document": "tsla-20231231.htm",
+    "period_end": "2023-12-31",
+    "publication_date": "2024-01-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm",
+    "path": "data/raw/acceptance_sec_tsla_2023.html",
+    "sha256": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce",
+    "bytes": 2673213
+  },
+  {
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2024,
+    "report_type": "10-K",
+    "accession": "0001628280-25-003063",
+    "document": "tsla-20241231.htm",
+    "period_end": "2024-12-31",
+    "publication_date": "2025-01-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
+    "path": "data/raw/acceptance_sec_tsla_2024.html",
+    "sha256": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+    "bytes": 2596926
+  },
+  {
+    "company": "TSLA",
+    "cik": "0001318605",
+    "report_type": "companyfacts",
+    "path": "data/raw/acceptance_tsla_companyfacts.json",
+    "sha256": "c951e0ae2402dd8cf8f39319928adccc4196b997941fe40b0d4d6b8060802db1",
+    "bytes": 3700279,
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json"
+  },
+  {
+    "company": "ADBE",
+    "cik": "0000796343",
+    "fiscal_year": 2023,
+    "report_type": "10-K",
+    "accession": "0000796343-24-000006",
+    "document": "adbe-20231201.htm",
+    "period_end": "2023-12-01",
+    "publication_date": "2024-01-17",
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000006/adbe-20231201.htm",
+    "path": "data/raw/acceptance_sec_adbe_2023.html",
+    "sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "bytes": 2451840
+  },
+  {
+    "company": "ADBE",
+    "cik": "0000796343",
+    "fiscal_year": 2024,
+    "report_type": "10-K",
+    "accession": "0000796343-25-000004",
+    "document": "adbe-20241129.htm",
+    "period_end": "2024-11-29",
+    "publication_date": "2025-01-13",
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000004/adbe-20241129.htm",
+    "path": "data/raw/acceptance_sec_adbe_2024.html",
+    "sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "bytes": 2405494
+  },
+  {
+    "company": "ADBE",
+    "cik": "0000796343",
+    "report_type": "companyfacts",
+    "path": "data/raw/acceptance_adbe_companyfacts.json",
+    "sha256": "86a5689aa9aa7b0f9e95be21b48b0305376e014c8dbf3b8bb3b4b131f1b6a0c4",
+    "bytes": 4334956,
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json"
+  }
+]
