@@ -1,0 +1,46 @@
+{
+  "scope": "revenue_growth_pilot",
+  "label_method": "programmatic_from_verified_snapshot",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "cases": [
+    {
+      "id": "development-MSFT-2023",
+      "split": "development",
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "expected": {
+        "status": "complete",
+        "value": "6.882029555656428103091743600",
+        "evidence_ids": [
+          "3fa32e8182c2568355f50c6d",
+          "59176976080d645a51e629d8"
+        ]
+      }
+    },
+    {
+      "id": "development-AAPL-2024",
+      "split": "development",
+      "company": "AAPL",
+      "fiscal_year": 2024,
+      "expected": {
+        "status": "complete",
+        "value": "2.021994077514121345734897000",
+        "evidence_ids": [
+          "2f84b41e2eabbc0926b28fbf",
+          "3a4cc27cbd17e4635166de5a"
+        ]
+      }
+    },
+    {
+      "id": "development-ZZZZ-2024",
+      "split": "development",
+      "company": "ZZZZ",
+      "fiscal_year": 2024,
+      "expected": {
+        "status": "insufficient_data",
+        "value": "",
+        "evidence_ids": []
+      }
+    }
+  ]
+}

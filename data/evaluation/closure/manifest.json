@@ -1,0 +1,14 @@
+{
+  "status": "frozen_closure_v1",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "split_sha256": {
+    "development": "34271de9617256c26bcf371a84fc57779b5bebef15cf8167e8bf733692fead3f",
+    "acceptance": "146381cbb8961673918ca76acf4cce073859f483bc5f8280b2584d3cef2b2f80",
+    "gepa_acceptance": "66c0a8584b95f7d9340516cad5ca895df0f0d2310d3c601b1e8a30cb81cda1ae"
+  },
+  "source_audit": "canonical_SEC_metrics_and_source_bound_text_evaluation",
+  "text_gold": "source_validity_plus_blind_support_review_not_exhaustive_gold",
+  "overlap_with_v2": "existing_snapshot_facts_and_some_requests_overlap_regression_only",
+  "generalization_scope": "within_snapshot_request_combinations",
+  "semantic_duplicates": 0
+}

@@ -1,0 +1,710 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "MSFT",
+        "AAPL",
+        "AMZN"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2022,
+      "metric": "net_income",
+      "question": "Compare FY2022 net income for MSFT, AAPL, AMZN. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2022,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "72738000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-07-01",
+            "period_end": "2022-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "b6c37bad6015c1d8f717f7e4",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "99803000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-09-26",
+            "period_end": "2022-09-24",
+            "period_kind": "annual_flow",
+            "evidence_id": "8d0cd3d8a5ce997f222a7417",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false
+      },
+      "id": "f10fca5b57247343c9a7",
+      "semantic_key": "f10fca5b57247343c9a7cbc7dcd35ca4b24d1794117d04b794c90fbc776e062e"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "MSFT",
+        "META",
+        "GOOGL"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "metric": "operating_income",
+      "question": "Compare FY2023 operating income for MSFT, META, GOOGL. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "operating_income",
+        "fiscal_year": 2023,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "88523000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-07-01",
+            "period_end": "2023-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "77dbe42fe8ad2be22128b607",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "84293000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a3264266d418575799d61772",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false
+      },
+      "id": "7bf49cfe5efa08c27cfe",
+      "semantic_key": "7bf49cfe5efa08c27cfe4776d799d2fc4a5df077fe619e9cab98159a2a0dcbd1"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "company": "AMZN",
+      "fiscal_year": 2022,
+      "metric": "revenue",
+      "question": "Compare FY2022 revenue for AMZN, META, GOOGL. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "revenue",
+        "fiscal_year": 2022,
+        "values": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "282836000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "3809d05689145790d4576bf1",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": true
+      },
+      "id": "ca09986cc23c3e479b8d",
+      "semantic_key": "ca09986cc23c3e479b8d9d5d54981d32296d7d28f779656959ba2c05fde76a86"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "AAPL",
+        "META",
+        "GOOGL"
+      ],
+      "company": "AAPL",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "question": "Compare FY2024 net income for AAPL, META, GOOGL. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2024,
+        "values": [
+          {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "93736000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "7dbcb598fc034f946ef3ad52",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "100118000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2beb8b642968f5fd1bd8b36c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false
+      },
+      "id": "7e43c6920c66a0950640",
+      "semantic_key": "7e43c6920c66a0950640a3ae477b4264f48edb4c1d3262d8fd16819ddec7151d"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "MSFT",
+        "AAPL",
+        "META"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2024,
+      "metric": "operating_income",
+      "question": "Compare FY2024 operating income for MSFT, AAPL, META. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "operating_income",
+        "fiscal_year": 2024,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "109433000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "3c34b92f7ebea344a656a5b5",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AAPL",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "123216000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "eb3b24cbd31d94017022417a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false
+      },
+      "id": "8b60c0dcd5b7371b6e16",
+      "semantic_key": "8b60c0dcd5b7371b6e160efec44cd6568ef1fdf0f35d93596fb8c5e27745be93"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "company_comparison",
+      "companies": [
+        "MSFT",
+        "AMZN",
+        "META"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "metric": "net_income",
+      "question": "Compare FY2023 net income for MSFT, AMZN, META. Show the amounts and explain any fiscal-date differences.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2023,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "72361000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-07-01",
+            "period_end": "2023-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "88b94d51ef16cd0619ae20aa",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false
+      },
+      "id": "0af8ea0a15d35ce44ef8",
+      "semantic_key": "0af8ea0a15d35ce44ef83da802b60221bd01670c03611ebcd2eb5251675bf1d5"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "boundary",
+      "companies": [
+        "MSFT",
+        "AAPL"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "scenario": "fiscal_alignment",
+      "question": "Are the FY2024 reporting periods for MSFT, AAPL strictly aligned? Use net income observations as evidence.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2024,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "88136000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "868bed9f34c0f4601a6b65e7",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "93736000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "7dbcb598fc034f946ef3ad52",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false,
+        "status": "periods_not_aligned"
+      },
+      "id": "d5107011a9f7c139fc07",
+      "semantic_key": "d5107011a9f7c139fc07149ada53c5e070afefe3c38af747d7c53c1d3587d13a"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "boundary",
+      "companies": [
+        "MSFT",
+        "AMZN"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2022,
+      "metric": "net_income",
+      "scenario": "fiscal_alignment",
+      "question": "Are the FY2022 reporting periods for MSFT, AMZN strictly aligned? Use net income observations as evidence.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2022,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "72738000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-07-01",
+            "period_end": "2022-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "b6c37bad6015c1d8f717f7e4",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false,
+        "status": "periods_not_aligned"
+      },
+      "id": "fcb9202883d52ba05f4d",
+      "semantic_key": "fcb9202883d52ba05f4d18eb4b65531a020dcb6d7b2187b8872cb83233b61f25"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "boundary",
+      "companies": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "metric": "net_income",
+      "scenario": "fiscal_alignment",
+      "question": "Are the FY2023 reporting periods for MSFT, GOOGL strictly aligned? Use net income observations as evidence.",
+      "expected": {
+        "metric": "net_income",
+        "fiscal_year": 2023,
+        "values": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "72361000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-07-01",
+            "period_end": "2023-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "88b94d51ef16cd0619ae20aa",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "73795000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "11d709428b5e3bc2fe35e43d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "periods_aligned": false,
+        "status": "periods_not_aligned"
+      },
+      "id": "e47b468571d89c703133",
+      "semantic_key": "e47b468571d89c703133ebdecaa38f8d2b73d70c852bfb22de2b29cedaedb01b"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "annual_growth",
+      "companies": [
+        "AAPL"
+      ],
+      "company": "AAPL",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "question": "Compute the FY2024 annual change in net income for AAPL, using the prior fiscal year.",
+      "expected": {
+        "company": "AAPL",
+        "metric": "net_income",
+        "fiscal_year": 2024,
+        "previous_year": 2023,
+        "value": "-3.359967008608691169647920000",
+        "unit": "percent",
+        "formula": "(current / previous - 1) * 100",
+        "inputs": [
+          {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "96995000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-09-25",
+            "period_end": "2023-09-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "88023d57836d524f3dbc26c8",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "93736000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "7dbcb598fc034f946ef3ad52",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "evidence_ids": [
+          "88023d57836d524f3dbc26c8",
+          "7dbcb598fc034f946ef3ad52"
+        ]
+      },
+      "id": "7f39d3ca4d51d2b23182",
+      "semantic_key": "7f39d3ca4d51d2b231820b6457a77828f121efea49cb445cedb5b57988b6b420"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "annual_growth",
+      "companies": [
+        "AMZN"
+      ],
+      "company": "AMZN",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "question": "Compute the FY2024 annual change in net income for AMZN, using the prior fiscal year.",
+      "expected": {
+        "company": "AMZN",
+        "metric": "net_income",
+        "fiscal_year": 2024,
+        "previous_year": 2023,
+        "value": "94.73459326211996713229252260",
+        "unit": "percent",
+        "formula": "(current / previous - 1) * 100",
+        "inputs": [
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "evidence_ids": [
+          "eef687627c9e048daa48507d",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "id": "d82d06d16abf1ecef917",
+      "semantic_key": "d82d06d16abf1ecef917fea18a4e4d90b0606cbacec2e2fc2de3fa61afcc3c6e"
+    },
+    {
+      "split": "gepa_acceptance",
+      "category": "annual_growth",
+      "companies": [
+        "GOOGL"
+      ],
+      "company": "GOOGL",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "question": "Compute the FY2024 annual change in net income for GOOGL, using the prior fiscal year.",
+      "expected": {
+        "company": "GOOGL",
+        "metric": "net_income",
+        "fiscal_year": 2024,
+        "previous_year": 2023,
+        "value": "35.67043837658377938884748290",
+        "unit": "percent",
+        "formula": "(current / previous - 1) * 100",
+        "inputs": [
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "73795000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "11d709428b5e3bc2fe35e43d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "100118000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2beb8b642968f5fd1bd8b36c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "evidence_ids": [
+          "11d709428b5e3bc2fe35e43d",
+          "2beb8b642968f5fd1bd8b36c"
+        ]
+      },
+      "id": "ca534378bb822ddf96e2",
+      "semantic_key": "ca534378bb822ddf96e2790c23f2f2c7a3722a608361f8ef7b10371121c3e6d7"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "id": "7efd88dc2d4a01a64766",
+      "split": "test",
+      "category": "explanation",
+      "company": "META",
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "topic": "risk",
+      "focus": "revenue",
+      "metrics": [
+        "revenue"
+      ],
+      "question": "Which risks in META's FY2024 annual report could reduce revenue or sales? Explain their disclosed effects with original quotations.",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "META:2024"
+      ]
+    },
+    {
+      "id": "f1e956e5456d9845e1cb",
+      "split": "test",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "topic": "risk",
+      "focus": "revenue",
+      "metrics": [
+        "revenue"
+      ],
+      "question": "请根据 MSFT FY2023 年报，说明可能影响收入的主要风险，引用原文解释这些风险与收入的关系。",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "MSFT:2023"
+      ]
+    },
+    {
+      "id": "9ad96f2c4369fab6f30e",
+      "split": "test",
+      "category": "explanation",
+      "company": "TSLA",
+      "companies": [
+        "TSLA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "topic": "risk",
+      "focus": "revenue",
+      "metrics": [
+        "revenue"
+      ],
+      "question": "Which risks identified in the selected TSLA FY2023 annual report could adversely affect its revenue? Explain with original passages.",
+      "upload_ids": [
+        "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "TSLA:2023"
+      ]
+    },
+    {
+      "id": "815448bd5707a695d5c5",
+      "split": "test",
+      "category": "hybrid_metric",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_metric",
+      "topic": "profit",
+      "focus": "net_income",
+      "metrics": [
+        "net_income"
+      ],
+      "question": "Give NVDA FY2024 annual net income in USD with actual fiscal dates, using only the selected annual report. Explain its change and the disclosed operating or tax drivers, with original quotations.",
+      "upload_ids": [
+        "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "29760000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-30",
+            "period_end": "2024-01-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "8dd1ede2c8c5dfc4ea4e669c",
+            "report_year": 2024,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "8dd1ede2c8c5dfc4ea4e669c"
+        ]
+      },
+      "common_support": true,
+      "fact_clusters": [
+        "NVDA:2024"
+      ]
+    }
+  ]
+}

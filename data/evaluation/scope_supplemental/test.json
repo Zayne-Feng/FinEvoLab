@@ -1,0 +1,1120 @@
+{
+  "data_version": "scope_supplemental_v1",
+  "tasks": [
+    {
+      "id": "1657395ad0e5e4d48dbd",
+      "semantic_key": "1657395ad0e5e4d48dbd91db5359cfdfa540faf42d30e554fa3ec778839e989c",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "How much revenue does the selected annual report show for its current fiscal year? Keep the original currency and exact fiscal dates.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "26974000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "ebf50a868c2c7ed41c1dcb7b",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "ebf50a868c2c7ed41c1dcb7b"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "d566c285be02cb2c302a",
+      "semantic_key": "d566c285be02cb2c302a8b362fc2f6274e677428b727e91f8595271758d9b1cd",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "operating_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "请给出所选报告当期财年的营业利润，保留原始币种和完整会计期间。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "4224000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "c651c8aade0e18217e8d6f4a",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "c651c8aade0e18217e8d6f4a"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "3becdc1d13966d2637dd",
+      "semantic_key": "3becdc1d13966d2637dd25d92d8179fb1a1c22fb16d67bc0b9bafcc9fe6656c4",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "net_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "Read the company's net income for the fiscal year covered by the selected report, including the original currency and fiscal dates.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "4368000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "47caa7a537e08a3bb3b010ae",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "47caa7a537e08a3bb3b010ae"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "4e0d149dbf9234ea22a3",
+      "semantic_key": "4e0d149dbf9234ea22a3180fad977b70c8a6c0617864447bb000fc77543e4295",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "growth",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "按所选报告的当年与上年数据，计算收入同比变化率（百分比），并给出公式和两个实际期间。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "revenue",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "0.2229323028906888608159322286",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "revenue",
+                "fiscal_year": 2022,
+                "value": "26914000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "7e8057c096edcf3003997aa3",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "26974000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "ebf50a868c2c7ed41c1dcb7b",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "7e8057c096edcf3003997aa3",
+              "ebf50a868c2c7ed41c1dcb7b"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "7e8057c096edcf3003997aa3",
+          "ebf50a868c2c7ed41c1dcb7b"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "91399cc8fe5d9baba46c",
+      "semantic_key": "91399cc8fe5d9baba46c28086e5a64d5d1c9e8b34b38fdbbe9d708843cb087b1",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "growth",
+      "metrics": [
+        "operating_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "Using this selected filing rather than other snapshots, calculate the percentage annual change in operating income from its previous fiscal year to its current fiscal year.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "operating_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-57.93247684493576337018225276",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "operating_income",
+                "fiscal_year": 2022,
+                "value": "10041000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "8ae08c54c336437ae96f8cea",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "operating_income",
+                "fiscal_year": 2023,
+                "value": "4224000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "c651c8aade0e18217e8d6f4a",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "8ae08c54c336437ae96f8cea",
+              "c651c8aade0e18217e8d6f4a"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "8ae08c54c336437ae96f8cea",
+          "c651c8aade0e18217e8d6f4a"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "9ef867c4db6ab231cf5e",
+      "semantic_key": "9ef867c4db6ab231cf5ef25b00d8be492e2fff1b60e972c25e78dddd728ef81e",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "growth",
+      "metrics": [
+        "net_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "只依据已选财报，计算本期财年的净利润同比变化率（百分比），并保留计算所用的两个年度及原始数值。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "net_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-55.20918785890073831009023790",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "net_income",
+                "fiscal_year": 2022,
+                "value": "9752000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "44f98867867a9921dad4afc1",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "4368000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "47caa7a537e08a3bb3b010ae",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "44f98867867a9921dad4afc1",
+              "47caa7a537e08a3bb3b010ae"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "44f98867867a9921dad4afc1",
+          "47caa7a537e08a3bb3b010ae"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "42929011223086f7d569",
+      "semantic_key": "42929011223086f7d569d6e0ddb6ce2f72cd4625f155348ce5ad9a71cb26bf94",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "summary",
+      "metrics": [
+        "revenue",
+        "operating_income",
+        "net_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "Give an income-statement summary for the selected filing's current fiscal year: revenue, operating income and net income, with original units and fiscal periods.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "26974000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "ebf50a868c2c7ed41c1dcb7b",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          },
+          {
+            "company": "NVDA",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "4224000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "c651c8aade0e18217e8d6f4a",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          },
+          {
+            "company": "NVDA",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "4368000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-31",
+            "period_end": "2023-01-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "47caa7a537e08a3bb3b010ae",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "47caa7a537e08a3bb3b010ae",
+          "c651c8aade0e18217e8d6f4a",
+          "ebf50a868c2c7ed41c1dcb7b"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "a14d9b3fa8166f5e8526",
+      "semantic_key": "a14d9b3fa8166f5e8526f0d80d310eb9a9e027dc2202434f1fd99d2d79f7a4ad",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "所选报告披露了上一财年的对照数据。请给出该对照年度的收入，而非本报告当年的收入，并保留原始期间。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "26914000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-02-01",
+            "period_end": "2022-01-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "7e8057c096edcf3003997aa3",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "7e8057c096edcf3003997aa3"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2022"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "e95b3e1a13032b9d049b",
+      "semantic_key": "e95b3e1a13032b9d049bbb44ee621fe4bee20da4ec3468fe94b44ae2fed67db4",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "net_income"
+      ],
+      "focus": null,
+      "scenario": null,
+      "topic": "profit",
+      "question": "From the selected FY2023 filing, report NVIDIA FY2022 net income, keeping that fact's fiscal period rather than relabeling it as FY2023.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "NVDA",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "9752000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-02-01",
+            "period_end": "2022-01-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "44f98867867a9921dad4afc1",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "44f98867867a9921dad4afc1"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2022"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "090268bf8bbbf2a4f725",
+      "semantic_key": "090268bf8bbbf2a4f7254ec700586a96e266af95f22e3e6793488323c9e830c6",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": "revenue",
+      "scenario": null,
+      "topic": "revenue",
+      "question": "Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "revenue",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "0.2229323028906888608159322286",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "revenue",
+                "fiscal_year": 2022,
+                "value": "26914000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "7e8057c096edcf3003997aa3",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "26974000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "ebf50a868c2c7ed41c1dcb7b",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "7e8057c096edcf3003997aa3",
+              "ebf50a868c2c7ed41c1dcb7b"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "7e8057c096edcf3003997aa3",
+          "ebf50a868c2c7ed41c1dcb7b"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "8df68defe7bd8f0ff7f4",
+      "semantic_key": "8df68defe7bd8f0ff7f486dd5cf90e1c6e56fd9788156199fddc37fae722f79e",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "operating_income"
+      ],
+      "focus": "operating_income",
+      "scenario": null,
+      "topic": "profit",
+      "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "operating_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-57.93247684493576337018225276",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "operating_income",
+                "fiscal_year": 2022,
+                "value": "10041000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "8ae08c54c336437ae96f8cea",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "operating_income",
+                "fiscal_year": 2023,
+                "value": "4224000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "c651c8aade0e18217e8d6f4a",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "8ae08c54c336437ae96f8cea",
+              "c651c8aade0e18217e8d6f4a"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "8ae08c54c336437ae96f8cea",
+          "c651c8aade0e18217e8d6f4a"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "3c000e74a3eb411ad80e",
+      "semantic_key": "3c000e74a3eb411ad80e3d53552d4d723898d50fb5b3171ab77d39d6cb42492b",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "net_income"
+      ],
+      "focus": "net_income",
+      "scenario": null,
+      "topic": "profit",
+      "question": "仅使用已选 NVIDIA FY2023 报告，给出净利润同比变化率，并解释财报披露的相关税务或业务因素。解释性结论请用英文，并附上对应英文原句。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "NVDA",
+            "metric": "net_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-55.20918785890073831009023790",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "NVDA",
+                "name": "net_income",
+                "fiscal_year": 2022,
+                "value": "9752000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-02-01",
+                "period_end": "2022-01-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "44f98867867a9921dad4afc1",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "NVDA",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "4368000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-31",
+                "period_end": "2023-01-29",
+                "period_kind": "annual_flow",
+                "evidence_id": "47caa7a537e08a3bb3b010ae",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "44f98867867a9921dad4afc1",
+              "47caa7a537e08a3bb3b010ae"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "44f98867867a9921dad4afc1",
+          "47caa7a537e08a3bb3b010ae"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "86bff910263d788a1c22",
+      "semantic_key": "86bff910263d788a1c220b86a8461babf643f8319bd5379e09e94f6f2d222cc8",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": "revenue",
+      "scenario": null,
+      "topic": "revenue",
+      "question": "What business drivers does NVIDIA discuss in the FY2023 report when explaining revenue changes? Cite the selected report and keep the explanation qualitative.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "94e17a16a1a091dfcbce",
+      "semantic_key": "94e17a16a1a091dfcbce428264985cb100afec0c26e54205b8abf6360c8140f8",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": "risk",
+      "scenario": null,
+      "topic": "risk",
+      "question": "仅根据已选的 NVIDIA FY2023 财报，说明两项具体经营风险及可能影响。请用英文给出判断，并逐项附上英文原文。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "01fca05d71c4f5373cf2",
+      "semantic_key": "01fca05d71c4f5373cf272b6c33d1c1d2dbc309f142282ce15edc352475f7103",
+      "split": "test",
+      "category": "upload",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "focus": "operating_income",
+      "scenario": null,
+      "topic": "profit",
+      "question": "Explain the direction of NVIDIA's FY2023 operating income change and the disclosed expense or business drivers; cite only the selected report.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "fba6aaf885212df892e1",
+      "semantic_key": "fba6aaf885212df892e1164d4619c9e735f4b1b4d71b522009668d7bd2b072c1",
+      "split": "test",
+      "category": "boundary",
+      "company": "ADBE",
+      "companies": [
+        "ADBE"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": "unselected_company",
+      "topic": "profit",
+      "question": "Use only this selected NVIDIA FY2023 document to report ADBE FY2023 revenue. Do not use other files or snapshots.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "insufficient_data",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": []
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "ADBE:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "5751cb16af355323c85f",
+      "semantic_key": "5751cb16af355323c85f1ff001b5fd51a513d02baf796822c14acd498e0b2ec8",
+      "split": "test",
+      "category": "boundary",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2026,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": "missing_period",
+      "topic": "profit",
+      "question": "只使用已选 FY2023 报告，查询 NVIDIA FY2026 的收入，不允许用其他来源补齐。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "insufficient_data",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": []
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2026"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "3e6f6f2b94a1d8bb8a70",
+      "semantic_key": "3e6f6f2b94a1d8bb8a70102692fe116392a342f67170e89cba94a4f9e9709148",
+      "split": "test",
+      "category": "boundary",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "net_income"
+      ],
+      "focus": null,
+      "scenario": "quarterly",
+      "topic": "profit",
+      "question": "The selected annual filing includes many figures. Give NVIDIA's Q3 FY2023 net income without inferring it from annual totals.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "insufficient_data",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": []
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "4d81963effa49e1067f7",
+      "semantic_key": "4d81963effa49e1067f769463979d5da5fa52947ecd55b87877c08d1db2703d3",
+      "split": "test",
+      "category": "boundary",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "metric",
+      "metrics": [
+        "revenue"
+      ],
+      "focus": null,
+      "scenario": "currency",
+      "topic": "profit",
+      "question": "请把所选报告当期财年收入换算为欧元；我尚未提供汇率或汇率日期。",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "clarification_required",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": []
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "6d8c7104330ba9944540",
+      "semantic_key": "6d8c7104330ba9944540dbaf87a3c0964d886149df6258d709a882910ded72e3",
+      "split": "test",
+      "category": "boundary",
+      "company": "NVDA",
+      "companies": [
+        "NVDA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "comparison",
+      "metrics": [
+        "operating_income"
+      ],
+      "focus": null,
+      "scenario": "self_comparison",
+      "topic": "profit",
+      "question": "Compare NVIDIA with NVDA on FY2023 operating income using only the selected report.",
+      "upload_ids": [
+        "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"
+      ],
+      "reference_answer": {
+        "status": "invalid_parameters",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": []
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "NVDA:2023"
+      ],
+      "language": "en"
+    }
+  ]
+}

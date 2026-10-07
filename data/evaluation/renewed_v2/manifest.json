@@ -1,0 +1,17 @@
+{
+  "version": "renewed-v2",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "files": {
+    "development.json": "2bbc5facc7640a749eb671aafcd92cedad7eb9d4d59a343e479b8d21ac93e22c",
+    "documents.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "test.json": "e8c177bcf460dc74a734253b0799aa22e350142c0cd6784a37ca7f9b0a030cfa"
+  },
+  "sources": {
+    "data/processed/reports.json": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+    "data/filing_sources.json": "f86b2ed2e220535d8eafc9822860538ebe5c49633dcfb79006208c6a7165e88c",
+    "data/indexes/contextual/structured.json": "d59939820eb02638ff78a6dcfa325743fcda4db7c9ee1f4bec7c6dbd12a6dd9d"
+  },
+  "reference_commit": "4d870388",
+  "prior_acceptance": "renewed-v1 acceptance is now development; its results remain unchanged",
+  "scope": "new metric/operation combinations over known public snapshots; no new-company generalization"
+}

@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "dataset_manifest_sha256": "a9472cb3cfca759b8c5a0e50a997ac053dc02c79416db20ee69a925343f8c321",
+  "splits": {
+    "development": {
+      "tasks": 50,
+      "semantic_keys": 50,
+      "categories": {
+        "metric_query": 10,
+        "annual_growth": 8,
+        "company_comparison": 6,
+        "explanation": 8,
+        "hybrid": 8,
+        "upload": 6,
+        "boundary": 4
+      },
+      "companies": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "MSFT",
+        "NVDA"
+      ],
+      "primary_company_year_clusters": 5,
+      "shared_boundary_contract_cluster": true,
+      "referenced_fact_identities": 24,
+      "template_families": 19,
+      "selected_upload_documents": 1
+    },
+    "validation": {
+      "tasks": 50,
+      "semantic_keys": 50,
+      "categories": {
+        "metric_query": 10,
+        "annual_growth": 8,
+        "company_comparison": 6,
+        "explanation": 8,
+        "hybrid": 8,
+        "upload": 6,
+        "boundary": 4
+      },
+      "companies": [
+        "AAPL",
+        "AMZN",
+        "META",
+        "MSFT",
+        "TSLA"
+      ],
+      "primary_company_year_clusters": 5,
+      "shared_boundary_contract_cluster": true,
+      "referenced_fact_identities": 26,
+      "template_families": 23,
+      "selected_upload_documents": 1
+    },
+    "test": {
+      "tasks": 100,
+      "semantic_keys": 100,
+      "categories": {
+        "metric_query": 15,
+        "annual_growth": 10,
+        "company_comparison": 15,
+        "explanation": 15,
+        "hybrid": 15,
+        "upload": 20,
+        "boundary": 10
+      },
+      "companies": [
+        "AAPL",
+        "ADBE",
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "TSLA"
+      ],
+      "primary_company_year_clusters": 8,
+      "shared_boundary_contract_cluster": true,
+      "referenced_fact_identities": 38,
+      "template_families": 38,
+      "selected_upload_documents": 3
+    }
+  },
+  "pairwise_overlap": {
+    "development:validation": {
+      "duplicate_semantic_keys": 0,
+      "shared_referenced_fact_identities": 4,
+      "shared_template_families": 19,
+      "shared_selected_upload_documents": 0
+    },
+    "development:test": {
+      "duplicate_semantic_keys": 0,
+      "shared_referenced_fact_identities": 11,
+      "shared_template_families": 19,
+      "shared_selected_upload_documents": 0
+    },
+    "validation:test": {
+      "duplicate_semantic_keys": 0,
+      "shared_referenced_fact_identities": 10,
+      "shared_template_families": 23,
+      "shared_selected_upload_documents": 0
+    }
+  },
+  "upload_reference_observations": 36,
+  "unique_upload_fact_identities": 27,
+  "scope": "task combinations and selected-source capability; shared templates and facts are explicitly retained",
+  "repetitions_are_independent_questions": false,
+  "unseen_language_template_generalization": false,
+  "supplemental": {
+    "questions": 20,
+    "selected_documents_shared_with_main": 0,
+    "numeric_and_boundary_references_verified": 17,
+    "languages": {
+      "en": 11,
+      "zh": 9
+    },
+    "dataset_sha256": "771f943116e3949366fe105c804d69119d102da72c07597d67219cce546f19a5",
+    "scope": "new source-context and natural query forms; narrative output in English when explicitly requested"
+  }
+}

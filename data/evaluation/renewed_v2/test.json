@@ -1,0 +1,353 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "id": "d4ff7e126e72ee998314",
+      "split": "test",
+      "category": "hybrid_metric",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_metric",
+      "topic": "profit",
+      "focus": "net_income",
+      "metrics": [
+        "net_income"
+      ],
+      "question": "Give annual net income in USD with actual fiscal dates for MSFT FY2024. Using the MSFT FY2024 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "MSFT FY2024 net_income: 88136000000 USD; period 2023-07-01 to 2024-06-30.",
+        "metrics": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "88136000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "868bed9f34c0f4601a6b65e7",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "868bed9f34c0f4601a6b65e7"
+        ]
+      },
+      "common_support": true,
+      "fact_clusters": [
+        "MSFT:2024"
+      ]
+    },
+    {
+      "id": "eb5b7c14466993c2818f",
+      "split": "test",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "topic": "profit",
+      "focus": "net_income",
+      "metrics": [
+        "net_income"
+      ],
+      "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "AAPL:2023"
+      ]
+    },
+    {
+      "id": "bbe403346fb845cb7c0f",
+      "split": "test",
+      "category": "hybrid_metric",
+      "company": "GOOGL",
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "topic": "profit",
+      "focus": "operating_income",
+      "metrics": [
+        "operating_income"
+      ],
+      "question": "Give annual operating income in USD with actual fiscal dates for GOOGL FY2023. Using the GOOGL FY2023 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "GOOGL FY2023 operating_income: 84293000000 USD; period 2023-01-01 to 2023-12-31.",
+        "metrics": [
+          {
+            "company": "GOOGL",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "84293000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a3264266d418575799d61772",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a3264266d418575799d61772"
+        ]
+      },
+      "common_support": true,
+      "fact_clusters": [
+        "GOOGL:2023"
+      ]
+    },
+    {
+      "id": "bcbf2b332238b7a9e165",
+      "split": "test",
+      "category": "hybrid_growth",
+      "company": "AMZN",
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_growth",
+      "topic": "profit",
+      "focus": "net_income",
+      "metrics": [
+        "net_income"
+      ],
+      "question": "Calculate annual net income percentage growth for AMZN FY2024. Using the AMZN FY2024 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AMZN FY2024 net_income annual change: 94.73459326211996713229252260 percent; formula (current / previous - 1) * 100.",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "AMZN",
+            "metric": "net_income",
+            "fiscal_year": 2024,
+            "previous_year": 2023,
+            "value": "94.73459326211996713229252260",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "AMZN",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "30425000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-01-01",
+                "period_end": "2023-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "eef687627c9e048daa48507d",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              },
+              {
+                "company": "AMZN",
+                "name": "net_income",
+                "fiscal_year": 2024,
+                "value": "59248000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2024-01-01",
+                "period_end": "2024-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "b27b293c0abd1d076f7a8f37",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              }
+            ],
+            "evidence_ids": [
+              "eef687627c9e048daa48507d",
+              "b27b293c0abd1d076f7a8f37"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "b27b293c0abd1d076f7a8f37",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "common_support": true,
+      "fact_clusters": [
+        "AMZN:2024"
+      ]
+    },
+    {
+      "id": "8582e5637d5ba6dcf3ea",
+      "split": "test",
+      "category": "explanation",
+      "company": "META",
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "topic": "profit",
+      "focus": "operating_income",
+      "metrics": [
+        "operating_income"
+      ],
+      "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "META:2024"
+      ]
+    },
+    {
+      "id": "966e8796c78d27ee0ff3",
+      "split": "test",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "topic": "risk",
+      "focus": "revenue",
+      "metrics": [
+        "revenue"
+      ],
+      "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "AAPL:2023"
+      ]
+    },
+    {
+      "id": "7b363a0a6206f68a2b2a",
+      "split": "test",
+      "category": "hybrid_growth",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_growth",
+      "topic": "profit",
+      "focus": "net_income",
+      "metrics": [
+        "net_income"
+      ],
+      "question": "Calculate annual net income percentage growth for AAPL FY2024. Using the AAPL FY2024 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+      "upload_ids": [],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AAPL FY2024 net_income annual change: -3.359967008608691169647920000 percent; formula (current / previous - 1) * 100.",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "AAPL",
+            "metric": "net_income",
+            "fiscal_year": 2024,
+            "previous_year": 2023,
+            "value": "-3.359967008608691169647920000",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "AAPL",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "96995000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-09-25",
+                "period_end": "2023-09-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "88023d57836d524f3dbc26c8",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              },
+              {
+                "company": "AAPL",
+                "name": "net_income",
+                "fiscal_year": 2024,
+                "value": "93736000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-10-01",
+                "period_end": "2024-09-28",
+                "period_kind": "annual_flow",
+                "evidence_id": "7dbcb598fc034f946ef3ad52",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              }
+            ],
+            "evidence_ids": [
+              "88023d57836d524f3dbc26c8",
+              "7dbcb598fc034f946ef3ad52"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "7dbcb598fc034f946ef3ad52",
+          "88023d57836d524f3dbc26c8"
+        ]
+      },
+      "common_support": true,
+      "fact_clusters": [
+        "AAPL:2024"
+      ]
+    },
+    {
+      "id": "9558382ceb1fa5139313",
+      "split": "test",
+      "category": "explanation",
+      "company": "GOOGL",
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "topic": "risk",
+      "focus": "revenue",
+      "metrics": [
+        "revenue"
+      ],
+      "question": "Which risks disclosed in GOOGL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+      "upload_ids": [],
+      "reference_answer": null,
+      "common_support": true,
+      "fact_clusters": [
+        "GOOGL:2023"
+      ]
+    }
+  ]
+}

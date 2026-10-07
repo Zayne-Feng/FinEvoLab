@@ -1,0 +1,35 @@
+{
+  "scope": "revenue_growth_pilot",
+  "label_method": "programmatic_from_verified_snapshot",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "cases": [
+    {
+      "id": "validation-GOOGL-2024",
+      "split": "validation",
+      "company": "GOOGL",
+      "fiscal_year": 2024,
+      "expected": {
+        "status": "complete",
+        "value": "13.86624332290155305568748900",
+        "evidence_ids": [
+          "2416fccc49f087024356e84b",
+          "bdf4bbf53f0eb3c5f6b3883e"
+        ]
+      }
+    },
+    {
+      "id": "validation-AMZN-2023",
+      "split": "validation",
+      "company": "AMZN",
+      "fiscal_year": 2023,
+      "expected": {
+        "status": "complete",
+        "value": "11.82957412988367319541696900",
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "a6771fab618fbf81f6a472f7"
+        ]
+      }
+    }
+  ]
+}

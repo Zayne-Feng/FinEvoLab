@@ -1,0 +1,35 @@
+{
+  "scope": "revenue_growth_pilot",
+  "label_method": "programmatic_from_verified_snapshot",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "cases": [
+    {
+      "id": "test-META-2024",
+      "split": "test",
+      "company": "META",
+      "fiscal_year": 2024,
+      "expected": {
+        "status": "complete",
+        "value": "21.94111280781604423952202340",
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "23274db260a77a882106fdb2"
+        ]
+      }
+    },
+    {
+      "id": "test-MSFT-2024",
+      "split": "test",
+      "company": "MSFT",
+      "fiscal_year": 2024,
+      "expected": {
+        "status": "complete",
+        "value": "15.66996201307127857867541230",
+        "evidence_ids": [
+          "59176976080d645a51e629d8",
+          "9a794a03f299890a16d8dd3c"
+        ]
+      }
+    }
+  ]
+}

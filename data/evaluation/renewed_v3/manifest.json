@@ -1,0 +1,20 @@
+{
+  "version": "renewed-v3",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "files": {
+    "development.json": "31d51263b948655c416883a5f888c39a727a442b40bc4d56fed0c11204f3b9da",
+    "documents.json": "b1251e9db5a9ae47b2455b263901bb50981ca8d479e30b1be622ec7b5ac97085",
+    "test.json": "9c75242a200d367fdf530e4099462e76174465c43f371112f2f25929fae81942"
+  },
+  "sources": {
+    "data/processed/reports.json": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+    "data/filing_sources.json": "f86b2ed2e220535d8eafc9822860538ebe5c49633dcfb79006208c6a7165e88c",
+    "data/indexes/contextual/structured.json": "d59939820eb02638ff78a6dcfa325743fcda4db7c9ee1f4bec7c6dbd12a6dd9d",
+    "data/raw/acceptance_sec_tsla_2023.html": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce",
+    "data/raw/acceptance_sec_nvda_2024.html": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060"
+  },
+  "prior_acceptance": "renewed-v2 test is development; preserve its original scores",
+  "reference_commit": "9437bcb9",
+  "retrieval_reference_commit": "4d870388",
+  "scope": "new company/operation combinations in this round; upload sources previously used in the project"
+}

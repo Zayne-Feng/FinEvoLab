@@ -1,0 +1,155 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "id": "c9076ecf5b029140aa57",
+      "split": "test",
+      "category": "upload",
+      "company": "AMZN",
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "upload_ids": [
+        "7159c2f0fb719d13066f4f92203408f092cda55e21af838b05119c0ca7478b8a"
+      ],
+      "common_support": true,
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AMZN FY2024 net_income: 59248000000 USD; period 2024-01-01 to 2024-12-31.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "fact_clusters": [
+        "AMZN:2024"
+      ],
+      "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages."
+    },
+    {
+      "id": "8e99a9bba1e708c3259c",
+      "split": "test",
+      "category": "upload",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "upload_ids": [
+        "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb"
+      ],
+      "common_support": true,
+      "reference_answer": {
+        "status": "complete",
+        "answer": "MSFT FY2023 net_income: 72361000000 USD; period 2022-07-01 to 2023-06-30.",
+        "metrics": [
+          {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "72361000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-07-01",
+            "period_end": "2023-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "88b94d51ef16cd0619ae20aa",
+            "report_year": 2023,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "88b94d51ef16cd0619ae20aa"
+        ]
+      },
+      "fact_clusters": [
+        "MSFT:2023"
+      ],
+      "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages."
+    },
+    {
+      "id": "e6bf67f2a433d8366c81",
+      "split": "test",
+      "category": "upload",
+      "company": "GOOGL",
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "upload_ids": [
+        "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6"
+      ],
+      "common_support": true,
+      "reference_answer": {
+        "status": "complete",
+        "answer": "GOOGL FY2023 net_income: 73795000000 USD; period 2023-01-01 to 2023-12-31.",
+        "metrics": [
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "73795000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "11d709428b5e3bc2fe35e43d",
+            "report_year": 2023,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "11d709428b5e3bc2fe35e43d"
+        ]
+      },
+      "fact_clusters": [
+        "GOOGL:2023"
+      ],
+      "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages."
+    }
+  ]
+}

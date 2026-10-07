@@ -1,0 +1,220 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "id": "d930ae1eaec1eca52ab0",
+      "semantic_key": "d930ae1eaec1eca52ab0f92ad25ce6f40e7f59332d0900c6cb861757680b77ad",
+      "split": "test",
+      "category": "upload",
+      "company": "ADBE",
+      "companies": [
+        "ADBE"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "Using only the selected reports, Give ADBE's FY2023 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+      "upload_ids": [
+        "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7"
+      ],
+      "fact_clusters": [
+        "ADBE:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "ADBE",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "19409000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-12-03",
+            "period_end": "2023-12-01",
+            "period_kind": "annual_flow",
+            "evidence_id": "073be7a62e6d052e6e8ea1ac",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "073be7a62e6d052e6e8ea1ac"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "ADBE:2023:revenue"
+      ]
+    },
+    {
+      "id": "263b1d9e29c2c70f6bc7",
+      "semantic_key": "263b1d9e29c2c70f6bc782082fa79ac6e88c4ec131928b24970999985a7e5b3e",
+      "split": "test",
+      "category": "upload",
+      "company": "ADBE",
+      "companies": [
+        "ADBE"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+      "upload_ids": [
+        "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9"
+      ],
+      "fact_clusters": [
+        "ADBE:2024"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "anchor_groups": [
+        "ADBE:2024:operating_income"
+      ]
+    },
+    {
+      "id": "af619504d81f55690b09",
+      "semantic_key": "af619504d81f55690b09e5fe8208dfee6d4dd284d43db2b43dbd7b45ce78eeb1",
+      "split": "test",
+      "category": "upload",
+      "company": "ADBE",
+      "companies": [
+        "ADBE"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "Using only the selected reports, Give ADBE's FY2023 net income, with original units and fiscal dates. Also explain net income changes and disclosed tax or business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+      "upload_ids": [
+        "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7"
+      ],
+      "fact_clusters": [
+        "ADBE:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "ADBE",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "5428000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-12-03",
+            "period_end": "2023-12-01",
+            "period_kind": "annual_flow",
+            "evidence_id": "fdfbe33114638f7437fab8bc",
+            "report_year": 2023,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "fdfbe33114638f7437fab8bc"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "ADBE:2023:net_income"
+      ]
+    },
+    {
+      "id": "7fe7ffde6d2e95bd178f",
+      "semantic_key": "7fe7ffde6d2e95bd178f9ec70f881abc44539f484ad5eeb805b1836e90029b4a",
+      "split": "test",
+      "category": "upload",
+      "company": "ADBE",
+      "companies": [
+        "ADBE",
+        "TSLA"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_comparison",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+      "upload_ids": [
+        "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+        "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63"
+      ],
+      "fact_clusters": [
+        "ADBE:2024",
+        "TSLA:2024"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "ADBE",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "21505000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-12-02",
+            "period_end": "2024-11-29",
+            "period_kind": "annual_flow",
+            "evidence_id": "134463d2b41642f456495388",
+            "report_year": 2024,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          },
+          {
+            "company": "TSLA",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "97690000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "7f42223a8f2ce6a8ccb8b25f",
+            "report_year": 2024,
+            "extraction_method": "independent_companyfacts_accession_reference"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": false,
+        "evidence_ids": [
+          "134463d2b41642f456495388",
+          "7f42223a8f2ce6a8ccb8b25f"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "ADBE:2024:revenue",
+        "TSLA:2024:revenue"
+      ]
+    }
+  ]
+}

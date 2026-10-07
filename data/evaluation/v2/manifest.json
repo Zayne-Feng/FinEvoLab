@@ -1,0 +1,37 @@
+{
+  "status": "frozen_structured_v2",
+  "version": "v2",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "parent_manifest_sha256": "cbb649304ea49c59a01b3951479f3dd2b5b4cfc391be10e367011e09a1035c60",
+  "source_audit": {
+    "canonical_observations_verified": 45,
+    "method": "raw_SEC_JSON_pointer_value_and_context"
+  },
+  "semantic_task_duplicates": 0,
+  "shared_template_families": {
+    "development_vs_validation": [],
+    "development_vs_test": [],
+    "validation_vs_test": []
+  },
+  "split_sizes": {
+    "development": 30,
+    "validation": 20,
+    "test": 30
+  },
+  "category_counts": {
+    "metric_query": 20,
+    "annual_growth": 20,
+    "company_comparison": 15,
+    "integrated_analysis": 15,
+    "boundary": 10
+  },
+  "split_sha256": {
+    "development": "0dd14b4b588486a7acdf5f2bbccf83b261156efb888493ea144b8a5b16accbea",
+    "validation": "8a0ec469a49d730ba0bf18b0911149478d73df47f47fb1e8b640ea5aa26b09ba",
+    "test": "9e8810318e03808cea51a4bbf0bcf2f8b994bef5d75f69e58670ccec373703c6"
+  },
+  "entity_year_overlap": "retained_and_disclosed",
+  "human_calibration": "pending",
+  "open_text_scoring": "review_only_until_calibrated",
+  "test_used_by_optimizer": false
+}

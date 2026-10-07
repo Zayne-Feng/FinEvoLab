@@ -1,0 +1,65 @@
+{
+  "status": "frozen_structured_v1",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "source_audit": {
+    "canonical_observations_verified": 45,
+    "method": "raw_SEC_JSON_pointer_value_and_context"
+  },
+  "split_sizes": {
+    "development": 30,
+    "validation": 20,
+    "test": 30
+  },
+  "category_counts": {
+    "metric_query": 20,
+    "annual_growth": 20,
+    "company_comparison": 15,
+    "integrated_analysis": 15,
+    "boundary": 10
+  },
+  "split_sha256": {
+    "development": "1d956cc8387aa229aa0aef120c4491cf23f25d89e66c6aea682a85b71e04f984",
+    "validation": "34d8648c8b5a26d404efa303d43c93b555296d742e81417ed8f2cf13618edad7",
+    "test": "c94f01ec727500dd12b173782b9aba10f95c9372fd42b540b720c479d0a312b2"
+  },
+  "overlap_audit": {
+    "development_vs_validation": {
+      "shared_exact_questions": [],
+      "shared_categories": [
+        "annual_growth",
+        "boundary",
+        "company_comparison",
+        "integrated_analysis",
+        "metric_query"
+      ],
+      "entity_and_template_overlap": true
+    },
+    "development_vs_test": {
+      "shared_exact_questions": [],
+      "shared_categories": [
+        "annual_growth",
+        "boundary",
+        "company_comparison",
+        "integrated_analysis",
+        "metric_query"
+      ],
+      "entity_and_template_overlap": true
+    },
+    "validation_vs_test": {
+      "shared_exact_questions": [],
+      "shared_categories": [
+        "annual_growth",
+        "boundary",
+        "company_comparison",
+        "integrated_analysis",
+        "metric_query"
+      ],
+      "entity_and_template_overlap": true
+    }
+  },
+  "generalization_scope": "within_company_year_and_template_distribution",
+  "human_review_status": "not_performed",
+  "open_text_scoring": "excluded",
+  "scoring": "strict_status_numbers_currency_units_fiscal_periods_formula_citations",
+  "test_used_by_optimizer": false
+}

@@ -1,0 +1,22 @@
+[
+  {"operation":"metric","metrics":["revenue"],"question":"How much revenue does the selected annual report show for its current fiscal year? Keep the original currency and exact fiscal dates."},
+  {"operation":"metric","metrics":["operating_income"],"question":"请给出所选报告当期财年的营业利润，保留原始币种和完整会计期间。"},
+  {"operation":"metric","metrics":["net_income"],"question":"Read the company's net income for the fiscal year covered by the selected report, including the original currency and fiscal dates."},
+  {"operation":"growth","metrics":["revenue"],"question":"按所选报告的当年与上年数据，计算收入同比变化率（百分比），并给出公式和两个实际期间。"},
+  {"operation":"growth","metrics":["operating_income"],"question":"Using this selected filing rather than other snapshots, calculate the percentage annual change in operating income from its previous fiscal year to its current fiscal year."},
+  {"operation":"growth","metrics":["net_income"],"question":"只依据已选财报，计算本期财年的净利润同比变化率（百分比），并保留计算所用的两个年度及原始数值。"},
+  {"operation":"summary","metrics":["revenue","operating_income","net_income"],"question":"Give an income-statement summary for the selected filing's current fiscal year: revenue, operating income and net income, with original units and fiscal periods."},
+  {"operation":"metric","metrics":["revenue"],"fiscal_year":2022,"question":"所选报告披露了上一财年的对照数据。请给出该对照年度的收入，而非本报告当年的收入，并保留原始期间。"},
+  {"operation":"metric","metrics":["net_income"],"fiscal_year":2022,"question":"From the selected FY2023 filing, report NVIDIA FY2022 net income, keeping that fact's fiscal period rather than relabeling it as FY2023."},
+  {"operation":"hybrid_growth","metrics":["revenue"],"focus":"revenue","question":"Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose."},
+  {"operation":"hybrid_growth","metrics":["operating_income"],"focus":"operating_income","question":"基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。"},
+  {"operation":"hybrid_growth","metrics":["net_income"],"focus":"net_income","question":"仅使用已选 NVIDIA FY2023 报告，给出净利润同比变化率，并解释财报披露的相关税务或业务因素。解释性结论请用英文，并附上对应英文原句。"},
+  {"operation":"explanation","metrics":["revenue"],"focus":"revenue","question":"What business drivers does NVIDIA discuss in the FY2023 report when explaining revenue changes? Cite the selected report and keep the explanation qualitative."},
+  {"operation":"explanation","metrics":["revenue"],"focus":"risk","question":"仅根据已选的 NVIDIA FY2023 财报，说明两项具体经营风险及可能影响。请用英文给出判断，并逐项附上英文原文。"},
+  {"operation":"explanation","metrics":["operating_income"],"focus":"operating_income","question":"Explain the direction of NVIDIA's FY2023 operating income change and the disclosed expense or business drivers; cite only the selected report."},
+  {"operation":"metric","metrics":["revenue"],"company":"ADBE","scenario":"unselected_company","status":"insufficient_data","question":"Use only this selected NVIDIA FY2023 document to report ADBE FY2023 revenue. Do not use other files or snapshots."},
+  {"operation":"metric","metrics":["revenue"],"fiscal_year":2026,"scenario":"missing_period","status":"insufficient_data","question":"只使用已选 FY2023 报告，查询 NVIDIA FY2026 的收入，不允许用其他来源补齐。"},
+  {"operation":"metric","metrics":["net_income"],"scenario":"quarterly","status":"insufficient_data","question":"The selected annual filing includes many figures. Give NVIDIA's Q3 FY2023 net income without inferring it from annual totals."},
+  {"operation":"metric","metrics":["revenue"],"scenario":"currency","status":"clarification_required","question":"请把所选报告当期财年收入换算为欧元；我尚未提供汇率或汇率日期。"},
+  {"operation":"comparison","metrics":["operating_income"],"scenario":"self_comparison","status":"invalid_parameters","question":"Compare NVIDIA with NVDA on FY2023 operating income using only the selected report."}
+]

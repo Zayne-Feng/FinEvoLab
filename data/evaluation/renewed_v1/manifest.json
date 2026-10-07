@@ -1,0 +1,17 @@
+{
+  "version": "renewed-v1",
+  "reference_commit": "5f81c0eb",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "files": {
+    "acceptance.json": "ca2697c2ed16fd28710ae212d609dc14a6e1c99d193a56eeecdc8f82bf146198",
+    "development.json": "46e28cd0fbed83bf8e8f5a2e497464e7b03aa23105d28624044ee034e5dce016",
+    "documents.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "validation.json": "989b159cc4aa8b34ae8570b4b803c6500fe00a4ffb2044bfa0aaa0c3704c3f2c"
+  },
+  "sources": {
+    "data/processed/reports.json": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+    "data/filing_sources.json": "f86b2ed2e220535d8eafc9822860538ebe5c49633dcfb79006208c6a7165e88c",
+    "data/indexes/contextual/structured.json": "d59939820eb02638ff78a6dcfa325743fcda4db7c9ee1f4bec7c6dbd12a6dd9d"
+  },
+  "scope": "fixed public snapshots; disjoint company/year/intent clusters; acceptance not used for search"
+}

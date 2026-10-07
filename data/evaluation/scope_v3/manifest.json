@@ -1,0 +1,58 @@
+{
+  "version": "scope_v3",
+  "status": "frozen",
+  "counts": {
+    "development": 50,
+    "validation": 50,
+    "test": 100
+  },
+  "categories": {
+    "development": {
+      "metric_query": 10,
+      "annual_growth": 8,
+      "company_comparison": 6,
+      "explanation": 8,
+      "hybrid": 8,
+      "upload": 6,
+      "boundary": 4
+    },
+    "validation": {
+      "metric_query": 10,
+      "annual_growth": 8,
+      "company_comparison": 6,
+      "explanation": 8,
+      "hybrid": 8,
+      "upload": 6,
+      "boundary": 4
+    },
+    "test": {
+      "metric_query": 15,
+      "annual_growth": 10,
+      "company_comparison": 15,
+      "explanation": 15,
+      "hybrid": 15,
+      "upload": 20,
+      "boundary": 10
+    }
+  },
+  "split_sha256": {
+    "development": "e4a06db67060db6c5b47cd55cc9df44f25f5b04c57266a70a5beb43af480ce97",
+    "validation": "12e93af5151f9ee19bb55e74752ef1893c8ecad0a906bb83ea723f119599d1dd",
+    "test": "0660436900694aeda000682293668e6857d154b6b9ca152ef9aaf6beb503a2ac"
+  },
+  "files": {
+    "documents.json": "9f083f9d8d7b5af7b52807c0de0b4b67c1ca97b6c4599e49dc5263f93f36955b",
+    "financial_reference_audit.json": "c07efd5307f376b35afaf80dcd84a307a4359cc2437822ac1571460ee84db3ec",
+    "source_anchors.json": "dcee9d87f6f1b284314e70d5e894fa6bb9d07871bbd60be044486d92918d7967"
+  },
+  "source_audit": {
+    "canonical_observations_verified": 45,
+    "method": "raw_SEC_JSON_pointer_value_and_context"
+  },
+  "independent_upload_references": 36,
+  "semantic_duplicates": 0,
+  "source_holdout": "ADBE agent answers reserved for final test",
+  "known_snapshot_role": "new task combinations over previously observed facts; regression, not unseen facts",
+  "anchors": "raw DOM keyword-selected nonexhaustive candidate anchors; diagnostic anchor hit, not gold recall",
+  "inference_unit": "task and company-fiscal-year clusters; repetitions are not independent tasks"
+}

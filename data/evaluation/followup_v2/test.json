@@ -1,0 +1,399 @@
+{
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "tasks": [
+    {
+      "id": "6749adaeae61c1da0c43",
+      "split": "test",
+      "category": "upload",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "question": "Explain the FY2023 operating income change and disclosed drivers for each of MSFT, with source passages from the selected reports.",
+      "upload_ids": [
+        "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "MSFT:2023"
+      ]
+    },
+    {
+      "id": "912b380ffa584b013a72",
+      "split": "test",
+      "category": "upload",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "question": "Calculate FY2023 annual revenue growth for AAPL. Explain the FY2023 revenue change and disclosed drivers for each of AAPL, with source passages from the selected reports.",
+      "upload_ids": [
+        "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AAPL FY2023 revenue annual change: -2.800460530319936702440607820 percent; formula (current / previous - 1) * 100.",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "AAPL",
+            "metric": "revenue",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-2.800460530319936702440607820",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "AAPL",
+                "name": "revenue",
+                "fiscal_year": 2022,
+                "value": "394328000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2021-09-26",
+                "period_end": "2022-09-24",
+                "period_kind": "annual_flow",
+                "evidence_id": "5655b1572205cd4897763c3e",
+                "report_year": 2023,
+                "extraction_method": "sec_companyfacts_annual_context"
+              },
+              {
+                "company": "AAPL",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "383285000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-09-25",
+                "period_end": "2023-09-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "2f84b41e2eabbc0926b28fbf",
+                "report_year": 2023,
+                "extraction_method": "sec_companyfacts_annual_context"
+              }
+            ],
+            "evidence_ids": [
+              "5655b1572205cd4897763c3e",
+              "2f84b41e2eabbc0926b28fbf"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "2f84b41e2eabbc0926b28fbf",
+          "5655b1572205cd4897763c3e"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "AAPL:2023"
+      ]
+    },
+    {
+      "id": "3c6e2f5d7969c529a10c",
+      "split": "test",
+      "category": "upload",
+      "company": "AMZN",
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "question": "Give the FY2023 net income amount for AMZN, with units and fiscal dates. Explain the FY2023 net income change and disclosed drivers for each of AMZN, with source passages from the selected reports.",
+      "upload_ids": [
+        "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AMZN FY2023 net_income: 30425000000 USD; period 2023-01-01 to 2023-12-31.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2023,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "AMZN:2023"
+      ]
+    },
+    {
+      "id": "e7bfa600ee7a7456fa3b",
+      "split": "test",
+      "category": "upload",
+      "company": "META",
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "question": "Explain the FY2023 operating income change and disclosed drivers for each of META, with source passages from the selected reports.",
+      "upload_ids": [
+        "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "META:2023"
+      ]
+    },
+    {
+      "id": "6a36ed0fc7f6d39c3857",
+      "split": "test",
+      "category": "upload",
+      "company": "GOOGL",
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "question": "Give the FY2024 net income amount for GOOGL, with units and fiscal dates. Explain the FY2024 net income change and disclosed drivers for each of GOOGL, with source passages from the selected reports.",
+      "upload_ids": [
+        "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "GOOGL FY2024 net_income: 100118000000 USD; period 2024-01-01 to 2024-12-31.",
+        "metrics": [
+          {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "100118000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2beb8b642968f5fd1bd8b36c",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "2beb8b642968f5fd1bd8b36c"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "GOOGL:2024"
+      ]
+    },
+    {
+      "id": "3c982f51d62778821bb6",
+      "split": "test",
+      "category": "upload",
+      "company": "AMZN",
+      "companies": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_comparison",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "question": "Compare annual revenue amounts for AMZN and GOOGL FY2024 and retain their actual fiscal periods. Explain the FY2024 revenue change and disclosed drivers for each of AMZN and GOOGL, with source passages from the selected reports.",
+      "upload_ids": [
+        "7159c2f0fb719d13066f4f92203408f092cda55e21af838b05119c0ca7478b8a",
+        "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AMZN FY2024 revenue: 637959000000 USD; period 2024-01-01 to 2024-12-31.\nGOOGL FY2024 revenue: 350018000000 USD; period 2024-01-01 to 2024-12-31.\nActual fiscal periods are aligned.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": true,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "bdf4bbf53f0eb3c5f6b3883e"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "AMZN:2024",
+        "GOOGL:2024"
+      ]
+    },
+    {
+      "id": "1799a33b393bca5657c7",
+      "split": "test",
+      "category": "upload",
+      "company": "AAPL",
+      "companies": [
+        "AAPL",
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_comparison",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "question": "Compare annual revenue amounts for AAPL and META FY2023 and retain their actual fiscal periods. Explain the FY2023 revenue change and disclosed drivers for each of AAPL and META, with source passages from the selected reports.",
+      "upload_ids": [
+        "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "AAPL FY2023 revenue: 383285000000 USD; period 2022-09-25 to 2023-09-30.\nMETA FY2023 revenue: 134902000000 USD; period 2023-01-01 to 2023-12-31.\nActual fiscal periods differ; the displayed amounts retain their original fiscal dates.",
+        "metrics": [
+          {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "383285000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-09-25",
+            "period_end": "2023-09-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "2f84b41e2eabbc0926b28fbf",
+            "report_year": 2023,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2023,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": false,
+        "evidence_ids": [
+          "2f84b41e2eabbc0926b28fbf",
+          "65727b4337c0454f5b605799"
+        ]
+      },
+      "common_support": false,
+      "fact_clusters": [
+        "AAPL:2023",
+        "META:2023"
+      ]
+    },
+    {
+      "id": "f7c682f8d8e9ee1f2794",
+      "split": "test",
+      "category": "upload",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "question": "Explain the FY2023 revenue change and disclosed drivers for each of MSFT, with source passages from the selected reports.",
+      "upload_ids": [
+        "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb"
+      ],
+      "reference_answer": null,
+      "common_support": false,
+      "fact_clusters": [
+        "MSFT:2023"
+      ]
+    }
+  ]
+}

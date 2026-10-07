@@ -1,0 +1,71 @@
+[
+  {
+    "id": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "company": "MSFT",
+    "report_year": 2024,
+    "path": "data/raw/sec_msft_2024.html",
+    "sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm"
+  },
+  {
+    "id": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "company": "AAPL",
+    "report_year": 2024,
+    "path": "data/raw/sec_aapl_2024.html",
+    "sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+  },
+  {
+    "id": "7159c2f0fb719d13066f4f92203408f092cda55e21af838b05119c0ca7478b8a",
+    "company": "AMZN",
+    "report_year": 2024,
+    "path": "data/raw/sec_amzn_2024.html",
+    "sha256": "7159c2f0fb719d13066f4f92203408f092cda55e21af838b05119c0ca7478b8a",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm"
+  },
+  {
+    "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+    "company": "META",
+    "report_year": 2024,
+    "path": "data/raw/sec_meta_2024.html",
+    "sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm"
+  },
+  {
+    "id": "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6",
+    "company": "GOOGL",
+    "report_year": 2023,
+    "path": "data/raw/sec_googl_2023.html",
+    "sha256": "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+  },
+  {
+    "id": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "company": "GOOGL",
+    "report_year": 2024,
+    "path": "data/raw/sec_googl_2024.html",
+    "sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
+  },
+  {
+    "id": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+    "company": "TSLA",
+    "report_year": 2024,
+    "path": "data/raw/acceptance_sec_tsla_2024.html",
+    "sha256": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63"
+  },
+  {
+    "id": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "company": "ADBE",
+    "report_year": 2023,
+    "path": "data/raw/acceptance_sec_adbe_2023.html",
+    "sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7"
+  },
+  {
+    "id": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "company": "ADBE",
+    "report_year": 2024,
+    "path": "data/raw/acceptance_sec_adbe_2024.html",
+    "sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9"
+  }
+]
