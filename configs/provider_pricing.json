@@ -1,0 +1,19 @@
+{
+  "currency": "USD",
+  "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "basis": "Published tariff snapshot; estimate bounds, not provider deductions",
+  "models": {
+    "deepseek-flash": {
+      "off_peak": {
+        "cached_input": "0.003",
+        "uncached_input": "0.15",
+        "output": "0.6"
+      },
+      "peak": {
+        "cached_input": "0.006",
+        "uncached_input": "0.3",
+        "output": "1.2"
+      }
+    }
+  }
+}
