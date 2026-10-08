@@ -1,0 +1,135 @@
+{
+    "run_id": "arithmetic-audit",
+    "results": [
+        {
+            "passed": true,
+            "task_id": "dbf44dd09ef68dd2",
+            "absolute_error": "0.0000000000000000000000000000",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "58a14becf7481e5a",
+            "absolute_error": "0.0000000000000000000000000100",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "e2f6e495a93cf4bd",
+            "absolute_error": "0.00000000000000000000000000",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "d06e4c8ee65ecc5f",
+            "absolute_error": "0.00000000000000000000000003",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "fd3e124b02bdf376",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "2db3a8fda54335c2",
+            "absolute_error": "0.0000000000000000000000000000",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "e1fe2a7dda9e6c92",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "98858a9fc02f1284",
+            "absolute_error": "0.000000000000000000000000040",
+            "split": "development"
+        },
+        {
+            "passed": true,
+            "task_id": "fd52cb7fe3bc3ded",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "validation"
+        },
+        {
+            "passed": true,
+            "task_id": "db629da6f0ecd21c",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "validation"
+        },
+        {
+            "passed": true,
+            "task_id": "1f2e81a9a6e292d3",
+            "absolute_error": "0.000000000000000000000000020",
+            "split": "validation"
+        },
+        {
+            "passed": true,
+            "task_id": "2e2e36273b23cf35",
+            "absolute_error": "0.000000000000000000000000040",
+            "split": "validation"
+        },
+        {
+            "passed": true,
+            "task_id": "07a3315052f022cb",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "validation"
+        },
+        {
+            "passed": true,
+            "task_id": "fb0790e9eac90023",
+            "absolute_error": "0.0000000000000000000000000000",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "23d0ee70fbc9d480",
+            "absolute_error": "0.0000000000000000000000004",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "63327ef01be12c0a",
+            "absolute_error": "0.0000000000000000000000000000",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "98ff9feac45416f3",
+            "absolute_error": "0.000000000000000000000000040",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "66afe0483a857aa2",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "a6a75cfbf8c8b6e5",
+            "absolute_error": "0.000000000000000000000000010",
+            "split": "test"
+        },
+        {
+            "passed": true,
+            "task_id": "94f631dd572cf8a3",
+            "absolute_error": "0.000000000000000000000000020",
+            "split": "test"
+        }
+    ],
+    "tolerance": "0.000001 percentage points",
+    "split_sha256": {
+        "validation": "34d8648c8b5a26d404efa303d43c93b555296d742e81417ed8f2cf13618edad7",
+        "development": "1d956cc8387aa229aa0aef120c4491cf23f25d89e66c6aea682a85b71e04f984",
+        "test": "c94f01ec727500dd12b173782b9aba10f95c9372fd42b540b720c479d0a312b2"
+    },
+    "implementation": "PowerShell System.Decimal",
+    "checked_growth_cases": 20,
+    "commit": "cd3629ccc022b87026b5e8735fc2f01aac368663",
+    "expression": "(current - previous) / previous * 100"
+}
