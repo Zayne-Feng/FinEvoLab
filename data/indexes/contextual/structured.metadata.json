@@ -1,0 +1,20 @@
+{
+  "config": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "device": "cpu",
+    "max_sequence_length": 256,
+    "batch_size": 8,
+    "normalize_embeddings": true,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "rrf_constant": 60
+  },
+  "chunks_sha256": "ef2066c4d8fedc39ad0f47a3dd7b8e5314c4cd343382b9911589c1d771c2e95d",
+  "shape": [
+    13426,
+    384
+  ],
+  "new_embeddings": 0,
+  "elapsed_seconds": 1.9690000000009604
+}
