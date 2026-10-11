@@ -1,0 +1,272 @@
+[
+  {
+    "run_id": "analysis-run-01",
+    "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+    "model": "glm-4.7-flash",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "sources_sha256": {
+      "agent.py": "f6fb8f82e667358bbc9715d36fbbd3b07fd1a7f7ff758c3fcf6833f4ea0ebb66",
+      "config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+      "ingestion.py": "1128f2ab7faa3739625ba46493ca612c923916ad6913bee22d77cb042c372ab5",
+      "tools.py": "2942289ed83ed2c47449dfc3b521cd4f9dbe39ee9fbf38b0f8a5d6aa83c805bb",
+      "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+    },
+    "status": "failed",
+    "error_type": "ModelBehaviorError",
+    "status_code": null,
+    "elapsed_seconds": 2.172
+  },
+  {
+    "run_id": "analysis-run-02",
+    "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+    "model": "glm-4.7-flash",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "sources_sha256": {
+      "agent.py": "f6fb8f82e667358bbc9715d36fbbd3b07fd1a7f7ff758c3fcf6833f4ea0ebb66",
+      "config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+      "ingestion.py": "1128f2ab7faa3739625ba46493ca612c923916ad6913bee22d77cb042c372ab5",
+      "tools.py": "2942289ed83ed2c47449dfc3b521cd4f9dbe39ee9fbf38b0f8a5d6aa83c805bb",
+      "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+    },
+    "status": "failed",
+    "error_type": "RateLimitError",
+    "status_code": 429,
+    "elapsed_seconds": 2.407
+  },
+  {
+    "run_id": "analysis-run-03",
+    "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+    "model": "glm-4.7-flash",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "sources_sha256": {
+      "agent.py": "babeeefe7b628a62934ae7181fa6a32694f7189c0448dfed0d52db57f76da3d8",
+      "config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+      "ingestion.py": "1128f2ab7faa3739625ba46493ca612c923916ad6913bee22d77cb042c372ab5",
+      "retrieval.py": "dcd20a129950e58a6efe92ae808e3ff5603e205b60da0b28a22d5f989a894a0b",
+      "tools.py": "2942289ed83ed2c47449dfc3b521cd4f9dbe39ee9fbf38b0f8a5d6aa83c805bb",
+      "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+    },
+    "status": "failed",
+    "error_type": "ModelBehaviorError",
+    "status_code": null,
+    "schema_error": "Invalid JSON when parsing ```json\n{\n  \"status\": \"insufficient_data\",\n  \"company\": \"MSFT\",\n  \"fiscal_year\": 2024,\n  \"answer\": \"Requested annual metric is unavailable\",\n  \"growth_percent\": \"\",\n  \"evidence_ids\": []\n}\n``` for TypeAdapter(AnalysisAnswer); 1 validation error for AnalysisAnswer\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\\n{\\n  \"status\": ...idence_ids\": []\\n}\\n```', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/json_invalid",
+    "elapsed_seconds": 4.156
+  },
+  {
+    "run_id": "analysis-run-04",
+    "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+    "model": "glm-4.7-flash",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "sources_sha256": {
+      "agent.py": "10f125d337a00e0d19a89f18c3af9aff4b1828a4a8d07d8869fa28d048b887af",
+      "config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+      "ingestion.py": "1128f2ab7faa3739625ba46493ca612c923916ad6913bee22d77cb042c372ab5",
+      "retrieval.py": "dcd20a129950e58a6efe92ae808e3ff5603e205b60da0b28a22d5f989a894a0b",
+      "tools.py": "2942289ed83ed2c47449dfc3b521cd4f9dbe39ee9fbf38b0f8a5d6aa83c805bb",
+      "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+    },
+    "status": "failed",
+    "error_type": "ModelBehaviorError",
+    "status_code": null,
+    "schema_error": "Invalid JSON when parsing {\"additionalProperties\":false,\"properties\":{\"answer\":{\"title\":\"Answer\",\"type\":\"string\"},\"company\":{\"title\":\"Company\",\"type\":\"string\"},\"evidence_ids\":{\"items\":{\"type\":\"string\"},\"title\":\"Evidence Ids\",\"type\":\"array\"},\"fiscal_year\":{\"title\":\"Fiscal Year\",\"type\":\"integer\"},\"growth_percent\":{\"title\":\"Growth Percent\",\"type\":\"string\"},\"status\":{\"enum\":[\"complete\",\"insufficient_data\"],\"title\":\"Status\",\"type\":\"string\"}},\"required\":[\"status\",\"company\",\"fiscal_year\",\"answer\",\"growth_percent\",\"evidence_ids\"],\"title\":\"AnalysisAnswer\",\"type\":\"object\",\"answer\":\"微软（MSFT）2024财年年度营收增长为15.6699620130712785786754123%。\",\"company\":\"MSFT\",\"fiscal_year\":2024,\"growth_percent\":\"15.6699620130712785786754123\",\"status\":\"complete\",\"evidence_ids\":[\"677a30b90697682b2d224c84\"]} for TypeAdapter(AnalysisAnswer); 5 validation errors for AnalysisAnswer\nadditionalProperties\n  Extra inputs are not permitted [type=extra_forbidden, input_value=False, input_type=bool]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nproperties\n  Extra inputs are not permitted [type=extra_forbidden, input_value={'answer': {'title': 'Ans...tus', 'type': 'string'}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\nrequired\n  Extra inputs are not permitted [type=extra_forbidden, input_value=['status', 'company', 'fi...ercent', 'evidence_ids'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden\ntitle\n  Extra inputs are not permitted [type=extra_forbidden, input_value='Analys",
+    "elapsed_seconds": 10.906,
+    "tool_events": [
+      {
+        "tool": "calculate_metrics",
+        "company": "MSFT",
+        "metric": "revenue",
+        "fiscal_year": 2024,
+        "output": {
+          "company": "MSFT",
+          "metric": "revenue",
+          "fiscal_year": 2024,
+          "previous_year": 2023,
+          "value": "15.66996201307127857867541230",
+          "unit": "percent",
+          "formula": "(current / previous - 1) * 100",
+          "inputs": [
+            {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            }
+          ],
+          "evidence_ids": [
+            "677a30b90697682b2d224c84"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "run_id": "analysis-run-05",
+    "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+    "model": "glm-4.7-flash",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "sources_sha256": {
+      "agent.py": "a33c41cf44c17d0eaa40b0f5ab6d2e7bd5c21a82d3eb69fc1bcbd8f5a004c677",
+      "config.py": "6c48c24e228ab50ad6798abeb4903d38311c56813450616422ac57f870d98b26",
+      "ingestion.py": "1128f2ab7faa3739625ba46493ca612c923916ad6913bee22d77cb042c372ab5",
+      "retrieval.py": "dcd20a129950e58a6efe92ae808e3ff5603e205b60da0b28a22d5f989a894a0b",
+      "tools.py": "2942289ed83ed2c47449dfc3b521cd4f9dbe39ee9fbf38b0f8a5d6aa83c805bb",
+      "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+    },
+    "result": {
+      "answer": {
+        "status": "complete",
+        "company": "MSFT",
+        "fiscal_year": 2024,
+        "answer": "Microsoft's fiscal year 2024 annual revenue growth is 15.66996201307127857867541230 percent. Revenue increased from $211,915,000,000 in fiscal year 2023 to $245,122,000,000 in fiscal year 2024.",
+        "growth_percent": "15.66996201307127857867541230",
+        "evidence_ids": [
+          "677a30b90697682b2d224c84"
+        ]
+      },
+      "events": [
+        {
+          "tool": "calculate_metrics",
+          "company": "MSFT",
+          "metric": "revenue",
+          "fiscal_year": 2024,
+          "output": {
+            "company": "MSFT",
+            "metric": "revenue",
+            "fiscal_year": 2024,
+            "previous_year": 2023,
+            "value": "15.66996201307127857867541230",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "211915000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-07-01",
+                "period_end": "2023-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "677a30b90697682b2d224c84",
+                "report_year": 2024,
+                "extraction_method": "html_table_profile"
+              },
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2024,
+                "value": "245122000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "677a30b90697682b2d224c84",
+                "report_year": 2024,
+                "extraction_method": "html_table_profile"
+              }
+            ],
+            "evidence_ids": [
+              "677a30b90697682b2d224c84"
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "id": "677a30b90697682b2d224c84",
+          "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+          "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "annual",
+          "section": "income-statements",
+          "locator": "css:article#income-statements table|table=0|row=5",
+          "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nTotal revenue | 245,122 |  | 211,915 |  | 198,270"
+        }
+      ],
+      "data_version": "e2fac62d77b96c92b3d2108b49d0fe0e6795bb64e8e5d0017beecdcabc431f3c",
+      "usage": {
+        "requests": 3,
+        "input_tokens": 2255,
+        "output_tokens": 500,
+        "total_tokens": 2755
+      }
+    },
+    "status": "passed",
+    "elapsed_seconds": 13.859,
+    "tool_events": [
+      {
+        "tool": "calculate_metrics",
+        "company": "MSFT",
+        "metric": "revenue",
+        "fiscal_year": 2024,
+        "output": {
+          "company": "MSFT",
+          "metric": "revenue",
+          "fiscal_year": 2024,
+          "previous_year": 2023,
+          "value": "15.66996201307127857867541230",
+          "unit": "percent",
+          "formula": "(current / previous - 1) * 100",
+          "inputs": [
+            {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            }
+          ],
+          "evidence_ids": [
+            "677a30b90697682b2d224c84"
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ company }} FY{{ year }} Revenue Analysis</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;color:#17324d;background:#f3f6fa;margin:0}main{max-width:900px;margin:36px auto;background:white;padding:40px;border-radius:12px}h1{font-size:30px;line-height:1.2}h2{font-size:21px;margin-top:30px}.value{font-size:38px;color:#16765f;font-weight:700}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:12px;border-bottom:1px solid #dce4ee}th{background:#17324d;color:white}img{max-width:100%;height:auto}pre,code{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}a{color:#1266a2;overflow-wrap:anywhere}.metadata{font-size:12px;color:#536479}section{border-top:1px solid #dce4ee;margin-top:20px;padding-top:12px}@media print{body{background:white}main{margin:0;padding:0}}
+</style></head>
+<body><main><p>FinEvoLab · Public Financial Statements</p>
+<h1>{{ company }} FY{{ year }} Revenue Analysis</h1>
+<p class="value">{{ growth }}% YoY</p><p>Annual revenue growth based on comparable fiscal periods.</p>
+<table><thead><tr><th>Fiscal year</th><th>Period</th><th>Revenue (USD)</th></tr></thead><tbody>
+{% for item in values %}<tr><td>{{ item.year }}</td><td>{{ item.start }} to {{ item.end }}</td><td>{{ item.revenue }}</td></tr>{% endfor %}
+</tbody></table><p><strong>Formula:</strong> {{ formula }}</p>
+<img alt="Annual revenue chart in USD millions" src="data:image/png;base64,{{ chart }}">
+<h2>Evidence and sources</h2>
+{% for item in evidence %}<section><a href="{{ item.source_url }}">{{ company }} FY{{ item.report_year }} {{ item.report_type }} source</a><p class="metadata">{{ item.locator }}</p><pre>{{ item.text }}</pre><p class="metadata">Snapshot SHA-256: {{ item.source_sha256 }}</p></section>{% endfor %}
+<p class="metadata">Data version: {{ data_version }}</p>
+</main></body></html>

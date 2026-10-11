@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FinEvoLab Financial Analysis</title>
+<style>body{font:15px/1.6 system-ui;color:#17324d;max-width:1040px;margin:40px auto;padding:0 24px}h1{font-size:30px}table{border-collapse:collapse;width:100%;margin:24px 0}td,th{padding:12px;text-align:left;border-bottom:1px solid #dce4ee;vertical-align:top}th{background:#e2e8f0}pre{white-space:pre-wrap;overflow-wrap:anywhere}.meta{color:#52657a;font-size:12px;overflow-wrap:anywhere}.source{margin:20px 0;padding:16px;background:#f1f5f9}a{color:#1266a2}</style></head>
+<body><h1>FinEvoLab Financial Analysis</h1><p>{{ question }}</p><p><strong>Status:</strong> {{ overall_status }}</p>
+<p>{{ answer.answer }}</p>
+{% if observations %}<table><thead><tr><th>Company / FY</th><th>Metric</th><th>Value / unit</th><th>Actual period</th></tr></thead><tbody>
+{% for item in observations %}<tr><td>{{ item.company }} / {{ item.fiscal_year }}</td><td>{{ item.name }}</td><td>{{ item.value }} {{ item.unit }}</td><td>{{ item.period_start }} to {{ item.period_end }}</td></tr>{% endfor %}
+</tbody></table>{% endif %}
+{% for item in answer.calculations %}<p>{{ item.company }} FY{{ item.fiscal_year }} {{ item.metric }} growth: <strong>{{ item.value }}%</strong><br>Formula: {{ item.formula }}</p>{% endfor %}
+{% if answer.periods_aligned is defined and answer.periods_aligned is not none %}<p>Fiscal periods aligned: {{ answer.periods_aligned }}</p>{% endif %}
+{% if narrative %}<h2>Report explanation</h2><p>Status: {{ narrative.status }}</p>{% endif %}
+{% for claim in narrative.claims | default([]) %}<article class="source"><p>{{ claim.statement }}</p><p class="meta">Reference: {{ claim.chunk_id }}</p><blockquote>{{ claim.quote }}</blockquote></article>{% endfor %}
+{% if source_issues %}<p>Selected document values differ from the pinned snapshot; the selected source was used.</p>{% endif %}
+<h2>Evidence</h2>{% for item in evidence %}<article class="source"><strong>{{ item.id }}</strong><br><a href="{{ item.source_url }}" rel="noopener noreferrer">{{ item.company }} FY{{ item.report_year }} source</a><pre>{{ item.text }}</pre><p class="meta">Location: {{ item.locator }}<br>SHA256: {{ item.source_sha256 }}</p></article>{% endfor %}
+<p class="meta">Data version: {{ data_version }}</p></body></html>

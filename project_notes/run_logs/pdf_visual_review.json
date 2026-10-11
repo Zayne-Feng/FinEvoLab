@@ -1,0 +1,70 @@
+{
+    "upstream": {
+        "path": "finrobot_equity/core/tests/test_output/Test_Report_AAPL-160306.pdf",
+        "sha256": "2713f228386c561532f5a05c77d60ffa796dcf47e8709c44171e25031b34e729",
+        "pages": 8,
+        "pages_reviewed": 8,
+        "status": "reviewed_with_layout_notes",
+        "input_kind": "upstream_mock_fixture",
+        "findings": [
+            "All pages render with readable text, tables and charts.",
+            "Some section headings precede a page break.",
+            "The final continued table does not repeat its column header."
+        ],
+        "previews": [
+            {
+                "name": "page-1.png",
+                "sha256": "bf4b5ab73326c2e72c3ab95644b169aa70ab338b005e88056dc747fd0304df39"
+            },
+            {
+                "name": "page-2.png",
+                "sha256": "32aad2cc25f61881e73e6353faeebdcf7e203a8f972cb2accadfe63935f45a9c"
+            },
+            {
+                "name": "page-3.png",
+                "sha256": "466c4ce43df9e16a1cee45dd141866e6f0736340ca9dd53a932a94e3776c47c1"
+            },
+            {
+                "name": "page-4.png",
+                "sha256": "ab6671c87e4a2f942f96499b02989f63bc23fa275bba64c4cbf07d239494beca"
+            },
+            {
+                "name": "page-5.png",
+                "sha256": "1abded7d47c601679efc69440efc504edd447d0f499f5af862ab98f968c569df"
+            },
+            {
+                "name": "page-6.png",
+                "sha256": "c8778c6e95f2870c4ab313d4846362b7d405e8ecf750efc414893cb8a949c85c"
+            },
+            {
+                "name": "page-7.png",
+                "sha256": "19b1161bca16a6cd74e4acfb3a01da69f2bd92fd22d0ee66a2faf501664417fb"
+            },
+            {
+                "name": "page-8.png",
+                "sha256": "c2815d4462276c54eaed95f191879db61ab05cbd023607fdf870ddab90dabdd2"
+            }
+        ]
+    },
+    "finevolab": {
+        "path": "output/tasks/deepseekintegratedverified/report/report.pdf",
+        "sha256": "51c0e3e979c1c0b6dec4ca63c8dfbcd59468a1a8a15b9e6678ff10223297c50b",
+        "pages": 1,
+        "pages_reviewed": 1,
+        "status": "passed",
+        "input_kind": "real_source_validated_model_analysis",
+        "font": "embedded_simhei",
+        "preview": "output/tasks/deepseekintegratedverified/report/preview.png",
+        "findings": [
+            "The financial observations, periods and evidence references are legible without clipping."
+        ]
+    },
+    "live_web_demo": {
+        "task_id": "b6ee5873aacd4168905b240670966dd5",
+        "path": "output/reports/live_web_demo.pdf",
+        "sha256": "93bccead45684f4953634045f9ec0590a25cc2bcd12a1e010a8891ea60b487f5",
+        "preview": "output/reports/live_web_demo.png",
+        "pages_reviewed": 1,
+        "status": "passed"
+    }
+}
