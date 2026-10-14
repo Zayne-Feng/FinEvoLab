@@ -1,0 +1,37 @@
+{
+  "version": "open_text_v1",
+  "applies_to": ["integrated_analysis"],
+  "dimensions": {
+    "factual_support": {
+      "0": "A material amount, direction, company or financial claim contradicts or lacks source support.",
+      "1": "Stated amounts are supported but one required measure is omitted or ambiguously described.",
+      "2": "All three required measures are correctly grounded; qualitative claims follow from the observations."
+    },
+    "period_and_units": {
+      "0": "The answer mixes periods, currencies or units, or labels fiscal data as calendar-year data.",
+      "1": "The fiscal year and units are correct but actual dates or disclosure scope are incomplete.",
+      "2": "Company, actual annual dates, currency and unit are explicit and consistent."
+    },
+    "interpretation": {
+      "0": "Unsupported causes, forecasts or investment conclusions replace interpretation of the requested observations.",
+      "1": "The answer lists correct values without distinguishing revenue, operating income and net income.",
+      "2": "The answer explains a source-supported relationship among the three measures and distinguishes their meanings."
+    },
+    "citation_support": {
+      "0": "Citations are absent, fabricated or attached to unrelated claims.",
+      "1": "Some claims have correct citations but at least one requested measure lacks clear support.",
+      "2": "Every requested measure has a resolvable reference supporting its amount and fiscal context."
+    }
+  },
+  "maximum_score": 8,
+  "primary_task_score": "unchanged_strict_structured_checks",
+  "calibration": {
+    "rater_count": 2,
+    "development_only": true,
+    "review_dimensions_independently": true,
+    "agreement_measure": "exact_dimension_agreement_and_mean_absolute_difference",
+    "minimum_exact_dimension_agreement": 0.8,
+    "maximum_mean_absolute_difference": 0.25,
+    "adjudicate_disagreements_before_freezing_judge": true
+  }
+}
