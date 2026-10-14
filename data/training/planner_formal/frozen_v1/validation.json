@@ -1,0 +1,4032 @@
+{
+  "cases": [
+    {
+      "id": "validation_00_0_en",
+      "group_id": "validation_00",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "What value does MSFT report as total annual revenue in fiscal 2023?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_00_0_zh",
+      "group_id": "validation_00",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "MSFT将2023财年的全年营收总额报告为多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_00_1_en",
+      "group_id": "validation_00",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "What value does Apple report as total annual operating income in fiscal 2024?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_00_1_zh",
+      "group_id": "validation_00",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "Apple将2024财年的全年营业利润总额报告为多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_01_0_en",
+      "group_id": "validation_01",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "Read the FY2024 operating income line for Apple and attach the fiscal period.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_01_0_zh",
+      "group_id": "validation_01",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "读取Apple在2024财年的营业利润项目，并附上财年期间。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_01_1_en",
+      "group_id": "validation_01",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "Read the FY2023 net income line for GOOGL and attach the fiscal period.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_01_1_zh",
+      "group_id": "validation_01",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "读取GOOGL在2023财年的净利润项目，并附上财年期间。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_02_0_en",
+      "group_id": "validation_02",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "Find GOOGL's consolidated FY2023 net income; a monetary figure is sufficient.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_02_0_zh",
+      "group_id": "validation_02",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "查找GOOGL在2023财年的合并净利润；提供金额即可。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_02_1_en",
+      "group_id": "validation_02",
+      "split": "validation",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "Find Amazon's consolidated FY2024 revenue; a monetary figure is sufficient.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_02_1_zh",
+      "group_id": "validation_02",
+      "split": "validation",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "查找Amazon在2024财年的合并营收；提供金额即可。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_03_0_en",
+      "group_id": "validation_03",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Compute the percentage difference between Amazon's FY2024 and FY2023 revenue, using FY2023 as denominator.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_03_0_zh",
+      "group_id": "validation_03",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "计算Amazon在2024与2023财年的营收百分比差异，以2023财年为分母。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_03_1_en",
+      "group_id": "validation_03",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Compute the percentage difference between META's FY2023 and FY2022 operating income, using FY2022 as denominator.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_03_1_zh",
+      "group_id": "validation_03",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "计算META在2023与2022财年的营业利润百分比差异，以2022财年为分母。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_04_0_en",
+      "group_id": "validation_04",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Determine the annual percentage increase or decrease in META's operating income for FY2023.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_04_0_zh",
+      "group_id": "validation_04",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "确定META在2023财年的营业利润同比增减百分比。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_04_1_en",
+      "group_id": "validation_04",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Determine the annual percentage increase or decrease in Microsoft's net income for FY2024.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_04_1_zh",
+      "group_id": "validation_04",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "确定Microsoft在2024财年的净利润同比增减百分比。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_05_0_en",
+      "group_id": "validation_05",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "For Microsoft, return FY2024 net income YoY in percent rather than only the amount.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_05_0_zh",
+      "group_id": "validation_05",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "对Microsoft，返回2024财年的净利润同比百分比，而不只是金额。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_05_1_en",
+      "group_id": "validation_05",
+      "split": "validation",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "For AAPL, return FY2023 revenue YoY in percent rather than only the amount.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_05_1_zh",
+      "group_id": "validation_05",
+      "split": "validation",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "对AAPL，返回2023财年的营收同比百分比，而不只是金额。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_06_0_en",
+      "group_id": "validation_06",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Rank AAPL and GOOGL by their reported FY2023 revenue, showing both observations.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_06_0_zh",
+      "group_id": "validation_06",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "按已报告的2023财年营收对AAPL与GOOGL排序，并展示两项观测。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_06_1_en",
+      "group_id": "validation_06",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Rank Alphabet and AMZN by their reported FY2024 operating income, showing both observations.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_06_1_zh",
+      "group_id": "validation_06",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "按已报告的2024财年营业利润对Alphabet与AMZN排序，并展示两项观测。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_07_0_en",
+      "group_id": "validation_07",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Contrast the FY2024 operating income amounts of Alphabet and AMZN and state if dates differ.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_07_0_zh",
+      "group_id": "validation_07",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "对照Alphabet与AMZN在2024财年的营业利润金额，并说明日期是否不同。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_07_1_en",
+      "group_id": "validation_07",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Contrast the FY2023 net income amounts of AMZN and META and state if dates differ.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN",
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_07_1_zh",
+      "group_id": "validation_07",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "对照AMZN与META在2023财年的净利润金额，并说明日期是否不同。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN",
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_08_0_en",
+      "group_id": "validation_08",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "For fiscal 2023, provide a two-company comparison of net income: AMZN versus META.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN",
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_08_0_zh",
+      "group_id": "validation_08",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "针对2023财年，提供AMZN与META的净利润双公司比较。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN",
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_08_1_en",
+      "group_id": "validation_08",
+      "split": "validation",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "For fiscal 2024, provide a two-company comparison of revenue: Meta versus MSFT.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_08_1_zh",
+      "group_id": "validation_08",
+      "split": "validation",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "针对2024财年，提供Meta与MSFT的营收双公司比较。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_09_0_en",
+      "group_id": "validation_09",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Without ranking monetary values, verify FY2024 fiscal start and end dates for Meta versus MSFT.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_09_0_zh",
+      "group_id": "validation_09",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "不比较金额高低，仅核对Meta与MSFT在2024财年的起止日期是否相同。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_09_1_en",
+      "group_id": "validation_09",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Without ranking monetary values, verify FY2023 fiscal start and end dates for MSFT versus AAPL.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_09_1_zh",
+      "group_id": "validation_09",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "不比较金额高低，仅核对MSFT与AAPL在2023财年的起止日期是否相同。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_10_0_en",
+      "group_id": "validation_10",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Are the annual periods labeled FY2023 actually aligned between MSFT and AAPL?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_10_0_zh",
+      "group_id": "validation_10",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "MSFT和AAPL标为2023财年的年度期间是否实际对齐？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_10_1_en",
+      "group_id": "validation_10",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Are the annual periods labeled FY2024 actually aligned between Apple and GOOGL?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_10_1_zh",
+      "group_id": "validation_10",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "Apple和GOOGL标为2024财年的年度期间是否实际对齐？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_11_0_en",
+      "group_id": "validation_11",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Assess exact fiscal-date compatibility for Apple and GOOGL, FY2024; do not fetch an amount comparison.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_11_0_zh",
+      "group_id": "validation_11",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "判断Apple与GOOGL的2024财年日期是否严格一致，无需进行金额比较。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_11_1_en",
+      "group_id": "validation_11",
+      "split": "validation",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Assess exact fiscal-date compatibility for GOOGL and AMZN, FY2023; do not fetch an amount comparison.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_11_1_zh",
+      "group_id": "validation_11",
+      "split": "validation",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "判断GOOGL与AMZN的2023财年日期是否严格一致，无需进行金额比较。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL",
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year"
+      ]
+    },
+    {
+      "id": "validation_12_0_en",
+      "group_id": "validation_12",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Collect revenue plus operating income plus net income for GOOGL's FY2023 in one view.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_12_0_zh",
+      "group_id": "validation_12",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "将GOOGL在2023财年的营收、营业利润与净利润集中展示。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_12_1_en",
+      "group_id": "validation_12",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Collect revenue plus operating income plus net income for Amazon's FY2024 in one view.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_12_1_zh",
+      "group_id": "validation_12",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "将Amazon在2024财年的营收、营业利润与净利润集中展示。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_13_0_en",
+      "group_id": "validation_13",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Provide a fiscal 2024 financial snapshot of Amazon, containing all three totals: revenue, operating income, net income.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_13_0_zh",
+      "group_id": "validation_13",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "提供Amazon在2024财年的财务概览，包含营收、营业利润及净利润三项总额。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_13_1_en",
+      "group_id": "validation_13",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Provide a fiscal 2023 financial snapshot of META, containing all three totals: revenue, operating income, net income.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_13_1_zh",
+      "group_id": "validation_13",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "提供META在2023财年的财务概览，包含营收、营业利润及净利润三项总额。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_14_0_en",
+      "group_id": "validation_14",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "I need META's FY2023 revenue together with both operating and net income.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_14_0_zh",
+      "group_id": "validation_14",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "我需要META在2023财年的营收，以及营业利润和净利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_14_1_en",
+      "group_id": "validation_14",
+      "split": "validation",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "I need Microsoft's FY2024 revenue together with both operating and net income.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_14_1_zh",
+      "group_id": "validation_14",
+      "split": "validation",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "我需要Microsoft在2024财年的营收，以及营业利润和净利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_15_0_en",
+      "group_id": "validation_15",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Describe management's explanation of Microsoft's FY2024 revenue movement; omit numerical calculations.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_15_0_zh",
+      "group_id": "validation_15",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "描述管理层对Microsoft在2024财年营收变化的解释，省略数值计算。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_15_1_en",
+      "group_id": "validation_15",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Describe management's explanation of AAPL's FY2023 revenue movement; omit numerical calculations.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_15_1_zh",
+      "group_id": "validation_15",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "描述管理层对AAPL在2023财年营收变化的解释，省略数值计算。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_16_0_en",
+      "group_id": "validation_16",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Which operating factors does the annual report cite for AAPL's FY2023 operating-income change?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_16_0_zh",
+      "group_id": "validation_16",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "年报将AAPL在2023财年营业利润变化归因于哪些经营因素？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_16_1_en",
+      "group_id": "validation_16",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Which operating factors does the annual report cite for Alphabet's FY2024 operating-income change?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_16_1_zh",
+      "group_id": "validation_16",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "年报将Alphabet在2024财年营业利润变化归因于哪些经营因素？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_17_0_en",
+      "group_id": "validation_17",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Read Alphabet's FY2024 risk discussion and identify threats to the business.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_17_0_zh",
+      "group_id": "validation_17",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "阅读Alphabet的2024财年风险讨论，指出业务面临的威胁。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_17_1_en",
+      "group_id": "validation_17",
+      "split": "validation",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Read AMZN's FY2023 risk discussion and identify threats to the business.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_17_1_zh",
+      "group_id": "validation_17",
+      "split": "validation",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "阅读AMZN的2023财年风险讨论，指出业务面临的威胁。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_18_0_en",
+      "group_id": "validation_18",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Report AMZN's FY2023 revenue number, then explain the revenue drivers from its annual report.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_18_0_zh",
+      "group_id": "validation_18",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "报告AMZN在2023财年的营收数值，再根据年报解释营收驱动因素。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_18_1_en",
+      "group_id": "validation_18",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Report Meta's FY2024 revenue number, then explain the revenue drivers from its annual report.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_18_1_zh",
+      "group_id": "validation_18",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "报告Meta在2024财年的营收数值，再根据年报解释营收驱动因素。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_19_0_en",
+      "group_id": "validation_19",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Give Meta's FY2024 net-income YoY percentage alongside management's explanation.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_19_0_zh",
+      "group_id": "validation_19",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "给出Meta在2024财年的净利润同比百分比，同时附上管理层的解释。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_19_1_en",
+      "group_id": "validation_19",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Give MSFT's FY2023 net-income YoY percentage alongside management's explanation.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_19_1_zh",
+      "group_id": "validation_19",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "给出MSFT在2023财年的净利润同比百分比，同时附上管理层的解释。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_20_0_en",
+      "group_id": "validation_20",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Show MSFT versus AAPL FY2023 revenue amounts and discuss the risk disclosures for both.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "comparison",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_20_0_zh",
+      "group_id": "validation_20",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "展示MSFT与AAPL在2023财年的营收金额，并讨论两家公司的风险披露。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "comparison",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_20_1_en",
+      "group_id": "validation_20",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Show Apple versus GOOGL FY2024 revenue amounts and discuss the risk disclosures for both.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "comparison",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_20_1_zh",
+      "group_id": "validation_20",
+      "split": "validation",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "展示Apple与GOOGL在2024财年的营收金额，并讨论两家公司的风险披露。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "comparison",
+        "companies": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics",
+        "topic",
+        "numeric_intent"
+      ]
+    },
+    {
+      "id": "validation_21_0_en",
+      "group_id": "validation_21",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "How large was Apple's revenue in Q3 of fiscal 2024?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_21_0_zh",
+      "group_id": "validation_21",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "Apple在2024财年第三季度的营收是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_21_1_en",
+      "group_id": "validation_21",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "How large was GOOGL's operating income in Q3 of fiscal 2023?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_21_1_zh",
+      "group_id": "validation_21",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "GOOGL在2023财年第三季度的营业利润是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_22_0_en",
+      "group_id": "validation_22",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Estimate future annual operating income for GOOGL after FY2023.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_22_0_zh",
+      "group_id": "validation_22",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "估计GOOGL在2023财年之后的未来全年营业利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_22_1_en",
+      "group_id": "validation_22",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Estimate future annual net income for Amazon after FY2024.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_22_1_zh",
+      "group_id": "validation_22",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "估计Amazon在2024财年之后的未来全年净利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_23_0_en",
+      "group_id": "validation_23",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "List separate yearly net income figures for Amazon in FY2023 and FY2024; do not compute growth.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_23_0_zh",
+      "group_id": "validation_23",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "分别列出Amazon在2023与2024财年的净利润数值，不计算增长率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_23_1_en",
+      "group_id": "validation_23",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "List separate yearly revenue figures for META in FY2022 and FY2023; do not compute growth.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_23_1_zh",
+      "group_id": "validation_23",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "分别列出META在2022与2023财年的营收数值，不计算增长率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_24_0_en",
+      "group_id": "validation_24",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Find the annual revenue for META, with the year still unspecified.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year"
+      ]
+    },
+    {
+      "id": "validation_24_0_zh",
+      "group_id": "validation_24",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "查找META的全年营收，年份尚未指定。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year"
+      ]
+    },
+    {
+      "id": "validation_24_1_en",
+      "group_id": "validation_24",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Find the annual operating income for Microsoft, with the year still unspecified.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year"
+      ]
+    },
+    {
+      "id": "validation_24_1_zh",
+      "group_id": "validation_24",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "查找Microsoft的全年营业利润，年份尚未指定。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year"
+      ]
+    },
+    {
+      "id": "validation_25_0_en",
+      "group_id": "validation_25",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Give Microsoft's FY2024 operating income in GBP without assuming an exchange rate.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_25_0_zh",
+      "group_id": "validation_25",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "以英镑提供Microsoft在2024财年的营业利润，但不要假设汇率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_25_1_en",
+      "group_id": "validation_25",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Give AAPL's FY2023 net income in GBP without assuming an exchange rate.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_25_1_zh",
+      "group_id": "validation_25",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "以英镑提供AAPL在2023财年的净利润，但不要假设汇率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_26_0_en",
+      "group_id": "validation_26",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Fetch FY2023 annual net income, but the company name is absent.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_26_0_zh",
+      "group_id": "validation_26",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "提取2023财年的全年净利润，但公司名称缺失。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_26_1_en",
+      "group_id": "validation_26",
+      "split": "validation",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Fetch FY2024 annual revenue, but the company name is absent.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_26_1_zh",
+      "group_id": "validation_26",
+      "split": "validation",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "提取2024财年的全年营收，但公司名称缺失。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope"
+      ]
+    },
+    {
+      "id": "validation_27_0_en",
+      "group_id": "validation_27",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Use the single selected filing to identify the issuer, fiscal year and annual revenue.",
+        "selected_documents": [
+          {
+            "company": "GOOGL",
+            "report_year": 2024,
+            "id": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_27_0_zh",
+      "group_id": "validation_27",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "根据唯一选中的申报文件确定发行人、财年并查询全年营收。",
+        "selected_documents": [
+          {
+            "company": "GOOGL",
+            "report_year": 2024,
+            "id": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "GOOGL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_27_1_en",
+      "group_id": "validation_27",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Use the single selected filing to identify the issuer, fiscal year and annual operating income.",
+        "selected_documents": [
+          {
+            "company": "AMZN",
+            "report_year": 2023,
+            "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_27_1_zh",
+      "group_id": "validation_27",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "根据唯一选中的申报文件确定发行人、财年并查询全年营业利润。",
+        "selected_documents": [
+          {
+            "company": "AMZN",
+            "report_year": 2023,
+            "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_28_0_en",
+      "group_id": "validation_28",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Read FY2022 comparative operating income from the annual report currently selected.",
+        "selected_documents": [
+          {
+            "company": "AMZN",
+            "report_year": 2023,
+            "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2022,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_28_0_zh",
+      "group_id": "validation_28",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "从当前选中的年报读取2022财年用于比较的营业利润。",
+        "selected_documents": [
+          {
+            "company": "AMZN",
+            "report_year": 2023,
+            "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "AMZN"
+        ],
+        "fiscal_year": 2022,
+        "report_year": 2023,
+        "metrics": [
+          "operating_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_28_1_en",
+      "group_id": "validation_28",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Read FY2023 comparative net income from the annual report currently selected.",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2024,
+            "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_28_1_zh",
+      "group_id": "validation_28",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "从当前选中的年报读取2023财年用于比较的净利润。",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2024,
+            "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2024,
+        "metrics": [
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "metrics"
+      ]
+    },
+    {
+      "id": "validation_29_0_en",
+      "group_id": "validation_29",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "What risks does the currently selected filing disclose for its own fiscal year?",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2024,
+            "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_29_0_zh",
+      "group_id": "validation_29",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "当前选中的申报文件为该财年披露了哪些风险？",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2024,
+            "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_29_1_en",
+      "group_id": "validation_29",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "What risks does the currently selected filing disclose for its own fiscal year?",
+        "selected_documents": [
+          {
+            "company": "MSFT",
+            "report_year": 2023,
+            "id": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    },
+    {
+      "id": "validation_29_1_zh",
+      "group_id": "validation_29",
+      "split": "validation",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "当前选中的申报文件为该财年披露了哪些风险？",
+        "selected_documents": [
+          {
+            "company": "MSFT",
+            "report_year": 2023,
+            "id": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "semantic_fields": [
+        "intent",
+        "companies",
+        "scope",
+        "fiscal_year",
+        "report_year",
+        "topic"
+      ]
+    }
+  ]
+}

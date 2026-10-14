@@ -1,0 +1,240 @@
+{"case_id": "test_00_0_en", "input": {"question": "Identify the consolidated revenue amount attributable to MSFT in FY2023, with units.", "selected_documents": []}}
+{"case_id": "test_00_0_zh", "input": {"question": "确定MSFT在2023财年的合并营收金额及单位。", "selected_documents": []}}
+{"case_id": "test_00_1_en", "input": {"question": "Identify the consolidated operating income amount attributable to Nvidia in FY2024, with units.", "selected_documents": []}}
+{"case_id": "test_00_1_zh", "input": {"question": "确定Nvidia在2024财年的合并营业利润金额及单位。", "selected_documents": []}}
+{"case_id": "test_01_0_en", "input": {"question": "For fiscal 2024, quote Apple's reported annual operating income total, not a growth rate.", "selected_documents": []}}
+{"case_id": "test_01_0_zh", "input": {"question": "针对2024财年，给出Apple报告的全年营业利润总额，不需要增长率。", "selected_documents": []}}
+{"case_id": "test_01_1_en", "input": {"question": "For fiscal 2023, quote TSLA's reported annual net income total, not a growth rate.", "selected_documents": []}}
+{"case_id": "test_01_1_zh", "input": {"question": "针对2023财年，给出TSLA报告的全年净利润总额，不需要增长率。", "selected_documents": []}}
+{"case_id": "test_02_0_en", "input": {"question": "Locate net income in GOOGL's FY2023 annual statements and give that monetary observation.", "selected_documents": []}}
+{"case_id": "test_02_0_zh", "input": {"question": "在GOOGL的2023财年年度报表中定位净利润，给出对应金额观测。", "selected_documents": []}}
+{"case_id": "test_02_1_en", "input": {"question": "Locate revenue in Adobe's FY2024 annual statements and give that monetary observation.", "selected_documents": []}}
+{"case_id": "test_02_1_zh", "input": {"question": "在Adobe的2024财年年度报表中定位营收，给出对应金额观测。", "selected_documents": []}}
+{"case_id": "test_03_0_en", "input": {"question": "My requested data point is Amazon / FY2024 / annual revenue; include provenance.", "selected_documents": []}}
+{"case_id": "test_03_0_zh", "input": {"question": "我需要的数据点为Amazon、2024财年、全年营收，请附来源。", "selected_documents": []}}
+{"case_id": "test_03_1_en", "input": {"question": "My requested data point is NVDA / FY2023 / annual operating income; include provenance.", "selected_documents": []}}
+{"case_id": "test_03_1_zh", "input": {"question": "我需要的数据点为NVDA、2023财年、全年营业利润，请附来源。", "selected_documents": []}}
+{"case_id": "test_04_0_en", "input": {"question": "Read back the full-year operating income booked by META in fiscal 2023.", "selected_documents": []}}
+{"case_id": "test_04_0_zh", "input": {"question": "读取META在2023财年入账的全年营业利润。", "selected_documents": []}}
+{"case_id": "test_04_1_en", "input": {"question": "Read back the full-year net income booked by Tesla in fiscal 2024.", "selected_documents": []}}
+{"case_id": "test_04_1_zh", "input": {"question": "读取Tesla在2024财年入账的全年净利润。", "selected_documents": []}}
+{"case_id": "test_05_0_en", "input": {"question": "State Microsoft's fiscal 2024 net income as an absolute amount, preserving the stated currency.", "selected_documents": []}}
+{"case_id": "test_05_0_zh", "input": {"question": "以绝对金额列出Microsoft在2024财年的净利润，保留披露币种。", "selected_documents": []}}
+{"case_id": "test_05_1_en", "input": {"question": "State ADBE's fiscal 2023 revenue as an absolute amount, preserving the stated currency.", "selected_documents": []}}
+{"case_id": "test_05_1_zh", "input": {"question": "以绝对金额列出ADBE在2023财年的营收，保留披露币种。", "selected_documents": []}}
+{"case_id": "test_06_0_en", "input": {"question": "Using consecutive fiscal years 2022 and 2023, calculate AAPL's revenue percentage growth.", "selected_documents": []}}
+{"case_id": "test_06_0_zh", "input": {"question": "利用连续的2022与2023财年，计算AAPL的营收百分比增长率。", "selected_documents": []}}
+{"case_id": "test_06_1_en", "input": {"question": "Using consecutive fiscal years 2023 and 2024, calculate Nvidia's operating income percentage growth.", "selected_documents": []}}
+{"case_id": "test_06_1_zh", "input": {"question": "利用连续的2023与2024财年，计算Nvidia的营业利润百分比增长率。", "selected_documents": []}}
+{"case_id": "test_07_0_en", "input": {"question": "For FY2024, how many percent higher or lower was Alphabet's annual operating income than one fiscal year earlier?", "selected_documents": []}}
+{"case_id": "test_07_0_zh", "input": {"question": "Alphabet在2024财年的全年营业利润比上一财年高或低百分之几？", "selected_documents": []}}
+{"case_id": "test_07_1_en", "input": {"question": "For FY2023, how many percent higher or lower was TSLA's annual net income than one fiscal year earlier?", "selected_documents": []}}
+{"case_id": "test_07_1_zh", "input": {"question": "TSLA在2023财年的全年净利润比上一财年高或低百分之几？", "selected_documents": []}}
+{"case_id": "test_08_0_en", "input": {"question": "Measure AMZN's FY2023 annual rate of change in net income, explicitly using the preceding year.", "selected_documents": []}}
+{"case_id": "test_08_0_zh", "input": {"question": "明确以上一财年为基期，衡量AMZN在2023财年的净利润年度变化率。", "selected_documents": []}}
+{"case_id": "test_08_1_en", "input": {"question": "Measure Adobe's FY2024 annual rate of change in revenue, explicitly using the preceding year.", "selected_documents": []}}
+{"case_id": "test_08_1_zh", "input": {"question": "明确以上一财年为基期，衡量Adobe在2024财年的营收年度变化率。", "selected_documents": []}}
+{"case_id": "test_09_0_en", "input": {"question": "Show the YoY percentage calculation for Meta's fiscal 2024 revenue, with both input values.", "selected_documents": []}}
+{"case_id": "test_09_0_zh", "input": {"question": "展示Meta在2024财年的营收同比百分比计算及两个输入值。", "selected_documents": []}}
+{"case_id": "test_09_1_en", "input": {"question": "Show the YoY percentage calculation for NVDA's fiscal 2023 operating income, with both input values.", "selected_documents": []}}
+{"case_id": "test_09_1_zh", "input": {"question": "展示NVDA在2023财年的营业利润同比百分比计算及两个输入值。", "selected_documents": []}}
+{"case_id": "test_10_0_en", "input": {"question": "Derive the signed percentage movement in MSFT operating income from fiscal 2022 to fiscal 2023.", "selected_documents": []}}
+{"case_id": "test_10_0_zh", "input": {"question": "推导MSFT的营业利润从2022到2023财年的带符号百分比变动。", "selected_documents": []}}
+{"case_id": "test_10_1_en", "input": {"question": "Derive the signed percentage movement in Tesla net income from fiscal 2023 to fiscal 2024.", "selected_documents": []}}
+{"case_id": "test_10_1_zh", "input": {"question": "推导Tesla的净利润从2023到2024财年的带符号百分比变动。", "selected_documents": []}}
+{"case_id": "test_11_0_en", "input": {"question": "Report the percent annual growth or decline of Apple's net income in FY2024; explanation of drivers is unnecessary.", "selected_documents": []}}
+{"case_id": "test_11_0_zh", "input": {"question": "报告Apple在2024财年的净利润同比增长或下降百分比，无需解释驱动因素。", "selected_documents": []}}
+{"case_id": "test_11_1_en", "input": {"question": "Report the percent annual growth or decline of ADBE's revenue in FY2023; explanation of drivers is unnecessary.", "selected_documents": []}}
+{"case_id": "test_11_1_zh", "input": {"question": "报告ADBE在2023财年的营收同比增长或下降百分比，无需解释驱动因素。", "selected_documents": []}}
+{"case_id": "test_12_0_en", "input": {"question": "Between GOOGL and AMZN, whose annual revenue is greater in FY2023? Give the source-bound amounts.", "selected_documents": []}}
+{"case_id": "test_12_0_zh", "input": {"question": "GOOGL与AMZN在2023财年的全年营收谁更大？给出有来源的金额。", "selected_documents": []}}
+{"case_id": "test_12_1_en", "input": {"question": "Between Nvidia and META, whose annual operating income is greater in FY2024? Give the source-bound amounts.", "selected_documents": []}}
+{"case_id": "test_12_1_zh", "input": {"question": "Nvidia与META在2024财年的全年营业利润谁更大？给出有来源的金额。", "selected_documents": []}}
+{"case_id": "test_13_0_en", "input": {"question": "Compare the reported fiscal 2024 operating income totals for Amazon versus META, while retaining each fiscal interval.", "selected_documents": []}}
+{"case_id": "test_13_0_zh", "input": {"question": "比较Amazon与META报告的2024财年营业利润总额，并保留各自财年区间。", "selected_documents": []}}
+{"case_id": "test_13_1_en", "input": {"question": "Compare the reported fiscal 2023 net income totals for TSLA versus MSFT, while retaining each fiscal interval.", "selected_documents": []}}
+{"case_id": "test_13_1_zh", "input": {"question": "比较TSLA与MSFT报告的2023财年净利润总额，并保留各自财年区间。", "selected_documents": []}}
+{"case_id": "test_14_0_en", "input": {"question": "Prepare a FY2023 net income comparison row for META and another for MSFT.", "selected_documents": []}}
+{"case_id": "test_14_0_zh", "input": {"question": "分别为META和MSFT准备2023财年的净利润比较记录。", "selected_documents": []}}
+{"case_id": "test_14_1_en", "input": {"question": "Prepare a FY2024 revenue comparison row for Adobe and another for AAPL.", "selected_documents": []}}
+{"case_id": "test_14_1_zh", "input": {"question": "分别为Adobe和AAPL准备2024财年的营收比较记录。", "selected_documents": []}}
+{"case_id": "test_15_0_en", "input": {"question": "I want the Microsoft versus AAPL FY2024 revenue amounts even if their fiscal calendars differ.", "selected_documents": []}}
+{"case_id": "test_15_0_zh", "input": {"question": "即使财年日历不同，我仍需要比较Microsoft与AAPL在2024财年的营收金额。", "selected_documents": []}}
+{"case_id": "test_15_1_en", "input": {"question": "I want the NVDA versus GOOGL FY2023 operating income amounts even if their fiscal calendars differ.", "selected_documents": []}}
+{"case_id": "test_15_1_zh", "input": {"question": "即使财年日历不同，我仍需要比较NVDA与GOOGL在2023财年的营业利润金额。", "selected_documents": []}}
+{"case_id": "test_16_0_en", "input": {"question": "Judge which company leads on fiscal 2023 operating income: AAPL or GOOGL; mention any date mismatch.", "selected_documents": []}}
+{"case_id": "test_16_0_zh", "input": {"question": "判断AAPL与GOOGL中谁的2023财年营业利润领先，并说明日期差异。", "selected_documents": []}}
+{"case_id": "test_16_1_en", "input": {"question": "Judge which company leads on fiscal 2024 net income: Tesla or AMZN; mention any date mismatch.", "selected_documents": []}}
+{"case_id": "test_16_1_zh", "input": {"question": "判断Tesla与AMZN中谁的2024财年净利润领先，并说明日期差异。", "selected_documents": []}}
+{"case_id": "test_17_0_en", "input": {"question": "Contrast annual net income magnitudes across Alphabet and AMZN for FY2024, without forcing date alignment.", "selected_documents": []}}
+{"case_id": "test_17_0_zh", "input": {"question": "对比Alphabet与AMZN在2024财年的全年净利润规模，无需强制期间对齐。", "selected_documents": []}}
+{"case_id": "test_17_1_en", "input": {"question": "Contrast annual revenue magnitudes across ADBE and META for FY2023, without forcing date alignment.", "selected_documents": []}}
+{"case_id": "test_17_1_zh", "input": {"question": "对比ADBE与META在2023财年的全年营收规模，无需强制期间对齐。", "selected_documents": []}}
+{"case_id": "test_18_0_en", "input": {"question": "Test whether the start-date/end-date pairs coincide for AMZN and META in fiscal 2023, without comparing values.", "selected_documents": []}}
+{"case_id": "test_18_0_zh", "input": {"question": "仅检验AMZN与META在2023财年的起止日期对是否重合，不比较数值。", "selected_documents": []}}
+{"case_id": "test_18_1_en", "input": {"question": "Test whether the start-date/end-date pairs coincide for Nvidia and MSFT in fiscal 2024, without comparing values.", "selected_documents": []}}
+{"case_id": "test_18_1_zh", "input": {"question": "仅检验Nvidia与MSFT在2024财年的起止日期对是否重合，不比较数值。", "selected_documents": []}}
+{"case_id": "test_19_0_en", "input": {"question": "Is an exact same-period comparison possible for Meta and MSFT FY2024? Only inspect fiscal dates.", "selected_documents": []}}
+{"case_id": "test_19_0_zh", "input": {"question": "Meta与MSFT的2024财年能否严格同期间比较？仅检查财年日期。", "selected_documents": []}}
+{"case_id": "test_19_1_en", "input": {"question": "Is an exact same-period comparison possible for TSLA and AAPL FY2023? Only inspect fiscal dates.", "selected_documents": []}}
+{"case_id": "test_19_1_zh", "input": {"question": "TSLA与AAPL的2023财年能否严格同期间比较？仅检查财年日期。", "selected_documents": []}}
+{"case_id": "test_20_0_en", "input": {"question": "Check fiscal 2023 period equality between MSFT and AAPL; no ranking or amount is wanted.", "selected_documents": []}}
+{"case_id": "test_20_0_zh", "input": {"question": "核对MSFT和AAPL的2023财年期间是否相等，无需排名或金额。", "selected_documents": []}}
+{"case_id": "test_20_1_en", "input": {"question": "Check fiscal 2024 period equality between Adobe and GOOGL; no ranking or amount is wanted.", "selected_documents": []}}
+{"case_id": "test_20_1_zh", "input": {"question": "核对Adobe和GOOGL的2024财年期间是否相等，无需排名或金额。", "selected_documents": []}}
+{"case_id": "test_21_0_en", "input": {"question": "Do both Apple and GOOGL use matching beginning and ending dates for FY2024?", "selected_documents": []}}
+{"case_id": "test_21_0_zh", "input": {"question": "Apple和GOOGL的2024财年是否采用相同的开始与结束日期？", "selected_documents": []}}
+{"case_id": "test_21_1_en", "input": {"question": "Do both NVDA and AMZN use matching beginning and ending dates for FY2023?", "selected_documents": []}}
+{"case_id": "test_21_1_zh", "input": {"question": "NVDA和AMZN的2023财年是否采用相同的开始与结束日期？", "selected_documents": []}}
+{"case_id": "test_22_0_en", "input": {"question": "Confirm or reject strict annual-period alignment for GOOGL versus AMZN in fiscal 2023.", "selected_documents": []}}
+{"case_id": "test_22_0_zh", "input": {"question": "确认或否定GOOGL与AMZN在2023财年的严格年度期间对齐。", "selected_documents": []}}
+{"case_id": "test_22_1_en", "input": {"question": "Confirm or reject strict annual-period alignment for Tesla versus META in fiscal 2024.", "selected_documents": []}}
+{"case_id": "test_22_1_zh", "input": {"question": "确认或否定Tesla与META在2024财年的严格年度期间对齐。", "selected_documents": []}}
+{"case_id": "test_23_0_en", "input": {"question": "My sole question concerns FY2024 calendar compatibility: are Amazon and META's fiscal intervals identical?", "selected_documents": []}}
+{"case_id": "test_23_0_zh", "input": {"question": "我只关心2024财年日历兼容性：Amazon与META的财年区间是否完全相同？", "selected_documents": []}}
+{"case_id": "test_23_1_en", "input": {"question": "My sole question concerns FY2023 calendar compatibility: are ADBE and MSFT's fiscal intervals identical?", "selected_documents": []}}
+{"case_id": "test_23_1_zh", "input": {"question": "我只关心2023财年日历兼容性：ADBE与MSFT的财年区间是否完全相同？", "selected_documents": []}}
+{"case_id": "test_24_0_en", "input": {"question": "Present META's fiscal 2023 revenue and its operating-income and net-income totals together.", "selected_documents": []}}
+{"case_id": "test_24_0_zh", "input": {"question": "同时展示META在2023财年的营收、营业利润与净利润总额。", "selected_documents": []}}
+{"case_id": "test_24_1_en", "input": {"question": "Present Nvidia's fiscal 2024 revenue and its operating-income and net-income totals together.", "selected_documents": []}}
+{"case_id": "test_24_1_zh", "input": {"question": "同时展示Nvidia在2024财年的营收、营业利润与净利润总额。", "selected_documents": []}}
+{"case_id": "test_25_0_en", "input": {"question": "Create three FY2024 entries for Microsoft: revenue, operating profit, and net income.", "selected_documents": []}}
+{"case_id": "test_25_0_zh", "input": {"question": "为Microsoft建立2024财年的三项记录：营收、营业利润和净利润。", "selected_documents": []}}
+{"case_id": "test_25_1_en", "input": {"question": "Create three FY2023 entries for TSLA: revenue, operating profit, and net income.", "selected_documents": []}}
+{"case_id": "test_25_1_zh", "input": {"question": "为TSLA建立2023财年的三项记录：营收、营业利润和净利润。", "selected_documents": []}}
+{"case_id": "test_26_0_en", "input": {"question": "Return a complete three-metric annual snapshot for AAPL FY2023: revenue, operating income, net income.", "selected_documents": []}}
+{"case_id": "test_26_0_zh", "input": {"question": "返回AAPL在2023财年的完整三指标年度快照：营收、营业利润、净利润。", "selected_documents": []}}
+{"case_id": "test_26_1_en", "input": {"question": "Return a complete three-metric annual snapshot for Adobe FY2024: revenue, operating income, net income.", "selected_documents": []}}
+{"case_id": "test_26_1_zh", "input": {"question": "返回Adobe在2024财年的完整三指标年度快照：营收、营业利润、净利润。", "selected_documents": []}}
+{"case_id": "test_27_0_en", "input": {"question": "Read all of revenue, operating income and net income from Alphabet's fiscal 2024 statements.", "selected_documents": []}}
+{"case_id": "test_27_0_zh", "input": {"question": "从Alphabet的2024财年报表读取营收、营业利润和净利润全部三项。", "selected_documents": []}}
+{"case_id": "test_27_1_en", "input": {"question": "Read all of revenue, operating income and net income from NVDA's fiscal 2023 statements.", "selected_documents": []}}
+{"case_id": "test_27_1_zh", "input": {"question": "从NVDA的2023财年报表读取营收、营业利润和净利润全部三项。", "selected_documents": []}}
+{"case_id": "test_28_0_en", "input": {"question": "Summarize the FY2023 income-statement trio for AMZN, covering revenue plus operating and net profit.", "selected_documents": []}}
+{"case_id": "test_28_0_zh", "input": {"question": "总结AMZN在2023财年的损益表三项数据，包括营收、营业利润和净利润。", "selected_documents": []}}
+{"case_id": "test_28_1_en", "input": {"question": "Summarize the FY2024 income-statement trio for Tesla, covering revenue plus operating and net profit.", "selected_documents": []}}
+{"case_id": "test_28_1_zh", "input": {"question": "总结Tesla在2024财年的损益表三项数据，包括营收、营业利润和净利润。", "selected_documents": []}}
+{"case_id": "test_29_0_en", "input": {"question": "Give one table containing Meta's FY2024 revenue, operating income, and net earnings with their units.", "selected_documents": []}}
+{"case_id": "test_29_0_zh", "input": {"question": "用一张表给出Meta在2024财年的营收、营业利润和净利润及单位。", "selected_documents": []}}
+{"case_id": "test_29_1_en", "input": {"question": "Give one table containing ADBE's FY2023 revenue, operating income, and net earnings with their units.", "selected_documents": []}}
+{"case_id": "test_29_1_zh", "input": {"question": "用一张表给出ADBE在2023财年的营收、营业利润和净利润及单位。", "selected_documents": []}}
+{"case_id": "test_30_0_en", "input": {"question": "Identify the business mechanisms management associates with MSFT's FY2023 revenue change, using prose evidence only.", "selected_documents": []}}
+{"case_id": "test_30_0_zh", "input": {"question": "仅使用正文证据，指出管理层将MSFT在2023财年的营收变化关联到哪些业务机制。", "selected_documents": []}}
+{"case_id": "test_30_1_en", "input": {"question": "Identify the business mechanisms management associates with Nvidia's FY2024 revenue change, using prose evidence only.", "selected_documents": []}}
+{"case_id": "test_30_1_zh", "input": {"question": "仅使用正文证据，指出管理层将Nvidia在2024财年的营收变化关联到哪些业务机制。", "selected_documents": []}}
+{"case_id": "test_31_0_en", "input": {"question": "Explain the annual net income change and disclosed operating or tax drivers for Apple FY2024.", "selected_documents": []}}
+{"case_id": "test_31_0_zh", "input": {"question": "解释Apple在2024财年的净利润年度变化及披露的经营或税务因素。", "selected_documents": []}}
+{"case_id": "test_31_1_en", "input": {"question": "Explain the annual net income change and disclosed operating or tax drivers for TSLA FY2023.", "selected_documents": []}}
+{"case_id": "test_31_1_zh", "input": {"question": "解释TSLA在2023财年的净利润年度变化及披露的经营或税务因素。", "selected_documents": []}}
+{"case_id": "test_32_0_en", "input": {"question": "Which disclosed uncertainties threaten GOOGL's business in its FY2023 annual filing?", "selected_documents": []}}
+{"case_id": "test_32_0_zh", "input": {"question": "GOOGL的2023财年年度申报中披露了哪些威胁业务的不确定性？", "selected_documents": []}}
+{"case_id": "test_32_1_en", "input": {"question": "Which disclosed uncertainties threaten Adobe's business in its FY2024 annual filing?", "selected_documents": []}}
+{"case_id": "test_32_1_zh", "input": {"question": "Adobe的2024财年年度申报中披露了哪些威胁业务的不确定性？", "selected_documents": []}}
+{"case_id": "test_33_0_en", "input": {"question": "What reasons does Amazon's FY2024 management discussion give for revenue movement, with no amount requested?", "selected_documents": []}}
+{"case_id": "test_33_0_zh", "input": {"question": "Amazon的2024财年管理层讨论对营收变动给出哪些原因？无需金额。", "selected_documents": []}}
+{"case_id": "test_33_1_en", "input": {"question": "What reasons does NVDA's FY2023 management discussion give for revenue movement, with no amount requested?", "selected_documents": []}}
+{"case_id": "test_33_1_zh", "input": {"question": "NVDA的2023财年管理层讨论对营收变动给出哪些原因？无需金额。", "selected_documents": []}}
+{"case_id": "test_34_0_en", "input": {"question": "Describe the reported drivers behind META's FY2023 operating-profit movement rather than calculating its size.", "selected_documents": []}}
+{"case_id": "test_34_0_zh", "input": {"question": "描述META披露的2023财年营业利润变化驱动因素，无需计算变化幅度。", "selected_documents": []}}
+{"case_id": "test_34_1_en", "input": {"question": "Describe the reported drivers behind Tesla's FY2024 operating-profit movement rather than calculating its size.", "selected_documents": []}}
+{"case_id": "test_34_1_zh", "input": {"question": "描述Tesla披露的2024财年营业利润变化驱动因素，无需计算变化幅度。", "selected_documents": []}}
+{"case_id": "test_35_0_en", "input": {"question": "Using its FY2024 filing, discuss risks that may constrain Microsoft's future sales; do not forecast sales.", "selected_documents": []}}
+{"case_id": "test_35_0_zh", "input": {"question": "根据Microsoft的2024财年申报文件讨论可能制约未来销售的风险，不预测销售额。", "selected_documents": []}}
+{"case_id": "test_35_1_en", "input": {"question": "Using its FY2023 filing, discuss risks that may constrain ADBE's future sales; do not forecast sales.", "selected_documents": []}}
+{"case_id": "test_35_1_zh", "input": {"question": "根据ADBE的2023财年申报文件讨论可能制约未来销售的风险，不预测销售额。", "selected_documents": []}}
+{"case_id": "test_36_0_en", "input": {"question": "Supply AAPL's fiscal 2023 revenue in USD and explain the disclosed reasons for its change.", "selected_documents": []}}
+{"case_id": "test_36_0_zh", "input": {"question": "以美元提供AAPL在2023财年的营收，并解释披露的变化原因。", "selected_documents": []}}
+{"case_id": "test_36_1_en", "input": {"question": "Supply Nvidia's fiscal 2024 revenue in USD and explain the disclosed reasons for its change.", "selected_documents": []}}
+{"case_id": "test_36_1_zh", "input": {"question": "以美元提供Nvidia在2024财年的营收，并解释披露的变化原因。", "selected_documents": []}}
+{"case_id": "test_37_0_en", "input": {"question": "Quantify Alphabet's FY2024 net-income change in percent and relate it to the report's stated drivers.", "selected_documents": []}}
+{"case_id": "test_37_0_zh", "input": {"question": "用百分比量化Alphabet在2024财年的净利润同比变化，并结合年报说明驱动因素。", "selected_documents": []}}
+{"case_id": "test_37_1_en", "input": {"question": "Quantify TSLA's FY2023 net-income change in percent and relate it to the report's stated drivers.", "selected_documents": []}}
+{"case_id": "test_37_1_zh", "input": {"question": "用百分比量化TSLA在2023财年的净利润同比变化，并结合年报说明驱动因素。", "selected_documents": []}}
+{"case_id": "test_38_0_en", "input": {"question": "Compare AMZN and META's FY2023 revenue figures, then contrast their disclosed business risks.", "selected_documents": []}}
+{"case_id": "test_38_0_zh", "input": {"question": "比较AMZN与META在2023财年的营收数值，再对照披露的业务风险。", "selected_documents": []}}
+{"case_id": "test_38_1_en", "input": {"question": "Compare Adobe and MSFT's FY2024 revenue figures, then contrast their disclosed business risks.", "selected_documents": []}}
+{"case_id": "test_38_1_zh", "input": {"question": "比较Adobe与MSFT在2024财年的营收数值，再对照披露的业务风险。", "selected_documents": []}}
+{"case_id": "test_39_0_en", "input": {"question": "Read Meta's annual FY2024 revenue amount and give passage-backed reasons for the revenue movement.", "selected_documents": []}}
+{"case_id": "test_39_0_zh", "input": {"question": "读取Meta在2024财年的全年营收金额，并提供正文支持的营收变化原因。", "selected_documents": []}}
+{"case_id": "test_39_1_en", "input": {"question": "Read NVDA's annual FY2023 revenue amount and give passage-backed reasons for the revenue movement.", "selected_documents": []}}
+{"case_id": "test_39_1_zh", "input": {"question": "读取NVDA在2023财年的全年营收金额，并提供正文支持的营收变化原因。", "selected_documents": []}}
+{"case_id": "test_40_0_en", "input": {"question": "Work out the annual net-income percentage movement for MSFT in fiscal 2023 and explain management's causes.", "selected_documents": []}}
+{"case_id": "test_40_0_zh", "input": {"question": "算出MSFT在2023财年的净利润同比百分比变动，并解释管理层披露的原因。", "selected_documents": []}}
+{"case_id": "test_40_1_en", "input": {"question": "Work out the annual net-income percentage movement for Tesla in fiscal 2024 and explain management's causes.", "selected_documents": []}}
+{"case_id": "test_40_1_zh", "input": {"question": "算出Tesla在2024财年的净利润同比百分比变动，并解释管理层披露的原因。", "selected_documents": []}}
+{"case_id": "test_41_0_en", "input": {"question": "For FY2024, show both Apple's and GOOGL's revenue amounts and identify risks separately for each issuer.", "selected_documents": []}}
+{"case_id": "test_41_0_zh", "input": {"question": "针对2024财年，展示Apple与GOOGL各自营收金额，并分别识别两家发行人的风险。", "selected_documents": []}}
+{"case_id": "test_41_1_en", "input": {"question": "For FY2023, show both ADBE's and AMZN's revenue amounts and identify risks separately for each issuer.", "selected_documents": []}}
+{"case_id": "test_41_1_zh", "input": {"question": "针对2023财年，展示ADBE与AMZN各自营收金额，并分别识别两家发行人的风险。", "selected_documents": []}}
+{"case_id": "test_42_0_en", "input": {"question": "Retrieve the fiscal 2023 fourth-quarter revenue for GOOGL, not the annual total.", "selected_documents": []}}
+{"case_id": "test_42_0_zh", "input": {"question": "查询GOOGL在2023财年第四季度的营收，不是全年总额。", "selected_documents": []}}
+{"case_id": "test_42_1_en", "input": {"question": "Retrieve the fiscal 2024 fourth-quarter operating income for Nvidia, not the annual total.", "selected_documents": []}}
+{"case_id": "test_42_1_zh", "input": {"question": "查询Nvidia在2024财年第四季度的营业利润，不是全年总额。", "selected_documents": []}}
+{"case_id": "test_43_0_en", "input": {"question": "I need Amazon's operating income for Q1 FY2024 only.", "selected_documents": []}}
+{"case_id": "test_43_0_zh", "input": {"question": "我只需要Amazon在2024财年第一季度的营业利润。", "selected_documents": []}}
+{"case_id": "test_43_1_en", "input": {"question": "I need TSLA's net income for Q1 FY2023 only.", "selected_documents": []}}
+{"case_id": "test_43_1_zh", "input": {"question": "我只需要TSLA在2023财年第一季度的净利润。", "selected_documents": []}}
+{"case_id": "test_44_0_en", "input": {"question": "Project META's net income for the fiscal year after 2023 from the latest annual evidence.", "selected_documents": []}}
+{"case_id": "test_44_0_zh", "input": {"question": "根据最新年度证据预测META在2023之后财年的净利润。", "selected_documents": []}}
+{"case_id": "test_44_1_en", "input": {"question": "Project Adobe's revenue for the fiscal year after 2024 from the latest annual evidence.", "selected_documents": []}}
+{"case_id": "test_44_1_zh", "input": {"question": "根据最新年度证据预测Adobe在2024之后财年的营收。", "selected_documents": []}}
+{"case_id": "test_45_0_en", "input": {"question": "Use Microsoft's FY2024 report to predict its following full-year revenue.", "selected_documents": []}}
+{"case_id": "test_45_0_zh", "input": {"question": "使用Microsoft的2024财年报告预测下一完整财年的营收。", "selected_documents": []}}
+{"case_id": "test_45_1_en", "input": {"question": "Use NVDA's FY2023 report to predict its following full-year operating income.", "selected_documents": []}}
+{"case_id": "test_45_1_zh", "input": {"question": "使用NVDA的2023财年报告预测下一完整财年的营业利润。", "selected_documents": []}}
+{"case_id": "test_46_0_en", "input": {"question": "Return two annual operating income amounts for AAPL: FY2022 and FY2023, as a series rather than a growth calculation.", "selected_documents": []}}
+{"case_id": "test_46_0_zh", "input": {"question": "返回AAPL在2022与2023财年的两项年度营业利润金额，作为序列而非增长计算。", "selected_documents": []}}
+{"case_id": "test_46_1_en", "input": {"question": "Return two annual net income amounts for Tesla: FY2023 and FY2024, as a series rather than a growth calculation.", "selected_documents": []}}
+{"case_id": "test_46_1_zh", "input": {"question": "返回Tesla在2023与2024财年的两项年度净利润金额，作为序列而非增长计算。", "selected_documents": []}}
+{"case_id": "test_47_0_en", "input": {"question": "Build a year-indexed net income table for Alphabet covering fiscal 2023 through fiscal 2024.", "selected_documents": []}}
+{"case_id": "test_47_0_zh", "input": {"question": "为Alphabet构建按年份排列的净利润表，覆盖2023至2024财年。", "selected_documents": []}}
+{"case_id": "test_47_1_en", "input": {"question": "Build a year-indexed revenue table for ADBE covering fiscal 2022 through fiscal 2023.", "selected_documents": []}}
+{"case_id": "test_47_1_zh", "input": {"question": "为ADBE构建按年份排列的营收表，覆盖2022至2023财年。", "selected_documents": []}}
+{"case_id": "test_48_0_en", "input": {"question": "Find AMZN's reported annual revenue; the reporting year is intentionally left open.", "selected_documents": []}}
+{"case_id": "test_48_0_zh", "input": {"question": "查找AMZN报告的全年营收，报告年份暂未确定。", "selected_documents": []}}
+{"case_id": "test_48_1_en", "input": {"question": "Find Nvidia's reported annual operating income; the reporting year is intentionally left open.", "selected_documents": []}}
+{"case_id": "test_48_1_zh", "input": {"question": "查找Nvidia报告的全年营业利润，报告年份暂未确定。", "selected_documents": []}}
+{"case_id": "test_49_0_en", "input": {"question": "I know the company is Meta and the metric is operating income, but have not chosen any fiscal year.", "selected_documents": []}}
+{"case_id": "test_49_0_zh", "input": {"question": "我知道公司是Meta、指标为营业利润，但尚未选择财年。", "selected_documents": []}}
+{"case_id": "test_49_1_en", "input": {"question": "I know the company is TSLA and the metric is net income, but have not chosen any fiscal year.", "selected_documents": []}}
+{"case_id": "test_49_1_zh", "input": {"question": "我知道公司是TSLA、指标为净利润，但尚未选择财年。", "selected_documents": []}}
+{"case_id": "test_50_0_en", "input": {"question": "Express MSFT's fiscal 2023 net income in CNY, without a supplied FX rate.", "selected_documents": []}}
+{"case_id": "test_50_0_zh", "input": {"question": "将MSFT在2023财年的净利润表示为人民币金额，但没有提供汇率。", "selected_documents": []}}
+{"case_id": "test_50_1_en", "input": {"question": "Express Adobe's fiscal 2024 revenue in CNY, without a supplied FX rate.", "selected_documents": []}}
+{"case_id": "test_50_1_zh", "input": {"question": "将Adobe在2024财年的营收表示为人民币金额，但没有提供汇率。", "selected_documents": []}}
+{"case_id": "test_51_0_en", "input": {"question": "Translate the FY2024 revenue amount for Apple into EUR; the conversion rate remains unspecified.", "selected_documents": []}}
+{"case_id": "test_51_0_zh", "input": {"question": "将Apple在2024财年的营收金额换算成欧元，换算汇率尚未指定。", "selected_documents": []}}
+{"case_id": "test_51_1_en", "input": {"question": "Translate the FY2023 operating income amount for NVDA into EUR; the conversion rate remains unspecified.", "selected_documents": []}}
+{"case_id": "test_51_1_zh", "input": {"question": "将NVDA在2023财年的营业利润金额换算成欧元，换算汇率尚未指定。", "selected_documents": []}}
+{"case_id": "test_52_0_en", "input": {"question": "The requested figure is annual operating income for fiscal 2023; the issuer has not been identified.", "selected_documents": []}}
+{"case_id": "test_52_0_zh", "input": {"question": "请求的数值为2023财年的全年营业利润，发行人尚未确定。", "selected_documents": []}}
+{"case_id": "test_52_1_en", "input": {"question": "The requested figure is annual net income for fiscal 2024; the issuer has not been identified.", "selected_documents": []}}
+{"case_id": "test_52_1_zh", "input": {"question": "请求的数值为2024财年的全年净利润，发行人尚未确定。", "selected_documents": []}}
+{"case_id": "test_53_0_en", "input": {"question": "Retrieve fiscal 2024 net income once a company can be specified; none is provided here.", "selected_documents": []}}
+{"case_id": "test_53_0_zh", "input": {"question": "待指定公司后查询2024财年的净利润，此处未提供任何公司。", "selected_documents": []}}
+{"case_id": "test_53_1_en", "input": {"question": "Retrieve fiscal 2023 revenue once a company can be specified; none is provided here.", "selected_documents": []}}
+{"case_id": "test_53_1_zh", "input": {"question": "待指定公司后查询2023财年的营收，此处未提供任何公司。", "selected_documents": []}}
+{"case_id": "test_54_0_en", "input": {"question": "Read the full-year revenue from the one filing I selected, resolving its issuer and year from metadata.", "selected_documents": [{"company": "META", "report_year": 2023, "id": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"}]}}
+{"case_id": "test_54_0_zh", "input": {"question": "从我选中的唯一申报文件读取全年营收，发行人与年份从元数据解析。", "selected_documents": [{"company": "META", "report_year": 2023, "id": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"}]}}
+{"case_id": "test_54_1_en", "input": {"question": "Read the full-year operating income from the one filing I selected, resolving its issuer and year from metadata.", "selected_documents": [{"company": "NVDA", "report_year": 2024, "id": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060"}]}}
+{"case_id": "test_54_1_zh", "input": {"question": "从我选中的唯一申报文件读取全年营业利润，发行人与年份从元数据解析。", "selected_documents": [{"company": "NVDA", "report_year": 2024, "id": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060"}]}}
+{"case_id": "test_55_0_en", "input": {"question": "For the selected annual document's own fiscal period, give its operating income.", "selected_documents": [{"company": "MSFT", "report_year": 2024, "id": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280"}]}}
+{"case_id": "test_55_0_zh", "input": {"question": "针对选中年度文件自身所属财年，给出其营业利润。", "selected_documents": [{"company": "MSFT", "report_year": 2024, "id": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280"}]}}
+{"case_id": "test_55_1_en", "input": {"question": "For the selected annual document's own fiscal period, give its net income.", "selected_documents": [{"company": "TSLA", "report_year": 2023, "id": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"}]}}
+{"case_id": "test_55_1_zh", "input": {"question": "针对选中年度文件自身所属财年，给出其净利润。", "selected_documents": [{"company": "TSLA", "report_year": 2023, "id": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"}]}}
+{"case_id": "test_56_0_en", "input": {"question": "Keep the selected report as the evidence source, but extract the prior fiscal 2022 net income comparison.", "selected_documents": [{"company": "AAPL", "report_year": 2023, "id": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075"}]}}
+{"case_id": "test_56_0_zh", "input": {"question": "保持选中报告作为证据来源，但提取上一2022财年的净利润对比数据。", "selected_documents": [{"company": "AAPL", "report_year": 2023, "id": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075"}]}}
+{"case_id": "test_56_1_en", "input": {"question": "Keep the selected report as the evidence source, but extract the prior fiscal 2023 revenue comparison.", "selected_documents": [{"company": "ADBE", "report_year": 2024, "id": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9"}]}}
+{"case_id": "test_56_1_zh", "input": {"question": "保持选中报告作为证据来源，但提取上一2023财年的营收对比数据。", "selected_documents": [{"company": "ADBE", "report_year": 2024, "id": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9"}]}}
+{"case_id": "test_57_0_en", "input": {"question": "The selected annual filing contains comparative FY2023 figures; retrieve revenue for that prior year.", "selected_documents": [{"company": "GOOGL", "report_year": 2024, "id": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"}]}}
+{"case_id": "test_57_0_zh", "input": {"question": "选中年度申报包含2023财年对比数值，请提取该上一财年的营收。", "selected_documents": [{"company": "GOOGL", "report_year": 2024, "id": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e"}]}}
+{"case_id": "test_57_1_en", "input": {"question": "The selected annual filing contains comparative FY2022 figures; retrieve operating income for that prior year.", "selected_documents": [{"company": "NVDA", "report_year": 2023, "id": "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"}]}}
+{"case_id": "test_57_1_zh", "input": {"question": "选中年度申报包含2022财年对比数值，请提取该上一财年的营业利润。", "selected_documents": [{"company": "NVDA", "report_year": 2023, "id": "b1b3a7f06c44aed117f01ae4f5b8d75c8da35fd39afdd3b125915cd7a16ae81f"}]}}
+{"case_id": "test_58_0_en", "input": {"question": "Explain the risk disclosures for the fiscal year of the sole selected annual filing.", "selected_documents": [{"company": "AMZN", "report_year": 2023, "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"}]}}
+{"case_id": "test_58_0_zh", "input": {"question": "解释唯一选中年度申报所属财年的风险披露。", "selected_documents": [{"company": "AMZN", "report_year": 2023, "id": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca"}]}}
+{"case_id": "test_58_1_en", "input": {"question": "Explain the risk disclosures for the fiscal year of the sole selected annual filing.", "selected_documents": [{"company": "TSLA", "report_year": 2024, "id": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63"}]}}
+{"case_id": "test_58_1_zh", "input": {"question": "解释唯一选中年度申报所属财年的风险披露。", "selected_documents": [{"company": "TSLA", "report_year": 2024, "id": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63"}]}}
+{"case_id": "test_59_0_en", "input": {"question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.", "selected_documents": [{"company": "META", "report_year": 2024, "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"}]}}
+{"case_id": "test_59_0_zh", "input": {"question": "仅使用选中文件的元数据确定请求的风险讨论涉及哪家公司与哪个财年。", "selected_documents": [{"company": "META", "report_year": 2024, "id": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753"}]}}
+{"case_id": "test_59_1_en", "input": {"question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.", "selected_documents": [{"company": "ADBE", "report_year": 2023, "id": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7"}]}}
+{"case_id": "test_59_1_zh", "input": {"question": "仅使用选中文件的元数据确定请求的风险讨论涉及哪家公司与哪个财年。", "selected_documents": [{"company": "ADBE", "report_year": 2023, "id": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7"}]}}

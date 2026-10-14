@@ -1,0 +1,1044 @@
+{
+  "cases": [
+    {
+      "id": "d01_0_en",
+      "group_id": "d01",
+      "split": "development",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "What was MSFT's annual revenue in FY2024?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d01_0_zh",
+      "group_id": "d01",
+      "split": "development",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "MSFT在FY2024的年度收入是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d01_1_en",
+      "group_id": "d01",
+      "split": "development",
+      "category": "metric",
+      "language": "en",
+      "input": {
+        "question": "What was META's annual revenue in FY2023?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d01_1_zh",
+      "group_id": "d01",
+      "split": "development",
+      "category": "metric",
+      "language": "zh",
+      "input": {
+        "question": "META在FY2023的年度收入是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d02_0_en",
+      "group_id": "d02",
+      "split": "development",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Calculate MSFT's year-over-year revenue growth rate for FY2024.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d02_0_zh",
+      "group_id": "d02",
+      "split": "development",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "计算MSFT在FY2024的收入同比增长率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d02_1_en",
+      "group_id": "d02",
+      "split": "development",
+      "category": "growth",
+      "language": "en",
+      "input": {
+        "question": "Calculate META's year-over-year revenue growth rate for FY2023.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d02_1_zh",
+      "group_id": "d02",
+      "split": "development",
+      "category": "growth",
+      "language": "zh",
+      "input": {
+        "question": "计算META在FY2023的收入同比增长率。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "growth",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d03_0_en",
+      "group_id": "d03",
+      "split": "development",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Compare the FY2024 revenue amounts of MSFT and AAPL, and show their fiscal dates.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d03_0_zh",
+      "group_id": "d03",
+      "split": "development",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "比较MSFT与AAPL在FY2024的收入金额，并列出各自财年日期。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d03_1_en",
+      "group_id": "d03",
+      "split": "development",
+      "category": "comparison",
+      "language": "en",
+      "input": {
+        "question": "Compare the FY2023 revenue amounts of META and GOOGL, and show their fiscal dates.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d03_1_zh",
+      "group_id": "d03",
+      "split": "development",
+      "category": "comparison",
+      "language": "zh",
+      "input": {
+        "question": "比较META与GOOGL在FY2023的收入金额，并列出各自财年日期。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "comparison",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d04_0_en",
+      "group_id": "d04",
+      "split": "development",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Do MSFT and AAPL have exactly matching fiscal date ranges in FY2024?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d04_0_zh",
+      "group_id": "d04",
+      "split": "development",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "MSFT和AAPL的FY2024财年起止日期是否完全一致？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT",
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d04_1_en",
+      "group_id": "d04",
+      "split": "development",
+      "category": "alignment",
+      "language": "en",
+      "input": {
+        "question": "Do META and GOOGL have exactly matching fiscal date ranges in FY2023?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d04_1_zh",
+      "group_id": "d04",
+      "split": "development",
+      "category": "alignment",
+      "language": "zh",
+      "input": {
+        "question": "META和GOOGL的FY2023财年起止日期是否完全一致？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "alignment",
+        "numeric_intent": "metric",
+        "companies": [
+          "META",
+          "GOOGL"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d05_0_en",
+      "group_id": "d05",
+      "split": "development",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Give MSFT's annual revenue, operating income, and net income for FY2024.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d05_0_zh",
+      "group_id": "d05",
+      "split": "development",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "列出MSFT在FY2024的年度收入、营业利润和净利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d05_1_en",
+      "group_id": "d05",
+      "split": "development",
+      "category": "summary",
+      "language": "en",
+      "input": {
+        "question": "Give META's annual revenue, operating income, and net income for FY2023.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d05_1_zh",
+      "group_id": "d05",
+      "split": "development",
+      "category": "summary",
+      "language": "zh",
+      "input": {
+        "question": "列出META在FY2023的年度收入、营业利润和净利润。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "summary",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d06_0_en",
+      "group_id": "d06",
+      "split": "development",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Explain the drivers of MSFT's FY2024 revenue change using annual report passages.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d06_0_zh",
+      "group_id": "d06",
+      "split": "development",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "根据年报原文解释MSFT在FY2024收入变化的原因。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d06_1_en",
+      "group_id": "d06",
+      "split": "development",
+      "category": "explanation",
+      "language": "en",
+      "input": {
+        "question": "Explain the drivers of META's FY2023 revenue change using annual report passages.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d06_1_zh",
+      "group_id": "d06",
+      "split": "development",
+      "category": "explanation",
+      "language": "zh",
+      "input": {
+        "question": "根据年报原文解释META在FY2023收入变化的原因。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d07_0_en",
+      "group_id": "d07",
+      "split": "development",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Calculate MSFT's FY2024 revenue growth rate and explain its disclosed drivers.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d07_0_zh",
+      "group_id": "d07",
+      "split": "development",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "计算MSFT在FY2024的收入同比增长率，并解释披露的驱动因素。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d07_1_en",
+      "group_id": "d07",
+      "split": "development",
+      "category": "hybrid",
+      "language": "en",
+      "input": {
+        "question": "Calculate META's FY2023 revenue growth rate and explain its disclosed drivers.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d07_1_zh",
+      "group_id": "d07",
+      "split": "development",
+      "category": "hybrid",
+      "language": "zh",
+      "input": {
+        "question": "计算META在FY2023的收入同比增长率，并解释披露的驱动因素。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "hybrid",
+        "numeric_intent": "growth",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d08_0_en",
+      "group_id": "d08",
+      "split": "development",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "What was MSFT's annual revenue?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      }
+    },
+    {
+      "id": "d08_0_zh",
+      "group_id": "d08",
+      "split": "development",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "MSFT的年度收入是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      }
+    },
+    {
+      "id": "d08_1_en",
+      "group_id": "d08",
+      "split": "development",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "What was META's annual revenue?",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      }
+    },
+    {
+      "id": "d08_1_zh",
+      "group_id": "d08",
+      "split": "development",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "META的年度收入是多少？",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "clarification",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 1900,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "ambiguous"
+      }
+    },
+    {
+      "id": "d09_0_en",
+      "group_id": "d09",
+      "split": "development",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Give MSFT's revenue for the first quarter of 2024.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      }
+    },
+    {
+      "id": "d09_0_zh",
+      "group_id": "d09",
+      "split": "development",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "提供MSFT在2024年第一季度的收入。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      }
+    },
+    {
+      "id": "d09_1_en",
+      "group_id": "d09",
+      "split": "development",
+      "category": "boundary",
+      "language": "en",
+      "input": {
+        "question": "Give META's revenue for the first quarter of 2023.",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      }
+    },
+    {
+      "id": "d09_1_zh",
+      "group_id": "d09",
+      "split": "development",
+      "category": "boundary",
+      "language": "zh",
+      "input": {
+        "question": "提供META在2023年第一季度的收入。",
+        "selected_documents": []
+      },
+      "expected": {
+        "intent": "unavailable",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": null,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "unsupported"
+      }
+    },
+    {
+      "id": "d10_0_en",
+      "group_id": "d10",
+      "split": "development",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Using the selected annual report, give the company's annual revenue.",
+        "selected_documents": [
+          {
+            "company": "MSFT",
+            "report_year": 2024,
+            "id": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d10_0_zh",
+      "group_id": "d10",
+      "split": "development",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "使用选中的年报，给出该公司的年度收入。",
+        "selected_documents": [
+          {
+            "company": "MSFT",
+            "report_year": 2024,
+            "id": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d10_1_en",
+      "group_id": "d10",
+      "split": "development",
+      "category": "selected_document",
+      "language": "en",
+      "input": {
+        "question": "Using the selected annual report, give the company's annual revenue.",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2023,
+            "id": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    },
+    {
+      "id": "d10_1_zh",
+      "group_id": "d10",
+      "split": "development",
+      "category": "selected_document",
+      "language": "zh",
+      "input": {
+        "question": "使用选中的年报，给出该公司的年度收入。",
+        "selected_documents": [
+          {
+            "company": "META",
+            "report_year": 2023,
+            "id": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478"
+          }
+        ]
+      },
+      "expected": {
+        "intent": "metric",
+        "numeric_intent": "metric",
+        "companies": [
+          "META"
+        ],
+        "fiscal_year": 2023,
+        "report_year": 2023,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      }
+    }
+  ]
+}

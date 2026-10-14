@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dataset_version": "planner-pilot-v2",
+  "source_sha256": "19f776fa3d3be17b207c00b63ff9b2630fc0a17ba9c4a069f8d6caaf501327b3",
+  "source_role": "authored_synthetic_planner_pilot",
+  "splits": {
+    "development": {
+      "cases": 40,
+      "groups": 10
+    },
+    "validation": {
+      "cases": 40,
+      "groups": 10
+    },
+    "test": {
+      "cases": 40,
+      "groups": 10
+    }
+  },
+  "files": {
+    "contract.json": "2219fdfa79a49d984420a708897b2018c416ac40ec72401dee4be987960a5003",
+    "development.json": "5802af276cae22d323df31f8ca6a379ef930a44b8f73119e8d207358181ea180",
+    "development_inputs.jsonl": "6b5a59644bd27fa172b240bac9ea2d1664b00d1321f49aef9e3ed1cd36f9a0a5",
+    "documents.json": "0a98b6c0fa3cff9896438ff456350ebaf4870346f041b49191cea29a0257ad93",
+    "test.json": "63cc5110a109011b1e17d6685b95b50628633082408c1917f7080e0ad74fb428",
+    "test_inputs.jsonl": "2dce3768a4d3036477e6e9dab68927e02f2f0bc0907e7b3ef7af248bc2fa726f",
+    "train.jsonl": "4d41bb749f9cea54599b3798e8b1e4c40aa6f9aa88b2d08b7d9bb934f2bad9a2",
+    "validation.json": "2e8409b2a9509cdb6ad8a42d80e90465f7d6e4a20b910c6912e4d12cc93a6b12",
+    "validation_inputs.jsonl": "6ecfbfc208f02511b45329f1bd634d092f69bf6c1053271de28a49db06c3b71e"
+  }
+}

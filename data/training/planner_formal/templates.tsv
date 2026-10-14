@@ -1,0 +1,120 @@
+development	metric	metric	Retrieve {c}'s {m} amount for fiscal {y}, retaining its original unit.	提取{c}在{y}财年的{m}金额并保留原单位。
+development	metric	metric	For {c} FY{y}, I need only the reported {m} figure and its source.	针对{c}的{y}财年，只查询已报告的{m}数值和来源。
+development	metric	metric	Look up the annual {m} recorded by {c} for FY{y}.	查询{c}在{y}财年记录的全年{m}。
+development	growth	growth	Calculate {c}'s FY{y} year-over-year percentage change in {m}.	计算{c}在{y}财年的{m}同比百分比变化。
+development	growth	growth	How much did annual {m} grow at {c} in fiscal {y} versus fiscal {p}?	{c}在{y}财年的全年{m}相较{p}财年增长了多少？
+development	growth	growth	Return the signed annual growth rate of {c} {m} in FY{y}, with the formula.	给出{c}在{y}财年的{m}带符号同比增长率及公式。
+development	comparison	comparison	Compare {c} and {d} on FY{y} {m}, including their actual fiscal dates.	比较{c}与{d}在{y}财年的{m}，并列明实际财年日期。
+development	comparison	comparison	Which has the larger FY{y} {m}, {c} or {d}? Preserve any period mismatch.	{c}和{d}在{y}财年的{m}谁更高？保留期间不一致的说明。
+development	comparison	comparison	Put {c}'s and {d}'s annual {m} for fiscal {y} side by side.	并排展示{c}与{d}在{y}财年的全年{m}。
+development	alignment	alignment	Do {c} and {d} cover identical fiscal date ranges in FY{y}? No amount comparison.	{c}与{d}在{y}财年的起止日期是否相同？无需比较金额。
+development	alignment	alignment	Check only whether {c}'s FY{y} fiscal period aligns with {d}'s.	仅核对{c}与{d}的{y}财年期间是否对齐。
+development	alignment	alignment	Is the FY{y} reporting interval exactly the same for {c} and {d}?	{c}和{d}的{y}财年报告期间是否完全相同？
+development	summary	summary	Summarize {c}'s revenue, operating income, and net income for fiscal {y}.	汇总{c}在{y}财年的营收、营业利润和净利润。
+development	summary	summary	Give the three annual income statement totals for {c} FY{y}: revenue, operating income, net income.	提供{c}在{y}财年的三项损益表总额：营收、营业利润、净利润。
+development	summary	summary	Build a compact FY{y} table of revenue, operating income and net income for {c}.	为{c}的{y}财年制作营收、营业利润、净利润简表。
+development	explanation	e_revenue	Why did {c}'s annual revenue change in FY{y}, according to management? No calculation.	根据管理层披露，{c}在{y}财年的营收为何变化？无需计算。
+development	explanation	e_profit	Explain the disclosed operating or tax drivers of {c}'s FY{y} net income change without computing a rate.	解释{c}在{y}财年的净利润变化涉及的经营或税务因素，不计算增速。
+development	explanation	e_risk	List the risks disclosed in {c}'s FY{y} annual report that could affect revenue.	列出{c}的{y}财年年报披露的可能影响营收的风险。
+development	hybrid	h_metric	Give {c}'s FY{y} revenue amount and explain its reported business drivers.	提供{c}在{y}财年的营收金额，并解释披露的业务驱动因素。
+development	hybrid	h_growth	Calculate {c}'s FY{y} net income percentage growth and explain the disclosed causes.	计算{c}在{y}财年的净利润同比增长百分比，并解释披露的原因。
+development	hybrid	h_comparison	Compare FY{y} revenue at {c} and {d}, and summarize each company's disclosed risks.	比较{c}和{d}在{y}财年的营收，并总结两家公司各自披露的风险。
+development	boundary	quarter	Give {c}'s {m} for the second quarter of fiscal {y}.	给出{c}在{y}财年第二季度的{m}。
+development	boundary	forecast	Forecast {c}'s next-year {m} using its FY{y} annual report.	根据{c}的{y}财年年报预测下一年的{m}。
+development	boundary	series	Show {c}'s annual {m} series from FY{p} through FY{y}.	展示{c}从{p}到{y}财年的年度{m}序列。
+development	boundary	missing_year	Retrieve {c}'s annual {m}; I have not selected a fiscal year.	查询{c}的全年{m}；我尚未指定财年。
+development	boundary	fx	Convert {c}'s FY{y} {m} to EUR; no exchange rate is supplied.	把{c}在{y}财年的{m}换算为欧元；未提供汇率。
+development	boundary	missing_company	What is the annual {m} amount for FY{y}? No company has been specified.	{y}财年的全年{m}是多少？尚未指定公司。
+development	selected_document	selected_metric	From the selected annual report, extract its annual {m} amount.	从选中的年报中提取该报告财年的全年{m}金额。
+development	selected_document	selected_prior	In the selected report, retrieve the comparative FY{p} {m} amount.	从选中报告中查询用于对比的{p}财年{m}金额。
+development	selected_document	selected_risk	Summarize the business risks in the selected annual report, without financial calculations.	总结选中年报中的业务风险，无需财务计算。
+validation	metric	metric	What value does {c} report as total annual {m} in fiscal {y}?	{c}将{y}财年的全年{m}总额报告为多少？
+validation	metric	metric	Read the FY{y} {m} line for {c} and attach the fiscal period.	读取{c}在{y}财年的{m}项目，并附上财年期间。
+validation	metric	metric	Find {c}'s consolidated FY{y} {m}; a monetary figure is sufficient.	查找{c}在{y}财年的合并{m}；提供金额即可。
+validation	growth	growth	Compute the percentage difference between {c}'s FY{y} and FY{p} {m}, using FY{p} as denominator.	计算{c}在{y}与{p}财年的{m}百分比差异，以{p}财年为分母。
+validation	growth	growth	Determine the annual percentage increase or decrease in {c}'s {m} for FY{y}.	确定{c}在{y}财年的{m}同比增减百分比。
+validation	growth	growth	For {c}, return FY{y} {m} YoY in percent rather than only the amount.	对{c}，返回{y}财年的{m}同比百分比，而不只是金额。
+validation	comparison	comparison	Rank {c} and {d} by their reported FY{y} {m}, showing both observations.	按已报告的{y}财年{m}对{c}与{d}排序，并展示两项观测。
+validation	comparison	comparison	Contrast the FY{y} {m} amounts of {c} and {d} and state if dates differ.	对照{c}与{d}在{y}财年的{m}金额，并说明日期是否不同。
+validation	comparison	comparison	For fiscal {y}, provide a two-company comparison of {m}: {c} versus {d}.	针对{y}财年，提供{c}与{d}的{m}双公司比较。
+validation	alignment	alignment	Without ranking monetary values, verify FY{y} fiscal start and end dates for {c} versus {d}.	不比较金额高低，仅核对{c}与{d}在{y}财年的起止日期是否相同。
+validation	alignment	alignment	Are the annual periods labeled FY{y} actually aligned between {c} and {d}?	{c}和{d}标为{y}财年的年度期间是否实际对齐？
+validation	alignment	alignment	Assess exact fiscal-date compatibility for {c} and {d}, FY{y}; do not fetch an amount comparison.	判断{c}与{d}的{y}财年日期是否严格一致，无需进行金额比较。
+validation	summary	summary	Collect revenue plus operating income plus net income for {c}'s FY{y} in one view.	将{c}在{y}财年的营收、营业利润与净利润集中展示。
+validation	summary	summary	Provide a fiscal {y} financial snapshot of {c}, containing all three totals: revenue, operating income, net income.	提供{c}在{y}财年的财务概览，包含营收、营业利润及净利润三项总额。
+validation	summary	summary	I need {c}'s FY{y} revenue together with both operating and net income.	我需要{c}在{y}财年的营收，以及营业利润和净利润。
+validation	explanation	e_revenue	Describe management's explanation of {c}'s FY{y} revenue movement; omit numerical calculations.	描述管理层对{c}在{y}财年营收变化的解释，省略数值计算。
+validation	explanation	e_profit	Which operating factors does the annual report cite for {c}'s FY{y} operating-income change?	年报将{c}在{y}财年营业利润变化归因于哪些经营因素？
+validation	explanation	e_risk	Read {c}'s FY{y} risk discussion and identify threats to the business.	阅读{c}的{y}财年风险讨论，指出业务面临的威胁。
+validation	hybrid	h_metric	Report {c}'s FY{y} revenue number, then explain the revenue drivers from its annual report.	报告{c}在{y}财年的营收数值，再根据年报解释营收驱动因素。
+validation	hybrid	h_growth	Give {c}'s FY{y} net-income YoY percentage alongside management's explanation.	给出{c}在{y}财年的净利润同比百分比，同时附上管理层的解释。
+validation	hybrid	h_comparison	Show {c} versus {d} FY{y} revenue amounts and discuss the risk disclosures for both.	展示{c}与{d}在{y}财年的营收金额，并讨论两家公司的风险披露。
+validation	boundary	quarter	How large was {c}'s {m} in Q3 of fiscal {y}?	{c}在{y}财年第三季度的{m}是多少？
+validation	boundary	forecast	Estimate future annual {m} for {c} after FY{y}.	估计{c}在{y}财年之后的未来全年{m}。
+validation	boundary	series	List separate yearly {m} figures for {c} in FY{p} and FY{y}; do not compute growth.	分别列出{c}在{p}与{y}财年的{m}数值，不计算增长率。
+validation	boundary	missing_year	Find the annual {m} for {c}, with the year still unspecified.	查找{c}的全年{m}，年份尚未指定。
+validation	boundary	fx	Give {c}'s FY{y} {m} in GBP without assuming an exchange rate.	以英镑提供{c}在{y}财年的{m}，但不要假设汇率。
+validation	boundary	missing_company	Fetch FY{y} annual {m}, but the company name is absent.	提取{y}财年的全年{m}，但公司名称缺失。
+validation	selected_document	selected_metric	Use the single selected filing to identify the issuer, fiscal year and annual {m}.	根据唯一选中的申报文件确定发行人、财年并查询全年{m}。
+validation	selected_document	selected_prior	Read FY{p} comparative {m} from the annual report currently selected.	从当前选中的年报读取{p}财年用于比较的{m}。
+validation	selected_document	selected_risk	What risks does the currently selected filing disclose for its own fiscal year?	当前选中的申报文件为该财年披露了哪些风险？
+test	metric	metric	Identify the consolidated {m} amount attributable to {c} in FY{y}, with units.	确定{c}在{y}财年的合并{m}金额及单位。
+test	metric	metric	For fiscal {y}, quote {c}'s reported annual {m} total, not a growth rate.	针对{y}财年，给出{c}报告的全年{m}总额，不需要增长率。
+test	metric	metric	Locate {m} in {c}'s FY{y} annual statements and give that monetary observation.	在{c}的{y}财年年度报表中定位{m}，给出对应金额观测。
+test	metric	metric	My requested data point is {c} / FY{y} / annual {m}; include provenance.	我需要的数据点为{c}、{y}财年、全年{m}，请附来源。
+test	metric	metric	Read back the full-year {m} booked by {c} in fiscal {y}.	读取{c}在{y}财年入账的全年{m}。
+test	metric	metric	State {c}'s fiscal {y} {m} as an absolute amount, preserving the stated currency.	以绝对金额列出{c}在{y}财年的{m}，保留披露币种。
+test	growth	growth	Using consecutive fiscal years {p} and {y}, calculate {c}'s {m} percentage growth.	利用连续的{p}与{y}财年，计算{c}的{m}百分比增长率。
+test	growth	growth	For FY{y}, how many percent higher or lower was {c}'s annual {m} than one fiscal year earlier?	{c}在{y}财年的全年{m}比上一财年高或低百分之几？
+test	growth	growth	Measure {c}'s FY{y} annual rate of change in {m}, explicitly using the preceding year.	明确以上一财年为基期，衡量{c}在{y}财年的{m}年度变化率。
+test	growth	growth	Show the YoY percentage calculation for {c}'s fiscal {y} {m}, with both input values.	展示{c}在{y}财年的{m}同比百分比计算及两个输入值。
+test	growth	growth	Derive the signed percentage movement in {c} {m} from fiscal {p} to fiscal {y}.	推导{c}的{m}从{p}到{y}财年的带符号百分比变动。
+test	growth	growth	Report the percent annual growth or decline of {c}'s {m} in FY{y}; explanation of drivers is unnecessary.	报告{c}在{y}财年的{m}同比增长或下降百分比，无需解释驱动因素。
+test	comparison	comparison	Between {c} and {d}, whose annual {m} is greater in FY{y}? Give the source-bound amounts.	{c}与{d}在{y}财年的全年{m}谁更大？给出有来源的金额。
+test	comparison	comparison	Compare the reported fiscal {y} {m} totals for {c} versus {d}, while retaining each fiscal interval.	比较{c}与{d}报告的{y}财年{m}总额，并保留各自财年区间。
+test	comparison	comparison	Prepare a FY{y} {m} comparison row for {c} and another for {d}.	分别为{c}和{d}准备{y}财年的{m}比较记录。
+test	comparison	comparison	I want the {c} versus {d} FY{y} {m} amounts even if their fiscal calendars differ.	即使财年日历不同，我仍需要比较{c}与{d}在{y}财年的{m}金额。
+test	comparison	comparison	Judge which company leads on fiscal {y} {m}: {c} or {d}; mention any date mismatch.	判断{c}与{d}中谁的{y}财年{m}领先，并说明日期差异。
+test	comparison	comparison	Contrast annual {m} magnitudes across {c} and {d} for FY{y}, without forcing date alignment.	对比{c}与{d}在{y}财年的全年{m}规模，无需强制期间对齐。
+test	alignment	alignment	Test whether the start-date/end-date pairs coincide for {c} and {d} in fiscal {y}, without comparing values.	仅检验{c}与{d}在{y}财年的起止日期对是否重合，不比较数值。
+test	alignment	alignment	Is an exact same-period comparison possible for {c} and {d} FY{y}? Only inspect fiscal dates.	{c}与{d}的{y}财年能否严格同期间比较？仅检查财年日期。
+test	alignment	alignment	Check fiscal {y} period equality between {c} and {d}; no ranking or amount is wanted.	核对{c}和{d}的{y}财年期间是否相等，无需排名或金额。
+test	alignment	alignment	Do both {c} and {d} use matching beginning and ending dates for FY{y}?	{c}和{d}的{y}财年是否采用相同的开始与结束日期？
+test	alignment	alignment	Confirm or reject strict annual-period alignment for {c} versus {d} in fiscal {y}.	确认或否定{c}与{d}在{y}财年的严格年度期间对齐。
+test	alignment	alignment	My sole question concerns FY{y} calendar compatibility: are {c} and {d}'s fiscal intervals identical?	我只关心{y}财年日历兼容性：{c}与{d}的财年区间是否完全相同？
+test	summary	summary	Present {c}'s fiscal {y} revenue and its operating-income and net-income totals together.	同时展示{c}在{y}财年的营收、营业利润与净利润总额。
+test	summary	summary	Create three FY{y} entries for {c}: revenue, operating profit, and net income.	为{c}建立{y}财年的三项记录：营收、营业利润和净利润。
+test	summary	summary	Return a complete three-metric annual snapshot for {c} FY{y}: revenue, operating income, net income.	返回{c}在{y}财年的完整三指标年度快照：营收、营业利润、净利润。
+test	summary	summary	Read all of revenue, operating income and net income from {c}'s fiscal {y} statements.	从{c}的{y}财年报表读取营收、营业利润和净利润全部三项。
+test	summary	summary	Summarize the FY{y} income-statement trio for {c}, covering revenue plus operating and net profit.	总结{c}在{y}财年的损益表三项数据，包括营收、营业利润和净利润。
+test	summary	summary	Give one table containing {c}'s FY{y} revenue, operating income, and net earnings with their units.	用一张表给出{c}在{y}财年的营收、营业利润和净利润及单位。
+test	explanation	e_revenue	Identify the business mechanisms management associates with {c}'s FY{y} revenue change, using prose evidence only.	仅使用正文证据，指出管理层将{c}在{y}财年的营收变化关联到哪些业务机制。
+test	explanation	e_profit	Explain the annual net income change and disclosed operating or tax drivers for {c} FY{y}.	解释{c}在{y}财年的净利润年度变化及披露的经营或税务因素。
+test	explanation	e_risk	Which disclosed uncertainties threaten {c}'s business in its FY{y} annual filing?	{c}的{y}财年年度申报中披露了哪些威胁业务的不确定性？
+test	explanation	e_revenue	What reasons does {c}'s FY{y} management discussion give for revenue movement, with no amount requested?	{c}的{y}财年管理层讨论对营收变动给出哪些原因？无需金额。
+test	explanation	e_profit	Describe the reported drivers behind {c}'s FY{y} operating-profit movement rather than calculating its size.	描述{c}披露的{y}财年营业利润变化驱动因素，无需计算变化幅度。
+test	explanation	e_risk	Using its FY{y} filing, discuss risks that may constrain {c}'s future sales; do not forecast sales.	根据{c}的{y}财年申报文件讨论可能制约未来销售的风险，不预测销售额。
+test	hybrid	h_metric	Supply {c}'s fiscal {y} revenue in USD and explain the disclosed reasons for its change.	以美元提供{c}在{y}财年的营收，并解释披露的变化原因。
+test	hybrid	h_growth	Quantify {c}'s FY{y} net-income change in percent and relate it to the report's stated drivers.	用百分比量化{c}在{y}财年的净利润同比变化，并结合年报说明驱动因素。
+test	hybrid	h_comparison	Compare {c} and {d}'s FY{y} revenue figures, then contrast their disclosed business risks.	比较{c}与{d}在{y}财年的营收数值，再对照披露的业务风险。
+test	hybrid	h_metric	Read {c}'s annual FY{y} revenue amount and give passage-backed reasons for the revenue movement.	读取{c}在{y}财年的全年营收金额，并提供正文支持的营收变化原因。
+test	hybrid	h_growth	Work out the annual net-income percentage movement for {c} in fiscal {y} and explain management's causes.	算出{c}在{y}财年的净利润同比百分比变动，并解释管理层披露的原因。
+test	hybrid	h_comparison	For FY{y}, show both {c}'s and {d}'s revenue amounts and identify risks separately for each issuer.	针对{y}财年，展示{c}与{d}各自营收金额，并分别识别两家发行人的风险。
+test	boundary	quarter	Retrieve the fiscal {y} fourth-quarter {m} for {c}, not the annual total.	查询{c}在{y}财年第四季度的{m}，不是全年总额。
+test	boundary	quarter	I need {c}'s {m} for Q1 FY{y} only.	我只需要{c}在{y}财年第一季度的{m}。
+test	boundary	forecast	Project {c}'s {m} for the fiscal year after {y} from the latest annual evidence.	根据最新年度证据预测{c}在{y}之后财年的{m}。
+test	boundary	forecast	Use {c}'s FY{y} report to predict its following full-year {m}.	使用{c}的{y}财年报告预测下一完整财年的{m}。
+test	boundary	series	Return two annual {m} amounts for {c}: FY{p} and FY{y}, as a series rather than a growth calculation.	返回{c}在{p}与{y}财年的两项年度{m}金额，作为序列而非增长计算。
+test	boundary	series	Build a year-indexed {m} table for {c} covering fiscal {p} through fiscal {y}.	为{c}构建按年份排列的{m}表，覆盖{p}至{y}财年。
+test	boundary	missing_year	Find {c}'s reported annual {m}; the reporting year is intentionally left open.	查找{c}报告的全年{m}，报告年份暂未确定。
+test	boundary	missing_year	I know the company is {c} and the metric is {m}, but have not chosen any fiscal year.	我知道公司是{c}、指标为{m}，但尚未选择财年。
+test	boundary	fx	Express {c}'s fiscal {y} {m} in CNY, without a supplied FX rate.	将{c}在{y}财年的{m}表示为人民币金额，但没有提供汇率。
+test	boundary	fx	Translate the FY{y} {m} amount for {c} into EUR; the conversion rate remains unspecified.	将{c}在{y}财年的{m}金额换算成欧元，换算汇率尚未指定。
+test	boundary	missing_company	The requested figure is annual {m} for fiscal {y}; the issuer has not been identified.	请求的数值为{y}财年的全年{m}，发行人尚未确定。
+test	boundary	missing_company	Retrieve fiscal {y} {m} once a company can be specified; none is provided here.	待指定公司后查询{y}财年的{m}，此处未提供任何公司。
+test	selected_document	selected_metric	Read the full-year {m} from the one filing I selected, resolving its issuer and year from metadata.	从我选中的唯一申报文件读取全年{m}，发行人与年份从元数据解析。
+test	selected_document	selected_metric	For the selected annual document's own fiscal period, give its {m}.	针对选中年度文件自身所属财年，给出其{m}。
+test	selected_document	selected_prior	Keep the selected report as the evidence source, but extract the prior fiscal {p} {m} comparison.	保持选中报告作为证据来源，但提取上一{p}财年的{m}对比数据。
+test	selected_document	selected_prior	The selected annual filing contains comparative FY{p} figures; retrieve {m} for that prior year.	选中年度申报包含{p}财年对比数值，请提取该上一财年的{m}。
+test	selected_document	selected_risk	Explain the risk disclosures for the fiscal year of the sole selected annual filing.	解释唯一选中年度申报所属财年的风险披露。
+test	selected_document	selected_risk	Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.	仅使用选中文件的元数据确定请求的风险讨论涉及哪家公司与哪个财年。

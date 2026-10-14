@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dataset_version": "planner_formal_v1",
+  "source_sha256": "adcc893f15319c8f8025d7ef950f0130328335223d8f912187a71bdc5c8b489a",
+  "source_role": "authored_synthetic_bilingual_planner",
+  "splits": {
+    "development": {
+      "cases": 600,
+      "groups": 30
+    },
+    "validation": {
+      "cases": 120,
+      "groups": 30
+    },
+    "test": {
+      "cases": 240,
+      "groups": 60
+    }
+  },
+  "files": {
+    "contract.json": "2219fdfa79a49d984420a708897b2018c416ac40ec72401dee4be987960a5003",
+    "development.json": "53a11daf7abfe2966bed08f1deef3fb58de2b5c547617d4b611679220cdc3779",
+    "development_inputs.jsonl": "9d47d4420d57248da1d0a1a4070f5204c40e9a73bae537118f7a631dc739411d",
+    "documents.json": "b88b07fa9ba679109738f5e41dfa3d167f61d97d9865418f0e5933d82e91799f",
+    "test.json": "9f7c3b6756f8115af45c10bf9f7b111cff62fb7a42971946f8e4c034b79db42a",
+    "test_inputs.jsonl": "39e1ec213da3cddbb48b911620ceeb84ad900194a80318816c5704bc235d138d",
+    "train.jsonl": "10e2901c361a830db6746d772dfd91a2e4b7ac2f3748d61ea5b06eb572e7cb08",
+    "validation.json": "cac1fb847f5692f6f0413c41b0cd4b88d895cc83f37db214920803f7c6654611",
+    "validation_inputs.jsonl": "affb59ccd0707b9b5b456260c6108ab9baccfcf393295053024a39e229f9d6e8"
+  }
+}

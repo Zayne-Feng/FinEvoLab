@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "source_sha256": "0e13c1b815c612c9301b1b5774fd3af0fb75df85d23b4a18ed71a1098009012d",
+  "source_role": "authored_synthetic_planner_pilot",
+  "splits": {
+    "development": {
+      "cases": 40,
+      "groups": 10
+    },
+    "validation": {
+      "cases": 24,
+      "groups": 6
+    },
+    "test": {
+      "cases": 32,
+      "groups": 8
+    }
+  },
+  "files": {
+    "contract.json": "2219fdfa79a49d984420a708897b2018c416ac40ec72401dee4be987960a5003",
+    "development.json": "5802af276cae22d323df31f8ca6a379ef930a44b8f73119e8d207358181ea180",
+    "development_inputs.jsonl": "6b5a59644bd27fa172b240bac9ea2d1664b00d1321f49aef9e3ed1cd36f9a0a5",
+    "documents.json": "0a98b6c0fa3cff9896438ff456350ebaf4870346f041b49191cea29a0257ad93",
+    "test.json": "77d92a4d929a04f55d14367f57e1409fb9fc97b7294d3ead8642c085820e7eb6",
+    "test_inputs.jsonl": "dd9de6626468bf1deeb3102ddbbe85a0ed9f9734ba68b155ab4415e29822f2f0",
+    "train.jsonl": "4d41bb749f9cea54599b3798e8b1e4c40aa6f9aa88b2d08b7d9bb934f2bad9a2",
+    "validation.json": "2fdb394fc2e44c9be83d8a278b110e7a350fc8c1b3742db6e613325bb6d03ece",
+    "validation_inputs.jsonl": "e248386a09623b8b75e1cecd7a9b8612b5b9b7fffeb4219db36a8ee53571d312"
+  }
+}
