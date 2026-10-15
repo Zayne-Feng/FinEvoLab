@@ -1,0 +1,1230 @@
+{
+  "run_id": "retrieval-smoke-run-03",
+  "purpose": "development_smoke_only",
+  "config": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "device": "cpu",
+    "max_sequence_length": 256,
+    "batch_size": 8,
+    "normalize_embeddings": true,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "rrf_constant": 60
+  },
+  "commit": "c051771c213fb5d062782bc8db288f11dd10e74a",
+  "records": [
+    {
+      "case": "revenue",
+      "strategy": "fixed",
+      "mode": "bm25",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "9ff0a541d8a5c9dc32ae51ec",
+        "872bd4db11369648c987da82",
+        "e87c2fbf0bce9c257299f16f",
+        "37afd64c51af777955c09ba7",
+        "09d1ecf47c66ac073c3ea083"
+      ],
+      "elapsed_seconds": 0.062
+    },
+    {
+      "case": "net_income",
+      "strategy": "fixed",
+      "mode": "bm25",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "0bc4988adb8df2faca5abc0e",
+          "0ea99bdb2f66ef8adac4cf79",
+          "247677c8325c1ca5f98c3242",
+          "3765b65dc796de1fc8521165",
+          "696e3188f9d330147dedea42",
+          "6996b6b554918b81df64bce6",
+          "75e3b1f80c2054f67eacadb7",
+          "9169baf626b0640093c30ec5",
+          "95c03f74f981f5d450ef1fc1",
+          "9b00368a6343cb4b4dbbc911",
+          "cb245651ea35d74386011e60",
+          "d65f57b6910a64baa751b544",
+          "d93f8399278d3ac414eb9b14"
+        ]
+      ],
+      "retrieved_ids": [
+        "9169baf626b0640093c30ec5",
+        "9ff0a541d8a5c9dc32ae51ec",
+        "a0e37770bc425456b3d80076",
+        "9b00368a6343cb4b4dbbc911",
+        "95c03f74f981f5d450ef1fc1"
+      ],
+      "elapsed_seconds": 0.063
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "fixed",
+      "mode": "bm25",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "d4ab64fa9291300dbf1077f7",
+        "c04350908adfa8b87864e9b6",
+        "079e2071390613d9935d87a8",
+        "57e41b89f1c9c395ce682a21",
+        "4d26d406806c3ef3fde9f0e5"
+      ],
+      "elapsed_seconds": 0.062
+    },
+    {
+      "case": "revenue",
+      "strategy": "fixed",
+      "mode": "vector",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "54357219a80444a6959f9ed5",
+        "7932c2aecb99c3a20f6de1a3",
+        "d3d7e7a7713a59cc836553d7",
+        "3765b65dc796de1fc8521165",
+        "9ff0a541d8a5c9dc32ae51ec"
+      ],
+      "elapsed_seconds": 0.266
+    },
+    {
+      "case": "net_income",
+      "strategy": "fixed",
+      "mode": "vector",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "0bc4988adb8df2faca5abc0e",
+          "0ea99bdb2f66ef8adac4cf79",
+          "247677c8325c1ca5f98c3242",
+          "3765b65dc796de1fc8521165",
+          "696e3188f9d330147dedea42",
+          "6996b6b554918b81df64bce6",
+          "75e3b1f80c2054f67eacadb7",
+          "9169baf626b0640093c30ec5",
+          "95c03f74f981f5d450ef1fc1",
+          "9b00368a6343cb4b4dbbc911",
+          "cb245651ea35d74386011e60",
+          "d65f57b6910a64baa751b544",
+          "d93f8399278d3ac414eb9b14"
+        ]
+      ],
+      "retrieved_ids": [
+        "95c03f74f981f5d450ef1fc1",
+        "a0e37770bc425456b3d80076",
+        "9169baf626b0640093c30ec5",
+        "93933b55682f0285cf1e43ef",
+        "3765b65dc796de1fc8521165"
+      ],
+      "elapsed_seconds": 0.156
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "fixed",
+      "mode": "vector",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "4c477b39e7bf6900c4431105",
+        "757d312f4a1ec0598d248ace",
+        "42c0e3797148c9a8a2ee736f",
+        "bd932d720f073de1309a078e",
+        "39482791cbc341986311b1e6"
+      ],
+      "elapsed_seconds": 0.281
+    },
+    {
+      "case": "revenue",
+      "strategy": "fixed",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "9ff0a541d8a5c9dc32ae51ec",
+        "54357219a80444a6959f9ed5",
+        "8d7fd80c5f72e13b0f7879c4",
+        "d3d7e7a7713a59cc836553d7",
+        "7932c2aecb99c3a20f6de1a3"
+      ],
+      "elapsed_seconds": 0.11
+    },
+    {
+      "case": "net_income",
+      "strategy": "fixed",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "0bc4988adb8df2faca5abc0e",
+          "0ea99bdb2f66ef8adac4cf79",
+          "247677c8325c1ca5f98c3242",
+          "3765b65dc796de1fc8521165",
+          "696e3188f9d330147dedea42",
+          "6996b6b554918b81df64bce6",
+          "75e3b1f80c2054f67eacadb7",
+          "9169baf626b0640093c30ec5",
+          "95c03f74f981f5d450ef1fc1",
+          "9b00368a6343cb4b4dbbc911",
+          "cb245651ea35d74386011e60",
+          "d65f57b6910a64baa751b544",
+          "d93f8399278d3ac414eb9b14"
+        ]
+      ],
+      "retrieved_ids": [
+        "9169baf626b0640093c30ec5",
+        "a0e37770bc425456b3d80076",
+        "95c03f74f981f5d450ef1fc1",
+        "9b00368a6343cb4b4dbbc911",
+        "3765b65dc796de1fc8521165"
+      ],
+      "elapsed_seconds": 0.093
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "fixed",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "09d1ecf47c66ac073c3ea083",
+          "8d7fd80c5f72e13b0f7879c4"
+        ]
+      ],
+      "retrieved_ids": [
+        "079e2071390613d9935d87a8",
+        "d4ab64fa9291300dbf1077f7",
+        "4d26d406806c3ef3fde9f0e5",
+        "7e0bf8e02b643e61cbb8151d",
+        "46a00647df7563115040eca7"
+      ],
+      "elapsed_seconds": 0.11
+    },
+    {
+      "case": "revenue",
+      "strategy": "structured",
+      "mode": "bm25",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "de78bbd4c1956dd41c1dc9a2",
+        "38e8509f22190124e1637e86",
+        "c6d0d3272306b10b93f0fa7d",
+        "e51bb5426828c24aab9ae883",
+        "8ff362271f8de169c1389bca"
+      ],
+      "elapsed_seconds": 0.062
+    },
+    {
+      "case": "net_income",
+      "strategy": "structured",
+      "mode": "bm25",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "28332faf27f2dec1f2b7727e",
+          "2b4e184c0f649b8b69606f13",
+          "3a56c719d0b7e8173e444676",
+          "540296b86c989c4ae810fef5",
+          "605dad9c19303bdbb5e759e2",
+          "67f4bfb29a4124a563bf1f93",
+          "7082309eb2c3dbaa639536a7",
+          "771a8c8bb190ae53f36b4372",
+          "8369322fe8dcf6f3d1454171",
+          "a1ae42353f3ca4d02eeffb74",
+          "a69a3a8815077ed10afce06f",
+          "a71d0b18073d2139a7596a8f",
+          "c7c9e26cf4dfeb4f74bd1769",
+          "d4a28b6f87a605a543a4c588"
+        ]
+      ],
+      "retrieved_ids": [
+        "c7c9e26cf4dfeb4f74bd1769",
+        "d4a28b6f87a605a543a4c588",
+        "c6d0d3272306b10b93f0fa7d",
+        "e51bb5426828c24aab9ae883",
+        "67f4bfb29a4124a563bf1f93"
+      ],
+      "elapsed_seconds": 0.063
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "structured",
+      "mode": "bm25",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "5aebc019ac1f1036f7483175",
+        "bab2032e02e52d9e307d3109",
+        "1403092f264866e3b581c910",
+        "274dfe5a58cdc902717bbe68",
+        "385cc5a55040d3dbfb580e79"
+      ],
+      "elapsed_seconds": 0.062
+    },
+    {
+      "case": "revenue",
+      "strategy": "structured",
+      "mode": "vector",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "cea1f204058076a45579add5",
+        "6ef828074b6a2ca8f48fa4f4",
+        "0dba3211eda0e6af24066af5",
+        "29c6cbf976fa1a4b5c05da47",
+        "540296b86c989c4ae810fef5"
+      ],
+      "elapsed_seconds": 0.078
+    },
+    {
+      "case": "net_income",
+      "strategy": "structured",
+      "mode": "vector",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "28332faf27f2dec1f2b7727e",
+          "2b4e184c0f649b8b69606f13",
+          "3a56c719d0b7e8173e444676",
+          "540296b86c989c4ae810fef5",
+          "605dad9c19303bdbb5e759e2",
+          "67f4bfb29a4124a563bf1f93",
+          "7082309eb2c3dbaa639536a7",
+          "771a8c8bb190ae53f36b4372",
+          "8369322fe8dcf6f3d1454171",
+          "a1ae42353f3ca4d02eeffb74",
+          "a69a3a8815077ed10afce06f",
+          "a71d0b18073d2139a7596a8f",
+          "c7c9e26cf4dfeb4f74bd1769",
+          "d4a28b6f87a605a543a4c588"
+        ]
+      ],
+      "retrieved_ids": [
+        "8369322fe8dcf6f3d1454171",
+        "c7c9e26cf4dfeb4f74bd1769",
+        "540296b86c989c4ae810fef5",
+        "c9a37fdc8eda3ff337e2e189",
+        "67f4bfb29a4124a563bf1f93"
+      ],
+      "elapsed_seconds": 0.078
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "structured",
+      "mode": "vector",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "4a6931fdb641c469a45dd3a4",
+        "53df57378f6a1b97c1dc6208",
+        "a21713b69bd46395a8b491ae",
+        "9bb02887a892b3d21e76ec92",
+        "ad6c07fd40c472ddf091ae3d"
+      ],
+      "elapsed_seconds": 0.094
+    },
+    {
+      "case": "revenue",
+      "strategy": "structured",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "38e8509f22190124e1637e86",
+        "c6d0d3272306b10b93f0fa7d",
+        "cea1f204058076a45579add5",
+        "6ef828074b6a2ca8f48fa4f4",
+        "fe992b2e15e81663896275e0"
+      ],
+      "elapsed_seconds": 0.094
+    },
+    {
+      "case": "net_income",
+      "strategy": "structured",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 1.0,
+      "gold_evidence_groups": [
+        [
+          "28332faf27f2dec1f2b7727e",
+          "2b4e184c0f649b8b69606f13",
+          "3a56c719d0b7e8173e444676",
+          "540296b86c989c4ae810fef5",
+          "605dad9c19303bdbb5e759e2",
+          "67f4bfb29a4124a563bf1f93",
+          "7082309eb2c3dbaa639536a7",
+          "771a8c8bb190ae53f36b4372",
+          "8369322fe8dcf6f3d1454171",
+          "a1ae42353f3ca4d02eeffb74",
+          "a69a3a8815077ed10afce06f",
+          "a71d0b18073d2139a7596a8f",
+          "c7c9e26cf4dfeb4f74bd1769",
+          "d4a28b6f87a605a543a4c588"
+        ]
+      ],
+      "retrieved_ids": [
+        "c7c9e26cf4dfeb4f74bd1769",
+        "8369322fe8dcf6f3d1454171",
+        "67f4bfb29a4124a563bf1f93",
+        "540296b86c989c4ae810fef5",
+        "c6d0d3272306b10b93f0fa7d"
+      ],
+      "elapsed_seconds": 0.078
+    },
+    {
+      "case": "revenue_zh",
+      "strategy": "structured",
+      "mode": "hybrid",
+      "evidence_recall_at_5": 0.0,
+      "gold_evidence_groups": [
+        [
+          "38e8509f22190124e1637e86",
+          "605dad9c19303bdbb5e759e2"
+        ]
+      ],
+      "retrieved_ids": [
+        "bab2032e02e52d9e307d3109",
+        "0334fd0e03e874402ff81e26",
+        "1403092f264866e3b581c910",
+        "5aebc019ac1f1036f7483175",
+        "f6d7d2e559a895d50063b565"
+      ],
+      "elapsed_seconds": 0.079
+    }
+  ],
+  "gold_method": "source_alternatives_supporting_both_annual_values",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "history": [
+    {
+      "run_id": "retrieval-smoke-run-01",
+      "purpose": "development_smoke_only",
+      "config": {
+        "model": "intfloat/multilingual-e5-small",
+        "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "device": "cpu",
+        "max_sequence_length": 256,
+        "batch_size": 8,
+        "normalize_embeddings": true,
+        "query_prefix": "query: ",
+        "passage_prefix": "passage: ",
+        "rrf_constant": 60
+      },
+      "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+      "records": [
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 1.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "9ff0a541d8a5c9dc32ae51ec",
+            "872bd4db11369648c987da82",
+            "e87c2fbf0bce9c257299f16f",
+            "37afd64c51af777955c09ba7",
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "elapsed_seconds": 0.047
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "9169baf626b0640093c30ec5",
+            "9ff0a541d8a5c9dc32ae51ec",
+            "a0e37770bc425456b3d80076",
+            "9b00368a6343cb4b4dbbc911",
+            "95c03f74f981f5d450ef1fc1"
+          ],
+          "elapsed_seconds": 0.063
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "d4ab64fa9291300dbf1077f7",
+            "c04350908adfa8b87864e9b6",
+            "079e2071390613d9935d87a8",
+            "57e41b89f1c9c395ce682a21",
+            "4d26d406806c3ef3fde9f0e5"
+          ],
+          "elapsed_seconds": 0.062
+        },
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "54357219a80444a6959f9ed5",
+            "7932c2aecb99c3a20f6de1a3",
+            "d3d7e7a7713a59cc836553d7",
+            "3765b65dc796de1fc8521165",
+            "9ff0a541d8a5c9dc32ae51ec"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "95c03f74f981f5d450ef1fc1",
+            "a0e37770bc425456b3d80076",
+            "9169baf626b0640093c30ec5",
+            "93933b55682f0285cf1e43ef",
+            "3765b65dc796de1fc8521165"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "4c477b39e7bf6900c4431105",
+            "757d312f4a1ec0598d248ace",
+            "42c0e3797148c9a8a2ee736f",
+            "bd932d720f073de1309a078e",
+            "39482791cbc341986311b1e6"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "9ff0a541d8a5c9dc32ae51ec",
+            "54357219a80444a6959f9ed5",
+            "8d7fd80c5f72e13b0f7879c4",
+            "d3d7e7a7713a59cc836553d7",
+            "7932c2aecb99c3a20f6de1a3"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "9169baf626b0640093c30ec5",
+            "a0e37770bc425456b3d80076",
+            "95c03f74f981f5d450ef1fc1",
+            "9b00368a6343cb4b4dbbc911",
+            "3765b65dc796de1fc8521165"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "retrieved_ids": [
+            "079e2071390613d9935d87a8",
+            "d4ab64fa9291300dbf1077f7",
+            "4d26d406806c3ef3fde9f0e5",
+            "7e0bf8e02b643e61cbb8151d",
+            "46a00647df7563115040eca7"
+          ],
+          "elapsed_seconds": 0.093
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "de78bbd4c1956dd41c1dc9a2",
+            "38e8509f22190124e1637e86",
+            "c6d0d3272306b10b93f0fa7d",
+            "e51bb5426828c24aab9ae883",
+            "8ff362271f8de169c1389bca"
+          ],
+          "elapsed_seconds": 0.063
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "c7c9e26cf4dfeb4f74bd1769",
+            "d4a28b6f87a605a543a4c588",
+            "c6d0d3272306b10b93f0fa7d",
+            "e51bb5426828c24aab9ae883",
+            "67f4bfb29a4124a563bf1f93"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "5aebc019ac1f1036f7483175",
+            "bab2032e02e52d9e307d3109",
+            "1403092f264866e3b581c910",
+            "274dfe5a58cdc902717bbe68",
+            "385cc5a55040d3dbfb580e79"
+          ],
+          "elapsed_seconds": 0.047
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "cea1f204058076a45579add5",
+            "6ef828074b6a2ca8f48fa4f4",
+            "0dba3211eda0e6af24066af5",
+            "29c6cbf976fa1a4b5c05da47",
+            "540296b86c989c4ae810fef5"
+          ],
+          "elapsed_seconds": 0.093
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "8369322fe8dcf6f3d1454171",
+            "c7c9e26cf4dfeb4f74bd1769",
+            "540296b86c989c4ae810fef5",
+            "c9a37fdc8eda3ff337e2e189",
+            "67f4bfb29a4124a563bf1f93"
+          ],
+          "elapsed_seconds": 0.079
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "4a6931fdb641c469a45dd3a4",
+            "53df57378f6a1b97c1dc6208",
+            "a21713b69bd46395a8b491ae",
+            "9bb02887a892b3d21e76ec92",
+            "ad6c07fd40c472ddf091ae3d"
+          ],
+          "elapsed_seconds": 0.093
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "38e8509f22190124e1637e86",
+            "c6d0d3272306b10b93f0fa7d",
+            "cea1f204058076a45579add5",
+            "6ef828074b6a2ca8f48fa4f4",
+            "fe992b2e15e81663896275e0"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "c7c9e26cf4dfeb4f74bd1769",
+            "8369322fe8dcf6f3d1454171",
+            "67f4bfb29a4124a563bf1f93",
+            "540296b86c989c4ae810fef5",
+            "c6d0d3272306b10b93f0fa7d"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_ids": [
+            "605dad9c19303bdbb5e759e2"
+          ],
+          "retrieved_ids": [
+            "bab2032e02e52d9e307d3109",
+            "0334fd0e03e874402ff81e26",
+            "1403092f264866e3b581c910",
+            "5aebc019ac1f1036f7483175",
+            "f6d7d2e559a895d50063b565"
+          ],
+          "elapsed_seconds": 0.094
+        }
+      ]
+    },
+    {
+      "run_id": "retrieval-smoke-run-02",
+      "purpose": "development_smoke_only",
+      "config": {
+        "model": "intfloat/multilingual-e5-small",
+        "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "device": "cpu",
+        "max_sequence_length": 256,
+        "batch_size": 8,
+        "normalize_embeddings": true,
+        "query_prefix": "query: ",
+        "passage_prefix": "passage: ",
+        "rrf_constant": 60
+      },
+      "commit": "7d26fbfbe149ae70ef770e57fca134c3a3ea74aa",
+      "records": [
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "9ff0a541d8a5c9dc32ae51ec",
+            "872bd4db11369648c987da82",
+            "e87c2fbf0bce9c257299f16f",
+            "37afd64c51af777955c09ba7",
+            "09d1ecf47c66ac073c3ea083"
+          ],
+          "elapsed_seconds": 0.063
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "0bc4988adb8df2faca5abc0e",
+              "0ea99bdb2f66ef8adac4cf79",
+              "247677c8325c1ca5f98c3242",
+              "3765b65dc796de1fc8521165",
+              "696e3188f9d330147dedea42",
+              "6996b6b554918b81df64bce6",
+              "75e3b1f80c2054f67eacadb7",
+              "9169baf626b0640093c30ec5",
+              "95c03f74f981f5d450ef1fc1",
+              "9b00368a6343cb4b4dbbc911",
+              "cb245651ea35d74386011e60",
+              "d65f57b6910a64baa751b544",
+              "d93f8399278d3ac414eb9b14"
+            ]
+          ],
+          "retrieved_ids": [
+            "9169baf626b0640093c30ec5",
+            "9ff0a541d8a5c9dc32ae51ec",
+            "a0e37770bc425456b3d80076",
+            "9b00368a6343cb4b4dbbc911",
+            "95c03f74f981f5d450ef1fc1"
+          ],
+          "elapsed_seconds": 0.062
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "d4ab64fa9291300dbf1077f7",
+            "c04350908adfa8b87864e9b6",
+            "079e2071390613d9935d87a8",
+            "57e41b89f1c9c395ce682a21",
+            "4d26d406806c3ef3fde9f0e5"
+          ],
+          "elapsed_seconds": 0.063
+        },
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "54357219a80444a6959f9ed5",
+            "7932c2aecb99c3a20f6de1a3",
+            "d3d7e7a7713a59cc836553d7",
+            "3765b65dc796de1fc8521165",
+            "9ff0a541d8a5c9dc32ae51ec"
+          ],
+          "elapsed_seconds": 0.093
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "0bc4988adb8df2faca5abc0e",
+              "0ea99bdb2f66ef8adac4cf79",
+              "247677c8325c1ca5f98c3242",
+              "3765b65dc796de1fc8521165",
+              "696e3188f9d330147dedea42",
+              "6996b6b554918b81df64bce6",
+              "75e3b1f80c2054f67eacadb7",
+              "9169baf626b0640093c30ec5",
+              "95c03f74f981f5d450ef1fc1",
+              "9b00368a6343cb4b4dbbc911",
+              "cb245651ea35d74386011e60",
+              "d65f57b6910a64baa751b544",
+              "d93f8399278d3ac414eb9b14"
+            ]
+          ],
+          "retrieved_ids": [
+            "95c03f74f981f5d450ef1fc1",
+            "a0e37770bc425456b3d80076",
+            "9169baf626b0640093c30ec5",
+            "93933b55682f0285cf1e43ef",
+            "3765b65dc796de1fc8521165"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "4c477b39e7bf6900c4431105",
+            "757d312f4a1ec0598d248ace",
+            "42c0e3797148c9a8a2ee736f",
+            "bd932d720f073de1309a078e",
+            "39482791cbc341986311b1e6"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "revenue",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "9ff0a541d8a5c9dc32ae51ec",
+            "54357219a80444a6959f9ed5",
+            "8d7fd80c5f72e13b0f7879c4",
+            "d3d7e7a7713a59cc836553d7",
+            "7932c2aecb99c3a20f6de1a3"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "net_income",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "0bc4988adb8df2faca5abc0e",
+              "0ea99bdb2f66ef8adac4cf79",
+              "247677c8325c1ca5f98c3242",
+              "3765b65dc796de1fc8521165",
+              "696e3188f9d330147dedea42",
+              "6996b6b554918b81df64bce6",
+              "75e3b1f80c2054f67eacadb7",
+              "9169baf626b0640093c30ec5",
+              "95c03f74f981f5d450ef1fc1",
+              "9b00368a6343cb4b4dbbc911",
+              "cb245651ea35d74386011e60",
+              "d65f57b6910a64baa751b544",
+              "d93f8399278d3ac414eb9b14"
+            ]
+          ],
+          "retrieved_ids": [
+            "9169baf626b0640093c30ec5",
+            "a0e37770bc425456b3d80076",
+            "95c03f74f981f5d450ef1fc1",
+            "9b00368a6343cb4b4dbbc911",
+            "3765b65dc796de1fc8521165"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "fixed",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "09d1ecf47c66ac073c3ea083",
+              "8d7fd80c5f72e13b0f7879c4"
+            ]
+          ],
+          "retrieved_ids": [
+            "079e2071390613d9935d87a8",
+            "d4ab64fa9291300dbf1077f7",
+            "4d26d406806c3ef3fde9f0e5",
+            "7e0bf8e02b643e61cbb8151d",
+            "46a00647df7563115040eca7"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "de78bbd4c1956dd41c1dc9a2",
+            "38e8509f22190124e1637e86",
+            "c6d0d3272306b10b93f0fa7d",
+            "e51bb5426828c24aab9ae883",
+            "8ff362271f8de169c1389bca"
+          ],
+          "elapsed_seconds": 0.062
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "28332faf27f2dec1f2b7727e",
+              "2b4e184c0f649b8b69606f13",
+              "3a56c719d0b7e8173e444676",
+              "540296b86c989c4ae810fef5",
+              "605dad9c19303bdbb5e759e2",
+              "67f4bfb29a4124a563bf1f93",
+              "7082309eb2c3dbaa639536a7",
+              "771a8c8bb190ae53f36b4372",
+              "8369322fe8dcf6f3d1454171",
+              "a1ae42353f3ca4d02eeffb74",
+              "a69a3a8815077ed10afce06f",
+              "a71d0b18073d2139a7596a8f",
+              "c7c9e26cf4dfeb4f74bd1769",
+              "d4a28b6f87a605a543a4c588"
+            ]
+          ],
+          "retrieved_ids": [
+            "c7c9e26cf4dfeb4f74bd1769",
+            "d4a28b6f87a605a543a4c588",
+            "c6d0d3272306b10b93f0fa7d",
+            "e51bb5426828c24aab9ae883",
+            "67f4bfb29a4124a563bf1f93"
+          ],
+          "elapsed_seconds": 0.063
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "bm25",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "5aebc019ac1f1036f7483175",
+            "bab2032e02e52d9e307d3109",
+            "1403092f264866e3b581c910",
+            "274dfe5a58cdc902717bbe68",
+            "385cc5a55040d3dbfb580e79"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "cea1f204058076a45579add5",
+            "6ef828074b6a2ca8f48fa4f4",
+            "0dba3211eda0e6af24066af5",
+            "29c6cbf976fa1a4b5c05da47",
+            "540296b86c989c4ae810fef5"
+          ],
+          "elapsed_seconds": 0.078
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "28332faf27f2dec1f2b7727e",
+              "2b4e184c0f649b8b69606f13",
+              "3a56c719d0b7e8173e444676",
+              "540296b86c989c4ae810fef5",
+              "605dad9c19303bdbb5e759e2",
+              "67f4bfb29a4124a563bf1f93",
+              "7082309eb2c3dbaa639536a7",
+              "771a8c8bb190ae53f36b4372",
+              "8369322fe8dcf6f3d1454171",
+              "a1ae42353f3ca4d02eeffb74",
+              "a69a3a8815077ed10afce06f",
+              "a71d0b18073d2139a7596a8f",
+              "c7c9e26cf4dfeb4f74bd1769",
+              "d4a28b6f87a605a543a4c588"
+            ]
+          ],
+          "retrieved_ids": [
+            "8369322fe8dcf6f3d1454171",
+            "c7c9e26cf4dfeb4f74bd1769",
+            "540296b86c989c4ae810fef5",
+            "c9a37fdc8eda3ff337e2e189",
+            "67f4bfb29a4124a563bf1f93"
+          ],
+          "elapsed_seconds": 0.109
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "vector",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "4a6931fdb641c469a45dd3a4",
+            "53df57378f6a1b97c1dc6208",
+            "a21713b69bd46395a8b491ae",
+            "9bb02887a892b3d21e76ec92",
+            "ad6c07fd40c472ddf091ae3d"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "38e8509f22190124e1637e86",
+            "c6d0d3272306b10b93f0fa7d",
+            "cea1f204058076a45579add5",
+            "6ef828074b6a2ca8f48fa4f4",
+            "fe992b2e15e81663896275e0"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "net_income",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 1.0,
+          "gold_evidence_groups": [
+            [
+              "28332faf27f2dec1f2b7727e",
+              "2b4e184c0f649b8b69606f13",
+              "3a56c719d0b7e8173e444676",
+              "540296b86c989c4ae810fef5",
+              "605dad9c19303bdbb5e759e2",
+              "67f4bfb29a4124a563bf1f93",
+              "7082309eb2c3dbaa639536a7",
+              "771a8c8bb190ae53f36b4372",
+              "8369322fe8dcf6f3d1454171",
+              "a1ae42353f3ca4d02eeffb74",
+              "a69a3a8815077ed10afce06f",
+              "a71d0b18073d2139a7596a8f",
+              "c7c9e26cf4dfeb4f74bd1769",
+              "d4a28b6f87a605a543a4c588"
+            ]
+          ],
+          "retrieved_ids": [
+            "c7c9e26cf4dfeb4f74bd1769",
+            "8369322fe8dcf6f3d1454171",
+            "67f4bfb29a4124a563bf1f93",
+            "540296b86c989c4ae810fef5",
+            "c6d0d3272306b10b93f0fa7d"
+          ],
+          "elapsed_seconds": 0.094
+        },
+        {
+          "case": "revenue_zh",
+          "strategy": "structured",
+          "mode": "hybrid",
+          "evidence_recall_at_5": 0.0,
+          "gold_evidence_groups": [
+            [
+              "38e8509f22190124e1637e86",
+              "605dad9c19303bdbb5e759e2"
+            ]
+          ],
+          "retrieved_ids": [
+            "bab2032e02e52d9e307d3109",
+            "0334fd0e03e874402ff81e26",
+            "1403092f264866e3b581c910",
+            "5aebc019ac1f1036f7483175",
+            "f6d7d2e559a895d50063b565"
+          ],
+          "elapsed_seconds": 0.094
+        }
+      ],
+      "gold_method": "source_alternatives_supporting_both_annual_values",
+      "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c"
+    }
+  ]
+}

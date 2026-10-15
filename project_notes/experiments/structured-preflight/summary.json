@@ -1,0 +1,68 @@
+{
+  "planned": 1,
+  "attempted": 1,
+  "unattempted": 0,
+  "completed": 1,
+  "successes": 1.0,
+  "success_rate_attempted": 1.0,
+  "execution_status_counts": {
+    "completed": 1
+  },
+  "error_types": {},
+  "mean_latency_seconds": 13.25,
+  "known_total_tokens": 4168,
+  "unknown_usage_tasks": 0,
+  "cost": null,
+  "categories": {
+    "metric_query": {
+      "attempted": 1,
+      "success_rate": 1.0
+    }
+  },
+  "checks": {
+    "schema": 1.0,
+    "status": 1.0,
+    "numeric": 1.0,
+    "units": 1.0,
+    "periods": 1.0,
+    "citations": 1.0,
+    "formula": 1.0
+  },
+  "run_id": "structured-preflight",
+  "status": "complete",
+  "variant": "tools",
+  "split": "development",
+  "repeats": {
+    "1": {
+      "planned": 1,
+      "attempted": 1,
+      "unattempted": 0,
+      "completed": 1,
+      "successes": 1.0,
+      "success_rate_attempted": 1.0,
+      "execution_status_counts": {
+        "completed": 1
+      },
+      "error_types": {},
+      "mean_latency_seconds": 13.25,
+      "known_total_tokens": 4168,
+      "unknown_usage_tasks": 0,
+      "cost": null,
+      "categories": {
+        "metric_query": {
+          "attempted": 1,
+          "success_rate": 1.0
+        }
+      },
+      "checks": {
+        "schema": 1.0,
+        "status": 1.0,
+        "numeric": 1.0,
+        "units": 1.0,
+        "periods": 1.0,
+        "citations": 1.0,
+        "formula": 1.0
+      }
+    }
+  }
+}

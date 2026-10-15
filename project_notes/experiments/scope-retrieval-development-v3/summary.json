@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "groups": {
+    "legacy:common": {
+      "facts": 14,
+      "hits_at_5": 13,
+      "evidence_recall_at_5": 0.9285714285714286,
+      "mean_context_chars": 3179.214285714286,
+      "mean_seconds": 0.16385714285674371
+    },
+    "legacy:all": {
+      "facts": 14,
+      "hits_at_5": 13,
+      "evidence_recall_at_5": 0.9285714285714286,
+      "mean_context_chars": 3179.214285714286,
+      "mean_seconds": 0.16385714285674371
+    },
+    "raw:common": {
+      "facts": 14,
+      "hits_at_5": 13,
+      "evidence_recall_at_5": 0.9285714285714286,
+      "mean_context_chars": 3503.0714285714284,
+      "mean_seconds": 0.08835714285721354
+    },
+    "raw:upload": {
+      "facts": 4,
+      "hits_at_5": 4,
+      "evidence_recall_at_5": 1.0,
+      "mean_context_chars": 2602.25,
+      "mean_seconds": 0.04700000000048021
+    },
+    "raw:all": {
+      "facts": 18,
+      "hits_at_5": 17,
+      "evidence_recall_at_5": 0.9444444444444444,
+      "mean_context_chars": 3302.8888888888887,
+      "mean_seconds": 0.07916666666682835
+    },
+    "current:common": {
+      "facts": 14,
+      "hits_at_5": 13,
+      "evidence_recall_at_5": 0.9285714285714286,
+      "mean_context_chars": 3018.1428571428573,
+      "mean_seconds": 0.35371428571410696
+    },
+    "current:upload": {
+      "facts": 4,
+      "hits_at_5": 4,
+      "evidence_recall_at_5": 1.0,
+      "mean_context_chars": 2448.0,
+      "mean_seconds": 0.1640000000006694
+    },
+    "current:all": {
+      "facts": 18,
+      "hits_at_5": 17,
+      "evidence_recall_at_5": 0.9444444444444444,
+      "mean_context_chars": 2891.4444444444443,
+      "mean_seconds": 0.31155555555556524
+    }
+  },
+  "source_verification": "two isolated same-model source annotation contexts; exact raw substring program verification",
+  "inference_unit": "source profile; related facts are clustered",
+  "gold_sha256": "a022eae0df6b3cf68e233db0566616cdf213e64ca4007d8ad153bc45a0aa044d"
+}

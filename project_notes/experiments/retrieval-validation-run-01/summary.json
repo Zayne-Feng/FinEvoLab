@@ -1,0 +1,62 @@
+{
+  "run_id": "retrieval-validation-run-01",
+  "status": "complete",
+  "split": "validation",
+  "gold_method": "automatic_label_amount_year_alternative_groups_not_human_calibrated",
+  "results": [
+    {
+      "strategy": "fixed",
+      "mode": "bm25",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.31481481481481477,
+      "all_groups_supported_rate": 0.2222222222222222,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.06481481481481483
+    },
+    {
+      "strategy": "fixed",
+      "mode": "vector",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.4722222222222222,
+      "all_groups_supported_rate": 0.3333333333333333,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.26329629629629614
+    },
+    {
+      "strategy": "fixed",
+      "mode": "hybrid",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.4351851851851851,
+      "all_groups_supported_rate": 0.2777777777777778,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.11546296296296302
+    },
+    {
+      "strategy": "structured",
+      "mode": "bm25",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.33333333333333326,
+      "all_groups_supported_rate": 0.2777777777777778,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.06477777777777777
+    },
+    {
+      "strategy": "structured",
+      "mode": "vector",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.5277777777777779,
+      "all_groups_supported_rate": 0.3888888888888889,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.1391851851851852
+    },
+    {
+      "strategy": "structured",
+      "mode": "hybrid",
+      "evaluations": 54,
+      "mean_group_recall_at_5_per_company": 0.5648148148148149,
+      "all_groups_supported_rate": 0.4444444444444444,
+      "gold_coverage": 1.0,
+      "mean_latency_seconds": 0.1357037037037037
+    }
+  ]
+}
