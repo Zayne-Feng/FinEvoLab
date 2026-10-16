@@ -1,0 +1,13 @@
+{
+  "status": "stopped_after_provider_failures",
+  "task_evaluations": 3,
+  "reflection_calls": 0,
+  "default_promoted": false,
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "failure_types": [
+    "APITimeoutError",
+    "RateLimitError",
+    "RateLimitError"
+  ],
+  "scope": "revenue_growth_pilot"
+}
