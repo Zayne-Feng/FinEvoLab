@@ -1,0 +1,168 @@
+{
+  "status": "completed",
+  "attempted": 40,
+  "repairs": 0,
+  "first": {
+    "successes": 36,
+    "success_rate": 0.9,
+    "json_valid": 40,
+    "schema_valid": 40,
+    "fields": {
+      "companies": {
+        "correct": 40,
+        "eligible": 40
+      },
+      "fiscal_year": {
+        "correct": 37,
+        "eligible": 40
+      },
+      "intent": {
+        "correct": 39,
+        "eligible": 40
+      },
+      "metrics": {
+        "correct": 32,
+        "eligible": 32
+      },
+      "numeric_intent": {
+        "correct": 4,
+        "eligible": 4
+      },
+      "report_year": {
+        "correct": 32,
+        "eligible": 32
+      },
+      "scope": {
+        "correct": 39,
+        "eligible": 40
+      },
+      "topic": {
+        "correct": 8,
+        "eligible": 8
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "boundary": {
+        "attempts": 8,
+        "successes": 4
+      },
+      "comparison": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "explanation": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "growth": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "hybrid": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "metric": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "selected_document": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "summary": {
+        "attempts": 4,
+        "successes": 4
+      }
+    }
+  },
+  "final": {
+    "successes": 36,
+    "success_rate": 0.9,
+    "json_valid": 40,
+    "schema_valid": 40,
+    "fields": {
+      "companies": {
+        "correct": 40,
+        "eligible": 40
+      },
+      "fiscal_year": {
+        "correct": 37,
+        "eligible": 40
+      },
+      "intent": {
+        "correct": 39,
+        "eligible": 40
+      },
+      "metrics": {
+        "correct": 32,
+        "eligible": 32
+      },
+      "numeric_intent": {
+        "correct": 4,
+        "eligible": 4
+      },
+      "report_year": {
+        "correct": 32,
+        "eligible": 32
+      },
+      "scope": {
+        "correct": 39,
+        "eligible": 40
+      },
+      "topic": {
+        "correct": 8,
+        "eligible": 8
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "boundary": {
+        "attempts": 8,
+        "successes": 4
+      },
+      "comparison": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "explanation": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "growth": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "hybrid": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "metric": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "selected_document": {
+        "attempts": 4,
+        "successes": 4
+      },
+      "summary": {
+        "attempts": 4,
+        "successes": 4
+      }
+    }
+  },
+  "known_tokens": 52484,
+  "unknown_usage_attempts": 0,
+  "model_attempts": 40,
+  "mean_total_seconds": 2.827849999999671,
+  "errors": {},
+  "peak_allocated_bytes": null,
+  "predictions_sha256": "f2bebcdcd70da2c6d81851cfc78b5dafadcd525c2290b8e60549de0310219405"
+}

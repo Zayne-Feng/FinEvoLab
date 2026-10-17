@@ -1,0 +1,114 @@
+{
+  "shared": {
+    "bundle_sha256": "19e5e2076caf98ffb44150620227549827280dff3204e0e8db82090f855d49f1",
+    "generation": {
+      "temperature": 0,
+      "max_new_tokens": 512,
+      "max_input_tokens": 8192,
+      "repairs": 0,
+      "output_constraint": "prompt_only",
+      "automatic_transport_retries": 0
+    },
+    "implementation": {
+      "finevolab/planner_benchmark.py": "91967be622241000471b309b8afb2174d986319402fa31f0abd364ed9924009e",
+      "scripts/planner_benchmark.py": "41c8d232bf2979a1d05c0eb6acd61835f09bf675d5ff213ce43e3613a16ed6dc",
+      "finevolab/grounded.py": "08e9dcecefec4e4dc0c0dfbb56e5952872515add7ce1fd3be8d2b9b1e564ff07",
+      "finevolab/sdk_runtime.py": "fe1dede073a013218dc4c206c8280e68ca77227adc7a20fa02e66b9cce561858",
+      "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+      "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+      "scripts/estimate_paired_uncertainty.py": "0b567ee64fbccb1555d3762ed7b31fa33fa5793f9b6a630f6c68a076f38d18e9"
+    }
+  },
+  "arms": {
+    "deepseek": {
+      "backend": "api",
+      "model": "deepseek-flash",
+      "endpoint": "https://api.deepseek.com/",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "adapter": null,
+      "packages": {
+        "torch": "2.9.1+cpu",
+        "transformers": "4.57.6",
+        "peft": null,
+        "bitsandbytes": null,
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      }
+    },
+    "qwen_base": {
+      "backend": "transformers",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "adapter": null,
+      "dtype": "bfloat16",
+      "quantization": "none",
+      "device": "cuda",
+      "packages": {
+        "torch": "2.14.1+cu130",
+        "transformers": "4.57.6",
+        "peft": "0.17.1",
+        "bitsandbytes": "0.48.1",
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      },
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "total_memory": 25296044032,
+        "cuda": "13.0"
+      }
+    },
+    "qwen_lora": {
+      "backend": "transformers",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "adapter": {
+        "files": {
+          "adapter_config.json": "475e0a72e135992fa4df259d76324c9b7802121943093b0cc0abae40dc3cbcfa",
+          "adapter_model.safetensors": "08ae827afdc1bbffaa2c26131e752b9d195c74b2bc9aa05dd38c054f9d55a24c",
+          "training_identity.json": "e7e3e5ca8ffc6c0f8973fefee12fdb83de5b9bd4c9db5ed897677fca148e8402"
+        },
+        "sha256": "4814f7dbfb094de63277897d91a4be264beef39a2806f66d58aeae17b9da290f",
+        "training": {
+          "model": "Qwen/Qwen3-4B-Instruct-2507",
+          "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+          "bundle_sha256": "19e5e2076caf98ffb44150620227549827280dff3204e0e8db82090f855d49f1",
+          "training_manifest_sha256": "af8a4f2041e279faa4f993aafa08ab20d3ff86c643fe4b987872586aece0b7e2"
+        }
+      },
+      "dtype": "bfloat16",
+      "quantization": "none",
+      "device": "cuda",
+      "packages": {
+        "torch": "2.14.1+cu130",
+        "transformers": "4.57.6",
+        "peft": "0.17.1",
+        "bitsandbytes": "0.48.1",
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      },
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "total_memory": 25296044032,
+        "cuda": "13.0"
+      }
+    }
+  },
+  "validation_runs": {
+    "project_notes\\experiments\\planner-deepseek-validation": {
+      "manifest": "b63fa78874adb8231d66eed542fab9e939a551275b234104eb5ad6fb42634c76",
+      "predictions": "59c45b37bcd54efecdaf4ebd78be3a5098eab8e3cc8b0536ddbcf5ea164b8792"
+    },
+    "project_notes\\experiments\\planner-base-validation": {
+      "manifest": "9e338b35ce09fe40df5a5c7e7e7a17bdb1b25239e464a1eb7c6483ff93d6b33f",
+      "predictions": "7dd16cba9786b095d2eb5f9d1d410ea944f8e2ec348f5624befeb15ed8209c8c"
+    },
+    "project_notes\\experiments\\planner-lora-validation": {
+      "manifest": "1fe71c96b29fb53fec0a0ce548a1f31df4497aceebeccda90026e25753bcd164",
+      "predictions": "0b9ac67c82e14447a8a6943a46b8cc8c1b4d6e36b63f260e7371f6fa32aa325b"
+    }
+  }
+}
