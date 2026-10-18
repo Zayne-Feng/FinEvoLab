@@ -1,0 +1,118 @@
+{
+    "route": "/api/questions",
+    "task_id": "b6ee5873aacd4168905b240670966dd5",
+    "workflow_status": "complete",
+    "question": "Summarize MSFT FY2024 revenue, operating income, and net income. State the actual fiscal dates and source evidence. Avoid unsupported causes or forecasts.",
+    "answer": {
+        "status": "complete",
+        "answer": "For fiscal year 2024 (a 12-month annual period from July 1, 2023 through June 30, 2024), Microsoft reported revenue of $245.122 billion, operating income of $109.433 billion, and net income of $88.136 billion. All three figures are in USD and come from the same annual period context.",
+        "metrics": [
+            {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2024,
+                "value": "245122000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "9a794a03f299890a16d8dd3c",
+                "report_year": 2026,
+                "extraction_method": "sec_companyfacts_annual_context"
+            },
+            {
+                "company": "MSFT",
+                "name": "operating_income",
+                "fiscal_year": 2024,
+                "value": "109433000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "3c34b92f7ebea344a656a5b5",
+                "report_year": 2026,
+                "extraction_method": "sec_companyfacts_annual_context"
+            },
+            {
+                "company": "MSFT",
+                "name": "net_income",
+                "fiscal_year": 2024,
+                "value": "88136000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "868bed9f34c0f4601a6b65e7",
+                "report_year": 2026,
+                "extraction_method": "sec_companyfacts_annual_context"
+            }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+            "9a794a03f299890a16d8dd3c",
+            "3c34b92f7ebea344a656a5b5",
+            "868bed9f34c0f4601a6b65e7"
+        ]
+    },
+    "usage": {
+        "requests": 3,
+        "input_tokens": 5308,
+        "output_tokens": 1351,
+        "total_tokens": 6659
+    },
+    "validation": {
+        "status": "passed",
+        "observations": 3,
+        "evidence_ids": [
+            "3c34b92f7ebea344a656a5b5",
+            "868bed9f34c0f4601a6b65e7",
+            "9a794a03f299890a16d8dd3c"
+        ]
+    },
+    "versions": {
+        "workflow": "question",
+        "question": "Summarize MSFT FY2024 revenue, operating income, and net income. State the actual fiscal dates and source evidence. Avoid unsupported causes or forecasts.",
+        "company": "MULTI",
+        "fiscal_year": null,
+        "model": "deepseek-flash",
+        "base_url": "https://api.deepseek.com/",
+        "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "candidate": "4b618e24fc52306bd9d72dc25950ec498a4c415046fe041f3b095df045438a5e",
+        "render": true,
+        "timeout_seconds": 240,
+        "company_aliases": "2e2e748b9c94a66af582c3881a3a8c75c78db1a9162d2155384c5d18b1dd0684",
+        "processed": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+        "sources": {
+            "agent.py": "0cdc139544efe5eef564fc3cb976be80772e47a86d626aa4ec1654e18059f148",
+            "config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+            "embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+            "evaluation.py": "aa010c8598069d8aaf0b3f6f7c32ca0a24bcde5472ffd41d466d7e722ad987a6",
+            "experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+            "ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+            "integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+            "optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+            "provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+            "reporting.py": "4f7fabfe9be2aaef6891aea9e4e4ec6206edadd9dc331de14540ca13178fea40",
+            "retrieval.py": "398ccaaf85288809c161fd3f03296e8f45347cf3ccc73225df45e9bcdb9fd411",
+            "rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+            "runtime.py": "24f0b5d9b95c414e851ed1e7682910ae2ee2c6899e08e10f5c4b0a3266c78608",
+            "sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+            "storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+            "tools.py": "efad0b2f714d1b7255bdb322942d14472ebc6ccbdf0d7a942dcc111bb36f5bbe",
+            "uploads.py": "40a7f8e475ce4614c383a95b34e013e5ecc11e13e5863ed6b7a24f4583499dad",
+            "upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+            "validation.py": "b7861bd947d8db6e21e10ca4b6091024b9ee3f09baa30b2de97b40dcb8f3c366",
+            "web.py": "52b4658676b10e597f75430da870985f5963c02abf594c8064c7aa6988960c94",
+            "workflow.py": "9d65d7c67a45419ad1355022995070570bd5daa7e703f574030067ea0435041d",
+            "__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320"
+        },
+        "dependencies": "a9c243def88045df1ea5aa81d0acddb28b98f35dc6d0cf394a5e4678e326dd3f",
+        "template": "fbf6b8b4e91245aa072fc50f8244d909de7c9198c80dfab378a92188fc573f7f"
+    },
+    "pdf_route": "http://127.0.0.1:8002/api/tasks/b6ee5873aacd4168905b240670966dd5/report/pdf",
+    "pdf_sha256": "93bccead45684f4953634045f9ec0590a25cc2bcd12a1e010a8891ea60b487f5"
+}
