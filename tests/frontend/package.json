@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "jsdom": "^29.1.1",
+    "prettier": "^3.6.2"
+  },
+  "name": "finevolab-frontend-checks",
+  "private": true,
+  "scripts": {
+    "test": "node check_dashboard.cjs && node check_dashboard_quality.cjs && node check_dashboard_language.cjs && node check_planner_web.cjs",
+    "test:live": "node check_dashboard_live.cjs && node check_dashboard_language_live.cjs",
+    "test:planner:live": "node check_planner_web.cjs --live"
+  }
+}

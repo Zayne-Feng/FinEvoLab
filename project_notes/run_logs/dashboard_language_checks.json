@@ -1,0 +1,208 @@
+{
+  "run_id": "dashboard-language",
+  "status": "passed",
+  "base_commit": "0adb737f5bb32157579672331655fe2822d46763",
+  "source_state": "Uncommitted dashboard changes identified by SHA256",
+  "dashboard_sha256": "d67c352359edfc90a0ea4a382f33d1098d2df4dbaa585ecc4e465b7d929b1366",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "frontend": {
+    "passed": 48,
+    "total": 48,
+    "language": {
+      "run_id": "dashboard-language",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "language button switches labels, title, placeholders and accessibility names",
+          "status": "passed"
+        },
+        {
+          "name": "Chinese static interface has no untranslated catalog messages",
+          "status": "passed"
+        },
+        {
+          "name": "Chinese locale defaults to Chinese and saved preference takes priority",
+          "status": "passed"
+        },
+        {
+          "name": "blocked storage does not prevent switching",
+          "status": "passed"
+        },
+        {
+          "name": "custom question and source selections survive switching without API requests",
+          "status": "passed"
+        },
+        {
+          "name": "example questions switch languages while edited questions remain unchanged",
+          "status": "passed"
+        },
+        {
+          "name": "existing results translate labels without changing numbers, quotes, links or run data",
+          "status": "passed"
+        },
+        {
+          "name": "localized input validation changes language without losing invalid state",
+          "status": "passed"
+        },
+        {
+          "name": "switching during an analysis preserves the busy state and sends no duplicate request",
+          "status": "passed"
+        },
+        {
+          "name": "new search results and errors use the active language and preserve source text",
+          "status": "passed"
+        },
+        {
+          "name": "upload status and appended inspection links switch together",
+          "status": "passed"
+        },
+        {
+          "name": "switching repeatedly leaves the interface error-free",
+          "status": "passed"
+        }
+      ],
+      "count": 12,
+      "method": "jsdom with mocked responses; no model calls"
+    },
+    "basic": {
+      "run_id": "dashboard-macaron",
+      "status": "passed",
+      "checks": [
+        "unique IDs and named form fields",
+        "uploaded source list populated",
+        "suggestion changes question without sending a request",
+        "six report selections rejected",
+        "question uses selected reports and renders saved hybrid result",
+        "claim links open the matching evidence",
+        "partial business result is distinct from completed workflow",
+        "dynamic text is escaped and unsafe source URLs are not linked",
+        "quick analysis retains the existing API contract",
+        "report search uses independent filters",
+        "empty search has a useful message",
+        "search connection failure restores the action",
+        "large report rejected before upload",
+        "new upload selected and ready for the next question",
+        "image-only report is not selected as a usable source",
+        "resume keeps the saved session endpoint",
+        "analysis failure clears busy state",
+        "script has no uncaught errors or unused mock responses"
+      ],
+      "count": 18,
+      "saved_session": "7653de132a594346a5c3f9c159f62d01",
+      "method": "jsdom with mocked API responses; no model calls"
+    },
+    "negative": {
+      "run_id": "dashboard-quality",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ticker pattern compiles under browser Unicode Sets rules",
+          "status": "passed"
+        },
+        {
+          "name": "blank question is blocked before an HTTP request",
+          "status": "passed"
+        },
+        {
+          "name": "blank search is blocked before an HTTP request",
+          "status": "passed"
+        },
+        {
+          "name": "a collapsed source picker opens when too many reports are selected",
+          "status": "passed"
+        },
+        {
+          "name": "HTTP error with non-JSON body is not described as a connection failure",
+          "status": "passed"
+        },
+        {
+          "name": "successful malformed response is described as a response error",
+          "status": "passed"
+        },
+        {
+          "name": "analysis requests include an abort signal",
+          "status": "passed"
+        },
+        {
+          "name": "request timeout actually aborts a pending transport",
+          "status": "passed"
+        },
+        {
+          "name": "request timeout also covers a stalled response body",
+          "status": "passed"
+        },
+        {
+          "name": "concurrent analysis submissions are prevented",
+          "status": "passed"
+        },
+        {
+          "name": "timeout has a specific message and releases the action",
+          "status": "passed"
+        },
+        {
+          "name": "failed HTML extraction is not reported as a usable source",
+          "status": "passed"
+        },
+        {
+          "name": "unsupported file type is rejected before upload",
+          "status": "passed"
+        },
+        {
+          "name": "resume status appears next to the saved result",
+          "status": "passed"
+        },
+        {
+          "name": "resume conflict remains visible after loading saved details",
+          "status": "passed"
+        },
+        {
+          "name": "uploaded source choice explains its exclusive scope",
+          "status": "passed"
+        },
+        {
+          "name": "favicon is provided without a missing-resource request",
+          "status": "passed"
+        },
+        {
+          "name": "upload metadata pattern and file hint describe accepted input",
+          "status": "passed"
+        }
+      ],
+      "passed": 18,
+      "total": 18,
+      "failed": [],
+      "method": "jsdom negative-path and API-contract checks"
+    }
+  },
+  "live": {
+    "run_id": "dashboard-language-live",
+    "status": "passed",
+    "task_id": "19c14d07bba94bcd9f04e5a8b55daa59",
+    "checks": [
+      "Live bilingual page returns HTTP 200",
+      "Stored Chinese preference applied",
+      "Chinese controls preserve the offline API payload",
+      "Chinese result labels and status",
+      "Real PDF report returns HTTP 200",
+      "Language switching preserves results without extra requests"
+    ],
+    "model_calls": 0,
+    "method": "Real HTTP APIs through jsdom; no rendered browser"
+  },
+  "web_tests": {
+    "passed": 3,
+    "total": 3,
+    "elapsed_seconds": 1.357,
+    "command": "conda run -n finevolab python -m unittest discover -s tests -p test_web.py -q"
+  },
+  "model_calls": 0,
+  "language_storage": "finevolab.language",
+  "default_language": "Saved en/zh preference, otherwise Chinese for zh browser locales and English for others",
+  "script_hashes": {
+    "check_dashboard_language.cjs": "4a7bb1e10f0ccc627ecdd146511a0138587ed73e729b7484f14613c089bd2c6e",
+    "check_dashboard_language_live.cjs": "a67e8ba3b3966cadb45c48b155e891e52172fe393dd7c522c1012b285cc98a54",
+    "check_dashboard.cjs": "0a29d5adf397b4f32e4142e57830e3b84f5e3437c9d152a893753890d48aaac1",
+    "check_dashboard_quality.cjs": "34eaca08ba4418771e6331675bb1f38a93043b0cd48a22f3ecd0a820c6b3eed8"
+  },
+  "browser_visual_check": "not_run; existing Computer Use runtime path issue"
+}

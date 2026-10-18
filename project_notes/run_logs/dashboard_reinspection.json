@@ -1,0 +1,498 @@
+{
+  "run_id": "dashboard-reinspection",
+  "status": "passed",
+  "base_commit": "0adb737f5bb32157579672331655fe2822d46763",
+  "source_state": "Existing dashboard worktree changes; no functional changes during this reinspection",
+  "dashboard_sha256": "d67c352359edfc90a0ea4a382f33d1098d2df4dbaa585ecc4e465b7d929b1366",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "frontend": {
+    "passed": 48,
+    "basic": {
+      "run_id": "dashboard-macaron",
+      "status": "passed",
+      "checks": [
+        "unique IDs and named form fields",
+        "uploaded source list populated",
+        "suggestion changes question without sending a request",
+        "six report selections rejected",
+        "question uses selected reports and renders saved hybrid result",
+        "claim links open the matching evidence",
+        "partial business result is distinct from completed workflow",
+        "dynamic text is escaped and unsafe source URLs are not linked",
+        "quick analysis retains the existing API contract",
+        "report search uses independent filters",
+        "empty search has a useful message",
+        "search connection failure restores the action",
+        "large report rejected before upload",
+        "new upload selected and ready for the next question",
+        "image-only report is not selected as a usable source",
+        "resume keeps the saved session endpoint",
+        "analysis failure clears busy state",
+        "script has no uncaught errors or unused mock responses"
+      ],
+      "count": 18,
+      "saved_session": "7653de132a594346a5c3f9c159f62d01",
+      "method": "jsdom with mocked API responses; no model calls"
+    },
+    "negative": {
+      "run_id": "dashboard-quality",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "ticker pattern compiles under browser Unicode Sets rules",
+          "status": "passed"
+        },
+        {
+          "name": "blank question is blocked before an HTTP request",
+          "status": "passed"
+        },
+        {
+          "name": "blank search is blocked before an HTTP request",
+          "status": "passed"
+        },
+        {
+          "name": "a collapsed source picker opens when too many reports are selected",
+          "status": "passed"
+        },
+        {
+          "name": "HTTP error with non-JSON body is not described as a connection failure",
+          "status": "passed"
+        },
+        {
+          "name": "successful malformed response is described as a response error",
+          "status": "passed"
+        },
+        {
+          "name": "analysis requests include an abort signal",
+          "status": "passed"
+        },
+        {
+          "name": "request timeout actually aborts a pending transport",
+          "status": "passed"
+        },
+        {
+          "name": "request timeout also covers a stalled response body",
+          "status": "passed"
+        },
+        {
+          "name": "concurrent analysis submissions are prevented",
+          "status": "passed"
+        },
+        {
+          "name": "timeout has a specific message and releases the action",
+          "status": "passed"
+        },
+        {
+          "name": "failed HTML extraction is not reported as a usable source",
+          "status": "passed"
+        },
+        {
+          "name": "unsupported file type is rejected before upload",
+          "status": "passed"
+        },
+        {
+          "name": "resume status appears next to the saved result",
+          "status": "passed"
+        },
+        {
+          "name": "resume conflict remains visible after loading saved details",
+          "status": "passed"
+        },
+        {
+          "name": "uploaded source choice explains its exclusive scope",
+          "status": "passed"
+        },
+        {
+          "name": "favicon is provided without a missing-resource request",
+          "status": "passed"
+        },
+        {
+          "name": "upload metadata pattern and file hint describe accepted input",
+          "status": "passed"
+        }
+      ],
+      "passed": 18,
+      "total": 18,
+      "failed": [],
+      "method": "jsdom negative-path and API-contract checks"
+    },
+    "language": {
+      "run_id": "dashboard-language",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "language button switches labels, title, placeholders and accessibility names",
+          "status": "passed"
+        },
+        {
+          "name": "Chinese static interface has no untranslated catalog messages",
+          "status": "passed"
+        },
+        {
+          "name": "Chinese locale defaults to Chinese and saved preference takes priority",
+          "status": "passed"
+        },
+        {
+          "name": "blocked storage does not prevent switching",
+          "status": "passed"
+        },
+        {
+          "name": "custom question and source selections survive switching without API requests",
+          "status": "passed"
+        },
+        {
+          "name": "example questions switch languages while edited questions remain unchanged",
+          "status": "passed"
+        },
+        {
+          "name": "existing results translate labels without changing numbers, quotes, links or run data",
+          "status": "passed"
+        },
+        {
+          "name": "localized input validation changes language without losing invalid state",
+          "status": "passed"
+        },
+        {
+          "name": "switching during an analysis preserves the busy state and sends no duplicate request",
+          "status": "passed"
+        },
+        {
+          "name": "new search results and errors use the active language and preserve source text",
+          "status": "passed"
+        },
+        {
+          "name": "upload status and appended inspection links switch together",
+          "status": "passed"
+        },
+        {
+          "name": "switching repeatedly leaves the interface error-free",
+          "status": "passed"
+        }
+      ],
+      "count": 12,
+      "method": "jsdom with mocked responses; no model calls"
+    }
+  },
+  "live": {
+    "run_id": "dashboard-live-quality",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "live page, source list, navigation anchors and favicon",
+        "status": "passed",
+        "uploaded_reports": 6
+      },
+      {
+        "name": "offline analysis and reports · MSFT FY2024",
+        "status": "passed",
+        "task_id": "0f0537f38dcd478a82bad47ada50628f"
+      },
+      {
+        "name": "offline analysis and reports · MSFT FY2023",
+        "status": "passed",
+        "task_id": "a11070ee89d044c983fcdbf350e6e237"
+      },
+      {
+        "name": "offline analysis and reports · AAPL FY2024",
+        "status": "passed",
+        "task_id": "3eca3afc4e754bbc977696c0e5ada0f7"
+      },
+      {
+        "name": "offline analysis and reports · AAPL FY2023",
+        "status": "passed",
+        "task_id": "1c6c289519ca493ca09ae30d68199ef5"
+      },
+      {
+        "name": "offline analysis and reports · GOOGL FY2024",
+        "status": "passed",
+        "task_id": "5848f9f13cd44f1195100d9111736027"
+      },
+      {
+        "name": "offline analysis and reports · GOOGL FY2023",
+        "status": "passed",
+        "task_id": "84b5bc926a614a65a72bc6959b22ebee"
+      },
+      {
+        "name": "offline analysis and reports · AMZN FY2024",
+        "status": "passed",
+        "task_id": "e0ba0bffcaec4f96b947d481a9328971"
+      },
+      {
+        "name": "offline analysis and reports · AMZN FY2023",
+        "status": "passed",
+        "task_id": "d10e082171a144a8982c65cadb2cae1e"
+      },
+      {
+        "name": "offline analysis and reports · META FY2024",
+        "status": "passed",
+        "task_id": "c1f05295d1a4471186d24f4b3f03fa5c"
+      },
+      {
+        "name": "offline analysis and reports · META FY2023",
+        "status": "passed",
+        "task_id": "90c3ed8588254222bc469f03e9ecba55"
+      },
+      {
+        "name": "live report search · MSFT 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · MSFT 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · MSFT 2022",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AAPL 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AAPL 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AAPL 2022",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · GOOGL 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · GOOGL 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · GOOGL 2022",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AMZN 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AMZN 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · AMZN 2022",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · META 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · META 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · META 2022",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · TSLA 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · TSLA 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · ADBE 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · ADBE 2023",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · NVDA 2024",
+        "status": "passed"
+      },
+      {
+        "name": "live report search · NVDA 2023",
+        "status": "passed"
+      },
+      {
+        "name": "existing report upload and extracted-values links",
+        "status": "passed",
+        "document_id": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+        "passages": 857
+      },
+      {
+        "name": "invalid upload and task parameters return handled errors",
+        "status": "passed"
+      },
+      {
+        "name": "live financial question with model, figures and source links",
+        "status": "passed",
+        "task_id": "c8c44b4b10124eaa8544b672be9dae48",
+        "business_status": "complete"
+      },
+      {
+        "name": "live Agent-assisted revenue review",
+        "status": "passed",
+        "task_id": "dca95a16f55e4647a759e2fd0e0488b3",
+        "business_status": "complete"
+      },
+      {
+        "name": "no uncaught script errors",
+        "status": "passed"
+      }
+    ],
+    "count": 37,
+    "model_runs": [
+      {
+        "task_id": "c8c44b4b10124eaa8544b672be9dae48",
+        "mode": "question",
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1105,
+          "output_tokens": 43,
+          "total_tokens": 1148
+        }
+      },
+      {
+        "task_id": "dca95a16f55e4647a759e2fd0e0488b3",
+        "mode": "agent",
+        "usage": {
+          "requests": 3,
+          "input_tokens": 3299,
+          "output_tokens": 546,
+          "total_tokens": 3845
+        }
+      }
+    ],
+    "task_ids": [
+      "0f0537f38dcd478a82bad47ada50628f",
+      "a11070ee89d044c983fcdbf350e6e237",
+      "3eca3afc4e754bbc977696c0e5ada0f7",
+      "1c6c289519ca493ca09ae30d68199ef5",
+      "5848f9f13cd44f1195100d9111736027",
+      "84b5bc926a614a65a72bc6959b22ebee",
+      "e0ba0bffcaec4f96b947d481a9328971",
+      "d10e082171a144a8982c65cadb2cae1e",
+      "c1f05295d1a4471186d24f4b3f03fa5c",
+      "90c3ed8588254222bc469f03e9ecba55"
+    ],
+    "method": "Real local HTTP APIs driven through jsdom; not a rendered-browser inspection"
+  },
+  "language_live": {
+    "run_id": "dashboard-language-live",
+    "status": "passed",
+    "task_id": "f286423dd15b4873a7bb6faa6709a0f8",
+    "checks": [
+      "Live bilingual page returns HTTP 200",
+      "Stored Chinese preference applied",
+      "Chinese controls preserve the offline API payload",
+      "Chinese result labels and status",
+      "Real PDF report returns HTTP 200",
+      "Language switching preserves results without extra requests"
+    ],
+    "model_calls": 0,
+    "method": "Real HTTP APIs through jsdom; no rendered browser"
+  },
+  "chinese_question": {
+    "run_id": "dashboard-chinese-question",
+    "status": "passed",
+    "task_id": "b5aa53de25814da99f933a128c34c241",
+    "question": "比较微软与苹果 2024 财年的营业收入，并列出各自的实际财务期间。",
+    "companies": [
+      "AAPL",
+      "MSFT"
+    ],
+    "periods_aligned": false,
+    "usage": {
+      "requests": 1,
+      "input_tokens": 1111,
+      "output_tokens": 54,
+      "total_tokens": 1165
+    },
+    "checks": [
+      "Chinese example question submitted unchanged",
+      "Company names resolved to tickers",
+      "Comparison completed while exposing different fiscal periods",
+      "Chinese status and metric table rendered",
+      "HTML/PDF actions available and real PDF valid",
+      "No uncaught script errors"
+    ],
+    "method": "Real model-backed question through jsdom and local HTTP APIs"
+  },
+  "regression": {
+    "passed": 84,
+    "total": 84,
+    "elapsed_seconds": 12.189,
+    "command": "conda run -n finevolab python -m unittest discover -s tests -q"
+  },
+  "model_runs": [
+    {
+      "task_id": "c8c44b4b10124eaa8544b672be9dae48",
+      "mode": "question",
+      "usage": {
+        "requests": 1,
+        "input_tokens": 1105,
+        "output_tokens": 43,
+        "total_tokens": 1148
+      },
+      "signature": "9be9c69675ee04718ceadadd900afd0a326948871ccc416e0566f6f3c054c7d2",
+      "model": "deepseek-flash",
+      "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+      "configuration_fingerprint": "4b618e24fc52306bd9d72dc25950ec498a4c415046fe041f3b095df045438a5e"
+    },
+    {
+      "task_id": "dca95a16f55e4647a759e2fd0e0488b3",
+      "mode": "agent",
+      "usage": {
+        "requests": 3,
+        "input_tokens": 3299,
+        "output_tokens": 546,
+        "total_tokens": 3845
+      },
+      "signature": "0d1e993be1ed2181a4e30d9382c5cb8f9fd05dac3072895820219e2002ece677",
+      "model": "deepseek-flash",
+      "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+      "configuration_fingerprint": "8093fb0364b332f621a8e920c5f6e44c4af971318c5dc29ef8397ee53a3adbd6"
+    },
+    {
+      "task_id": "b5aa53de25814da99f933a128c34c241",
+      "mode": "chinese_question",
+      "usage": {
+        "requests": 1,
+        "input_tokens": 1111,
+        "output_tokens": 54,
+        "total_tokens": 1165
+      },
+      "signature": "31215bde16745fba23d0ad8fc4b7497b05dd9a2c88814187e77df0ffaa973f30",
+      "model": "deepseek-flash",
+      "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+      "configuration_fingerprint": "4b618e24fc52306bd9d72dc25950ec498a4c415046fe041f3b095df045438a5e"
+    }
+  ],
+  "usage": {
+    "tasks": 3,
+    "requests": 5,
+    "total_tokens": 6158
+  },
+  "expected_http_errors": [
+    422
+  ],
+  "new_defects": [],
+  "format_check": "passed",
+  "diff_check": "passed",
+  "verification_script_hashes": {
+    "check_dashboard.cjs": "0a29d5adf397b4f32e4142e57830e3b84f5e3437c9d152a893753890d48aaac1",
+    "check_dashboard_quality.cjs": "34eaca08ba4418771e6331675bb1f38a93043b0cd48a22f3ecd0a820c6b3eed8",
+    "check_dashboard_language.cjs": "4a7bb1e10f0ccc627ecdd146511a0138587ed73e729b7484f14613c089bd2c6e",
+    "check_dashboard_live.cjs": "9e92bd18f96d41e483cc3a47d78de015b8db84e1a59351f16174fdd2f545924e",
+    "check_dashboard_language_live.cjs": "a67e8ba3b3966cadb45c48b155e891e52172fe393dd7c522c1012b285cc98a54",
+    "check_dashboard_chinese_question.cjs": "e12378bd111af4eb55177476e75982fd57c6f1201608cabac6f11c23a4a9cf2a"
+  },
+  "browser_visual_check": {
+    "status": "not_run",
+    "error": "failed to start Node runtime: system path not found (os error 3)"
+  },
+  "method": "Mocked negative paths and real local HTTP flows through jsdom; no rendered-browser inspection"
+}

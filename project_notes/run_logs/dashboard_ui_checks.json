@@ -1,0 +1,51 @@
+{
+    "run_id": "dashboard-macaron",
+    "base_commit": "0adb737f5bb32157579672331655fe2822d46763",
+    "dashboard_sha256": "cee97f003ce7de15741c4c21ce9a772b47b200984cfe0d11ed9375e338f166bc",
+    "change_scope": "Dashboard template and project notes",
+    "model_calls": 0,
+    "dom_checks": {
+        "run_id": "dashboard-macaron",
+        "status": "passed",
+        "checks": [
+            "unique IDs and named form fields",
+            "uploaded source list populated",
+            "suggestion changes question without sending a request",
+            "six report selections rejected",
+            "question uses selected reports and renders saved hybrid result",
+            "claim links open the matching evidence",
+            "partial business result is distinct from completed workflow",
+            "dynamic text is escaped and unsafe source URLs are not linked",
+            "quick analysis retains the existing API contract",
+            "report search uses independent filters",
+            "empty search has a useful message",
+            "search connection failure restores the action",
+            "large report rejected before upload",
+            "new upload selected and ready for the next question",
+            "image-only report is not selected as a usable source",
+            "resume keeps the saved session endpoint",
+            "analysis failure clears busy state",
+            "script has no uncaught errors or unused mock responses"
+        ],
+        "count": 18,
+        "saved_session": "7653de132a594346a5c3f9c159f62d01",
+        "method": "jsdom with mocked API responses; no model calls"
+    },
+    "web_tests": {
+        "command": "conda run -n finevolab python -m unittest discover -s tests -p test_web.py -q",
+        "elapsed_seconds": 2.331,
+        "passed": 3
+    },
+    "http": {
+        "new_heading_present": true,
+        "status": 200,
+        "url": "http://127.0.0.1:8003/finevolab"
+    },
+    "contrast": {
+        "pair_count": 9,
+        "threshold": 4.5,
+        "minimum_ratio": 4.68
+    },
+    "browser_visual_check": "not_run_no_available_browser",
+    "verification_dependencies": "Ignored output/verification_deps; no application dependency changes"
+}

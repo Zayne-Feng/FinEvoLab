@@ -1,0 +1,2106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f8f7f4" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23eee7f6'/%3E%3Ctext x='20' y='47' font-family='Georgia' font-size='46' font-style='italic' fill='%23665085'%3EF%3C/text%3E%3C/svg%3E"
+        />
+        <title>FinEvoLab · Research desk</title>
+        <style>
+            .language-toggle {
+                border: 1px solid #d8cce5;
+                border-radius: 24px;
+                padding: 8px 14px;
+                min-width: 80px;
+                background: #eee7f6;
+                color: #665085;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .language-toggle:hover {
+                background: #e4d8f0;
+            }
+            :lang(zh-CN) .hero h1 {
+                letter-spacing: 0;
+                line-height: 1.3;
+            }
+            :lang(zh-CN) .hero h1 em {
+                font-family: inherit;
+                font-style: normal;
+            }
+            :root {
+                --canvas: #f8f7f4;
+                --paper: #fffefd;
+                --ink: #353342;
+                --muted: #716b7b;
+                --line: #e7e2eb;
+                --lavender: #eee7f6;
+                --purple: #665085;
+                --mint: #e6f2eb;
+                --green: #3d6a56;
+                --peach: #f8e8db;
+                --copper: #895536;
+                --blue: #e8eff8;
+                --blue-ink: #466783;
+                --rose: #f5e6ec;
+                --rose-ink: #91556d;
+                --radius: 24px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                scroll-behavior: smooth;
+                scroll-padding-top: 24px;
+            }
+            body {
+                margin: 0;
+                background: var(--canvas);
+                color: var(--ink);
+                font:
+                    15px/1.6 'Segoe UI',
+                    Arial,
+                    sans-serif;
+            }
+            button,
+            input,
+            textarea,
+            select {
+                font: inherit;
+            }
+            button,
+            a,
+            input,
+            select,
+            textarea,
+            summary {
+                -webkit-tap-highlight-color: transparent;
+            }
+            button,
+            a {
+                touch-action: manipulation;
+            }
+            button {
+                cursor: pointer;
+            }
+            button:disabled {
+                cursor: wait;
+                opacity: 0.6;
+            }
+            a {
+                color: var(--purple);
+                text-underline-offset: 4px;
+            }
+            button:focus-visible,
+            a:focus-visible,
+            summary:focus-visible,
+            input:focus-visible,
+            textarea:focus-visible,
+            select:focus-visible {
+                outline: 3px solid #a18abd;
+                outline-offset: 4px;
+            }
+            [hidden] {
+                display: none !important;
+            }
+            h1,
+            h2,
+            h3,
+            p {
+                margin: 0;
+            }
+            h2 {
+                font-size: 23px;
+                line-height: 1.3;
+                letter-spacing: -0.6px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            small {
+                font-size: 12px;
+            }
+            .shell {
+                max-width: 1240px;
+                margin: auto;
+                padding: 28px 32px 20px;
+            }
+            .topbar,
+            .brand,
+            .nav,
+            .row,
+            .section-heading,
+            .links {
+                display: flex;
+                align-items: center;
+            }
+            .topbar {
+                justify-content: space-between;
+                gap: 24px;
+                padding-bottom: 24px;
+                border-bottom: 1px solid var(--line);
+            }
+            .brand {
+                gap: 12px;
+            }
+            .brand-mark {
+                display: grid;
+                place-items: center;
+                width: 43px;
+                height: 43px;
+                border-radius: 15px;
+                background: var(--lavender);
+                color: var(--purple);
+                font:
+                    italic 30px Georgia,
+                    serif;
+            }
+            .brand-name {
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: -0.5px;
+            }
+            .brand-caption {
+                display: block;
+                font-size: 9px;
+                letter-spacing: 2.2px;
+                color: var(--muted);
+            }
+            .nav {
+                gap: 6px;
+                flex-wrap: wrap;
+            }
+            .nav a {
+                padding: 9px 15px;
+                border-radius: 30px;
+                color: var(--muted);
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .nav a:first-child {
+                background: var(--lavender);
+                color: var(--purple);
+            }
+            .nav a:hover {
+                background: var(--paper);
+            }
+            .hero {
+                display: grid;
+                grid-template-columns: 1fr 300px;
+                gap: 48px;
+                align-items: center;
+                padding: 46px 0 36px;
+            }
+            .eyebrow {
+                font-size: 11px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--purple);
+                margin-bottom: 12px;
+            }
+            .hero h1 {
+                font-size: clamp(34px, 4.3vw, 52px);
+                line-height: 1.12;
+                font-weight: 500;
+                letter-spacing: -1.8px;
+            }
+            .hero h1 em {
+                font-family: Georgia, serif;
+                font-weight: 400;
+                color: var(--purple);
+            }
+            .hero-copy {
+                margin-top: 17px;
+                max-width: 570px;
+                color: var(--muted);
+            }
+            .journey {
+                padding: 22px 24px;
+                background: var(--mint);
+                border-radius: var(--radius);
+                transform: rotate(1deg);
+            }
+            .journey-title {
+                font-size: 11px;
+                color: var(--green);
+                letter-spacing: 1.5px;
+                font-weight: 700;
+                margin-bottom: 14px;
+            }
+            .step {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 11px;
+                font-size: 13px;
+            }
+            .step span:first-child {
+                display: grid;
+                place-items: center;
+                background: #fff9;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                color: var(--green);
+                font-size: 11px;
+                font-weight: 700;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, minmax(0, 1fr));
+                gap: 22px;
+                align-items: start;
+            }
+            .card {
+                background: var(--paper);
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                padding: 28px;
+                box-shadow: 0 8px 28px #3c2f4b04;
+                min-width: 0;
+            }
+            .question-card {
+                grid-column: span 8;
+            }
+            .quick-card {
+                grid-column: span 4;
+                background: var(--lavender);
+                border-color: #e5dced;
+            }
+            .result-card {
+                grid-column: 1/-1;
+            }
+            .search-card {
+                grid-column: span 7;
+            }
+            .upload-card {
+                grid-column: span 5;
+                background: #fcf3ec;
+                border-color: #efdfd3;
+            }
+            .section-heading {
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 10px;
+            }
+            .icon-tile {
+                display: grid;
+                place-items: center;
+                flex: none;
+                width: 38px;
+                height: 38px;
+                border-radius: 13px;
+                background: var(--lavender);
+                color: var(--purple);
+            }
+            .icon-tile.blue {
+                background: var(--blue);
+                color: var(--blue-ink);
+            }
+            .icon-tile.peach {
+                background: var(--peach);
+                color: var(--copper);
+            }
+            .icon {
+                width: 19px;
+                height: 19px;
+                fill: none;
+                stroke: currentColor;
+                stroke-width: 1.7;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                vertical-align: middle;
+                flex: none;
+            }
+            .description {
+                font-size: 13px;
+                color: var(--muted);
+                margin-bottom: 22px;
+            }
+            .field {
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 16px;
+                color: #5f576c;
+            }
+            .field input,
+            .field textarea,
+            .field select {
+                display: block;
+                width: 100%;
+                margin-top: 7px;
+            }
+            .field-hint {
+                display: block;
+                margin-top: 7px;
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--muted);
+            }
+            input,
+            select,
+            textarea {
+                min-width: 0;
+                border: 1px solid #dcd5e5;
+                background: #fffdfb;
+                color: var(--ink);
+                border-radius: 12px;
+                padding: 11px 13px;
+                transition:
+                    border-color 0.15s,
+                    box-shadow 0.15s;
+            }
+            textarea {
+                resize: vertical;
+                min-height: 112px;
+                line-height: 1.65;
+            }
+            input:hover,
+            select:hover,
+            textarea:hover {
+                border-color: #b7a6c9;
+            }
+            textarea:focus,
+            input:focus,
+            select:focus {
+                border-color: #a18abd;
+                box-shadow: 0 0 0 3px #eee7f680;
+            }
+            select[multiple] {
+                min-height: 112px;
+                padding: 7px;
+            }
+            select[multiple] option {
+                padding: 7px;
+                border-radius: 6px;
+            }
+            input[type='number'] {
+                appearance: textfield;
+            }
+            .row {
+                gap: 12px;
+                align-items: start;
+            }
+            .row > .field {
+                flex: 1;
+                min-width: 0;
+            }
+            .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 12px 19px;
+                border-radius: 12px;
+                border: 1px solid transparent;
+                background: var(--purple);
+                color: white;
+                font-size: 13px;
+                font-weight: 600;
+                text-decoration: none;
+                transition:
+                    transform 0.15s,
+                    background 0.15s;
+            }
+            .button:hover {
+                background: #55416f;
+                transform: translateY(-1px);
+            }
+            .button.secondary {
+                background: var(--paper);
+                color: var(--purple);
+                border-color: #d8cce5;
+            }
+            .button.secondary:hover {
+                background: #f5f0fa;
+            }
+            .button.green {
+                background: var(--green);
+            }
+            .button.green:hover {
+                background: #315745;
+            }
+            .button.full {
+                width: 100%;
+            }
+            .suggestions {
+                display: flex;
+                gap: 7px;
+                flex-wrap: wrap;
+                margin: -3px 0 19px;
+            }
+            .chip {
+                border: 1px solid var(--line);
+                background: #faf8fc;
+                border-radius: 24px;
+                padding: 6px 11px;
+                color: var(--muted);
+                font-size: 11px;
+            }
+            .chip:hover {
+                border-color: #bba5d1;
+                color: var(--purple);
+                background: var(--lavender);
+            }
+            .source-picker {
+                border-top: 1px solid var(--line);
+                padding-top: 14px;
+                margin-bottom: 20px;
+            }
+            .source-picker summary {
+                font-size: 12px;
+                color: var(--muted);
+                cursor: pointer;
+            }
+            .source-picker .field {
+                margin: 12px 0 0;
+            }
+            .status {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 7px;
+                min-height: 21px;
+                font-size: 12px;
+                color: var(--muted);
+                margin-top: 13px;
+                overflow-wrap: anywhere;
+            }
+            .status:before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: currentColor;
+                flex: none;
+            }
+            .status[data-state='running'] {
+                color: var(--purple);
+            }
+            .status[data-state='complete'] {
+                color: var(--green);
+            }
+            .status[data-state='failed'] {
+                color: var(--rose-ink);
+            }
+            .status[data-state='partial'],
+            .status[data-state='insufficient_data'],
+            .status[data-state='periods_not_aligned'],
+            .status[data-state='clarification_required'],
+            .status[data-state='invalid_parameters'] {
+                color: var(--copper);
+            }
+            .badge {
+                display: inline-flex;
+                padding: 5px 11px;
+                border-radius: 20px;
+                background: var(--mint);
+                color: var(--green);
+                font-size: 11px;
+                font-weight: 600;
+            }
+            .badge[data-state='partial'],
+            .badge[data-state='insufficient_data'],
+            .badge[data-state='periods_not_aligned'],
+            .badge[data-state='clarification_required'],
+            .badge[data-state='invalid_parameters'] {
+                background: var(--peach);
+                color: var(--copper);
+            }
+            .badge[data-state='failed'] {
+                background: var(--rose);
+                color: var(--rose-ink);
+            }
+            .badge[data-state='running'],
+            .badge[data-state='pending'] {
+                background: var(--lavender);
+                color: var(--purple);
+            }
+            .task-reference {
+                font-size: 11px;
+                color: var(--muted);
+                overflow-wrap: anywhere;
+                margin: 7px 0 20px;
+            }
+            .answer-copy {
+                line-height: 1.8;
+                white-space: pre-wrap;
+                overflow-wrap: anywhere;
+            }
+            .notice {
+                background: var(--peach);
+                border-radius: 12px;
+                padding: 13px 16px;
+                margin: 15px 0;
+                color: var(--copper);
+                font-size: 13px;
+            }
+            .figures {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-top: 20px;
+            }
+            .figure {
+                background: var(--mint);
+                border-radius: 16px;
+                padding: 17px 20px;
+                min-width: 180px;
+                flex: 1;
+            }
+            .figure-label {
+                font-size: 12px;
+                color: var(--green);
+            }
+            .figure-value {
+                font-size: 30px;
+                letter-spacing: -1px;
+                line-height: 1.4;
+                color: #325741;
+            }
+            .figure-detail {
+                font-size: 11px;
+                color: var(--green);
+                overflow-wrap: anywhere;
+            }
+            .table-scroll {
+                overflow-x: auto;
+                margin: 20px 0 4px;
+                border: 1px solid var(--line);
+                border-radius: 14px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+            th,
+            td {
+                padding: 12px 15px;
+                text-align: left;
+                border-bottom: 1px solid var(--line);
+            }
+            th {
+                font-weight: 600;
+                color: var(--muted);
+                background: #f9f7fb;
+            }
+            tbody tr:last-child td {
+                border-bottom: 0;
+            }
+            td.amount {
+                font-variant-numeric: tabular-nums;
+            }
+            .claim {
+                margin-top: 18px;
+                background: #f7f9fc;
+                border-radius: 16px;
+                padding: 18px 20px;
+                font-size: 13px;
+            }
+            .claim p {
+                font-weight: 600;
+            }
+            .claim blockquote {
+                margin: 12px 0;
+                color: var(--muted);
+                border-left: 2px solid #becfe1;
+                padding-left: 13px;
+                white-space: pre-wrap;
+            }
+            .text-button {
+                background: none;
+                border: 0;
+                padding: 0;
+                color: var(--blue-ink);
+                font-size: 12px;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            .links {
+                gap: 10px;
+                flex-wrap: wrap;
+                margin: 22px 0;
+            }
+            .evidence-heading {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 27px;
+                border-top: 1px solid var(--line);
+                padding-top: 22px;
+            }
+            .count {
+                border-radius: 20px;
+                background: var(--blue);
+                color: var(--blue-ink);
+                padding: 1px 8px;
+                font-size: 11px;
+            }
+            .evidence-item {
+                border: 1px solid var(--line);
+                border-radius: 13px;
+                margin-top: 12px;
+                padding: 13px 16px;
+            }
+            .evidence-item summary {
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .evidence-item p {
+                font-size: 12px;
+                margin-top: 10px;
+                white-space: pre-wrap;
+                overflow-wrap: anywhere;
+            }
+            .metadata {
+                color: var(--muted);
+                font-size: 11px !important;
+            }
+            .trace {
+                margin-top: 20px;
+                font-size: 12px;
+                color: var(--muted);
+            }
+            .trace summary {
+                cursor: pointer;
+            }
+            .trace pre {
+                background: #f6f4f8;
+                border-radius: 12px;
+                padding: 16px;
+                max-height: 320px;
+                overflow: auto;
+                white-space: pre-wrap;
+                overflow-wrap: anywhere;
+                font-size: 11px;
+            }
+            .search-result {
+                background: #f5f8fc;
+                border: 1px solid #e5ebf3;
+                border-radius: 14px;
+                padding: 16px;
+                margin-top: 12px;
+            }
+            .search-result h3 {
+                font-size: 13px;
+                color: var(--blue-ink);
+            }
+            .search-result p {
+                font-size: 12px;
+                margin-top: 8px;
+                white-space: pre-wrap;
+                overflow-wrap: anywhere;
+            }
+            .search-result a {
+                display: inline-block;
+                font-size: 11px;
+                margin-top: 9px;
+            }
+            .file-picker {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 20px 16px;
+                background: #fffaf6;
+                border: 1px dashed #ccb49f;
+                border-radius: 14px;
+                margin-bottom: 16px;
+                cursor: pointer;
+            }
+            .file-picker:focus-within {
+                outline: 3px solid #a18abd;
+                outline-offset: 3px;
+            }
+            .file-picker input {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .file-picker strong {
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                overflow-wrap: anywhere;
+            }
+            .file-picker span {
+                font-size: 11px;
+                color: var(--muted);
+            }
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+                margin-top: 32px;
+                padding: 20px 2px;
+                border-top: 1px solid var(--line);
+                font-size: 11px;
+                color: var(--muted);
+            }
+            @media (min-width: 961px) {
+                .quick-card {
+                    align-self: stretch;
+                }
+                .quick-card .field {
+                    margin-bottom: 17px;
+                }
+            }
+            @media (max-width: 960px) {
+                .shell {
+                    padding: 22px;
+                }
+                .hero {
+                    gap: 25px;
+                    grid-template-columns: 1fr 240px;
+                }
+                .card {
+                    padding: 22px;
+                }
+                .question-card {
+                    grid-column: span 7;
+                }
+                .quick-card {
+                    grid-column: span 5;
+                }
+                .search-card,
+                .upload-card {
+                    grid-column: span 6;
+                }
+                .row {
+                    flex-wrap: wrap;
+                }
+                .row > .field {
+                    flex-basis: 120px;
+                }
+            }
+            @media (max-width: 720px) {
+                .shell {
+                    padding: 18px 16px;
+                }
+                .topbar {
+                    align-items: start;
+                    gap: 16px;
+                    flex-direction: column;
+                }
+                .nav {
+                    gap: 2px;
+                }
+                .nav a {
+                    padding: 7px 11px;
+                }
+                .hero {
+                    grid-template-columns: 1fr;
+                    padding: 30px 0 25px;
+                    gap: 24px;
+                }
+                .hero h1 {
+                    letter-spacing: -1px;
+                }
+                .journey {
+                    transform: none;
+                }
+                .journey-steps {
+                    display: flex;
+                    gap: 17px;
+                    flex-wrap: wrap;
+                }
+                .step {
+                    font-size: 12px;
+                    gap: 8px;
+                }
+                .grid {
+                    gap: 16px;
+                }
+                .question-card,
+                .quick-card,
+                .search-card,
+                .upload-card {
+                    grid-column: 1/-1;
+                }
+                .card {
+                    padding: 22px 20px;
+                }
+                .row {
+                    flex-wrap: nowrap;
+                }
+                .row > .field {
+                    flex-basis: 0;
+                }
+                .footer {
+                    flex-direction: column;
+                    gap: 4px;
+                }
+                .section-heading h2 {
+                    font-size: 21px;
+                }
+                .figure {
+                    min-width: 145px;
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+                * {
+                    transition: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <svg aria-hidden="true" width="0" height="0" style="position: absolute">
+            <defs>
+                <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></symbol>
+                <symbol id="i-spark" viewBox="0 0 24 24">
+                    <path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z" />
+                </symbol>
+                <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 15v-4m5 4V7m5 8v-6" /></symbol>
+                <symbol id="i-search" viewBox="0 0 24 24">
+                    <circle cx="10.5" cy="10.5" r="6.5" />
+                    <path d="m16 16 4 4" />
+                </symbol>
+                <symbol id="i-upload" viewBox="0 0 24 24">
+                    <path d="M12 16V3m-5 5 5-5 5 5M4 15v5h16v-5" />
+                </symbol>
+            </defs>
+        </svg>
+        <main class="shell">
+            <header class="topbar">
+                <div class="brand">
+                    <span class="brand-mark" aria-hidden="true">F</span>
+                    <div>
+                        <span class="brand-name">FinEvoLab</span
+                        ><span class="brand-caption">FINANCIAL RESEARCH</span>
+                    </div>
+                </div>
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="#research">Research desk</a><a href="#report-explorer">Report explorer</a
+                    ><a href="#your-sources">Your sources</a>
+                    <button
+                        type="button"
+                        id="language-toggle"
+                        class="language-toggle"
+                        aria-label="Switch to Chinese"
+                    >
+                        中文
+                    </button>
+                </nav>
+            </header>
+            <section class="hero" aria-labelledby="page-heading">
+                <div>
+                    <p class="eyebrow">A little more clarity</p>
+                    <h1 id="page-heading">Financial clarity.<br /><em>Every source in view.</em></h1>
+                    <p class="hero-copy">
+                        Explore the numbers, understand the story, and keep the evidence close. Your next
+                        financial insight starts here.
+                    </p>
+                </div>
+                <aside class="journey">
+                    <p class="journey-title">FROM QUESTION TO INSIGHT</p>
+                    <div class="journey-steps">
+                        <div class="step"><span>01</span><span>Ask a clear question</span></div>
+                        <div class="step"><span>02</span><span>Follow the source</span></div>
+                        <div class="step"><span>03</span><span>Keep the full picture</span></div>
+                    </div>
+                </aside>
+            </section>
+            <div class="grid">
+                <section class="card question-card" id="research" aria-labelledby="question-heading">
+                    <div class="section-heading">
+                        <h2 id="question-heading">Start with a question</h2>
+                        <span class="icon-tile"
+                            ><svg class="icon" aria-hidden="true"><use href="#i-spark" /></svg
+                        ></span>
+                    </div>
+                    <p class="description">
+                        Compare performance, explore a trend, or understand what shaped the year.
+                    </p>
+                    <form id="question-form">
+                        <label class="field" for="question-text"
+                            >What would you like to explore?<textarea
+                                id="question-text"
+                                required
+                                maxlength="12000"
+                                placeholder="Compare MSFT and AAPL FY2024 revenue and explain their fiscal-period differences."
+                            >
+Compare MSFT and AAPL FY2024 revenue and state their actual fiscal periods.</textarea
+                            >
+                        </label>
+                        <div class="suggestions" aria-label="Suggested questions">
+                            <button
+                                class="chip"
+                                type="button"
+                                data-question="Compare MSFT and AAPL FY2024 revenue and state their actual fiscal periods."
+                            >
+                                Compare two companies</button
+                            ><button
+                                class="chip"
+                                type="button"
+                                data-question="Calculate MSFT revenue growth from FY2023 to FY2024 and show the formula."
+                            >
+                                Explore revenue growth</button
+                            ><button
+                                class="chip"
+                                type="button"
+                                data-question="How did Microsoft explain the change in revenue in its FY2024 annual report? Cite the supporting passages."
+                            >
+                                Understand the drivers
+                            </button>
+                        </div>
+                        <label class="field" for="planner-backend"
+                            >Planning model<select id="planner-backend" aria-describedby="planner-hint">
+                                <option value="api">Configured API</option>
+                                <option value="lora_bf16">LoRA · BF16</option>
+                                <option value="lora_nf4">LoRA · NF4</option>
+                            </select><span class="field-hint" id="planner-hint">The selected model plans your request. Report explanations use the configured API.</span>
+                        </label>
+                        <details class="source-picker">
+                            <summary id="source-summary">Sources · Public report snapshots</summary>
+                            <label class="field" for="question-documents"
+                                >Use your uploaded reports<select
+                                    id="question-documents"
+                                    multiple
+                                    size="3"
+                                    aria-describedby="source-hint"
+                                >
+                                    <option value="">Public report snapshots</option></select
+                                ><span class="field-hint" id="source-hint"
+                                    >Choose up to 5 reports to use only those sources. Leave unselected to use
+                                    public snapshots.</span
+                                ></label
+                            >
+                        </details>
+                        <button class="button" id="question-submit" type="submit">
+                            Build my analysis
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+                        </button>
+                        <p
+                            class="status"
+                            id="question-status"
+                            role="status"
+                            aria-live="polite"
+                            data-state="ready"
+                        >
+                            Ready when you are.
+                        </p>
+                    </form>
+                </section>
+                <section class="card quick-card" aria-labelledby="quick-heading">
+                    <div class="section-heading">
+                        <h2 id="quick-heading">A quick financial check</h2>
+                        <span class="icon-tile"
+                            ><svg class="icon" aria-hidden="true"><use href="#i-chart" /></svg
+                        ></span>
+                    </div>
+                    <p class="description">A focused look at annual revenue and year-over-year growth.</p>
+                    <form id="analysis">
+                        <div class="row">
+                            <label class="field" for="company"
+                                >Company<select id="company">
+                                    <option value="MSFT">Microsoft · MSFT</option>
+                                    <option value="AAPL">Apple · AAPL</option>
+                                    <option value="GOOGL">Alphabet · GOOGL</option>
+                                    <option value="AMZN">Amazon · AMZN</option>
+                                    <option value="META">Meta · META</option>
+                                </select></label
+                            ><label class="field" for="year"
+                                >Fiscal year<select id="year">
+                                    <option value="2024">FY 2024</option>
+                                    <option value="2023">FY 2023</option>
+                                </select></label
+                            >
+                        </div>
+                        <label class="field" for="mode"
+                            >Analysis approach<select id="mode" aria-describedby="mode-hint">
+                                <option value="offline">Snapshot calculation</option>
+                                <option value="agent">Agent-assisted review</option></select
+                            ><span class="field-hint" id="mode-hint"
+                                >Snapshot calculations use saved data. Agent-assisted review uses the
+                                configured model.</span
+                            ></label
+                        ><button class="button secondary full" id="submit" type="submit">
+                            Review revenue growth
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+                        </button>
+                        <p id="status" class="status" role="status" aria-live="polite" data-state="ready">
+                            Choose a company to begin.
+                        </p>
+                    </form>
+                </section>
+                <section id="result" class="card result-card" aria-labelledby="result-heading" hidden>
+                    <div class="section-heading">
+                        <h2 id="result-heading">Your analysis, with context</h2>
+                        <span class="badge" id="result-status"></span>
+                    </div>
+                    <p id="task-reference" class="task-reference"></p>
+                    <p id="result-message" class="status" role="status" aria-live="polite" hidden></p>
+                    <div id="answer"></div>
+                    <div class="links" id="reports" aria-label="Reports and actions"></div>
+                    <div class="evidence-heading">
+                        <h3>Follow the evidence</h3>
+                        <span class="count" id="evidence-count">0</span>
+                    </div>
+                    <div id="evidence"></div>
+                    <details class="trace">
+                        <summary>View run details</summary>
+                        <pre id="trace"></pre>
+                    </details>
+                </section>
+                <section class="card search-card" id="report-explorer" aria-labelledby="search-heading">
+                    <div class="section-heading">
+                        <h2 id="search-heading">Find the passage that matters</h2>
+                        <span class="icon-tile blue"
+                            ><svg class="icon" aria-hidden="true"><use href="#i-search" /></svg
+                        ></span>
+                    </div>
+                    <p class="description">
+                        Search saved public reports and the readable text in your uploaded reports.
+                    </p>
+                    <form id="search">
+                        <div class="row">
+                            <label class="field" for="search-company"
+                                >Company<select id="search-company">
+                                    <option>MSFT</option>
+                                    <option>AAPL</option>
+                                    <option>GOOGL</option>
+                                    <option>AMZN</option>
+                                    <option>META</option>
+                                </select></label
+                            ><label class="field" for="search-year"
+                                >Report year<select id="search-year">
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                </select></label
+                            >
+                        </div>
+                        <label class="field" for="query"
+                            >Words or topics to look for<input
+                                id="query"
+                                value="total revenue year ended June"
+                                placeholder="e.g. revenue growth, operating expenses"
+                                required /></label
+                        ><button class="button secondary" id="search-submit" type="submit">
+                            Explore reports
+                            <svg class="icon" aria-hidden="true"><use href="#i-search" /></svg>
+                        </button>
+                        <p class="status" id="search-status" role="status" aria-live="polite">
+                            Search the available report passages.
+                        </p>
+                    </form>
+                    <div id="search-results" aria-live="polite"></div>
+                </section>
+                <section class="card upload-card" id="your-sources" aria-labelledby="upload-heading">
+                    <div class="section-heading">
+                        <h2 id="upload-heading">Bring your own report</h2>
+                        <span class="icon-tile peach"
+                            ><svg class="icon" aria-hidden="true"><use href="#i-upload" /></svg
+                        ></span>
+                    </div>
+                    <p class="description">Upload a readable report to select it for your next question.</p>
+                    <form id="upload">
+                        <div class="row">
+                            <label class="field" for="upload-company"
+                                >Company ticker<input
+                                    id="upload-company"
+                                    value="MSFT"
+                                    maxlength="12"
+                                    pattern="[A-Za-z0-9.\-]{1,12}"
+                                    required /></label
+                            ><label class="field" for="upload-year"
+                                >Report year<input
+                                    id="upload-year"
+                                    type="number"
+                                    value="2024"
+                                    min="2000"
+                                    max="2100"
+                                    required
+                            /></label>
+                        </div>
+                        <label class="file-picker" for="upload-file"
+                            ><svg class="icon" aria-hidden="true"><use href="#i-upload" /></svg>
+                            <span>
+                                <strong id="file-name">Choose an annual report</strong
+                                ><span id="file-hint">PDF or HTML · Up to 32 MB</span>
+                            </span>
+                            <input
+                                id="upload-file"
+                                type="file"
+                                accept=".pdf,.html,.htm"
+                                aria-describedby="file-hint"
+                                required /></label
+                        ><button class="button green full" id="upload-submit" type="submit">
+                            Add to my sources
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+                        </button>
+                        <p id="upload-status" class="status" role="status" aria-live="polite">
+                            Your report will be available after processing.
+                        </p>
+                    </form>
+                </section>
+            </div>
+            <footer class="footer">
+                <span>FinEvoLab · Financial research, thoughtfully connected.</span
+                ><span>Clear questions. Traceable answers.</span>
+            </footer>
+        </main>
+        <script type="application/json" id="interface-translations">
+            {
+                "Chinese": "中文",
+                "Switch to Chinese": "切换为中文",
+                "Switch to English": "切换为英文",
+                "FinEvoLab · Research desk": "FinEvoLab · 财务研究工作台",
+                "FINANCIAL RESEARCH": "财务研究",
+                "Main navigation": "主导航",
+                "Research desk": "研究工作台",
+                "Report explorer": "财报检索",
+                "Your sources": "我的来源",
+                "A little more clarity": "让财务分析更清晰",
+                "Financial clarity.": "读懂财务表现，",
+                "Every source in view.": "让每个结论有据可查。",
+                "Explore the numbers, understand the story, and keep the evidence close. Your next financial insight starts here.": "从数据看表现，从财报找原因。将分析结论与原始证据放在一起，开启有据可查的财务研究。",
+                "FROM QUESTION TO INSIGHT": "从问题到洞察",
+                "Ask a clear question": "提出研究问题",
+                "Follow the source": "核对原始来源",
+                "Keep the full picture": "保留完整分析",
+                "Start with a question": "从一个问题开始",
+                "Compare performance, explore a trend, or understand what shaped the year.": "比较公司表现、分析变化趋势，或了解年度业绩背后的原因。",
+                "What would you like to explore?": "你想分析什么？",
+                "Compare MSFT and AAPL FY2024 revenue and explain their fiscal-period differences.": "比较微软与苹果 2024 财年的营业收入，并说明实际财务期间的差异。",
+                "Compare MSFT and AAPL FY2024 revenue and state their actual fiscal periods.": "比较微软与苹果 2024 财年的营业收入，并列出各自的实际财务期间。",
+                "Calculate MSFT revenue growth from FY2023 to FY2024 and show the formula.": "计算微软从 2023 财年到 2024 财年的营业收入同比增长率，并列出计算公式。",
+                "How did Microsoft explain the change in revenue in its FY2024 annual report? Cite the supporting passages.": "微软在 2024 财年年报中如何解释营业收入的变化？请引用原文作为依据。",
+                "Suggested questions": "示例问题",
+                "Compare two companies": "比较两家公司",
+                "Explore revenue growth": "分析收入增长",
+                "Understand the drivers": "了解业绩动因",
+                "Sources · Public report snapshots": "分析来源 · 公开财报快照",
+                "Use your uploaded reports": "选择已上传的财报",
+                "Public report snapshots": "公开财报快照",
+                "Choose up to 5 reports to use only those sources. Leave unselected to use public snapshots.": "最多选择 5 份财报；选中后仅使用这些来源。未选择时使用公开财报快照。",
+                "Build my analysis": "开始分析",
+                "Planning model": "规划模型",
+                "Configured API": "默认 API",
+                "The selected model plans your request. Report explanations use the configured API.": "所选模型负责请求规划，财报解释由默认 API 完成。",
+                "Checking the selected planner…": "正在检查所选规划模型…",
+                "The selected LoRA planner is connected.": "所选 LoRA 规划服务已连接。",
+                "The selected LoRA planner is unavailable. Connect its service or select Configured API.": "所选 LoRA 规划服务暂不可用，请连接服务或选择默认 API。",
+                "Ready when you are.": "输入问题，即可开始分析。",
+                "A quick financial check": "快速查看收入表现",
+                "A focused look at annual revenue and year-over-year growth.": "查看年度营业收入及同比变化。",
+                "Company": "公司",
+                "Microsoft · MSFT": "微软 · MSFT",
+                "Apple · AAPL": "苹果 · AAPL",
+                "Alphabet · GOOGL": "Alphabet · GOOGL",
+                "Amazon · AMZN": "亚马逊 · AMZN",
+                "Meta · META": "Meta · META",
+                "Fiscal year": "财年",
+                "FY 2024": "2024 财年",
+                "FY 2023": "2023 财年",
+                "Analysis approach": "分析方式",
+                "Snapshot calculation": "财报快照计算",
+                "Agent-assisted review": "Agent 辅助分析",
+                "Snapshot calculations use saved data. Agent-assisted review uses the configured model.": "快照计算使用已保存的数据；Agent 辅助分析会调用已配置的模型。",
+                "Review revenue growth": "查看收入同比",
+                "Choose a company to begin.": "选择公司和财年后开始。",
+                "Your analysis, with context": "分析结果与依据",
+                "Reports and actions": "报告与操作",
+                "Follow the evidence": "查看原始证据",
+                "View run details": "查看运行详情",
+                "Find the passage that matters": "检索相关财报段落",
+                "Search saved public reports and the readable text in your uploaded reports.": "检索公开财报快照及已上传财报中的可读文本。",
+                "Report year": "报告年份",
+                "Words or topics to look for": "检索关键词或主题",
+                "e.g. revenue growth, operating expenses": "例如：收入增长、营业费用",
+                "Explore reports": "检索财报",
+                "Search the available report passages.": "输入关键词，查找相关原文段落。",
+                "Bring your own report": "上传我的财报",
+                "Upload a readable report to select it for your next question.": "上传包含可读文本的财报，即可将其选为下一次分析的来源。",
+                "Company ticker": "公司代码",
+                "Choose an annual report": "选择年度财报文件",
+                "PDF or HTML · Up to 32 MB": "支持 PDF 或 HTML · 最大 32 MB",
+                "Add to my sources": "上传并添加来源",
+                "Your report will be available after processing.": "文件解析完成后即可选择为分析来源。",
+                "FinEvoLab · Financial research, thoughtfully connected.": "FinEvoLab · 让财务研究与证据相连",
+                "Clear questions. Traceable answers.": "问题清晰，答案可溯。",
+                "Revenue": "营业收入",
+                "Operating income": "营业利润",
+                "Net income": "净利润",
+                "Ready": "就绪",
+                "In progress": "处理中",
+                "Pending": "等待处理",
+                "Analysis complete": "分析完成",
+                "Partially complete": "部分完成",
+                "Analysis failed": "分析失败",
+                "Insufficient data": "数据不足",
+                "A little more detail needed": "需要补充问题信息",
+                "Fiscal periods differ": "财务期间不一致",
+                "Review the request": "请检查请求内容",
+                "The request timed out. The service may still be processing it; wait before trying again.": "请求已超时，服务端可能仍在处理。请稍候再尝试。",
+                "The service returned an unexpected response. Please try again.": "服务返回的响应格式异常，请重试。",
+                "Reported values and actual fiscal periods": "披露数值与实际财务期间",
+                "Company / year": "公司 / 财年",
+                "Metric": "指标",
+                "Reported value": "披露数值",
+                "Fiscal period": "财务期间",
+                "{company} · {metric}": "{company} · {metric}",
+                "FY {previous} → FY {current}": "{previous} 财年 → {current} 财年",
+                "{company} · FY {year}": "{company} · {year} 财年",
+                "Saved session · {id}": "已保存的分析 · {id}",
+                "Annual revenue and year-over-year change, based on the saved report values.": "根据已保存的财报数值，展示年度营业收入及同比变化。",
+                "This run has not produced an analysis yet. Review the saved details or try resuming it.": "本次运行尚未生成分析结果。可查看已保存的详情，或尝试恢复运行。",
+                "The selected report differs from the public snapshot. This analysis uses the selected report values.": "选中的财报与公开快照存在差异，本次分析采用所选财报中的数值。",
+                "View source {number}": "查看来源 {number}",
+                "Passage reference · {id}": "段落标识 · {id}",
+                "{number} · {company} · {year} · {reportType}": "{number} · {company} · {year} · {reportType}",
+                "Report": "财报",
+                "uploaded": "上传财报",
+                "annual": "年度财报",
+                "Location · {locator}": "原文位置 · {locator}",
+                "Open original report ↗": "打开原始财报 ↗",
+                "Source SHA256 · {hash}": "来源 SHA256 · {hash}",
+                "No supporting passages were returned for this run.": "本次运行未返回支持性原文段落。",
+                "Read full report ↗": "查看完整报告 ↗",
+                "Open PDF report ↗": "打开 PDF 报告 ↗",
+                "Resume saved analysis": "恢复已保存的分析",
+                "Following the data and preparing your analysis…": "正在核对数据并生成分析，请稍候…",
+                "{status} · See your results below.": "{status} · 请查看下方结果。",
+                "Please review the question, company, and report year.": "请检查问题、公司代码及报告年份。",
+                "This saved session cannot be resumed with the current setup. Start a new analysis.": "当前配置无法恢复这次已保存的分析，请重新开始分析。",
+                "This run could not finish. You can resume it if a saved session is available.": "本次分析未能完成。如有已保存的分析，可尝试恢复。",
+                "This run could not finish, and its saved details could not be loaded. Please try again.": "本次分析未能完成，且无法加载保存的详情，请重试。",
+                "Unable to reach the service. Please check the connection and try again.": "无法连接服务，请检查连接后重试。",
+                "Choose up to 5 reports for one analysis.": "每次分析最多选择 5 份财报。",
+                "Sources · {count} selected report": "分析来源 · 已选择 {count} 份财报",
+                "Sources · {count} selected reports": "分析来源 · 已选择 {count} 份财报",
+                "Enter a financial question before starting your analysis.": "请输入财务问题后再开始分析。",
+                "A starting point for your next analysis. Edit it to make it yours.": "已填入示例问题，可以编辑后再开始分析。",
+                "Enter a word or topic to search for.": "请输入检索关键词或主题。",
+                "Looking for relevant passages…": "正在查找相关财报段落…",
+                "{count} relevant passages found.": "找到 {count} 条相关段落。",
+                "No passages found. Try another topic or report year.": "未找到相关段落，请尝试其他主题或报告年份。",
+                "{company} · {year} · {section}": "{company} · {year} · {section}",
+                "Read in the original report ↗": "查看原始财报 ↗",
+                "The report search is unavailable. Please try again.": "财报检索暂时不可用，请重试。",
+                "Choose a PDF or HTML report.": "请选择 PDF 或 HTML 格式的财报。",
+                "Choose a report of 32 MB or less.": "请选择不超过 32 MB 的财报文件。",
+                "Adding your report and preparing its passages…": "正在上传财报并提取可检索段落…",
+                "The report could not be read. Check the file format, company, and report year.": "无法读取财报，请检查文件格式、公司代码及报告年份。",
+                "The upload service is unavailable. Please try again.": "上传服务暂时不可用，请重试。",
+                "This PDF needs text recognition before it can be used as a source.": "该 PDF 需要先进行文字识别，才能用作分析来源。",
+                "No readable text was found. Try a report with selectable text.": "未提取到可读文本，请使用文字可选中的财报文件。",
+                "Report added · {count} searchable passages. Selected for your next question.": "财报已添加，共 {count} 条可检索段落，已选为下一次提问的来源。",
+                "Review extracted values ↗": "查看提取数值 ↗",
+                "The report could not be added. Check its format and try again.": "财报未能添加，请检查文件格式后重试。",
+                "{company} · FY {year} · {id}": "{company} · {year} 财年 · {id}",
+                " · {reason}": " · {reason}",
+                "Text recognition needed": "需要文字识别",
+                "No readable text": "无可读文本",
+                "Your report list is unavailable. Refresh to reload your sources.": "暂时无法加载已上传的财报，请刷新页面重试。"
+            }
+        </script>
+        <script>
+            const el = (id) => document.getElementById(id);
+            const translations = JSON.parse(el('interface-translations').textContent);
+            const textBindings = new WeakMap();
+            const validityBindings = new WeakMap();
+            const attributeBindings = [];
+            let currentLanguage = preferredLanguage();
+
+            function preferredLanguage() {
+                try {
+                    const saved = localStorage.getItem('finevolab.language');
+                    if (['en', 'zh'].includes(saved)) return saved;
+                } catch {}
+                return navigator.language?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+            }
+
+            function t(message, parameters = {}) {
+                const source = String(message ?? '');
+                const template = currentLanguage === 'zh' ? (translations[source] ?? source) : source;
+                return template.replace(/\{(\w+)\}/g, (match, key) => {
+                    if (!Object.hasOwn(parameters, key)) return match;
+                    const value = String(parameters[key]);
+                    return currentLanguage === 'zh' ? (translations[value] ?? value) : value;
+                });
+            }
+
+            function localizedText(message, parameters = {}) {
+                const text = document.createTextNode(t(message, parameters));
+                if (Object.hasOwn(translations, message)) {
+                    textBindings.set(text, { message, parameters, prefix: '', suffix: '' });
+                }
+                return text;
+            }
+
+            function localize(element, message, parameters = {}) {
+                element.replaceChildren(localizedText(message, parameters));
+            }
+
+            function setValidity(element, message) {
+                validityBindings.set(element, message);
+                element.setCustomValidity(t(message));
+            }
+
+            function bindStaticContent() {
+                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+                while (walker.nextNode()) {
+                    const text = walker.currentNode;
+                    if (text.parentElement.closest('script,style')) continue;
+                    const message = text.nodeValue.replace(/\s+/g, ' ').trim();
+                    if (Object.hasOwn(translations, message)) {
+                        textBindings.set(text, {
+                            message,
+                            parameters: {},
+                            prefix: text.nodeValue.match(/^\s*/)[0],
+                            suffix: text.nodeValue.match(/\s*$/)[0],
+                        });
+                    }
+                }
+                for (const element of document.querySelectorAll('[placeholder],[aria-label]')) {
+                    for (const attribute of ['placeholder', 'aria-label']) {
+                        const message = element.getAttribute(attribute);
+                        if (Object.hasOwn(translations, message))
+                            attributeBindings.push({ element, attribute, message });
+                    }
+                }
+            }
+
+            function setLanguage(language, persist = true) {
+                if (!['en', 'zh'].includes(language)) return;
+                currentLanguage = language;
+                document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+                document.title = t('FinEvoLab · Research desk');
+                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+                while (walker.nextNode()) {
+                    const text = walker.currentNode;
+                    const binding = textBindings.get(text);
+                    if (binding)
+                        text.nodeValue =
+                            binding.prefix + t(binding.message, binding.parameters) + binding.suffix;
+                }
+                for (const { element, attribute, message } of attributeBindings) {
+                    element.setAttribute(attribute, t(message));
+                }
+                for (const element of document.querySelectorAll('input,select,textarea')) {
+                    if (validityBindings.has(element))
+                        element.setCustomValidity(t(validityBindings.get(element)));
+                }
+                if (el('question-text').dataset.example) {
+                    el('question-text').value = t(el('question-text').dataset.example);
+                }
+                const button = el('language-toggle');
+                button.textContent = language === 'en' ? translations.Chinese : 'English';
+                button.lang = language === 'en' ? 'zh-CN' : 'en';
+                button.setAttribute(
+                    'aria-label',
+                    t(language === 'en' ? 'Switch to Chinese' : 'Switch to English'),
+                );
+                if (persist) {
+                    try {
+                        localStorage.setItem('finevolab.language', language);
+                    } catch {}
+                }
+            }
+            const metricLabels = {
+                revenue: 'Revenue',
+                operating_income: 'Operating income',
+                net_income: 'Net income',
+            };
+            const statusLabels = {
+                ready: 'Ready',
+                running: 'In progress',
+                pending: 'Pending',
+                complete: 'Analysis complete',
+                partial: 'Partially complete',
+                failed: 'Analysis failed',
+                insufficient_data: 'Insufficient data',
+                clarification_required: 'A little more detail needed',
+                periods_not_aligned: 'Fiscal periods differ',
+                invalid_parameters: 'Review the request',
+            };
+            let analysisBusy = false;
+            const searchableYears = new Map(
+                Array.from(el('search-company').options, (option) => [
+                    option.value,
+                    new Set([2024, 2023, 2022]),
+                ]),
+            );
+
+            function responseError() {
+                const error = new Error('Unexpected service response');
+                error.name = 'ResponseError';
+                return error;
+            }
+
+            async function fetchJson(endpoint, options = {}, timeout = 30000) {
+                const controller = new AbortController();
+                const timer = setTimeout(() => controller.abort(), timeout);
+                try {
+                    const response = await fetch(endpoint, { ...options, signal: controller.signal });
+                    let data;
+                    try {
+                        data = await response.json();
+                    } catch (error) {
+                        if (controller.signal.aborted || error.name === 'AbortError') throw error;
+                        if (response.ok) throw responseError();
+                        data = {};
+                    }
+                    return { response, data };
+                } finally {
+                    clearTimeout(timer);
+                }
+            }
+
+            function requestErrorMessage(error, fallback) {
+                if (error.name === 'AbortError' || error.name === 'TimeoutError') {
+                    return 'The request timed out. The service may still be processing it; wait before trying again.';
+                }
+                return error.name === 'ResponseError'
+                    ? 'The service returned an unexpected response. Please try again.'
+                    : fallback;
+            }
+
+            function validateTaskState(state) {
+                if (
+                    !state ||
+                    !/^[0-9a-f]{32}$/.test(state.task_id) ||
+                    !['pending', 'running', 'complete', 'failed'].includes(state.status) ||
+                    !state.phases ||
+                    typeof state.phases !== 'object' ||
+                    Array.isArray(state.phases)
+                ) {
+                    throw responseError();
+                }
+                return state;
+            }
+
+            function setAnalysisBusy(busy) {
+                analysisBusy = busy;
+                for (const button of [
+                    el('submit'),
+                    el('question-submit'),
+                    el('planner-backend'),
+                    ...document.querySelectorAll('[data-resume]'),
+                ]) {
+                    button.disabled = busy;
+                    if (busy) button.setAttribute('aria-busy', 'true');
+                    else button.removeAttribute('aria-busy');
+                }
+            }
+
+            function trimField(id, message) {
+                const field = el(id);
+                field.value = field.value.trim();
+                setValidity(field, field.value ? '' : message);
+            }
+
+            function updateSearchYears() {
+                const current = Number(el('search-year').value);
+                const years = [...(searchableYears.get(el('search-company').value) || [])].sort(
+                    (a, b) => b - a,
+                );
+                el('search-year').replaceChildren(
+                    ...years.map((year) => new Option(String(year), String(year))),
+                );
+                if (years.includes(current)) el('search-year').value = String(current);
+            }
+
+            function addSearchSource(report) {
+                if (report.status !== 'text_extracted') return;
+                if (!searchableYears.has(report.company)) {
+                    searchableYears.set(report.company, new Set());
+                    el('search-company').add(new Option(report.company, report.company));
+                }
+                searchableYears.get(report.company).add(Number(report.report_year));
+                updateSearchYears();
+            }
+
+            el('search-company').onchange = updateSearchYears;
+            for (const id of ['question-text', 'query']) {
+                el(id).oninput = () => {
+                    setValidity(el(id), '');
+                    delete el(id).dataset.example;
+                };
+            }
+            el('question-documents').addEventListener('invalid', () => {
+                document.querySelector('.source-picker').open = true;
+            });
+
+            function node(tag, className, text, parameters = {}) {
+                const element = document.createElement(tag);
+                if (className) element.className = className;
+                if (text !== undefined) element.append(localizedText(text, parameters));
+                return element;
+            }
+
+            function rawNode(tag, className, text) {
+                const element = node(tag, className);
+                element.textContent = text;
+                return element;
+            }
+
+            function setStatus(element, message, state = 'ready', parameters = {}) {
+                element.hidden = false;
+                localize(element, message, parameters);
+                element.dataset.state = state;
+            }
+
+            function sourceLink(url, label) {
+                try {
+                    if (!url) return node('span', '', label);
+                    const target = new URL(url, window.location.origin);
+                    if (!['http:', 'https:'].includes(target.protocol)) return node('span', '', label);
+                    const link = node('a', '', label);
+                    link.href = target.href;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    return link;
+                } catch {
+                    return node('span', '', label);
+                }
+            }
+
+            function numberText(value) {
+                const amount = Number(value);
+                return value !== null && value !== '' && Number.isFinite(amount)
+                    ? new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(amount)
+                    : String(value ?? '—');
+            }
+
+            function semanticState(state) {
+                const analysis = state.phases?.analyze?.result;
+                return state.status === 'failed'
+                    ? 'failed'
+                    : analysis?.overall_status || analysis?.answer?.status || state.status;
+            }
+
+            function renderFigures(parent, analysis) {
+                const calculations =
+                    analysis.answer?.calculations || (analysis.calculation ? [analysis.calculation] : []);
+                if (calculations.length) {
+                    const figures = node('div', 'figures');
+                    for (const item of calculations) {
+                        const figure = node('div', 'figure');
+                        const amount = node(
+                            'p',
+                            'figure-value',
+                            numberText(item.value) + (item.unit === 'percent' ? '%' : ' ' + item.unit),
+                        );
+                        amount.title = String(item.value);
+                        figure.append(
+                            node('p', 'figure-label', '{company} · {metric}', {
+                                company: item.company,
+                                metric: metricLabels[item.metric] || item.metric,
+                            }),
+                            amount,
+                            node('p', 'figure-detail', 'FY {previous} → FY {current}', {
+                                previous: item.previous_year,
+                                current: item.fiscal_year,
+                            }),
+                            node('p', 'figure-detail', item.formula),
+                        );
+                        figures.append(figure);
+                    }
+                    parent.append(figures);
+                }
+                const observations = [
+                    ...(analysis.answer?.metrics || []),
+                    ...calculations.flatMap((item) => item.inputs || []),
+                ];
+                const unique = new Map(
+                    observations.map((item) => [
+                        [item.company, item.name, item.fiscal_year, item.evidence_id].join('|'),
+                        item,
+                    ]),
+                );
+                if (!unique.size) return;
+                const wrap = node('div', 'table-scroll');
+                const table = node('table');
+                const caption = node('caption', 'metadata', 'Reported values and actual fiscal periods');
+                const header = node('tr');
+                for (const label of ['Company / year', 'Metric', 'Reported value', 'Fiscal period']) {
+                    const cell = node('th', '', label);
+                    cell.scope = 'col';
+                    header.append(cell);
+                }
+                const head = node('thead');
+                head.append(header);
+                const body = node('tbody');
+                for (const item of unique.values()) {
+                    const row = node('tr');
+                    const amount = node('td', 'amount', numberText(item.value) + ' ' + item.unit);
+                    amount.title = String(item.value) + ' ' + item.unit;
+                    row.append(
+                        node('td', '', '{company} · FY {year}', {
+                            company: item.company,
+                            year: item.fiscal_year,
+                        }),
+                        node('td', '', metricLabels[item.name] || item.name),
+                        amount,
+                        node('td', '', item.period_start + ' → ' + item.period_end),
+                    );
+                    body.append(row);
+                }
+                table.append(caption, head, body);
+                wrap.append(table);
+                parent.append(wrap);
+            }
+
+            function show(state) {
+                validateTaskState(state);
+                el('result-message').hidden = true;
+                const analysis = state.phases?.analyze?.result || {};
+                const status = semanticState(state);
+                el('result').hidden = false;
+                localize(el('result-status'), statusLabels[status] || status);
+                el('result-status').dataset.state = status;
+                localize(el('task-reference'), 'Saved session · {id}', { id: state.task_id });
+                el('answer').replaceChildren(
+                    node(
+                        'p',
+                        'answer-copy',
+                        analysis.answer?.answer
+                            ? ''
+                            : analysis.calculation
+                              ? 'Annual revenue and year-over-year change, based on the saved report values.'
+                              : 'This run has not produced an analysis yet. Review the saved details or try resuming it.',
+                    ),
+                );
+                if (analysis.answer?.answer) el('answer').firstChild.textContent = analysis.answer.answer;
+                if (analysis.source_issues?.length) {
+                    el('answer').append(
+                        node(
+                            'p',
+                            'notice',
+                            'The selected report differs from the public snapshot. This analysis uses the selected report values.',
+                        ),
+                    );
+                }
+                renderFigures(el('answer'), analysis);
+                const evidence = analysis.evidence || [];
+                for (const claim of analysis.narrative?.claims || analysis.answer?.claims || []) {
+                    const card = node('article', 'claim');
+                    card.append(rawNode('p', '', claim.statement), rawNode('blockquote', '', claim.quote));
+                    const index = evidence.findIndex(
+                        (item) => (item.id || item.chunk_id || item.evidence_id) === claim.chunk_id,
+                    );
+                    if (index >= 0) {
+                        const button = node('button', 'text-button', 'View source {number}', {
+                            number: String(index + 1).padStart(2, '0'),
+                        });
+                        button.type = 'button';
+                        button.onclick = () => {
+                            const target = el('evidence-' + index);
+                            target.open = true;
+                            target.scrollIntoView({ block: 'center' });
+                        };
+                        card.append(button);
+                    } else {
+                        card.append(
+                            node('p', 'metadata', 'Passage reference · {id}', { id: claim.chunk_id }),
+                        );
+                    }
+                    el('answer').append(card);
+                }
+                el('evidence').replaceChildren();
+                el('evidence-count').textContent = evidence.length;
+                evidence.forEach((item, index) => {
+                    const detail = node('details', 'evidence-item');
+                    detail.id = 'evidence-' + index;
+                    detail.append(
+                        node('summary', '', '{number} · {company} · {year} · {reportType}', {
+                            number: String(index + 1).padStart(2, '0'),
+                            company: item.company,
+                            year: item.report_year,
+                            reportType: item.report_type || 'Report',
+                        }),
+                        rawNode('p', '', item.text),
+                        node('p', 'metadata', 'Location · {locator}', { locator: item.locator }),
+                    );
+                    const source = node('p');
+                    source.append(sourceLink(item.source_url, 'Open original report ↗'));
+                    detail.append(source);
+                    if (item.source_sha256)
+                        detail.append(
+                            node('p', 'metadata', 'Source SHA256 · {hash}', { hash: item.source_sha256 }),
+                        );
+                    el('evidence').append(detail);
+                });
+                if (!evidence.length)
+                    el('evidence').append(
+                        node('p', 'description', 'No supporting passages were returned for this run.'),
+                    );
+                el('trace').textContent = JSON.stringify(state, null, 2);
+                el('reports').replaceChildren();
+                if (state.phases?.report?.status === 'complete') {
+                    for (const format of ['html', 'pdf']) {
+                        const link = sourceLink(
+                            '/api/tasks/' + state.task_id + '/report/' + format,
+                            format === 'html' ? 'Read full report ↗' : 'Open PDF report ↗',
+                        );
+                        link.className = 'button secondary';
+                        el('reports').append(link);
+                    }
+                }
+                if (state.status === 'failed') {
+                    const button = node('button', 'button', 'Resume saved analysis');
+                    button.type = 'button';
+                    button.dataset.resume = '';
+                    button.disabled = analysisBusy;
+                    button.onclick = () =>
+                        requestTask(
+                            '/api/tasks/' + state.task_id + '/resume',
+                            undefined,
+                            button,
+                            el('result-message'),
+                        );
+                    el('reports').append(button);
+                }
+                el('result').scrollIntoView({ block: 'start' });
+            }
+
+            async function requestTask(endpoint, payload, button, status) {
+                if (analysisBusy) return;
+                setAnalysisBusy(true);
+                status.hidden = false;
+                setStatus(status, 'Following the data and preparing your analysis…', 'running');
+                try {
+                    const options = { method: 'POST' };
+                    if (payload !== undefined) {
+                        options.headers = { 'Content-Type': 'application/json' };
+                        options.body = JSON.stringify(payload);
+                    }
+                    const { response, data } = await fetchJson(endpoint, options, 300000);
+                    if (response.ok) {
+                        show(data);
+                        const result = semanticState(data);
+                        setStatus(status, '{status} · See your results below.', result, {
+                            status: statusLabels[result] || result,
+                        });
+                    } else {
+                        let message =
+                            response.status === 422
+                                ? 'Please review the question, company, and report year.'
+                                : response.status === 409
+                                  ? 'This saved session cannot be resumed with the current setup. Start a new analysis.'
+                                  : 'This run could not finish. You can resume it if a saved session is available.';
+                        setStatus(status, message, 'failed');
+                        if (data?.detail?.task_id) {
+                            try {
+                                const saved = await fetchJson('/api/tasks/' + data.detail.task_id, {}, 15000);
+                                if (saved.response.ok) show(saved.data);
+                            } catch {
+                                message =
+                                    'This run could not finish, and its saved details could not be loaded. Please try again.';
+                            }
+                        }
+                        if (response.status === 409) el('reports').querySelector('[data-resume]')?.remove();
+                        setStatus(status, message, 'failed');
+                    }
+                } catch (error) {
+                    setStatus(
+                        status,
+                        requestErrorMessage(
+                            error,
+                            'Unable to reach the service. Please check the connection and try again.',
+                        ),
+                        'failed',
+                    );
+                } finally {
+                    setAnalysisBusy(false);
+                }
+            }
+
+            el('analysis').onsubmit = (event) => {
+                event.preventDefault();
+                return requestTask(
+                    '/api/tasks',
+                    {
+                        company: el('company').value,
+                        fiscal_year: Number(el('year').value),
+                        mode: el('mode').value,
+                    },
+                    el('submit'),
+                    el('status'),
+                );
+            };
+
+            function selectedDocuments() {
+                return Array.from(el('question-documents').selectedOptions, (option) => option.value).filter(
+                    Boolean,
+                );
+            }
+
+            function updateSources() {
+                const count = selectedDocuments().length;
+                setValidity(
+                    el('question-documents'),
+                    count > 5 ? 'Choose up to 5 reports for one analysis.' : '',
+                );
+                if (count > 5) document.querySelector('.source-picker').open = true;
+                localize(
+                    el('source-summary'),
+                    count
+                        ? count === 1
+                            ? 'Sources · {count} selected report'
+                            : 'Sources · {count} selected reports'
+                        : 'Sources · Public report snapshots',
+                    { count },
+                );
+            }
+
+            el('question-documents').onchange = updateSources;
+            el('planner-backend').onchange = async () => {
+                const backend = el('planner-backend').value;
+                const hint = el('planner-hint');
+                if (backend === 'api') {
+                    setStatus(hint, 'The selected model plans your request. Report explanations use the configured API.');
+                    return;
+                }
+                setStatus(hint, 'Checking the selected planner…');
+                try {
+                    const { response, data } = await fetchJson('/api/planners', {}, 5000);
+                    if (backend !== el('planner-backend').value) return;
+                    setStatus(hint, response.ok && data[backend]?.available
+                        ? 'The selected LoRA planner is connected.'
+                        : 'The selected LoRA planner is unavailable. Connect its service or select Configured API.');
+                } catch (error) {
+                    if (backend === el('planner-backend').value)
+                        setStatus(hint, 'The selected LoRA planner is unavailable. Connect its service or select Configured API.');
+                }
+            };
+            el('question-form').onsubmit = (event) => {
+                event.preventDefault();
+                trimField('question-text', 'Enter a financial question before starting your analysis.');
+                updateSources();
+                if (!el('question-form').reportValidity()) return;
+                const payload = { question: el('question-text').value.trim(), upload_ids: selectedDocuments() };
+                if (el('planner-backend').value !== 'api') payload.planner_backend = el('planner-backend').value;
+                return requestTask(
+                    '/api/questions',
+                    payload,
+                    el('question-submit'),
+                    el('question-status'),
+                );
+            };
+            document.querySelectorAll('[data-question]').forEach((button) => {
+                button.onclick = () => {
+                    el('question-text').dataset.example = button.dataset.question;
+                    el('question-text').value = t(button.dataset.question);
+                    setValidity(el('question-text'), '');
+                    el('question-text').focus();
+                    setStatus(
+                        el('question-status'),
+                        'A starting point for your next analysis. Edit it to make it yours.',
+                    );
+                };
+            });
+
+            el('search').onsubmit = async (event) => {
+                event.preventDefault();
+                if (el('search-submit').disabled) return;
+                trimField('query', 'Enter a word or topic to search for.');
+                if (!el('search').reportValidity()) return;
+                el('search-results').replaceChildren();
+                el('search-submit').disabled = true;
+                setStatus(el('search-status'), 'Looking for relevant passages…', 'running');
+                try {
+                    const parameters = new URLSearchParams({
+                        query: el('query').value.trim(),
+                        company: el('search-company').value,
+                        year: el('search-year').value,
+                    });
+                    const { response, data: results } = await fetchJson(
+                        '/api/search?' + parameters,
+                        {},
+                        60000,
+                    );
+                    if (!response.ok) throw new Error('Search failed');
+                    if (
+                        !Array.isArray(results) ||
+                        results.some((item) => !item || typeof item.text !== 'string')
+                    ) {
+                        throw responseError();
+                    }
+                    setStatus(
+                        el('search-status'),
+                        results.length
+                            ? '{count} relevant passages found.'
+                            : 'No passages found. Try another topic or report year.',
+                        results.length ? 'complete' : 'ready',
+                        { count: results.length },
+                    );
+                    for (const item of results) {
+                        const card = node('article', 'search-result');
+                        card.append(
+                            node('h3', '', '{company} · {year} · {section}', {
+                                company: item.company,
+                                year: item.report_year,
+                                section: (item.section || 'Report').replaceAll('-', ' '),
+                            }),
+                            rawNode('p', '', item.text),
+                            sourceLink(item.source_url, 'Read in the original report ↗'),
+                        );
+                        el('search-results').append(card);
+                    }
+                } catch (error) {
+                    setStatus(
+                        el('search-status'),
+                        requestErrorMessage(error, 'The report search is unavailable. Please try again.'),
+                        'failed',
+                    );
+                } finally {
+                    el('search-submit').disabled = false;
+                }
+            };
+
+            el('upload-file').onchange = () => {
+                const file = el('upload-file').files[0];
+                if (file) el('file-name').textContent = file.name;
+                else localize(el('file-name'), 'Choose an annual report');
+                setValidity(
+                    el('upload-file'),
+                    file && !/\.(pdf|html?)$/i.test(file.name)
+                        ? 'Choose a PDF or HTML report.'
+                        : file && file.size > 32 * 1024 * 1024
+                          ? 'Choose a report of 32 MB or less.'
+                          : '',
+                );
+            };
+            el('upload').onsubmit = async (event) => {
+                event.preventDefault();
+                if (el('upload-submit').disabled) return;
+                el('upload-company').value = el('upload-company').value.trim().toUpperCase();
+                el('upload-file').onchange();
+                if (!el('upload').reportValidity()) return;
+                el('upload-submit').disabled = true;
+                setStatus(el('upload-status'), 'Adding your report and preparing its passages…', 'running');
+                try {
+                    const form = new FormData();
+                    form.append('file', el('upload-file').files[0]);
+                    form.append('company', el('upload-company').value.trim().toUpperCase());
+                    form.append('fiscal_year', el('upload-year').value);
+                    const { response, data } = await fetchJson(
+                        '/api/uploads',
+                        { method: 'POST', body: form },
+                        90000,
+                    );
+                    if (!response.ok) {
+                        setStatus(
+                            el('upload-status'),
+                            response.status === 413
+                                ? 'Choose a report of 32 MB or less.'
+                                : response.status === 422
+                                  ? 'The report could not be read. Check the file format, company, and report year.'
+                                  : 'The upload service is unavailable. Please try again.',
+                            'failed',
+                        );
+                        return;
+                    }
+                    if (
+                        !data ||
+                        !/^[0-9a-f]{64}$/.test(data.id) ||
+                        !Number.isInteger(data.chunk_count) ||
+                        !['text_extracted', 'needs_ocr', 'extraction_failed'].includes(data.status)
+                    )
+                        throw responseError();
+                    const needsText = data.status === 'needs_ocr';
+                    const usable = data.status === 'text_extracted' && data.chunk_count > 0;
+                    setStatus(
+                        el('upload-status'),
+                        needsText
+                            ? 'This PDF needs text recognition before it can be used as a source.'
+                            : !usable
+                              ? 'No readable text was found. Try a report with selectable text.'
+                              : 'Report added · {count} searchable passages. Selected for your next question.',
+                        needsText ? 'partial' : usable ? 'complete' : 'failed',
+                        { count: data.chunk_count },
+                    );
+                    el('upload-status').append(
+                        sourceLink('/api/uploads/' + data.id + '/metrics', 'Review extracted values ↗'),
+                    );
+                    addDocumentOption(
+                        {
+                            ...data,
+                            status: usable ? data.status : needsText ? 'needs_ocr' : 'extraction_failed',
+                        },
+                        usable,
+                    );
+                } catch (error) {
+                    setStatus(
+                        el('upload-status'),
+                        requestErrorMessage(
+                            error,
+                            'The report could not be added. Check its format and try again.',
+                        ),
+                        'failed',
+                    );
+                } finally {
+                    el('upload-submit').disabled = false;
+                }
+            };
+
+            function addDocumentOption(report, selected = false) {
+                const selector = el('question-documents');
+                let option = Array.from(selector.options).find((item) => item.value === report.id);
+                if (!option) {
+                    option = new Option('', report.id);
+                    selector.add(option);
+                }
+                option.disabled = report.status !== 'text_extracted';
+                if (option.disabled) option.selected = false;
+                localize(option, '{company} · FY {year} · {id}', {
+                    company: report.company,
+                    year: report.report_year,
+                    id: report.id.slice(0, 8),
+                });
+                if (option.disabled)
+                    option.append(
+                        localizedText(' · {reason}', {
+                            reason:
+                                report.status === 'needs_ocr'
+                                    ? 'Text recognition needed'
+                                    : 'No readable text',
+                        }),
+                    );
+                if (selected) {
+                    for (const item of selector.options) item.selected = item === option;
+                }
+                updateSources();
+                addSearchSource(report);
+            }
+
+            fetchJson('/api/uploads', {}, 15000)
+                .then(({ response, data }) => {
+                    if (!response.ok) throw new Error('Source list unavailable');
+                    if (!Array.isArray(data)) throw responseError();
+                    return data;
+                })
+                .then((reports) => {
+                    for (const report of reports) addDocumentOption(report);
+                })
+                .catch(() => {
+                    localize(
+                        el('source-hint'),
+                        'Your report list is unavailable. Refresh to reload your sources.',
+                    );
+                });
+            el('question-text').dataset.example = el('question-text').value.trim();
+            bindStaticContent();
+            setLanguage(currentLanguage, false);
+            el('language-toggle').onclick = () => setLanguage(currentLanguage === 'en' ? 'zh' : 'en');
+        </script>
+    </body>
+</html>
