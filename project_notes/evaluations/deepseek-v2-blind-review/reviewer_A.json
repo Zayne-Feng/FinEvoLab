@@ -1,0 +1,1434 @@
+{
+  "rater": "reviewer_A",
+  "rubric_version": "open_text_v1",
+  "ratings": [
+    {
+      "sample_id": "f9b03a008ec549aa8debf18f",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 383,285,000,000; operating income 114,301,000,000; net income 96,995,000,000 USD) match the observations, and the qualitative ordering claims follow directly from the values.",
+        "period_and_units": "The answer states the company (AAPL), the actual fiscal period (2022-09-25 to 2023-09-30), currency (USD) and unit consistently for all measures.",
+        "interpretation": "The answer distinguishes the three measures (top line, operating result, bottom line) and explains the source-supported relationship that operating income is below revenue and net income below operating income.",
+        "citation_support": "Each of the three requested measures carries a distinct evidence_id reference that resolves to the corresponding observation, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 2.109,
+      "usage": {
+        "completion_tokens": 221,
+        "prompt_tokens": 954,
+        "total_tokens": 1175,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 954
+      }
+    },
+    {
+      "sample_id": "59576d67c1485b9dacf4aaa9",
+      "scores": {
+        "factual_support": 0,
+        "period_and_units": 0,
+        "interpretation": 0,
+        "citation_support": 0
+      },
+      "reasons": {
+        "factual_support": "The submission states no amounts and makes a false claim that every measure doubled, contradicting the source values (revenue 383.285B, operating income 114.301B, net income 96.995B).",
+        "period_and_units": "No fiscal year, actual dates, currency or unit are stated; the answer omits all period and unit context.",
+        "interpretation": "The answer offers an unsupported cause (AI demand) and an investment forecast (stock will rise) instead of explaining the three measures or distinguishing revenue, operating income and net income.",
+        "citation_support": "No citations or evidence references are provided for any requested measure."
+      },
+      "elapsed_seconds": 3.062,
+      "usage": {
+        "completion_tokens": 184,
+        "prompt_tokens": 840,
+        "total_tokens": 1024,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 200
+      }
+    },
+    {
+      "sample_id": "fa63c4958e641dae55449f43",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $637.959B, operating income $68.593B, net income $59.248B) match the observations exactly, and the qualitative claims (both positive, no operating loss, no swing to net loss) follow directly from the amounts.",
+        "period_and_units": "Company (Amazon/AMZN), actual annual dates (2024-01-01 to 2024-12-31), currency (USD) and unit (dollars/billions) are explicit and consistent throughout.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes source-supported margins and the net-to-operating ratio, and explicitly declines to assert causes for the operating-to-net difference since non-operating items and tax detail were not retrieved.",
+        "citation_support": "Each of the three requested measures carries a matching evidence_id (6a7e858b29a034a09e64c08e, 38bdec50a706a42b1acd466f, b27b293c0abd1d076f7a8f37) supporting its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.75,
+      "usage": {
+        "completion_tokens": 287,
+        "prompt_tokens": 1494,
+        "total_tokens": 1781,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1238
+      }
+    },
+    {
+      "sample_id": "91501107911e1bcd4d5ecc22",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue $513.983B, operating income $12.248B, net income -$2.722B. The derived gap (~$14.97B) is arithmetically correct, and the qualitative claims (thin operating margin, non-operating/tax drag exceeding operating profit) follow from the amounts. The answer appropriately declines to decompose non-operating components not present in the data.",
+        "period_and_units": "Company (AMZN), fiscal year 2022, actual dates 2022-01-01 to 2022-12-31, currency USD and unit are all explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (high revenue to modest positive operating result to negative bottom line), computes the operating margin (~2.4%) and the operating-to-net gap, and correctly attributes the gap to non-operating/tax effects without overreaching.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id matching the observations, and the evidence_ids list covers all three measures with correct fiscal context."
+      },
+      "elapsed_seconds": 3.547,
+      "usage": {
+        "completion_tokens": 288,
+        "prompt_tokens": 1479,
+        "total_tokens": 1767,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1223
+      }
+    },
+    {
+      "sample_id": "389b72fc0a574ce49c6afc15",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue $513.983B, operating income $12.248B, net income -$2.722B. The qualitative claims (thin operating margin ~2.4%, bottom line driven negative by non-operating/tax effects) follow from the amounts, since operating income is positive while net income is negative.",
+        "period_and_units": "Company (AMZN), fiscal year 2022, actual dates 2022-01-01 through 2022-12-31, currency USD and unit USD are all explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the relationship (positive operating result turning into a net loss below the line), and attributes the negative bottom line to non-operating/tax effects, which is a source-supported inference from the sign change.",
+        "citation_support": "Each requested measure carries its matching evidence_id (revenue 0897b2094b63fc5853b2ba4b, operating income e6d9377df8ab55fbf1f21af8, net income 6ff96f101627775163b122a8) with fiscal context, providing resolvable references for all three."
+      },
+      "elapsed_seconds": 3.703,
+      "usage": {
+        "completion_tokens": 311,
+        "prompt_tokens": 1380,
+        "total_tokens": 1691,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 740
+      }
+    },
+    {
+      "sample_id": "1506c3c3d18af37850b810ea",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue USD 574,785,000,000; operating income USD 36,852,000,000; net income USD 30,425,000,000) match the observations, and the derived margins (~6.4% and ~5.3%) and the ~USD 6.43 billion gap between operating and net income follow arithmetically from the stated values.",
+        "period_and_units": "The answer explicitly identifies AMZN, FY2023 with the actual period end 2023-12-31, a 12-month annual period, and states currency USD with consistent units across all metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains their relationship via margins, and notes that net income sits below operating income due to net non-operating items, while explicitly limiting inference to arithmetic on the observations.",
+        "citation_support": "Each requested measure is tied to its evidence_id (a6771fab618fbf81f6a472f7, 2c8e74e5410a762ff26e569c, eef687627c9e048daa48507d) with matching fiscal context, providing resolvable support for every amount."
+      },
+      "elapsed_seconds": 3.703,
+      "usage": {
+        "completion_tokens": 304,
+        "prompt_tokens": 1433,
+        "total_tokens": 1737,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1177
+      }
+    },
+    {
+      "sample_id": "4cbda3483cc8912286ec8ff8",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 198,270,000,000; operating income 83,383,000,000; net income 72,738,000,000 USD) match the observations, and the qualitative ordering claims (operating income below revenue, net income below operating income) follow directly from the values.",
+        "period_and_units": "The answer states the company (MSFT), the actual fiscal period 2021-07-01 to 2022-06-30, currency USD and unit, consistently for all measures.",
+        "interpretation": "The answer distinguishes revenue as top line, operating income as operating result and net income as bottom line, and explains the source-supported relationship that operating income is below revenue and net income below operating income.",
+        "citation_support": "Each of the three requested measures carries its corresponding evidence_id reference, supporting the amount and fiscal context."
+      },
+      "elapsed_seconds": 3.016,
+      "usage": {
+        "completion_tokens": 231,
+        "prompt_tokens": 962,
+        "total_tokens": 1193,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 706
+      }
+    },
+    {
+      "sample_id": "9dec0483edd5775562843dbd",
+      "scores": {
+        "factual_support": 0,
+        "period_and_units": 0,
+        "interpretation": 0,
+        "citation_support": 0
+      },
+      "reasons": {
+        "factual_support": "The submission states no amounts and makes an unsupported claim that every measure doubled; the observations show revenue of 211.915B, operating income of 88.523B and net income of 72.361B, none of which doubled, so the claim contradicts the source data.",
+        "period_and_units": "No company, fiscal year, actual dates (2022-07-01 to 2023-06-30), currency or unit are stated; the FY2023 period and USD amounts are entirely absent.",
+        "interpretation": "The answer offers an unsupported cause (AI demand) and an investment forecast (stock will rise) instead of explaining the relationship among revenue, operating income and net income, and does not distinguish the three measures.",
+        "citation_support": "No citations or evidence references are provided for any of the three requested measures."
+      },
+      "elapsed_seconds": 3.282,
+      "usage": {
+        "completion_tokens": 224,
+        "prompt_tokens": 837,
+        "total_tokens": 1061,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 581
+      }
+    },
+    {
+      "sample_id": "238b2093430eaebf2719fa59",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $574.785B, operating income $36.852B, net income $30.425B) match the observations exactly, and the derived ratios (operating margin ~6.4%, net income ~82.6% of operating income) are arithmetically consistent with those values.",
+        "period_and_units": "Company (AMZN), fiscal year 2023, explicit dates 2023-01-01 to 2023-12-31, currency USD and unit USD are stated and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the relationship (positive operating core, bottom line below operating result due to non-operating/tax drag, still positive), and the qualitative claims follow from the amounts rather than being unsupported forecasts.",
+        "citation_support": "Each requested measure is tied to a resolvable evidence_id (a6771fab..., 2c8e74e5..., eef68762...) that supports its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.531,
+      "usage": {
+        "completion_tokens": 268,
+        "prompt_tokens": 1461,
+        "total_tokens": 1729,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 821
+      }
+    },
+    {
+      "sample_id": "d02f581286aaf870a0c698fa",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures (revenue $116,609M, operating income $28,944M, net income $23,200M) match the observations exactly; the qualitative claims (costs absorb revenue before operating line, below-the-line items reduce net income) follow from the amounts.",
+        "period_and_units": "Company META, fiscal year 2022 with explicit dates 2022-01-01 to 2022-12-31, currency USD and unit USD are stated consistently throughout.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes margins (24.8% and 19.9%), and explains the descending relationship and why net income is below operating income, grounded in the observations.",
+        "citation_support": "Each requested measure is tied to its evidence_id (0cd4c3bf..., c1d05952..., 2fe3f0f1...) and the fiscal context is stated, so every measure has a resolvable reference."
+      },
+      "elapsed_seconds": 3.671,
+      "usage": {
+        "completion_tokens": 254,
+        "prompt_tokens": 1471,
+        "total_tokens": 1725,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1215
+      }
+    },
+    {
+      "sample_id": "eb5017efb29a90666735215c",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 116,609,000,000; operating income 28,944,000,000; net income 23,200,000,000) match the observations exactly, and the derived ratios and gaps are arithmetically consistent; the answer explicitly declines causal attribution for the gaps.",
+        "period_and_units": "Company (META), actual annual dates (2022-01-01 to 2022-12-31), currency (USD) and unit are stated explicitly and consistently across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (monotonic decline, operating margin ~24.8%, net margin ~19.9%, ~5.7B non-operating/tax reduction) and avoids unsupported causes or forecasts.",
+        "citation_support": "Each requested measure is paired with its matching evidence_id (revenue 0cd4c3bf..., operating income c1d05952..., net income 2fe3f0f1...), providing resolvable references for amounts and fiscal context."
+      },
+      "elapsed_seconds": 3.313,
+      "usage": {
+        "completion_tokens": 280,
+        "prompt_tokens": 1457,
+        "total_tokens": 1737,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 817
+      }
+    },
+    {
+      "sample_id": "15798ad5492f58b86c779d94",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures (revenue $164.501B, operating income $69.38B, net income $62.36B) match the observations exactly, and the derived ratios and the $7.02B gap are arithmetically correct and follow from the amounts.",
+        "period_and_units": "Company (META), actual annual dates (2024-01-01 to 2024-12-31), currency (USD) and unit are explicit and consistent across all figures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains operating income as a share of revenue and net income as below operating income due to non-operating items and taxes, which is a source-supported relationship rather than a mere listing.",
+        "citation_support": "Each requested measure is tied to its evidence_id (23274db260a77a882106fdb2, 69f1c0dff0c5bbdc85f69173, 63e925027f8f08653aa823c6) supporting amount and fiscal context."
+      },
+      "elapsed_seconds": 3.453,
+      "usage": {
+        "completion_tokens": 270,
+        "prompt_tokens": 1520,
+        "total_tokens": 1790,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1264
+      }
+    },
+    {
+      "sample_id": "e8197b4117e009b3bfa4f94e",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $637,959,000,000, operating income $68,593,000,000, net income $59,248,000,000) match the observations exactly, and the derived margin (~10.8%) and $9,345,000,000 gap between operating and net income are arithmetically correct and follow from the data.",
+        "period_and_units": "Company (AMZN), fiscal year 2024, actual dates (2024-01-01 to 2024-12-31), currency (USD) and unit are explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the positive operating result as a share of revenue, and notes the bottom line sits below operating income due to non-operating items and taxes, a source-supported relationship rather than a bare listing.",
+        "citation_support": "Each requested measure is backed by a matching evidence_id (6a7e858b..., 38bdec50..., b27b293c...) that supports its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.578,
+      "usage": {
+        "completion_tokens": 278,
+        "prompt_tokens": 1447,
+        "total_tokens": 1725,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 807
+      }
+    },
+    {
+      "sample_id": "7fb4260445406f11628fc0a4",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $637,959,000,000; operating income $68,593,000,000; net income $59,248,000,000) match the observations exactly, and the derived ratios and the $9,345,000,000 gap are arithmetically correct and follow from the amounts.",
+        "period_and_units": "Company (AMZN), actual fiscal dates (2024-01-01 to 2024-12-31), currency (USD) and unit are explicit and consistent across all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, quantifies operating margin (~10.75%) and the operating-to-net step-down (~86.4%), and explains the relationship as a deduction from operating income to net income, consistent with the observations.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id (6a7e858b..., 38bdec50..., b27b293c...) tied to its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.516,
+      "usage": {
+        "completion_tokens": 263,
+        "prompt_tokens": 1493,
+        "total_tokens": 1756,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 853
+      }
+    },
+    {
+      "sample_id": "cbb04bbfff4b7277f2b59858",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures match the observations exactly (revenue $574.785B, operating income $36.852B, net income $30.425B), and the derived margin (~6.4%) and the $6.427B gap between operating and net income follow arithmetically from the stated figures.",
+        "period_and_units": "Company (AMZN), fiscal year 2023, actual dates (2023-01-01 to 2023-12-31), currency (USD) and unit (dollars/billions) are explicit and consistent across all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the top-line-to-operating conversion via the ~6.4% margin, and attributes the operating-to-net gap to below-the-line items and taxes, which is a source-supported relationship rather than an unsupported forecast or investment claim.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence_id matching the corresponding observation, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.437,
+      "usage": {
+        "completion_tokens": 266,
+        "prompt_tokens": 1433,
+        "total_tokens": 1699,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 793
+      }
+    },
+    {
+      "sample_id": "7e7b19d3a46e88138837f7d8",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 1,
+        "interpretation": 1,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 383,285,000,000; operating income 114,301,000,000; net income 96,995,000,000 USD) match the observations exactly, and no unsupported qualitative claims are added.",
+        "period_and_units": "The fiscal year (FY2023) and USD units are stated correctly, but the actual annual period dates (2022-09-25 to 2023-09-30) and disclosure scope are not given.",
+        "interpretation": "The answer lists the three correct values but does not distinguish revenue, operating income and net income or explain any source-supported relationship among them.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.203,
+      "usage": {
+        "completion_tokens": 210,
+        "prompt_tokens": 905,
+        "total_tokens": 1115,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 137
+      }
+    },
+    {
+      "sample_id": "d67ea3a76ba276e9778d1da0",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 394,328,000,000; operating income 119,437,000,000; net income 99,803,000,000 USD) match the observations, and the qualitative ordering claims follow directly from the values.",
+        "period_and_units": "Company (AAPL), fiscal year 2022, actual dates 2021-09-26 to 2022-09-24, currency USD and unit are explicit and consistent with the observations.",
+        "interpretation": "The answer distinguishes revenue as top line, operating income as operating result and net income as bottom line, and explains the source-supported ordering among the three measures.",
+        "citation_support": "Each requested measure carries its matching evidence_id, and the fiscal context is stated, so every amount has a resolvable reference."
+      },
+      "elapsed_seconds": 3.187,
+      "usage": {
+        "completion_tokens": 217,
+        "prompt_tokens": 962,
+        "total_tokens": 1179,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 706
+      }
+    },
+    {
+      "sample_id": "25a0ad32003f23bf34d23266",
+      "scores": {
+        "factual_support": 0,
+        "period_and_units": 0,
+        "interpretation": 0,
+        "citation_support": 0
+      },
+      "reasons": {
+        "factual_support": "The submission states no amounts at all and makes an unsupported claim that every measure doubled, contradicting the source values (revenue 198.27B, operating income 83.383B, net income 72.738B).",
+        "period_and_units": "No company, fiscal year, actual dates, currency or unit are provided; the FY2022 period is not identified.",
+        "interpretation": "The answer offers an unsupported cause (AI demand) and an investment forecast (stock will rise) instead of explaining the three measures or distinguishing revenue, operating income and net income.",
+        "citation_support": "No citations or evidence references are attached to any claim, and none of the three requested measures is supported."
+      },
+      "elapsed_seconds": 3.156,
+      "usage": {
+        "completion_tokens": 197,
+        "prompt_tokens": 844,
+        "total_tokens": 1041,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 204
+      }
+    },
+    {
+      "sample_id": "6ca4621b181d0d4602b24d81",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue $134.902B, operating income $46.751B, net income $39.098B) match the observations exactly, and the derived ratios and the $7.653B gap between operating and net income are arithmetically correct and follow from the data.",
+        "period_and_units": "The answer explicitly states company META, fiscal year 2023, actual dates 2023-01-01 to 2023-12-31, currency USD, and annual flow units, consistent with the observations.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the top-line to operating to bottom-line relationship, quantifies operating margin (~34.7%) and net margin (~28.98%), and notes the contraction from non-operating items and taxes without unsupported forecasts or investment claims.",
+        "citation_support": "Each requested measure is tied to its evidence_id (65727b4337c0454f5b605799, 80ffa3e4fcefa443b4772976, be00eebbd07ce4cf3b54369a) with matching fiscal context, providing resolvable support for every amount."
+      },
+      "elapsed_seconds": 3.547,
+      "usage": {
+        "completion_tokens": 299,
+        "prompt_tokens": 1472,
+        "total_tokens": 1771,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1216
+      }
+    },
+    {
+      "sample_id": "d634a1ad695a1d2f3ec7ee01",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 637,959,000,000; operating income 68,593,000,000; net income 59,248,000,000) match the observations exactly, and the qualitative claims (operating profitability, net income below operating income) follow from the values.",
+        "period_and_units": "Company (AMZN), fiscal year 2024, actual dates 2024-01-01 to 2024-12-31, currency USD and unit USD are explicit and consistent across all metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes margins (~10.8% and ~9.3%), and explains the source-supported relationship that net income is below operating income due to non-operating items and taxes.",
+        "citation_support": "Each requested measure is tied to its evidence_id (6a7e858b..., 38bdec50..., b27b293c...) with matching fiscal context, providing resolvable references for all three amounts."
+      },
+      "elapsed_seconds": 3.172,
+      "usage": {
+        "completion_tokens": 261,
+        "prompt_tokens": 1463,
+        "total_tokens": 1724,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 823
+      }
+    },
+    {
+      "sample_id": "53e94aeadb48cdf552ea7cfb",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 1,
+        "interpretation": 1,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 394,328,000,000; operating income 119,437,000,000; net income 99,803,000,000 USD) match the observations exactly, and no unsupported qualitative claims are added.",
+        "period_and_units": "The fiscal year (FY2022), currency (USD) and unit are stated, but the actual annual period dates (2021-09-26 to 2022-09-24) and disclosure scope are not given.",
+        "interpretation": "The answer lists the three correct values but does not distinguish revenue, operating income and net income or explain any relationship among them.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.36,
+      "usage": {
+        "completion_tokens": 210,
+        "prompt_tokens": 913,
+        "total_tokens": 1123,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 273
+      }
+    },
+    {
+      "sample_id": "53103479898d1076df12c60f",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue $513.983B, operating income $12.248B, net income -$2.722B. The derived margin (~2.4%) and the $14.970B gap between operating and net income are arithmetically correct, and the qualitative claim that non-operating items drove the swing follows from the amounts.",
+        "period_and_units": "Company (AMZN), fiscal year 2022 with explicit dates 2022-01-01 to 2022-12-31, currency USD and unit USD are stated consistently across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (positive operating result but net loss, with the $14.970B non-operating gap), and does not substitute unsupported forecasts or investment conclusions.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id (0897b2094b63fc5853b2ba4b, e6d9377df8ab55fbf1f21af8, 6ff96f101627775163b122a8) tied to its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.953,
+      "usage": {
+        "completion_tokens": 298,
+        "prompt_tokens": 1455,
+        "total_tokens": 1753,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 815
+      }
+    },
+    {
+      "sample_id": "e57c174d0a5b1d4d61d1c77a",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue $513.983B, operating income $12.248B, net income -$2.722B. The derived 2.4% operating margin and ~$14.97B gap are arithmetically consistent, and the qualitative claim that non-operating/tax effects pushed the bottom line into a loss follows from the positive operating income versus negative net income.",
+        "period_and_units": "Company (AMZN), fiscal year 2022, explicit actual dates (2022-01-01 to 2022-12-31), currency USD and unit USD are stated and consistent across prose and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (positive operating result but net loss), and attributes the gap to non-operating/tax items rather than merely listing values.",
+        "citation_support": "Each requested measure is backed by a resolvable evidence_id (0897b2094b63fc5853b2ba4b, e6d9377df8ab55fbf1f21af8, 6ff96f101627775163b122a8) supporting amount and fiscal context."
+      },
+      "elapsed_seconds": 3.859,
+      "usage": {
+        "completion_tokens": 301,
+        "prompt_tokens": 1430,
+        "total_tokens": 1731,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 790
+      }
+    },
+    {
+      "sample_id": "dc3c6043868dcb343c6800a7",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $164.501B, operating income $69.38B, net income $62.36B) match the observations exactly, and the qualitative statements (operating margin ~42.2%, net income ~89.9% of operating income, net income below operating income) follow arithmetically from the amounts.",
+        "period_and_units": "Company (META), actual annual dates (2024-01-01 to 2024-12-31), currency (USD) and unit are explicit and consistent across all three metrics and the prose.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (operating margin retained after operating costs; net income reduced by non-operating items and taxes), and does not substitute unsupported causes or forecasts.",
+        "citation_support": "Each of the three requested measures carries a distinct evidence_id resolvable to the corresponding observation, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.578,
+      "usage": {
+        "completion_tokens": 252,
+        "prompt_tokens": 1443,
+        "total_tokens": 1695,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 803
+      }
+    },
+    {
+      "sample_id": "53d316e7e62f2d8f4d6b197a",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 134.902B, operating income 46.751B, net income 39.098B) match the observations, and the derived ~7.653B gap between operating and net income follows arithmetically from the stated values.",
+        "period_and_units": "Company (META), fiscal year 2023, actual dates 2023-01-01 to 2023-12-31, currency USD and unit are explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains that operating income reflects revenue after operating costs (~one third), and that non-operating items and taxes reduced net income below operating income, a source-supported relationship.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id matching the corresponding observation, supporting amount and fiscal context."
+      },
+      "elapsed_seconds": 3.328,
+      "usage": {
+        "completion_tokens": 230,
+        "prompt_tokens": 1381,
+        "total_tokens": 1611,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 741
+      }
+    },
+    {
+      "sample_id": "c2f9e72533554e1578fece85",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 574,785,000,000; operating income 36,852,000,000; net income 30,425,000,000) match the observations exactly, and the derived margins and the ~6.427 billion gap between operating and net income follow arithmetically from the stated values.",
+        "period_and_units": "Company (AMZN), fiscal year 2023 with explicit dates 2023-01-01 through 2023-12-31, currency USD and unit USD are stated consistently for all measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes operating and net margins, and explains that costs consumed most of revenue and that non-operating items and taxes reduced the bottom line below the operating result, a relationship consistent with the amounts.",
+        "citation_support": "Each requested measure carries a matching evidence_id (a6771fab618fbf81f6a472f7, 2c8e74e5410a762ff26e569c, eef687627c9e048daa48507d) that supports its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.688,
+      "usage": {
+        "completion_tokens": 288,
+        "prompt_tokens": 1476,
+        "total_tokens": 1764,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 836
+      }
+    },
+    {
+      "sample_id": "bd14fa48e43a1fe8d079edef",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue USD 116,609,000,000; operating income USD 28,944,000,000; net income USD 23,200,000,000) match the observations, and the derived ratios and the ~USD 5.7 billion gap follow arithmetically from those figures.",
+        "period_and_units": "Company (META), fiscal year 2022 with explicit dates 2022-01-01 to 2022-12-31, currency USD and unit are stated and consistent across all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the step-down relationship and the ~USD 5.7 billion below-the-line reduction, and characterizes the largest drop as occurring between revenue and operating income, which is supported by the amounts.",
+        "citation_support": "Each requested measure is tied to its evidence_id (revenue 0cd4c3bf..., operating income c1d05952..., net income 2fe3f0f1...) with matching fiscal context."
+      },
+      "elapsed_seconds": 3.359,
+      "usage": {
+        "completion_tokens": 269,
+        "prompt_tokens": 1591,
+        "total_tokens": 1860,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 951
+      }
+    },
+    {
+      "sample_id": "8db8c67121e274a16975ff08",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 245,122,000,000; operating income 109,433,000,000; net income 88,136,000,000 USD) match the observations, and the qualitative ordering claims (operating income below revenue, net income below operating income) follow directly from the values.",
+        "period_and_units": "The answer states the company (MSFT), the actual fiscal period 2023-07-01 to 2024-06-30, and USD units consistently for all three measures.",
+        "interpretation": "The answer distinguishes revenue as top line, operating income as operating result, and net income as bottom line, and explains the source-supported ordering relationship among the three measures.",
+        "citation_support": "Each of the three requested measures carries its correct, resolvable evidence_id reference supporting the amount and fiscal context."
+      },
+      "elapsed_seconds": 3.187,
+      "usage": {
+        "completion_tokens": 226,
+        "prompt_tokens": 966,
+        "total_tokens": 1192,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 710
+      }
+    },
+    {
+      "sample_id": "1095ab7c1037e465152fa1f0",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly (revenue $164.501B, operating income $69.38B, net income $62.36B), and the derived ratios (42.2%, 37.9%, 89.9%) are arithmetically consistent; the qualitative statement that the bottom line tracks below operating income follows from the amounts.",
+        "period_and_units": "Company (META), fiscal year 2024 with explicit dates 2024-01-01 to 2024-12-31, currency USD and unit USD are stated and consistent across all metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin relationship and the ratio of net income to operating income, and notes non-operating items and taxes without asserting unsupported causes or forecasts.",
+        "citation_support": "Each of the three requested measures carries a matching evidence_id (23274db260a77a882106fdb2, 69f1c0dff0c5bbdc85f69173, 63e925027f8f08653aa823c6) supporting its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.391,
+      "usage": {
+        "completion_tokens": 289,
+        "prompt_tokens": 1436,
+        "total_tokens": 1725,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 796
+      }
+    },
+    {
+      "sample_id": "a80a68d8a197e7ee60633620",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue $134.902B, operating income $46.751B, net income $39.098B) match the observations, and the derived ratios and $7.653B gap follow arithmetically from the stated values.",
+        "period_and_units": "Company META, fiscal year 2023 with explicit dates 2023-01-01 to 2023-12-31, currency USD, and units (billions) are stated consistently.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin (~34.7%) and the net income gap reflecting non-operating items and taxes, and characterizes the layered relationship among the three measures.",
+        "citation_support": "Each requested measure is tied to its evidence_id (65727b4337c0454f5b605799, 80ffa3e4fcefa443b4772976, be00eebbd07ce4cf3b54369a) with matching fiscal context."
+      },
+      "elapsed_seconds": 3.75,
+      "usage": {
+        "completion_tokens": 263,
+        "prompt_tokens": 1464,
+        "total_tokens": 1727,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 824
+      }
+    },
+    {
+      "sample_id": "a593112a6d3cc22dba1512db",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 1,
+        "interpretation": 1,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 211,915,000,000; operating income 88,523,000,000; net income 72,361,000,000 USD) match the observations exactly, and no unsupported qualitative claims are added.",
+        "period_and_units": "Currency (USD) and unit are explicit and consistent, and FY2023 is labeled correctly, but the actual annual dates (2022-07-01 to 2023-06-30) and disclosure scope are not stated.",
+        "interpretation": "The answer lists the three correct values but does not distinguish revenue, operating income and net income or explain any relationship among them.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.234,
+      "usage": {
+        "completion_tokens": 211,
+        "prompt_tokens": 899,
+        "total_tokens": 1110,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 259
+      }
+    },
+    {
+      "sample_id": "f30e91227ad7743b82f040c3",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue 211,915,000,000; operating income 88,523,000,000; net income 72,361,000,000 USD) match the observations, and the qualitative ordering claims (operating income below revenue, net income below operating income) follow directly from the amounts.",
+        "period_and_units": "The answer states the company (MSFT), the actual annual dates (2022-07-01 to 2023-06-30), the currency (USD) and unit, consistently across all measures.",
+        "interpretation": "The answer distinguishes the three measures (top line, operating result, bottom line) and explains the source-supported relationship that operating income is below revenue and net income is below operating income, without unsupported causes or forecasts.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.5,
+      "usage": {
+        "completion_tokens": 237,
+        "prompt_tokens": 948,
+        "total_tokens": 1185,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 180
+      }
+    },
+    {
+      "sample_id": "2afd3b07d4faba020295035e",
+      "scores": {
+        "factual_support": 0,
+        "period_and_units": 0,
+        "interpretation": 0,
+        "citation_support": 0
+      },
+      "reasons": {
+        "factual_support": "The submission states no amounts and makes an unsupported claim that every measure doubled, which contradicts the source values (revenue 245.122B, operating income 109.433B, net income 88.136B); no required measure is grounded.",
+        "period_and_units": "No company, fiscal year, actual dates, currency or unit are stated; the FY2024 period is not identified.",
+        "interpretation": "The answer offers an unsupported cause (AI demand) and an investment forecast (stock will rise) instead of explaining the three measures or distinguishing revenue, operating income and net income.",
+        "citation_support": "No citations or evidence references are provided for any of the three requested measures."
+      },
+      "elapsed_seconds": 3.421,
+      "usage": {
+        "completion_tokens": 194,
+        "prompt_tokens": 846,
+        "total_tokens": 1040,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 206
+      }
+    },
+    {
+      "sample_id": "57cb1bc63e1aa8f36eb21629",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue USD 134.902B, operating income USD 46.751B, net income USD 39.098B) match the observations exactly, and the derived ratios (34.7% operating margin, 83.6% net-to-operating) and the qualitative statement that net income is below operating income follow arithmetically from the amounts.",
+        "period_and_units": "Company (META), fiscal year 2023, actual dates (2023-01-01 to 2023-12-31), currency (USD) and unit (billions of USD) are explicit and consistent across all three metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the progression from top line to operating result to bottom line, and notes that non-operating items and taxes reduce operating income to net income, a source-supported relationship rather than a bare listing.",
+        "citation_support": "Each of the three requested measures is tied to its evidence_id (65727b4337c0454f5b605799, 80ffa3e4fcefa443b4772976, be00eebbd07ce4cf3b54369a) with matching fiscal context, providing resolvable support for every amount."
+      },
+      "elapsed_seconds": 3.609,
+      "usage": {
+        "completion_tokens": 316,
+        "prompt_tokens": 1467,
+        "total_tokens": 1783,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 827
+      }
+    },
+    {
+      "sample_id": "70ddde0eb4bc10f2037cac82",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue $164.501B, operating income $69.38B, net income $62.36B) match the observations exactly, and the derived figures (42.2% operating margin, ~$7.02B gap between operating and net income) are arithmetically consistent with the source values.",
+        "period_and_units": "Company (META), fiscal year 2024, explicit dates 2024-01-01 to 2024-12-31, currency USD and unit USD are stated and consistent across all three metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin relationship to the top line, and notes that non-operating items and taxes reduce net income below operating income, which follows from the amounts.",
+        "citation_support": "Each of the three requested measures carries a matching evidence_id resolvable to the corresponding observation, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.422,
+      "usage": {
+        "completion_tokens": 246,
+        "prompt_tokens": 1455,
+        "total_tokens": 1701,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 815
+      }
+    },
+    {
+      "sample_id": "bd2f2dca39aa4b53abcd5653",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $164.501B, operating income $69.38B, net income $62.36B) match the observations exactly, and the qualitative claims (positive operating result, net income below operating income due to non-operating items and taxes) follow from the amounts.",
+        "period_and_units": "Company (META), fiscal year 2024 with explicit dates 2024-01-01 through 2024-12-31, currency USD and unit USD are stated and consistent across all three metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes meaningful ratios (operating margin ~42.2%, net income ~89.9% of operating income, ~37.9% of revenue), and explains the source-supported relationship that non-operating items and taxes reduce operating income to net income.",
+        "citation_support": "Each requested measure is tied to its corresponding evidence_id (revenue 23274db260a77a882106fdb2, operating income 69f1c0dff0c5bbdc85f69173, net income 63e925027f8f08653aa823c6), supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.813,
+      "usage": {
+        "completion_tokens": 305,
+        "prompt_tokens": 1450,
+        "total_tokens": 1755,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 810
+      }
+    },
+    {
+      "sample_id": "f0d772c292d3812391febc6a",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $574,785,000,000; operating income $36,852,000,000; net income $30,425,000,000) match the observations exactly, and the derived operating margin (~6.4%) and net-income-to-operating-income ratio (~83%) and the ~$6.4B gap are arithmetically consistent with the stated figures.",
+        "period_and_units": "Company (AMZN), fiscal year 2023, explicit actual dates (2023-01-01 to 2023-12-31), currency (USD) and unit are stated and consistent across all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (net income below operating income due to non-operating items and taxes), and quantifies the gap without unsupported forecasts or investment claims.",
+        "citation_support": "Each requested measure is paired with a resolvable evidence_id (a6771fab..., 2c8e74e5..., eef68762...) supporting its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.156,
+      "usage": {
+        "completion_tokens": 277,
+        "prompt_tokens": 1410,
+        "total_tokens": 1687,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 770
+      }
+    },
+    {
+      "sample_id": "32cff6618d8e8dfdbf89d305",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $134.902B, operating income $46.751B, net income $39.098B) match the observations exactly, and the derived ratios and the $7.653B gap are arithmetically consistent with those values.",
+        "period_and_units": "Company (META), actual annual dates (2023-01-01 to 2023-12-31), currency (USD) and unit are explicit and consistent across all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin relationship and the non-operating/tax reduction from operating income to net income, and frames the percentages as derived ratios rather than reported growth metrics.",
+        "citation_support": "Each requested measure is tied to its matching evidence_id (65727b4337c0454f5b605799, 80ffa3e4fcefa443b4772976, be00eebbd07ce4cf3b54369a) with the correct fiscal context."
+      },
+      "elapsed_seconds": 3.406,
+      "usage": {
+        "completion_tokens": 267,
+        "prompt_tokens": 1476,
+        "total_tokens": 1743,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 836
+      }
+    },
+    {
+      "sample_id": "ceab263d79d39911aa4814e7",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures match the observations exactly (revenue $116.609B, operating income $28.944B, net income $23.200B), and the derived relationships (24.8% operating margin, ~$5.744B gap, ~80% ratio) are arithmetically consistent with those figures.",
+        "period_and_units": "Company (META), fiscal year 2022 with actual dates 2022-01-01 to 2022-12-31, currency USD and unit USD are all explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin relationship, and notes the bottom line sits below the operating result due to non-operating items and taxes, which follows from the amounts.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id matching the observations, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.36,
+      "usage": {
+        "completion_tokens": 241,
+        "prompt_tokens": 1429,
+        "total_tokens": 1670,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 789
+      }
+    },
+    {
+      "sample_id": "54340ad63b8cd6a2af50deed",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue 513,983,000,000, operating income 12,248,000,000, net income -2,722,000,000. The qualitative claims (positive operating result, negative bottom line, non-monotonic relationship) follow directly from these values, and the answer explicitly cautions against inferring unretrieved drivers.",
+        "period_and_units": "Company (Amazon/AMZN), fiscal year 2022 with actual dates 2022-01-01 through 2022-12-31, currency USD and unit USD are all explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, computes an operating margin (~2.4%), and explains the source-supported relationship that a positive operating result did not carry through to a negative bottom line, while correctly noting the bridging non-operating/tax components were not retrieved.",
+        "citation_support": "Each requested measure is paired with its evidence_id (0897b2094b63fc5853b2ba4b, e6d9377df8ab55fbf1f21af8, 6ff96f101627775163b122a8) and fiscal context, providing resolvable references for all three amounts."
+      },
+      "elapsed_seconds": 3.719,
+      "usage": {
+        "completion_tokens": 318,
+        "prompt_tokens": 1532,
+        "total_tokens": 1850,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 892
+      }
+    },
+    {
+      "sample_id": "173a3876603a01eb3a2f8135",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 1,
+        "interpretation": 1,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 198,270,000,000; operating income 83,383,000,000; net income 72,738,000,000 USD) match the source observations exactly, and no unsupported qualitative claims are added.",
+        "period_and_units": "The fiscal year (FY2022) and USD currency/unit are stated correctly, but the actual annual dates (2021-07-01 to 2022-06-30) and disclosure scope are not given, so this is incomplete rather than fully explicit.",
+        "interpretation": "The answer lists the three correct values with labels but does not explain any source-supported relationship among revenue, operating income and net income or distinguish their meanings beyond naming them.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.313,
+      "usage": {
+        "completion_tokens": 227,
+        "prompt_tokens": 913,
+        "total_tokens": 1140,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 145
+      }
+    },
+    {
+      "sample_id": "b03a434d538df638dca83607",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 1,
+        "interpretation": 1,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 245,122,000,000; operating income 109,433,000,000; net income 88,136,000,000 USD) match the source observations exactly, and no unsupported qualitative claims are added.",
+        "period_and_units": "The fiscal year (FY2024) and USD currency/unit are stated correctly, but the actual annual dates (2023-07-01 to 2024-06-30) and disclosure scope are not given.",
+        "interpretation": "The answer lists the correct values but does not distinguish or explain the relationship among revenue, operating income and net income.",
+        "citation_support": "Each of the three requested measures carries a resolvable evidence_id reference matching its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.234,
+      "usage": {
+        "completion_tokens": 209,
+        "prompt_tokens": 917,
+        "total_tokens": 1126,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 149
+      }
+    },
+    {
+      "sample_id": "17b2a25be17134a41865741f",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures (revenue 637,959,000,000; operating_income 68,593,000,000; net_income 59,248,000,000) match the observations exactly, and the derived ratio (~10.75%) and ~9.3B gap between operating and net income are arithmetically consistent with the stated values.",
+        "period_and_units": "Company (AMZN), actual annual dates (2024-01-01 to 2024-12-31), currency (USD) and unit (USD) are explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the descending relationship, and attributes the gap to non-operating items and taxes, which is a source-supported relationship rather than an unsupported forecast or investment claim.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id (6a7e858b..., 38bdec50..., b27b293c...) tied to its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.313,
+      "usage": {
+        "completion_tokens": 266,
+        "prompt_tokens": 1457,
+        "total_tokens": 1723,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 817
+      }
+    },
+    {
+      "sample_id": "d15fcb9781018e8442d9312c",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $116.609B, operating income $28.944B, net income $23.200B) match the observations exactly, and the derived margin (~24.8%) and gap (~$5.744B) are arithmetically consistent with the stated values.",
+        "period_and_units": "Company (META), fiscal year 2022, explicit actual dates (Jan 1 – Dec 31, 2022), currency (USD) and unit (billion USD) are stated and consistent across all measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the conversion of top line to a smaller positive operating result, and notes the further decline to net income with a reconciling gap, all grounded in the observations.",
+        "citation_support": "Each requested measure carries a matching evidence_id resolvable to the corresponding observation, supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.485,
+      "usage": {
+        "completion_tokens": 241,
+        "prompt_tokens": 1433,
+        "total_tokens": 1674,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 793
+      }
+    },
+    {
+      "sample_id": "8f3b6db08eb38f9f2ce66d31",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three amounts (revenue $574.785B, operating income $36.852B, net income $30.425B) match the observations exactly, and the derived margin (~6.4%) and $6.427B gap between operating and net income follow arithmetically from the stated values.",
+        "period_and_units": "Company (AMZN), fiscal year 2023, explicit dates 2023-01-01 to 2023-12-31, currency USD and unit USD are all stated consistently.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the positive operating margin relative to the top line, and notes that non-operating and tax items reduced net income below operating income, a relationship supported by the amounts.",
+        "citation_support": "Each requested measure is backed by a resolvable evidence_id (a6771fab..., 2c8e74e5..., eef68762...) tied to its amount and fiscal context."
+      },
+      "elapsed_seconds": 3.734,
+      "usage": {
+        "completion_tokens": 253,
+        "prompt_tokens": 1376,
+        "total_tokens": 1629,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 736
+      }
+    },
+    {
+      "sample_id": "2120e4d84983c51eef1aec97",
+      "scores": {
+        "factual_support": 0,
+        "period_and_units": 0,
+        "interpretation": 0,
+        "citation_support": 0
+      },
+      "reasons": {
+        "factual_support": "The submission states no amounts and makes an unsupported claim that every measure doubled due to AI demand, which contradicts the source observations (revenue 394.328B, operating income 119.437B, net income 99.803B) and is not grounded in them.",
+        "period_and_units": "No fiscal year, actual period dates (2021-09-26 to 2022-09-24), currency or unit are stated; the submission omits all period and unit context.",
+        "interpretation": "The answer offers an unsupported cause (AI demand) and an investment forecast (stock will rise) instead of explaining the relationship among revenue, operating income and net income.",
+        "citation_support": "No citations or evidence references are provided for any of the three requested measures."
+      },
+      "elapsed_seconds": 3.344,
+      "usage": {
+        "completion_tokens": 212,
+        "prompt_tokens": 844,
+        "total_tokens": 1056,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 204
+      }
+    },
+    {
+      "sample_id": "a62006452db2d97859551742",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures match the observations exactly (revenue $116.609B, operating income $28.944B, net income $23.200B), and the derived margins and the $5.744B operating-to-net gap are arithmetically consistent with the source values.",
+        "period_and_units": "Company (META), actual annual dates (January 1 – December 31, 2022), currency (USD) and units (billions) are explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the conversion of top line to operating profit (~24.8% margin), and attributes the operating-to-net gap to non-operating and tax effects, which follows from the amounts without unsupported forecasts or investment claims.",
+        "citation_support": "Each requested measure is paired with a resolvable evidence_id (0cd4c3bf104355f4a91e0d95, c1d05952ed3598e0e0285e76, 2fe3f0f1aa6f801c068acf19) supporting its amount and FY2022 context."
+      },
+      "elapsed_seconds": 3.641,
+      "usage": {
+        "completion_tokens": 293,
+        "prompt_tokens": 1434,
+        "total_tokens": 1727,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 794
+      }
+    },
+    {
+      "sample_id": "dd55f64959226220a2b50ec3",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures (revenue $637.959B, operating income $68.593B, net income $59.248B) match the observations exactly, and the qualitative claims (operating margin ~10.8%, net income ~86% of operating income, ordering revenue > operating_income > net_income) follow arithmetically from the stated values.",
+        "period_and_units": "Company (AMZN), fiscal year 2024, actual dates (2024-01-01 to 2024-12-31), currency (USD) and unit are explicit and consistent across the answer and metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the operating margin relationship, and notes that non-operating items and taxes reduced net income below operating income, which is a source-supported relationship rather than a mere listing.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id (6a7e858b..., 38bdec50..., b27b293c...) tied to its amount and fiscal context, and all three evidence_ids are listed."
+      },
+      "elapsed_seconds": 3.531,
+      "usage": {
+        "completion_tokens": 277,
+        "prompt_tokens": 1413,
+        "total_tokens": 1690,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 773
+      }
+    },
+    {
+      "sample_id": "93a51bb6d316b8e6ff81a49e",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue $134.902B, operating income $46.751B, net income $39.098B) match the observations exactly, and the derived margin (~34.7%) and net-to-operating ratio (~83.6%) and the $7.653B gap are arithmetically consistent with the source values.",
+        "period_and_units": "Company (META), fiscal year 2023, explicit actual dates (2023-01-01 to 2023-12-31), currency (USD) and unit (USD) are stated and consistent across all measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the source-supported relationship (revenue to operating result to bottom line), and quantifies the non-operating/tax reduction without unsupported causes or forecasts.",
+        "citation_support": "Each requested measure carries a resolvable evidence_id matching the observations, supporting both the amount and the fiscal context."
+      },
+      "elapsed_seconds": 3.391,
+      "usage": {
+        "completion_tokens": 251,
+        "prompt_tokens": 1407,
+        "total_tokens": 1658,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 767
+      }
+    },
+    {
+      "sample_id": "8cc30d75b18f266bc92a8d29",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three required measures (revenue 164,501,000,000; operating income 69,380,000,000; net income 62,360,000,000 USD) match the observations exactly, and the derived ratios and the 7,020,000,000 USD gap are arithmetically consistent with the stated amounts.",
+        "period_and_units": "The answer explicitly states company META, fiscal year 2024 with actual dates 2024-01-01 to 2024-12-31, currency USD, and unit USD, consistent across all three metrics.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the step-down relationship among them, and characterizes the operating-income-to-net-income gap as reflecting non-operating items and taxes, which follows from the amounts.",
+        "citation_support": "Each requested measure is paired with its corresponding evidence_id (23274db260a77a882106fdb2, 69f1c0dff0c5bbdc85f69173, 63e925027f8f08653aa823c6), supporting both amount and fiscal context."
+      },
+      "elapsed_seconds": 3.797,
+      "usage": {
+        "completion_tokens": 289,
+        "prompt_tokens": 1458,
+        "total_tokens": 1747,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 818
+      }
+    },
+    {
+      "sample_id": "7e27160687bb370b762d5c79",
+      "scores": {
+        "factual_support": 2,
+        "period_and_units": 2,
+        "interpretation": 2,
+        "citation_support": 2
+      },
+      "reasons": {
+        "factual_support": "All three measures match the observations exactly: revenue $513,983,000,000, operating income $12,248,000,000, net income -$2,722,000,000. The derived margin (~2.4%) and the ~$14.97B gap between operating and net income are arithmetically correct, and the qualitative claim that the sign flip occurs below the operating line follows from the data.",
+        "period_and_units": "Company (AMZN), fiscal year 2022 with explicit dates 2022-01-01 to 2022-12-31, currency USD and unit USD are stated consistently for all three measures.",
+        "interpretation": "The answer distinguishes revenue, operating income and net income, explains the thin operating margin, and correctly attributes the negative bottom line to non-operating items rather than operations, which is a source-supported relationship among the three measures.",
+        "citation_support": "Each requested measure is paired with its evidence_id (0897b2094b63fc5853b2ba4b, e6d9377df8ab55fbf1f21af8, 6ff96f101627775163b122a8) and fiscal context, providing resolvable references for all amounts."
+      },
+      "elapsed_seconds": 3.921,
+      "usage": {
+        "completion_tokens": 309,
+        "prompt_tokens": 1479,
+        "total_tokens": 1788,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 839
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "run_id": "deepseek-v2-blind-review",
+  "status": "complete",
+  "method": "same_model_isolated_blind_contexts",
+  "human_reference_used": false,
+  "primary_numeric_score_changed": false,
+  "test_feedback_to_optimizer": false,
+  "samples": 51,
+  "excluded": [],
+  "disagreement_samples": 0,
+  "agreement": {
+    "control": {
+      "rubric_version": "open_text_v1",
+      "raters": [
+        "reviewer_A",
+        "reviewer_B"
+      ],
+      "samples": 15,
+      "dimension_comparisons": 60,
+      "exact_dimension_agreement": 1.0,
+      "mean_absolute_difference": 0,
+      "automatic_judge_calibrated": false,
+      "method": "same_model_isolated_blind_contexts",
+      "human_reference_used": false,
+      "raw_agreement_status": "agreement_passed_requires_adjudication",
+      "status": "agreement_passed"
+    },
+    "initial": {
+      "rubric_version": "open_text_v1",
+      "raters": [
+        "reviewer_A",
+        "reviewer_B"
+      ],
+      "samples": 18,
+      "dimension_comparisons": 72,
+      "exact_dimension_agreement": 1.0,
+      "mean_absolute_difference": 0,
+      "automatic_judge_calibrated": false,
+      "method": "same_model_isolated_blind_contexts",
+      "human_reference_used": false,
+      "raw_agreement_status": "agreement_passed_requires_adjudication",
+      "status": "agreement_passed"
+    },
+    "selected": {
+      "rubric_version": "open_text_v1",
+      "raters": [
+        "reviewer_A",
+        "reviewer_B"
+      ],
+      "samples": 18,
+      "dimension_comparisons": 72,
+      "exact_dimension_agreement": 1.0,
+      "mean_absolute_difference": 0,
+      "automatic_judge_calibrated": false,
+      "method": "same_model_isolated_blind_contexts",
+      "human_reference_used": false,
+      "raw_agreement_status": "agreement_passed_requires_adjudication",
+      "status": "agreement_passed"
+    }
+  },
+  "adjudication_completed": true,
+  "synthetic_control_checks": {
+    "reviewer_A": {
+      "comparisons": 5,
+      "supported_above_unsupported": 5
+    },
+    "reviewer_B": {
+      "comparisons": 5,
+      "supported_above_unsupported": 5
+    }
+  },
+  "groups": {
+    "initial": {
+      "samples": 18,
+      "mean_score_out_of_8": 8.0,
+      "dimension_means": {
+        "citation_support": 2.0,
+        "factual_support": 2.0,
+        "interpretation": 2.0,
+        "period_and_units": 2.0
+      }
+    },
+    "selected": {
+      "samples": 18,
+      "mean_score_out_of_8": 8.0,
+      "dimension_means": {
+        "citation_support": 2.0,
+        "factual_support": 2.0,
+        "interpretation": 2.0,
+        "period_and_units": 2.0
+      }
+    }
+  }
+}

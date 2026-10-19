@@ -1,0 +1,198 @@
+{
+  "planned": 90,
+  "attempted": 90,
+  "unattempted": 0,
+  "completed": 90,
+  "successes": 80.0,
+  "success_rate_attempted": 0.8888888888888888,
+  "execution_status_counts": {
+    "completed": 90
+  },
+  "error_types": {},
+  "mean_latency_seconds": 10.571655555555555,
+  "known_total_tokens": 509171,
+  "unknown_usage_tasks": 0,
+  "partial_observed_tokens": 0,
+  "cost": null,
+  "categories": {
+    "annual_growth": {
+      "attempted": 21,
+      "success_rate": 1.0
+    },
+    "boundary": {
+      "attempted": 12,
+      "success_rate": 1.0
+    },
+    "company_comparison": {
+      "attempted": 18,
+      "success_rate": 0.4444444444444444
+    },
+    "integrated_analysis": {
+      "attempted": 18,
+      "success_rate": 1.0
+    },
+    "metric_query": {
+      "attempted": 21,
+      "success_rate": 1.0
+    }
+  },
+  "checks": {
+    "schema": 1.0,
+    "status": 0.8888888888888888,
+    "numeric": 0.9777777777777777,
+    "units": 0.9777777777777777,
+    "periods": 0.9777777777777777,
+    "citations": 0.9777777777777777,
+    "formula": 0.9777777777777777
+  },
+  "run_id": "deepseek-v2-selected-test",
+  "status": "complete",
+  "variant": "tools",
+  "split": "test",
+  "repeats": {
+    "1": {
+      "planned": 30,
+      "attempted": 30,
+      "unattempted": 0,
+      "completed": 30,
+      "successes": 26.0,
+      "success_rate_attempted": 0.8666666666666667,
+      "execution_status_counts": {
+        "completed": 30
+      },
+      "error_types": {},
+      "mean_latency_seconds": 10.730233333333333,
+      "known_total_tokens": 171005,
+      "unknown_usage_tasks": 0,
+      "partial_observed_tokens": 0,
+      "cost": null,
+      "categories": {
+        "annual_growth": {
+          "attempted": 7,
+          "success_rate": 1.0
+        },
+        "boundary": {
+          "attempted": 4,
+          "success_rate": 1.0
+        },
+        "company_comparison": {
+          "attempted": 6,
+          "success_rate": 0.3333333333333333
+        },
+        "integrated_analysis": {
+          "attempted": 6,
+          "success_rate": 1.0
+        },
+        "metric_query": {
+          "attempted": 7,
+          "success_rate": 1.0
+        }
+      },
+      "checks": {
+        "schema": 1.0,
+        "status": 0.8666666666666667,
+        "numeric": 0.9666666666666667,
+        "units": 0.9666666666666667,
+        "periods": 0.9666666666666667,
+        "citations": 0.9666666666666667,
+        "formula": 0.9666666666666667
+      }
+    },
+    "2": {
+      "planned": 30,
+      "attempted": 30,
+      "unattempted": 0,
+      "completed": 30,
+      "successes": 27.0,
+      "success_rate_attempted": 0.9,
+      "execution_status_counts": {
+        "completed": 30
+      },
+      "error_types": {},
+      "mean_latency_seconds": 10.5655,
+      "known_total_tokens": 168844,
+      "unknown_usage_tasks": 0,
+      "partial_observed_tokens": 0,
+      "cost": null,
+      "categories": {
+        "annual_growth": {
+          "attempted": 7,
+          "success_rate": 1.0
+        },
+        "boundary": {
+          "attempted": 4,
+          "success_rate": 1.0
+        },
+        "company_comparison": {
+          "attempted": 6,
+          "success_rate": 0.5
+        },
+        "integrated_analysis": {
+          "attempted": 6,
+          "success_rate": 1.0
+        },
+        "metric_query": {
+          "attempted": 7,
+          "success_rate": 1.0
+        }
+      },
+      "checks": {
+        "schema": 1.0,
+        "status": 0.9,
+        "numeric": 1.0,
+        "units": 1.0,
+        "periods": 1.0,
+        "citations": 1.0,
+        "formula": 1.0
+      }
+    },
+    "3": {
+      "planned": 30,
+      "attempted": 30,
+      "unattempted": 0,
+      "completed": 30,
+      "successes": 27.0,
+      "success_rate_attempted": 0.9,
+      "execution_status_counts": {
+        "completed": 30
+      },
+      "error_types": {},
+      "mean_latency_seconds": 10.419233333333333,
+      "known_total_tokens": 169322,
+      "unknown_usage_tasks": 0,
+      "partial_observed_tokens": 0,
+      "cost": null,
+      "categories": {
+        "annual_growth": {
+          "attempted": 7,
+          "success_rate": 1.0
+        },
+        "boundary": {
+          "attempted": 4,
+          "success_rate": 1.0
+        },
+        "company_comparison": {
+          "attempted": 6,
+          "success_rate": 0.5
+        },
+        "integrated_analysis": {
+          "attempted": 6,
+          "success_rate": 1.0
+        },
+        "metric_query": {
+          "attempted": 7,
+          "success_rate": 1.0
+        }
+      },
+      "checks": {
+        "schema": 1.0,
+        "status": 0.9,
+        "numeric": 0.9666666666666667,
+        "units": 0.9666666666666667,
+        "periods": 0.9666666666666667,
+        "citations": 0.9666666666666667,
+        "formula": 0.9666666666666667
+      }
+    }
+  }
+}

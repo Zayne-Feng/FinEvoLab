@@ -1,0 +1,739 @@
+{
+  "left_run": "deepseek-v2-initial-test",
+  "right_run": "deepseek-v2-selected-test",
+  "expected_pairs": 90,
+  "observed_pairs": 90,
+  "complete_pairing": true,
+  "pairs_without_execution_failures": 90,
+  "wins": 3,
+  "losses": 7,
+  "ties": 80,
+  "mean_paired_difference": -0.044444444444444446,
+  "repeat_differences": {
+    "1": -0.1,
+    "2": 0.03333333333333333,
+    "3": -0.06666666666666667
+  },
+  "pairs": [
+    {
+      "repeat": 1,
+      "case_id": "091e85ef2787b210",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "0b7141762625a33b",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "180f344df8eb14c8",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "187199e0b4af5bde",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "23d0ee70fbc9d480",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "26be51b353bff8f9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "2b8581be4c6ea1ea",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "31494d4dc93a81d9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "42f9fe5c6710bf6e",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "4f0c8e46854571ab",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "5143dbd802fb6395",
+      "left_score": 0.0,
+      "right_score": 0.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "63327ef01be12c0a",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "66afe0483a857aa2",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "6ef83e4e61c7e774",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "7354c74acca8a960",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "7ea984a9e71e3e24",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "8885b09a663659da",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "90c0a37e0245763b",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "94f631dd572cf8a3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "95c9ce8d8b91bcc6",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "98ff9feac45416f3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "a6a75cfbf8c8b6e5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "aebd93d54a18090c",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "b0ac7b25181c1511",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "b737baeaeda3b113",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "cb9200a10e220174",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "ce4005744bbd72c5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "ebf451b647cc0168",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "fb0790e9eac90023",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 1,
+      "case_id": "fd4de496f29d5dec",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "091e85ef2787b210",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "0b7141762625a33b",
+      "left_score": 0.0,
+      "right_score": 0.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "180f344df8eb14c8",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "187199e0b4af5bde",
+      "left_score": 0.0,
+      "right_score": 0.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "23d0ee70fbc9d480",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "26be51b353bff8f9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "2b8581be4c6ea1ea",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "31494d4dc93a81d9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "42f9fe5c6710bf6e",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "4f0c8e46854571ab",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "5143dbd802fb6395",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "63327ef01be12c0a",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "66afe0483a857aa2",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "6ef83e4e61c7e774",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "7354c74acca8a960",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "7ea984a9e71e3e24",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "8885b09a663659da",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "90c0a37e0245763b",
+      "left_score": 0.0,
+      "right_score": 1.0,
+      "difference": 1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "94f631dd572cf8a3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "95c9ce8d8b91bcc6",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "98ff9feac45416f3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "a6a75cfbf8c8b6e5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "aebd93d54a18090c",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "b0ac7b25181c1511",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "b737baeaeda3b113",
+      "left_score": 0.0,
+      "right_score": 1.0,
+      "difference": 1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "cb9200a10e220174",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "ce4005744bbd72c5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "ebf451b647cc0168",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "fb0790e9eac90023",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 2,
+      "case_id": "fd4de496f29d5dec",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "091e85ef2787b210",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "0b7141762625a33b",
+      "left_score": 0.0,
+      "right_score": 1.0,
+      "difference": 1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "180f344df8eb14c8",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "187199e0b4af5bde",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "23d0ee70fbc9d480",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "26be51b353bff8f9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "2b8581be4c6ea1ea",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "31494d4dc93a81d9",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "42f9fe5c6710bf6e",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "4f0c8e46854571ab",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "5143dbd802fb6395",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "63327ef01be12c0a",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "66afe0483a857aa2",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "6ef83e4e61c7e774",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "7354c74acca8a960",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "7ea984a9e71e3e24",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "8885b09a663659da",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "90c0a37e0245763b",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "94f631dd572cf8a3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "95c9ce8d8b91bcc6",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "98ff9feac45416f3",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "a6a75cfbf8c8b6e5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "aebd93d54a18090c",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "b0ac7b25181c1511",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "b737baeaeda3b113",
+      "left_score": 1.0,
+      "right_score": 0.0,
+      "difference": -1.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "cb9200a10e220174",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "ce4005744bbd72c5",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "ebf451b647cc0168",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "fb0790e9eac90023",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    },
+    {
+      "repeat": 3,
+      "case_id": "fd4de496f29d5dec",
+      "left_score": 1.0,
+      "right_score": 1.0,
+      "difference": 0.0,
+      "both_completed": true
+    }
+  ]
+}

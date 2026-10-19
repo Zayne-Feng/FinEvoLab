@@ -1,0 +1,1647 @@
+{
+  "reports": [
+    {
+      "company": "MSFT",
+      "fiscal_year": 2022,
+      "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+      "status": "extracted",
+      "extraction": {
+        "version": "source_metrics_v1",
+        "status": "review_required",
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2022,
+              "value": "198270000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "60277db3676326213b37c87d",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "60277db3676326213b37c87d",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=11|context=C_0000789019_20210701_20220630",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_0000789019_20210701_20220630\", \"raw_value\": \"198,270\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3fa32e8182c2568355f50c6d"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2021,
+              "value": "168088000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9e4f811c4a6f70436ed21da2",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "9e4f811c4a6f70436ed21da2",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=12|context=C_0000789019_20200701_20210630",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_0000789019_20200701_20210630\", \"raw_value\": \"168,088\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "ac91a247b60270919a5647af"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2020,
+              "value": "143015000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2019-07-01",
+              "period_end": "2020-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "ea689c0649ee59522ed34d43",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "ea689c0649ee59522ed34d43",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=13|context=C_0000789019_20190701_20200630",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_0000789019_20190701_20200630\", \"raw_value\": \"143,015\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2019-07-01\", \"2020-06-30\"]}"
+            },
+            "verification": {
+              "status": "reference_unavailable"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2022,
+              "value": "83383000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b85fec683fdf0bf051cff37a",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "b85fec683fdf0bf051cff37a",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=35|context=C_0000789019_20210701_20220630",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_0000789019_20210701_20220630\", \"raw_value\": \"83,383\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "e3deec1085e16d235898bab6"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2021,
+              "value": "69916000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "a6b791d9662a8740a79a4f65",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "a6b791d9662a8740a79a4f65",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=36|context=C_0000789019_20200701_20210630",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_0000789019_20200701_20210630\", \"raw_value\": \"69,916\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "468c4ff36950aec7e6effaaa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2020,
+              "value": "52959000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2019-07-01",
+              "period_end": "2020-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "3e3077b04b2064164d23890c",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "3e3077b04b2064164d23890c",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=37|context=C_0000789019_20190701_20200630",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_0000789019_20190701_20200630\", \"raw_value\": \"52,959\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2019-07-01\", \"2020-06-30\"]}"
+            },
+            "verification": {
+              "status": "reference_unavailable"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2022,
+              "value": "72738000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "acb1271f5705f1cc490fcc60",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "acb1271f5705f1cc490fcc60",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=47|context=C_0000789019_20210701_20220630",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_0000789019_20210701_20220630\", \"raw_value\": \"72,738\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "b6c37bad6015c1d8f717f7e4"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2021,
+              "value": "61271000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b95f62982f0d634efa4ae82f",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "b95f62982f0d634efa4ae82f",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=48|context=C_0000789019_20200701_20210630",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_0000789019_20200701_20210630\", \"raw_value\": \"61,271\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "6c90cb7f5d54b294b9be6f2b"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2020,
+              "value": "44281000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2019-07-01",
+              "period_end": "2020-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "144f33a90ea8b2d4baf01dcf",
+              "report_year": 2022,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "144f33a90ea8b2d4baf01dcf",
+              "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+              "source_url": "/api/uploads/842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb/original",
+              "company": "MSFT",
+              "report_year": 2022,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=49|context=C_0000789019_20190701_20200630",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_0000789019_20190701_20200630\", \"raw_value\": \"44,281\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2019-07-01\", \"2020-06-30\"]}"
+            },
+            "verification": {
+              "status": "reference_unavailable"
+            }
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "matched_snapshot": 6,
+          "reference_unavailable": 3,
+          "conflict": 0
+        },
+        "reference_data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "promoted_to_corpus": false
+      },
+      "elapsed_seconds": 5.718
+    },
+    {
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+      "status": "extracted",
+      "extraction": {
+        "version": "source_metrics_v1",
+        "status": "matched_snapshot",
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "031ce222dad6bc1824b14dc8",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "031ce222dad6bc1824b14dc8",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=11|context=C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5\", \"raw_value\": \"211,915\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "59176976080d645a51e629d8"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2022,
+              "value": "198270000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b1787ff0c11b44cbfb468dcc",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "b1787ff0c11b44cbfb468dcc",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=12|context=C_efe853fc-8e8a-4899-b65b-e33c17faff7c",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_efe853fc-8e8a-4899-b65b-e33c17faff7c\", \"raw_value\": \"198,270\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3fa32e8182c2568355f50c6d"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2021,
+              "value": "168088000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "637f3e668cdde32962828942",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "637f3e668cdde32962828942",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=13|context=C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1\", \"raw_value\": \"168,088\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "ac91a247b60270919a5647af"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2023,
+              "value": "88523000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "aad49631cd6c82784f0743a1",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "aad49631cd6c82784f0743a1",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=35|context=C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5\", \"raw_value\": \"88,523\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "77dbe42fe8ad2be22128b607"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2022,
+              "value": "83383000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "490420786358c5aef252aa97",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "490420786358c5aef252aa97",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=36|context=C_efe853fc-8e8a-4899-b65b-e33c17faff7c",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_efe853fc-8e8a-4899-b65b-e33c17faff7c\", \"raw_value\": \"83,383\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "e3deec1085e16d235898bab6"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2021,
+              "value": "69916000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "bca700f8db9188be0f206021",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "bca700f8db9188be0f206021",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=37|context=C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1\", \"raw_value\": \"69,916\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "468c4ff36950aec7e6effaaa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2023,
+              "value": "72361000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "6e202d063761e888efea5789",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "6e202d063761e888efea5789",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=47|context=C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_da7a1266-ce2b-41b7-83ff-bb6e03dc1fa5\", \"raw_value\": \"72,361\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "88b94d51ef16cd0619ae20aa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2022,
+              "value": "72738000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "cd35914e4ef806e921de26a2",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "cd35914e4ef806e921de26a2",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=48|context=C_efe853fc-8e8a-4899-b65b-e33c17faff7c",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_efe853fc-8e8a-4899-b65b-e33c17faff7c\", \"raw_value\": \"72,738\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "b6c37bad6015c1d8f717f7e4"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2021,
+              "value": "61271000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "e18d97f635ff4e9a0dcd1a61",
+              "report_year": 2023,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "e18d97f635ff4e9a0dcd1a61",
+              "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+              "source_url": "/api/uploads/ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=49|context=C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_4e8ad330-b4ec-4b1c-975b-18c89babf3f1\", \"raw_value\": \"61,271\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2020-07-01\", \"2021-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "6c90cb7f5d54b294b9be6f2b"
+            }
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "matched_snapshot": 9,
+          "conflict": 0
+        },
+        "reference_data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "promoted_to_corpus": false
+      },
+      "elapsed_seconds": 6.796
+    },
+    {
+      "company": "MSFT",
+      "fiscal_year": 2024,
+      "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+      "status": "extracted",
+      "extraction": {
+        "version": "source_metrics_v1",
+        "status": "matched_snapshot",
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "7f101d45c6c916819d4fe819",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "7f101d45c6c916819d4fe819",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=11|context=C_6dbdb3a2-9baf-41b4-922d-f59879124337",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_6dbdb3a2-9baf-41b4-922d-f59879124337\", \"raw_value\": \"245,122\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2023-07-01\", \"2024-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "9a794a03f299890a16d8dd3c"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "041167a0233e19a2ab1c23f9",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "041167a0233e19a2ab1c23f9",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=12|context=C_ae7e339c-3219-4fd1-a57c-be06046f6b58",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_ae7e339c-3219-4fd1-a57c-be06046f6b58\", \"raw_value\": \"211,915\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "59176976080d645a51e629d8"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2022,
+              "value": "198270000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "8f08447a9df1e25043bb4c4f",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "8f08447a9df1e25043bb4c4f",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=13|context=C_ed99bc14-2e8b-442d-834c-3815de823d07",
+              "text": "{\"tag\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"context\": \"C_ed99bc14-2e8b-442d-834c-3815de823d07\", \"raw_value\": \"198,270\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3fa32e8182c2568355f50c6d"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2024,
+              "value": "109433000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "94c09451ec4fd1d9f00f1793",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "94c09451ec4fd1d9f00f1793",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=35|context=C_6dbdb3a2-9baf-41b4-922d-f59879124337",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_6dbdb3a2-9baf-41b4-922d-f59879124337\", \"raw_value\": \"109,433\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2023-07-01\", \"2024-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3c34b92f7ebea344a656a5b5"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2023,
+              "value": "88523000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "f9a7beafcd9a60b8bcfdf910",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "f9a7beafcd9a60b8bcfdf910",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=36|context=C_ae7e339c-3219-4fd1-a57c-be06046f6b58",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_ae7e339c-3219-4fd1-a57c-be06046f6b58\", \"raw_value\": \"88,523\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "77dbe42fe8ad2be22128b607"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2022,
+              "value": "83383000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "668d221d91b53f8f25600ed3",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "668d221d91b53f8f25600ed3",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=37|context=C_ed99bc14-2e8b-442d-834c-3815de823d07",
+              "text": "{\"tag\": \"us-gaap:OperatingIncomeLoss\", \"context\": \"C_ed99bc14-2e8b-442d-834c-3815de823d07\", \"raw_value\": \"83,383\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "e3deec1085e16d235898bab6"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2024,
+              "value": "88136000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "252eee3e1574e0e5a1d7bd7c",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "252eee3e1574e0e5a1d7bd7c",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=47|context=C_6dbdb3a2-9baf-41b4-922d-f59879124337",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_6dbdb3a2-9baf-41b4-922d-f59879124337\", \"raw_value\": \"88,136\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2023-07-01\", \"2024-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "868bed9f34c0f4601a6b65e7"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2023,
+              "value": "72361000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "f11c25c09b51bf0077266348",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "f11c25c09b51bf0077266348",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=48|context=C_ae7e339c-3219-4fd1-a57c-be06046f6b58",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_ae7e339c-3219-4fd1-a57c-be06046f6b58\", \"raw_value\": \"72,361\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2022-07-01\", \"2023-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "88b94d51ef16cd0619ae20aa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2022,
+              "value": "72738000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "117abbc92cec01cf353e5aad",
+              "report_year": 2024,
+              "extraction_method": "inline_xbrl"
+            },
+            "evidence": {
+              "id": "117abbc92cec01cf353e5aad",
+              "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+              "source_url": "/api/uploads/38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "uploaded",
+              "section": "income-statements",
+              "locator": "ix:nonfraction|index=49|context=C_ed99bc14-2e8b-442d-834c-3815de823d07",
+              "text": "{\"tag\": \"us-gaap:NetIncomeLoss\", \"context\": \"C_ed99bc14-2e8b-442d-834c-3815de823d07\", \"raw_value\": \"72,738\", \"scale\": \"6\", \"sign\": \"+\", \"unit\": \"USD\", \"period\": [\"2021-07-01\", \"2022-06-30\"]}"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "b6c37bad6015c1d8f717f7e4"
+            }
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "matched_snapshot": 9,
+          "conflict": 0
+        },
+        "reference_data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "promoted_to_corpus": false
+      },
+      "elapsed_seconds": 6.922
+    },
+    {
+      "company": "AAPL",
+      "fiscal_year": 2022,
+      "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.11
+    },
+    {
+      "company": "AAPL",
+      "fiscal_year": 2023,
+      "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.781
+    },
+    {
+      "company": "AAPL",
+      "fiscal_year": 2024,
+      "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.219
+    },
+    {
+      "company": "GOOGL",
+      "fiscal_year": 2022,
+      "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.922
+    },
+    {
+      "company": "GOOGL",
+      "fiscal_year": 2023,
+      "source_sha256": "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.985
+    },
+    {
+      "company": "GOOGL",
+      "fiscal_year": 2024,
+      "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.907
+    },
+    {
+      "company": "AMZN",
+      "fiscal_year": 2022,
+      "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.516
+    },
+    {
+      "company": "AMZN",
+      "fiscal_year": 2023,
+      "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.485
+    },
+    {
+      "company": "AMZN",
+      "fiscal_year": 2024,
+      "source_sha256": "7159c2f0fb719d13066f4f92203408f092cda55e21af838b05119c0ca7478b8a",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.391
+    },
+    {
+      "company": "META",
+      "fiscal_year": 2022,
+      "source_sha256": "3e1db5f7ed60df22669998de05cb5a054f48e78d1941c94d812bf22f3f345e54",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.906
+    },
+    {
+      "company": "META",
+      "fiscal_year": 2023,
+      "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.843
+    },
+    {
+      "company": "META",
+      "fiscal_year": 2024,
+      "source_sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+      "status": "failed",
+      "error_type": "ValueError",
+      "message": "Unrecognized fiscal period date",
+      "elapsed_seconds": 1.719
+    },
+    {
+      "company": "MSFT",
+      "fiscal_year": 2023,
+      "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+      "status": "extracted",
+      "extraction": {
+        "version": "source_metrics_v1",
+        "status": "matched_snapshot",
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "ac91a247b60270919a5647af",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "ac91a247b60270919a5647af",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nTotal revenue | 211,915 |  | 198,270 |  | 168,088"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "59176976080d645a51e629d8"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2022,
+              "value": "198270000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "ac91a247b60270919a5647af",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "ac91a247b60270919a5647af",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nTotal revenue | 211,915 |  | 198,270 |  | 168,088"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3fa32e8182c2568355f50c6d"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2021,
+              "value": "168088000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "ac91a247b60270919a5647af",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "ac91a247b60270919a5647af",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nTotal revenue | 211,915 |  | 198,270 |  | 168,088"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "ac91a247b60270919a5647af"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2023,
+              "value": "88523000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "468c4ff36950aec7e6effaaa",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "468c4ff36950aec7e6effaaa",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nOperating income | 88,523 |  | 83,383 |  | 69,916"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "77dbe42fe8ad2be22128b607"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2022,
+              "value": "83383000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "468c4ff36950aec7e6effaaa",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "468c4ff36950aec7e6effaaa",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nOperating income | 88,523 |  | 83,383 |  | 69,916"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "e3deec1085e16d235898bab6"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2021,
+              "value": "69916000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "468c4ff36950aec7e6effaaa",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "468c4ff36950aec7e6effaaa",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nOperating income | 88,523 |  | 83,383 |  | 69,916"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "468c4ff36950aec7e6effaaa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2023,
+              "value": "72361000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "6c90cb7f5d54b294b9be6f2b",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "6c90cb7f5d54b294b9be6f2b",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nNet income | $ 72,361 |  | $ 72,738 |  | $ 61,271"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "88b94d51ef16cd0619ae20aa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2022,
+              "value": "72738000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "6c90cb7f5d54b294b9be6f2b",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "6c90cb7f5d54b294b9be6f2b",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nNet income | $ 72,361 |  | $ 72,738 |  | $ 61,271"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "b6c37bad6015c1d8f717f7e4"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2021,
+              "value": "61271000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2020-07-01",
+              "period_end": "2021-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "6c90cb7f5d54b294b9be6f2b",
+              "report_year": 2023,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "6c90cb7f5d54b294b9be6f2b",
+              "source_sha256": "5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f",
+              "source_url": "/api/uploads/5a136f3681efc2136e99ce39add47bc0ae21623b36924ef9e86c9436e8647b2f/original",
+              "company": "MSFT",
+              "report_year": 2023,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2023 |  | 2022 |  | 2021\nNet income | $ 72,361 |  | $ 72,738 |  | $ 61,271"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "6c90cb7f5d54b294b9be6f2b"
+            }
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "matched_snapshot": 9,
+          "conflict": 0
+        },
+        "reference_data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "promoted_to_corpus": false
+      },
+      "elapsed_seconds": 1.593
+    },
+    {
+      "company": "MSFT",
+      "fiscal_year": 2024,
+      "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+      "status": "extracted",
+      "extraction": {
+        "version": "source_metrics_v1",
+        "status": "matched_snapshot",
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "677a30b90697682b2d224c84",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nTotal revenue | 245,122 |  | 211,915 |  | 198,270"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "9a794a03f299890a16d8dd3c"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "211915000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "677a30b90697682b2d224c84",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nTotal revenue | 245,122 |  | 211,915 |  | 198,270"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "59176976080d645a51e629d8"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2022,
+              "value": "198270000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "677a30b90697682b2d224c84",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "677a30b90697682b2d224c84",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=5",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nTotal revenue | 245,122 |  | 211,915 |  | 198,270"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3fa32e8182c2568355f50c6d"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2024,
+              "value": "109433000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b82bfc65afa81cf8dab1e596",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "b82bfc65afa81cf8dab1e596",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nOperating income | 109,433 |  | 88,523 |  | 83,383"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "3c34b92f7ebea344a656a5b5"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2023,
+              "value": "88523000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b82bfc65afa81cf8dab1e596",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "b82bfc65afa81cf8dab1e596",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nOperating income | 109,433 |  | 88,523 |  | 83,383"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "77dbe42fe8ad2be22128b607"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "operating_income",
+              "fiscal_year": 2022,
+              "value": "83383000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "b82bfc65afa81cf8dab1e596",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "b82bfc65afa81cf8dab1e596",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=14",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nOperating income | 109,433 |  | 88,523 |  | 83,383"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "e3deec1085e16d235898bab6"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2024,
+              "value": "88136000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9b8d808f721b07c276390fbb",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "9b8d808f721b07c276390fbb",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "868bed9f34c0f4601a6b65e7"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2023,
+              "value": "72361000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2022-07-01",
+              "period_end": "2023-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9b8d808f721b07c276390fbb",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "9b8d808f721b07c276390fbb",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "88b94d51ef16cd0619ae20aa"
+            }
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2022,
+              "value": "72738000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2021-07-01",
+              "period_end": "2022-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9b8d808f721b07c276390fbb",
+              "report_year": 2024,
+              "extraction_method": "html_table_profile"
+            },
+            "evidence": {
+              "id": "9b8d808f721b07c276390fbb",
+              "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+              "source_url": "/api/uploads/2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065/original",
+              "company": "MSFT",
+              "report_year": 2024,
+              "report_type": "annual",
+              "section": "income-statements",
+              "locator": "css:article#income-statements table|table=0|row=18",
+              "text": "(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738"
+            },
+            "verification": {
+              "status": "matched_snapshot",
+              "differences": [],
+              "reference_evidence_id": "b6c37bad6015c1d8f717f7e4"
+            }
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "matched_snapshot": 9,
+          "conflict": 0
+        },
+        "reference_data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+        "promoted_to_corpus": false
+      },
+      "elapsed_seconds": 1.5
+    }
+  ]
+}

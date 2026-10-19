@@ -1,0 +1,42 @@
+{
+    "planned": 60,
+    "attempted": 3,
+    "unattempted": 57,
+    "completed": 2,
+    "successes": 0.0,
+    "success_rate_attempted": 0.0,
+    "execution_status_counts": {
+        "execution_failure": 1,
+        "completed": 2
+    },
+    "error_types": {
+        "ModelBehaviorError": 1
+    },
+    "mean_latency_seconds": 29.567666666666668,
+    "known_total_tokens": 3219,
+    "unknown_usage_tasks": 1,
+    "partial_observed_tokens": 2464,
+    "cost": null,
+    "categories": {
+        "metric_query": {
+            "attempted": 3,
+            "success_rate": 0.0
+        }
+    },
+    "checks": {
+        "schema": 0.6666666666666666,
+        "status": 0.0,
+        "numeric": 0.0,
+        "units": 0.0,
+        "periods": 0.0,
+        "citations": 0.0,
+        "formula": 0.6666666666666666
+    },
+    "run_id": "rag-validation-run-01",
+    "status": "invalid_setup",
+    "variant": "rag",
+    "split": "validation",
+    "reason": "Negative BM25 weights removed all evidence from the homogeneous metric corpus.",
+    "included_in_comparisons": false,
+    "inflight_usage_unknown": true
+}

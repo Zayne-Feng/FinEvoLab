@@ -1,0 +1,22 @@
+{
+  "run_id": "offline-delivery-run-03",
+  "status": "complete",
+  "model_calls": 0,
+  "reports_audited": 17,
+  "reports_with_observations": 17,
+  "upload_failures": 0,
+  "snapshot_matched_observations": 114,
+  "conflicting_observations": 0,
+  "reference_answers_validated": 80,
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "artifacts": {
+    "html": {
+      "path": "E:\\Desktop\\FinEvoLab\\output\\reports\\company_comparison\\report.html",
+      "sha256": "3dbc23c31049975ca62efa6e5a12530ff209ce4d2f5bc822fd66c6d4abf35467"
+    },
+    "pdf": {
+      "path": "E:\\Desktop\\FinEvoLab\\output\\reports\\company_comparison\\report.pdf",
+      "sha256": "c0510ad3c5011d8f380eb30d2a8a6983043150321d999d173cdafc8f05f5d417"
+    }
+  }
+}

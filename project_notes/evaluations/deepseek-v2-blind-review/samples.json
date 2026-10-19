@@ -1,0 +1,4718 @@
+{
+  "samples": [
+    {
+      "origin_id": "deca4595cc929719-supported",
+      "group": "control",
+      "case_id": "deca4595cc929719",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "198270000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3fa32e8182c2568355f50c6d",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "83383000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "e3deec1085e16d235898bab6",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "72738000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "b6c37bad6015c1d8f717f7e4",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2022 covers 2021-07-01 to 2022-06-30. revenue = 198270000000 USD [3fa32e8182c2568355f50c6d]; operating_income = 83383000000 USD [e3deec1085e16d235898bab6]; net_income = 72738000000 USD [b6c37bad6015c1d8f717f7e4]. Operating income is below revenue, while net income is below operating income. Revenue measures the top line; operating income measures the operating result, and net income the bottom line."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "4cbda3483cc8912286ec8ff8"
+    },
+    {
+      "origin_id": "deca4595cc929719-listing",
+      "group": "control",
+      "case_id": "deca4595cc929719",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "198270000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3fa32e8182c2568355f50c6d",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "83383000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "e3deec1085e16d235898bab6",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "72738000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "b6c37bad6015c1d8f717f7e4",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2022: revenue = 198270000000 USD [3fa32e8182c2568355f50c6d]; operating_income = 83383000000 USD [e3deec1085e16d235898bab6]; net_income = 72738000000 USD [b6c37bad6015c1d8f717f7e4]."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "173a3876603a01eb3a2f8135"
+    },
+    {
+      "origin_id": "deca4595cc929719-unsupported",
+      "group": "control",
+      "case_id": "deca4595cc929719",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "198270000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3fa32e8182c2568355f50c6d",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "83383000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "e3deec1085e16d235898bab6",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "72738000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-07-01",
+          "period_end": "2022-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "b6c37bad6015c1d8f717f7e4",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "Every measure doubled because artificial-intelligence demand surged. The stock will rise next year."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "25a0ad32003f23bf34d23266"
+    },
+    {
+      "origin_id": "0f288556844799af-supported",
+      "group": "control",
+      "case_id": "0f288556844799af",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "211915000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "59176976080d645a51e629d8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "88523000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "77dbe42fe8ad2be22128b607",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "72361000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88b94d51ef16cd0619ae20aa",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2023 covers 2022-07-01 to 2023-06-30. revenue = 211915000000 USD [59176976080d645a51e629d8]; operating_income = 88523000000 USD [77dbe42fe8ad2be22128b607]; net_income = 72361000000 USD [88b94d51ef16cd0619ae20aa]. Operating income is below revenue, while net income is below operating income. Revenue measures the top line; operating income measures the operating result, and net income the bottom line."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "f30e91227ad7743b82f040c3"
+    },
+    {
+      "origin_id": "0f288556844799af-listing",
+      "group": "control",
+      "case_id": "0f288556844799af",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "211915000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "59176976080d645a51e629d8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "88523000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "77dbe42fe8ad2be22128b607",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "72361000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88b94d51ef16cd0619ae20aa",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2023: revenue = 211915000000 USD [59176976080d645a51e629d8]; operating_income = 88523000000 USD [77dbe42fe8ad2be22128b607]; net_income = 72361000000 USD [88b94d51ef16cd0619ae20aa]."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "a593112a6d3cc22dba1512db"
+    },
+    {
+      "origin_id": "0f288556844799af-unsupported",
+      "group": "control",
+      "case_id": "0f288556844799af",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "211915000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "59176976080d645a51e629d8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "88523000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "77dbe42fe8ad2be22128b607",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "72361000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-07-01",
+          "period_end": "2023-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88b94d51ef16cd0619ae20aa",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "Every measure doubled because artificial-intelligence demand surged. The stock will rise next year."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "9dec0483edd5775562843dbd"
+    },
+    {
+      "origin_id": "1cb0581a9816bad7-supported",
+      "group": "control",
+      "case_id": "1cb0581a9816bad7",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2024. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "245122000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "9a794a03f299890a16d8dd3c",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "109433000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3c34b92f7ebea344a656a5b5",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "88136000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "868bed9f34c0f4601a6b65e7",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2024 covers 2023-07-01 to 2024-06-30. revenue = 245122000000 USD [9a794a03f299890a16d8dd3c]; operating_income = 109433000000 USD [3c34b92f7ebea344a656a5b5]; net_income = 88136000000 USD [868bed9f34c0f4601a6b65e7]. Operating income is below revenue, while net income is below operating income. Revenue measures the top line; operating income measures the operating result, and net income the bottom line."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "8db8c67121e274a16975ff08"
+    },
+    {
+      "origin_id": "1cb0581a9816bad7-listing",
+      "group": "control",
+      "case_id": "1cb0581a9816bad7",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2024. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "245122000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "9a794a03f299890a16d8dd3c",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "109433000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3c34b92f7ebea344a656a5b5",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "88136000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "868bed9f34c0f4601a6b65e7",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "MSFT FY2024: revenue = 245122000000 USD [9a794a03f299890a16d8dd3c]; operating_income = 109433000000 USD [3c34b92f7ebea344a656a5b5]; net_income = 88136000000 USD [868bed9f34c0f4601a6b65e7]."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "b03a434d538df638dca83607"
+    },
+    {
+      "origin_id": "1cb0581a9816bad7-unsupported",
+      "group": "control",
+      "case_id": "1cb0581a9816bad7",
+      "question": "Explain the revenue, operating income and net income levels of MSFT in FY2024. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "MSFT",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "245122000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "9a794a03f299890a16d8dd3c",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "109433000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "3c34b92f7ebea344a656a5b5",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "MSFT",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "88136000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "868bed9f34c0f4601a6b65e7",
+          "report_year": 2026,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "Every measure doubled because artificial-intelligence demand surged. The stock will rise next year."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "2afd3b07d4faba020295035e"
+    },
+    {
+      "origin_id": "4e2b364484650459-supported",
+      "group": "control",
+      "case_id": "4e2b364484650459",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "394328000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "5655b1572205cd4897763c3e",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "119437000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "6936a7a9eb7e10815dec7e9a",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "99803000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "8d0cd3d8a5ce997f222a7417",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "AAPL FY2022 covers 2021-09-26 to 2022-09-24. revenue = 394328000000 USD [5655b1572205cd4897763c3e]; operating_income = 119437000000 USD [6936a7a9eb7e10815dec7e9a]; net_income = 99803000000 USD [8d0cd3d8a5ce997f222a7417]. Operating income is below revenue, while net income is below operating income. Revenue measures the top line; operating income measures the operating result, and net income the bottom line."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "d67ea3a76ba276e9778d1da0"
+    },
+    {
+      "origin_id": "4e2b364484650459-listing",
+      "group": "control",
+      "case_id": "4e2b364484650459",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "394328000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "5655b1572205cd4897763c3e",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "119437000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "6936a7a9eb7e10815dec7e9a",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "99803000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "8d0cd3d8a5ce997f222a7417",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "AAPL FY2022: revenue = 394328000000 USD [5655b1572205cd4897763c3e]; operating_income = 119437000000 USD [6936a7a9eb7e10815dec7e9a]; net_income = 99803000000 USD [8d0cd3d8a5ce997f222a7417]."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "53e94aeadb48cdf552ea7cfb"
+    },
+    {
+      "origin_id": "4e2b364484650459-unsupported",
+      "group": "control",
+      "case_id": "4e2b364484650459",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2022. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "394328000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "5655b1572205cd4897763c3e",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "119437000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "6936a7a9eb7e10815dec7e9a",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "99803000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2021-09-26",
+          "period_end": "2022-09-24",
+          "period_kind": "annual_flow",
+          "evidence_id": "8d0cd3d8a5ce997f222a7417",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "Every measure doubled because artificial-intelligence demand surged. The stock will rise next year."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "2120e4d84983c51eef1aec97"
+    },
+    {
+      "origin_id": "ee61400bf636a4f0-supported",
+      "group": "control",
+      "case_id": "ee61400bf636a4f0",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "383285000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "2f84b41e2eabbc0926b28fbf",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "114301000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "8303b835d426515aafba44ce",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "96995000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88023d57836d524f3dbc26c8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "AAPL FY2023 covers 2022-09-25 to 2023-09-30. revenue = 383285000000 USD [2f84b41e2eabbc0926b28fbf]; operating_income = 114301000000 USD [8303b835d426515aafba44ce]; net_income = 96995000000 USD [88023d57836d524f3dbc26c8]. Operating income is below revenue, while net income is below operating income. Revenue measures the top line; operating income measures the operating result, and net income the bottom line."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "f9b03a008ec549aa8debf18f"
+    },
+    {
+      "origin_id": "ee61400bf636a4f0-listing",
+      "group": "control",
+      "case_id": "ee61400bf636a4f0",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "383285000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "2f84b41e2eabbc0926b28fbf",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "114301000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "8303b835d426515aafba44ce",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "96995000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88023d57836d524f3dbc26c8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "AAPL FY2023: revenue = 383285000000 USD [2f84b41e2eabbc0926b28fbf]; operating_income = 114301000000 USD [8303b835d426515aafba44ce]; net_income = 96995000000 USD [88023d57836d524f3dbc26c8]."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "7e7b19d3a46e88138837f7d8"
+    },
+    {
+      "origin_id": "ee61400bf636a4f0-unsupported",
+      "group": "control",
+      "case_id": "ee61400bf636a4f0",
+      "question": "Explain the revenue, operating income and net income levels of AAPL in FY2023. Ground the explanation in all three amounts, fiscal periods and source references.",
+      "observations": [
+        {
+          "company": "AAPL",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "383285000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "2f84b41e2eabbc0926b28fbf",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "114301000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "8303b835d426515aafba44ce",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AAPL",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "96995000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-09-25",
+          "period_end": "2023-09-30",
+          "period_kind": "annual_flow",
+          "evidence_id": "88023d57836d524f3dbc26c8",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "answer": "Every measure doubled because artificial-intelligence demand surged. The stock will rise next year."
+      },
+      "origin": "synthetic_control_not_model_output",
+      "id": "59576d67c1485b9dacf4aaa9"
+    },
+    {
+      "origin_id": "ce0f2d3e85464561a23c87a8ecd0fabd",
+      "group": "initial",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For FY2022 (fiscal year 2022-01-01 through 2022-12-31), Amazon reported revenue of USD 513,983,000,000 (about $514.0 billion), positive operating income of USD 12,248,000,000 (about $12.2 billion), but a net loss of USD 2,722,000,000 (about -$2.7 billion). The relationship across the three lines is non-monotonic: a very large top line still produced a positive but thin operating result (operating margin of roughly 2.4% of revenue), and that positive operating result did not carry through to the bottom line — net income was negative. In other words, the operating result was profitable while the bottom line was a loss, meaning non-operating items (such as other income/expense and the income tax provision) more than offset the ~$12.2 billion operating profit. Caution on interpretation: the retrieved metrics cover only revenue, operating_income and net_income; the specific non-operating and tax components that bridge operating income to net income were not retrieved, so the exact drivers of the swing to a net loss should not be inferred from these figures alone.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "54340ad63b8cd6a2af50deed"
+    },
+    {
+      "origin_id": "a58c4037bbd54c29b765591c20737e9c",
+      "group": "initial",
+      "case_id": "091e85ef2787b210",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN in FY2023 (fiscal period 2023-01-01 to 2023-12-31), the top line was revenue of $574,785,000,000 USD. The operating result was operating income of $36,852,000,000 USD, implying an operating margin of roughly 6.4%. The bottom line was net income of $30,425,000,000 USD. Net income came in below operating income (about 83% of it), meaning non-operating items and taxes reduced the bottom line by roughly $6.4 billion relative to the operating result. All three figures are annual flows on the same fiscal period.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "f0d772c292d3812391febc6a"
+    },
+    {
+      "origin_id": "8cae310cb9d44d8495c9718f4067996a",
+      "group": "initial",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2024 (actual fiscal period 2024-01-01 to 2024-12-31, disclosed in report_year 2025), revenue was USD 637,959,000,000, operating_income was USD 68,593,000,000, and net_income was USD 59,248,000,000. The relationship across the three lines is positive and descending: operating_income represents roughly 10.75% of revenue (about 68.6B of 638.0B), and net_income is lower than operating_income, meaning non-operating items and taxes reduced the bottom line by roughly USD 9.3B relative to the operating result. In short, a strong top line translated into a positive operating result, which in turn produced a positive but somewhat smaller bottom line.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "17b2a25be17134a41865741f"
+    },
+    {
+      "origin_id": "84ba8a6fa4f24acf81f0df325dca471d",
+      "group": "initial",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "META's FY2022 (January 1 – December 31, 2022) disclosures show a profitable but compressed cost structure: revenue of $116.609B produced operating income of $28.944B, an operating margin of roughly 24.8%, and net income of $23.200B, roughly 19.9% of revenue. The top line therefore converted to operating profit at about 24.8%, and the gap between operating income and net income ($5.744B) reflects non-operating and tax effects. The bottom line remains strongly positive but is materially smaller than the top line, indicating significant operating costs and expenses consumed about three-quarters of revenue before non-operating items.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "a62006452db2d97859551742"
+    },
+    {
+      "origin_id": "55e2f9bd2b324adc993597522c8a7b31",
+      "group": "initial",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2023 (period 2023-01-01 to 2023-12-31), revenue was $134.902 billion, operating income was $46.751 billion, and net income was $39.098 billion. The top line converts to an operating margin of roughly 34.7% (operating income ÷ revenue), and the bottom line is about 83.6% of operating income, meaning non-operating items and taxes reduced net income by approximately $7.653 billion relative to operating income. Thus revenue generated a substantial operating result, which in turn funded a positive bottom line somewhat below the operating level.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "93a51bb6d316b8e6ff81a49e"
+    },
+    {
+      "origin_id": "37594753691f4368b03d697c2942286c",
+      "group": "initial",
+      "case_id": "7354c74acca8a960",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's FY2024 (fiscal year 2024-01-01 through 2024-12-31, as disclosed in the FY2025 report year), revenue was $164.501B, operating income was $69.38B, and net income was $62.36B. All three metrics cover the same annual period. Operating income equals roughly 42.2% of revenue, indicating a strongly positive operating result derived from the top line. Net income is lower than operating income ($62.36B vs. $69.38B), meaning non-operating items and taxes net out to a reduction of about $7.02B below the operating result, so the bottom line remains strongly profitable but below the operating line. In short: a $164.5B top line converted into a $69.4B operating result, with the bottom line at $62.4B.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "70ddde0eb4bc10f2037cac82"
+    },
+    {
+      "origin_id": "13fb0af8c52745568c6fee1848bd8981",
+      "group": "initial",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2022 (fiscal period 2022-01-01 to 2022-12-31), revenue was $513.983 billion, and the company remained profitable at the operating line with operating income of $12.248 billion — roughly 2.4% of revenue. However, the bottom line fell below the operating result: net income was -$2.722 billion, a net loss. The gap between operating income and net income (about $14.97 billion) reflects items outside operating income, such as non-operating and other charges and the income-tax provision. In short, the top line was very large and operating results were positive, but non-operating/tax effects pushed the bottom line into a loss.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "e57c174d0a5b1d4d61d1c77a"
+    },
+    {
+      "origin_id": "1946f56381eb444784a19cc39f041a97",
+      "group": "initial",
+      "case_id": "091e85ef2787b210",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2023 (fiscal year 2023-01-01 through 2023-12-31), revenue was USD 574,785,000,000, operating income was USD 36,852,000,000, and net income was USD 30,425,000,000. Operating income represents roughly 6.4% of the top line (operating margin ≈ 6.41%), so most of revenue was consumed by cost of sales and operating expenses before reaching the operating result. Net income (USD 30,425,000,000) came in below operating income (USD 36,852,000,000), i.e. non-operating items and taxes reduced the bottom line by about USD 6.427 billion relative to the operating result, leaving net margin at roughly 5.3% of revenue. The overall pattern is a large top line, a modest single-digit operating margin, and a bottom line slightly below the operating result.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "c2f9e72533554e1578fece85"
+    },
+    {
+      "origin_id": "302f235593094dedb4add310b7f3b3f6",
+      "group": "initial",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2024 (fiscal period 2024-01-01 to 2024-12-31, disclosed in the FY2025 report), revenue was $637.959B, operating income was $68.593B, and net income was $59.248B. The operating result represents roughly 10.8% of the top line, and the bottom line is below operating income — net income equals about 86% of operating income, indicating that non-operating items and taxes reduced the result relative to operating profit. Observing the ordering: revenue > operating_income > net_income.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "dd55f64959226220a2b50ec3"
+    },
+    {
+      "origin_id": "61791bbd47c94f0ca2629da1defa3fc6",
+      "group": "initial",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META FY2022 (fiscal year 2022-01-01 to 2022-12-31), the top line was $116.609B in revenue, which converted to $28.944B of operating income (roughly a 24.8% operating margin implied by the two disclosed figures) and $23.200B of net income. So the operating result retained about a quarter of revenue, and the bottom line came in ~$5.744B below the operating result, reflecting non-operating items and taxes. Net income equaled roughly 80% of operating income. All three metrics share the same fiscal period, so they are directly comparable within the year.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "ceab263d79d39911aa4814e7"
+    },
+    {
+      "origin_id": "6b5393e665a047daa34e0c03946d1919",
+      "group": "initial",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2023 (period 2023-01-01 to 2023-12-31), the income statement shows a profitable progression from top line to bottom line: revenue of USD 134.902 billion, operating income of USD 46.751 billion, and net income of USD 39.098 billion. Operating income represents roughly 34.7% of revenue, indicating that after costs of revenue and operating expenses the business still retained about a third of its top line at the operating level. Net income is lower than operating income (about 83.6% of it), which is consistent with non-operating items and taxes reducing the operating result below the line; in other words, the core operating result carried the company to a positive bottom line, but the bottom line came in below the operating result. All three metrics share the same annual fiscal period, so the top line, operating result and bottom line are directly comparable within FY2023.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "57cb1bc63e1aa8f36eb21629"
+    },
+    {
+      "origin_id": "b06c3f712cb64202a2e8ff910252ee90",
+      "group": "initial",
+      "case_id": "7354c74acca8a960",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's FY2024 (fiscal year 2024-01-01 to 2024-12-31, as disclosed in the 2025 report year), the top line was revenue of 164,501,000,000 USD. The operating result was operating income of 69,380,000,000 USD, which is about 42.2% of revenue, indicating the core business was solidly profitable after operating costs. The bottom line was net income of 62,360,000,000 USD, roughly 37.9% of revenue and about 89.9% of operating income. The relationship is a declining step-down: revenue far exceeds operating income, and operating income exceeds net income, with the gap between operating income and net income (7,020,000,000 USD) reflecting non-operating items and taxes. All three metrics are same-period annual flows and are directly comparable.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "8cc30d75b18f266bc92a8d29"
+    },
+    {
+      "origin_id": "4d5d9a53243943fead3114e739f00fd8",
+      "group": "initial",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2022 (fiscal year 2022-01-01 to 2022-12-31), the relationship across the income statement is: the top line was a large positive revenue base of $513.983B, the operating result remained positive but thin at $12.248B operating income (roughly 2.4% of revenue), and the bottom line flipped to a net loss of -$2.722B. The key relationship is the disconnect between operating_income and net_income: the company stayed profitable at the operating level but ended the year in a net loss, meaning non-operating items (e.g., other income/expense and the income tax provision) moved the result from a positive operating figure to a negative net figure. Net income is thus below operating income by $14.970B, and far below the revenue top line.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "53103479898d1076df12c60f"
+    },
+    {
+      "origin_id": "b55581e3bfbb4ecd820ffd51d5b2904c",
+      "group": "initial",
+      "case_id": "091e85ef2787b210",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2023 (fiscal period 2023-01-01 to 2023-12-31), revenue was $574.785 billion, operating income was $36.852 billion, and net income was $30.425 billion. This shows a positive operating result (operating margin ≈ 6.4% of revenue) and a bottom line slightly below the operating result, with net income ≈ 82.6% of operating income. The relationship is: top line $574.785B → operating result $36.852B → bottom line $30.425B, i.e., a profitable operating core with a modest non-operating/other and tax drag below the operating line, but still a positive net income. Note that net income remaining positive while being below operating income is consistent with the company's reported annual disclosures for this fiscal year.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "238b2093430eaebf2719fa59"
+    },
+    {
+      "origin_id": "c2c116e362d74ed7bb6659afb46c93a2",
+      "group": "initial",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For FY2024 (period 2024-01-01 to 2024-12-31, disclosed in the 2025 report year), Amazon reported revenue of $637.959 billion, operating income of $68.593 billion and net income of $59.248 billion, all in USD. On a margin basis, operating income represents roughly 10.75% of the top line, while net income equals about 9.29% of revenue, i.e., the bottom line is about 86.4% of the operating result. The relationship is positive on both levels: the operating result was a profit of $68.593 billion and the bottom line a profit of $59.248 billion of similar magnitude, so FY2024 shows no operating loss and no swing from operating profit to net loss. Derived percentages are computed from the three source-bound observations below using this filing's own figures; no non-operating items or tax detail were retrieved, so no explanation of the difference between operating and net income is asserted here.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "fa63c4958e641dae55449f43"
+    },
+    {
+      "origin_id": "3937a5f00fb24ea68745857d76d3cef0",
+      "group": "initial",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2022 (1 January 2022 – 31 December 2022), the income statement reads as a step-down sequence from top line to bottom line. Revenue was USD 116,609,000,000. Operating income was USD 28,944,000,000, i.e. roughly 24.8% of revenue — meaning costs and expenses consumed about three-quarters of the top line before non-operating items. Net income was USD 23,200,000,000, which is about 19.9% of revenue and about 80.2% of operating income. The gap between operating income and net income (USD 28,944,000,000 → USD 23,200,000,000) reflects a net reduction of roughly USD 5.7 billion below the operating line, consistent with non-operating costs (such as tax and other non-operating charges) exceeding any non-operating income. In short: revenue of ~USD 116.6 billion produced ~USD 28.9 billion of operating profit, and that operating result translated into ~USD 23.2 billion of net income, so the profit declines at each successive line with the largest single drop occurring between revenue and operating income. All three figures come from the same annual period (2022-01-01 to 2022-12-31) in the SEC-based disclosures, so they are directly comparable.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "bd14fa48e43a1fe8d079edef"
+    },
+    {
+      "origin_id": "5357127906c54633af6e4fcf35b0e1b2",
+      "group": "initial",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2023 (period 2023-01-01 to 2023-12-31, all USD annual flows), revenue was $134.902 billion, operating income was $46.751 billion, and net income was $39.098 billion. The relationship runs top line → operating result → bottom line: operating income represents roughly 34.7% of revenue ($46.751B / $134.902B), meaning operating costs and expenses consumed about 65.3% of revenue. Net income is below operating income, at roughly 28.98% of revenue and about 83.6% of operating income ($39.098B / $46.751B), indicating that non-operating items and taxes reduced the bottom line by approximately $7.653 billion relative to operating income. In short, FY2023 was profitable at both the operating and net levels, with a modest contraction between operating income and net income.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "6ca4621b181d0d4602b24d81"
+    },
+    {
+      "origin_id": "695837cd431d4066994c2e817eee57e1",
+      "group": "initial",
+      "case_id": "7354c74acca8a960",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's FY2024 (fiscal year 2024-01-01 through 2024-12-31, as disclosed in the 2025 report year), the income statement shows a profitable progression from top line to bottom line: revenue of $164.501 billion, operating income of $69.38 billion, and net income of $62.36 billion. Operating income represents roughly 42.2% of revenue (69380000000 / 164501000000), so the core operating result was strongly positive. Net income is lower than operating income at about 89.9% of it (62360000000 / 69380000000), and about 37.9% of revenue, consistent with non-operating items and taxes reducing the operating result to the bottom line. All three metrics cover the same annual fiscal period, so the relationship is directly comparable.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "bd2f2dca39aa4b53abcd5653"
+    },
+    {
+      "origin_id": "0033521e2684495dbd63065417e7beed",
+      "group": "selected",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2022 (fiscal year 2022-01-01 to 2022-12-31), the three lines diverge sharply in sign. Revenue was $513,983,000,000 (USD), showing the business operated at substantial scale. Operating income was $12,248,000,000 (USD) — positive, but only about 2.4% of revenue, indicating a thin operating margin. Net income was -$2,722,000,000 (USD), a net loss, which is below operating income by roughly $14,970,000,000. Because operating income was positive while net income was negative, the swing between the operating result and the bottom line cannot be explained by operations alone; non-operating items more than offset the positive operating result and turned the fiscal year into a net loss. The relationship is: large top line -> modestly positive operating result -> negative bottom line, with the sign flip occurring below the operating line.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "7e27160687bb370b762d5c79"
+    },
+    {
+      "origin_id": "d2299def7121490eb962f865a431287f",
+      "group": "selected",
+      "case_id": "091e85ef2787b210",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2023 (fiscal period 2023-01-01 to 2023-12-31), revenue was $574.785 billion, operating income was $36.852 billion, and net income was $30.425 billion. The operating result was positive and equal to roughly 6.4% of the top line, and the bottom line remained positive but below operating income, indicating non-operating and tax items reduced net income relative to operating profit by about $6.427 billion.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "8f3b6db08eb38f9f2ce66d31"
+    },
+    {
+      "origin_id": "82c73205268a4c20bc3e0f4c79f20577",
+      "group": "selected",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 1,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2024 (actual fiscal period 2024-01-01 to 2024-12-31, disclosed in report_year 2025), Amazon reported revenue of $637,959,000,000, operating income of $68,593,000,000, and net income of $59,248,000,000. The relationship among the three lines: operating income equals about 10.75% of revenue, meaning roughly $0.108 of operating profit was generated per dollar of top-line sales. Net income is below operating income by $9,345,000,000 (net income is about 86.4% of operating income), indicating that non-operating items and taxes net to a deduction larger than any non-operating gains. Both the operating result and the bottom line are strongly positive, and the bottom line remains solidly profitable even after the step-down from operating income to net income. All three figures are annual flows in USD from the same fiscal period, so they are directly comparable.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "7fb4260445406f11628fc0a4"
+    },
+    {
+      "origin_id": "3e2e86cd04304cd5bbb3e51601900efd",
+      "group": "selected",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META FY2022 (actual period 2022-01-01 to 2022-12-31, USD), revenue was 116,609,000,000; operating income was 28,944,000,000; net income was 23,200,000,000. The chain declines monotonically: revenue > operating income > net income. Operating income equals about 24.8% of revenue, so roughly three-quarters of the top line was consumed by operating costs and expenses. Net income is about 5.7B below operating income, a ~20% reduction at the non-operating/tax stage, smaller in relative terms than the revenue-to-operating compression. Net margin is about 19.9% of revenue. Exact drivers of the gaps were not retrieved, so no causal attribution is made.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "eb5017efb29a90666735215c"
+    },
+    {
+      "origin_id": "f251e9af05c24f3781986527d8728a46",
+      "group": "selected",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META FY2023 (fiscal year 2023-01-01 to 2023-12-31, reported in USD, disclosed in report_year 2025), revenue was $134.902 billion, operating income was $46.751 billion, and net income was $39.098 billion. The relationship is layered: operating income represents roughly 34.7% of the top line ($46.751B ÷ $134.902B), showing that a little over a third of revenue survived operating costs. Net income is lower than operating income by $7.653 billion ($46.751B − $39.098B), reflecting non-operating items and taxes netting out; as a share of revenue, net income is about 29.0%. In short, the bottom line is a diluted but still large fraction of the top line, and the operating result accounts for the majority of net income.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "a80a68d8a197e7ee60633620"
+    },
+    {
+      "origin_id": "60433b042aaa4438902398b7ff4243e8",
+      "group": "selected",
+      "case_id": "7354c74acca8a960",
+      "repeat": 1,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year ended 2024-12-31 (calendar annual period, disclosed in the 2025 report year), the income summary shows a profitable progression from top line to bottom line: revenue of $164,501,000,000, operating income of $69,380,000,000, and net income of $62,360,000,000. Operating income represents roughly 42.2% of revenue, indicating that core operations retained a substantial share of the top line after operating costs. Net income is lower than operating income (about 89.9% of it), consistent with non-operating items and taxes reducing the operating result below the bottom line. All three metrics share the same fiscal period (2024-01-01 to 2024-12-31), so the relationship is measured on a comparable annual basis.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "dc3c6043868dcb343c6800a7"
+    },
+    {
+      "origin_id": "4dcee3c0f489481db57d339d9c6895c1",
+      "group": "selected",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2022 (actual fiscal period 2022-01-01 to 2022-12-31), the top line was $513.983 billion in revenue, but profitability degraded sharply moving down the income statement. Operating income was positive but thin at $12.248 billion — roughly 2.4% of revenue — indicating operating expenses consumed nearly all of the revenue base. Below the operating line, non-operating/investment losses and tax effects more than erased that operating result, producing a net loss of $2.722 billion. Relationship: high revenue → modest positive operating result → negative bottom line. The gap between operating income ($12.248B) and net income (-$2.722B) is approximately $14.97B of net non-operating and tax drag, larger than the entire operating profit. The retrieved data does not break out the specific non-operating components, so no further decomposition is asserted.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "91501107911e1bcd4d5ecc22"
+    },
+    {
+      "origin_id": "b48d63a13dc14614a85db15c102f55a5",
+      "group": "selected",
+      "case_id": "091e85ef2787b210",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN fiscal year 2023 (period 2023-01-01 to 2023-12-31), revenue was $574.785 billion, operating income was $36.852 billion, and net income was $30.425 billion. The relationship across the three lines: operating income represented about 6.4% of revenue, so the top line converted to a positive operating result. Net income finished below operating income (by roughly $6.427 billion), meaning non-operating items — most notably the non-operating expense/benefit lines below the operating line, including interest and other income/expense and provision for income taxes — netted negative overall. All three figures are on the same annual fiscal period, so they are directly comparable.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "cbb04bbfff4b7277f2b59858"
+    },
+    {
+      "origin_id": "f6b96c5e76b142f4b78eff57002f5f3a",
+      "group": "selected",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 2,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2024 (fiscal period 2024-01-01 to 2024-12-31, as reported in the FY2025 disclosure filing), the income summary shows revenue of $637,959,000,000 USD. Operating income was $68,593,000,000 USD, roughly 10.8% of revenue, so the core operating result was clearly positive. Net income was $59,248,000,000 USD, which is lower than operating income by about $9,345,000,000 USD — the bottom line sits below the operating result, consistent with non-operating items and taxes reducing operating profit. The relationship is therefore: positive top line, materially positive operating result, and a positive bottom line that is smaller than operating income.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "e8197b4117e009b3bfa4f94e"
+    },
+    {
+      "origin_id": "963cd12262ea42f3bea0f4d87b6a59fe",
+      "group": "selected",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2022 (January 1, 2022 – December 31, 2022), revenue was $116.609 billion. Operating income was $28.944 billion, implying an operating margin of roughly 24.8% — about three-quarters of revenue was consumed by costs and expenses before non-operating items. Net income was $23.200 billion, below operating income, implying roughly $5.744 billion of net non-operating and tax drag (plus any other reconciling items) between operating result and bottom line. In short: a large top line converted to a positive but materially smaller operating result, and the bottom line landed further below it.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "d15fcb9781018e8442d9312c"
+    },
+    {
+      "origin_id": "573d9bdfc46049e9b94d3f81481b5ab9",
+      "group": "selected",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2023 (actual period 2023-01-01 to 2023-12-31), the top line was USD 134.902 billion in revenue. Operating income was USD 46.751 billion, meaning roughly a third of revenue survived operating costs. Net income was USD 39.098 billion, lower than operating income, indicating that non-operating items and taxes reduced the bottom line by about USD 7.653 billion relative to the operating result. All three metrics come from the same aligned annual period.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "53d316e7e62f2d8f4d6b197a"
+    },
+    {
+      "origin_id": "d95953544e5443b29eca695d14b3a199",
+      "group": "selected",
+      "case_id": "7354c74acca8a960",
+      "repeat": 2,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2024 (actual period 2024-01-01 to 2024-12-31, calendar year, disclosed in report_year 2025), revenue was $164.501B, operating income was $69.38B, and net income was $62.36B. All three figures cover the same actual annual period, so they are directly comparable within the year. Operating income represents roughly 42.2% of revenue ($69.38B / $164.501B), i.e. core operations retained a large share of the top line after operating costs. Net income is lower than operating income by about $7.02B ($69.38B − $62.36B), indicating that non-operating items and taxes net of other income reduced the bottom line relative to the operating result; net income equals roughly 37.9% of revenue. Thus the relationship is: revenue is the largest figure, operating income is a substantial but clearly smaller portion of it, and net income is somewhat below operating income, so the bottom line trails the operating result while remaining strongly positive. Amounts are in USD as reported; no per-share or segment detail is asserted here.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "15798ad5492f58b86c779d94"
+    },
+    {
+      "origin_id": "52684b5eeacc4c5086da7db9762b76ab",
+      "group": "selected",
+      "case_id": "31494d4dc93a81d9",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "513983000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0897b2094b63fc5853b2ba4b",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "12248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "e6d9377df8ab55fbf1f21af8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "-2722000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6ff96f101627775163b122a8",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN fiscal year 2022 (actual period 2022-01-01 through 2022-12-31), the top line was $513.983 billion in revenue, paired with a modest positive operating result of $12.248 billion (roughly 2.4% of revenue), which then fell below the line to a net loss of -$2.722 billion. This shows a large revenue base with thin operating profitability and non-operating/tax effects driving the bottom line into negative territory.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "513983000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0897b2094b63fc5853b2ba4b",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "12248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "e6d9377df8ab55fbf1f21af8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "-2722000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6ff96f101627775163b122a8",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0897b2094b63fc5853b2ba4b",
+          "e6d9377df8ab55fbf1f21af8",
+          "6ff96f101627775163b122a8"
+        ]
+      },
+      "origin": "model_output",
+      "id": "389b72fc0a574ce49c6afc15"
+    },
+    {
+      "origin_id": "7718c8961a7f4bc3b72fc6510039b7d1",
+      "group": "selected",
+      "case_id": "091e85ef2787b210",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "574785000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "a6771fab618fbf81f6a472f7",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "36852000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2c8e74e5410a762ff26e569c",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "30425000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "eef687627c9e048daa48507d",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For AMZN FY2023 (fiscal year ended 2023-12-31), all three requested annual metrics are available on the same 12-month period. Top line revenue was USD 574,785,000,000; operating income was USD 36,852,000,000; and net income was USD 30,425,000,000. Relative to revenue, the operating result equates to roughly 6.4% and the bottom line to roughly 5.3%, so net income sits below operating income — meaning non-operating items (e.g., interest and other income/expense, tax) were net negative by approximately USD 6.43 billion. This narrative is derived solely by arithmetic on the retrieved observations; no other drivers were inferred.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "574785000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "a6771fab618fbf81f6a472f7",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "36852000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2c8e74e5410a762ff26e569c",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "30425000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "eef687627c9e048daa48507d",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "a6771fab618fbf81f6a472f7",
+          "2c8e74e5410a762ff26e569c",
+          "eef687627c9e048daa48507d"
+        ]
+      },
+      "origin": "model_output",
+      "id": "1506c3c3d18af37850b810ea"
+    },
+    {
+      "origin_id": "b8bbb3a1e4ab4a729ce58e68309f85a6",
+      "group": "selected",
+      "case_id": "aebd93d54a18090c",
+      "repeat": 3,
+      "question": "Using disclosures for AMZN FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "AMZN",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "637959000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "6a7e858b29a034a09e64c08e",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "68593000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "38bdec50a706a42b1acd466f",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "AMZN",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "59248000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "b27b293c0abd1d076f7a8f37",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "Amazon's FY2024 income statement shows a profitable operating result that flows through to a smaller bottom line. Revenue was USD 637,959,000,000 (period 2024-01-01 to 2024-12-31, disclosed in report_year 2025). Operating income was USD 68,593,000,000, i.e. roughly 10.8% of revenue, indicating the core business was profitable after operating costs. Net income was USD 59,248,000,000, which is below operating income — non-operating items (e.g., interest and other income/expense, taxes) and any other below-the-line effects reduced the bottom line relative to the operating result. Net income represents about 9.3% of revenue. All three metrics share the same fiscal period, so the relationships above are period-consistent.",
+        "metrics": [
+          {
+            "company": "AMZN",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "637959000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "6a7e858b29a034a09e64c08e",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "68593000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "38bdec50a706a42b1acd466f",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "AMZN",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "59248000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "b27b293c0abd1d076f7a8f37",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6a7e858b29a034a09e64c08e",
+          "38bdec50a706a42b1acd466f",
+          "b27b293c0abd1d076f7a8f37"
+        ]
+      },
+      "origin": "model_output",
+      "id": "d634a1ad695a1d2f3ec7ee01"
+    },
+    {
+      "origin_id": "cc8bd7b3e9f64b5b94c8473fa783ea41",
+      "group": "selected",
+      "case_id": "42f9fe5c6710bf6e",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2022, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2022,
+          "value": "116609000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "0cd4c3bf104355f4a91e0d95",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2022,
+          "value": "28944000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "c1d05952ed3598e0e0285e76",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2022,
+          "value": "23200000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "2fe3f0f1aa6f801c068acf19",
+          "report_year": 2024,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2022 (period 2022-01-01 to 2022-12-31, as disclosed in the 2024 report year filing context), the top line was $116,609 million (116.609B USD). Operating income was $28,944 million (28.944B USD), roughly 24.8% of revenue, so a substantial portion of revenue was absorbed by costs and expenses before non-operating items. Net income was $23,200 million (23.2B USD), about 19.9% of the top line and lower than operating income, indicating that non-operating and tax items below the operating line reduced the bottom line further. The relationship is a descending cascade: revenue 116.609B > operating income 28.944B > net income 23.2B, with operating margin materially higher than net margin.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2022,
+            "value": "116609000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "0cd4c3bf104355f4a91e0d95",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "28944000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "c1d05952ed3598e0e0285e76",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2022,
+            "value": "23200000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2022-01-01",
+            "period_end": "2022-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "2fe3f0f1aa6f801c068acf19",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "0cd4c3bf104355f4a91e0d95",
+          "c1d05952ed3598e0e0285e76",
+          "2fe3f0f1aa6f801c068acf19"
+        ]
+      },
+      "origin": "model_output",
+      "id": "d02f581286aaf870a0c698fa"
+    },
+    {
+      "origin_id": "40417792817d4b1a9282a209fa80b230",
+      "group": "selected",
+      "case_id": "6ef83e4e61c7e774",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2023, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2023,
+          "value": "134902000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "65727b4337c0454f5b605799",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2023,
+          "value": "46751000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "80ffa3e4fcefa443b4772976",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2023,
+          "value": "39098000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "be00eebbd07ce4cf3b54369a",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2023 (period 2023-01-01 to 2023-12-31, reported in USD), the income summary shows revenue of $134.902 billion, operating income of $46.751 billion, and net income of $39.098 billion. Operating income equals roughly 34.7% of revenue, indicating that after cost of revenue and operating expenses, about a third of the top line remained as operating profit. Net income is lower than operating income by roughly $7.653 billion, reflecting non-operating items (such as other income/expense and taxes) that reduced the bottom line below the operating result; net income is about 83.6% of operating income and roughly 29.0% of revenue. All three figures cover the same actual fiscal period, so the top line, operating result and bottom line are directly comparable within the same 2023 income statement. Percentage relationships above are ratios derived from these source values, not separately reported growth metrics.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "134902000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "65727b4337c0454f5b605799",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2023,
+            "value": "46751000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "80ffa3e4fcefa443b4772976",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2023,
+            "value": "39098000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "be00eebbd07ce4cf3b54369a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "65727b4337c0454f5b605799",
+          "80ffa3e4fcefa443b4772976",
+          "be00eebbd07ce4cf3b54369a"
+        ]
+      },
+      "origin": "model_output",
+      "id": "32cff6618d8e8dfdbf89d305"
+    },
+    {
+      "origin_id": "b962d94edd2a48de9f248cd2852bd949",
+      "group": "selected",
+      "case_id": "7354c74acca8a960",
+      "repeat": 3,
+      "question": "Using disclosures for META FY2024, describe the relationship among its top line, operating result and bottom line. Supply revenue, operating_income and net_income with verifiable observations and citations.",
+      "observations": [
+        {
+          "company": "META",
+          "name": "revenue",
+          "fiscal_year": 2024,
+          "value": "164501000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "23274db260a77a882106fdb2",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "operating_income",
+          "fiscal_year": 2024,
+          "value": "69380000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "69f1c0dff0c5bbdc85f69173",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        },
+        {
+          "company": "META",
+          "name": "net_income",
+          "fiscal_year": 2024,
+          "value": "62360000000",
+          "currency": "USD",
+          "unit": "USD",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "period_kind": "annual_flow",
+          "evidence_id": "63e925027f8f08653aa823c6",
+          "report_year": 2025,
+          "extraction_method": "sec_companyfacts_annual_context"
+        }
+      ],
+      "submission": {
+        "status": "complete",
+        "answer": "For META's fiscal year 2024 (period 2024-01-01 to 2024-12-31, as disclosed in the 2025 report year), the top line was revenue of $164.501 billion. Operating income was $69.38 billion, i.e. roughly 42.2% of revenue, showing that core operations converted a substantial share of the top line into operating profit. Net income was $62.36 billion, about 37.9% of revenue and equal to roughly 89.9% of operating income — the bottom line stayed close to the operating result, consistent with non-operating items and taxes not overturning the operating profit. In short: strong revenue scale, a large operating margin, and a bottom line that tracks closely below the operating result.",
+        "metrics": [
+          {
+            "company": "META",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "164501000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "23274db260a77a882106fdb2",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "operating_income",
+            "fiscal_year": 2024,
+            "value": "69380000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "69f1c0dff0c5bbdc85f69173",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          {
+            "company": "META",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "62360000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "63e925027f8f08653aa823c6",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "23274db260a77a882106fdb2",
+          "69f1c0dff0c5bbdc85f69173",
+          "63e925027f8f08653aa823c6"
+        ]
+      },
+      "origin": "model_output",
+      "id": "1095ab7c1037e465152fa1f0"
+    }
+  ],
+  "excluded": []
+}

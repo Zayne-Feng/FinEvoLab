@@ -1,0 +1,48 @@
+{
+  "run_id": "regression-run-02",
+  "command": "conda run --no-capture-output -n finevolab python -m unittest discover -s tests",
+  "tests": 64,
+  "passed": true,
+  "elapsed_seconds": 8.648,
+  "commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+  "formal_core_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+  "post_experiment_agent_sha256": "0cdc139544efe5eef564fc3cb976be80772e47a86d626aa4ec1654e18059f148",
+  "representative_output": "Ran 64 tests in 8.648s. OK.",
+  "previous_checks": [
+    {
+      "run_id": "regression-run-01",
+      "command": "conda run --no-capture-output -n finevolab python -m unittest discover -s tests",
+      "tests": 62,
+      "passed": true,
+      "elapsed_seconds": 15.469,
+      "commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "core_source_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "representative_output": "Ran 62 tests in 15.469s. OK.",
+      "focused_checks": [
+        "dashboard JavaScript syntax",
+        "three web tests",
+        "three blind review tests"
+      ],
+      "previous_checks": [
+        {
+          "elapsed_seconds": 7.504,
+          "run_id": "experiment-tests",
+          "passed": true,
+          "log_sha256": "1a555b2c0c514945d8be4f77f275e09e7de4bc31101ae7e415174496f41ccc4f",
+          "tests": 40,
+          "command": "conda run --no-capture-output -n finevolab python -m unittest discover -s tests",
+          "worktree_status": [
+            " M finevolab/optimization.py",
+            " M scripts/build_evaluation_set.py",
+            " M scripts/compare_experiments.py",
+            " M tests/test_optimization.py",
+            "?? project_notes/experiments/retrieval-validation-run-02/",
+            "?? project_notes/optimization/gepa-pilot-run-03/",
+            "?? project_notes/run_logs/frozen_blob_audit.json"
+          ],
+          "commit": "0c1e868636512c0feacd809e4d64d8a8d3ca88de"
+        }
+      ]
+    }
+  ]
+}

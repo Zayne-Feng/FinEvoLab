@@ -1,0 +1,36 @@
+{
+  "planned": 60,
+  "attempted": 3,
+  "unattempted": 57,
+  "completed": 0,
+  "successes": 0.0,
+  "success_rate_attempted": 0.0,
+  "execution_status_counts": {
+    "infrastructure_failure": 3
+  },
+  "error_types": {
+    "RateLimitError": 3
+  },
+  "mean_latency_seconds": 99.06233333333333,
+  "known_total_tokens": 0,
+  "unknown_usage_tasks": 3,
+  "cost": null,
+  "categories": {
+    "metric_query": {
+      "attempted": 3,
+      "success_rate": 0.0
+    }
+  },
+  "checks": {
+    "schema": 0.0,
+    "status": 0.0,
+    "numeric": 0.0,
+    "units": 0.0,
+    "periods": 0.0,
+    "citations": 0.0,
+    "formula": 0.0
+  },
+  "run_id": "tools-validation",
+  "status": "interrupted",
+  "stop_reason": "ConnectionError"
+}

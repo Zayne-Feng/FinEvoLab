@@ -1,0 +1,16 @@
+{
+  "left_run": "deepseek-v2-tools-validation",
+  "right_run": "deepseek-v2-rag-validation",
+  "method": "paired_case_cluster_percentile_bootstrap",
+  "seed": 17,
+  "draws": 10000,
+  "case_clusters": 20,
+  "repeats_per_case": 3,
+  "mean_difference": -0.39999999999999997,
+  "confidence_level": 0.95,
+  "interval": [
+    -0.6166666666666666,
+    -0.2
+  ],
+  "repeats_treated_as_independent_cases": false
+}
