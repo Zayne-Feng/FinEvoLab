@@ -1,0 +1,542 @@
+[
+  {
+    "case_id": "msft-2023",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2023",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 0,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 0,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2023",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2023",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 1,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 1,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2023",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2023",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "msft-2024",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2023",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "aapl-2024",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2023",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "googl-2024",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2023",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "amzn-2024",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2023",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 2,
+    "arm": "upstream",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "meta-2024",
+    "repeat": 2,
+    "arm": "current",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  }
+]

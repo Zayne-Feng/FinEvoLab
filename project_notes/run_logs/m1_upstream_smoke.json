@@ -1,0 +1,53 @@
+{
+  "run_id": "m1-local-baseline",
+  "commit": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "python": "3.11.17",
+  "versions": {
+    "openai": "1.109.1",
+    "openai-agents": "0.3.3",
+    "pydantic": "2.14.1",
+    "fastapi": "0.161.1",
+    "reportlab": "5.1.0"
+  },
+  "checks": {
+    "database_tables": [
+      "report_requests",
+      "request_logs",
+      "sessions",
+      "users"
+    ],
+    "/login": {
+      "status": 200,
+      "bytes": 27780
+    },
+    "/static/style.css": {
+      "status": 200,
+      "bytes": 112
+    },
+    "/output/MSFT_Equity_Research_Report.html": {
+      "status": 200,
+      "bytes": 348281
+    },
+    "structured_schema": true,
+    "run_config_model": "local-schema-check",
+    "upstream_model_settings_model_supported": false,
+    "LICENSE": "bbcb4226500b503737713f0c9a9da17efce56fa6989b9f0538071dcb60826af5",
+    "NOTICE": "d1da20e9e1e8a0f3189665c4f21cf35f0eba1a8a1432f95a734db0640e289346",
+    "TRADEMARK_POLICY.md": "28d544a54523e7119a7e4e29e17a2dd532e2c611b8f1991c591fb460dafc81f6",
+    "sample_pdf_files": [
+      {
+        "name": "Test_Report_AAPL-160306.pdf",
+        "bytes": 853083,
+        "sha256": "2713f228386c561532f5a05c77d60ffa796dcf47e8709c44171e25031b34e729"
+      }
+    ]
+  },
+  "working_diff_sha256": "bab0b646befcbc3e3a8a95c28d23aa20e6d622a6af81a030e11825ad81eb916e",
+  "requirements_sha256": "54de33f880cacd6250d1fe8376c9770148a9a1146e02d99f734a8c5cd7a3b99b",
+  "source_files_sha256": {
+    "scripts/verify_upstream.py": "4614e7cac95fe147cc5b9f6bdcd52dc74b1c08c9574dda9179a236793dadde89",
+    "tests/test_upstream_compatibility.py": "f3df8e69146d4529d6c7e4cec7aa481425ba3412b28274405b9623daf1ca24b5",
+    "finrobot_equity/core/src/modules/equity_agents/agent_manager.py": "2debce645b0ef6fb5ab8d202d2ccc6bbd29c235346fc3542607c2b729e6c74b2",
+    "finrobot_equity/core/tests/test_generate_report.py": "463077209134ba0c8703a4b604533bb9dbfac6d882aa1c18e5ef837151ad5c8f"
+  }
+}

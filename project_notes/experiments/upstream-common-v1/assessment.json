@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "groups": {
+    "upstream": {
+      "attempts": 30,
+      "mechanical_successes": 30,
+      "strict_successes": 30,
+      "strict_rate": 1,
+      "primary_only_successes": 30,
+      "unique_questions": 10,
+      "all_repeats_pass_questions": 10,
+      "all_repeats_pass_wilson_95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "requests": 30,
+      "tokens": 33194,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.831266666666667,
+      "repairs": 0
+    },
+    "current": {
+      "attempts": 30,
+      "mechanical_successes": 30,
+      "strict_successes": 30,
+      "strict_rate": 1,
+      "primary_only_successes": 30,
+      "unique_questions": 10,
+      "all_repeats_pass_questions": 10,
+      "all_repeats_pass_wilson_95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "requests": 30,
+      "tokens": 34992,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 2.4926666666666666,
+      "repairs": 0
+    }
+  },
+  "comparisons": {
+    "current_vs_upstream": {
+      "pairs": 30,
+      "unique_cases": 10,
+      "wins": 0,
+      "losses": 0,
+      "ties": 30,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains"
+    }
+  },
+  "tasks_sha256": "6d00ea54aac17ad7ea8559e705faf19a62cec7f82a0d54c3635725055cdf14b5",
+  "review": null,
+  "review_summary_sha256": null,
+  "failures": [],
+  "repeated_calls_are_not_independent_questions": true
+}
