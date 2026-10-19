@@ -1,0 +1,121 @@
+{
+  "groups": {
+    "baseline": {
+      "answers": 24,
+      "semantic_successes": 7,
+      "grounded_successes": 7,
+      "claims": 30,
+      "supported_claims": 30,
+      "relevance_mean": 0.7083333333333334,
+      "interpretation_mean": 0.5833333333333334
+    },
+    "improved": {
+      "answers": 24,
+      "semantic_successes": 21,
+      "grounded_successes": 21,
+      "claims": 73,
+      "supported_claims": 73,
+      "relevance_mean": 1.875,
+      "interpretation_mean": 1.625
+    },
+    "no_expansion": {
+      "answers": 24,
+      "semantic_successes": 17,
+      "grounded_successes": 17,
+      "claims": 60,
+      "supported_claims": 60,
+      "relevance_mean": 1.5833333333333333,
+      "interpretation_mean": 1.2083333333333333
+    },
+    "no_priority": {
+      "answers": 24,
+      "semantic_successes": 20,
+      "grounded_successes": 20,
+      "claims": 69,
+      "supported_claims": 69,
+      "relevance_mean": 1.8333333333333333,
+      "interpretation_mean": 1.5
+    },
+    "none": {
+      "answers": 24,
+      "semantic_successes": 0,
+      "grounded_successes": 0,
+      "claims": 0,
+      "supported_claims": 0,
+      "relevance_mean": 0.0,
+      "interpretation_mean": 0.0
+    }
+  },
+  "control_errors": {
+    "A": 0,
+    "B": 0
+  },
+  "reviewed_repeat_zero": 48,
+  "rating_disagreements": [
+    "c2fbf61568478791fde1",
+    "037e9c4a181ab76fb3c9",
+    "89621a924a74f0f19b9b",
+    "49b21e08b2d836a00008",
+    "9b0904ed640192238179",
+    "9dd0c2536b7042484932",
+    "control-0"
+  ],
+  "real_requests": 122,
+  "uncommitted_or_invalid_response_attempts": 0,
+  "unknown_usage_requests": 0,
+  "known_tokens": 230907,
+  "primary_reviewer_prespecified": "A",
+  "reviewer_B_role": "repeat_zero_sensitivity_not_best_of_two",
+  "repeat_zero_sensitivity": {
+    "baseline": {
+      "A": {
+        "answers": 8,
+        "grounded_successes": 3
+      },
+      "B": {
+        "answers": 8,
+        "grounded_successes": 3
+      }
+    },
+    "improved": {
+      "A": {
+        "answers": 8,
+        "grounded_successes": 7
+      },
+      "B": {
+        "answers": 8,
+        "grounded_successes": 7
+      }
+    },
+    "no_expansion": {
+      "A": {
+        "answers": 8,
+        "grounded_successes": 5
+      },
+      "B": {
+        "answers": 8,
+        "grounded_successes": 6
+      }
+    },
+    "no_priority": {
+      "A": {
+        "answers": 8,
+        "grounded_successes": 7
+      },
+      "B": {
+        "answers": 8,
+        "grounded_successes": 6
+      }
+    },
+    "none": {
+      "A": {
+        "answers": 8,
+        "grounded_successes": 0
+      },
+      "B": {
+        "answers": 8,
+        "grounded_successes": 0
+      }
+    }
+  }
+}

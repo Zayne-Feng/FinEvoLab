@@ -1,0 +1,62 @@
+{
+  "groups": {
+    "baseline": {
+      "attempts": 1,
+      "successes": 0.0,
+      "success_rate": 0.0,
+      "mean_seconds": 2.9060000000026776,
+      "known_tokens": 831,
+      "model_requests": 1,
+      "errors": {},
+      "failed_checks": {
+        "nonempty_claims": 1
+      }
+    },
+    "improved": {
+      "attempts": 1,
+      "successes": 1.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.5930000000080327,
+      "known_tokens": 1015,
+      "model_requests": 1,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "no_expansion": {
+      "attempts": 1,
+      "successes": 1.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.0,
+      "known_tokens": 1029,
+      "model_requests": 1,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "no_priority": {
+      "attempts": 1,
+      "successes": 1.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.485000000000582,
+      "known_tokens": 1084,
+      "model_requests": 1,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "none": {
+      "attempts": 1,
+      "successes": 0.0,
+      "success_rate": 0.0,
+      "mean_seconds": 2.5780000000086147,
+      "known_tokens": 401,
+      "model_requests": 1,
+      "errors": {},
+      "failed_checks": {
+        "nonempty_claims": 1
+      }
+    }
+  },
+  "planned": 5,
+  "attempted": 5,
+  "shared_plan_calls": 1,
+  "shared_plan_tokens": 881
+}

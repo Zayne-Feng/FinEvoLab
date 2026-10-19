@@ -1,0 +1,30 @@
+{
+  "none:False": {
+    "attempts": 3,
+    "successes": 3.0,
+    "analysis_executions": 3,
+    "real_requests": 3,
+    "real_tokens": 2606
+  },
+  "none:True": {
+    "attempts": 3,
+    "successes": 3.0,
+    "analysis_executions": 3,
+    "real_requests": 3,
+    "real_tokens": 2606
+  },
+  "report_connection:False": {
+    "attempts": 3,
+    "successes": 3.0,
+    "analysis_executions": 6,
+    "real_requests": 6,
+    "real_tokens": 5212
+  },
+  "report_connection:True": {
+    "attempts": 3,
+    "successes": 3.0,
+    "analysis_executions": 3,
+    "real_requests": 3,
+    "real_tokens": 2606
+  }
+}

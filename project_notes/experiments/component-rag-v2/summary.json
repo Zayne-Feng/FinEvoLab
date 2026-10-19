@@ -1,0 +1,64 @@
+{
+  "groups": {
+    "baseline": {
+      "attempts": 24,
+      "successes": 10.0,
+      "success_rate": 0.4166666666666667,
+      "mean_seconds": 3.1901250000015957,
+      "known_tokens": 30248,
+      "model_requests": 24,
+      "errors": {},
+      "failed_checks": {
+        "nonempty_claims": 14
+      }
+    },
+    "improved": {
+      "attempts": 24,
+      "successes": 24.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.652958333334027,
+      "known_tokens": 35084,
+      "model_requests": 24,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "no_expansion": {
+      "attempts": 24,
+      "successes": 21.0,
+      "success_rate": 0.875,
+      "mean_seconds": 3.6419166666679907,
+      "known_tokens": 33052,
+      "model_requests": 24,
+      "errors": {},
+      "failed_checks": {
+        "nonempty_claims": 3
+      }
+    },
+    "no_priority": {
+      "attempts": 24,
+      "successes": 24.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.8151249999991705,
+      "known_tokens": 37351,
+      "model_requests": 24,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "none": {
+      "attempts": 24,
+      "successes": 0.0,
+      "success_rate": 0.0,
+      "mean_seconds": 2.623750000000655,
+      "known_tokens": 10509,
+      "model_requests": 24,
+      "errors": {},
+      "failed_checks": {
+        "nonempty_claims": 24
+      }
+    }
+  },
+  "planned": 120,
+  "attempted": 120,
+  "shared_plan_calls": 24,
+  "shared_plan_tokens": 21165
+}

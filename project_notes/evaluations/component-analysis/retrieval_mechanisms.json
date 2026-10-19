@@ -1,0 +1,1092 @@
+[
+  {
+    "case_id": "920e6fedb7221e14bbe8",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:244d63c7101fce0e79dfbd10"
+    ],
+    "counterparts": {
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 4,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "bfe860686bd26455c74e",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:7b5ef33d9432df758640ed64",
+      "passage:e87c5648257919c4c8a369db",
+      "passage:f765ded04596e08058332633"
+    ],
+    "counterparts": {
+      "no_expansion": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "08fdaa1390cceed2bef0",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:3cf4b58827431786f1689fe5",
+      "passage:8dc7827f3ae715d31736c232",
+      "passage:e2756f29838155295a20e52e"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "8a422c9038b431c13248",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:6a6301b8cfbe6168467d5a21",
+      "passage:9326eb5b9c0b9193cc07ec6b",
+      "passage:a0b0b351fb171c10d466d3ed"
+    ],
+    "counterparts": {
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "ef2c4f8d02d4c41c62e8",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:6af40a068be8999ab17e5449"
+    ],
+    "counterparts": {
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "155b372474f2c2b4ca76",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:c484c9fcdaa2ac8e2786f154",
+      "passage:e797312cddc9eb5f7eac5a6e",
+      "passage:ee1702a35a25b89cd05878a5"
+    ],
+    "counterparts": {
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "02ed5e8dfc4654490797",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:02928894d536bbd8d535921e",
+      "passage:3e2b0190078271eb011bbcec",
+      "passage:6717849d772dbcebbc7875b0"
+    ],
+    "counterparts": {
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "9aca44bb9e6cd89f4e80",
+    "repeat": 0,
+    "improved_used_passages": [
+      "passage:a48bbe5b6321011568fea307",
+      "passage:c147ab198ea526fbc6835b60",
+      "passage:de98fe0a06783017966f3ef4"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "920e6fedb7221e14bbe8",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:244d63c7101fce0e79dfbd10"
+    ],
+    "counterparts": {
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 4,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "bfe860686bd26455c74e",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:7b5ef33d9432df758640ed64",
+      "passage:e87c5648257919c4c8a369db",
+      "passage:f765ded04596e08058332633"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "08fdaa1390cceed2bef0",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:3cf4b58827431786f1689fe5",
+      "passage:8dc7827f3ae715d31736c232",
+      "passage:e2756f29838155295a20e52e"
+    ],
+    "counterparts": {
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "8a422c9038b431c13248",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:48d1d3e2b038c7c4cea5af7b",
+      "passage:9326eb5b9c0b9193cc07ec6b",
+      "passage:a0b0b351fb171c10d466d3ed"
+    ],
+    "counterparts": {
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "ef2c4f8d02d4c41c62e8",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:6af40a068be8999ab17e5449"
+    ],
+    "counterparts": {
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "155b372474f2c2b4ca76",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:c484c9fcdaa2ac8e2786f154",
+      "passage:e797312cddc9eb5f7eac5a6e",
+      "passage:ee1702a35a25b89cd05878a5"
+    ],
+    "counterparts": {
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "02ed5e8dfc4654490797",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:02928894d536bbd8d535921e",
+      "passage:3e2b0190078271eb011bbcec",
+      "passage:6717849d772dbcebbc7875b0"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "9aca44bb9e6cd89f4e80",
+    "repeat": 1,
+    "improved_used_passages": [
+      "passage:a48bbe5b6321011568fea307",
+      "passage:c147ab198ea526fbc6835b60",
+      "passage:de98fe0a06783017966f3ef4"
+    ],
+    "counterparts": {
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "920e6fedb7221e14bbe8",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:244d63c7101fce0e79dfbd10"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 4,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "bfe860686bd26455c74e",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:7b5ef33d9432df758640ed64",
+      "passage:e87c5648257919c4c8a369db",
+      "passage:f765ded04596e08058332633"
+    ],
+    "counterparts": {
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 2,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "08fdaa1390cceed2bef0",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:3cf4b58827431786f1689fe5",
+      "passage:8dc7827f3ae715d31736c232",
+      "passage:e2756f29838155295a20e52e"
+    ],
+    "counterparts": {
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "8a422c9038b431c13248",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:6a6301b8cfbe6168467d5a21",
+      "passage:9326eb5b9c0b9193cc07ec6b"
+    ],
+    "counterparts": {
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 2
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 2
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 2
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 2
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 2
+      }
+    }
+  },
+  {
+    "case_id": "ef2c4f8d02d4c41c62e8",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:6af40a068be8999ab17e5449"
+    ],
+    "counterparts": {
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 1
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 1
+      }
+    }
+  },
+  {
+    "case_id": "155b372474f2c2b4ca76",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:c484c9fcdaa2ac8e2786f154",
+      "passage:e797312cddc9eb5f7eac5a6e",
+      "passage:ee1702a35a25b89cd05878a5"
+    ],
+    "counterparts": {
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 1,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 0.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      }
+    }
+  },
+  {
+    "case_id": "02ed5e8dfc4654490797",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:3e2b0190078271eb011bbcec",
+      "passage:6717849d772dbcebbc7875b0"
+    ],
+    "counterparts": {
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 2
+      },
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 2
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 2
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 2
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 2,
+        "improved_evidence_total": 2
+      }
+    }
+  },
+  {
+    "case_id": "9aca44bb9e6cd89f4e80",
+    "repeat": 2,
+    "improved_used_passages": [
+      "passage:11d69aaa6f1c500390c8031d",
+      "passage:a48bbe5b6321011568fea307",
+      "passage:c147ab198ea526fbc6835b60"
+    ],
+    "counterparts": {
+      "none": {
+        "score": 0.0,
+        "selected_passages": 0,
+        "table_passages": 0,
+        "improved_evidence_present": 0,
+        "improved_evidence_total": 3
+      },
+      "baseline": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_expansion": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 1,
+        "improved_evidence_total": 3
+      },
+      "no_priority": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      },
+      "improved": {
+        "score": 1.0,
+        "selected_passages": 5,
+        "table_passages": 0,
+        "improved_evidence_present": 3,
+        "improved_evidence_total": 3
+      }
+    }
+  }
+]

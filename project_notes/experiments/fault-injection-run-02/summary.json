@@ -1,0 +1,13 @@
+{
+  "run_id": "fault-injection-run-02",
+  "status": "complete",
+  "model_calls": 0,
+  "recovery_trials": 18,
+  "recovery_passed": 18,
+  "rejection_trials": 21,
+  "rejections_passed": 21,
+  "prepare_calls": {
+    "durable": 9,
+    "stateless": 18
+  }
+}

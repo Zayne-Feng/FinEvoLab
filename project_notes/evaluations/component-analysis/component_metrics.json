@@ -1,0 +1,110 @@
+{
+  "numeric": {
+    "model_assembly": {
+      "attempts": 36,
+      "successes": 36.0,
+      "first_pass_successes": 36.0,
+      "repairs": 0,
+      "stage_tokens": 59237,
+      "shared_plan_tokens": 31317,
+      "path_tokens_with_shared_plan": 90554,
+      "stage_requests": 36,
+      "mean_stage_seconds": 3.503472222221818,
+      "unknown_usage": 0,
+      "retrieved_characters": 0
+    },
+    "model_calculation": {
+      "attempts": 36,
+      "successes": 33.0,
+      "first_pass_successes": 33.0,
+      "repairs": 0,
+      "stage_tokens": 59114,
+      "shared_plan_tokens": 31317,
+      "path_tokens_with_shared_plan": 90431,
+      "stage_requests": 36,
+      "mean_stage_seconds": 3.469527777777936,
+      "unknown_usage": 0,
+      "retrieved_characters": 0
+    },
+    "program_assembly": {
+      "attempts": 36,
+      "successes": 36.0,
+      "first_pass_successes": 36.0,
+      "repairs": 0,
+      "stage_tokens": 0,
+      "shared_plan_tokens": 31317,
+      "path_tokens_with_shared_plan": 31317,
+      "stage_requests": 0,
+      "mean_stage_seconds": 0.0,
+      "unknown_usage": 0,
+      "retrieved_characters": 0
+    }
+  },
+  "rag": {
+    "baseline": {
+      "attempts": 24,
+      "successes": 10.0,
+      "first_pass_successes": 10.0,
+      "repairs": 0,
+      "stage_tokens": 30248,
+      "shared_plan_tokens": 21165,
+      "path_tokens_with_shared_plan": 51413,
+      "stage_requests": 24,
+      "mean_stage_seconds": 3.1901250000015957,
+      "unknown_usage": 0,
+      "retrieved_characters": 68364
+    },
+    "improved": {
+      "attempts": 24,
+      "successes": 24.0,
+      "first_pass_successes": 24.0,
+      "repairs": 0,
+      "stage_tokens": 35084,
+      "shared_plan_tokens": 21165,
+      "path_tokens_with_shared_plan": 56249,
+      "stage_requests": 24,
+      "mean_stage_seconds": 3.652958333334027,
+      "unknown_usage": 0,
+      "retrieved_characters": 64044
+    },
+    "no_expansion": {
+      "attempts": 24,
+      "successes": 21.0,
+      "first_pass_successes": 21.0,
+      "repairs": 0,
+      "stage_tokens": 33052,
+      "shared_plan_tokens": 21165,
+      "path_tokens_with_shared_plan": 54217,
+      "stage_requests": 24,
+      "mean_stage_seconds": 3.6419166666679907,
+      "unknown_usage": 0,
+      "retrieved_characters": 68529
+    },
+    "no_priority": {
+      "attempts": 24,
+      "successes": 24.0,
+      "first_pass_successes": 24.0,
+      "repairs": 0,
+      "stage_tokens": 37351,
+      "shared_plan_tokens": 21165,
+      "path_tokens_with_shared_plan": 58516,
+      "stage_requests": 24,
+      "mean_stage_seconds": 3.8151249999991705,
+      "unknown_usage": 0,
+      "retrieved_characters": 70089
+    },
+    "none": {
+      "attempts": 24,
+      "successes": 0.0,
+      "first_pass_successes": 0.0,
+      "repairs": 0,
+      "stage_tokens": 10509,
+      "shared_plan_tokens": 21165,
+      "path_tokens_with_shared_plan": 31674,
+      "stage_requests": 24,
+      "mean_stage_seconds": 2.623750000000655,
+      "unknown_usage": 0,
+      "retrieved_characters": 0
+    }
+  }
+}

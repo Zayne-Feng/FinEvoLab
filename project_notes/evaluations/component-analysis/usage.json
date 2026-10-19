@@ -1,0 +1,47 @@
+{
+  "formal_component_requests": 252,
+  "formal_component_tokens": 317077,
+  "repair_real_requests": 9,
+  "repair_real_tokens": 6625,
+  "checkpoint_real_requests": 15,
+  "checkpoint_real_tokens": 13030,
+  "review_requests": 122,
+  "review_tokens": 230907,
+  "review_unknown_usage_requests": 0,
+  "focus_repair_requests": 6,
+  "focus_repair_tokens": 13648,
+  "focus_review_requests": 12,
+  "focus_review_tokens": 26725,
+  "invoice_cost": null,
+  "synthetic_fault_responses_counted_as_real_requests": false,
+  "formal_total_requests": 416,
+  "formal_total_tokens": 608012,
+  "development_and_superseded_runs": {
+    "component-numeric-dev": {
+      "requests": 12,
+      "tokens": 16465
+    },
+    "component-numeric-dev-v2": {
+      "requests": 12,
+      "tokens": 16717
+    },
+    "component-rag-dev": {
+      "requests": 6,
+      "tokens": 5241
+    },
+    "component-rag-dev-v2": {
+      "requests": 6,
+      "tokens": 5418
+    },
+    "component-rag": {
+      "requests": 144,
+      "tokens": 163035
+    },
+    "superseded_focus_repair_and_review": {
+      "requests": 13,
+      "tokens": 27348
+    }
+  },
+  "all_total_requests": 609,
+  "all_total_tokens": 842236
+}

@@ -1,0 +1,40 @@
+{
+  "groups": {
+    "model_assembly": {
+      "attempts": 4,
+      "successes": 4.0,
+      "success_rate": 1.0,
+      "mean_seconds": 3.42949999999837,
+      "known_tokens": 6632,
+      "model_requests": 4,
+      "errors": {},
+      "failed_checks": {}
+    },
+    "model_calculation": {
+      "attempts": 4,
+      "successes": 2.0,
+      "success_rate": 0.5,
+      "mean_seconds": 3.4879999999975553,
+      "known_tokens": 6624,
+      "model_requests": 4,
+      "errors": {},
+      "failed_checks": {
+        "numeric": 2
+      }
+    },
+    "program_assembly": {
+      "attempts": 4,
+      "successes": 4.0,
+      "success_rate": 1.0,
+      "mean_seconds": 0.0,
+      "known_tokens": 0,
+      "model_requests": 0,
+      "errors": {},
+      "failed_checks": {}
+    }
+  },
+  "planned": 12,
+  "attempted": 12,
+  "shared_plan_calls": 4,
+  "shared_plan_tokens": 3461
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "case_id": "77179f4efcfaf2c96835",
+    "repeat": 0,
+    "arm": "model_calculation",
+    "checks": {
+      "schema": true,
+      "status": true,
+      "numeric": false,
+      "units": true,
+      "periods": true,
+      "citations": true,
+      "formula": true
+    },
+    "actual_growth": "23.62",
+    "expected_growth": "23.62097985834189984523796080",
+    "absolute_error_pp": "0.00097985834189984523796080"
+  },
+  {
+    "case_id": "77179f4efcfaf2c96835",
+    "repeat": 1,
+    "arm": "model_calculation",
+    "checks": {
+      "schema": true,
+      "status": true,
+      "numeric": false,
+      "units": true,
+      "periods": true,
+      "citations": true,
+      "formula": true
+    },
+    "actual_growth": "23.62",
+    "expected_growth": "23.62097985834189984523796080",
+    "absolute_error_pp": "0.00097985834189984523796080"
+  },
+  {
+    "case_id": "77179f4efcfaf2c96835",
+    "repeat": 2,
+    "arm": "model_calculation",
+    "checks": {
+      "schema": true,
+      "status": true,
+      "numeric": false,
+      "units": true,
+      "periods": true,
+      "citations": true,
+      "formula": true
+    },
+    "actual_growth": "23.62",
+    "expected_growth": "23.62097985834189984523796080",
+    "absolute_error_pp": "0.00097985834189984523796080"
+  }
+]

@@ -1,0 +1,417 @@
+{
+  "recovery": [
+    {
+      "repeat": 1,
+      "fault": "process_exit",
+      "mode": "durable",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 4.625
+    },
+    {
+      "repeat": 1,
+      "fault": "process_exit",
+      "mode": "stateless",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 4.422
+    },
+    {
+      "repeat": 1,
+      "fault": "timeout",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 8.906
+    },
+    {
+      "repeat": 1,
+      "fault": "timeout",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 8.062
+    },
+    {
+      "repeat": 1,
+      "fault": "connection",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 5.453
+    },
+    {
+      "repeat": 1,
+      "fault": "connection",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 4.375
+    },
+    {
+      "repeat": 2,
+      "fault": "process_exit",
+      "mode": "durable",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 4.625
+    },
+    {
+      "repeat": 2,
+      "fault": "process_exit",
+      "mode": "stateless",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 4.329
+    },
+    {
+      "repeat": 2,
+      "fault": "timeout",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 7.766
+    },
+    {
+      "repeat": 2,
+      "fault": "timeout",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 7.89
+    },
+    {
+      "repeat": 2,
+      "fault": "connection",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 7.203
+    },
+    {
+      "repeat": 2,
+      "fault": "connection",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 7.609
+    },
+    {
+      "repeat": 3,
+      "fault": "process_exit",
+      "mode": "durable",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 9.109
+    },
+    {
+      "repeat": 3,
+      "fault": "process_exit",
+      "mode": "stateless",
+      "first_exit": 17,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 6.75
+    },
+    {
+      "repeat": 3,
+      "fault": "timeout",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 10.015
+    },
+    {
+      "repeat": 3,
+      "fault": "timeout",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 8.547
+    },
+    {
+      "repeat": 3,
+      "fault": "connection",
+      "mode": "durable",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 1,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 9.609
+    },
+    {
+      "repeat": 3,
+      "fault": "connection",
+      "mode": "stateless",
+      "first_exit": 18,
+      "resume_exit": 0,
+      "passed": true,
+      "phase_calls": {
+        "prepare": 2,
+        "analyze": 2
+      },
+      "stderr": [],
+      "elapsed_seconds": 7.547
+    }
+  ],
+  "rejections": [
+    {
+      "repeat": 1,
+      "scenario": "missing",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "zero_baseline",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "unit_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "period_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "model_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "tool_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 1,
+      "scenario": "version_mismatch",
+      "passed": true
+    },
+    {
+      "repeat": 2,
+      "scenario": "missing",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "zero_baseline",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "unit_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "period_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "model_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "tool_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 2,
+      "scenario": "version_mismatch",
+      "passed": true
+    },
+    {
+      "repeat": 3,
+      "scenario": "missing",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "zero_baseline",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "unit_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "period_conflict",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "ValueError",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "model_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "tool_budget",
+      "expected_rejection": true,
+      "passed": true,
+      "error_type": "BudgetExceeded",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "repeat": 3,
+      "scenario": "version_mismatch",
+      "passed": true
+    }
+  ]
+}

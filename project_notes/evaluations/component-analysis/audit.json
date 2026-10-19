@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "numeric": {
+    "run_id": "component-numeric",
+    "commit": "00eaad671a79eb6bd949729ed1ad8db85c0e649e",
+    "rows": 108,
+    "complete_pairing": true,
+    "shared_plans": 36,
+    "recorded_code_hashes_verified": true,
+    "current_code_differences": [
+      "finevolab/grounded.py"
+    ],
+    "dataset_hash_matches": true,
+    "unknown_plan_usage": 0,
+    "plan_requests": 36,
+    "plan_tokens": 31317,
+    "arm_requests": 72,
+    "arm_tokens": 118351,
+    "execution_errors": {},
+    "numeric_plan_schema_prompt_and_assembly_unchanged": true
+  },
+  "rag": {
+    "run_id": "component-rag-v2",
+    "commit": "85eb646267c7abe22c2eac7bf96d249e316dbf45",
+    "rows": 120,
+    "complete_pairing": true,
+    "shared_plans": 24,
+    "recorded_code_hashes_verified": true,
+    "current_code_differences": [
+      "finevolab/grounded.py"
+    ],
+    "dataset_hash_matches": true,
+    "unknown_plan_usage": 0,
+    "plan_requests": 24,
+    "plan_tokens": 21165,
+    "arm_requests": 120,
+    "arm_tokens": 146244,
+    "execution_errors": {},
+    "pinned_corpus_hashes_match": true,
+    "verified_sources": 22
+  },
+  "analysis_script_sha256": "9e65348adc72a217e04eca06fa593cc17eabe31c6642c2c78ac08fa37e78abe9",
+  "analysis_base_commit": "7890f2c3271b78947768b0d656ee794f048b5cc3",
+  "repair_pairs": 9,
+  "checkpoint_pairs": 6,
+  "legal_unchanged": {
+    "LICENSE": true,
+    "NOTICE": true,
+    "TRADEMARK_POLICY.md": true
+  },
+  "secret_config_ignored": true,
+  "review_control_errors": {
+    "A": 0,
+    "B": 0
+  },
+  "tests": 72,
+  "acceptance_used_for_parameter_selection": false,
+  "acceptance_used_for_scale_defect_audit": true,
+  "superseded_rag_run_retained": "component-rag"
+}

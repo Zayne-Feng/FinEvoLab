@@ -1,0 +1,8 @@
+{
+  "run_id": "fault-injection-run-01",
+  "status": "invalid_fixture",
+  "reason": "The initial 0.1-second timeout did not allow durable checkpoint writes before the intended injected fault.",
+  "aborted_error_type": "FileNotFoundError",
+  "superseded_by": "fault-injection-run-02",
+  "included_in_comparisons": false
+}
