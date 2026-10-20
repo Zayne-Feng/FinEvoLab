@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "groups": {
+    "after": {
+      "attempts": 12,
+      "mechanical_successes": 12,
+      "strict_successes": 11,
+      "strict_rate": 0.9166666666666666,
+      "primary_only_successes": 12,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 3,
+      "all_repeats_pass_wilson_95": [
+        0.30064184258240184,
+        0.9544127391902995
+      ],
+      "requests": 28,
+      "tokens": 52517,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.661416666666667,
+      "repairs": 1
+    }
+  },
+  "comparisons": {},
+  "tasks_sha256": "6f34b42b87a29c7066dd386660a4c66594d395a6d849b08f63149f676c2c8143",
+  "review": "upload-development-review-v4",
+  "review_summary_sha256": "de228aac2203eba04d843df58843cac234ebf2e1150e72a80762869cd3d736c4",
+  "failures": [
+    {
+      "case_id": "7fe7ffde6d2e95bd178f",
+      "repeat": 0,
+      "arm": "after",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "304926258f000d6fa5ef7b7212bba8d6ea3116f50f4e33e1458d241127bb4b8d"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

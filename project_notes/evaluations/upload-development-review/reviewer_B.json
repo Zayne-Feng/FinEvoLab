@@ -1,0 +1,333 @@
+{
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage's table shows Total revenue of 19,409 for the year ended December 1, 2023, with prior years 17,606 and 15,785, matching the claim's figures and fiscal dates."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 1691,
+      "total_tokens": 1772,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 155
+    }
+  },
+  "bbcdd3c8b5a0c531bc28b2820ac5a0e264b818bec142dee7bcf9227dc34290a4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income of 6,741 in FY2024 vs 6,650 in FY2023, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states operating expenses rose $2.00 billion (19%) primarily due to the $1 billion Figma termination fee in fiscal 2024."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The table shows acquisition termination fee of 1,000 in FY2024 with em-dashes for prior years, and higher R&D (3,944 vs 3,473), sales and marketing (5,764 vs 5,351), and G&A (1,529 vs 1,413)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 193,
+      "prompt_tokens": 1730,
+      "total_tokens": 1923,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 194
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The claim of a management guarantee that financial performance will double next year without risks is not supported by the cited passage, which only shows operating income figures for FY2024, FY2023, and FY2022."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 1493,
+      "total_tokens": 1571,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 213
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table in the cited passage lists Total revenue of 19,409 for the year ended December 1, 2023, matching the claim's figures and fiscal date context."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 71,
+      "prompt_tokens": 1691,
+      "total_tokens": 1762,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 155
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote is only an operating income row (6,741 / 6,650 / 6,098) and does not mention any management guarantee, doubling of performance, or absence of risks; the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 83,
+      "prompt_tokens": 1493,
+      "total_tokens": 1576,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 213
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row appears verbatim in the ADBE FY2024 item-8 passage, showing segment revenues (Digital Media 15,864; Digital Experience 5,366; Publishing 275; Total 21,505) in millions of USD."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 2722,
+      "total_tokens": 2809,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 162
+    }
+  },
+  "1b14ee062b843b30f8313497c58a729d1d0ffc56dd422cde47009834efbaba69": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The revenue table shows total revenue of 19,409 in FY2023 versus 17,606 in FY2022, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states Digital Experience revenue increased $471 million primarily due to net new subscription additions, partially offset by foreign currency exchange rate fluctuations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the strengthened U.S. Dollar decreased revenue by approximately $371 million, offset in part by net hedging gains of $41 million, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 161,
+      "prompt_tokens": 1899,
+      "total_tokens": 2060,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 235
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is a verbatim excerpt from the cash flow statement showing net income of $5,428 million for the year ended December 1, 2023, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 72,
+      "prompt_tokens": 1564,
+      "total_tokens": 1636,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 156
+    }
+  },
+  "98fcb11e16d3397980d9c795bcf4f0ccf63360f0db7e7f2e00e1780792272e84": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cash flow reconciliation table shows net income of $5,428 million in FY2023 versus $4,756 million in FY2022, supporting the increase claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate was lower than the 21% statutory rate due to the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased by approximately one percentage point versus fiscal 2022, primarily due to an increased net tax benefit from non-U.S. operations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 178,
+      "prompt_tokens": 1794,
+      "total_tokens": 1972,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1660
+      },
+      "prompt_cache_hit_tokens": 1660,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "7c61c6de4297d195472279e773ff2d771eb7cb015f0df41d58f400b8252ac98b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows ADBE total revenue of $21,505M in fiscal 2024 versus $19,409M in fiscal 2023, an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states strong demand across Digital Media and Digital Experience driven by product roadmap, and continued growth in software-based subscription revenue, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage supports Digital Experience growth driven by subscription revenue growth; the claim's added note about foreign currency/hedging is not in this excerpt, but the core assertion is supported. The FX/hedging portion is not evidenced here, making the combined claim partially unsupported."
+      },
+      {
+        "index": 3,
+        "supported": false,
+        "reason": "The passage explains automotive sales revenue decreased 8% due to lower ASP, mix, and fewer Model 3/Y cash deliveries, partially offset by other models and FSD. It does not state total revenue increased; the claim's 'total revenue increased' is not supported by this excerpt."
+      },
+      {
+        "index": 4,
+        "supported": true,
+        "reason": "The segment table shows energy generation and storage revenues of $10,086M in 2024 versus $6,035M in 2023, an increase."
+      },
+      {
+        "index": 5,
+        "supported": true,
+        "reason": "The passage states automotive leasing revenue decreased $293M or 14%, attributed to lower direct sales-type leasing deliveries from shift to commercial banking partner programs recognizing upfront revenue in automotive sales, and fewer lease buyouts."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 365,
+      "prompt_tokens": 3299,
+      "total_tokens": 3664,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 227
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage only shows operating income figures; it contains no mention of the chief executive's personal investments, and the report certainly does not prove exclusive causation by them."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1496,
+      "total_tokens": 1564,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 216
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage is only an ADBE revenue table showing segment revenue figures; it contains no mention of a chief executive, personal investments, or any cause of changes, so the claim of exclusive causation is unsupported."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 2699,
+      "total_tokens": 2777,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 139
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "seconds": 20.361,
+    "command": "conda run --no-capture-output -n finevolab python -m unittest discover -s tests -q",
+    "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731",
+    "fmp_requests": 0,
+    "passed": 121,
+    "failures": 0,
+    "errors": 0,
+    "python_environment": "finevolab",
+    "run_id": "followup-regression",
+    "source_hashes": {
+        "tests/test_followup_comparison.py": "2839cc948cb2dbce2fb58b973947247515a77284d384dd541a7382676ab2312b",
+        "tests/test_source_workflow.py": "f3c9dbfe0b22b52925cf6256aa0a9debf2180c39df30989c32a99b695cb82912",
+        "finevolab/retrieval.py": "ea53411f61239326343d72bb9c77fbbfbff3289a53bbede847654c82e9dabe2c",
+        "tests/test_evaluation.py": "0f4766f8481bd55026b5d8c221016bb34982839acbeef53fc666f16267582dc0",
+        "tests/test_grounded.py": "a346f9e2632e2714e5dc81a6fb1255960278a417dfa874848011b07b8dda5a77",
+        "finevolab/grounded.py": "45248dda9b100f56b98376446c35d5959ad71ec3c1ca8382e685270f8595fd7d",
+        "finevolab/evaluation.py": "cb980f8223823705c962ef44bbb6ba33aa099d65dc1970e1bab7acf98e1d3d46"
+    }
+}

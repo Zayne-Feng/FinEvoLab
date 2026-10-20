@@ -1,0 +1,1088 @@
+{
+  "15f89787174b692a931db620b39d5965a1aa4098304409b83c34a47007633883": {
+    "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "AMZN's net income increased from fiscal year 2023 to fiscal year 2024, as shown in the consolidated statement of operations.",
+        "chunk_id": "passage:91eabc2c80754de2116ae0a8",
+        "quote": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248"
+      },
+      {
+        "statement": "The company disclosed that its provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in its foreign income deduction.",
+        "chunk_id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "quote": "Our provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:91eabc2c80754de2116ae0a8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=803|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2024 report\n | Year Ended December 31,\n | 2022 |  | 2023 |  | 2024\nBenefit (provision) for income taxes | 3,217 |  |  | ( 7,120 ) |  |  | ( 9,265 ) | \nEquity-method investment activity, net of tax | ( 3 ) |  |  | ( 12 ) |  |  | ( 101 ) | \nNet income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248 | \nBasic earnings per share | $ | ( 0.27 ) |  |  | $ | 2.95 |  |  | $ | 5.66 | \nDiluted earnings per share | $ | ( 0.27 ) |  |  | $ | 2.90 |  |  | $ | 5.53 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,189 |  |  | 10,304 |  |  | 10,473 | \nDiluted | 10,189 |  |  | 10,492 |  |  | 10,721 | ",
+        "locator": "dom-block=803|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=803|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=803|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "text": "AMZN FY2024 report\nOur provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction.",
+        "locator": "dom-block=1359|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "bb042db05be3d13a4d362db40d9118dddac82b8673d6daa6e4ed4a7802cac48b": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased in fiscal year 2023 compared with fiscal year 2022, as shown by the consolidated net income row and its negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      },
+      {
+        "statement": "A disclosed factor affecting profitability was a change in accounting estimate for server and network equipment useful lives, which the report states increased net income in fiscal year 2023.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      },
+      {
+        "statement": "A disclosed tax factor was a higher effective tax rate in fiscal year 2023 than in fiscal year 2022, attributed primarily to a prior-year net income tax benefit and a decrease in stock-based compensation tax benefits.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "1e07db4147b826eb1c1ec758229c8f682e287d9ba0dc361301ff4e689f839622": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased in fiscal year 2023 compared with fiscal year 2022, as shown by the consolidated net income row with a negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      },
+      {
+        "statement": "A disclosed factor affecting net income was a change in accounting estimate for the useful lives of server and network equipment, which increased net income in fiscal year 2023.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      },
+      {
+        "statement": "A disclosed tax factor was an increase in the effective tax rate, attributed primarily to a prior-year net income tax benefit from the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "2eabc47a9e00955ba29c97b663e8c677e43f3aa4f10fd2d6ef2c2e9d881b7ca5": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "GOOGL's consolidated net income increased from the preceding fiscal year to FY2023, as shown in the consolidated results table.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      },
+      {
+        "statement": "A disclosed profit factor is that operating income rose year over year, contributing to the higher net income.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Operating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %"
+      },
+      {
+        "statement": "A disclosed tax factor is that the effective tax rate decreased from 2022 to 2023, reflecting two tax rule changes, particularly the foreign tax credit change, partially offset by other items.",
+        "chunk_id": "passage:2ec42611e9af98157a1ab85e",
+        "quote": "The effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "4bc9125c3bad54fd9f969ebe7193186dfb2a26e103dcb76d548151da3143df89": {
+    "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "AMZN's net income increased from fiscal year 2023 to fiscal year 2024, as shown in the consolidated results table.",
+        "chunk_id": "passage:91eabc2c80754de2116ae0a8",
+        "quote": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248"
+      },
+      {
+        "statement": "The company disclosed that its provision for income taxes in 2024 was higher than in 2023, primarily driven by an increase in pretax income, partially offset by greater excess tax benefits from stock-based compensation and a larger foreign income deduction.",
+        "chunk_id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "quote": "Our provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:91eabc2c80754de2116ae0a8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=803|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2024 report\n | Year Ended December 31,\n | 2022 |  | 2023 |  | 2024\nBenefit (provision) for income taxes | 3,217 |  |  | ( 7,120 ) |  |  | ( 9,265 ) | \nEquity-method investment activity, net of tax | ( 3 ) |  |  | ( 12 ) |  |  | ( 101 ) | \nNet income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248 | \nBasic earnings per share | $ | ( 0.27 ) |  |  | $ | 2.95 |  |  | $ | 5.66 | \nDiluted earnings per share | $ | ( 0.27 ) |  |  | $ | 2.90 |  |  | $ | 5.53 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,189 |  |  | 10,304 |  |  | 10,473 | \nDiluted | 10,189 |  |  | 10,492 |  |  | 10,721 | ",
+        "locator": "dom-block=803|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=803|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=803|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "text": "AMZN FY2024 report\nOur provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction.",
+        "locator": "dom-block=1359|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "2f2eaa1ae4de1d3f8a45bdbd7ca6ad1f787ce9b61fdc9aa2c592b06d9009b306": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased from fiscal year 2022 to fiscal year 2023, as shown by the consolidated net income row with a negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% |"
+      },
+      {
+        "statement": "A disclosed tax factor is that the effective tax rate rose in fiscal year 2023 compared with fiscal year 2022, primarily due to a prior-year net income tax benefit from the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "Our effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      },
+      {
+        "statement": "A disclosed profit factor is a change in accounting estimate for server and network equipment useful lives that increased operating income and net income in fiscal year 2023.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "a5af75196017a68164d57010ca66210b109b6c6e2ef969f355d907d28e8a1604": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased from fiscal year 2022 to fiscal year 2023, as shown by the consolidated net income row with a negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      },
+      {
+        "statement": "A disclosed tax factor is that the effective tax rate rose, primarily due to a prior-year net income tax benefit from the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      },
+      {
+        "statement": "A disclosed profit factor is a change in accounting estimate for server and network equipment useful lives that increased operating income and net income in fiscal year 2023.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "94878a43831752c86d90abb3a1dd3284432e58098a281005bd40ec0a060aec53": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "GOOGL's net income increased from the preceding fiscal year to FY2023, as shown in the consolidated results table.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      },
+      {
+        "statement": "A disclosed profit factor is that the effective tax rate decreased from 2022 to 2023, reflecting two tax rule changes, particularly the foreign tax credits change.",
+        "chunk_id": "passage:2ec42611e9af98157a1ab85e",
+        "quote": "The effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits."
+      },
+      {
+        "statement": "The tax rule changes' effect was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "chunk_id": "passage:2ec42611e9af98157a1ab85e",
+        "quote": "The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "8785894af6dacff4e670375794b41619562fb3682be2fc60ed1cf8cd9af2ba9d": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "GOOGL's net income increased from the preceding fiscal year to FY2023, as shown in the consolidated results table.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      },
+      {
+        "statement": "A disclosed profit factor is that the effective tax rate decreased from 2022 to 2023, reflecting two tax rule changes, particularly the foreign tax credits change.",
+        "chunk_id": "passage:2ec42611e9af98157a1ab85e",
+        "quote": "The effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "f58a598ec9fa194d83eb95b2858a0c6465b48adeac5156554a65a6bf6ba449ca": {
+    "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "AMZN's net income increased from fiscal year 2023 to fiscal year 2024, as shown in the consolidated results table.",
+        "chunk_id": "passage:91eabc2c80754de2116ae0a8",
+        "quote": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248"
+      },
+      {
+        "statement": "The company disclosed that its provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in its foreign income deduction.",
+        "chunk_id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "quote": "Our provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:91eabc2c80754de2116ae0a8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=803|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2024 report\n | Year Ended December 31,\n | 2022 |  | 2023 |  | 2024\nBenefit (provision) for income taxes | 3,217 |  |  | ( 7,120 ) |  |  | ( 9,265 ) | \nEquity-method investment activity, net of tax | ( 3 ) |  |  | ( 12 ) |  |  | ( 101 ) | \nNet income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248 | \nBasic earnings per share | $ | ( 0.27 ) |  |  | $ | 2.95 |  |  | $ | 5.66 | \nDiluted earnings per share | $ | ( 0.27 ) |  |  | $ | 2.90 |  |  | $ | 5.53 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,189 |  |  | 10,304 |  |  | 10,473 | \nDiluted | 10,189 |  |  | 10,492 |  |  | 10,721 | ",
+        "locator": "dom-block=803|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=803|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=803|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "text": "AMZN FY2024 report\nOur provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction.",
+        "locator": "dom-block=1359|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "90864ce239a10acf66aad04314a5a037329b411982a25d5f0e7b9857b36eaa58": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased from the preceding fiscal year, as shown by the consolidated net income row with a negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      },
+      {
+        "statement": "A disclosed tax factor affecting profitability was a higher effective tax rate, attributed primarily to a prior-year net income tax benefit and a decrease in tax benefits relating to stock-based compensation.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      },
+      {
+        "statement": "A disclosed factor that increased net income was a change in the estimated useful lives of server and network equipment.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "4a0e4c392f81421dfb4647ae8627501508423c7d5eb71756ecedc34e5df96312": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income decreased in fiscal year 2023 compared with fiscal year 2022, as shown by the consolidated net income row and its negative percentage change.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      },
+      {
+        "statement": "A disclosed factor affecting profitability was a change in the estimated useful lives of server and network equipment, which the company states increased operating income and net income in fiscal year 2023.",
+        "chunk_id": "passage:ddabfb8bfed30259cda0fa5d",
+        "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share."
+      },
+      {
+        "statement": "A disclosed tax factor was an increase in the effective tax rate, attributed primarily to a prior-year net income tax benefit from the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "chunk_id": "passage:8573bdd43eec8b66da5dbb3c",
+        "quote": "The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "4d7af4b1102f24045664d2ef6ca372dd429e4542fd7b02a31aa02875da10aae2": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "GOOGL's net income increased from the preceding fiscal year to FY2023, as shown in the consolidated results table.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      },
+      {
+        "statement": "A disclosed profit factor is that the effective tax rate decreased from 2022 to 2023, reflecting two tax rule changes, particularly the foreign tax credit change, partially offset by other items.",
+        "chunk_id": "passage:2ec42611e9af98157a1ab85e",
+        "quote": "The effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-0": {
+    "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248",
+        "chunk_id": "passage:91eabc2c80754de2116ae0a8",
+        "quote": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:91eabc2c80754de2116ae0a8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=803|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2024 report\n | Year Ended December 31,\n | 2022 |  | 2023 |  | 2024\nBenefit (provision) for income taxes | 3,217 |  |  | ( 7,120 ) |  |  | ( 9,265 ) | \nEquity-method investment activity, net of tax | ( 3 ) |  |  | ( 12 ) |  |  | ( 101 ) | \nNet income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248 | \nBasic earnings per share | $ | ( 0.27 ) |  |  | $ | 2.95 |  |  | $ | 5.66 | \nDiluted earnings per share | $ | ( 0.27 ) |  |  | $ | 2.90 |  |  | $ | 5.53 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,189 |  |  | 10,304 |  |  | 10,473 | \nDiluted | 10,189 |  |  | 10,492 |  |  | 10,721 | ",
+        "locator": "dom-block=803|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=803|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=803|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "text": "AMZN FY2024 report\nOur provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction.",
+        "locator": "dom-block=1359|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-2": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-4": {
+    "question": "Using only the selected AMZN FY2024 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248",
+        "chunk_id": "passage:91eabc2c80754de2116ae0a8",
+        "quote": "Net income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:91eabc2c80754de2116ae0a8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=803|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2024 report\n | Year Ended December 31,\n | 2022 |  | 2023 |  | 2024\nBenefit (provision) for income taxes | 3,217 |  |  | ( 7,120 ) |  |  | ( 9,265 ) | \nEquity-method investment activity, net of tax | ( 3 ) |  |  | ( 12 ) |  |  | ( 101 ) | \nNet income (loss) | $ | ( 2,722 ) |  |  | $ | 30,425 |  |  | $ | 59,248 | \nBasic earnings per share | $ | ( 0.27 ) |  |  | $ | 2.95 |  |  | $ | 5.66 | \nDiluted earnings per share | $ | ( 0.27 ) |  |  | $ | 2.90 |  |  | $ | 5.53 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,189 |  |  | 10,304 |  |  | 10,473 | \nDiluted | 10,189 |  |  | 10,492 |  |  | 10,721 | ",
+        "locator": "dom-block=803|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=803|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=803|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=803|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ce15c1fb61c7814e4f5c36b0",
+        "text": "AMZN FY2024 report\nOur provision for income taxes in 2024 was higher than in 2023 primarily due to an increase in pretax income, partially offset by an increase in excess tax benefits from stock-based compensation and an increase in our foreign income deduction.",
+        "locator": "dom-block=1359|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-5": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% |"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Using only the selected MSFT FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%",
+        "chunk_id": "passage:8c88d47ff66c1a11de898135",
+        "quote": "Net income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)%"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8573bdd43eec8b66da5dbb3c",
+        "text": "MSFT FY2023 item-7\nOur effective tax rate for fiscal years 2023 and 2022 was 19% and 13%, respectively. The increase in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "dom-block=2553|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8c88d47ff66c1a11de898135",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=1705|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  | \n(In millions, except percentages and per share amounts) |  | 2023 |  |  | 2022 |  |  | Percentage Change | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nRevenue |  | $ | 211,915 |  |  | $ | 198,270 |  |  |  | 7% | \nGross margin |  |  | 146,052 |  |  |  | 135,620 |  |  |  | 8% | \nOperating income |  |  | 88,523 |  |  |  | 83,383 |  |  |  | 6% | \nNet income |  |  | 72,361 |  |  |  | 72,738 |  |  |  | (1)% | \nDiluted earnings per share |  |  | 9.68 |  |  |  | 9.65 |  |  |  | 0% | \n |  |  |  |  |  |  |  |  |  |  |  | \nAdjusted gross margin (non-GAAP) |  |  | 146,204 |  |  |  | 135,620 |  |  |  | 8% | \nAdjusted operating income (non-GAAP) |  |  | 89,694 |  |  |  | 83,383 |  |  |  | 8% | \nAdjusted net income (non-GAAP) |  |  | 73,307 |  |  |  | 69,447 |  |  |  | 6% | \nAdjusted diluted earnings per share (non-GAAP) |  |  | 9.81 |  |  |  | 9.21 |  |  |  | 7% | \n |  |  |  |  |  |  |  |  |  |  |  | ",
+        "locator": "dom-block=1705|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=1705|table-text",
+          "declarations": [
+            {
+              "locator": "dom-block=1705|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2023 2022 Percentage Change Revenue $ 211,915 $ 198,270 7% Gross margin 146,052 135,620 8% Operating income 88,523 83,383 6% Net income 72,361 72,738 (1)% Diluted earnings per share 9.68 9.65 0% Adjusted gross margin (non-GAAP) 146,204 135,620 8% Adjusted operating income (non-GAAP) 89,694 83,383 8% Adjusted net income (non-GAAP) 73,307 69,447 6% Adjusted diluted earnings per share (non-GAAP) 9.81 9.21 7%"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ddabfb8bfed30259cda0fa5d",
+        "text": "MSFT FY2023 item-7\nIn July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate was effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+        "locator": "dom-block=1588|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-7": {
+    "question": "Using only the selected GOOGL FY2023 annual report, give the annual net income amount with currency and fiscal dates. Explain whether net income increased or decreased from the preceding fiscal year and identify one related disclosed profit or tax factor, with exact source passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:292f391b97878cfd7730ae0e",
+        "quote": "Net income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:292f391b97878cfd7730ae0e",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=820. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2022 |  | 2023 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 282,836 |  |  | $ | 307,394 |  |  | $ | 24,558 |  |  | 9 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 126,203 |  |  | $ | 133,332 |  |  | $ | 7,129 |  |  | 6 | %\nOperating expenses |  |  | $ | 81,791 |  |  | $ | 89,769 |  |  | $ | 7,978 |  |  | 10 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 74,842 |  |  | $ | 84,293 |  |  | $ | 9,451 |  |  | 13 | %\nOperating margin |  |  | 26 | % |  | 27 | % |  |  |  | 1 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | (3,514) |  |  | $ | 1,424 |  |  | $ | 4,938 |  |  | NM\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 59,972 |  |  | $ | 73,795 |  |  | $ | 13,823 |  |  | 23 | %\nDiluted EPS |  |  | $ | 4.56 |  |  | $ | 5.80 |  |  | $ | 1.24 |  |  | 27 | %",
+        "locator": "dom-block=822|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=820",
+          "declarations": [
+            {
+              "locator": "dom-block=820",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2ec42611e9af98157a1ab85e",
+        "text": "GOOGL FY2023 item-7\nThe effective tax rate decreased from 2022 to 2023, reflecting the effect of the two tax rule changes described above, particularly the change related to foreign tax credits. The effect of these tax rule changes was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+        "locator": "dom-block=987|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  }
+}

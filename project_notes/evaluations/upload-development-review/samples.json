@@ -1,0 +1,1350 @@
+{
+  "1b14ee062b843b30f8313497c58a729d1d0ffc56dd422cde47009834efbaba69": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's total revenue increased in FY2023 compared to FY2022, as shown in the report's revenue table.",
+        "chunk_id": "passage:7fe4070f8ff6e7a486d92352",
+        "quote": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785"
+      },
+      {
+        "statement": "The report attributes Digital Experience revenue growth primarily to net new subscription additions, partly offset by foreign currency exchange rate fluctuations.",
+        "chunk_id": "passage:c164c6fe6056dae93e8ee33b",
+        "quote": "Revenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations."
+      },
+      {
+        "statement": "The report discloses that a strengthening U.S. Dollar against EMEA and APAC currencies reduced revenue in U.S. Dollar equivalents, partly offset by hedging gains.",
+        "chunk_id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "quote": "During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7fe4070f8ff6e7a486d92352",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1119|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nRevenue: |  |  |  |  | \nSubscription | $ | 18,284 |  |  | $ | 16,388 |  |  | $ | 14,573 | \nProduct | 460 |  |  | 532 |  |  | 555 | \nServices and other | 665 |  |  | 686 |  |  | 657 | \nTotal revenue | 19,409 |  |  | 17,606 |  |  | 15,785 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,822 |  |  | 1,646 |  |  | 1,374 | \nProduct | 29 |  |  | 35 |  |  | 41 | \nServices and other | 503 |  |  | 484 |  |  | 450 | \nTotal cost of revenue | 2,354 |  |  | 2,165 |  |  | 1,865 | \nGross profit | 17,055 |  |  | 15,441 |  |  | 13,920 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,473 |  |  | 2,987 |  |  | 2,540 | \nSales and marketing | 5,351 |  |  | 4,968 |  |  | 4,321 | \nGeneral and administrative | 1,413 |  |  | 1,219 |  |  | 1,085 | \nAmortization of intangibles | 168 |  |  | 169 |  |  | 172 | \nTotal operating expenses | 10,405 |  |  | 9,343 |  |  | 8,118 | \nOperating income | 6,650 |  |  | 6,098 |  |  | 5,802 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 113 ) |  |  | ( 112 ) |  |  | ( 113 ) | \nInvestment gains (losses), net | 16 |  |  | ( 19 ) |  |  | 16 | ",
+        "locator": "dom-block=1119|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1119|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1119|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:c164c6fe6056dae93e8ee33b",
+        "text": "ADBE FY2023 item-7\nRevenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations.",
+        "locator": "dom-block=867|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "text": "ADBE FY2023 item-7\nIncluded in the overall change in revenue for fiscal 2023 as compared to fiscal 2022 were impacts associated with foreign currency which were mitigated in part by our foreign currency hedging program. During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million. During fiscal 2023, the foreign currency impacts to revenue were offset in part by net hedging gains from our cash flow hedging program of $41 million.",
+        "locator": "dom-block=877|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "bbcdd3c8b5a0c531bc28b2820ac5a0e264b818bec142dee7bcf9227dc34290a4": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "ADBE's operating income increased in FY2024 compared with FY2023, as shown in the report's consolidated operating results table.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      },
+      {
+        "statement": "The report discloses that total operating expenses rose in fiscal 2024 versus fiscal 2023, primarily attributed to the Figma termination fee incurred in fiscal 2024.",
+        "chunk_id": "passage:60dd97ad533b9f880bf55c19",
+        "quote": "Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024."
+      },
+      {
+        "statement": "The operating results table shows an acquisition termination fee line item in fiscal 2024 with no comparable amount in the prior two years, alongside higher research and development, sales and marketing, and general and administrative expenses.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Acquisition termination fee | 1,000 |  |  | — |  |  | —"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "98fcb11e16d3397980d9c795bcf4f0ccf63360f0db7e7f2e00e1780792272e84": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 net income, with original units and fiscal dates. Also explain net income changes and disclosed tax or business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's net income increased in fiscal 2023 compared with fiscal 2022, as shown in the cash flow reconciliation table.",
+        "chunk_id": "passage:c5b5a09afc36cb1a9a021c33",
+        "quote": "Net income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822"
+      },
+      {
+        "statement": "ADBE disclosed that its fiscal 2023 effective tax rate was below the U.S. federal statutory rate, driven by the U.S. federal research tax credit and non-U.S. operations, partly offset by state taxes.",
+        "chunk_id": "passage:fcdb5941e900740ea13bffcd",
+        "quote": "Our effective tax rate for fiscal 2023 was lower than the U.S. federal statutory tax rate of 21% primarily due to the tax benefits from the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes."
+      },
+      {
+        "statement": "ADBE disclosed that its effective tax rate decreased versus fiscal 2022, primarily due to an increased net tax benefit from non-U.S. operations.",
+        "chunk_id": "passage:f707a19013da70f588de7474",
+        "quote": "Our effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c5b5a09afc36cb1a9a021c33",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1165|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nDepreciation, amortization and accretion | 872 |  |  | 856 |  |  | 788 | \nStock-based compensation | 1,718 |  |  | 1,440 |  |  | 1,069 | \nReduction of operating lease right-of-use assets | 72 |  |  | 83 |  |  | 73 | \nDeferred income taxes | ( 426 ) |  |  | 328 |  |  | 183 | \nUnrealized losses (gains) on investments, net | ( 10 ) |  |  | 29 |  |  | ( 4 ) | \nOther non-cash items | 3 |  |  | 10 |  |  | 7 | \nChanges in operating assets and liabilities, net of acquired assets and assumed liabilities: |  |  |  |  | \nTrade receivables, net | ( 159 ) |  |  | ( 198 ) |  |  | ( 430 ) | \nPrepaid expenses and other assets | ( 818 ) |  |  | ( 94 ) |  |  | ( 475 ) | \nTrade payables | ( 49 ) |  |  | 66 |  |  | ( 20 ) | \nAccrued expenses and other liabilities | 146 |  |  | 7 |  |  | 162 | \nIncome taxes payable | ( 11 ) |  |  | 19 |  |  | 2 | \nDeferred revenue | 536 |  |  | 536 |  |  | 1,053 | ",
+        "locator": "dom-block=1165|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1165|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1165|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:f707a19013da70f588de7474",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023.",
+        "locator": "dom-block=952|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcdb5941e900740ea13bffcd",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate for fiscal 2023 was lower than the U.S. federal statutory tax rate of 21% primarily due to the tax benefits from the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes.",
+        "locator": "dom-block=953|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "7c61c6de4297d195472279e773ff2d771eb7cb015f0df41d58f400b8252ac98b": {
+    "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's total revenue increased in fiscal 2024 compared with fiscal 2023, as shown in the segment revenue table.",
+        "chunk_id": "passage:bab8cbe6db7f3c8923508a5b",
+        "quote": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505"
+      },
+      {
+        "statement": "ADBE attributes its fiscal 2024 growth to strong demand across Digital Media and Digital Experience offerings, driven by its product roadmap and AI-powered solutions, with continued growth in software-based subscription revenue.",
+        "chunk_id": "passage:803b527c6c980c9c425d1e06",
+        "quote": "For our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap."
+      },
+      {
+        "statement": "ADBE discloses that Digital Experience revenue growth was driven by subscription revenue growth across its offerings, and separately notes foreign currency and hedging impacts on overall revenue.",
+        "chunk_id": "passage:ccc76a11c7b0dd068c53c679",
+        "quote": "Revenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings."
+      },
+      {
+        "statement": "TSLA's total revenue increased in FY2024 compared with FY2023, per the source-bound metric observations; the report prose attributes the automotive sales revenue decline to lower average selling price from price reductions and financing options, mix, and lower Model 3/Model Y cash deliveries, partially offset by higher deliveries of other models and FSD revenue recognition.",
+        "chunk_id": "passage:35ac4be20eba675e0edf0c3c",
+        "quote": "Automotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix."
+      },
+      {
+        "statement": "The report discloses that the energy generation and storage segment's revenue rose in FY2024 versus FY2023, as shown in the segment table.",
+        "chunk_id": "passage:f573f70ecb9ce6b01ebf267d",
+        "quote": "Energy generation and storage segment"
+      },
+      {
+        "statement": "Automotive leasing revenue declined in FY2024 versus FY2023, which the report attributes to lower direct sales-type leasing deliveries as leasing shifted toward commercial banking partner programs recognizing upfront revenue in automotive sales, plus fewer lease buyouts.",
+        "chunk_id": "passage:bb3df635fb93e539e1234e5f",
+        "quote": "Automotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:35ac4be20eba675e0edf0c3c",
+        "text": "TSLA FY2024 item-7\nAutomotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. The decreases were partially offset by an increase of approximately 19,000 deliveries of other models primarily due to our production ramp of Cybertruck. Additionally, we recognized $596 million of FSD (Supervised) revenue due to release of certain features in 2024.",
+        "locator": "dom-block=777|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:803b527c6c980c9c425d1e06",
+        "text": "ADBE FY2024 item-7\nFor our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap. As we execute on our long-term growth initiatives, with focus on delivering product innovation and driving adoption and usage of our AI-powered solutions, we have continued to experience growth in software-based subscription revenue across our portfolio of offerings.",
+        "locator": "dom-block=801|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bab8cbe6db7f3c8923508a5b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1372|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n(dollars in millions) | Digital Media |  | Digital Experience |  | Publishing and Advertising |  | Total\nFiscal 2024 |  |  |  |  |  |  | \nRevenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505 | \nCost of revenue | 680 |  |  | 1,589 |  |  | 89 |  |  | 2,358 | \nGross profit | $ | 15,184 |  |  | $ | 3,777 |  |  | $ | 186 |  |  | $ | 19,147 | \nGross profit as a percentage of revenue | 96 | % |  | 70 | % |  | 68 | % |  | 89 | %\nFiscal 2023 |  |  |  |  |  |  | \nRevenue | $ | 14,216 |  |  | $ | 4,893 |  |  | $ | 300 |  |  | $ | 19,409 | \nCost of revenue | 665 |  |  | 1,603 |  |  | 86 |  |  | 2,354 | \nGross profit | $ | 13,551 |  |  | $ | 3,290 |  |  | $ | 214 |  |  | $ | 17,055 | \nGross profit as a percentage of revenue | 95 | % |  | 67 | % |  | 71 | % |  | 88 | %\nFiscal 2022 |  |  |  |  |  |  | \nRevenue | $ | 12,842 |  |  | $ | 4,422 |  |  | $ | 342 |  |  | $ | 17,606 | \nCost of revenue | 561 |  |  | 1,502 |  |  | 102 |  |  | 2,165 | \nGross profit | $ | 12,281 |  |  | $ | 2,920 |  |  | $ | 240 |  |  | $ | 15,441 | \nGross profit as a percentage of revenue | 96 | % |  | 66 | % |  | 70 | % |  | 88 | %",
+        "locator": "dom-block=1372|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1372|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1372|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:bb3df635fb93e539e1234e5f",
+        "text": "TSLA FY2024 item-7\nAutomotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts.",
+        "locator": "dom-block=784|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ccc76a11c7b0dd068c53c679",
+        "text": "ADBE FY2024 item-7\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.",
+        "locator": "dom-block=884|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f573f70ecb9ce6b01ebf267d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1680|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  | Year Ended December 31,\n |  | 2024 |  | 2023 |  | 2022\nAutomotive segment |  |  |  |  |  | \nRevenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553 | \nCost of revenues (1) |  | $ | 72,794 |  |  | $ | 74,219 |  |  | $ | 56,988 | \nGross profit |  | $ | 14,810 |  |  | $ | 16,519 |  |  | $ | 20,565 | \nEnergy generation and storage segment |  |  |  |  |  | \nRevenues |  | $ | 10,086 |  |  | $ | 6,035 |  |  | $ | 3,909 | \nCost of revenues (2) |  | $ | 7,446 |  |  | $ | 4,894 |  |  | $ | 3,621 | \nGross profit |  | $ | 2,640 |  |  | $ | 1,141 |  |  | $ | 288 | ",
+        "locator": "dom-block=1680|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1680|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1680|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "5f494dc607e29841809f6b4b45b29d8d4d63e44ed8d246c4b8d6afcf5be34e03": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's total revenue increased in FY2023 compared to FY2022, as shown in the report's revenue table.",
+        "chunk_id": "passage:7fe4070f8ff6e7a486d92352",
+        "quote": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785"
+      },
+      {
+        "statement": "The report attributes Digital Experience revenue growth primarily to net new subscription additions, partly offset by foreign currency exchange rate fluctuations.",
+        "chunk_id": "passage:c164c6fe6056dae93e8ee33b",
+        "quote": "Revenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations."
+      },
+      {
+        "statement": "The report discloses that a strengthening U.S. Dollar against EMEA and APAC currencies decreased revenue in U.S. Dollar equivalents, partly offset by net hedging gains.",
+        "chunk_id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "quote": "During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7fe4070f8ff6e7a486d92352",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1119|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nRevenue: |  |  |  |  | \nSubscription | $ | 18,284 |  |  | $ | 16,388 |  |  | $ | 14,573 | \nProduct | 460 |  |  | 532 |  |  | 555 | \nServices and other | 665 |  |  | 686 |  |  | 657 | \nTotal revenue | 19,409 |  |  | 17,606 |  |  | 15,785 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,822 |  |  | 1,646 |  |  | 1,374 | \nProduct | 29 |  |  | 35 |  |  | 41 | \nServices and other | 503 |  |  | 484 |  |  | 450 | \nTotal cost of revenue | 2,354 |  |  | 2,165 |  |  | 1,865 | \nGross profit | 17,055 |  |  | 15,441 |  |  | 13,920 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,473 |  |  | 2,987 |  |  | 2,540 | \nSales and marketing | 5,351 |  |  | 4,968 |  |  | 4,321 | \nGeneral and administrative | 1,413 |  |  | 1,219 |  |  | 1,085 | \nAmortization of intangibles | 168 |  |  | 169 |  |  | 172 | \nTotal operating expenses | 10,405 |  |  | 9,343 |  |  | 8,118 | \nOperating income | 6,650 |  |  | 6,098 |  |  | 5,802 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 113 ) |  |  | ( 112 ) |  |  | ( 113 ) | \nInvestment gains (losses), net | 16 |  |  | ( 19 ) |  |  | 16 | ",
+        "locator": "dom-block=1119|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1119|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1119|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:c164c6fe6056dae93e8ee33b",
+        "text": "ADBE FY2023 item-7\nRevenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations.",
+        "locator": "dom-block=867|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "text": "ADBE FY2023 item-7\nIncluded in the overall change in revenue for fiscal 2023 as compared to fiscal 2022 were impacts associated with foreign currency which were mitigated in part by our foreign currency hedging program. During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million. During fiscal 2023, the foreign currency impacts to revenue were offset in part by net hedging gains from our cash flow hedging program of $41 million.",
+        "locator": "dom-block=877|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "983990b8ba8597b36ce407b041a02e284a36eeaee447f2f9d975a9b9e3f02f28": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "ADBE's operating income increased in FY2024 compared with FY2023, as shown in the consolidated statement of operations.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      },
+      {
+        "statement": "The report discloses that total operating expenses rose in fiscal 2024, primarily attributed to the Figma termination fee incurred that year.",
+        "chunk_id": "passage:60dd97ad533b9f880bf55c19",
+        "quote": "Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024."
+      },
+      {
+        "statement": "The statement of operations separately discloses an acquisition termination fee line item within operating expenses for fiscal 2024, with none in the prior two years.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Acquisition termination fee | 1,000 |  |  | — |  |  | —"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "7350d88b77ea5c3f539de79c4bc9cf7da0abafb1c2c9bb294bffd0a5bcc91aa0": {
+    "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's total revenue increased in fiscal 2024 compared with fiscal 2023, as shown in the segment revenue table.",
+        "chunk_id": "passage:bab8cbe6db7f3c8923508a5b",
+        "quote": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505"
+      },
+      {
+        "statement": "ADBE attributes its fiscal 2024 growth to strong demand across Digital Media and Digital Experience offerings, driven by its product roadmap and AI-powered solutions, which supported growth in software-based subscription revenue.",
+        "chunk_id": "passage:803b527c6c980c9c425d1e06",
+        "quote": "For our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap."
+      },
+      {
+        "statement": "ADBE discloses that Digital Experience revenue growth was driven by subscription revenue growth across its offerings, and that foreign currency and hedging impacts also affected overall revenue.",
+        "chunk_id": "passage:ccc76a11c7b0dd068c53c679",
+        "quote": "Revenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings."
+      },
+      {
+        "statement": "TSLA's total revenue increased in FY2024 versus FY2023, with the automotive segment declining while the energy generation and storage segment grew.",
+        "chunk_id": "passage:f573f70ecb9ce6b01ebf267d",
+        "quote": "Revenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553"
+      },
+      {
+        "statement": "TSLA disclosed that automotive sales revenue fell, driven primarily by lower average selling price from price reductions and attractive financing options as well as mix, partly offset by higher deliveries of other models including Cybertruck and recognition of FSD revenue.",
+        "chunk_id": "passage:35ac4be20eba675e0edf0c3c",
+        "quote": "Automotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix."
+      },
+      {
+        "statement": "TSLA disclosed that automotive leasing revenue declined, attributed to lower direct sales-type leasing deliveries as it shifted toward leasing through commercial banking partner programs and a decrease in lease buyouts.",
+        "chunk_id": "passage:bb3df635fb93e539e1234e5f",
+        "quote": "Automotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:35ac4be20eba675e0edf0c3c",
+        "text": "TSLA FY2024 item-7\nAutomotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. The decreases were partially offset by an increase of approximately 19,000 deliveries of other models primarily due to our production ramp of Cybertruck. Additionally, we recognized $596 million of FSD (Supervised) revenue due to release of certain features in 2024.",
+        "locator": "dom-block=777|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:803b527c6c980c9c425d1e06",
+        "text": "ADBE FY2024 item-7\nFor our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap. As we execute on our long-term growth initiatives, with focus on delivering product innovation and driving adoption and usage of our AI-powered solutions, we have continued to experience growth in software-based subscription revenue across our portfolio of offerings.",
+        "locator": "dom-block=801|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bab8cbe6db7f3c8923508a5b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1372|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n(dollars in millions) | Digital Media |  | Digital Experience |  | Publishing and Advertising |  | Total\nFiscal 2024 |  |  |  |  |  |  | \nRevenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505 | \nCost of revenue | 680 |  |  | 1,589 |  |  | 89 |  |  | 2,358 | \nGross profit | $ | 15,184 |  |  | $ | 3,777 |  |  | $ | 186 |  |  | $ | 19,147 | \nGross profit as a percentage of revenue | 96 | % |  | 70 | % |  | 68 | % |  | 89 | %\nFiscal 2023 |  |  |  |  |  |  | \nRevenue | $ | 14,216 |  |  | $ | 4,893 |  |  | $ | 300 |  |  | $ | 19,409 | \nCost of revenue | 665 |  |  | 1,603 |  |  | 86 |  |  | 2,354 | \nGross profit | $ | 13,551 |  |  | $ | 3,290 |  |  | $ | 214 |  |  | $ | 17,055 | \nGross profit as a percentage of revenue | 95 | % |  | 67 | % |  | 71 | % |  | 88 | %\nFiscal 2022 |  |  |  |  |  |  | \nRevenue | $ | 12,842 |  |  | $ | 4,422 |  |  | $ | 342 |  |  | $ | 17,606 | \nCost of revenue | 561 |  |  | 1,502 |  |  | 102 |  |  | 2,165 | \nGross profit | $ | 12,281 |  |  | $ | 2,920 |  |  | $ | 240 |  |  | $ | 15,441 | \nGross profit as a percentage of revenue | 96 | % |  | 66 | % |  | 70 | % |  | 88 | %",
+        "locator": "dom-block=1372|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1372|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1372|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:bb3df635fb93e539e1234e5f",
+        "text": "TSLA FY2024 item-7\nAutomotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts.",
+        "locator": "dom-block=784|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ccc76a11c7b0dd068c53c679",
+        "text": "ADBE FY2024 item-7\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.",
+        "locator": "dom-block=884|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f573f70ecb9ce6b01ebf267d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1680|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  | Year Ended December 31,\n |  | 2024 |  | 2023 |  | 2022\nAutomotive segment |  |  |  |  |  | \nRevenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553 | \nCost of revenues (1) |  | $ | 72,794 |  |  | $ | 74,219 |  |  | $ | 56,988 | \nGross profit |  | $ | 14,810 |  |  | $ | 16,519 |  |  | $ | 20,565 | \nEnergy generation and storage segment |  |  |  |  |  | \nRevenues |  | $ | 10,086 |  |  | $ | 6,035 |  |  | $ | 3,909 | \nCost of revenues (2) |  | $ | 7,446 |  |  | $ | 4,894 |  |  | $ | 3,621 | \nGross profit |  | $ | 2,640 |  |  | $ | 1,141 |  |  | $ | 288 | ",
+        "locator": "dom-block=1680|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1680|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1680|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "7ee198556c17eec0d73aa991839712ea416176bc3d0f8ae52d856e2873cac6c5": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "ADBE's operating income increased in FY2024 compared with FY2023, as shown in the report's consolidated operating results table.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      },
+      {
+        "statement": "The report discloses that total operating expenses rose in fiscal 2024, primarily attributed to the Figma termination fee incurred that year.",
+        "chunk_id": "passage:60dd97ad533b9f880bf55c19",
+        "quote": "Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024."
+      },
+      {
+        "statement": "The operating results table separately lists an acquisition termination fee as an operating expense line item in fiscal 2024, with none in the prior two years.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Acquisition termination fee | 1,000 |  |  | — |  |  | —"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "bebee7e98e1f2a4a13e47141f3abe51bef3544afa1b3982b51746f84afd29607": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 net income, with original units and fiscal dates. Also explain net income changes and disclosed tax or business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's net income increased in FY2023 compared with FY2022, as shown in the cash flow reconciliation table.",
+        "chunk_id": "passage:c5b5a09afc36cb1a9a021c33",
+        "quote": "Net income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822"
+      },
+      {
+        "statement": "ADBE disclosed that its FY2023 effective tax rate was below the U.S. federal statutory rate, driven by the U.S. federal research tax credit and non-U.S. operations, partly offset by state taxes.",
+        "chunk_id": "passage:fcdb5941e900740ea13bffcd",
+        "quote": "Our effective tax rate for fiscal 2023 was lower than the U.S. federal statutory tax rate of 21% primarily due to the tax benefits from the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes."
+      },
+      {
+        "statement": "ADBE disclosed that its effective tax rate decreased versus fiscal 2022, primarily due to an increased net tax benefit from non-U.S. operations.",
+        "chunk_id": "passage:f707a19013da70f588de7474",
+        "quote": "Our effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c5b5a09afc36cb1a9a021c33",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1165|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nDepreciation, amortization and accretion | 872 |  |  | 856 |  |  | 788 | \nStock-based compensation | 1,718 |  |  | 1,440 |  |  | 1,069 | \nReduction of operating lease right-of-use assets | 72 |  |  | 83 |  |  | 73 | \nDeferred income taxes | ( 426 ) |  |  | 328 |  |  | 183 | \nUnrealized losses (gains) on investments, net | ( 10 ) |  |  | 29 |  |  | ( 4 ) | \nOther non-cash items | 3 |  |  | 10 |  |  | 7 | \nChanges in operating assets and liabilities, net of acquired assets and assumed liabilities: |  |  |  |  | \nTrade receivables, net | ( 159 ) |  |  | ( 198 ) |  |  | ( 430 ) | \nPrepaid expenses and other assets | ( 818 ) |  |  | ( 94 ) |  |  | ( 475 ) | \nTrade payables | ( 49 ) |  |  | 66 |  |  | ( 20 ) | \nAccrued expenses and other liabilities | 146 |  |  | 7 |  |  | 162 | \nIncome taxes payable | ( 11 ) |  |  | 19 |  |  | 2 | \nDeferred revenue | 536 |  |  | 536 |  |  | 1,053 | ",
+        "locator": "dom-block=1165|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1165|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1165|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:f707a19013da70f588de7474",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023.",
+        "locator": "dom-block=952|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcdb5941e900740ea13bffcd",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate for fiscal 2023 was lower than the U.S. federal statutory tax rate of 21% primarily due to the tax benefits from the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes.",
+        "locator": "dom-block=953|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "d683dd8b3e06af76f31e06739239bca397d171b148f41eba475b0bed908d6e9e": {
+    "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "ADBE's total revenue increased in fiscal 2024 compared with fiscal 2023, as shown in the segment revenue table.",
+        "chunk_id": "passage:bab8cbe6db7f3c8923508a5b",
+        "quote": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505"
+      },
+      {
+        "statement": "ADBE attributes its fiscal 2024 growth to strong demand across Digital Media and Digital Experience offerings, driven by its product roadmap and AI-powered solutions, with continued growth in software-based subscription revenue.",
+        "chunk_id": "passage:803b527c6c980c9c425d1e06",
+        "quote": "For our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap."
+      },
+      {
+        "statement": "ADBE discloses that Digital Experience revenue growth was driven by subscription revenue growth across its offerings, and that foreign currency and hedging impacts also affected overall revenue.",
+        "chunk_id": "passage:ccc76a11c7b0dd068c53c679",
+        "quote": "Revenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings."
+      },
+      {
+        "statement": "TSLA's total revenue increased in FY2024 versus FY2023, with the automotive segment declining while the energy generation and storage segment grew.",
+        "chunk_id": "passage:f573f70ecb9ce6b01ebf267d",
+        "quote": "Revenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553"
+      },
+      {
+        "statement": "TSLA disclosed that automotive sales revenue fell, driven primarily by lower average selling price from price reductions and attractive financing options as well as mix, partly offset by higher deliveries of other models including Cybertruck and recognition of FSD revenue.",
+        "chunk_id": "passage:35ac4be20eba675e0edf0c3c",
+        "quote": "Automotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix."
+      },
+      {
+        "statement": "TSLA disclosed that automotive leasing revenue declined, attributed to lower direct sales-type leasing deliveries as it shifted toward leasing through commercial banking partner programs and a decrease in lease buyouts.",
+        "chunk_id": "passage:bb3df635fb93e539e1234e5f",
+        "quote": "Automotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:35ac4be20eba675e0edf0c3c",
+        "text": "TSLA FY2024 item-7\nAutomotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. The decreases were partially offset by an increase of approximately 19,000 deliveries of other models primarily due to our production ramp of Cybertruck. Additionally, we recognized $596 million of FSD (Supervised) revenue due to release of certain features in 2024.",
+        "locator": "dom-block=777|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:803b527c6c980c9c425d1e06",
+        "text": "ADBE FY2024 item-7\nFor our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap. As we execute on our long-term growth initiatives, with focus on delivering product innovation and driving adoption and usage of our AI-powered solutions, we have continued to experience growth in software-based subscription revenue across our portfolio of offerings.",
+        "locator": "dom-block=801|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bab8cbe6db7f3c8923508a5b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1372|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n(dollars in millions) | Digital Media |  | Digital Experience |  | Publishing and Advertising |  | Total\nFiscal 2024 |  |  |  |  |  |  | \nRevenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505 | \nCost of revenue | 680 |  |  | 1,589 |  |  | 89 |  |  | 2,358 | \nGross profit | $ | 15,184 |  |  | $ | 3,777 |  |  | $ | 186 |  |  | $ | 19,147 | \nGross profit as a percentage of revenue | 96 | % |  | 70 | % |  | 68 | % |  | 89 | %\nFiscal 2023 |  |  |  |  |  |  | \nRevenue | $ | 14,216 |  |  | $ | 4,893 |  |  | $ | 300 |  |  | $ | 19,409 | \nCost of revenue | 665 |  |  | 1,603 |  |  | 86 |  |  | 2,354 | \nGross profit | $ | 13,551 |  |  | $ | 3,290 |  |  | $ | 214 |  |  | $ | 17,055 | \nGross profit as a percentage of revenue | 95 | % |  | 67 | % |  | 71 | % |  | 88 | %\nFiscal 2022 |  |  |  |  |  |  | \nRevenue | $ | 12,842 |  |  | $ | 4,422 |  |  | $ | 342 |  |  | $ | 17,606 | \nCost of revenue | 561 |  |  | 1,502 |  |  | 102 |  |  | 2,165 | \nGross profit | $ | 12,281 |  |  | $ | 2,920 |  |  | $ | 240 |  |  | $ | 15,441 | \nGross profit as a percentage of revenue | 96 | % |  | 66 | % |  | 70 | % |  | 88 | %",
+        "locator": "dom-block=1372|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1372|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1372|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:bb3df635fb93e539e1234e5f",
+        "text": "TSLA FY2024 item-7\nAutomotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts.",
+        "locator": "dom-block=784|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ccc76a11c7b0dd068c53c679",
+        "text": "ADBE FY2024 item-7\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.",
+        "locator": "dom-block=884|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f573f70ecb9ce6b01ebf267d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1680|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  | Year Ended December 31,\n |  | 2024 |  | 2023 |  | 2022\nAutomotive segment |  |  |  |  |  | \nRevenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553 | \nCost of revenues (1) |  | $ | 72,794 |  |  | $ | 74,219 |  |  | $ | 56,988 | \nGross profit |  | $ | 14,810 |  |  | $ | 16,519 |  |  | $ | 20,565 | \nEnergy generation and storage segment |  |  |  |  |  | \nRevenues |  | $ | 10,086 |  |  | $ | 6,035 |  |  | $ | 3,909 | \nCost of revenues (2) |  | $ | 7,446 |  |  | $ | 4,894 |  |  | $ | 3,621 | \nGross profit |  | $ | 2,640 |  |  | $ | 1,141 |  |  | $ | 288 | ",
+        "locator": "dom-block=1680|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1680|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1680|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-0": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785",
+        "chunk_id": "passage:7fe4070f8ff6e7a486d92352",
+        "quote": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7fe4070f8ff6e7a486d92352",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1119|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nRevenue: |  |  |  |  | \nSubscription | $ | 18,284 |  |  | $ | 16,388 |  |  | $ | 14,573 | \nProduct | 460 |  |  | 532 |  |  | 555 | \nServices and other | 665 |  |  | 686 |  |  | 657 | \nTotal revenue | 19,409 |  |  | 17,606 |  |  | 15,785 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,822 |  |  | 1,646 |  |  | 1,374 | \nProduct | 29 |  |  | 35 |  |  | 41 | \nServices and other | 503 |  |  | 484 |  |  | 450 | \nTotal cost of revenue | 2,354 |  |  | 2,165 |  |  | 1,865 | \nGross profit | 17,055 |  |  | 15,441 |  |  | 13,920 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,473 |  |  | 2,987 |  |  | 2,540 | \nSales and marketing | 5,351 |  |  | 4,968 |  |  | 4,321 | \nGeneral and administrative | 1,413 |  |  | 1,219 |  |  | 1,085 | \nAmortization of intangibles | 168 |  |  | 169 |  |  | 172 | \nTotal operating expenses | 10,405 |  |  | 9,343 |  |  | 8,118 | \nOperating income | 6,650 |  |  | 6,098 |  |  | 5,802 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 113 ) |  |  | ( 112 ) |  |  | ( 113 ) | \nInvestment gains (losses), net | 16 |  |  | ( 19 ) |  |  | 16 | ",
+        "locator": "dom-block=1119|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1119|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1119|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:c164c6fe6056dae93e8ee33b",
+        "text": "ADBE FY2023 item-7\nRevenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations.",
+        "locator": "dom-block=867|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "text": "ADBE FY2023 item-7\nIncluded in the overall change in revenue for fiscal 2023 as compared to fiscal 2022 were impacts associated with foreign currency which were mitigated in part by our foreign currency hedging program. During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million. During fiscal 2023, the foreign currency impacts to revenue were offset in part by net hedging gains from our cash flow hedging program of $41 million.",
+        "locator": "dom-block=877|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-2": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 net income, with original units and fiscal dates. Also explain net income changes and disclosed tax or business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Net income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822",
+        "chunk_id": "passage:c5b5a09afc36cb1a9a021c33",
+        "quote": "Net income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c5b5a09afc36cb1a9a021c33",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1165|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 5,428 |  |  | $ | 4,756 |  |  | $ | 4,822 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nDepreciation, amortization and accretion | 872 |  |  | 856 |  |  | 788 | \nStock-based compensation | 1,718 |  |  | 1,440 |  |  | 1,069 | \nReduction of operating lease right-of-use assets | 72 |  |  | 83 |  |  | 73 | \nDeferred income taxes | ( 426 ) |  |  | 328 |  |  | 183 | \nUnrealized losses (gains) on investments, net | ( 10 ) |  |  | 29 |  |  | ( 4 ) | \nOther non-cash items | 3 |  |  | 10 |  |  | 7 | \nChanges in operating assets and liabilities, net of acquired assets and assumed liabilities: |  |  |  |  | \nTrade receivables, net | ( 159 ) |  |  | ( 198 ) |  |  | ( 430 ) | \nPrepaid expenses and other assets | ( 818 ) |  |  | ( 94 ) |  |  | ( 475 ) | \nTrade payables | ( 49 ) |  |  | 66 |  |  | ( 20 ) | \nAccrued expenses and other liabilities | 146 |  |  | 7 |  |  | 162 | \nIncome taxes payable | ( 11 ) |  |  | 19 |  |  | 2 | \nDeferred revenue | 536 |  |  | 536 |  |  | 1,053 | ",
+        "locator": "dom-block=1165|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1165|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1165|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1165|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:f707a19013da70f588de7474",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023.",
+        "locator": "dom-block=952|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcdb5941e900740ea13bffcd",
+        "text": "ADBE FY2023 item-7\nOur effective tax rate for fiscal 2023 was lower than the U.S. federal statutory tax rate of 21% primarily due to the tax benefits from the U.S. federal research tax credit and non-U.S. operations, partially offset by state taxes.",
+        "locator": "dom-block=953|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:bab8cbe6db7f3c8923508a5b",
+        "quote": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:35ac4be20eba675e0edf0c3c",
+        "text": "TSLA FY2024 item-7\nAutomotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. The decreases were partially offset by an increase of approximately 19,000 deliveries of other models primarily due to our production ramp of Cybertruck. Additionally, we recognized $596 million of FSD (Supervised) revenue due to release of certain features in 2024.",
+        "locator": "dom-block=777|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:803b527c6c980c9c425d1e06",
+        "text": "ADBE FY2024 item-7\nFor our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap. As we execute on our long-term growth initiatives, with focus on delivering product innovation and driving adoption and usage of our AI-powered solutions, we have continued to experience growth in software-based subscription revenue across our portfolio of offerings.",
+        "locator": "dom-block=801|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bab8cbe6db7f3c8923508a5b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1372|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n(dollars in millions) | Digital Media |  | Digital Experience |  | Publishing and Advertising |  | Total\nFiscal 2024 |  |  |  |  |  |  | \nRevenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505 | \nCost of revenue | 680 |  |  | 1,589 |  |  | 89 |  |  | 2,358 | \nGross profit | $ | 15,184 |  |  | $ | 3,777 |  |  | $ | 186 |  |  | $ | 19,147 | \nGross profit as a percentage of revenue | 96 | % |  | 70 | % |  | 68 | % |  | 89 | %\nFiscal 2023 |  |  |  |  |  |  | \nRevenue | $ | 14,216 |  |  | $ | 4,893 |  |  | $ | 300 |  |  | $ | 19,409 | \nCost of revenue | 665 |  |  | 1,603 |  |  | 86 |  |  | 2,354 | \nGross profit | $ | 13,551 |  |  | $ | 3,290 |  |  | $ | 214 |  |  | $ | 17,055 | \nGross profit as a percentage of revenue | 95 | % |  | 67 | % |  | 71 | % |  | 88 | %\nFiscal 2022 |  |  |  |  |  |  | \nRevenue | $ | 12,842 |  |  | $ | 4,422 |  |  | $ | 342 |  |  | $ | 17,606 | \nCost of revenue | 561 |  |  | 1,502 |  |  | 102 |  |  | 2,165 | \nGross profit | $ | 12,281 |  |  | $ | 2,920 |  |  | $ | 240 |  |  | $ | 15,441 | \nGross profit as a percentage of revenue | 96 | % |  | 66 | % |  | 70 | % |  | 88 | %",
+        "locator": "dom-block=1372|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1372|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1372|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:bb3df635fb93e539e1234e5f",
+        "text": "TSLA FY2024 item-7\nAutomotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts.",
+        "locator": "dom-block=784|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ccc76a11c7b0dd068c53c679",
+        "text": "ADBE FY2024 item-7\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.",
+        "locator": "dom-block=884|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f573f70ecb9ce6b01ebf267d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1680|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  | Year Ended December 31,\n |  | 2024 |  | 2023 |  | 2022\nAutomotive segment |  |  |  |  |  | \nRevenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553 | \nCost of revenues (1) |  | $ | 72,794 |  |  | $ | 74,219 |  |  | $ | 56,988 | \nGross profit |  | $ | 14,810 |  |  | $ | 16,519 |  |  | $ | 20,565 | \nEnergy generation and storage segment |  |  |  |  |  | \nRevenues |  | $ | 10,086 |  |  | $ | 6,035 |  |  | $ | 3,909 | \nCost of revenues (2) |  | $ | 7,446 |  |  | $ | 4,894 |  |  | $ | 3,621 | \nGross profit |  | $ | 2,640 |  |  | $ | 1,141 |  |  | $ | 288 | ",
+        "locator": "dom-block=1680|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1680|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1680|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-4": {
+    "question": "Using only the selected reports, Give ADBE's FY2023 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for ADBE using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785",
+        "chunk_id": "passage:7fe4070f8ff6e7a486d92352",
+        "quote": "Total revenue | 19,409 |  |  | 17,606 |  |  | 15,785"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7fe4070f8ff6e7a486d92352",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1119|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2023 item-8\n | Years Ended\n | December 1, 2023 |  | December 2, 2022 |  | December 3, 2021\nRevenue: |  |  |  |  | \nSubscription | $ | 18,284 |  |  | $ | 16,388 |  |  | $ | 14,573 | \nProduct | 460 |  |  | 532 |  |  | 555 | \nServices and other | 665 |  |  | 686 |  |  | 657 | \nTotal revenue | 19,409 |  |  | 17,606 |  |  | 15,785 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,822 |  |  | 1,646 |  |  | 1,374 | \nProduct | 29 |  |  | 35 |  |  | 41 | \nServices and other | 503 |  |  | 484 |  |  | 450 | \nTotal cost of revenue | 2,354 |  |  | 2,165 |  |  | 1,865 | \nGross profit | 17,055 |  |  | 15,441 |  |  | 13,920 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,473 |  |  | 2,987 |  |  | 2,540 | \nSales and marketing | 5,351 |  |  | 4,968 |  |  | 4,321 | \nGeneral and administrative | 1,413 |  |  | 1,219 |  |  | 1,085 | \nAmortization of intangibles | 168 |  |  | 169 |  |  | 172 | \nTotal operating expenses | 10,405 |  |  | 9,343 |  |  | 8,118 | \nOperating income | 6,650 |  |  | 6,098 |  |  | 5,802 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 113 ) |  |  | ( 112 ) |  |  | ( 113 ) | \nInvestment gains (losses), net | 16 |  |  | ( 19 ) |  |  | 16 | ",
+        "locator": "dom-block=1119|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1119|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1119|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1119|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:c164c6fe6056dae93e8ee33b",
+        "text": "ADBE FY2023 item-7\nRevenue from Digital Experience increased $471 million during fiscal 2023 as compared to fiscal 2022 primarily due to net new additions across our subscription offerings, partially offset by the impact of foreign currency exchange rate fluctuations.",
+        "locator": "dom-block=867|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e14a57be36d2da1ba6bc0ef0",
+        "text": "ADBE FY2023 item-7\nIncluded in the overall change in revenue for fiscal 2023 as compared to fiscal 2022 were impacts associated with foreign currency which were mitigated in part by our foreign currency hedging program. During fiscal 2023, the U.S. Dollar primarily strengthened against EMEA and APAC foreign currencies as compared to fiscal 2022, which decreased revenue in U.S. Dollar equivalents by approximately $371 million. During fiscal 2023, the foreign currency impacts to revenue were offset in part by net hedging gains from our cash flow hedging program of $41 million.",
+        "locator": "dom-block=877|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-5": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Using only the selected reports, Compare FY2024 revenue for ADBE, TSLA. Show amounts and actual fiscal-date differences. Also explain revenue changes and disclosed business drivers for ADBE, TSLA using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505",
+        "chunk_id": "passage:bab8cbe6db7f3c8923508a5b",
+        "quote": "Revenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:35ac4be20eba675e0edf0c3c",
+        "text": "TSLA FY2024 item-7\nAutomotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. The decreases were partially offset by an increase of approximately 19,000 deliveries of other models primarily due to our production ramp of Cybertruck. Additionally, we recognized $596 million of FSD (Supervised) revenue due to release of certain features in 2024.",
+        "locator": "dom-block=777|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:803b527c6c980c9c425d1e06",
+        "text": "ADBE FY2024 item-7\nFor our fiscal 2024, we experienced strong demand across our Digital Media and Digital Experience offerings, driven by our innovative product roadmap. As we execute on our long-term growth initiatives, with focus on delivering product innovation and driving adoption and usage of our AI-powered solutions, we have continued to experience growth in software-based subscription revenue across our portfolio of offerings.",
+        "locator": "dom-block=801|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bab8cbe6db7f3c8923508a5b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1372|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n(dollars in millions) | Digital Media |  | Digital Experience |  | Publishing and Advertising |  | Total\nFiscal 2024 |  |  |  |  |  |  | \nRevenue | $ | 15,864 |  |  | $ | 5,366 |  |  | $ | 275 |  |  | $ | 21,505 | \nCost of revenue | 680 |  |  | 1,589 |  |  | 89 |  |  | 2,358 | \nGross profit | $ | 15,184 |  |  | $ | 3,777 |  |  | $ | 186 |  |  | $ | 19,147 | \nGross profit as a percentage of revenue | 96 | % |  | 70 | % |  | 68 | % |  | 89 | %\nFiscal 2023 |  |  |  |  |  |  | \nRevenue | $ | 14,216 |  |  | $ | 4,893 |  |  | $ | 300 |  |  | $ | 19,409 | \nCost of revenue | 665 |  |  | 1,603 |  |  | 86 |  |  | 2,354 | \nGross profit | $ | 13,551 |  |  | $ | 3,290 |  |  | $ | 214 |  |  | $ | 17,055 | \nGross profit as a percentage of revenue | 95 | % |  | 67 | % |  | 71 | % |  | 88 | %\nFiscal 2022 |  |  |  |  |  |  | \nRevenue | $ | 12,842 |  |  | $ | 4,422 |  |  | $ | 342 |  |  | $ | 17,606 | \nCost of revenue | 561 |  |  | 1,502 |  |  | 102 |  |  | 2,165 | \nGross profit | $ | 12,281 |  |  | $ | 2,920 |  |  | $ | 240 |  |  | $ | 15,441 | \nGross profit as a percentage of revenue | 96 | % |  | 66 | % |  | 70 | % |  | 88 | %",
+        "locator": "dom-block=1372|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1372|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1372|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1372|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:bb3df635fb93e539e1234e5f",
+        "text": "TSLA FY2024 item-7\nAutomotive leasing revenue decreased $293 million, or 14%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower direct sales-type leasing deliveries as we have shifted towards providing leasing options through commercial banking partner programs that allow for us to recognize upfront revenue in automotive sales and a decrease in lease buyouts.",
+        "locator": "dom-block=784|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ccc76a11c7b0dd068c53c679",
+        "text": "ADBE FY2024 item-7\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.",
+        "locator": "dom-block=884|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f573f70ecb9ce6b01ebf267d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1680|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  | Year Ended December 31,\n |  | 2024 |  | 2023 |  | 2022\nAutomotive segment |  |  |  |  |  | \nRevenues |  | $ | 87,604 |  |  | $ | 90,738 |  |  | $ | 77,553 | \nCost of revenues (1) |  | $ | 72,794 |  |  | $ | 74,219 |  |  | $ | 56,988 | \nGross profit |  | $ | 14,810 |  |  | $ | 16,519 |  |  | $ | 20,565 | \nEnergy generation and storage segment |  |  |  |  |  | \nRevenues |  | $ | 10,086 |  |  | $ | 6,035 |  |  | $ | 3,909 | \nCost of revenues (2) |  | $ | 7,446 |  |  | $ | 4,894 |  |  | $ | 3,621 | \nGross profit |  | $ | 2,640 |  |  | $ | 1,141 |  |  | $ | 288 | ",
+        "locator": "dom-block=1680|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1680|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1680|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1680|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-7": {
+    "question": "Using only the selected reports, Explain ADBE's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:5195d668c6ce2a3bf1843e6f",
+        "quote": "Operating income | 6,741 |  |  | 6,650 |  |  | 6,098"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5195d668c6ce2a3bf1843e6f",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1147|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nADBE FY2024 item-8\n | Years Ended\n | November 29, 2024 |  | December 1, 2023 |  | December 2, 2022\nRevenue: |  |  |  |  | \nSubscription | $ | 20,521 |  |  | $ | 18,284 |  |  | $ | 16,388 | \nProduct | 386 |  |  | 460 |  |  | 532 | \nServices and other | 598 |  |  | 665 |  |  | 686 | \nTotal revenue | 21,505 |  |  | 19,409 |  |  | 17,606 | \nCost of revenue: |  |  |  |  | \nSubscription | 1,799 |  |  | 1,822 |  |  | 1,646 | \nProduct | 25 |  |  | 29 |  |  | 35 | \nServices and other | 534 |  |  | 503 |  |  | 484 | \nTotal cost of revenue | 2,358 |  |  | 2,354 |  |  | 2,165 | \nGross profit | 19,147 |  |  | 17,055 |  |  | 15,441 | \nOperating expenses: |  |  |  |  | \nResearch and development | 3,944 |  |  | 3,473 |  |  | 2,987 | \nSales and marketing | 5,764 |  |  | 5,351 |  |  | 4,968 | \nGeneral and administrative | 1,529 |  |  | 1,413 |  |  | 1,219 | \nAcquisition termination fee | 1,000 |  |  | — |  |  | — | \nAmortization of intangibles | 169 |  |  | 168 |  |  | 169 | \nTotal operating expenses | 12,406 |  |  | 10,405 |  |  | 9,343 | \nOperating income | 6,741 |  |  | 6,650 |  |  | 6,098 | \nNon-operating income (expense): |  |  |  |  | \nInterest expense | ( 169 ) |  |  | ( 113 ) |  |  | ( 112 ) | ",
+        "locator": "dom-block=1147|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1147|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1147|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1147|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:60dd97ad533b9f880bf55c19",
+        "text": "ADBE FY2024 item-7\n• Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+        "locator": "dom-block=842|part=0|strategy=structured",
+        "company": "ADBE",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 9,
+      "mechanical_successes": 6,
+      "strict_successes": 6,
+      "strict_rate": 0.6666666666666666,
+      "primary_only_successes": 6,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 2,
+      "all_repeats_pass_wilson_95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "requests": 21,
+      "tokens": 44358,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.861,
+      "repairs": 3
+    },
+    "after": {
+      "attempts": 9,
+      "mechanical_successes": 9,
+      "strict_successes": 9,
+      "strict_rate": 1,
+      "primary_only_successes": 9,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 3,
+      "all_repeats_pass_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "requests": 18,
+      "tokens": 33071,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.630333333333334,
+      "repairs": 0
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 9,
+      "unique_cases": 3,
+      "wins": 3,
+      "losses": 0,
+      "ties": 6,
+      "difference": 0.3333333333333333,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains"
+    }
+  },
+  "tasks_sha256": "a62e41ea64f6e5bff206e0ef58333198b224aee45f12e477c18232ca9d61fb5a",
+  "review": "upload-table-review-v3",
+  "review_summary_sha256": "51cf53f42fdaea9649394f636c197352198f32c961cb3b8f3fc2bb2532d89d01",
+  "failures": [
+    {
+      "case_id": "c9076ecf5b029140aa57",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "c9076ecf5b029140aa57",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "c9076ecf5b029140aa57",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

@@ -1,0 +1,590 @@
+{
+  "bb042db05be3d13a4d362db40d9118dddac82b8673d6daa6e4ed4a7802cac48b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of 72,361 in 2023 versus 72,738 in 2022 with a (1)% percentage change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the change in estimate for server and network equipment useful lives increased net income by $3.0 billion in fiscal year 2023."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate rose from 13% to 19%, primarily due to a $3.3 billion prior-year net income tax benefit and a decrease in stock-based compensation tax benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 173,
+      "prompt_tokens": 2030,
+      "total_tokens": 2203,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1774
+    }
+  },
+  "2f2eaa1ae4de1d3f8a45bdbd7ca6ad1f787ce9b61fdc9aa2c592b06d9009b306": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of 72,361 in 2023 vs 72,738 in 2022 with a (1)% percentage change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate rose from 13% to 19%, attributed primarily to a prior-year $3.3 billion net income tax benefit from intangible property transfer and a decrease in stock-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the useful-life change effective fiscal year 2023 increased operating income by $3.7 billion and net income by $3.0 billion."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 179,
+      "prompt_tokens": 2088,
+      "total_tokens": 2267,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1832
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted table shows net income figures only; it contains no information about the chief executive's personal investments or exclusive causation, so the claim is unsupported and invented."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1494,
+      "total_tokens": 1562,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1238
+    }
+  },
+  "2eabc47a9e00955ba29c97b663e8c677e43f3aa4f10fd2d6ef2c2e9d881b7ca5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income rising from $59,972 million (2022) to $73,795 million (2023), a $13,823 million / 23% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The table shows operating income rising from $74,842 million to $84,293 million, a $9,451 million / 13% increase, supporting the claim that operating income rose year over year."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2022 to 2023, reflecting the two tax rule changes, particularly foreign tax credits, partially offset by uncertain tax benefits and a decrease in the FDII deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 200,
+      "prompt_tokens": 1739,
+      "total_tokens": 1939,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1483
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row verbatim shows Net income of 72,361 (FY2023) vs 72,738 (FY2022) with (1)% change, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 1787,
+      "total_tokens": 1861,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1531
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table shows net income of 72,361 vs 72,738 (a 1% decline); it contains no management guarantee of doubling performance or absence of risks. The claim is invented and unsupported."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 1769,
+      "total_tokens": 1848,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1513
+    }
+  },
+  "94878a43831752c86d90abb3a1dd3284432e58098a281005bd40ec0a060aec53": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income rising from $59,972 (2022) to $73,795 (2023), a $13,823 / 23% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2022 to 2023 reflecting two tax rule changes, particularly foreign tax credits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the tax rule changes' effect was partially offset by changes in uncertain tax benefits and a decrease in the U.S. federal FDII tax deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 172,
+      "prompt_tokens": 1701,
+      "total_tokens": 1873,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1445
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row shows Net income of 72,361 for 2023 versus 72,738 for 2022, a (1)% change, matching the claim verbatim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 1787,
+      "total_tokens": 1860,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 251
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted table shows net income figures but contains no information about the chief executive's personal investments or exclusive causation."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 1494,
+      "total_tokens": 1563,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 214
+    }
+  },
+  "15f89787174b692a931db620b39d5965a1aa4098304409b83c34a47007633883": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of operations shows net income (loss) of $(2,722)M in 2022, $30,425M in 2023, and $59,248M in 2024, supporting an increase from FY2023 to FY2024."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2024 provision for income taxes was higher than 2023 primarily due to increased pretax income, partially offset by increased excess tax benefits from stock-based compensation and increased foreign income deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 1392,
+      "total_tokens": 1544,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1136
+    }
+  },
+  "f58a598ec9fa194d83eb95b2858a0c6465b48adeac5156554a65a6bf6ba449ca": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income (loss) of $(2,722)M in 2022, $30,425M in 2023, and $59,248M in 2024, supporting an increase from FY2023 to FY2024."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2024 provision for income taxes was higher than 2023 primarily due to increased pretax income, partially offset by increased excess tax benefits from stock-based compensation and increased foreign income deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 134,
+      "prompt_tokens": 1391,
+      "total_tokens": 1525,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1135
+    }
+  },
+  "4d7af4b1102f24045664d2ef6ca372dd429e4542fd7b02a31aa02875da10aae2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of $59,972 million in 2022 and $73,795 million in 2023, a $13,823 million (23%) increase, supporting the claim that net income increased from the preceding fiscal year to FY2023."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2022 to 2023, reflecting the two tax rule changes, particularly the foreign tax credit change, partially offset by changes in uncertain tax benefits and a decrease in the FDII deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 1642,
+      "total_tokens": 1797,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1258
+    }
+  },
+  "a5af75196017a68164d57010ca66210b109b6c6e2ef969f355d907d28e8a1604": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income of 72,361 in 2023 vs 72,738 in 2022 with a (1)% percentage change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate increase was primarily due to a $3.3 billion net income tax benefit in fiscal 2022 from intangible property transfer and a decrease in stock-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the change in estimate increased operating income by $3.7 billion and net income by $3.0 billion in fiscal year 2023."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 175,
+      "prompt_tokens": 2023,
+      "total_tokens": 2198,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1639
+    }
+  },
+  "8785894af6dacff4e670375794b41619562fb3682be2fc60ed1cf8cd9af2ba9d": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income rising from $59,972 million (2022) to $73,795 million (2023), a 23% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2022 to 2023 reflecting two tax rule changes, particularly foreign tax credits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 119,
+      "prompt_tokens": 1603,
+      "total_tokens": 1722,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 1091
+    }
+  },
+  "4bc9125c3bad54fd9f969ebe7193186dfb2a26e103dcb76d548151da3143df89": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of $30,425 million in 2023 and $59,248 million in 2024, supporting an increase from FY2023 to FY2024."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2024 provision was higher than 2023 primarily due to increased pretax income, partially offset by greater excess tax benefits from stock-based compensation and a larger foreign income deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 1388,
+      "total_tokens": 1505,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1004
+    }
+  },
+  "90864ce239a10acf66aad04314a5a037329b411982a25d5f0e7b9857b36eaa58": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income 72,361 (2023) vs 72,738 (2022) with (1)% change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate increase was primarily due to a prior-year $3.3 billion net income tax benefit and a decrease in tax benefits relating to stock-based compensation."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the useful-life change increased operating income by $3.7 billion and net income by $3.0 billion in fiscal year 2023."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 2001,
+      "total_tokens": 2168,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1745
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table shows net income of 72,361 (2023) vs 72,738 (2022), a (1)% decline; it contains no management guarantee of doubling performance or absence of risks. The claim is an invented forward-looking guarantee unsupported by the excerpt."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 92,
+      "prompt_tokens": 1768,
+      "total_tokens": 1860,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1384
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is copied verbatim from the source table and matches the reported net income (loss) figures for 2022, 2023, and 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 1265,
+      "total_tokens": 1334,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1009
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote exactly matches the net income (loss) row from the provided passage, showing the values for 2022, 2023, and 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 80,
+      "prompt_tokens": 1265,
+      "total_tokens": 1345,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 241
+    }
+  },
+  "1e07db4147b826eb1c1ec758229c8f682e287d9ba0dc361301ff4e689f839622": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income of 72,361 in 2023 vs 72,738 in 2022 with a (1)% percentage change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the change in useful-life estimate increased net income by $3.0 billion in fiscal year 2023."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage attributes the effective tax rate increase primarily to a prior-year $3.3 billion net income tax benefit from intangible property transfer and a decrease in stock-based compensation tax benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 144,
+      "prompt_tokens": 2027,
+      "total_tokens": 2171,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1771
+    }
+  },
+  "4a0e4c392f81421dfb4647ae8627501508423c7d5eb71756ecedc34e5df96312": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of 72,361 in 2023 vs 72,738 in 2022 with a (1)% percentage change, supporting a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the useful-life change increased operating income by $3.7 billion and net income by $3.0 billion in fiscal year 2023."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage attributes the effective tax rate increase primarily to a $3.3 billion prior-year net income tax benefit from intangible property transfer and a decrease in stock-based compensation tax benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 2030,
+      "total_tokens": 2200,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1646
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 24,
+      "mechanical_successes": 19,
+      "strict_successes": 14,
+      "strict_rate": 0.5833333333333334,
+      "primary_only_successes": 15,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 3,
+      "all_repeats_pass_wilson_95": [
+        0.13684428582359742,
+        0.6942576053973727
+      ],
+      "requests": 51,
+      "tokens": 80882,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.958833333333334,
+      "repairs": 3
+    },
+    "after": {
+      "attempts": 24,
+      "mechanical_successes": 21,
+      "strict_successes": 21,
+      "strict_rate": 0.875,
+      "primary_only_successes": 21,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 7,
+      "all_repeats_pass_wilson_95": [
+        0.5291118177871464,
+        0.9775825085499433
+      ],
+      "requests": 57,
+      "tokens": 109919,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 8.3425,
+      "repairs": 3
+    },
+    "after_old_retrieval": {
+      "attempts": 24,
+      "mechanical_successes": 24,
+      "strict_successes": 14,
+      "strict_rate": 0.5833333333333334,
+      "primary_only_successes": 14,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 4,
+      "all_repeats_pass_wilson_95": [
+        0.21521606221387757,
+        0.7847839377861224
+      ],
+      "requests": 54,
+      "tokens": 93293,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.605458333333333,
+      "repairs": 0
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 24,
+      "unique_cases": 8,
+      "wins": 7,
+      "losses": 0,
+      "ties": 17,
+      "difference": 0.29166666666666663,
+      "case_cluster_bootstrap_95": [
+        0.08333333333333333,
+        0.5416666666666666
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains"
+    },
+    "after_vs_after_old_retrieval": {
+      "pairs": 24,
+      "unique_cases": 8,
+      "wins": 9,
+      "losses": 2,
+      "ties": 13,
+      "difference": 0.2916666666666667,
+      "case_cluster_bootstrap_95": [
+        -0.12499999999999999,
+        0.75
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains"
+    }
+  },
+  "tasks_sha256": "a7a4c1183e77421b4400b31e40480f9c2b0a52ac578581971354a804c2052164",
+  "review": "upload-test-review-v2",
+  "review_summary_sha256": "813d68b76b5447c44c350ef8c901c574be3f230b328fdd7008e75daac12641d3",
+  "failures": [
+    {
+      "case_id": "6749adaeae61c1da0c43",
+      "repeat": 0,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "58a46fded7051db03d1e9a43eca993d231c93306cd99194b81511bae6cda4f78"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "6a0a5d4fabbd0d2b0471d9d0402c1f90224d2e9127d93610faa6c2134d59691d"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 0,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "56e219795de03618be6d29a8967e37710120e86e42cba79b3e8ed1ec8ce63aba"
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 0,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c982f51d62778821bb6",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "7121bb71455977261b40349ede3a6697c15bfa674788d5ee71ebd9d5da424a72"
+    },
+    {
+      "case_id": "3c982f51d62778821bb6",
+      "repeat": 0,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "40efd431e59d27db3259f82d08e554b501002d5af8062e90346ea80fc04bcf9d"
+    },
+    {
+      "case_id": "1799a33b393bca5657c7",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "2715e7bb750195bc55374585fbbc56dc44604e944032582e049be7fc96f1dd79"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "5f2670a5276957ef736d2b1aa11b530acad9c32430868a25eb4d5d2b96a12e62"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "583fa1eb957c8d5427a759166123d222f73611279c3317856d1e3c594011d297"
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 1,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "8e5b5d66eab603b472cbe7ade683ed92975e3e2b957814dea5b5551d6248b5d6"
+    },
+    {
+      "case_id": "3c982f51d62778821bb6",
+      "repeat": 1,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "2ecdaed487a75e17fbbb7fbd6270e001a6efa356df550648fda320d87917fe91"
+    },
+    {
+      "case_id": "3c982f51d62778821bb6",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "08ee650b8bf2e847e8472ee2a1db99c76daff04401a23bfba123fb72518a23a2"
+    },
+    {
+      "case_id": "1799a33b393bca5657c7",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "c7aa3310c2123a7b8d29bdf1577dd97618682fc0fa129aecd34fc09c92947b5a"
+    },
+    {
+      "case_id": "1799a33b393bca5657c7",
+      "repeat": 1,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "609180a694847d4f251a5eb309777506159b080f4b9f6d0f0218e50cc5975e70"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "583fa1eb957c8d5427a759166123d222f73611279c3317856d1e3c594011d297"
+    },
+    {
+      "case_id": "912b380ffa584b013a72",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "1a30a028ec3c0e3fab9d3bc758473d02891e24ece38b57597212f7187c1d7819"
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 2,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c6e2f5d7969c529a10c",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c982f51d62778821bb6",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "dd27283e31b59687f2793b06f84723fe13fc18089cc1bd72efb7feee9836a98c"
+    },
+    {
+      "case_id": "1799a33b393bca5657c7",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "110937498aa9b624994f5eead42fc5bdf67987e337c62ab255af7fdacccc547e"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

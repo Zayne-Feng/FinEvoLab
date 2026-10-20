@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "samples": 72,
+  "mapped_outputs": 66,
+  "primary_reviews": 72,
+  "secondary_reviews": 30,
+  "control_errors": {
+    "A": 0,
+    "B": 0
+  },
+  "disagreements": [
+    "control-7",
+    "58a46fded7051db03d1e9a43eca993d231c93306cd99194b81511bae6cda4f78",
+    "control-5",
+    "control-2",
+    "56e219795de03618be6d29a8967e37710120e86e42cba79b3e8ed1ec8ce63aba"
+  ],
+  "decision": "conservative intersection on double-reviewed samples; primary elsewhere"
+}
