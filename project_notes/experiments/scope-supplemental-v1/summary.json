@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "attempts": 60,
+      "successes": 60,
+      "success_rate": 1,
+      "categories": {
+        "boundary": {
+          "attempts": 15,
+          "successes": 15
+        },
+        "upload": {
+          "attempts": 45,
+          "successes": 45
+        }
+      },
+      "mean_seconds": 4.1542000000000066,
+      "requests": 83,
+      "tokens": 107091,
+      "unknown_usage_tasks": 0,
+      "repairs": 5,
+      "failed_checks": {}
+    }
+  },
+  "planned": 60,
+  "mechanical_only_until_blind_review": true
+}

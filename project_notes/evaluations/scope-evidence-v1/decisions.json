@@ -1,0 +1,658 @@
+{
+  "AAPL:2022:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote matches paragraph-622 verbatim and directly answers the question about factors raising the 2022 effective tax rate versus 2021."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote appears verbatim in paragraph-429 and states the possible material adverse effect on business, results of operations and financial condition."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2022:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote appears verbatim in paragraph-208 and directly supports the statement about aggressive price competition and downward pressure on gross margins."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote appears verbatim in paragraph-276 and directly supports the statement about tariffs increasing costs and adversely impacting gross margin."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2022:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total net sales increased 8% or $28.5 billion in 2022 vs 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2022:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-261 exactly matches the statement, listing inflation, tariffs, tighter credit, higher interest rates, high unemployment, and currency fluctuations as adversely impacting consumer confidence and demand."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Paragraph-266 states that component suppliers and manufacturing/logistical providers experienced disruptions causing supply shortages affecting worldwide sales, similar disruptions could occur, and public safety measures can adversely impact consumer demand."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2023:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the 2023 effective tax rate was lower than the statutory federal rate due primarily to lower foreign earnings tax rate, U.S. federal R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the 2023 rate was lower than 2022 due primarily to lower foreign earnings tax rate and impact of U.S. foreign tax credit regulations issued by Treasury in 2022, partially offset by lower share-based compensation benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2023:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the primary FX exposure relates to non-U.S. dollar-denominated sales, cost of sales, and operating expenses worldwide, and that gross margins have been and could be adversely affected by exchange rate fluctuations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states defending litigation/responding to investigations can be expensive, time-consuming and disruptive, and that settlement agreements can significantly increase cost of sales and operating expenses and require changes to business practices."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2023:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "Paragraph-492 explicitly states foreign currency weakness accounted for more than the entire year-over-year decrease in total net sales, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Paragraph-192 explicitly states net sales through direct and indirect channels accounted for 37% and 63% of total net sales in 2023."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2023:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-254 directly lists slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations as adverse macroeconomic conditions that can hurt consumer confidence and spending and materially adversely affect demand for the Company's products and services."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from paragraph-295 states the Company obtains certain components from single or limited sources and is subject to significant supply and pricing risks, and that many components are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect its business, results of operations and financial condition."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2024:net_income": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0
+  },
+  "AAPL:2024:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states markets are highly competitive and characterized by aggressive price competition and resulting downward pressure on gross margins, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states settlement agreements can significantly increase cost of sales and operating expenses and require changes to business practices, matching the statement."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states Greater China net sales decreased in 2024 vs 2023 due primarily to lower iPhone and iPad net sales, with renminbi weakness having an unfavorable year-over-year impact."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states Japan net sales increased in 2024 vs 2023 due primarily to higher iPhone net sales, with yen weakness having an unfavorable year-over-year impact."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "AAPL:2024:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states single/limited sources create significant supply and pricing risks, and that industry-wide shortages and commodity pricing fluctuations can materially adversely affect business, results of operations and financial condition."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote confirms manufacturing by outsourcing partners in listed countries, significant concentration among a small number of partners often in single locations, reduced direct control over production and distribution, and adverse effects on quality/quantity and flexibility to respond to changing conditions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2023:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate decreased by approximately one percentage point in fiscal 2023 vs fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states that beginning in 2023, under U.S. Tax Act provisions, Adobe must capitalize and amortize R&D costs, and that unless modified there will continue to be an adverse impact on effective rates for income taxes paid."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2023:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly lists these factors creating downward pressure on pricing and gross margins, and the original paragraph states this adversely affects renewal, upsell, cross-sell rates and ability to attract customers; the statement's 'adversely affect operating results' is a reasonable paraphrase of the paragraph's adverse business/financial effects."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly states that when the forecasted transaction affects earnings, the related gain or loss on the foreign currency expense cash flow hedge is reclassified to operating expense, matching the statement."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2023:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The original paragraph explicitly states Adobe has experienced and may in the future experience impacts to revenue from fraudulent/abusive activities by malicious actors, including unauthorized account use via stolen credentials and failure to pay for services accessed."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph directly states that if partner and distribution channels are not effective or if Adobe stops or changes them, it may lose sales opportunities, customers and revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2024:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate remained relatively flat, the Figma termination fee was not deductible, and was largely offset by increased net tax benefits from non-U.S. operations and stock-based compensation."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states changes in laws or interpretations of tax rules could adversely affect effective tax rates, and explicitly states an increase in effective tax rate would reduce profitability."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2024:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states operating expenses rose $2.00 billion, or 19%, to $12.41 billion from $10.41 billion, primarily due to the $1 billion Figma termination fee in fiscal 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "ADBE:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-163 directly states Adobe employs product-led growth in Creative Cloud to minimize friction, drive positive product experiences, resulting in increasing adoption, usage, conversion, expansion and loyalty."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from paragraph-581 directly states that if partner and distribution channels are not effective or if Adobe stops or changes them, it may lose sales opportunities, customers and revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2022:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate decreased from 2021 to 2022, primarily driven by capitalization and amortization of R&D expenses under the 2017 Tax Cuts and Jobs Act, generating an increase in the U.S. federal FDII tax deduction."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states the worldwide provision determination requires significant judgment and involves uncertainty, and the ultimate tax outcome may differ from amounts recorded and may affect financial results in the period(s) for which such determination is made."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2022:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states Google Services operating income decreased $5.3 billion from 2021 to 2022, driven primarily by increases in compensation expenses and TAC, partially offset by revenue growth."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states non-advertising revenue margins are generally lower than advertising margins and that hardware margins adversely affect consolidated margins due to pricing pressures and higher cost of sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2022:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states more than 80% of total revenues came from online advertising in 2022 and that many advertisers/partners can terminate contracts at any time."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote lists all cited factors (devices/modalities, geographic mix, advertiser spending, competition, demand, pricing decreases, product/policy changes, shifts to lower priced products) as reasons revenue growth rate could decline."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2022:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-131 directly states the expectation that the foreign exchange risk management program will not fully offset net exposure to currency rate fluctuations, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Paragraph-305 verbatim states that ongoing investment in new businesses, products, services, and technologies is inherently risky and could divert management attention and harm business, financial condition, and operating results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2024:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote only supports the IRS one-time adjustment affecting the 2023 rate and the R&D capitalization/amortization rule change; it does not mention the decrease in the 2024 FDII deduction or increased stock-based compensation tax benefits, so the statement is broader than the evidence."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states Alphabet is subject to regular review and audit by domestic and foreign tax authorities, may receive assessments on transfer-pricing or permanent-establishment claims, that adverse outcomes could harm financial condition and operating results, and that ultimate tax outcomes may differ from recorded amounts and affect financial results in the period determined."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2024:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The statement matches paragraph-911: $25.4 billion increase, driven by higher revenues, partly offset by content acquisition costs and TAC, plus a reduction in employee compensation expenses contributing."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The statement matches paragraph-913: $4.4 billion increase, driven by higher revenues, partly offset by technical infrastructure usage costs and employee compensation expenses from headcount growth."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "GOOGL:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote supports the >75% advertising revenue figure and that partners can terminate contracts, but it does not mention ad-blocking or personalization-limiting technologies as risks; that portion of the statement is unsupported by the provided paragraph."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The statement accurately paraphrases the listed factors in paragraph-341, including device/modality changes, geographic mix, advertiser spending deceleration, competition, usage/demand changes, pricing decreases, product/policy changes, and shifts to lower priced products."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2022:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The original paragraph states the effective tax rate decreased primarily due to the $3.3 billion net income tax benefit from the transfer of intangible properties, offset in part by changes in the mix of income before income taxes between the U.S. and foreign countries, and also mentions prior-year tax benefits."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states current year net income and diluted EPS were positively impacted by the net tax benefit related to the transfer of intangible properties, increasing net income and diluted EPS by $3.3 billion and $0.44, respectively."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2022:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states competitive pressures may cause decreased sales volumes, price reductions, and/or increased operating costs (R&D, marketing, sales incentives), leading to lower revenue, gross margins, and operating income."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote confirms the useful life increase from four to six years effective fiscal 2023 and estimates a $3.7 billion increase to fiscal 2023 operating income based on the June 30, 2022 carrying amount."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2022:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote appears verbatim in paragraph-776 and directly answers the question about factors affecting Office Commercial revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote appears verbatim in paragraph-778 and directly answers the question about factors affecting Office Consumer revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2022:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The original paragraph states competitors are rapidly developing and deploying cloud-based services, pricing and delivery models are evolving, and the company may not establish sufficient market share to achieve scale needed for business objectives."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph lists these exact risks: not advancing business strategy, unsatisfactory return, compliance obligations, integration/retention difficulties, management distraction, and announced transactions not being completed."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2023:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the change in estimate for server and network equipment useful lives, effective fiscal year 2023, increased net income by $3.0 billion."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states the Q2 charge reduced net income by $946 million and prior year net income was increased by a $3.3 billion net tax benefit from the transfer of intangible properties."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2023:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The original paragraph states the change in estimate for fiscal year 2023 increased operating income by $3.7 billion, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states operating income increased $5.1 billion or 6% driven by growth in Productivity and Business Processes and Intelligent Cloud and the change in accounting estimate, offset in part by a decline in More Personal Computing."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2023:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-677 directly states Office Commercial revenue is mainly affected by installed base growth, ARPU expansion, and the shift from on-premises Office to Office 365, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from paragraph-685 directly states LinkedIn revenue is mainly affected by enterprise/professional demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, plus member engagement and sponsored content quality for Marketing Solutions, matching the statement."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2023:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states cyberthreats are constantly evolving and increasingly sophisticated and complex, increasing difficulty of detecting and defending, and that the company may have no current capability to detect certain vulnerabilities or new attack methods."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states the cost of protective measures could reduce operating margins and that failing to do these things well could harm reputation and lead customers to reduce or delay purchases or use competing products."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2024:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the prior-year Q2 charge reduced prior-year net income by $946 million and decreased gross margin, operating income, and diluted EPS, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote attributes the effective tax rate decrease primarily to tax benefits from tax law changes, including IRS/Treasury Notices 2023-55 and 2023-80, which delayed the effective date of final foreign tax credit regulations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2024:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states operating expenses increased $4.0 billion or 7%, driven by Gaming with 7 points from Activision Blizzard and cloud engineering investments, partly offset by the prior year Q2 charge."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states prior year operating income was negatively impacted by the Q2 charge, resulting in a decrease of $1.2 billion."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-678 exactly matches the statement: installed base growth, average revenue per user expansion, and shift from Office licensed on-premises to Office 365."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from paragraph-682 directly states LinkedIn revenue is mainly affected by demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, plus member engagement and sponsored content quality for Marketing Solutions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "MSFT:2024:risk": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "Paragraph-992 explicitly states barriers to entry are low, markets evolve rapidly with disruptive technologies and shifting user needs, and failure to continue innovating may prevent remaining competitive and adversely affect business, financial condition, and results."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Paragraph-1056 states that beginning in late November 2023 a nation-state associated threat actor used a password spray attack to compromise a legacy test account and gain access to Microsoft email accounts, and that the threat actor used and may continue to use information it obtained."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "NVDA:2024:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states NVIDIA recognized a non-cash net benefit of $145 million in fiscal year 2024 related to the IRS audit resolution for effectively settled positions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "NVDA:2024:operating_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states operating expenses increased in FY2024 driven by employee growth and compensation increases, and that FY2023 included a $1.4 billion acquisition termination charge related to the proposed Arm transaction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "NVDA:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from paragraph-353 directly matches the statement, stating revenue stems from a limited number of partners and distributors, concentration of sales to end customers, and revenue could be adversely affected if losing or prevented from selling to these end customers."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from paragraph-415 directly matches the statement, stating product transitions are complex and can impact revenue as the company often ships both new and prior architecture products simultaneously while it and channel partners prepare to ship and support new products."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "TSLA:2023:net_income": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote states the provision changed by $6.13 billion in 2023 vs 2022, primarily due to release of $6.54 billion valuation allowance for U.S. federal and certain state deferred tax assets, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states the effective tax rate changed from an 8% expense to a 50% benefit in 2023 vs 2022, primarily due to release of the valuation allowance regarding U.S. federal and certain state deferred tax assets, matching the statement."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  },
+  "TSLA:2023:operating_income": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0
+  },
+  "TSLA:2023:revenue": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0
+  },
+  "TSLA:2024:revenue": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The original paragraph confirms the $6.03 billion/8% decline, lower ASP from price reductions and financing options plus mix, ~22,000 fewer Model 3/Y cash deliveries, ~19,000 more other-model deliveries from Cybertruck ramp, and $596 million FSD revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The original paragraph states increased competition could result in lower vehicle unit sales, price reductions, revenue shortfalls, loss of customers and market share, harming business, financial condition and operating results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2
+  }
+}

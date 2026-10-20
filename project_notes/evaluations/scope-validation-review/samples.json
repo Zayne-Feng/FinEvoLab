@@ -1,0 +1,1514 @@
+{
+  "5d4b12193b1ad6d80ac57e1791be1ab4863b9346d478762dd67c77f6a8710727": {
+    "question": "Explain MSFT's FY2024 revenue changes and disclosed business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT's FY2024 revenue increased, with growth disclosed across each of its segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      },
+      {
+        "statement": "Segment-level drivers disclosed were Azure for Intelligent Cloud, Office 365 Commercial for Productivity and Business Processes, and Gaming for More Personal Computing.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      },
+      {
+        "statement": "Server products and cloud services revenue growth was disclosed as driven by Azure and other cloud services, with Azure growth attributed to consumption-based services.",
+        "chunk_id": "passage:13aa4483d109f4585524a100",
+        "quote": "Server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "5e598554c81cd01fd34ef4369b997803089b21615c2bbaf2b30905e3ecea0d5b": {
+    "question": "Explain MSFT's FY2024 revenue changes and disclosed business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT disclosed that FY2024 revenue growth was driven by growth across each of its segments.",
+        "chunk_id": "passage:27bf1f876a213d4d73b36a9f",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      },
+      {
+        "statement": "The report attributes segment revenue increases to Azure (Intelligent Cloud), Office 365 Commercial (Productivity and Business Processes), and Gaming (More Personal Computing).",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      },
+      {
+        "statement": "Enterprise and partner services revenue declined, attributed to declines in Enterprise Support Services and Industry Solutions.",
+        "chunk_id": "passage:4a13a7655b912bfe97f77589",
+        "quote": "Enterprise and partner services revenue decreased $306 million or 4% driven by declines in Enterprise Support Services and Industry Solutions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:27bf1f876a213d4d73b36a9f",
+        "text": "MSFT FY2024 discussion analysis\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "article#discussion-analysis|structured=65",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:4a13a7655b912bfe97f77589",
+        "text": "MSFT FY2024 item-7\nEnterprise and partner services revenue decreased $306 million or 4% driven by declines in Enterprise Support Services and Industry Solutions.",
+        "locator": "dom-block=2303|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "e7e993a5aade7481b1b2765c656fad7f6228aff3b4290f677f1a2f3854bd2d8c": {
+    "question": "Explain MSFT's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The annual report discloses that operating income increased, with the passage stating the increase in both dollar and percentage terms.",
+        "chunk_id": "passage:e05a7102bb72200bd4111812",
+        "quote": "Operating income increased $11.7 billion or 31%."
+      },
+      {
+        "statement": "Another disclosed operating income increase is stated in both dollar and percentage terms.",
+        "chunk_id": "passage:9e9ed08d01765428e090c427",
+        "quote": "Operating income increased $6.4 billion or 19%."
+      },
+      {
+        "statement": "A further disclosed operating income increase is stated in both dollar and percentage terms.",
+        "chunk_id": "passage:53fda03d288a5b090e7b062d",
+        "quote": "Operating income increased $2.9 billion or 17%."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:53fda03d288a5b090e7b062d",
+        "text": "MSFT FY2024 item-7\nOperating income increased $2.9 billion or 17%.",
+        "locator": "dom-block=2326|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:9e9ed08d01765428e090c427",
+        "text": "MSFT FY2024 item-7\nOperating income increased $6.4 billion or 19%.",
+        "locator": "dom-block=2293|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e05a7102bb72200bd4111812",
+        "text": "MSFT FY2024 item-7\nOperating income increased $11.7 billion or 31%.",
+        "locator": "dom-block=2311|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "0752ee81a6e46e0fc600dcb48c9012dc136b23c17ed126e9c2c6f8cf128ef0b6": {
+    "question": "Explain MSFT's FY2024 net income changes and disclosed tax or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income increased in FY2024 compared to FY2023, as shown in the discussion analysis table.",
+        "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+        "quote": "Net income | 88,136 | 72,361 | 22%"
+      },
+      {
+        "statement": "The disclosed driver for the decrease in MSFT's effective tax rate in FY2024 versus FY2023 was tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations.",
+        "chunk_id": "passage:2931664fc13badedcfa38573",
+        "quote": "The decrease in our effective tax rate for fiscal year 2024 compared to fiscal year 2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations."
+      },
+      {
+        "statement": "MSFT disclosed that its effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through its Ireland operations center.",
+        "chunk_id": "passage:49c1fcd955c97fc1151be618",
+        "quote": "Our effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2931664fc13badedcfa38573",
+        "text": "MSFT FY2024 income taxes\nThe decrease in our effective tax rate for fiscal year 2024 compared to fiscal year 2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations. The increase in our effective tax rate for fiscal year 2023 compared to fiscal year 2022 was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "article#income-taxes|structured=10",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:49c1fcd955c97fc1151be618",
+        "text": "MSFT FY2024 item-7\nOur effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland.",
+        "locator": "dom-block=2693|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b2a944d4eac50309ccbf6c53",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+        "locator": "article#discussion-analysis|structured=62",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#discussion-analysis|block=62|table-text",
+          "declarations": [
+            {
+              "locator": "article#discussion-analysis|block=62|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2024 2023 Percentage Change Revenue $ 245,122 $ 211,915 16% Gross margin 171,008 146,052 17% Operating income 109,433 88,523 24% Net income 88,136 72,361 22% Diluted earnings per share 11.80 9.68 22% Adjusted gross margin (non-GAAP) 171,008 146,204 17% Adjusted operating income (non-GAAP) 109,433 89,694 22% Adjusted net income (non-GAAP) 88,136 73,307 20% Adjusted diluted earnings per share (non-GAAP) 11.80 9.81 20%"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "f71e2ac9bdfb297631deca2bedd3ca71431d64d92a230611e961d54f72fa12da": {
+    "question": "Explain MSFT's FY2024 net income changes and disclosed tax or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [],
+    "sources": []
+  },
+  "4cd7c3141dec867b91f27140526ba6f0ec6382a540b7ade7a6cf366800902f69": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that intense competition across all its product and service markets may adversely affect its results of operations.",
+        "chunk_id": "passage:a48bbe5b6321011568fea307",
+        "quote": "We face intense competition across all markets for our products and services, which may adversely affect our results of operations."
+      },
+      {
+        "statement": "MSFT discloses that competition law enforcement actions, court decisions, and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "MSFT discloses that competitive pressures may cause decreased sales volumes, price reductions, and/or increased operating costs such as for research and development, marketing, and sales incentives.",
+        "chunk_id": "passage:e213845b980a4acc71204d50",
+        "quote": "The competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives, which may adversely affect our financial condition and results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a48bbe5b6321011568fea307",
+        "text": "MSFT FY2024 item-1a\nWe face intense competition across all markets for our products and services, which may adversely affect our results of operations.",
+        "locator": "dom-block=997|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e213845b980a4acc71204d50",
+        "text": "MSFT FY2024 item-1a\nThe competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives, which may adversely affect our financial condition and results of operations.",
+        "locator": "dom-block=1028|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "a799fcc2a9f2aca8709869ac8c357ad18991618032712011ef20424051fa40e6": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock trading price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      },
+      {
+        "statement": "MSFT discloses that the global nature of its business creates operational, economic, and geopolitical risks, and that global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect its results of operations.",
+        "chunk_id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "quote": "The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations."
+      },
+      {
+        "statement": "MSFT discloses that competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "MSFT discloses that perceptions of mismanagement of data-handling practices, driven by regulatory activity or negative public reaction, could negatively impact product and feature adoption, and that development delays or problems creating new products could adversely affect its business, financial condition, and results of operations.",
+        "chunk_id": "passage:124bb54837cfba61602e9447",
+        "quote": "Perceptions of mismanagement, driven by regulatory activity or negative public reaction to our practices or product experiences, could negatively impact product and feature adoption. Developing new technologies is complex. It can require long development and testing periods. We could experience significant delays in new releases or significant problems in creating new products or services. These factors could adversely affect our business, financial condition, and results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:124bb54837cfba61602e9447",
+        "text": "MSFT FY2024 item-1a\not get engagement in certain features that drive post-sale monetization opportunities. Our data-handling practices across our products and services will continue to be under scrutiny. Perceptions of mismanagement, driven by regulatory activity or negative public reaction to our practices or product experiences, could negatively impact product and feature adoption. Developing new technologies is complex. It can require long development and testing periods. We could experience significant delays in new releases or significant problems in creating new products or services. These factors could adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1050|part=1|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "text": "MSFT FY2024 item-1a\nOur global business exposes us to operational and economic risks. Our customers are located throughout the world and a significant part of our revenue comes from international sales. The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations. In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, the environment, and political expression in specific countries may significantly alter the trade and commercial environments. Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe",
+        "locator": "dom-block=1199|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "aa550f9dc20e858ef00e8b52ac10ffe08647f969b48e2075197516bb102ab865": {
+    "question": "Explain AAPL's FY2022 revenue changes and disclosed business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The report attributes the year-over-year increase in total net sales primarily to higher net sales of iPhone, Services and Mac.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+      },
+      {
+        "statement": "The report discloses that weakness in foreign currencies relative to the U.S. dollar unfavorably affected net sales across all Products and Services during the year.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+      },
+      {
+        "statement": "For Rest of Asia Pacific, the report attributes higher net sales primarily to higher net sales of iPhone, Mac and Services, while noting an unfavorable currency impact.",
+        "chunk_id": "passage:71289aca2ef6b63464123bc8",
+        "quote": "Rest of Asia Pacific net sales increased during 2022 compared to 2021 due primarily to higher net sales of iPhone, Mac and Services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:71289aca2ef6b63464123bc8",
+        "text": "AAPL FY2022 item-7\nRest of Asia Pacific net sales increased during 2022 compared to 2021 due primarily to higher net sales of iPhone, Mac and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2022.",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:87535773381220052a2d496a",
+        "text": "AAPL FY2022 item-7\nTotal net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "locator": "dom-block=510|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "568fe985949be745a734a9a8439eb9b1a56bc21d4a312ef37a30849dbe5165e7": {
+    "question": "Explain AAPL's FY2022 revenue changes and disclosed business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The annual report attributes the year-over-year increase in total net sales primarily to higher net sales of iPhone, Services and Mac.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+      },
+      {
+        "statement": "The report discloses that weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+      },
+      {
+        "statement": "iPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro.",
+        "chunk_id": "passage:9999cb4404f949a1f00a1517",
+        "quote": "iPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:87535773381220052a2d496a",
+        "text": "AAPL FY2022 item-7\nTotal net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "locator": "dom-block=510|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:9999cb4404f949a1f00a1517",
+        "text": "AAPL FY2022 item-7\niPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro.",
+        "locator": "dom-block=555|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "ecd756d0680f4aadd6572912233333f39fd34200884ad9bba52b43d2138d598f": {
+    "question": "Explain AAPL's FY2022 operating income changes and disclosed cost or business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [],
+    "sources": []
+  },
+  "007e3c325131e1db3ad348bec0fd165893193398504d0c06c612c6defa704491": {
+    "question": "Explain AAPL's FY2022 operating income changes and disclosed cost or business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "AAPL's FY2022 operating income rose versus FY2021, with the consolidated statement showing operating income for the year ended September 24, 2022 exceeding the prior year.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "Disclosed driver: Products gross margin percentage increased in 2022 versus 2021 primarily due to a different Products mix, partially offset by foreign currency weakness relative to the U.S. dollar.",
+        "chunk_id": "passage:4b4603d07e31bb3f63a3273d",
+        "quote": "Products gross margin percentage increased during 2022 compared to 2021 due primarily to a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      },
+      {
+        "statement": "Segment operating income excludes certain corporate costs such as R&D, corporate marketing, certain share-based compensation, income taxes, nonrecurring charges and other separately managed G&A costs.",
+        "chunk_id": "passage:96ad4c5d266a8f176428c0a9",
+        "quote": "Costs excluded from segment operating income include various corporate expenses such as research and development (“R&D”), corporate marketing expenses, certain share-based compensation expenses, income taxes, various nonrecurring charges and other separately managed general and administrative costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4b4603d07e31bb3f63a3273d",
+        "text": "AAPL FY2022 item-7\nProducts gross margin percentage increased during 2022 compared to 2021 due primarily to a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=600|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=731|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=731|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:96ad4c5d266a8f176428c0a9",
+        "text": "AAPL FY2022 item-8\nThe Company evaluates the performance of its reportable segments based on net sales and operating income. Net sales for geographic segments are generally based on the location of customers and sales through the Company’s retail stores located in those geographic locations. Operating income for each segment includes net sales to third parties, related cost of sales and operating expenses directly attributable to the segment. Advertising expenses are generally included in the geographic segment in which the expenditures are incurred. Operating income for each segment excludes other income and expense and certain expenses managed outside the reportable segments. Costs excluded from segment operating income include various corporate expenses such as research and development (“R&D”), corporate marketing expenses, certain share-based compensation expenses, income taxes, various nonrecurring charges and other separately managed general and administrative costs. The Company does not include intercompany transfers between segments for management reporting purposes.",
+        "locator": "dom-block=954|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "b785f575821b2864d75a1506639341643d137991f3ca652faaccdc98d89679aa": {
+    "question": "Explain AAPL's FY2022 net income changes and disclosed tax or business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "AAPL's FY2022 net income increased compared with FY2021, as shown in the consolidated statements of operations.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Net income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411"
+      },
+      {
+        "statement": "AAPL disclosed that its FY2022 effective tax rate was below the statutory federal rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation, and the U.S. federal R&D credit, partially offset by state income taxes.",
+        "chunk_id": "passage:a35a61db7f6ff6d03b270e8e",
+        "quote": "The Company’s effective tax rate for 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and the impact of the U.S. federal R&D credit, partially offset by state income taxes."
+      },
+      {
+        "statement": "AAPL identifies exposure to changes in tax rates, new U.S. or international tax legislation, and additional tax liabilities as risk factors.",
+        "chunk_id": "passage:281cc0f121619b94421593ac",
+        "quote": "The Company is subject to changes in tax rates, the adoption of new U.S. or international tax legislation and exposure to additional tax liabilities."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:281cc0f121619b94421593ac",
+        "text": "AAPL FY2022 item-1a\nThe Company is subject to changes in tax rates, the adoption of new U.S. or international tax legislation and exposure to additional tax liabilities.",
+        "locator": "dom-block=434|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=731|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=731|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:a35a61db7f6ff6d03b270e8e",
+        "text": "AAPL FY2022 item-7\nThe Company’s effective tax rate for 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and the impact of the U.S. federal R&D credit, partially offset by state income taxes. The Company’s effective tax rate for 2021 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and foreign-derived intangible income deductions.",
+        "locator": "dom-block=642|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "b35c8347c5027bba9b60fae7008216ca6d8bb3e40a0baf26d2d132b11fa56fdf": {
+    "question": "Explain AAPL's FY2022 specific operating risks and their possible effects using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that adverse macroeconomic conditions can reduce consumer confidence and spending, which may materially adversely affect demand for its products and services.",
+        "chunk_id": "passage:79643618f907378e81aa563c",
+        "quote": "Adverse macroeconomic conditions, including inflation, slower growth or recession, new or increased tariffs and other barriers to trade, changes to fiscal and monetary policy, tighter credit, higher interest rates, high unemployment and currency fluctuations can adversely impact consumer confidence and spending and materially adversely affect demand for the Company’s products and services."
+      },
+      {
+        "statement": "AAPL discloses that trade restrictions can make its products more expensive and less competitive, reduce consumer demand, and disrupt its operations and supply chain.",
+        "chunk_id": "passage:5207448b1b51d0c3d88e794e",
+        "quote": "make the Company’s products more expensive for customers, which could make the Company’s products less competitive and reduce consumer demand. Countries may also adopt other measures, such as controls on imports or exports of goods, technology or data, that could adversely impact the Company’s operations and supply chain and limit the Company’s ability to offer its products and services as designed."
+      },
+      {
+        "statement": "AAPL discloses that reliance on single or limited component sources exposes it to significant supply and pricing risks, including industry-wide shortages and commodity pricing fluctuations.",
+        "chunk_id": "passage:08e73ab06c6b47de0bf64983",
+        "quote": "Because the Company currently obtains certain components from single or limited sources, the Company is subject to significant supply and pricing risks. Many components, including those that are available from multiple sources, are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect the Company’s business, results of operations and financial condition."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:08e73ab06c6b47de0bf64983",
+        "text": "AAPL FY2022 item-1a\nBecause the Company currently obtains certain components from single or limited sources, the Company is subject to significant supply and pricing risks. Many components, including those that are available from multiple sources, are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect the Company’s business, results of operations and financial condition. For example, the global semiconductor industry is experiencing high demand and shortages of supply, which has adversely affected, and could materially adversely affect, the Company’s ability to obtain sufficient quantities of components and products on commercially reasonable terms or at all. While the Company has entered into agreements for the supply of many components, there can be no assurance the Company will be able to extend or renew these agreements on similar terms, or at all. Component suppliers may suffer from poor financial conditions, which can lead to business failure for the supplier or consolidation within a particular industry, further limiting the Company’s ability to obtain sufficient quantities of components on commercially reasonable term",
+        "locator": "dom-block=318|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:5207448b1b51d0c3d88e794e",
+        "text": "AAPL FY2022 item-1a\n make the Company’s products more expensive for customers, which could make the Company’s products less competitive and reduce consumer demand. Countries may also adopt other measures, such as controls on imports or exports of goods, technology or data, that could adversely impact the Company’s operations and supply chain and limit the Company’s ability to offer its products and services as designed. These measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed trade restrictions can be expensive, time-consuming and disruptive to the Company’s operations. Such restrictions can be announced with little or no advance notice and the Company may not be able to effectively mitigate all adverse impacts from such measures. If disputes and conflicts further escalate in the future, actions by governments in response could be significantly more severe and restrictive and could materially adversely affect the Company’s business. Political uncertainty surrounding trade and other international di",
+        "locator": "dom-block=288|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:79643618f907378e81aa563c",
+        "text": "AAPL FY2022 item-1a\nAdverse macroeconomic conditions, including inflation, slower growth or recession, new or increased tariffs and other barriers to trade, changes to fiscal and monetary policy, tighter credit, higher interest rates, high unemployment and currency fluctuations can adversely impact consumer confidence and spending and materially adversely affect demand for the Company’s products and services. In addition, consumer confidence and spending can be materially adversely affected in response to financial market volatility, negative financial news, conditions in the real estate and mortgage markets, declines in income or asset values, energy shortages and cost increases, labor and healthcare costs and other economic factors.",
+        "locator": "dom-block=273|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "543c1b062ec960a9012ec8149b198d5c2c14b90c08c5a41ae06b288dcaee0cba": {
+    "question": "Explain AAPL's FY2022 specific operating risks and their possible effects using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that adverse global or regional economic conditions affecting its suppliers can impair its ability to obtain components, leaving it exposed to supply shortages and price increases.",
+        "chunk_id": "passage:92366cb3d8341c65e99bc708",
+        "quote": "The effects of global or regional economic conditions on the Company’s suppliers, described in “ The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations and financial condition, ” above, can also affect the Company’s ability to obtain components . Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that investments and acquisitions carry risks including management distraction, unexpected liabilities and expenses, regulatory approval failures, and potential impairment or write-offs, and that failure of a significant investment could materially adversely affect its business, reputation, results of operations and financial condition.",
+        "chunk_id": "passage:fa34996d0e10e6540e918614",
+        "quote": "Such endeavors may involve significant risks and uncertainties, including distraction of management from current operations, greater-than-expected liabilities and expenses, economic, political, legal and regulatory challenges associated with operating in new businesses, regions or countries, inadequate return on capital, potential impairment of tangible and intangible assets, and significant write-offs."
+      },
+      {
+        "statement": "AAPL discloses that industrial accidents at suppliers and contract manufacturers could cause injuries or loss of life, business disruption, and reputational harm, and that major public health issues such as pandemics have adversely affected and could materially adversely affect it through economic and demand impacts, public safety measures, and supply chain and distribution disruptions.",
+        "chunk_id": "passage:a9293e9e87edebbb5b901dae",
+        "quote": "The Company’s operations are also subject to the risks of industrial accidents at its suppliers and contract manufacturers. While the Company’s suppliers are required to maintain safe working environments and operations, an industrial accident could occur and could result in serious injuries or loss of life, disruption to the Company’s business, and harm to the Company’s reputation."
+      },
+      {
+        "statement": "AAPL discloses that trade restrictions such as import or export controls could adversely impact its operations and supply chain, limit its ability to offer products as designed, and require costly, time-consuming changes such as changing suppliers or restructuring business relationships.",
+        "chunk_id": "passage:5207448b1b51d0c3d88e794e",
+        "quote": "Countries may also adopt other measures, such as controls on imports or exports of goods, technology or data, that could adversely impact the Company’s operations and supply chain and limit the Company’s ability to offer its products and services as designed."
+      },
+      {
+        "statement": "AAPL discloses that complying with new laws and regulations or other legal proceedings could harm its reputation for privacy and security, reduce demand, and cause lost sales.",
+        "chunk_id": "passage:ee9c305fdbf05aaaf29f8afb",
+        "quote": "Changes to the Company’s business practices to comply with new laws and regulations or in connection with other legal proceedings could negatively impact the reputation of the Company’s products for privacy and security and otherwise adversely affect the experience for users of the Company’s products and services, and result in harm to the Company’s reputation, loss of competitive advantage, poor market acceptance, reduced demand for products and services, and lost sales."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5207448b1b51d0c3d88e794e",
+        "text": "AAPL FY2022 item-1a\n make the Company’s products more expensive for customers, which could make the Company’s products less competitive and reduce consumer demand. Countries may also adopt other measures, such as controls on imports or exports of goods, technology or data, that could adversely impact the Company’s operations and supply chain and limit the Company’s ability to offer its products and services as designed. These measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed trade restrictions can be expensive, time-consuming and disruptive to the Company’s operations. Such restrictions can be announced with little or no advance notice and the Company may not be able to effectively mitigate all adverse impacts from such measures. If disputes and conflicts further escalate in the future, actions by governments in response could be significantly more severe and restrictive and could materially adversely affect the Company’s business. Political uncertainty surrounding trade and other international di",
+        "locator": "dom-block=288|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:92366cb3d8341c65e99bc708",
+        "text": "AAPL FY2022 item-1a\ns or at all. The effects of global or regional economic conditions on the Company’s suppliers, described in “ The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations and financial condition, ” above, can also affect the Company’s ability to obtain components . Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition.",
+        "locator": "dom-block=318|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:a9293e9e87edebbb5b901dae",
+        "text": "AAPL FY2022 item-1a\nThe Company’s operations are also subject to the risks of industrial accidents at its suppliers and contract manufacturers. While the Company’s suppliers are required to maintain safe working environments and operations, an industrial accident could occur and could result in serious injuries or loss of life, disruption to the Company’s business, and harm to the Company’s reputation. Major public health issues, including pandemics such as the COVID-19 pandemic, have adversely affected, and could in the future materially adversely affect, the Company due to their impact on the global economy and demand for consumer products; the imposition of protective public safety measures, such as stringent employee travel restrictions and limitations on freight services and the movement of products between regions; and disruptions in the Company’s supply chain and sales and distribution channels, resulting in interruptions of the supply of current products and delays in production ramps of new products.",
+        "locator": "dom-block=295|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ee9c305fdbf05aaaf29f8afb",
+        "text": "AAPL FY2022 item-1a\nThere can be no assurance the Company’s business will not be materially adversely affected, individually or in the aggregate, by the outcomes of such investigations, litigation or changes to laws and regulations in the future. Changes to the Company’s business practices to comply with new laws and regulations or in connection with other legal proceedings could negatively impact the reputation of the Company’s products for privacy and security and otherwise adversely affect the experience for users of the Company’s products and services, and result in harm to the Company’s reputation, loss of competitive advantage, poor market acceptance, reduced demand for products and services, and lost sales.",
+        "locator": "dom-block=410|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa34996d0e10e6540e918614",
+        "text": "AAPL FY2022 item-1a\nThe Company has invested, and in the future may invest, in new business strategies or acquisitions. Such endeavors may involve significant risks and uncertainties, including distraction of management from current operations, greater-than-expected liabilities and expenses, economic, political, legal and regulatory challenges associated with operating in new businesses, regions or countries, inadequate return on capital, potential impairment of tangible and intangible assets, and significant write-offs. Investment and acquisition transactions are exposed to additional risks, including failing to obtain required regulatory approvals on a timely basis or at all, or the imposition of onerous conditions that could delay or prevent the Company from completing a transaction or otherwise limit the Company’s ability to fully realize the anticipated benefits of a transaction. These new ventures are inherently risky and may not be successful. The failure of any significant investment could materially adversely affect the Company’s business, reputation, results of operations and financial condition.",
+        "locator": "dom-block=374|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "f7387db1530522a6d152a4627fdfaebf83a7d7f51bd066d0a048021066e3a4d9": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT's revenue increased, with growth reported across each of its segments; the report attributes Intelligent Cloud growth to Azure, Productivity and Business Processes growth to Office 365 Commercial, and More Personal Computing growth to Gaming.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      },
+      {
+        "statement": "Server products and cloud services revenue growth was disclosed as driven by Azure and other cloud services, with Azure growth attributed to consumption-based services and server products growth attributed to demand for hybrid solutions.",
+        "chunk_id": "passage:13aa4483d109f4585524a100",
+        "quote": "Server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments."
+      },
+      {
+        "statement": "The report notes that revenue fluctuates quarterly and is generally higher in the fourth quarter, which it attributes to a higher volume of multi-year contracts executed during that period.",
+        "chunk_id": "passage:9774433a008d6b8db68b307a",
+        "quote": "Our revenue fluctuates quarterly and is generally higher in the fourth quarter of our fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:9774433a008d6b8db68b307a",
+        "text": "MSFT FY2024 discussion analysis\nOur revenue fluctuates quarterly and is generally higher in the fourth quarter of our fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period.",
+        "locator": "article#discussion-analysis|structured=14",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "60fdaed32cfa29b33ac0e89b18b07941b92e068d9724d6db4227418341b53e42": {
+    "question": "Calculate MSFT's FY2024 annual change in operating income from the immediately prior fiscal year. Also explain operating income changes and disclosed cost or business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT's operating income increased year over year, with the report showing a percentage change for operating income.",
+        "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+        "quote": "Operating income | 109,433 | 88,523 | 24%"
+      },
+      {
+        "statement": "The prior year's operating income was negatively impacted by a Q2 charge, which the report discloses as a driver of the prior-year figures.",
+        "chunk_id": "passage:1aee69acb828726c4445a51f",
+        "quote": "Prior year gross margin, operating income, net income, and diluted EPS were negatively impacted by the Q2 charge, which resulted in decreases of $152 million, $1.2 billion, $946 million, and $0.13, respectively."
+      },
+      {
+        "statement": "Gross margin growth was disclosed as driven by growth in Azure, with gross margin percentage decreasing slightly.",
+        "chunk_id": "passage:4a33ecdaf8dcab29e325d023",
+        "quote": "Gross margin increased $11.6 billion or 19% driven by growth in Azure. Gross margin percentage decreased slightly."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:1aee69acb828726c4445a51f",
+        "text": "MSFT FY2024 discussion analysis\nPrior year gross margin, operating income, net income, and diluted EPS were negatively impacted by the Q2 charge, which resulted in decreases of $152 million, $1.2 billion, $946 million, and $0.13, respectively.",
+        "locator": "article#discussion-analysis|structured=70",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:4a33ecdaf8dcab29e325d023",
+        "text": "MSFT FY2024 item-7\nGross margin increased $11.6 billion or 19% driven by growth in Azure. Gross margin percentage decreased slightly. Excluding the impact of the change in accounting estimate, gross margin percentage increased slightly primarily driven by improvement in Azure, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+        "locator": "dom-block=2313|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b2a944d4eac50309ccbf6c53",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+        "locator": "article#discussion-analysis|structured=62",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#discussion-analysis|block=62|table-text",
+          "declarations": [
+            {
+              "locator": "article#discussion-analysis|block=62|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2024 2023 Percentage Change Revenue $ 245,122 $ 211,915 16% Gross margin 171,008 146,052 17% Operating income 109,433 88,523 24% Net income 88,136 72,361 22% Diluted earnings per share 11.80 9.68 22% Adjusted gross margin (non-GAAP) 171,008 146,204 17% Adjusted operating income (non-GAAP) 109,433 89,694 22% Adjusted net income (non-GAAP) 88,136 73,307 20% Adjusted diluted earnings per share (non-GAAP) 11.80 9.81 20%"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "9e113abec37b2d85cc8bcc789b6dc7b80df34422da7f89e26df92d082c4f12c7": {
+    "question": "Calculate MSFT's FY2024 annual change in net income from the immediately prior fiscal year. Also explain net income changes and disclosed tax or business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT's net income increased in FY2024 compared to FY2023, as shown in the discussion analysis table.",
+        "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+        "quote": "Net income | 88,136 | 72,361 | 22%"
+      },
+      {
+        "statement": "The disclosed driver for the lower FY2024 effective tax rate versus FY2023 was tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations.",
+        "chunk_id": "passage:2931664fc13badedcfa38573",
+        "quote": "The decrease in our effective tax rate for fiscal year 2024 compared to fiscal year 2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations."
+      },
+      {
+        "statement": "MSFT disclosed that its effective tax rate was below the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions tied to its foreign regional operations center in Ireland.",
+        "chunk_id": "passage:49c1fcd955c97fc1151be618",
+        "quote": "Our effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2931664fc13badedcfa38573",
+        "text": "MSFT FY2024 income taxes\nThe decrease in our effective tax rate for fiscal year 2024 compared to fiscal year 2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations. The increase in our effective tax rate for fiscal year 2023 compared to fiscal year 2022 was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "article#income-taxes|structured=10",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:49c1fcd955c97fc1151be618",
+        "text": "MSFT FY2024 item-7\nOur effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland.",
+        "locator": "dom-block=2693|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b2a944d4eac50309ccbf6c53",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+        "locator": "article#discussion-analysis|structured=62",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#discussion-analysis|block=62|table-text",
+          "declarations": [
+            {
+              "locator": "article#discussion-analysis|block=62|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2024 2023 Percentage Change Revenue $ 245,122 $ 211,915 16% Gross margin 171,008 146,052 17% Operating income 109,433 88,523 24% Net income 88,136 72,361 22% Diluted earnings per share 11.80 9.68 22% Adjusted gross margin (non-GAAP) 171,008 146,204 17% Adjusted operating income (non-GAAP) 109,433 89,694 22% Adjusted net income (non-GAAP) 88,136 73,307 20% Adjusted diluted earnings per share (non-GAAP) 11.80 9.81 20%"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "819a6d5e6df968b70ba451a8b96bec294fabf93a13234806c55ae3f9c4080a39": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain specific operating risks and their possible effects for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that competition law enforcement actions and new market regulations could result in fines or hinder its ability to provide software benefits, reducing product attractiveness and related revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "MSFT states that the outcome of competition law actions, or steps taken to avoid them, could adversely affect it in various ways, including withdrawing or modifying products for certain markets, decreasing asset value, harming monetization, or inhibiting acquisitions.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+      },
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock trading price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "d8b40561007a688b8ef087c26680e2745719fdd8a1ee7e28d2fea8e6ea78a23f": {
+    "question": "Give AAPL's FY2022 revenue, with original units and fiscal dates. Also explain revenue changes and disclosed business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL's total net sales increased during FY2022 compared to FY2021, driven primarily by higher net sales of iPhone, Services and Mac, while foreign currency weakness had an unfavorable impact.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+      },
+      {
+        "statement": "In Rest of Asia Pacific, net sales rose during FY2022 versus FY2021 due primarily to higher net sales of iPhone, Mac and Services, with foreign currency weakness an unfavorable factor.",
+        "chunk_id": "passage:71289aca2ef6b63464123bc8",
+        "quote": "Rest of Asia Pacific net sales increased during 2022 compared to 2021 due primarily to higher net sales of iPhone, Mac and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2022."
+      },
+      {
+        "statement": "The report states the fiscal year end date as September 24, 2022.",
+        "chunk_id": "passage:535cbeaa668df4505f48bb77",
+        "quote": "For the Fiscal Year Ended September 24, 2022"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:535cbeaa668df4505f48bb77",
+        "text": "AAPL FY2022 report\nFor the Fiscal Year Ended September 24, 2022",
+        "locator": "dom-block=99|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:71289aca2ef6b63464123bc8",
+        "text": "AAPL FY2022 item-7\nRest of Asia Pacific net sales increased during 2022 compared to 2021 due primarily to higher net sales of iPhone, Mac and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2022.",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:87535773381220052a2d496a",
+        "text": "AAPL FY2022 item-7\nTotal net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "locator": "dom-block=510|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "b0bd66ad917d472ec284c28a1d4a41f28b14b671a1941e9c3d3b81be4ddd5eaa": {
+    "question": "Give AAPL's FY2022 operating income, with original units and fiscal dates. Also explain operating income changes and disclosed cost or business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL's operating income increased in FY2022 compared to FY2021, based on the reported figures for the years ended September 24, 2022 and September 25, 2021.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "The report discloses that Products gross margin percentage rose in 2022 versus 2021, attributed primarily to a different Products mix, partially offset by foreign currency weakness relative to the U.S. dollar.",
+        "chunk_id": "passage:4b4603d07e31bb3f63a3273d",
+        "quote": "Products gross margin percentage increased during 2022 compared to 2021 due primarily to a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      },
+      {
+        "statement": "Segment operating income excludes certain corporate expenses such as R&D, corporate marketing, certain share-based compensation, income taxes, nonrecurring charges, and other separately managed G&A costs.",
+        "chunk_id": "passage:96ad4c5d266a8f176428c0a9",
+        "quote": "Costs excluded from segment operating income include various corporate expenses such as research and development (“R&D”), corporate marketing expenses, certain share-based compensation expenses, income taxes, various nonrecurring charges and other separately managed general and administrative costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4b4603d07e31bb3f63a3273d",
+        "text": "AAPL FY2022 item-7\nProducts gross margin percentage increased during 2022 compared to 2021 due primarily to a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=600|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=731|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=731|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:96ad4c5d266a8f176428c0a9",
+        "text": "AAPL FY2022 item-8\nThe Company evaluates the performance of its reportable segments based on net sales and operating income. Net sales for geographic segments are generally based on the location of customers and sales through the Company’s retail stores located in those geographic locations. Operating income for each segment includes net sales to third parties, related cost of sales and operating expenses directly attributable to the segment. Advertising expenses are generally included in the geographic segment in which the expenditures are incurred. Operating income for each segment excludes other income and expense and certain expenses managed outside the reportable segments. Costs excluded from segment operating income include various corporate expenses such as research and development (“R&D”), corporate marketing expenses, certain share-based compensation expenses, income taxes, various nonrecurring charges and other separately managed general and administrative costs. The Company does not include intercompany transfers between segments for management reporting purposes.",
+        "locator": "dom-block=954|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "58f7d7b6d801bcb5acb726b2859d5a79ddc0682243eee27803231ac233773acf": {
+    "question": "Give AAPL's FY2022 net income, with original units and fiscal dates. Also explain net income changes and disclosed tax or business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL's net income increased in FY2022 compared with FY2021, based on the reported figures for the years ended September 24, 2022 and September 25, 2021.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Net income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411"
+      },
+      {
+        "statement": "AAPL discloses that its FY2022 effective tax rate was below the statutory federal rate due primarily to a lower effective tax rate on foreign earnings, share-based compensation tax benefits, and the U.S. federal R&D credit, partially offset by state income taxes.",
+        "chunk_id": "passage:a35a61db7f6ff6d03b270e8e",
+        "quote": "The Company’s effective tax rate for 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and the impact of the U.S. federal R&D credit, partially offset by state income taxes."
+      },
+      {
+        "statement": "AAPL identifies tax-rate changes, new U.S. or international tax legislation, and additional tax liabilities as risks to which it is subject.",
+        "chunk_id": "passage:281cc0f121619b94421593ac",
+        "quote": "The Company is subject to changes in tax rates, the adoption of new U.S. or international tax legislation and exposure to additional tax liabilities."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:281cc0f121619b94421593ac",
+        "text": "AAPL FY2022 item-1a\nThe Company is subject to changes in tax rates, the adoption of new U.S. or international tax legislation and exposure to additional tax liabilities.",
+        "locator": "dom-block=434|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=731|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=731|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=731|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:a35a61db7f6ff6d03b270e8e",
+        "text": "AAPL FY2022 item-7\nThe Company’s effective tax rate for 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and the impact of the U.S. federal R&D credit, partially offset by state income taxes. The Company’s effective tax rate for 2021 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, tax benefits from share-based compensation and foreign-derived intangible income deductions.",
+        "locator": "dom-block=642|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "6a4016d53b6c338e92098f283732d0b855a6ae232b9efb6fcba2be92490f36e6": {
+    "question": "Give AAPL's FY2022 revenue, with original units and fiscal dates. Also explain specific operating risks and their possible effects for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that failure to comply with sensitive-data privacy and security obligations can expose it to litigation, government investigations, investigatory expenses, and significant fees or fines.",
+        "chunk_id": "passage:6e17add9d949e36cdded6220",
+        "quote": "If the Company fails to adequately comply with these rules and requirements, or if health data or financial data is handled in a manner not permitted by law or under the Company’s agreements with healthcare or financial institutions, the Company can be subject to litigation or government investigations, and can be liable for associated investigatory expenses, and can also incur significant fees or fines."
+      },
+      {
+        "statement": "AAPL discloses that it remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition.",
+        "chunk_id": "passage:92366cb3d8341c65e99bc708",
+        "quote": "Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that trade-related measures can require it to change suppliers, restructure business relationships, and cease offering third-party applications, and that such changes can be expensive, time-consuming and disruptive.",
+        "chunk_id": "passage:5207448b1b51d0c3d88e794e",
+        "quote": "These measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed trade restrictions can be expensive, time-consuming and disruptive to the Company’s operations."
+      },
+      {
+        "statement": "AAPL discloses that changes to its business practices to comply with new laws and regulations or legal proceedings could harm its reputation, cause loss of competitive advantage, poor market acceptance, reduced demand, and lost sales.",
+        "chunk_id": "passage:ee9c305fdbf05aaaf29f8afb",
+        "quote": "Changes to the Company’s business practices to comply with new laws and regulations or in connection with other legal proceedings could negatively impact the reputation of the Company’s products for privacy and security and otherwise adversely affect the experience for users of the Company’s products and services, and result in harm to the Company’s reputation, loss of competitive advantage, poor market acceptance, reduced demand for products and services, and lost sales."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5207448b1b51d0c3d88e794e",
+        "text": "AAPL FY2022 item-1a\n make the Company’s products more expensive for customers, which could make the Company’s products less competitive and reduce consumer demand. Countries may also adopt other measures, such as controls on imports or exports of goods, technology or data, that could adversely impact the Company’s operations and supply chain and limit the Company’s ability to offer its products and services as designed. These measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed trade restrictions can be expensive, time-consuming and disruptive to the Company’s operations. Such restrictions can be announced with little or no advance notice and the Company may not be able to effectively mitigate all adverse impacts from such measures. If disputes and conflicts further escalate in the future, actions by governments in response could be significantly more severe and restrictive and could materially adversely affect the Company’s business. Political uncertainty surrounding trade and other international di",
+        "locator": "dom-block=288|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e17add9d949e36cdded6220",
+        "text": "AAPL FY2022 item-1a\nIn addition to the risks generally relating to the collection, use, retention, security and transfer of personal information, the Company is also subject to specific obligations relating to information considered sensitive under applicable laws, such as health data, financial data and biometric data. Health data and financial data are subject to additional privacy, security and breach notification requirements, and the Company is subject to audit by governmental authorities regarding the Company’s compliance with these obligations. If the Company fails to adequately comply with these rules and requirements, or if health data or financial data is handled in a manner not permitted by law or under the Company’s agreements with healthcare or financial institutions, the Company can be subject to litigation or government investigations, and can be liable for associated investigatory expenses, and can also incur significant fees or fines.",
+        "locator": "dom-block=414|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:92366cb3d8341c65e99bc708",
+        "text": "AAPL FY2022 item-1a\ns or at all. The effects of global or regional economic conditions on the Company’s suppliers, described in “ The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations and financial condition, ” above, can also affect the Company’s ability to obtain components . Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition.",
+        "locator": "dom-block=318|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ee9c305fdbf05aaaf29f8afb",
+        "text": "AAPL FY2022 item-1a\nThere can be no assurance the Company’s business will not be materially adversely affected, individually or in the aggregate, by the outcomes of such investigations, litigation or changes to laws and regulations in the future. Changes to the Company’s business practices to comply with new laws and regulations or in connection with other legal proceedings could negatively impact the reputation of the Company’s products for privacy and security and otherwise adversely affect the experience for users of the Company’s products and services, and result in harm to the Company’s reputation, loss of competitive advantage, poor market acceptance, reduced demand for products and services, and lost sales.",
+        "locator": "dom-block=410|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "ab516c49829b1dc6810f47cd476cc655de4e3f6d3e20c04ad2642d3728d1c995": {
+    "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Automotive leasing revenue declined year over year, which the report attributes primarily to lower direct sales-type leasing revenue driven by lower deliveries, partly offset by growth in the direct operating lease portfolio.",
+        "chunk_id": "passage:e4230866f4222b8c2e93e247",
+        "quote": "Automotive leasing revenue decreased $356 million, or 14%, in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a decrease in direct sales-type leasing revenue driven by lower deliveries year over year, partially offset by an increase from our growing direct operating lease portfolio."
+      },
+      {
+        "statement": "Cost of automotive leasing revenue fell, which the report attributes primarily to lower direct sales-type leasing cost of revenue driven by lower deliveries year over year.",
+        "chunk_id": "passage:4bf0814117f2f6564cb9c92b",
+        "quote": "Cost of automotive leasing revenue decreased $241 million, or 16%, in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a decrease in direct sales-type leasing cost of revenue driven by lower deliveries year over year."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4bf0814117f2f6564cb9c92b",
+        "text": "TSLA FY2023 item-7\nCost of automotive leasing revenue decreased $241 million, or 16%, in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a decrease in direct sales-type leasing cost of revenue driven by lower deliveries year over year.",
+        "locator": "dom-block=769|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e4230866f4222b8c2e93e247",
+        "text": "TSLA FY2023 item-7\nAutomotive leasing revenue decreased $356 million, or 14%, in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a decrease in direct sales-type leasing revenue driven by lower deliveries year over year, partially offset by an increase from our growing direct operating lease portfolio.",
+        "locator": "dom-block=749|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "cc9122d73d00c6b64be9a016b45e29600a6ce8d3c380f38289f0083be4840904": {
+    "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in operating income from the immediately prior fiscal year. Also explain operating income changes and disclosed cost or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "TSLA's income from operations declined in FY2023 compared with the prior fiscal year, as shown in the comparative results table.",
+        "chunk_id": "passage:272f97e76b976bc8ab23afe8",
+        "quote": "Income from operations | 8,891 |  |  | 13,656 |  |  | 6,523"
+      },
+      {
+        "statement": "The report attributes the decrease in gross margin for the total automotive & services and other segment primarily to the automotive gross margin decrease discussed earlier.",
+        "chunk_id": "passage:fd87a40f28430b74340a5438",
+        "quote": "Gross margin for total automotive & services and other segment decreased from 26.5% to 18.2% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the automotive gross margin decrease discussed above."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:272f97e76b976bc8ab23afe8",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=952|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nRestructuring and other | — |  |  | 176 |  |  | ( 27 ) | \nTotal operating expenses | 8,769 |  |  | 7,197 |  |  | 7,083 | \nIncome from operations | 8,891 |  |  | 13,656 |  |  | 6,523 | \nInterest income | 1,066 |  |  | 297 |  |  | 56 | \nInterest expense | ( 156 ) |  |  | ( 191 ) |  |  | ( 371 ) | \nOther income (expense), net | 172 |  |  | ( 43 ) |  |  | 135 | \nIncome before income taxes | 9,973 |  |  | 13,719 |  |  | 6,343 | \n(Benefit from) provision for income taxes | ( 5,001 ) |  |  | 1,132 |  |  | 699 | \nNet income | 14,974 |  |  | 12,587 |  |  | 5,644 | \nNet (loss) income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | ( 23 ) |  |  | 31 |  |  | 125 | \nNet income attributable to common stockholders | $ | 14,997 |  |  | $ | 12,556 |  |  | $ | 5,519 | \nNet income per share of common stock attributable to common stockholders |  |  |  |  | \nBasic | $ | 4.73 |  |  | $ | 4.02 |  |  | $ | 1.87 | \nDiluted | $ | 4.30 |  |  | $ | 3.62 |  |  | $ | 1.63 | \nWeighted average shares used in computing net income per share of common stock |  |  |  |  | \nBasic | 3,174 |  | 3,130 |  | 2,959",
+        "locator": "dom-block=952|part=1|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=952|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=952|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=952|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=952|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:fd87a40f28430b74340a5438",
+        "text": "TSLA FY2023 item-7\nGross margin for total automotive & services and other segment decreased from 26.5% to 18.2% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the automotive gross margin decrease discussed above.",
+        "locator": "dom-block=772|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "ec31c1b20ebda7eb4525effcc9dc935688a1ffd77c852d98d6f9dd6342de057a": {
+    "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in net income from the immediately prior fiscal year. Also explain net income changes and disclosed tax or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "TSLA's net income attributable to common stockholders increased in FY2023 compared with FY2022, based on the year-over-year figures in the table.",
+        "chunk_id": "passage:fcab819613c2cd461692783e",
+        "quote": "Net income attributable to common stockholders | $ | 14,997 |  |  | $ | 12,556 |  |  | $ | 5,519"
+      },
+      {
+        "statement": "TSLA's effective tax rate shifted from an expense to a benefit year over year, which the report attributes primarily to release of the valuation allowance on U.S. federal and certain state deferred tax assets.",
+        "chunk_id": "passage:b063ef41072edd780e282e81",
+        "quote": "Our effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets."
+      },
+      {
+        "statement": "The report discloses that TSLA is subject to income taxes in the U.S. and many foreign jurisdictions and describes its asset-and-liability method for computing income taxes.",
+        "chunk_id": "passage:a3660cedaf3f365282cfe438",
+        "quote": "We are subject to income taxes in the U.S. and in many foreign jurisdictions. Income taxes are computed using the asset and liability method, under which deferred tax assets and liabilities are determined based on the difference between the financial statement and tax bases of assets and liabilities using enacted tax rates in effect for the year in which the differences are expected to affect taxable income."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a3660cedaf3f365282cfe438",
+        "text": "TSLA FY2023 item-8\nWe are subject to income taxes in the U.S. and in many foreign jurisdictions. Income taxes are computed using the asset and liability method, under which deferred tax assets and liabilities are determined based on the difference between the financial statement and tax bases of assets and liabilities using enacted tax rates in effect for the year in which the differences are expected to affect taxable income. Valuation allowances are established when necessary to reduce deferred tax assets to the amount expected to be realized.",
+        "locator": "dom-block=1116|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b063ef41072edd780e282e81",
+        "text": "TSLA FY2023 item-7\nOur effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcab819613c2cd461692783e",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1138|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nNet income attributable to common stockholders | $ | 14,997 |  |  | $ | 12,556 |  |  | $ | 5,519 | \nLess: Buy-out of noncontrolling interest | ( 2 ) |  |  | ( 27 ) |  |  | ( 5 ) | \nNet income used in computing basic net income per share of common stock | 14,999 |  |  | 12,583 |  |  | 5,524 | \nLess: Dilutive convertible debt | — |  |  | ( 1 ) |  |  | ( 9 ) | \nNet income used in computing diluted net income per share of common stock | $ | 14,999 |  |  | $ | 12,584 |  |  | $ | 5,533 | ",
+        "locator": "dom-block=1138|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1138|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1138|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1138|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1138|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-0": {
+    "question": "Explain MSFT's FY2024 revenue changes and disclosed business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "Explain MSFT's FY2024 revenue changes and disclosed business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:27bf1f876a213d4d73b36a9f",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:27bf1f876a213d4d73b36a9f",
+        "text": "MSFT FY2024 discussion analysis\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "article#discussion-analysis|structured=65",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:4a13a7655b912bfe97f77589",
+        "text": "MSFT FY2024 item-7\nEnterprise and partner services revenue decreased $306 million or 4% driven by declines in Enterprise Support Services and Industry Solutions.",
+        "locator": "dom-block=2303|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-2": {
+    "question": "Explain MSFT's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Operating income increased $11.7 billion or 31%.",
+        "chunk_id": "passage:e05a7102bb72200bd4111812",
+        "quote": "Operating income increased $11.7 billion or 31%."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:53fda03d288a5b090e7b062d",
+        "text": "MSFT FY2024 item-7\nOperating income increased $2.9 billion or 17%.",
+        "locator": "dom-block=2326|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:9e9ed08d01765428e090c427",
+        "text": "MSFT FY2024 item-7\nOperating income increased $6.4 billion or 19%.",
+        "locator": "dom-block=2293|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e05a7102bb72200bd4111812",
+        "text": "MSFT FY2024 item-7\nOperating income increased $11.7 billion or 31%.",
+        "locator": "dom-block=2311|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "Explain MSFT's FY2024 net income changes and disclosed tax or business drivers using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+        "quote": "Net income | 88,136 | 72,361 | 22%"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2931664fc13badedcfa38573",
+        "text": "MSFT FY2024 income taxes\nThe decrease in our effective tax rate for fiscal year 2024 compared to fiscal year 2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations. The increase in our effective tax rate for fiscal year 2023 compared to fiscal year 2022 was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties and a decrease in tax benefits relating to stock-based compensation.",
+        "locator": "article#income-taxes|structured=10",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:49c1fcd955c97fc1151be618",
+        "text": "MSFT FY2024 item-7\nOur effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland.",
+        "locator": "dom-block=2693|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b2a944d4eac50309ccbf6c53",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+        "locator": "article#discussion-analysis|structured=62",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#discussion-analysis|block=62|table-text",
+          "declarations": [
+            {
+              "locator": "article#discussion-analysis|block=62|table-text",
+              "text": "(In millions, except percentages and per share amounts) 2024 2023 Percentage Change Revenue $ 245,122 $ 211,915 16% Gross margin 171,008 146,052 17% Operating income 109,433 88,523 24% Net income 88,136 72,361 22% Diluted earnings per share 11.80 9.68 22% Adjusted gross margin (non-GAAP) 171,008 146,204 17% Adjusted operating income (non-GAAP) 109,433 89,694 22% Adjusted net income (non-GAAP) 88,136 73,307 20% Adjusted diluted earnings per share (non-GAAP) 11.80 9.81 20%"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-4": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "We face intense competition across all markets for our products and services, which may adversely affect our results of operations.",
+        "chunk_id": "passage:a48bbe5b6321011568fea307",
+        "quote": "We face intense competition across all markets for our products and services, which may adversely affect our results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a48bbe5b6321011568fea307",
+        "text": "MSFT FY2024 item-1a\nWe face intense competition across all markets for our products and services, which may adversely affect our results of operations.",
+        "locator": "dom-block=997|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e213845b980a4acc71204d50",
+        "text": "MSFT FY2024 item-1a\nThe competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives, which may adversely affect our financial condition and results of operations.",
+        "locator": "dom-block=1028|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-5": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:124bb54837cfba61602e9447",
+        "text": "MSFT FY2024 item-1a\not get engagement in certain features that drive post-sale monetization opportunities. Our data-handling practices across our products and services will continue to be under scrutiny. Perceptions of mismanagement, driven by regulatory activity or negative public reaction to our practices or product experiences, could negatively impact product and feature adoption. Developing new technologies is complex. It can require long development and testing periods. We could experience significant delays in new releases or significant problems in creating new products or services. These factors could adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1050|part=1|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "text": "MSFT FY2024 item-1a\nOur global business exposes us to operational and economic risks. Our customers are located throughout the world and a significant part of our revenue comes from international sales. The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations. In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, the environment, and political expression in specific countries may significantly alter the trade and commercial environments. Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe",
+        "locator": "dom-block=1199|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Explain AAPL's FY2022 revenue changes and disclosed business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:71289aca2ef6b63464123bc8",
+        "text": "AAPL FY2022 item-7\nRest of Asia Pacific net sales increased during 2022 compared to 2021 due primarily to higher net sales of iPhone, Mac and Services. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2022.",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:87535773381220052a2d496a",
+        "text": "AAPL FY2022 item-7\nTotal net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "locator": "dom-block=510|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-7": {
+    "question": "Explain AAPL's FY2022 revenue changes and disclosed business drivers using its FY2022 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:87535773381220052a2d496a",
+        "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:87535773381220052a2d496a",
+        "text": "AAPL FY2022 item-7\nTotal net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+        "locator": "dom-block=510|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      },
+      {
+        "id": "passage:9999cb4404f949a1f00a1517",
+        "text": "AAPL FY2022 item-7\niPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro.",
+        "locator": "dom-block=555|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022,
+        "unit_context": null
+      }
+    ]
+  }
+}

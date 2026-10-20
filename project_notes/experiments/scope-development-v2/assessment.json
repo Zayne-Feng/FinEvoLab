@@ -1,0 +1,243 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "all": {
+        "attempts": 50,
+        "mechanical_successes": 50,
+        "strict_successes": 49,
+        "strict_rate": 0.98,
+        "primary_only_successes": 49,
+        "unique_questions": 50,
+        "all_repeats_pass_questions": 49,
+        "all_repeats_pass_wilson_95": [
+          0.8950455641036219,
+          0.9964607407283539
+        ],
+        "requests": 72,
+        "tokens": 98672,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.62246,
+        "repairs": 3
+      },
+      "common": {
+        "attempts": 36,
+        "mechanical_successes": 36,
+        "strict_successes": 36,
+        "strict_rate": 1,
+        "primary_only_successes": 36,
+        "unique_questions": 36,
+        "all_repeats_pass_questions": 36,
+        "all_repeats_pass_wilson_95": [
+          0.9035813714055363,
+          1.0
+        ],
+        "requests": 46,
+        "tokens": 60882,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.936611111111111,
+        "repairs": 2
+      },
+      "new_capabilities": {
+        "attempts": 14,
+        "mechanical_successes": 14,
+        "strict_successes": 13,
+        "strict_rate": 0.9285714285714286,
+        "primary_only_successes": 13,
+        "unique_questions": 14,
+        "all_repeats_pass_questions": 13,
+        "all_repeats_pass_wilson_95": [
+          0.6853129557584889,
+          0.9872777847521093
+        ],
+        "requests": 26,
+        "tokens": 37790,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 6.386071428571428,
+        "repairs": 1
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 8,
+          "strict_rate": 1,
+          "primary_only_successes": 8,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 8,
+          "all_repeats_pass_wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "requests": 8,
+          "tokens": 9276,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.769625,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 4,
+          "mechanical_successes": 4,
+          "strict_successes": 4,
+          "strict_rate": 1,
+          "primary_only_successes": 4,
+          "unique_questions": 4,
+          "all_repeats_pass_questions": 4,
+          "all_repeats_pass_wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "requests": 4,
+          "tokens": 4604,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.789,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "mechanical_successes": 6,
+          "strict_successes": 6,
+          "strict_rate": 1,
+          "primary_only_successes": 6,
+          "unique_questions": 6,
+          "all_repeats_pass_questions": 6,
+          "all_repeats_pass_wilson_95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "requests": 6,
+          "tokens": 7029,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.799666666666667,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 8,
+          "strict_rate": 1,
+          "primary_only_successes": 8,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 8,
+          "all_repeats_pass_wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "requests": 18,
+          "tokens": 28422,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 7.99025,
+          "repairs": 2
+        },
+        "hybrid": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 7,
+          "strict_rate": 0.875,
+          "primary_only_successes": 7,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 7,
+          "all_repeats_pass_wilson_95": [
+            0.5291118177871464,
+            0.9775825085499433
+          ],
+          "requests": 17,
+          "tokens": 25718,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 7.484375,
+          "repairs": 1
+        },
+        "metric_query": {
+          "attempts": 10,
+          "mechanical_successes": 10,
+          "strict_successes": 10,
+          "strict_rate": 1,
+          "primary_only_successes": 10,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 10,
+          "tokens": 11551,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.7685,
+          "repairs": 0
+        },
+        "upload": {
+          "attempts": 6,
+          "mechanical_successes": 6,
+          "strict_successes": 6,
+          "strict_rate": 1,
+          "primary_only_successes": 6,
+          "unique_questions": 6,
+          "all_repeats_pass_questions": 6,
+          "all_repeats_pass_wilson_95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "requests": 9,
+          "tokens": 12072,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.921666666666667,
+          "repairs": 0
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 50,
+          "mechanical_successes": 50,
+          "strict_successes": 49,
+          "strict_rate": 0.98,
+          "primary_only_successes": 49,
+          "unique_questions": 50,
+          "all_repeats_pass_questions": 49,
+          "all_repeats_pass_wilson_95": [
+            0.8950455641036219,
+            0.9964607407283539
+          ],
+          "requests": 72,
+          "tokens": 98672,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.62246,
+          "repairs": 3
+        }
+      }
+    }
+  },
+  "paired": null,
+  "failures": [
+    {
+      "case_id": "e9d7c72ebeb82f146b77",
+      "repeat": 0,
+      "arm": "current",
+      "category": "hybrid",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "58bd3235ec8ac6bcbcdd5fa9896c802bbe743122a76b8ba5e36d4786adb6564c"
+    }
+  ],
+  "tasks_sha256": "f40d4b7d3e5f357e7c4776da1852baabb15d44d81266d2a0b0be9f1cca931497",
+  "review_summary_sha256": "2029c7050756da477abec414f321adc2ab7886d38616e3f4d57bae60877d01be",
+  "review_directory": "scope-development-review",
+  "strict_rule": "mechanical checks and every claim supported and relevance=2 and interpretation=2; intersection where two reviewers available",
+  "no_repeated_answer_independence_assumption": true
+}

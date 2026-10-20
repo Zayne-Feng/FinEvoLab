@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "method": "rendered_all_pages_and_visually_inspected",
+  "pdf": "output/pdf/scope_selected_source.pdf",
+  "pdf_sha256": "efe94ba16078f6e9119f3746b95fcccf15f3bfef50bea3faceb2f2ffe534186f",
+  "page_count": 2,
+  "pages_reviewed": [1, 2],
+  "checks": {
+    "headings_and_body_readable": true,
+    "financial_table_readable": true,
+    "source_quotes_and_locations_readable": true,
+    "no_text_clipping_or_overlap": true,
+    "page_numbers_present": true
+  },
+  "scope": "layout verification; financial and source checks recorded separately"
+}

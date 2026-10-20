@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "groups": {
+    "False": {
+      "trials": 9,
+      "successes": 0,
+      "actual_requests": 0,
+      "known_tokens": 0
+    },
+    "True": {
+      "trials": 9,
+      "successes": 9,
+      "actual_requests": 9,
+      "known_tokens": 11670
+    }
+  },
+  "synthetic_response_usage_excluded": true,
+  "paired_fault_conditions": 9
+}

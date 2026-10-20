@@ -1,0 +1,118 @@
+{
+  "status": "completed",
+  "groups": {
+    "scope-development-v1": {
+      "recorded_responses": 70,
+      "known_tokens": 85965,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-development-v2": {
+      "recorded_responses": 72,
+      "known_tokens": 98672,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-development-v3": {
+      "recorded_responses": 70,
+      "known_tokens": 92017,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-supplemental-v1": {
+      "recorded_responses": 83,
+      "known_tokens": 107091,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-test-v1": {
+      "recorded_responses": 683,
+      "known_tokens": 840784,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-validation-v1": {
+      "recorded_responses": 122,
+      "known_tokens": 150448,
+      "unknown_usage_records": 1,
+      "usage_metadata_recovered": 2
+    },
+    "scope-validation-v2": {
+      "recorded_responses": 119,
+      "known_tokens": 143941,
+      "unknown_usage_records": 0,
+      "usage_metadata_recovered": 0
+    },
+    "scope-development-review": {
+      "recorded_responses": 54,
+      "known_tokens": 89789,
+      "unknown_usage_records": 0
+    },
+    "scope-evidence-v1": {
+      "recorded_responses": 90,
+      "known_tokens": 168424,
+      "unknown_usage_records": 0
+    },
+    "scope-supplemental-review": {
+      "recorded_responses": 34,
+      "known_tokens": 47632,
+      "unknown_usage_records": 0
+    },
+    "scope-test-review": {
+      "recorded_responses": 185,
+      "known_tokens": 289439,
+      "unknown_usage_records": 0
+    },
+    "scope-validation-review": {
+      "recorded_responses": 62,
+      "known_tokens": 91569,
+      "unknown_usage_records": 0
+    },
+    "scope-sdk-repair": {
+      "recorded_responses": 9,
+      "known_tokens": 11670,
+      "unknown_usage_records": 0,
+      "injected_responses_excluded": 18
+    },
+    "scope_sdk_smoke": {
+      "recorded_responses": 3,
+      "known_tokens": 2308,
+      "unknown_usage_records": 0
+    },
+    "scope_delivery": {
+      "recorded_responses": 18,
+      "known_tokens": 22605,
+      "unknown_usage_records": 0
+    },
+    "annotation_initial_error": {
+      "recorded_responses": 0,
+      "known_tokens": 0,
+      "unknown_usage_records": 1
+    }
+  },
+  "recorded_responses": 1674,
+  "known_tokens": 2242354,
+  "unknown_usage_records": 2,
+  "input_sha256": {
+    "project_notes/experiments/scope-development-v1/tasks.jsonl": "c5516d2bc92c4e1fe332618731f0c52e78737663be0d647e64ae512fbaea93cb",
+    "project_notes/experiments/scope-development-v2/tasks.jsonl": "f40d4b7d3e5f357e7c4776da1852baabb15d44d81266d2a0b0be9f1cca931497",
+    "project_notes/experiments/scope-development-v3/tasks.jsonl": "721edce676dc54a10d382dd1d97715a538cc904bb5ba47cc1ac12d2797bfede0",
+    "project_notes/experiments/scope-supplemental-v1/tasks.jsonl": "b00cbaca02e1e49e57ca124aa6d00b9f7f626b77d67c3483307fd2be7764cd73",
+    "project_notes/experiments/scope-test-v1/tasks.jsonl": "39b34092b7a7ac1d744890595ea4209cd87d01ce9ecf2cd0de9d8b3571d82b19",
+    "project_notes/experiments/scope-validation-v1/tasks.jsonl": "618abfd2f8e861aebdfc67a64843aa470daf4915ba517ac8f2e7cda31a48eab7",
+    "project_notes/experiments/scope-validation-v2/tasks.jsonl": "eae93bf7fdebef1869c42b33f2319b3b581fbe90b98cd1f394b3aa215c10135b",
+    "project_notes/evaluations/scope-development-review/requests.jsonl": "a002f9c1dcc7630c9b19577a9b99056a6474f72ebc0a530f1c0e5bcfcf9d773f",
+    "project_notes/evaluations/scope-evidence-v1/requests.jsonl": "27cf32604addb677d9cd9de5ee409e71f5cbdc423abe7b6b317d6ab4c226706a",
+    "project_notes/evaluations/scope-supplemental-review/requests.jsonl": "a5a4fd28a650f3016e1c7a73354bc0861b4cd1ec9c4209fb648d8aaaba8fc1ff",
+    "project_notes/evaluations/scope-test-review/requests.jsonl": "cf0d469501cdbf3324f2993a3d33797f2102eaefd0c3eed14088d95b75f7f389",
+    "project_notes/evaluations/scope-validation-review/requests.jsonl": "2a2d4770f624ac429392e5771966c163b8dc29b1a8dc9db0cecfff6eb4ba149c",
+    "project_notes/experiments/scope-sdk-repair/repair.jsonl": "6187b03e54f7dfc29cca7f72b9e2d13bc90f29b9ab3706382a6ee4e09c0f8e5a",
+    "project_notes/run_logs/scope_sdk_smoke.json": "8da61a1aa3dca72c8dda700acb560fabea5823302bea0b861d329b4f19f288cc",
+    "project_notes/run_logs/scope_delivery_v1.json": "1fc7a7b4cc9850e3bd2f0ea8ea5089e2f0c16273534f50969fa7f0455d66e8c5",
+    "project_notes/run_logs/scope_annotation_initial_error.json": "56ccdbc0d2d0c8691317ed26ca70327ad652e221dc3ede3427e2f1e91cb1b84e"
+  },
+  "currency_cost": null,
+  "accounting": "successful provider returns with observed usage; failed or retried HTTP attempts may have unknown usage; not a provider invoice",
+  "reused_review_inputs": "counted once in request ledgers",
+  "resumed_completed_model_phases": "counted once"
+}

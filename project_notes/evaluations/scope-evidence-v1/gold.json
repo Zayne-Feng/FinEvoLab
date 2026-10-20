@@ -1,0 +1,1465 @@
+[
+  {
+    "id": "cd1388c3cbac0ec684bc7e6a",
+    "profile": "AAPL:2022:net_income",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "According to Apple's 2022 report, what factors caused the company's effective tax rate for 2022 to be higher than in 2021?",
+    "statement": "Apple's 2022 effective tax rate was higher than 2021 primarily because of a higher effective tax rate on foreign earnings, including the impact to U.S. foreign tax credits from 2022 Treasury regulatory guidance, and lower tax benefits from foreign-derived intangible income deductions and share-based compensation.",
+    "quote": "The Company’s effective tax rate for 2022 was higher compared to 2021 due primarily to a higher effective tax rate on foreign earnings, including the impact to U.S. foreign tax credits as a result of regulatory guidance issued by the U.S. Department of the Treasury in 2022, and lower tax benefits from foreign-derived intangible income deductions and share-based compensation.",
+    "locator": "raw:block=622",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote matches paragraph-622 verbatim and directly answers the question about factors raising the 2022 effective tax rate versus 2021."
+    }
+  },
+  {
+    "id": "c3a9278d450429b7cf530968",
+    "profile": "AAPL:2022:net_income",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "What does Apple's 2022 report say about the possible effect on its results if its effective tax rates were to increase or if taxes owed exceed amounts previously accrued?",
+    "statement": "Apple states that if its effective tax rates were to increase, particularly in the U.S. or Ireland, or if the ultimate determination of taxes owed exceeds amounts previously accrued, its business, results of operations and financial condition could be materially adversely affected.",
+    "quote": "If the Company’s effective tax rates were to increase, particularly in the U.S. or Ireland, or if the ultimate determination of the Company’s taxes owed is for an amount in excess of amounts previously accrued, the Company’s business, results of operations and financial condition could be materially adversely affected.",
+    "locator": "raw:block=429",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote appears verbatim in paragraph-429 and states the possible material adverse effect on business, results of operations and financial condition."
+    }
+  },
+  {
+    "id": "f88a6118d108cccd18152d56",
+    "profile": "AAPL:2022:operating_income",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "validation",
+    "question": "According to Apple's 2022 report, what competitive pricing dynamics affect its gross margins?",
+    "statement": "Apple's 2022 report states that its markets are highly competitive, characterized by aggressive price competition that puts downward pressure on gross margins.",
+    "quote": "The markets for the Company’s products and services are highly competitive, and are characterized by aggressive price competition and resulting downward pressure on gross margins",
+    "locator": "raw:block=208",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote appears verbatim in paragraph-208 and directly supports the statement about aggressive price competition and downward pressure on gross margins."
+    }
+  },
+  {
+    "id": "31fd75a6f24b4836853de89f",
+    "profile": "AAPL:2022:operating_income",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "validation",
+    "question": "What does Apple's 2022 report say about how tariffs affect its costs and gross margin?",
+    "statement": "Apple's 2022 report states that tariffs increase the cost of its products and their components and raw materials, which can adversely impact the gross margin it earns on its products.",
+    "quote": "Tariffs increase the cost of the Company’s products and the components and raw materials that go into making them. These increased costs can adversely impact the gross margin that the Company earns on its products.",
+    "locator": "raw:block=276",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote appears verbatim in paragraph-276 and directly supports the statement about tariffs increasing costs and adversely impacting gross margin."
+    }
+  },
+  {
+    "id": "03598a680907691e94a34e9e",
+    "profile": "AAPL:2022:revenue",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "validation",
+    "question": "According to Apple's 2022 report, what product categories primarily drove the year-over-year increase in total net sales?",
+    "statement": "Apple's total net sales rose 8% (about $28.5 billion) in 2022 versus 2021, driven primarily by higher net sales of iPhone, Services and Mac.",
+    "quote": "Total net sales increased 8% or $28.5 billion during 2022 compared to 2021, driven primarily by higher net sales of iPhone, Services and Mac.",
+    "locator": "raw:block=496",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states total net sales increased 8% or $28.5 billion in 2022 vs 2021, driven primarily by higher net sales of iPhone, Services and Mac."
+    }
+  },
+  {
+    "id": "b83096622b2ce851db37b4e2",
+    "profile": "AAPL:2022:revenue",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "validation",
+    "question": "What does Apple's 2022 report say about the effect of foreign currency weakness on its net sales?",
+    "statement": "Apple states that weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+    "quote": "The weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022.",
+    "locator": "raw:block=496",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote directly states weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+    }
+  },
+  {
+    "id": "ec23172d5185d9b631212ab3",
+    "profile": "AAPL:2022:risk",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "validation",
+    "question": "According to Apple's 2022 Form 10-K, how can adverse macroeconomic conditions such as inflation, tariffs, and tighter credit affect the company's business?",
+    "statement": "Apple's 2022 report states that adverse macroeconomic conditions, including inflation, slower growth or recession, new or increased tariffs and other barriers to trade, changes to fiscal and monetary policy, tighter credit, higher interest rates, high unemployment and currency fluctuations can adversely impact consumer confidence and spending and materially adversely affect demand for its products and services.",
+    "quote": "Adverse macroeconomic conditions, including inflation, slower growth or recession, new or increased tariffs and other barriers to trade, changes to fiscal and monetary policy, tighter credit, higher interest rates, high unemployment and currency fluctuations can adversely impact consumer confidence and spending and materially adversely affect demand for the Company’s products and services.",
+    "locator": "raw:block=261",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-261 exactly matches the statement, listing inflation, tariffs, tighter credit, higher interest rates, high unemployment, and currency fluctuations as adversely impacting consumer confidence and demand."
+    }
+  },
+  {
+    "id": "1a2ff268220247494bf0b386",
+    "profile": "AAPL:2022:risk",
+    "company": "AAPL",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "validation",
+    "question": "What supply-chain and demand risks related to the COVID-19 pandemic does Apple disclose in its 2022 Form 10-K?",
+    "statement": "Apple's 2022 report discloses that during the pandemic certain component suppliers and manufacturing and logistical service providers experienced disruptions resulting in supply shortages that affected sales worldwide, that similar disruptions could occur in the future, and that public safety measures can adversely impact consumer demand for its products and services in affected areas.",
+    "quote": "During the course of the pandemic, certain of the Company’s component suppliers and manufacturing and logistical service providers have experienced disruptions, resulting in supply shortages that affected sales worldwide, and similar disruptions could occur in the future. Public safety measures can also adversely impact consumer demand for the Company’s products and services in affected areas.",
+    "locator": "raw:block=266",
+    "source_sha256": "4d3fb0086fc6864ac29c141e355c4e2a6d5814f6b7138c14b1af447c43117d68",
+    "source_path": "data/raw/sec_aapl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "Paragraph-266 states that component suppliers and manufacturing/logistical providers experienced disruptions causing supply shortages affecting worldwide sales, similar disruptions could occur, and public safety measures can adversely impact consumer demand."
+    }
+  },
+  {
+    "id": "1c0fe4578ac8412fe1910328",
+    "profile": "AAPL:2023:net_income",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "test",
+    "question": "According to Apple's 2023 report, what factors caused its 2023 effective tax rate to be lower than the statutory federal income tax rate?",
+    "statement": "Apple's 2023 effective tax rate was below the statutory federal rate primarily because of a lower effective tax rate on foreign earnings, the U.S. federal R&D credit, and tax benefits from share-based compensation, partly offset by state income taxes.",
+    "quote": "The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+    "locator": "raw:block=590",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the 2023 effective tax rate was lower than the statutory federal rate due primarily to lower foreign earnings tax rate, U.S. federal R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+    }
+  },
+  {
+    "id": "d8fae1c27bb48384c16a1a30",
+    "profile": "AAPL:2023:net_income",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "test",
+    "question": "Why was Apple's 2023 effective tax rate lower than in 2022, per the 2023 report?",
+    "statement": "Apple's 2023 effective tax rate declined versus 2022 mainly due to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the Treasury in 2022, partly offset by lower tax benefits from share-based compensation.",
+    "quote": "The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+    "locator": "raw:block=591",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote directly states the 2023 rate was lower than 2022 due primarily to lower foreign earnings tax rate and impact of U.S. foreign tax credit regulations issued by Treasury in 2022, partially offset by lower share-based compensation benefits."
+    }
+  },
+  {
+    "id": "14f7fa8a848f20d18c70f5f0",
+    "profile": "AAPL:2023:operating_income",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "According to Apple's 2023 report, what effect did foreign exchange rate movements have on its non-U.S. dollar-denominated sales, cost of sales, and operating expenses?",
+    "statement": "Apple's primary foreign exchange exposure relates to non-U.S. dollar-denominated sales, cost of sales, and operating expenses worldwide, and gross margins on products in foreign countries and on products with foreign-sourced components have been and could be adversely affected by exchange rate fluctuations.",
+    "quote": "The Company’s primary exposure to movements in foreign exchange rates relates to non–U.S. dollar–denominated sales, cost of sales and operating expenses worldwide. Gross margins on the Company’s products in foreign countries and on products that include components obtained from foreign suppliers have in the past been adversely affected and could in the future be materially adversely affected by foreign exchange rate fluctuations.",
+    "locator": "raw:block=399",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the primary FX exposure relates to non-U.S. dollar-denominated sales, cost of sales, and operating expenses worldwide, and that gross margins have been and could be adversely affected by exchange rate fluctuations."
+    }
+  },
+  {
+    "id": "c5f3a7f545321a8d489e9a2e",
+    "profile": "AAPL:2023:operating_income",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "In Apple's 2023 report, how can settlement agreements or responses to litigation and government investigations affect its cost of sales and operating expenses?",
+    "statement": "Apple states that defending litigation or responding to government investigations can be expensive, time-consuming, and disruptive, and that settlement agreements or other arrangements can significantly increase its cost of sales and operating expenses and require changes to business practices.",
+    "quote": "These agreements can also significantly increase the Company’s cost of sales and operating expenses and require the Company to change its business practices and limit the Company’s ability to offer certain products and services.",
+    "locator": "raw:block=359",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states defending litigation/responding to investigations can be expensive, time-consuming and disruptive, and that settlement agreements can significantly increase cost of sales and operating expenses and require changes to business practices."
+    }
+  },
+  {
+    "id": "50a8f888884af848bcbfff56",
+    "profile": "AAPL:2023:revenue",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to Apple's 2023 report, what did foreign currency weakness contribute to the year-over-year change in total net sales?",
+    "statement": "Apple's 2023 report states that weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales.",
+    "quote": "The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.",
+    "locator": "raw:block=492",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "Paragraph-492 explicitly states foreign currency weakness accounted for more than the entire year-over-year decrease in total net sales, matching the statement."
+    }
+  },
+  {
+    "id": "6565f18f480bb3f65cf5c981",
+    "profile": "AAPL:2023:revenue",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "test",
+    "question": "What does Apple's 2023 report say about the share of total net sales made through direct versus indirect distribution channels?",
+    "statement": "Apple's 2023 report discloses that net sales through direct and indirect distribution channels accounted for 37% and 63% of total net sales, respectively.",
+    "quote": "During 2023, the Company’s net sales through its direct and indirect distribution channels accounted for 37% and 63%, respectively, of total net sales.",
+    "locator": "raw:block=192",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "Paragraph-192 explicitly states net sales through direct and indirect channels accounted for 37% and 63% of total net sales in 2023."
+    }
+  },
+  {
+    "id": "51685b9de8f00b68e438f083",
+    "profile": "AAPL:2023:risk",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "risk",
+    "split": "test",
+    "question": "According to Apple's 2023 Form 10-K, what macroeconomic conditions does the report identify as potentially harming consumer confidence and spending, and thereby demand for Apple's products and services?",
+    "statement": "Apple's 2023 Form 10-K states that adverse macroeconomic conditions such as slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations can hurt consumer confidence and spending and materially adversely affect demand for its products and services.",
+    "quote": "Adverse macroeconomic conditions, including slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations, can adversely impact consumer confidence and spending and materially adversely affect demand for the Company’s products and services.",
+    "locator": "raw:block=254",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-254 directly lists slow growth or recession, high unemployment, inflation, tighter credit, higher interest rates, and currency fluctuations as adverse macroeconomic conditions that can hurt consumer confidence and spending and materially adversely affect demand for the Company's products and services."
+    }
+  },
+  {
+    "id": "db8d61136ce768173813401a",
+    "profile": "AAPL:2023:risk",
+    "company": "AAPL",
+    "report_year": 2023,
+    "focus": "risk",
+    "split": "test",
+    "question": "What supply and pricing risk does Apple's 2023 Form 10-K disclose regarding its reliance on single or limited component sources?",
+    "statement": "Apple's 2023 Form 10-K discloses that because it obtains certain components from single or limited sources, it faces significant supply and pricing risks, and that many components are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect its business, results of operations and financial condition.",
+    "quote": "Because the Company currently obtains certain components from single or limited sources, the Company is subject to significant supply and pricing risks. Many components, including those that are available from multiple sources, are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect the Company’s business, results of operations and financial condition.",
+    "locator": "raw:block=295",
+    "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+    "source_path": "data/raw/sec_aapl_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote from paragraph-295 states the Company obtains certain components from single or limited sources and is subject to significant supply and pricing risks, and that many components are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect its business, results of operations and financial condition."
+    }
+  },
+  {
+    "id": "0e10de43393d5a5b005f7dfe",
+    "profile": "AAPL:2024:operating_income",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "development",
+    "question": "According to Apple's 2024 report, what competitive pricing dynamics affect its gross margins?",
+    "statement": "Apple's 2024 report states that its markets are highly competitive, characterized by aggressive price competition that puts downward pressure on gross margins.",
+    "quote": "The markets for the Company’s products and services are highly competitive, and are characterized by aggressive price competition and resulting downward pressure on gross margins",
+    "locator": "raw:block=195",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states markets are highly competitive and characterized by aggressive price competition and resulting downward pressure on gross margins, matching the statement."
+    }
+  },
+  {
+    "id": "47ed9cdb27e398b82c3369ae",
+    "profile": "AAPL:2024:operating_income",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "development",
+    "question": "What does Apple's 2024 report say about the effect of settling litigation on its cost of sales and operating expenses?",
+    "statement": "Apple's 2024 report states that settlement agreements can significantly increase its cost of sales and operating expenses and require changes to its business practices.",
+    "quote": "These agreements can also significantly increase the Company’s cost of sales and operating expenses and require the Company to change its business practices and limit the Company’s ability to offer certain products and services.",
+    "locator": "raw:block=368",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote directly states settlement agreements can significantly increase cost of sales and operating expenses and require changes to business practices, matching the statement."
+    }
+  },
+  {
+    "id": "6d75739d6abb759775f57dd8",
+    "profile": "AAPL:2024:revenue",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "development",
+    "question": "According to Apple's 2024 report, what primarily caused the decline in Greater China net sales compared to 2023?",
+    "statement": "Apple's Greater China net sales decreased in 2024 versus 2023, driven primarily by lower iPhone and iPad net sales, with the weaker renminbi versus the U.S. dollar also having an unfavorable year-over-year effect.",
+    "quote": "Greater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad. The weakness in the renminbi relative to the U.S. dollar had an unfavorable year-over-year impact on Greater China net sales during 2024.",
+    "locator": "raw:block=542",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states Greater China net sales decreased in 2024 vs 2023 due primarily to lower iPhone and iPad net sales, with renminbi weakness having an unfavorable year-over-year impact."
+    }
+  },
+  {
+    "id": "d6cddeb202f8fd46f3b54a48",
+    "profile": "AAPL:2024:revenue",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "development",
+    "question": "According to Apple's 2024 report, what drove the increase in Japan net sales compared to 2023?",
+    "statement": "Apple's Japan net sales rose in 2024 versus 2023 due primarily to higher iPhone net sales, while the weaker yen versus the U.S. dollar had an unfavorable year-over-year impact on Japan net sales.",
+    "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024.",
+    "locator": "raw:block=545",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote directly states Japan net sales increased in 2024 vs 2023 due primarily to higher iPhone net sales, with yen weakness having an unfavorable year-over-year impact."
+    }
+  },
+  {
+    "id": "ccba430b05ed1eb2da38d929",
+    "profile": "AAPL:2024:risk",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "risk",
+    "split": "development",
+    "question": "According to Apple's 2024 Form 10-K, what supply-chain risk arises from its reliance on single or limited component sources?",
+    "statement": "Apple states that obtaining certain components from single or limited sources exposes it to significant supply and pricing risks, including industry-wide shortages and commodity price fluctuations that can materially adversely affect its business, results of operations and financial condition.",
+    "quote": "Because the Company currently obtains certain components from single or limited sources, the Company is subject to significant supply and pricing risks. Many components, including those that are available from multiple sources, are at times subject to industry-wide shortages and significant commodity pricing fluctuations that can materially adversely affect the Company’s business, results of operations and financial condition.",
+    "locator": "raw:block=299",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states single/limited sources create significant supply and pricing risks, and that industry-wide shortages and commodity pricing fluctuations can materially adversely affect business, results of operations and financial condition."
+    }
+  },
+  {
+    "id": "fb18bcbb14a02147baaa09d0",
+    "profile": "AAPL:2024:risk",
+    "company": "AAPL",
+    "report_year": 2024,
+    "focus": "risk",
+    "split": "development",
+    "question": "What risk does Apple's 2024 Form 10-K disclose about the concentration of its manufacturing among a small number of outsourcing partners?",
+    "statement": "Apple discloses that substantially all of its manufacturing is performed by outsourcing partners concentrated in a few countries, with a significant concentration handled by a small number of partners often in single locations, which reduces its direct control over production and distribution and can adversely affect product quality or quantity and its flexibility to respond to changing conditions.",
+    "quote": "Substantially all of the Company’s manufacturing is performed in whole or in part by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam, and a significant concentration of this manufacturing is currently performed by a small number of outsourcing partners, often in single locations.",
+    "locator": "raw:block=294",
+    "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+    "source_path": "data/raw/sec_aapl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote confirms manufacturing by outsourcing partners in listed countries, significant concentration among a small number of partners often in single locations, reduced direct control over production and distribution, and adverse effects on quality/quantity and flexibility to respond to changing conditions."
+    }
+  },
+  {
+    "id": "5232ade9fc903bafa0efacc1",
+    "profile": "ADBE:2023:net_income",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "test",
+    "question": "According to Adobe's 2023 report, what primarily caused the decrease in its effective tax rate during fiscal 2023 compared to fiscal 2022?",
+    "statement": "Adobe's effective tax rate decreased by about one percentage point in fiscal 2023 versus fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations.",
+    "quote": "Our effective tax rate decreased by approximately one percentage point during fiscal 2023 as compared to fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations in fiscal 2023.",
+    "locator": "raw:block=926",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the effective tax rate decreased by approximately one percentage point in fiscal 2023 vs fiscal 2022, primarily due to an increase in the net tax benefit from effects of non-U.S. operations."
+    }
+  },
+  {
+    "id": "507333af55a446eba01a7271",
+    "profile": "ADBE:2023:net_income",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "test",
+    "question": "What tax-law change beginning in 2023 does Adobe's 2023 report say adversely affects its effective rates for income taxes paid?",
+    "statement": "Beginning in 2023, under provisions introduced by the U.S. Tax Act, Adobe must capitalize and amortize research and development costs, which continues to adversely impact its effective rates for income taxes paid unless the rule is modified.",
+    "quote": "Beginning in 2023, under the provisions introduced by the U.S. Tax Act, we are required to capitalize and amortize research and development costs. If the rule is not modified, there will continue to be an adverse impact on our effective rates for income taxes paid, which is partially offset by a benefit to our effective tax rates from the increase in the foreign-derived intangible income deduction.",
+    "locator": "raw:block=936",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states that beginning in 2023, under U.S. Tax Act provisions, Adobe must capitalize and amortize R&D costs, and that unless modified there will continue to be an adverse impact on effective rates for income taxes paid."
+    }
+  },
+  {
+    "id": "a869e98c8306e639b2184acc",
+    "profile": "ADBE:2023:operating_income",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "According to Adobe's 2023 report, how could competitive pressure affect its pricing and gross margins, and thereby its operating results?",
+    "statement": "Adobe's 2023 report states that new industry standards, evolving distribution models, limited barriers to entry, short product life cycles, customer price sensitivity, global market conditions, and frequent entry of new products or competitors may create downward pressure on pricing and gross margins, which could adversely affect operating results.",
+    "quote": "New industry standards, evolving distribution models, limited barriers to entry, short product life cycles, customer price sensitivity, global market conditions and the frequent entry of new products or competitors may create downward pressure on pricing and gross margins",
+    "locator": "raw:block=543",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly lists these factors creating downward pressure on pricing and gross margins, and the original paragraph states this adversely affects renewal, upsell, cross-sell rates and ability to attract customers; the statement's 'adversely affect operating results' is a reasonable paraphrase of the paragraph's adverse business/financial effects."
+    }
+  },
+  {
+    "id": "d36c0f2768783c5d111b02e5",
+    "profile": "ADBE:2023:operating_income",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "In Adobe's 2023 report, how are gains or losses on foreign currency expense cash flow hedges treated when the forecasted transaction affects earnings?",
+    "statement": "Adobe's 2023 report states that when a forecasted transaction affects earnings, the related gain or loss on a foreign currency expense cash flow hedge is reclassified to operating expense.",
+    "quote": "When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.",
+    "locator": "raw:block=1487",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote explicitly states that when the forecasted transaction affects earnings, the related gain or loss on the foreign currency expense cash flow hedge is reclassified to operating expense, matching the statement."
+    }
+  },
+  {
+    "id": "b8ec5c0a854e03c0db497ddb",
+    "profile": "ADBE:2023:revenue",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to Adobe's 2023 Form 10-K, what does the company say about how fraudulent or abusive activities by malicious actors may affect its revenue?",
+    "statement": "Adobe states that it has experienced and may in the future experience impacts to its revenue from fraudulent or abusive activities by malicious actors, such as unauthorized account use through stolen credentials or failure to pay for services accessed.",
+    "quote": "Malicious actors may engage in fraudulent or abusive activities through our products, services and solutions, including unauthorized use of accounts through stolen credentials, use of stolen credit cards or other payment vehicles, failure to pay for services accessed, or other activities that violate our terms of service.",
+    "locator": "raw:block=557",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The original paragraph explicitly states Adobe has experienced and may in the future experience impacts to revenue from fraudulent/abusive activities by malicious actors, including unauthorized account use via stolen credentials and failure to pay for services accessed."
+    }
+  },
+  {
+    "id": "f8b8bd7bfe30e21128350304",
+    "profile": "ADBE:2023:revenue",
+    "company": "ADBE",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "test",
+    "question": "In Adobe's 2023 Form 10-K, what does the company disclose about the effect of its partner and distribution channel effectiveness on revenue?",
+    "statement": "Adobe discloses that if its partner and distribution channels are not effective, or if it stops or changes them, it may lose sales opportunities, customers and revenue.",
+    "quote": "If our partner and distribution channels are not effective or if we stop or change our partner or distribution channels, we may lose sales opportunities, customers and revenue.",
+    "locator": "raw:block=569",
+    "source_sha256": "3d827a0075d89b6de50af200ef61ccce5745b93e87ce6cca9cdbdf64be082cd7",
+    "source_path": "data/raw/acceptance_sec_adbe_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph directly states that if partner and distribution channels are not effective or if Adobe stops or changes them, it may lose sales opportunities, customers and revenue."
+    }
+  },
+  {
+    "id": "fa7960f92282e858886fa06d",
+    "profile": "ADBE:2024:net_income",
+    "company": "ADBE",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "test",
+    "question": "According to Adobe's 2024 report, what effect did the Figma acquisition termination fee have on the fiscal 2024 effective tax rate relative to fiscal 2023?",
+    "statement": "Adobe disclosed that the Figma acquisition termination fee was not deductible for financial statement purposes, and its impact was largely offset by increased net tax benefits from non-U.S. operations and stock-based compensation, keeping the fiscal 2024 effective tax rate relatively flat versus fiscal 2023.",
+    "quote": "Our effective tax rate for fiscal 2024 remained relatively flat compared to fiscal 2023, as the impact of the Figma acquisition termination fee, which was not deductible for financial statement purposes, was largely offset by increases in the net tax benefits from effects of non-U.S. operations and stock-based compensation in fiscal 2024.",
+    "locator": "raw:block=963",
+    "source_sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "source_path": "data/raw/acceptance_sec_adbe_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the effective tax rate remained relatively flat, the Figma termination fee was not deductible, and was largely offset by increased net tax benefits from non-U.S. operations and stock-based compensation."
+    }
+  },
+  {
+    "id": "d8a657abfd331e7b9fe3e861",
+    "profile": "ADBE:2024:net_income",
+    "company": "ADBE",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "test",
+    "question": "What did Adobe's 2024 report say about the effect of an increase in its effective tax rate on profitability?",
+    "statement": "Adobe stated that changes in laws or interpretations of tax rules could adversely affect its effective tax rates, and that an increase in its effective tax rate would reduce its profitability.",
+    "quote": "Changes in our operating landscape, such as changes in laws or interpretations of tax rules, could adversely affect our effective tax rates and/or cause us to respond by making changes to our business structure, which could adversely affect our operations and financial results.",
+    "locator": "raw:block=643",
+    "source_sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "source_path": "data/raw/acceptance_sec_adbe_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states changes in laws or interpretations of tax rules could adversely affect effective tax rates, and explicitly states an increase in effective tax rate would reduce profitability."
+    }
+  },
+  {
+    "id": "931b107eb206bc825dc227b2",
+    "profile": "ADBE:2024:operating_income",
+    "company": "ADBE",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "What drove the increase in Adobe's operating expenses in fiscal 2024 according to the report?",
+    "statement": "Adobe's fiscal 2024 operating expenses rose $2.00 billion, or 19%, to $12.41 billion from $10.41 billion in fiscal 2023, primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+    "quote": "Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.",
+    "locator": "raw:block=829",
+    "source_sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "source_path": "data/raw/acceptance_sec_adbe_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states operating expenses rose $2.00 billion, or 19%, to $12.41 billion from $10.41 billion, primarily due to the $1 billion Figma termination fee in fiscal 2024."
+    }
+  },
+  {
+    "id": "1138390f9edfad74a2fec47c",
+    "profile": "ADBE:2024:revenue",
+    "company": "ADBE",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to Adobe's 2024 report, what role does the company's product-led growth strategy play in its Creative Cloud business?",
+    "statement": "Adobe states that in its Creative Cloud business it uses a product-led growth strategy to reduce friction in customer interactions and drive positive product experiences, which leads to increased adoption, usage, conversion, expansion, and loyalty.",
+    "quote": "In our Creative Cloud business, we employ our product-led growth strategy to minimize the friction of customer interactions and drive positive product experiences, which results in increasing adoption, usage, conversion, expansion and loyalty.",
+    "locator": "raw:block=163",
+    "source_sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "source_path": "data/raw/acceptance_sec_adbe_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-163 directly states Adobe employs product-led growth in Creative Cloud to minimize friction, drive positive product experiences, resulting in increasing adoption, usage, conversion, expansion and loyalty."
+    }
+  },
+  {
+    "id": "10df0536499d1cab17e3d3f1",
+    "profile": "ADBE:2024:revenue",
+    "company": "ADBE",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "test",
+    "question": "What revenue risk does Adobe's 2024 report identify related to its partner and distribution channels?",
+    "statement": "Adobe warns that if its partner and distribution channels are ineffective, or if it stops or changes them, it may lose sales opportunities, customers, and revenue.",
+    "quote": "If our partner and distribution channels are not effective or if we stop or change our partner or distribution channels, we may lose sales opportunities, customers and revenue.",
+    "locator": "raw:block=581",
+    "source_sha256": "8d9a2b99bced80db51bca2f0ab18bcf047585e0cb318015556af8e0d1f7783d9",
+    "source_path": "data/raw/acceptance_sec_adbe_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote from paragraph-581 directly states that if partner and distribution channels are not effective or if Adobe stops or changes them, it may lose sales opportunities, customers and revenue."
+    }
+  },
+  {
+    "id": "39881fb670077938f6e0e4ea",
+    "profile": "GOOGL:2022:net_income",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "test",
+    "question": "According to Alphabet's 2022 report, what factor primarily drove the decrease in its effective tax rate from 2021 to 2022?",
+    "statement": "The effective tax rate decreased from 2021 to 2022, primarily driven by the effects of capitalization and amortization of R&D expenses in 2022 as required by the 2017 Tax Cuts and Jobs Act, which generated an increase in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+    "quote": "The effective tax rate decreased from 2021 to 2022, primarily driven by the effects of capitalization and amortization of R&D expenses in 2022 as required by the 2017 Tax Cuts and Jobs Act generating an increase in the U.S. federal Foreign Derived Intangible Income tax deduction.",
+    "locator": "raw:block=878",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the effective tax rate decreased from 2021 to 2022, primarily driven by capitalization and amortization of R&D expenses under the 2017 Tax Cuts and Jobs Act, generating an increase in the U.S. federal FDII tax deduction."
+    }
+  },
+  {
+    "id": "710384aa0051355a199e314a",
+    "profile": "GOOGL:2022:net_income",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "test",
+    "question": "What does Alphabet's 2022 report say about the uncertainty of its worldwide income tax provision and the possible effect of the ultimate tax outcome?",
+    "statement": "The determination of the worldwide provision for income taxes and other tax liabilities requires significant judgment and often involves uncertainty, and the ultimate tax outcome may differ from the amounts recorded and may affect financial results in the period or periods for which such determination is made.",
+    "quote": "In addition, the determination of our worldwide provision for income taxes and other tax liabilities requires significant judgment and often involves uncertainty. Although we believe our estimates are reasonable, the ultimate tax outcome may differ from the amounts recorded in our financial statements and may affect our financial results in the period or periods for which such determination is made.",
+    "locator": "raw:block=462",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states the worldwide provision determination requires significant judgment and involves uncertainty, and the ultimate tax outcome may differ from amounts recorded and may affect financial results in the period(s) for which such determination is made."
+    }
+  },
+  {
+    "id": "8e5c90be525417e6ae68f2b3",
+    "profile": "GOOGL:2022:operating_income",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "According to GOOGL's 2022 report, what drove the year-over-year decrease in Google Services operating income?",
+    "statement": "Google Services operating income fell $5.3 billion from 2021 to 2022, primarily due to higher compensation expenses and traffic acquisition costs, partly offset by revenue growth.",
+    "quote": "Google Services operating income decreased $5.3 billion from 2021 to 2022. The decrease in operating income was primarily driven by increases in compensation expenses and TAC, partially offset by growth in revenues.",
+    "locator": "raw:block=857",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states Google Services operating income decreased $5.3 billion from 2021 to 2022, driven primarily by increases in compensation expenses and TAC, partially offset by revenue growth."
+    }
+  },
+  {
+    "id": "2da65c81c399efaa38b25add",
+    "profile": "GOOGL:2022:operating_income",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "What does GOOGL's 2022 report say about the effect of non-advertising revenue margins, such as hardware, on consolidated margins?",
+    "statement": "Non-advertising revenues generally carry lower margins than advertising revenues, and hardware margins in particular adversely affect consolidated margins due to pricing pressure and higher cost of sales.",
+    "quote": "The margins on these revenues vary significantly and are generally lower than the margins on our advertising revenues. In particular margins on our hardware products adversely affect our consolidated margins due to pressures on pricing and higher cost of sales.",
+    "locator": "raw:block=625",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states non-advertising revenue margins are generally lower than advertising margins and that hardware margins adversely affect consolidated margins due to pricing pressures and higher cost of sales."
+    }
+  },
+  {
+    "id": "625d3117fc5d2d4c3749b2d4",
+    "profile": "GOOGL:2022:revenue",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to GOOGL's 2022 report, what share of total revenues came from online advertising, and what risk does the report identify regarding advertiser contracts?",
+    "statement": "GOOGL's 2022 report states that more than 80% of total revenues were generated from online advertising, and notes that many advertisers and partners can terminate their contracts at any time.",
+    "quote": "We generated more than 80% of total revenues from online advertising in 2022. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time.",
+    "locator": "raw:block=292",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states more than 80% of total revenues came from online advertising in 2022 and that many advertisers/partners can terminate contracts at any time."
+    }
+  },
+  {
+    "id": "dde49293ee94211813c4ba0f",
+    "profile": "GOOGL:2022:revenue",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "test",
+    "question": "What factors does GOOGL's 2022 report cite as potentially causing its revenue growth rate to decline over time?",
+    "statement": "GOOGL's 2022 report attributes possible declines in revenue growth rate to factors including changes in devices and modalities, geographic mix, advertiser spending, competition, customer demand, pricing decreases, product and policy changes, and shifts to lower priced products and services.",
+    "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+    "locator": "raw:block=318",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote lists all cited factors (devices/modalities, geographic mix, advertiser spending, competition, demand, pricing decreases, product/policy changes, shifts to lower priced products) as reasons revenue growth rate could decline."
+    }
+  },
+  {
+    "id": "9cb0f0f647951cee092d43cc",
+    "profile": "GOOGL:2022:risk",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "test",
+    "question": "What does GOOGL's 2022 report say about the risk that its foreign exchange risk management program may not fully offset net exposure to currency rate fluctuations?",
+    "statement": "GOOGL's 2022 report discloses that the company expects its foreign exchange risk management program will not fully offset its net exposure to fluctuations in foreign currency exchange rates.",
+    "quote": "our expectation that our foreign exchange risk management program will not fully offset our net exposure to fluctuations in foreign currency exchange rates;",
+    "locator": "raw:block=131",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-131 directly states the expectation that the foreign exchange risk management program will not fully offset net exposure to currency rate fluctuations, matching the statement."
+    }
+  },
+  {
+    "id": "fc19dedc3e3549b918dbbf03",
+    "profile": "GOOGL:2022:risk",
+    "company": "GOOGL",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "test",
+    "question": "What risk does GOOGL's 2022 report identify regarding its ongoing investment in new businesses, products, services, and technologies?",
+    "statement": "GOOGL's 2022 report states that its ongoing investment in new businesses, products, services, and technologies is inherently risky and could divert management attention and harm its business, financial condition, and operating results.",
+    "quote": "Our ongoing investment in new businesses, products, services, and technologies is inherently risky, and could divert management attention and harm our business, financial condition, and operating results.",
+    "locator": "raw:block=305",
+    "source_sha256": "7dd29170d4adfc1e6ba32ffd33df446dca45db3b523eac0520d7c380604cd8ad",
+    "source_path": "data/raw/sec_googl_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "Paragraph-305 verbatim states that ongoing investment in new businesses, products, services, and technologies is inherently risky and could divert management attention and harm business, financial condition, and operating results."
+    }
+  },
+  {
+    "id": "291f9248004e82a6a8e75c05",
+    "profile": "GOOGL:2024:net_income",
+    "company": "GOOGL",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "test",
+    "question": "What risks does Alphabet disclose regarding tax audits and their potential effect on financial results in 2024?",
+    "statement": "Alphabet states it is subject to regular review and audit by domestic and foreign tax authorities and may receive assessments on tax-related assertions such as transfer-pricing adjustments or permanent-establishment claims; an adverse outcome could harm its financial condition and operating results, and the ultimate tax outcome may differ from recorded amounts and affect financial results in the period determined.",
+    "quote": "We are subject to regular review and audit by both domestic and foreign tax authorities. As a result, we have received, and may in the future receive, assessments in multiple jurisdictions, on various tax-related assertions, such as transfer-pricing adjustments or permanent-establishment claims. Any adverse outcome of such a review or audit could harm our financial condition and operating results",
+    "locator": "raw:block=496",
+    "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "source_path": "data/raw/sec_googl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states Alphabet is subject to regular review and audit by domestic and foreign tax authorities, may receive assessments on transfer-pricing or permanent-establishment claims, that adverse outcomes could harm financial condition and operating results, and that ultimate tax outcomes may differ from recorded amounts and affect financial results in the period determined."
+    }
+  },
+  {
+    "id": "f4511921ed661db50ec41da6",
+    "profile": "GOOGL:2024:operating_income",
+    "company": "GOOGL",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "What drove the increase in Google Services operating income for GOOGL in 2024?",
+    "statement": "Google Services operating income rose $25.4 billion from 2023 to 2024, primarily due to higher revenues, partly offset by increases in content acquisition costs and TAC, with a reduction in employee compensation expenses also contributing.",
+    "quote": "Google Services operating income increased $25.4 billion from 2023 to 2024. The increase in operating income was primarily driven by an increase in revenues, partially offset by increases in content acquisition costs and TAC.",
+    "locator": "raw:block=911",
+    "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "source_path": "data/raw/sec_googl_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The statement matches paragraph-911: $25.4 billion increase, driven by higher revenues, partly offset by content acquisition costs and TAC, plus a reduction in employee compensation expenses contributing."
+    }
+  },
+  {
+    "id": "1f9dd073f0020af8512a61bd",
+    "profile": "GOOGL:2024:operating_income",
+    "company": "GOOGL",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "What factors drove the increase in Google Cloud operating income for GOOGL in 2024?",
+    "statement": "Google Cloud operating income increased $4.4 billion from 2023 to 2024, primarily driven by higher revenues, partially offset by increases in usage costs for technical infrastructure and employee compensation expenses largely from headcount growth.",
+    "quote": "Google Cloud operating income increased $4.4 billion from 2023 to 2024. The increase in operating income was primarily driven by an increase in revenues, partially offset by increases in usage costs for technical infrastructure as well as employee compensation expenses, largely driven by headcount growth.",
+    "locator": "raw:block=913",
+    "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "source_path": "data/raw/sec_googl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The statement matches paragraph-913: $4.4 billion increase, driven by higher revenues, partly offset by technical infrastructure usage costs and employee compensation expenses from headcount growth."
+    }
+  },
+  {
+    "id": "46686462e07faf6b45117dff",
+    "profile": "GOOGL:2024:revenue",
+    "company": "GOOGL",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "test",
+    "question": "What factors does GOOGL's 2024 report identify as potentially causing its revenue growth rate to decline over time?",
+    "statement": "GOOGL's 2024 report lists factors that could cause revenue growth to decline, including changes in devices and modalities used to access products, geographic mix changes, deceleration or declines in advertiser spending, competition, changes in customer usage and demand, pricing decreases, product and policy changes, and shifts to lower priced products and services.",
+    "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+    "locator": "raw:block=341",
+    "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+    "source_path": "data/raw/sec_googl_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The statement accurately paraphrases the listed factors in paragraph-341, including device/modality changes, geographic mix, advertiser spending deceleration, competition, usage/demand changes, pricing decreases, product/policy changes, and shifts to lower priced products."
+    }
+  },
+  {
+    "id": "0b9470fc3acdc14add59a579",
+    "profile": "MSFT:2022:net_income",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "test",
+    "question": "What drove the change in Microsoft's effective tax rate in fiscal year 2022 compared with fiscal year 2021?",
+    "statement": "Microsoft's effective tax rate decreased in fiscal year 2022 primarily due to a $3.3 billion net income tax benefit in the first quarter related to the transfer of intangible properties, partly offset by changes in the mix of income before income taxes between the U.S. and foreign countries and prior-year tax benefits.",
+    "quote": "The decrease in our effective tax rate was primarily due to a $3.3 billion net income tax benefit in the first quarter of fiscal year 2022 related to the transfer of intangible properties, offset in part by changes in the mix of our income before income taxes between the U.S. and foreign countries",
+    "locator": "raw:block=2809",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The original paragraph states the effective tax rate decreased primarily due to the $3.3 billion net income tax benefit from the transfer of intangible properties, offset in part by changes in the mix of income before income taxes between the U.S. and foreign countries, and also mentions prior-year tax benefits."
+    }
+  },
+  {
+    "id": "d0269c7458d7193c112b4327",
+    "profile": "MSFT:2022:net_income",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "net_income",
+    "split": "test",
+    "question": "How did the transfer of intangible properties affect Microsoft's net income and diluted EPS in fiscal year 2022?",
+    "statement": "In fiscal year 2022, Microsoft's current year net income and diluted EPS were positively impacted by a net tax benefit related to the transfer of intangible properties, increasing net income by $3.3 billion and diluted EPS by $0.44.",
+    "quote": "Current year net income and diluted EPS were positively impacted by the net tax benefit related to the transfer of intangible properties, which resulted in an increase to net income and diluted EPS of $3.3 billion and $0.44, respectively.",
+    "locator": "raw:block=2124",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states current year net income and diluted EPS were positively impacted by the net tax benefit related to the transfer of intangible properties, increasing net income and diluted EPS by $3.3 billion and $0.44, respectively."
+    }
+  },
+  {
+    "id": "94b0e7fa9edf5e66a90967d2",
+    "profile": "MSFT:2022:operating_income",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "According to Microsoft's 2022 report, what competitive pressures could affect its operating income?",
+    "statement": "Microsoft's 2022 report states that competitive pressures may reduce sales volumes, lower prices, or raise operating costs such as research and development, marketing, and sales incentives, which could lead to lower revenue, gross margins, and operating income.",
+    "quote": "The competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives. This may lead to lower revenue, gross margins, and operating income.",
+    "locator": "raw:block=1146",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states competitive pressures may cause decreased sales volumes, price reductions, and/or increased operating costs (R&D, marketing, sales incentives), leading to lower revenue, gross margins, and operating income."
+    }
+  },
+  {
+    "id": "2f2ffec4a728780405c5ba1e",
+    "profile": "MSFT:2022:operating_income",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "operating_income",
+    "split": "test",
+    "question": "What did Microsoft disclose in its 2022 report about the effect of revised useful lives for server and network equipment on fiscal 2023 operating income?",
+    "statement": "Microsoft's 2022 report discloses that, effective fiscal year 2023, it increased the estimated useful lives of server and network equipment from four to six years, and based on the June 30, 2022 carrying amount, this change is estimated to increase fiscal year 2023 operating income by $3.7 billion.",
+    "quote": "In July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to investments in software that increased efficiencies in how we operate our server and network equipment, as well as advances in technology, we determined we should increase the estimated useful lives of both server and network equipment from four years to six years. This change in accounting estimate will be effective beginning fiscal year 2023. Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, it is estimated this change will increase our fiscal year 2023 operating income by $3.7 billion.",
+    "locator": "raw:block=3368",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote confirms the useful life increase from four to six years effective fiscal 2023 and estimates a $3.7 billion increase to fiscal 2023 operating income based on the June 30, 2022 carrying amount."
+    }
+  },
+  {
+    "id": "eedc11f53b566e3624943945",
+    "profile": "MSFT:2022:revenue",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to Microsoft's 2022 report, what factors mainly affect Office Commercial revenue?",
+    "statement": "Office Commercial revenue is mainly affected by continued installed base growth, average revenue per user expansion, and the continued shift from Office licensed on-premises to Office 365.",
+    "quote": "Office Commercial revenue is mainly affected by a combination of continued installed base growth and average revenue per user expansion, as well as the continued shift from Office licensed on-premises to Office 365.",
+    "locator": "raw:block=776",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote appears verbatim in paragraph-776 and directly answers the question about factors affecting Office Commercial revenue."
+    }
+  },
+  {
+    "id": "1fe98aad43cc270ecc9e3e55",
+    "profile": "MSFT:2022:revenue",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "revenue",
+    "split": "test",
+    "question": "Per Microsoft's 2022 report, what mainly affects Office Consumer revenue?",
+    "statement": "Office Consumer revenue is mainly affected by the percentage of customers that buy Office with their new devices and the continued shift from Office licensed on-premises to Microsoft 365 Consumer subscriptions.",
+    "quote": "Office Consumer revenue is mainly affected by the percentage of customers that buy Office with their new devices and the continued shift from Office licensed on-premises to Microsoft 365 Consumer subscriptions.",
+    "locator": "raw:block=778",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote appears verbatim in paragraph-778 and directly answers the question about factors affecting Office Consumer revenue."
+    }
+  },
+  {
+    "id": "6c1519222755d8ca3cba792c",
+    "profile": "MSFT:2022:risk",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "test",
+    "question": "What does Microsoft's 2022 report say about the competitive and execution risks tied to its increasing focus on cloud-based services?",
+    "statement": "Microsoft's 2022 report states that competitors are rapidly developing and deploying cloud-based services, pricing and delivery models are evolving, and the company may not establish sufficient market share to achieve the scale needed for its business objectives.",
+    "quote": "At the same time, our competitors are rapidly developing and deploying cloud-based services for consumers and business customers. Pricing and delivery models are evolving.",
+    "locator": "raw:block=1147",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The original paragraph states competitors are rapidly developing and deploying cloud-based services, pricing and delivery models are evolving, and the company may not establish sufficient market share to achieve scale needed for business objectives."
+    }
+  },
+  {
+    "id": "c55c7673c9e7addbd0ff824a",
+    "profile": "MSFT:2022:risk",
+    "company": "MSFT",
+    "report_year": 2022,
+    "focus": "risk",
+    "split": "test",
+    "question": "What does Microsoft's 2022 report disclose about the risks that acquisitions and strategic alliances pose to its business?",
+    "statement": "Microsoft's 2022 report states that acquisitions and other transactions involve significant challenges and risks, including failing to advance its business strategy, unsatisfactory returns, integration difficulties, management distraction, or announced transactions not being completed.",
+    "quote": "These acquisitions and other transactions and arrangements involve significant challenges and risks, including that they do not advance our business strategy, that we get an unsatisfactory return on our investment, that they raise new compliance-related obligations and challenges",
+    "locator": "raw:block=1177",
+    "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+    "source_path": "data/raw/sec_msft_2022.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph lists these exact risks: not advancing business strategy, unsatisfactory return, compliance obligations, integration/retention difficulties, management distraction, and announced transactions not being completed."
+    }
+  },
+  {
+    "id": "93dfda6973d9c3396c358e0c",
+    "profile": "MSFT:2023:net_income",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "development",
+    "question": "What effect did Microsoft's July 2022 change in estimated useful lives of server and network equipment have on fiscal year 2023 net income?",
+    "statement": "Microsoft disclosed that the change in accounting estimate for server and network equipment useful lives, effective fiscal year 2023, increased net income by $3.0 billion.",
+    "quote": "Based on the carrying amount of server and network equipment included in property and equipment, net as of June 30, 2022, the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+    "locator": "raw:block=1578",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the change in estimate for server and network equipment useful lives, effective fiscal year 2023, increased net income by $3.0 billion."
+    }
+  },
+  {
+    "id": "e573036de233cd0c20b6467b",
+    "profile": "MSFT:2023:net_income",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "development",
+    "question": "How did the Q2 charge affect Microsoft's fiscal year 2023 net income compared with the prior year's net tax benefit?",
+    "statement": "Microsoft reported that the Q2 charge reduced current year net income by $946 million, while the prior year net income was increased by a $3.3 billion net tax benefit related to the transfer of intangible properties.",
+    "quote": "Current year gross margin, operating income, net income, and diluted EPS were negatively impacted by the Q2 charge, which resulted in decreases of $152 million, $1.2 billion, $946 million, and $0.13, respectively. Prior year net income and diluted EPS were positively impacted by the net tax benefit related to the transfer of intangible properties, which resulted in an increase to net income and diluted EPS of $3.3 billion and $0.44, respectively.",
+    "locator": "raw:block=1878",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states the Q2 charge reduced net income by $946 million and prior year net income was increased by a $3.3 billion net tax benefit from the transfer of intangible properties."
+    }
+  },
+  {
+    "id": "bd8d561316edbc3d3b803ea4",
+    "profile": "MSFT:2023:operating_income",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "development",
+    "question": "What effect did Microsoft's fiscal year 2023 change in the estimated useful lives of server and network equipment have on operating income?",
+    "statement": "Microsoft reported that the change in accounting estimate for server and network equipment useful lives increased fiscal year 2023 operating income by $3.7 billion.",
+    "quote": "the effect of this change in estimate for fiscal year 2023 was an increase in operating income of $3.7 billion and net income of $3.0 billion, or $0.40 per both basic and diluted share.",
+    "locator": "raw:block=1578",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The original paragraph states the change in estimate for fiscal year 2023 increased operating income by $3.7 billion, matching the claim."
+    }
+  },
+  {
+    "id": "a77d10d93d78c0657b008e50",
+    "profile": "MSFT:2023:operating_income",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "operating_income",
+    "split": "development",
+    "question": "What drove the increase in Microsoft's operating income in fiscal year 2023 according to the report?",
+    "statement": "Microsoft's fiscal year 2023 operating income increased $5.1 billion or 6%, driven by growth in Productivity and Business Processes and Intelligent Cloud and the change in accounting estimate, partly offset by a decline in More Personal Computing.",
+    "quote": "Operating income increased $5.1 billion or 6% driven by growth in Productivity and Business Processes and Intelligent Cloud and the change in accounting estimate, offset in part by a decline in More Personal Computing.",
+    "locator": "raw:block=1876",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states operating income increased $5.1 billion or 6% driven by growth in Productivity and Business Processes and Intelligent Cloud and the change in accounting estimate, offset in part by a decline in More Personal Computing."
+    }
+  },
+  {
+    "id": "bb551f2efa81cf45f5b619d8",
+    "profile": "MSFT:2023:revenue",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "development",
+    "question": "According to Microsoft's 2023 report, what factors mainly affect Office Commercial revenue?",
+    "statement": "Office Commercial revenue is mainly affected by continued installed base growth, average revenue per user expansion, and the continued shift from Office licensed on-premises to Office 365.",
+    "quote": "Office Commercial revenue is mainly affected by a combination of continued installed base growth and average revenue per user expansion, as well as the continued shift from Office licensed on-premises to Office 365.",
+    "locator": "raw:block=677",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-677 directly states Office Commercial revenue is mainly affected by installed base growth, ARPU expansion, and the shift from on-premises Office to Office 365, matching the statement."
+    }
+  },
+  {
+    "id": "2e957f4f1868feff2d9e4815",
+    "profile": "MSFT:2023:revenue",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "revenue",
+    "split": "development",
+    "question": "Per Microsoft's 2023 report, what mainly affects LinkedIn revenue?",
+    "statement": "LinkedIn revenue is mainly affected by enterprise and professional organization demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, as well as member engagement and the quality of sponsored content for Marketing Solutions.",
+    "quote": "LinkedIn revenue is mainly affected by demand from enterprises and professional organizations for subscriptions to Talent Solutions, Sales Solutions, and Premium Subscriptions offerings, as well as member engagement and the quality of the sponsored content delivered to those members to drive Marketing Solutions.",
+    "locator": "raw:block=685",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote from paragraph-685 directly states LinkedIn revenue is mainly affected by enterprise/professional demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, plus member engagement and sponsored content quality for Marketing Solutions, matching the statement."
+    }
+  },
+  {
+    "id": "189dacf280cea4d3f299655d",
+    "profile": "MSFT:2023:risk",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "risk",
+    "split": "development",
+    "question": "What does Microsoft's 2023 report say about the risk that evolving and increasingly sophisticated cyberthreats pose to its ability to detect and defend against them?",
+    "statement": "Microsoft's 2023 report states that cyberthreats are constantly evolving and becoming more sophisticated and complex, which makes detecting and successfully defending against them more difficult, and the company may lack current capability to detect certain vulnerabilities or new attack methods.",
+    "quote": "Cyberthreats are constantly evolving and becoming increasingly sophisticated and complex, increasing the difficulty of detecting and successfully defending against them. We may have no current capability to detect certain vulnerabilities or new attack methods, which may allow them to persist in the environment over long periods of time.",
+    "locator": "raw:block=1011",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states cyberthreats are constantly evolving and increasingly sophisticated and complex, increasing difficulty of detecting and defending, and that the company may have no current capability to detect certain vulnerabilities or new attack methods."
+    }
+  },
+  {
+    "id": "16a44d5f3ac2e136db73a0e7",
+    "profile": "MSFT:2023:risk",
+    "company": "MSFT",
+    "report_year": 2023,
+    "focus": "risk",
+    "split": "development",
+    "question": "What risk does Microsoft's 2023 report identify regarding the costs of protecting its products and customer-facing services and the potential effect on operating margins?",
+    "statement": "Microsoft's 2023 report states that the cost of measures to protect products and customer-facing services could reduce its operating margins, and that failing to do these things well could harm its reputation and lead customers to reduce or delay purchases or use competing products.",
+    "quote": "The cost of measures to protect products and customer-facing services could reduce our operating margins. If we fail to do these things well, actual or perceived security vulnerabilities in our products and services, data corruption issues, or reduced performance could harm our reputation and lead customers to reduce or delay future purchases of products or subscriptions to services, or to use competing products or services.",
+    "locator": "raw:block=1027",
+    "source_sha256": "ca8dbe1765a1e50dabc3b03414cdafb177f6143c65f20029ac20dea435481eeb",
+    "source_path": "data/raw/sec_msft_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states the cost of protective measures could reduce operating margins and that failing to do these things well could harm reputation and lead customers to reduce or delay purchases or use competing products."
+    }
+  },
+  {
+    "id": "69b8992acf12538fe5c59426",
+    "profile": "MSFT:2024:net_income",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "What did Microsoft say in its 2024 report about how the prior-year Q2 charge affected net income and other measures?",
+    "statement": "Microsoft disclosed that the prior-year Q2 charge reduced prior-year net income by $946 million, along with decreases in gross margin, operating income, and diluted EPS.",
+    "quote": "Prior year gross margin, operating income, net income, and diluted EPS were negatively impacted by the Q2 charge, which resulted in decreases of $152 million, $1.2 billion, $946 million, and $0.13, respectively.",
+    "locator": "raw:block=2008",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states the prior-year Q2 charge reduced prior-year net income by $946 million and decreased gross margin, operating income, and diluted EPS, matching the statement."
+    }
+  },
+  {
+    "id": "fe9bf05f16b5ca86f65b0e8d",
+    "profile": "MSFT:2024:net_income",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "What did Microsoft identify in its 2024 report as the main reason its effective tax rate declined from the prior year?",
+    "statement": "Microsoft attributed the decrease in its effective tax rate primarily to tax benefits from tax law changes, including IRS and Treasury notices that delayed the effective date of final foreign tax credit regulations.",
+    "quote": "The decrease in our effective tax rate was primarily due to tax benefits from tax law changes, including the impact from the issuance of Notice 2023-55 and Notice 2023-80 by the Internal Revenue Service (“IRS”) and U.S. Treasury Department.",
+    "locator": "raw:block=2673",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote attributes the effective tax rate decrease primarily to tax benefits from tax law changes, including IRS/Treasury Notices 2023-55 and 2023-80, which delayed the effective date of final foreign tax credit regulations."
+    }
+  },
+  {
+    "id": "27e8b24a17bcdf1b66cb970c",
+    "profile": "MSFT:2024:operating_income",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "validation",
+    "question": "What drove the increase in Microsoft's operating expenses in fiscal 2024?",
+    "statement": "Operating expenses increased $4.0 billion or 7%, driven by Gaming (including 7 points of growth from the Activision Blizzard acquisition) and investments in cloud engineering, partly offset by the prior year Q2 charge.",
+    "quote": "Operating expenses increased $4.0 billion or 7% driven by Gaming, with 7 points of growth from the Activision Blizzard acquisition, and investments in cloud engineering, offset in part by the prior year Q2 charge.",
+    "locator": "raw:block=2006",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states operating expenses increased $4.0 billion or 7%, driven by Gaming with 7 points from Activision Blizzard and cloud engineering investments, partly offset by the prior year Q2 charge."
+    }
+  },
+  {
+    "id": "056713f7bd353a58b59e0037",
+    "profile": "MSFT:2024:operating_income",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "validation",
+    "question": "How did the prior year Q2 charge affect Microsoft's operating income in the 2024 report comparison?",
+    "statement": "The prior year Q2 charge negatively impacted prior year operating income by $1.2 billion.",
+    "quote": "Prior year gross margin, operating income, net income, and diluted EPS were negatively impacted by the Q2 charge, which resulted in decreases of $152 million, $1.2 billion, $946 million, and $0.13, respectively.",
+    "locator": "raw:block=2008",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states prior year operating income was negatively impacted by the Q2 charge, resulting in a decrease of $1.2 billion."
+    }
+  },
+  {
+    "id": "6a7291275d524ea34de59b92",
+    "profile": "MSFT:2024:revenue",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "validation",
+    "question": "According to Microsoft's 2024 report, what factors mainly affect Office Commercial revenue?",
+    "statement": "Office Commercial revenue is mainly affected by installed base growth, average revenue per user expansion, and the continued shift from Office licensed on-premises to Office 365.",
+    "quote": "Office Commercial revenue is mainly affected by a combination of continued installed base growth and average revenue per user expansion, as well as the continued shift from Office licensed on-premises to Office 365.",
+    "locator": "raw:block=678",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-678 exactly matches the statement: installed base growth, average revenue per user expansion, and shift from Office licensed on-premises to Office 365."
+    }
+  },
+  {
+    "id": "6c09544ab2f717b923d86016",
+    "profile": "MSFT:2024:revenue",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "validation",
+    "question": "Per Microsoft's 2024 report, what mainly affects LinkedIn revenue?",
+    "statement": "LinkedIn revenue is mainly affected by enterprise and professional demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, plus member engagement and sponsored content quality for Marketing Solutions.",
+    "quote": "LinkedIn revenue is mainly affected by demand from enterprises and professionals for subscriptions to Talent Solutions, Sales Solutions, and Premium Subscriptions offerings, as well as member engagement and the quality of the sponsored content delivered to those members to drive Marketing Solutions.",
+    "locator": "raw:block=682",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote from paragraph-682 directly states LinkedIn revenue is mainly affected by demand for Talent Solutions, Sales Solutions, and Premium Subscriptions, plus member engagement and sponsored content quality for Marketing Solutions."
+    }
+  },
+  {
+    "id": "3ef65907f7e00b235abc5717",
+    "profile": "MSFT:2024:risk",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "risk",
+    "split": "validation",
+    "question": "What risk does Microsoft's 2024 report disclose regarding the competitive environment and its ability to innovate?",
+    "statement": "Microsoft's 2024 report states that barriers to entry are low in many of its businesses and that markets evolve rapidly with disruptive technologies and shifting user needs, so failure to keep innovating could harm its competitive position and results.",
+    "quote": "Barriers to entry in many of our businesses are low and many of the areas in which we compete evolve rapidly with changing and disruptive technologies, shifting user needs, and frequent introductions of new products and services.",
+    "locator": "raw:block=992",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "Paragraph-992 explicitly states barriers to entry are low, markets evolve rapidly with disruptive technologies and shifting user needs, and failure to continue innovating may prevent remaining competitive and adversely affect business, financial condition, and results."
+    }
+  },
+  {
+    "id": "f6a0540d671ced607ac589d1",
+    "profile": "MSFT:2024:risk",
+    "company": "MSFT",
+    "report_year": 2024,
+    "focus": "risk",
+    "split": "validation",
+    "question": "What cybersecurity risk does Microsoft's 2024 report describe involving a nation-state actor and its email accounts?",
+    "statement": "Microsoft's 2024 report discloses that beginning in late November 2023 a nation-state associated threat actor used a password spray attack to compromise a legacy test account and gain access to Microsoft email accounts, and may continue using the information obtained.",
+    "quote": "beginning in late November 2023, a nation-state associated threat actor used a password spray attack to compromise a legacy test account and, in turn, gain access to Microsoft email accounts. The threat actor used and may continue to use information it obtained",
+    "locator": "raw:block=1056",
+    "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+    "source_path": "data/raw/sec_msft_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "Paragraph-1056 states that beginning in late November 2023 a nation-state associated threat actor used a password spray attack to compromise a legacy test account and gain access to Microsoft email accounts, and that the threat actor used and may continue to use information it obtained."
+    }
+  },
+  {
+    "id": "082c7078f105550346177eda",
+    "profile": "NVDA:2024:net_income",
+    "company": "NVDA",
+    "report_year": 2024,
+    "focus": "net_income",
+    "split": "development",
+    "question": "What net benefit to NVIDIA's fiscal year 2024 results came from the resolution of the IRS audit of its fiscal years 2018 and 2019 federal income tax returns?",
+    "statement": "NVIDIA recognized a non-cash net benefit of $145 million in fiscal year 2024 related to the IRS audit resolution for effectively settled positions.",
+    "quote": "During the third quarter of fiscal year 2024, the Internal Revenue Service, or IRS, audit of our federal income tax returns for fiscal years 2018 and 2019 was resolved. We recognized a non-cash net benefit of $145 million, related to this IRS audit resolution, for effectively settled positions.",
+    "locator": "raw:block=829",
+    "source_sha256": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060",
+    "source_path": "data/raw/acceptance_sec_nvda_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states NVIDIA recognized a non-cash net benefit of $145 million in fiscal year 2024 related to the IRS audit resolution for effectively settled positions."
+    }
+  },
+  {
+    "id": "0280370232f561a4cdbc2375",
+    "profile": "NVDA:2024:operating_income",
+    "company": "NVDA",
+    "report_year": 2024,
+    "focus": "operating_income",
+    "split": "development",
+    "question": "What drove the increase in NVIDIA's operating expenses in fiscal year 2024, and what prior-year item affected the comparison?",
+    "statement": "NVIDIA attributed the fiscal year 2024 increase in operating expenses to growth in employees and compensation increases, while noting fiscal year 2023 included a $1.4 billion acquisition termination charge related to the proposed Arm transaction.",
+    "quote": "Operating expenses increased for fiscal year 2024, driven by growth in employees and compensation increases. Fiscal year 2023 also included a $1.4 billion acquisition termination charge related to the proposed Arm transaction.",
+    "locator": "raw:block=737",
+    "source_sha256": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060",
+    "source_path": "data/raw/acceptance_sec_nvda_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote directly states operating expenses increased in FY2024 driven by employee growth and compensation increases, and that FY2023 included a $1.4 billion acquisition termination charge related to the proposed Arm transaction."
+    }
+  },
+  {
+    "id": "95ea74364b349d6377b1db27",
+    "profile": "NVDA:2024:revenue",
+    "company": "NVDA",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "development",
+    "question": "According to NVIDIA's 2024 report, what does the company say about the concentration of its revenue among partners and distributors?",
+    "statement": "NVIDIA discloses that a significant portion of its revenue comes from a limited number of partners and distributors, with concentrated sales to end customers, and losing or being unable to sell to any of these end customers could adversely affect revenue.",
+    "quote": "A significant amount of our revenue stems from a limited number of partners and distributors and we have a concentration of sales to end customers, and our revenue could be adversely affected if we lose or are prevented from selling to any of these end customers.",
+    "locator": "raw:block=353",
+    "source_sha256": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060",
+    "source_path": "data/raw/acceptance_sec_nvda_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote from paragraph-353 directly matches the statement, stating revenue stems from a limited number of partners and distributors, concentration of sales to end customers, and revenue could be adversely affected if losing or prevented from selling to these end customers."
+    }
+  },
+  {
+    "id": "c42b5a00d120fb73faf9100e",
+    "profile": "NVDA:2024:revenue",
+    "company": "NVDA",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "development",
+    "question": "What does NVIDIA's 2024 report say about how product transitions can affect its revenue?",
+    "statement": "NVIDIA states that product transitions are complex and can impact revenue because it often ships new and prior architecture products simultaneously while it and channel partners prepare to ship and support new products.",
+    "quote": "Product transitions are complex and can impact our revenue as we often ship both new and prior architecture products simultaneously and we and our channel partners prepare to ship and support new products.",
+    "locator": "raw:block=415",
+    "source_sha256": "4a9505e31efe6036b15ea2aa6efefffca67320c67cd949e22aaf41a88378d060",
+    "source_path": "data/raw/acceptance_sec_nvda_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote from paragraph-415 directly matches the statement, stating product transitions are complex and can impact revenue as the company often ships both new and prior architecture products simultaneously while it and channel partners prepare to ship and support new products."
+    }
+  },
+  {
+    "id": "f587f30a0198714cbe13320f",
+    "profile": "TSLA:2023:net_income",
+    "company": "TSLA",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "What primarily caused the change in Tesla's provision for income taxes in the year ended December 31, 2023 compared to 2022?",
+    "statement": "Tesla's (benefit from) provision for income taxes changed by $6.13 billion in 2023 versus 2022, primarily due to the release of $6.54 billion of valuation allowance associated with U.S. federal and certain state deferred tax assets.",
+    "quote": "Our (benefit from) provision for income taxes changed by $6.13 billion in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of $6.54 billion of our valuation allowance associated with the U.S. federal and certain state deferred tax assets.",
+    "locator": "raw:block=796",
+    "source_sha256": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce",
+    "source_path": "data/raw/acceptance_sec_tsla_2023.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The quote states the provision changed by $6.13 billion in 2023 vs 2022, primarily due to release of $6.54 billion valuation allowance for U.S. federal and certain state deferred tax assets, matching the statement."
+    }
+  },
+  {
+    "id": "16237d219b10a92b0101dd00",
+    "profile": "TSLA:2023:net_income",
+    "company": "TSLA",
+    "report_year": 2023,
+    "focus": "net_income",
+    "split": "validation",
+    "question": "What primarily drove Tesla's effective tax rate change from an 8% expense to a 50% benefit in the year ended December 31, 2023 compared to 2022?",
+    "statement": "Tesla's effective tax rate changed from an expense of 8% to a benefit of 50% in 2023 versus 2022, primarily due to the release of the valuation allowance regarding U.S. federal and certain state deferred tax assets.",
+    "quote": "Our effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets.",
+    "locator": "raw:block=797",
+    "source_sha256": "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce",
+    "source_path": "data/raw/acceptance_sec_tsla_2023.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The quote states the effective tax rate changed from an 8% expense to a 50% benefit in 2023 vs 2022, primarily due to release of the valuation allowance regarding U.S. federal and certain state deferred tax assets, matching the statement."
+    }
+  },
+  {
+    "id": "fa75e7e696523ec972de025f",
+    "profile": "TSLA:2024:revenue",
+    "company": "TSLA",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "test",
+    "question": "According to Tesla's 2024 Form 10-K, what factors drove the decline in automotive sales revenue compared with 2023?",
+    "statement": "Tesla's 2024 automotive sales revenue fell $6.03 billion, or 8%, year over year, primarily due to lower average selling price from overall price reductions and attractive financing options, as well as mix, plus a decrease of roughly 22,000 combined Model 3 and Model Y cash deliveries, partly offset by about 19,000 more deliveries of other models from the Cybertruck production ramp and $596 million of FSD (Supervised) revenue.",
+    "quote": "Automotive sales revenue decreased $6.03 billion, or 8%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to lower average selling price on our vehicles driven by overall price reductions and attractive financing options provided in 2024 as well as mix.",
+    "locator": "raw:block=764",
+    "source_sha256": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+    "source_path": "data/raw/acceptance_sec_tsla_2024.html",
+    "verification": {
+      "index": 0,
+      "supported": true,
+      "reason": "The original paragraph confirms the $6.03 billion/8% decline, lower ASP from price reductions and financing options plus mix, ~22,000 fewer Model 3/Y cash deliveries, ~19,000 more other-model deliveries from Cybertruck ramp, and $596 million FSD revenue."
+    }
+  },
+  {
+    "id": "069f0cd1ae84fd80b42c5de1",
+    "profile": "TSLA:2024:revenue",
+    "company": "TSLA",
+    "report_year": 2024,
+    "focus": "revenue",
+    "split": "test",
+    "question": "What competitive risk does Tesla's 2024 Form 10-K identify as potentially affecting its revenue?",
+    "statement": "Tesla states that increased competition in the electric and alternative fuel vehicle markets could result in lower vehicle unit sales, price reductions, revenue shortfalls, loss of customers and loss of market share, which may harm its business, financial condition and operating results.",
+    "quote": "Increased competition could result in our lower vehicle unit sales, price reductions, revenue shortfalls, loss of customers and loss of market share, which may harm our business, financial condition and operating results.",
+    "locator": "raw:block=446",
+    "source_sha256": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+    "source_path": "data/raw/acceptance_sec_tsla_2024.html",
+    "verification": {
+      "index": 1,
+      "supported": true,
+      "reason": "The original paragraph states increased competition could result in lower vehicle unit sales, price reductions, revenue shortfalls, loss of customers and market share, harming business, financial condition and operating results."
+    }
+  }
+]

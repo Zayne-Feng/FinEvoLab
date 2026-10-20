@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "samples": 20,
+  "mapped_outputs": 18,
+  "primary_reviews": 20,
+  "secondary_reviews": 14,
+  "control_errors": {
+    "A": 0,
+    "B": 0
+  },
+  "disagreements": [
+    "control-6",
+    "control-0"
+  ],
+  "decision": "conservative intersection on double-reviewed samples; primary elsewhere"
+}

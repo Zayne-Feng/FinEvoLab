@@ -1,0 +1,848 @@
+{
+  "be7d00637e797d27aa5048889d8e9c3a65d6a0bad4de06db3642d7559b95ba20": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted comparative income statement shows net income at 48.9% for FY2024 versus 16.2% for the prior year, supporting that net income rose."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states effective tax rates were below the 21% statutory rate due primarily to FDII, stock-based compensation, and research tax credit benefits, and that FY2024 was additionally benefited by the IRS audit resolution."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate increased due to decreased impact of those tax benefits relative to higher pre-tax income, partially offset by the IRS audit resolution benefit."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 1595,
+      "total_tokens": 1775,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 187
+    }
+  },
+  "91acef3213c84fb84897aee76555b9dfc305eaa36966c4076c8b3831a97e9281": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The item-7 table shows operating income of $88,523 million in 2023 versus $83,383 million in 2022, a 6% increase, supporting the claim of a year-over-year increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses decreased $195 million or 2% driven by a decline in Devices, offset in part by investments in Search and news advertising including 2 points of growth from the Xandr acquisition, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states gross margin increased $8.9 billion or 17% driven by growth in Azure and other cloud services and the change in accounting estimate, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 193,
+      "prompt_tokens": 1877,
+      "total_tokens": 2070,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 213
+    }
+  },
+  "d7212c4e7ac6fdc3a8c122f7b3d5d76a33c1fba73ba50b4913846c3f41b23205": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states Greater China net sales decreased due primarily to lower iPhone and iPad net sales, with unfavorable renminbi weakness impact, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states iPad net sales decreased due primarily to lower iPad Pro and entry-level iPad sales, partially offset by higher iPad Air sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states Rest of Asia Pacific net sales increased due primarily to higher Services net sales, with foreign currency weakness having a net unfavorable impact."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote directly states Japan net sales increased due primarily to higher iPhone net sales, with yen weakness having an unfavorable impact."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 171,
+      "prompt_tokens": 1372,
+      "total_tokens": 1543,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 220
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote only shows operating income figures ($67,656 vs $60,508); it contains no management guarantee of doubling performance or any risk disclaimer, so the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 1865,
+      "total_tokens": 1939,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage is a generic risk-factor preamble about various risks and uncertainties; it does not mention the chief executive's personal investments or prove exclusive causation of any change."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1413,
+      "total_tokens": 1481,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1279
+      },
+      "prompt_cache_hit_tokens": 1279,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "58bd3235ec8ac6bcbcdd5fa9896c802bbe743122a76b8ba5e36d4786adb6564c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that adverse economic conditions can materially adversely affect the Company's business, results of operations and financial condition."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote lists increased credit and collectibility risk on trade receivables, counterparty failures, limitations on issuing new debt, reduced liquidity, and declines in fair values of financial instruments."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote covers macroeconomic factors affecting retail activity, and the source text adds managing store construction/operation costs, retail partner relationships, inventory value fluctuations, and lease renewals."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 161,
+      "prompt_tokens": 1270,
+      "total_tokens": 1431,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 246
+    }
+  },
+  "4bfa56b1b4264327c7fe993a46b739b1ff2688434bfdf36025a5b493c2570d67": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted segment table shows Americas operating income rising from $60,508M (2023) to $67,656M (2024), consistent with the claim that segment operating income increased under the 2024 vs 2023 headings."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states Products gross margin and percentage increased in 2024 vs 2023 due to cost savings, partially offset by different Products mix and foreign currency weakness relative to the U.S. dollar."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage lists gross margin volatility/downward pressure factors including pricing pressures, competition, supply shortages, component/manufacturing cost increases, product mix shifts, and foreign exchange fluctuations."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote states gross margins on products in foreign countries and on products with foreign-sourced components have been adversely affected and could be materially adversely affected by foreign exchange rate fluctuations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 243,
+      "prompt_tokens": 2368,
+      "total_tokens": 2611,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 192
+    }
+  },
+  "33c1570cce379ec95eee1be914e6ddacf106873e584a4496595cff3549223b55": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states competition law actions may reduce product attractiveness and the revenue derived from them."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states regional epidemics or a global pandemic may adversely affect operations, financial condition, and results of operations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote supports increased operating costs and negative revenue impact from geopolitical instability; supply chain disruption is also mentioned in the passage."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 132,
+      "prompt_tokens": 1355,
+      "total_tokens": 1487,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 203
+    }
+  },
+  "5785bfab3bce3778c35fc9cad372cfb01284373ba97d3b35be7fbce8bebe290f": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income of $88,523M vs $83,383M (6% increase) and separately lists severance, hardware-related impairment, and lease consolidation costs of $1,171M as an adjustment to operating income."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses decreased $195 million or 2% driven by a decline in Devices, offset in part by investments in Search and news advertising including 2 points of growth from the Xandr acquisition."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 142,
+      "prompt_tokens": 1677,
+      "total_tokens": 1819,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 141
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage verbatim shows net income of $93,736M (FY2024), $96,995M (FY2023), and $99,803M (FY2022), matching the claim's figures."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 1830,
+      "total_tokens": 1911,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 166
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage and accurately reflects the disclosed FY2023 revenue change and segment drivers."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 51,
+      "prompt_tokens": 947,
+      "total_tokens": 998,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 179
+    }
+  },
+  "f66daae1f181a866089038f2d9b0952bb3196db42ef9c080b4da3e3c329c7fe9": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states revenue increased $13.6 billion or 7% driven by Intelligent Cloud and Productivity and Business Processes, offset in part by a decline in More Personal Computing."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage explicitly states Intelligent Cloud revenue increased driven by Azure and other cloud services, and Productivity and Business Processes revenue increased driven by Office 365 Commercial and LinkedIn."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states More Personal Computing revenue decreased driven by Windows and Devices."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote directly attributes Windows OEM revenue decrease of 25% to elevated channel inventory levels driving additional weakness beyond declining PC demand."
+      },
+      {
+        "index": 4,
+        "supported": true,
+        "reason": "The passage states server products and cloud services revenue increased driven by Azure and other cloud services, and Azure grew 29% driven by consumption-based services."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 236,
+      "prompt_tokens": 1290,
+      "total_tokens": 1526,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage only reports operating income figures and severance/impairment costs; it contains no management guarantee of doubling performance or absence of risks, so the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 1555,
+      "total_tokens": 1629,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 147
+    }
+  },
+  "092ece25ef1919c6df7b786d1f90024349dfed45830b721189b9d51125c819fa": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "Verbatim quote from the source directly states operations and financial results are subject to risks that could adversely affect business, financial condition, results of operations, cash flows, and stock price."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Quote directly states competition law actions and court decisions may result in fines or hinder ability to provide software benefits, reducing product attractiveness and revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Quote directly states regional epidemics or a global pandemic may adversely affect operations, financial condition, and results of operations."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "Quote directly states disruptions in developed or emerging markets could negatively impact demand, impair ability to operate in certain regions, or increase operating costs."
+      },
+      {
+        "index": 4,
+        "supported": true,
+        "reason": "Quote directly states abrupt political change, terrorist activity, and armed conflict pose risk of economic disruption that may increase operating costs and negatively impact ability to sell to and collect from customers."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 247,
+      "prompt_tokens": 1845,
+      "total_tokens": 2092,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 181
+    }
+  },
+  "a87569192fcceee17c9d63fdeca12f1813ceb2780c4a13dbae11c944b72b7712": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states Greater China net sales decreased due primarily to lower iPhone and iPad sales, with renminbi weakness having an unfavorable impact."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states iPad net sales decreased due primarily to lower iPad Pro and entry-level iPad sales, partially offset by higher iPad Air sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states Rest of Asia Pacific net sales increased due primarily to higher Services sales, with foreign currency weakness having a net unfavorable impact."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote directly states Japan net sales increased due primarily to higher iPhone sales, with yen weakness having an unfavorable impact."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 190,
+      "prompt_tokens": 1392,
+      "total_tokens": 1582,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 240
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage only states that operations depend on global and regional economic conditions; it says nothing about the chief executive's personal investments or exclusive causation, so the claim is unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 71,
+      "prompt_tokens": 983,
+      "total_tokens": 1054,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 215
+    }
+  },
+  "5872b424de52b4c8cb57b5815671c5a5efc2f8f3b1f320d9547d1b3cc79d580c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted segment operating income figures show Americas, Europe, Japan, and Rest of Asia Pacific all higher in 2024 vs 2023, supporting an increase in total segment operating income (though Greater China declined)."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states Products gross margin and percentage increased in 2024 vs 2023 due to cost savings, partially offset by different Products mix and foreign currency weakness."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage lists gross margin volatility and downward pressure factors including pricing pressures, competition, supply shortages, cost increases, mix shifts, foreign exchange fluctuations, and inflation."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote directly states gross margins on products in foreign countries and with foreign-sourced components have been adversely affected and could be materially adversely affected by foreign exchange rate fluctuations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 225,
+      "prompt_tokens": 2390,
+      "total_tokens": 2615,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 214
+    }
+  },
+  "3dc93b8f81a626a58ff994585129eeaa743d7a387bc55bcd13df90dc7faed097": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage directly states the effective tax rate increase was primarily due to the $3.3 billion prior-year net income tax benefit from intangible property transfer and a decrease in stock-based compensation tax benefits."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quoted passage directly states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through the Ireland-based foreign regional operations center."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quoted passage directly attributes higher interest and dividends income to higher yields, lower interest expense to debt maturities, and decreased net recognized gains on investments to lower equity gains and higher fixed income losses."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 185,
+      "prompt_tokens": 1216,
+      "total_tokens": 1401,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 192
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage, which states the effective tax rate increase was primarily due to the $3.3 billion net income tax benefit in Q1 FY2022 related to intangible property transfer and a decrease in stock-based compensation tax benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 89,
+      "prompt_tokens": 980,
+      "total_tokens": 1069,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 212
+    }
+  },
+  "4464c22520541e371b4d2ae2806be92d9110b1f45a9af0d316f27806c9e792d9": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage states the effective tax rate rose from 13% to 19% and attributes the increase primarily to the $3.3 billion prior-year net income tax benefit from intangible property transfer and a decrease in stock-based compensation tax benefits, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate, primarily due to earnings taxed at lower rates in foreign jurisdictions from producing and distributing products/services through the Ireland regional operations center."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 962,
+      "total_tokens": 1107,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 194
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage (passage:19b03c3f3701422127377441), which directly states the Greater China decrease, the iPhone/iPad drivers, and the unfavorable renminbi impact."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 85,
+      "prompt_tokens": 1069,
+      "total_tokens": 1154,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 173
+    }
+  },
+  "1c15b8731b65ca5724e2c3dfaaab7fd02815dc08495d2f6fc7544b22b978a369": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "Verbatim quote from AAPL FY2024 item-1a directly states adverse economic conditions can materially adversely affect business, results of operations and financial condition."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Quote lists credit/collectibility risk, counterparty and financial institution failures, debt issuance limits, reduced liquidity, and fair value declines, and states these can materially adversely affect business, results of operations, financial condition and stock price."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Quote states retail operations face risks and uncertainties including macroeconomic factors affecting general retail activity, and could adversely impact business, results of operations and financial condition; other listed factors (costs, partners, inventory, leases) are also in the passage."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 193,
+      "prompt_tokens": 1297,
+      "total_tokens": 1490,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 145
+    }
+  },
+  "a02e1d632d7a67022bc75a5e93dea34c7b5d8445598890764d53c7ad9785bd87": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table shows net income of $93,736M in FY2024 versus $96,995M in FY2023, a decline, consistent with the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate rose due primarily to a one-time $10.2B State Aid charge, higher foreign earnings tax rate, and lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim lists mix of earnings across countries, deferred tax valuation changes, new taxes, and changes in tax laws/interpretation as factors affecting effective tax rates."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 173,
+      "prompt_tokens": 1922,
+      "total_tokens": 2095,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1788
+      },
+      "prompt_cache_hit_tokens": 1788,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "36ed09ec4e6a23294047a3f48a7f3aba343434697f8a2d9659691a9bc928918e": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states revenue increased $13.6B or 7% driven by Intelligent Cloud and Productivity and Business Processes, offset in part by a decline in More Personal Computing, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states server products and cloud services revenue increased $12.6B or 19% driven by Azure and other cloud services, and Azure grew 29% driven by consumption-based services, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states Windows revenue decreased $3.2B or 13% driven by Windows OEM, OEM decreased 25% as elevated channel inventory drove additional weakness beyond declining PC demand, and Windows Commercial increased 5% on Microsoft 365 demand, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 204,
+      "prompt_tokens": 1167,
+      "total_tokens": 1371,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 143
+    }
+  },
+  "2e5ffbc86fd5adb204f3add34fe13036e61cdf8535f044409e0300710db8ae7a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The item-7 table shows operating income of $32,972M vs $4,224M, 'Up 681%', supporting a sharp year-over-year rise."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states gross margin increased primarily driven by Data Center revenue growth and lower net inventory provisions as a percentage of revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states operating expenses increased driven by employee growth and compensation increases, and that FY2023 included a $1.4 billion Arm acquisition termination charge."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 1518,
+      "total_tokens": 1677,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 238
+    }
+  },
+  "ab36dedb0a90fed19aff877238f7b8f3d629da6c9c0bbc7ee5c08be2149b300c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table shows net income of $93,736M for FY2024 (Sept 28, 2024) versus $96,995M for FY2023 (Sept 30, 2023), a decrease, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly attributes the higher 2024 effective tax rate to the $10.2B State Aid Decision charge, higher foreign effective rate, and lower share-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states the effective rate exceeded the statutory federal rate due primarily to the State Aid charge and state income taxes, partially offset by lower foreign effective rate, R&D credit, and share-based compensation benefits."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote lists exactly these factors affecting effective tax rates: earnings mix across differing statutory rates, deferred tax valuation changes, new taxes, and changes in tax laws or interpretation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 246,
+      "prompt_tokens": 2324,
+      "total_tokens": 2570,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 148
+    }
+  },
+  "ac91fc9fd9e806ddbfa197351d0138b4d41f95e0f5a314c464c83d5adab6e629": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states strong demand was driven by enterprise software and consumer internet applications and multiple industry verticals including automotive, financial services, and healthcare."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states generative AI models have driven increased demand for Data Center and that the long-term trajectory is unknown."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly attributes the fiscal year 2024 gross margin increase primarily to Data Center revenue growth and lower net inventory provisions as a percentage of revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 130,
+      "prompt_tokens": 1163,
+      "total_tokens": 1293,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 139
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "all": {
+        "attempts": 60,
+        "mechanical_successes": 60,
+        "strict_successes": 60,
+        "strict_rate": 1,
+        "primary_only_successes": 60,
+        "unique_questions": 20,
+        "all_repeats_pass_questions": 20,
+        "all_repeats_pass_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "requests": 83,
+        "tokens": 107091,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.1542000000000066,
+        "repairs": 5
+      },
+      "common": {
+        "attempts": 0,
+        "mechanical_successes": 0,
+        "strict_successes": 0,
+        "strict_rate": null,
+        "primary_only_successes": 0,
+        "unique_questions": 0,
+        "all_repeats_pass_questions": 0,
+        "all_repeats_pass_wilson_95": null,
+        "requests": 0,
+        "tokens": 0,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": null,
+        "repairs": 0
+      },
+      "new_capabilities": {
+        "attempts": 60,
+        "mechanical_successes": 60,
+        "strict_successes": 60,
+        "strict_rate": 1,
+        "primary_only_successes": 60,
+        "unique_questions": 20,
+        "all_repeats_pass_questions": 20,
+        "all_repeats_pass_wilson_95": [
+          0.8388748419471806,
+          1.0
+        ],
+        "requests": 83,
+        "tokens": 107091,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.1542000000000066,
+        "repairs": 5
+      },
+      "categories": {
+        "boundary": {
+          "attempts": 15,
+          "mechanical_successes": 15,
+          "strict_successes": 15,
+          "strict_rate": 1,
+          "primary_only_successes": 15,
+          "unique_questions": 5,
+          "all_repeats_pass_questions": 5,
+          "all_repeats_pass_wilson_95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "requests": 15,
+          "tokens": 18325,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8530666666677766,
+          "repairs": 0
+        },
+        "upload": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 68,
+          "tokens": 88766,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.58791111111075,
+          "repairs": 5
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 20,
+          "mechanical_successes": 20,
+          "strict_successes": 20,
+          "strict_rate": 1,
+          "primary_only_successes": 20,
+          "unique_questions": 20,
+          "all_repeats_pass_questions": 20,
+          "all_repeats_pass_wilson_95": [
+            0.8388748419471806,
+            1.0
+          ],
+          "requests": 27,
+          "tokens": 34781,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.323399999999674,
+          "repairs": 1
+        },
+        "1": {
+          "attempts": 20,
+          "mechanical_successes": 20,
+          "strict_successes": 20,
+          "strict_rate": 1,
+          "primary_only_successes": 20,
+          "unique_questions": 20,
+          "all_repeats_pass_questions": 20,
+          "all_repeats_pass_wilson_95": [
+            0.8388748419471806,
+            1.0
+          ],
+          "requests": 28,
+          "tokens": 36160,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.201649999998699,
+          "repairs": 2
+        },
+        "2": {
+          "attempts": 20,
+          "mechanical_successes": 20,
+          "strict_successes": 20,
+          "strict_rate": 1,
+          "primary_only_successes": 20,
+          "unique_questions": 20,
+          "all_repeats_pass_questions": 20,
+          "all_repeats_pass_wilson_95": [
+            0.8388748419471806,
+            1.0
+          ],
+          "requests": 28,
+          "tokens": 36150,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 3.9375500000016475,
+          "repairs": 2
+        }
+      }
+    }
+  },
+  "paired": null,
+  "failures": [],
+  "tasks_sha256": "b00cbaca02e1e49e57ca124aa6d00b9f7f626b77d67c3483307fd2be7764cd73",
+  "review_summary_sha256": "55cc935238d0a8e709a254bb40ec8cbfb597267a685b2ae0898fd80625f49dd0",
+  "review_directory": "scope-supplemental-review",
+  "strict_rule": "mechanical checks and every claim supported and relevance=2 and interpretation=2; intersection where two reviewers available",
+  "no_repeated_answer_independence_assumption": true
+}

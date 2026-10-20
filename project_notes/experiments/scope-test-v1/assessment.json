@@ -1,0 +1,982 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "all": {
+        "attempts": 300,
+        "mechanical_successes": 294,
+        "strict_successes": 291,
+        "strict_rate": 0.97,
+        "primary_only_successes": 291,
+        "unique_questions": 100,
+        "all_repeats_pass_questions": 96,
+        "all_repeats_pass_wilson_95": [
+          0.9016292856411208,
+          0.9843366960084523
+        ],
+        "requests": 437,
+        "tokens": 606112,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.55982,
+        "repairs": 17
+      },
+      "common": {
+        "attempts": 195,
+        "mechanical_successes": 195,
+        "strict_successes": 195,
+        "strict_rate": 1,
+        "primary_only_successes": 195,
+        "unique_questions": 65,
+        "all_repeats_pass_questions": 65,
+        "all_repeats_pass_wilson_95": [
+          0.9441984686771432,
+          1.0
+        ],
+        "requests": 241,
+        "tokens": 307876,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.738605128205128,
+        "repairs": 1
+      },
+      "new_capabilities": {
+        "attempts": 105,
+        "mechanical_successes": 99,
+        "strict_successes": 96,
+        "strict_rate": 0.9142857142857143,
+        "primary_only_successes": 96,
+        "unique_questions": 35,
+        "all_repeats_pass_questions": 31,
+        "all_repeats_pass_wilson_95": [
+          0.7404853135378618,
+          0.9546482066690264
+        ],
+        "requests": 196,
+        "tokens": 298236,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 6.084933333333334,
+        "repairs": 16
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 30,
+          "mechanical_successes": 30,
+          "strict_successes": 30,
+          "strict_rate": 1,
+          "primary_only_successes": 30,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 30,
+          "tokens": 34785,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8301333333333334,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 30,
+          "mechanical_successes": 30,
+          "strict_successes": 30,
+          "strict_rate": 1,
+          "primary_only_successes": 30,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 30,
+          "tokens": 34532,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8062666666666667,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 45,
+          "tokens": 52725,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8871777777777776,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 91,
+          "tokens": 133877,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.7066,
+          "repairs": 1
+        },
+        "hybrid": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 93,
+          "tokens": 144615,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.996577777777778,
+          "repairs": 3
+        },
+        "metric_query": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 45,
+          "tokens": 51957,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8492444444444445,
+          "repairs": 0
+        },
+        "upload": {
+          "attempts": 60,
+          "mechanical_successes": 54,
+          "strict_successes": 51,
+          "strict_rate": 0.85,
+          "primary_only_successes": 51,
+          "unique_questions": 20,
+          "all_repeats_pass_questions": 16,
+          "all_repeats_pass_wilson_95": [
+            0.5839825677481064,
+            0.919342337420202
+          ],
+          "requests": 103,
+          "tokens": 153621,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 5.4012,
+          "repairs": 13
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 100,
+          "mechanical_successes": 99,
+          "strict_successes": 98,
+          "strict_rate": 0.98,
+          "primary_only_successes": 98,
+          "unique_questions": 100,
+          "all_repeats_pass_questions": 98,
+          "all_repeats_pass_wilson_95": [
+            0.929988209271456,
+            0.9944980324498376
+          ],
+          "requests": 146,
+          "tokens": 201533,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.61846,
+          "repairs": 6
+        },
+        "1": {
+          "attempts": 100,
+          "mechanical_successes": 98,
+          "strict_successes": 97,
+          "strict_rate": 0.97,
+          "primary_only_successes": 97,
+          "unique_questions": 100,
+          "all_repeats_pass_questions": 97,
+          "all_repeats_pass_wilson_95": [
+            0.9154806357094724,
+            0.9897454759759611
+          ],
+          "requests": 145,
+          "tokens": 201480,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.63214,
+          "repairs": 5
+        },
+        "2": {
+          "attempts": 100,
+          "mechanical_successes": 97,
+          "strict_successes": 96,
+          "strict_rate": 0.96,
+          "primary_only_successes": 96,
+          "unique_questions": 100,
+          "all_repeats_pass_questions": 96,
+          "all_repeats_pass_wilson_95": [
+            0.9016292856411208,
+            0.9843366960084523
+          ],
+          "requests": 146,
+          "tokens": 203099,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.42886,
+          "repairs": 6
+        }
+      }
+    },
+    "legacy": {
+      "all": {
+        "attempts": 195,
+        "mechanical_successes": 180,
+        "strict_successes": 179,
+        "strict_rate": 0.9179487179487179,
+        "primary_only_successes": 179,
+        "unique_questions": 65,
+        "all_repeats_pass_questions": 59,
+        "all_repeats_pass_wilson_95": [
+          0.8128799948403962,
+          0.9570049103886591
+        ],
+        "requests": 246,
+        "tokens": 234672,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.6904717948717947,
+        "repairs": 6
+      },
+      "common": {
+        "attempts": 195,
+        "mechanical_successes": 180,
+        "strict_successes": 179,
+        "strict_rate": 0.9179487179487179,
+        "primary_only_successes": 179,
+        "unique_questions": 65,
+        "all_repeats_pass_questions": 59,
+        "all_repeats_pass_wilson_95": [
+          0.8128799948403962,
+          0.9570049103886591
+        ],
+        "requests": 246,
+        "tokens": 234672,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.6904717948717947,
+        "repairs": 6
+      },
+      "new_capabilities": {
+        "attempts": 0,
+        "mechanical_successes": 0,
+        "strict_successes": 0,
+        "strict_rate": null,
+        "primary_only_successes": 0,
+        "unique_questions": 0,
+        "all_repeats_pass_questions": 0,
+        "all_repeats_pass_wilson_95": null,
+        "requests": 0,
+        "tokens": 0,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": null,
+        "repairs": 0
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 30,
+          "mechanical_successes": 30,
+          "strict_successes": 30,
+          "strict_rate": 1,
+          "primary_only_successes": 30,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 30,
+          "tokens": 26055,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.720266666666667,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 30,
+          "mechanical_successes": 27,
+          "strict_successes": 27,
+          "strict_rate": 0.9,
+          "primary_only_successes": 27,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 9,
+          "all_repeats_pass_wilson_95": [
+            0.5958499732047615,
+            0.9821237869049271
+          ],
+          "requests": 30,
+          "tokens": 26027,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.7510666666666665,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 45,
+          "tokens": 39585,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8527555555555555,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 45,
+          "mechanical_successes": 33,
+          "strict_successes": 32,
+          "strict_rate": 0.7111111111111111,
+          "primary_only_successes": 32,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.41713547738519774,
+            0.8482367556028526
+          ],
+          "requests": 96,
+          "tokens": 103999,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.7244,
+          "repairs": 6
+        },
+        "metric_query": {
+          "attempts": 45,
+          "mechanical_successes": 45,
+          "strict_successes": 45,
+          "strict_rate": 1,
+          "primary_only_successes": 45,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 45,
+          "tokens": 39006,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.767333333333333,
+          "repairs": 0
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 65,
+          "mechanical_successes": 60,
+          "strict_successes": 59,
+          "strict_rate": 0.9076923076923077,
+          "primary_only_successes": 59,
+          "unique_questions": 65,
+          "all_repeats_pass_questions": 59,
+          "all_repeats_pass_wilson_95": [
+            0.8128799948403962,
+            0.9570049103886591
+          ],
+          "requests": 82,
+          "tokens": 78502,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 3.6561846153846154,
+          "repairs": 2
+        },
+        "1": {
+          "attempts": 65,
+          "mechanical_successes": 60,
+          "strict_successes": 60,
+          "strict_rate": 0.9230769230769231,
+          "primary_only_successes": 60,
+          "unique_questions": 65,
+          "all_repeats_pass_questions": 60,
+          "all_repeats_pass_wilson_95": [
+            0.8322406672989,
+            0.9666964985048365
+          ],
+          "requests": 82,
+          "tokens": 78034,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 3.7870307692307694,
+          "repairs": 2
+        },
+        "2": {
+          "attempts": 65,
+          "mechanical_successes": 60,
+          "strict_successes": 60,
+          "strict_rate": 0.9230769230769231,
+          "primary_only_successes": 60,
+          "unique_questions": 65,
+          "all_repeats_pass_questions": 60,
+          "all_repeats_pass_wilson_95": [
+            0.8322406672989,
+            0.9666964985048365
+          ],
+          "requests": 82,
+          "tokens": 78136,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 3.6282,
+          "repairs": 2
+        }
+      }
+    }
+  },
+  "paired": {
+    "pairs": 195,
+    "question_clusters": 65,
+    "wins": 16,
+    "losses": 0,
+    "ties": 179,
+    "task_bootstrap": {
+      "left_run": "current",
+      "right_run": "legacy",
+      "method": "paired_case_cluster_percentile_bootstrap",
+      "seed": 17,
+      "draws": 10000,
+      "case_clusters": 65,
+      "repeats_per_case": 3,
+      "mean_difference": 0.08205128205128205,
+      "confidence_level": 0.95,
+      "interval": [
+        0.020512820512820513,
+        0.15384615384615385
+      ],
+      "repeats_treated_as_independent_cases": false
+    },
+    "primary_fact_cluster_sensitivity": {
+      "clusters": 7,
+      "interval_95": [
+        0.05555555555555555,
+        0.10810810810810811
+      ],
+      "method": "resample primary company-year clusters and one shared boundary-contract cluster; cross-company dependence not fully removed"
+    }
+  },
+  "failures": [
+    {
+      "case_id": "00d1a733c0d894c71c1c",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "9c34e0716d41911bd5014cb5de9382ab872f41f71741d356e75be4d645e38b59"
+    },
+    {
+      "case_id": "085250703084fee5e8bc",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "cd2ab769d7021c20d6cbad139ea08dca3495d211dfdd22b5e4084c081993491b"
+    },
+    {
+      "case_id": "833ab172e68ce9d2f13b",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "de18d2c239410a545d43b0870dcc500922afe5ccc495e29e0639737b8a02dfac"
+    },
+    {
+      "case_id": "62e071e2c08545327a86",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "ca0a4cb8da1062c94d2d5af8125d17153737b2f077b2b425fc5dad883fff256c"
+    },
+    {
+      "case_id": "7ba34e30d7d136accc41",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "3c5f95bd2aa9423e1f5d7e0dec8f1eb8827efc861f774d307f1bb0535a56baf3"
+    },
+    {
+      "case_id": "d930ae1eaec1eca52ab0",
+      "repeat": 0,
+      "arm": "current",
+      "category": "upload",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "010e56b2bf8be85a129e02b478999eec508399370d13632a392604f512cdce61"
+    },
+    {
+      "case_id": "7fe7ffde6d2e95bd178f",
+      "repeat": 0,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "6693ac15b746cc35c928c9880004c8e6c16680aa7b65cec56863dcf3cb570e1a"
+    },
+    {
+      "case_id": "7ca34bb633b014d25f2a",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "boundary",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": false,
+        "narrative": true,
+        "financial_schema": true,
+        "financial_status": false,
+        "financial_numeric": false,
+        "financial_units": false,
+        "financial_periods": false,
+        "financial_citations": false,
+        "financial_formula": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": null
+    },
+    {
+      "case_id": "085250703084fee5e8bc",
+      "repeat": 1,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "cd2ab769d7021c20d6cbad139ea08dca3495d211dfdd22b5e4084c081993491b"
+    },
+    {
+      "case_id": "833ab172e68ce9d2f13b",
+      "repeat": 1,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "de18d2c239410a545d43b0870dcc500922afe5ccc495e29e0639737b8a02dfac"
+    },
+    {
+      "case_id": "62e071e2c08545327a86",
+      "repeat": 1,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "ca0a4cb8da1062c94d2d5af8125d17153737b2f077b2b425fc5dad883fff256c"
+    },
+    {
+      "case_id": "7ba34e30d7d136accc41",
+      "repeat": 1,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "3c5f95bd2aa9423e1f5d7e0dec8f1eb8827efc861f774d307f1bb0535a56baf3"
+    },
+    {
+      "case_id": "d930ae1eaec1eca52ab0",
+      "repeat": 1,
+      "arm": "current",
+      "category": "upload",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "55a3f46a9a780df21ed89c74f24217a8b877463a86ca3fbbfb6d24233611c3ff"
+    },
+    {
+      "case_id": "af619504d81f55690b09",
+      "repeat": 1,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {},
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "7fe7ffde6d2e95bd178f",
+      "repeat": 1,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "6693ac15b746cc35c928c9880004c8e6c16680aa7b65cec56863dcf3cb570e1a"
+    },
+    {
+      "case_id": "7ca34bb633b014d25f2a",
+      "repeat": 1,
+      "arm": "legacy",
+      "category": "boundary",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": false,
+        "narrative": true,
+        "financial_schema": true,
+        "financial_status": false,
+        "financial_numeric": false,
+        "financial_units": false,
+        "financial_periods": false,
+        "financial_citations": false,
+        "financial_formula": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": null
+    },
+    {
+      "case_id": "085250703084fee5e8bc",
+      "repeat": 2,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "cd2ab769d7021c20d6cbad139ea08dca3495d211dfdd22b5e4084c081993491b"
+    },
+    {
+      "case_id": "833ab172e68ce9d2f13b",
+      "repeat": 2,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "de18d2c239410a545d43b0870dcc500922afe5ccc495e29e0639737b8a02dfac"
+    },
+    {
+      "case_id": "62e071e2c08545327a86",
+      "repeat": 2,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "ca0a4cb8da1062c94d2d5af8125d17153737b2f077b2b425fc5dad883fff256c"
+    },
+    {
+      "case_id": "7ba34e30d7d136accc41",
+      "repeat": 2,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "3c5f95bd2aa9423e1f5d7e0dec8f1eb8827efc861f774d307f1bb0535a56baf3"
+    },
+    {
+      "case_id": "d930ae1eaec1eca52ab0",
+      "repeat": 2,
+      "arm": "current",
+      "category": "upload",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "55a3f46a9a780df21ed89c74f24217a8b877463a86ca3fbbfb6d24233611c3ff"
+    },
+    {
+      "case_id": "263b1d9e29c2c70f6bc7",
+      "repeat": 2,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {},
+      "error_type": "ValueError",
+      "error": "Directly describe the requested operating income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "af619504d81f55690b09",
+      "repeat": 2,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {},
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "7fe7ffde6d2e95bd178f",
+      "repeat": 2,
+      "arm": "current",
+      "category": "upload",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "6693ac15b746cc35c928c9880004c8e6c16680aa7b65cec56863dcf3cb570e1a"
+    },
+    {
+      "case_id": "7ca34bb633b014d25f2a",
+      "repeat": 2,
+      "arm": "legacy",
+      "category": "boundary",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": false,
+        "narrative": true,
+        "financial_schema": true,
+        "financial_status": false,
+        "financial_numeric": false,
+        "financial_units": false,
+        "financial_periods": false,
+        "financial_citations": false,
+        "financial_formula": false
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": null
+    }
+  ],
+  "tasks_sha256": "39b34092b7a7ac1d744890595ea4209cd87d01ce9ecf2cd0de9d8b3571d82b19",
+  "review_summary_sha256": "978c0d544ac415a6d44d0e1abb4d2e2926003de959e2e95065958d4235133590",
+  "review_directory": "scope-test-review",
+  "strict_rule": "mechanical checks and every claim supported and relevance=2 and interpretation=2; intersection where two reviewers available",
+  "no_repeated_answer_independence_assumption": true
+}

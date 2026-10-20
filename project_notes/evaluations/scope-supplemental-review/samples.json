@@ -1,0 +1,868 @@
+{
+  "7b93d4839e7b66c9dc16aef249f2dd573487b9c83a33ec6f0dc65c2012fe8cdb": {
+    "question": "Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose.",
+    "claims": [
+      {
+        "statement": "The filing attributes the decline in revenue from outside the United States primarily to China and Taiwan related to Data Center and Gaming.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "statement": "The filing discloses that OEM and Other revenue declined, driven by notebook OEM and CMP.",
+        "chunk_id": "passage:fa5d6320801aa831d56b8b4e",
+        "quote": "OEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "0f1cb4ee5d3be827e15ad3982f68d04bbfb0151c2dda090d18e542d8e7717d10": {
+    "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+    "claims": [
+      {
+        "statement": "NVIDIA's consolidated operating income declined in FY2023 compared with FY2022, and the report attributes the Compute & Networking segment's lower gross margin primarily to inventory provisions.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "Compute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      },
+      {
+        "statement": "The segment table shows consolidated operating income for the year ended January 29, 2023 versus the year ended January 30, 2022, with Graphics operating income lower and All Other operating loss larger in FY2023.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bd185beeca6a745971bfcf1c35e5b7eb63b14f8af0c600ad187be4c6159617d2": {
+    "question": "仅使用已选 NVIDIA FY2023 报告，给出净利润同比变化率，并解释财报披露的相关税务或业务因素。解释性结论请用英文，并附上对应英文原句。",
+    "claims": [
+      {
+        "statement": "Net income decreased in fiscal year 2023 compared with fiscal year 2022, based on the year-ended columns in the cash flow reconciliation.",
+        "chunk_id": "passage:bc08f4089f3555107f865c8d",
+        "quote": "Net income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332"
+      },
+      {
+        "statement": "NVIDIA attributes its lower-than-statutory effective tax rate primarily to the FDII deduction, stock-based compensation tax benefits, and the U.S. federal research tax credit.",
+        "chunk_id": "passage:ecaa984d7dff7ca671473af0",
+        "quote": "Our effective tax rate for fiscal year 2023 was lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, tax benefits related to stock-based compensation and the U.S. federal research tax credit."
+      },
+      {
+        "statement": "The cash flow reconciliation includes a deferred income taxes adjustment, a tax-related item affecting the reconciliation of net income to operating cash flow.",
+        "chunk_id": "passage:bc08f4089f3555107f865c8d",
+        "quote": "Deferred income taxes | ( 2,164 ) |  |  | ( 406 ) |  |  | ( 282 )"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bc08f4089f3555107f865c8d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1121|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  | Year Ended |  | \n | January 29, 2023 |  | January 30, 2022 |  | January 31, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nStock-based compensation expense | 2,709 |  |  | 2,004 |  |  | 1,397 | \nDepreciation and amortization | 1,544 |  |  | 1,174 |  |  | 1,098 | \nAcquisition termination cost | 1,353 |  |  | — |  |  | — | \nLosses (gains) on investments in non-affiliates, net | 45 |  |  | ( 100 ) |  |  | — | \nDeferred income taxes | ( 2,164 ) |  |  | ( 406 ) |  |  | ( 282 ) | \nOther | ( 7 ) |  |  | 47 |  |  | ( 20 ) | \nChanges in operating assets and liabilities, net of acquisitions: |  |  |  |  | \nAccounts receivable | 822 |  |  | ( 2,215 ) |  |  | ( 550 ) | \nInventories | ( 2,554 ) |  |  | ( 774 ) |  |  | ( 524 ) | \nPrepaid expenses and other assets | ( 1,517 ) |  |  | ( 1,715 ) |  |  | ( 394 ) | \nAccounts payable | ( 551 ) |  |  | 568 |  |  | 312 | \nAccrued and other current liabilities | 1,341 |  |  | 581 |  |  | 290 | \nOther long-term liabilities | 252 |  |  | 192 |  |  | 163 | ",
+        "locator": "dom-block=1121|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1121|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1121|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ecaa984d7dff7ca671473af0",
+        "text": "NVDA FY2023 item-7\nOur effective tax rate for fiscal year 2023 was lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, tax benefits related to stock-based compensation and the U.S. federal research tax credit.",
+        "locator": "dom-block=852|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "80db2d6e1ce305b4c0ea6b3575caa6acb09c613a985b36d679f6efc023691271": {
+    "question": "What business drivers does NVIDIA discuss in the FY2023 report when explaining revenue changes? Cite the selected report and keep the explanation qualitative.",
+    "claims": [
+      {
+        "statement": "NVIDIA attributes the decline in revenue outside the U.S. primarily to China and Taiwan related to Data Center and Gaming.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "statement": "NVIDIA states that OEM and Other revenue declined, driven by notebook OEM and CMP.",
+        "chunk_id": "passage:fa5d6320801aa831d56b8b4e",
+        "quote": "OEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "59cc1585b53d682754ccc8aa7188ec333bdca8f15a0766a7264efbebcbe72055": {
+    "question": "仅根据已选的 NVIDIA FY2023 财报，说明两项具体经营风险及可能影响。请用英文给出判断，并逐项附上英文原文。",
+    "claims": [
+      {
+        "statement": "NVIDIA discloses that its operating results have fluctuated in the past and may continue to fluctuate due to numerous risk factors, so past results should not be relied upon as an indication of future performance.",
+        "chunk_id": "passage:0d283302c4fe25d90614df5b",
+        "quote": "Our operating results have in the past fluctuated and may continue to fluctuate due to numerous factors described in these risk factors. Therefore, investors should not rely on past comparisons of our results of operations as an indication of our future performance."
+      },
+      {
+        "statement": "NVIDIA identifies product, system security, and data breaches and cyber-attacks as a risk that could disrupt operations and adversely affect its financial condition, stock price and reputation.",
+        "chunk_id": "passage:79dc85258e8c8d61eaaf9511",
+        "quote": "• Product, system security, and data breaches and cyber-attacks could disrupt our operations and adversely affect our financial condition, stock price and reputation."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0d283302c4fe25d90614df5b",
+        "text": "NVDA FY2023 item-1a\nOur operating results have in the past fluctuated and may continue to fluctuate due to numerous factors described in these risk factors. Therefore, investors should not rely on past comparisons of our results of operations as an indication of our future performance. Additional factors that could affect our results of operations include, but are not limited to:",
+        "locator": "dom-block=569|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:79dc85258e8c8d61eaaf9511",
+        "text": "NVDA FY2023 item-1a\n• Product, system security, and data breaches and cyber-attacks could disrupt our operations and adversely affect our financial condition, stock price and reputation.",
+        "locator": "dom-block=377|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "1ac11f64972a3fdaf45993747bf43cb1dd47b0a0345ff67e4e19d875556cc126": {
+    "question": "Explain the direction of NVIDIA's FY2023 operating income change and the disclosed expense or business drivers; cite only the selected report.",
+    "claims": [
+      {
+        "statement": "NVIDIA's consolidated operating income declined in FY2023 compared with FY2022, as shown in the segment table.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      },
+      {
+        "statement": "The Graphics segment's operating income fell in FY2023 versus FY2022, while Compute & Networking operating income rose.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041"
+      },
+      {
+        "statement": "The report attributes a decrease in the Compute & Networking segment gross margin in FY2023 primarily to inventory provisions.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "434fc07bc35206adcaa986bbd9e4a99774012d474840a0f2a29d97a515c23d46": {
+    "question": "Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose.",
+    "claims": [
+      {
+        "statement": "The filing discloses that the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "statement": "The filing discloses that OEM and Other revenue declined, driven by notebook OEM and CMP.",
+        "chunk_id": "passage:fa5d6320801aa831d56b8b4e",
+        "quote": "OEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "2266d20efe7b6cb2416a09875cebfdd12fed58fb777dd00ab662f14cdbfb53c9": {
+    "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+    "claims": [
+      {
+        "statement": "Consolidated operating income decreased in the year ended January 29, 2023 compared with the year ended January 30, 2022, based on the table's consolidated operating income (loss) figures.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      },
+      {
+        "statement": "NVIDIA's report attributes the Compute & Networking segment's lower gross margin in fiscal year 2023 versus fiscal year 2022 primarily to inventory provisions.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "Compute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "e207bc1a8489da8b8d32f62b43b1a27a8f0acfa3b3792c2d1626fd6a7fba3de8": {
+    "question": "仅使用已选 NVIDIA FY2023 报告，给出净利润同比变化率，并解释财报披露的相关税务或业务因素。解释性结论请用英文，并附上对应英文原句。",
+    "claims": [
+      {
+        "statement": "Net income decreased from the year ended January 30, 2022 to the year ended January 29, 2023, based on the reported figures in the cash flow table.",
+        "chunk_id": "passage:bc08f4089f3555107f865c8d",
+        "quote": "Net income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332"
+      },
+      {
+        "statement": "NVIDIA attributes its lower-than-statutory effective tax rate in fiscal year 2023 primarily to tax benefits from the FDII deduction, stock-based compensation, and the U.S. federal research tax credit, as disclosed in the report.",
+        "chunk_id": "passage:ecaa984d7dff7ca671473af0",
+        "quote": "Our effective tax rate for fiscal year 2023 was lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, tax benefits related to stock-based compensation and the U.S. federal research tax credit."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bc08f4089f3555107f865c8d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1121|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  | Year Ended |  | \n | January 29, 2023 |  | January 30, 2022 |  | January 31, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nStock-based compensation expense | 2,709 |  |  | 2,004 |  |  | 1,397 | \nDepreciation and amortization | 1,544 |  |  | 1,174 |  |  | 1,098 | \nAcquisition termination cost | 1,353 |  |  | — |  |  | — | \nLosses (gains) on investments in non-affiliates, net | 45 |  |  | ( 100 ) |  |  | — | \nDeferred income taxes | ( 2,164 ) |  |  | ( 406 ) |  |  | ( 282 ) | \nOther | ( 7 ) |  |  | 47 |  |  | ( 20 ) | \nChanges in operating assets and liabilities, net of acquisitions: |  |  |  |  | \nAccounts receivable | 822 |  |  | ( 2,215 ) |  |  | ( 550 ) | \nInventories | ( 2,554 ) |  |  | ( 774 ) |  |  | ( 524 ) | \nPrepaid expenses and other assets | ( 1,517 ) |  |  | ( 1,715 ) |  |  | ( 394 ) | \nAccounts payable | ( 551 ) |  |  | 568 |  |  | 312 | \nAccrued and other current liabilities | 1,341 |  |  | 581 |  |  | 290 | \nOther long-term liabilities | 252 |  |  | 192 |  |  | 163 | ",
+        "locator": "dom-block=1121|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1121|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1121|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ecaa984d7dff7ca671473af0",
+        "text": "NVDA FY2023 item-7\nOur effective tax rate for fiscal year 2023 was lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, tax benefits related to stock-based compensation and the U.S. federal research tax credit.",
+        "locator": "dom-block=852|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "dbf683d41152c73348213337ca5bde58b5f89bfed59716a4b92ac232a96d00b6": {
+    "question": "What business drivers does NVIDIA discuss in the FY2023 report when explaining revenue changes? Cite the selected report and keep the explanation qualitative.",
+    "claims": [
+      {
+        "statement": "NVIDIA attributes the decline in revenue outside the U.S. primarily to China and Taiwan in the Data Center and Gaming segments.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "statement": "NVIDIA states that the decrease in OEM and Other revenue was driven by notebook OEM and CMP.",
+        "chunk_id": "passage:fa5d6320801aa831d56b8b4e",
+        "quote": "OEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "55f3d8e5ab653fb401ebf5bcedd97393b41d3ed79dfadb256ee302d41bd8c0d1": {
+    "question": "Explain the direction of NVIDIA's FY2023 operating income change and the disclosed expense or business drivers; cite only the selected report.",
+    "claims": [
+      {
+        "statement": "NVIDIA's consolidated operating income declined in FY2023 compared with FY2022, as shown in the segment table.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      },
+      {
+        "statement": "The Graphics segment's operating income fell in FY2023 relative to FY2022, while Compute & Networking operating income rose.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041"
+      },
+      {
+        "statement": "The report attributes the Compute & Networking segment's gross margin decrease in FY2023 primarily to inventory provisions.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "35359446c256421416dc1b45946ca21917b9b9b400de8c14474a5e042095a5db": {
+    "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+    "claims": [
+      {
+        "statement": "Consolidated operating income decreased in the year ended January 29, 2023 compared with the year ended January 30, 2022, based on the consolidated operating income (loss) figures in the table.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      },
+      {
+        "statement": "NVIDIA's report attributes the Compute & Networking segment's lower gross margin in fiscal year 2023 versus fiscal year 2022 primarily to inventory provisions.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "Compute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-0": {
+    "question": "Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose.",
+    "claims": [
+      {
+        "statement": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:4d3235ebbff6bf9250ec45d4",
+        "quote": "Compute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-2": {
+    "question": "仅使用已选 NVIDIA FY2023 报告，给出净利润同比变化率，并解释财报披露的相关税务或业务因素。解释性结论请用英文，并附上对应英文原句。",
+    "claims": [
+      {
+        "statement": "Net income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332",
+        "chunk_id": "passage:bc08f4089f3555107f865c8d",
+        "quote": "Net income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bc08f4089f3555107f865c8d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1121|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  | Year Ended |  | \n | January 29, 2023 |  | January 30, 2022 |  | January 31, 2021\nCash flows from operating activities: |  |  |  |  | \nNet income | $ | 4,368 |  |  | $ | 9,752 |  |  | $ | 4,332 | \nAdjustments to reconcile net income to net cash provided by operating activities: |  |  |  |  | \nStock-based compensation expense | 2,709 |  |  | 2,004 |  |  | 1,397 | \nDepreciation and amortization | 1,544 |  |  | 1,174 |  |  | 1,098 | \nAcquisition termination cost | 1,353 |  |  | — |  |  | — | \nLosses (gains) on investments in non-affiliates, net | 45 |  |  | ( 100 ) |  |  | — | \nDeferred income taxes | ( 2,164 ) |  |  | ( 406 ) |  |  | ( 282 ) | \nOther | ( 7 ) |  |  | 47 |  |  | ( 20 ) | \nChanges in operating assets and liabilities, net of acquisitions: |  |  |  |  | \nAccounts receivable | 822 |  |  | ( 2,215 ) |  |  | ( 550 ) | \nInventories | ( 2,554 ) |  |  | ( 774 ) |  |  | ( 524 ) | \nPrepaid expenses and other assets | ( 1,517 ) |  |  | ( 1,715 ) |  |  | ( 394 ) | \nAccounts payable | ( 551 ) |  |  | 568 |  |  | 312 | \nAccrued and other current liabilities | 1,341 |  |  | 581 |  |  | 290 | \nOther long-term liabilities | 252 |  |  | 192 |  |  | 163 | ",
+        "locator": "dom-block=1121|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1121|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1121|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1121|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:ecaa984d7dff7ca671473af0",
+        "text": "NVDA FY2023 item-7\nOur effective tax rate for fiscal year 2023 was lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, tax benefits related to stock-based compensation and the U.S. federal research tax credit.",
+        "locator": "dom-block=852|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "What business drivers does NVIDIA discuss in the FY2023 report when explaining revenue changes? Cite the selected report and keep the explanation qualitative.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-4": {
+    "question": "仅根据已选的 NVIDIA FY2023 财报，说明两项具体经营风险及可能影响。请用英文给出判断，并逐项附上英文原文。",
+    "claims": [
+      {
+        "statement": "Our operating results have in the past fluctuated and may continue to fluctuate due to numerous factors described in these risk factors. Therefore, investors should not rely on past comparisons of our results of operations as an indication of our future performance.",
+        "chunk_id": "passage:0d283302c4fe25d90614df5b",
+        "quote": "Our operating results have in the past fluctuated and may continue to fluctuate due to numerous factors described in these risk factors. Therefore, investors should not rely on past comparisons of our results of operations as an indication of our future performance."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0d283302c4fe25d90614df5b",
+        "text": "NVDA FY2023 item-1a\nOur operating results have in the past fluctuated and may continue to fluctuate due to numerous factors described in these risk factors. Therefore, investors should not rely on past comparisons of our results of operations as an indication of our future performance. Additional factors that could affect our results of operations include, but are not limited to:",
+        "locator": "dom-block=569|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:79dc85258e8c8d61eaaf9511",
+        "text": "NVDA FY2023 item-1a\n• Product, system security, and data breaches and cyber-attacks could disrupt our operations and adversely affect our financial condition, stock price and reputation.",
+        "locator": "dom-block=377|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-5": {
+    "question": "Explain the direction of NVIDIA's FY2023 operating income change and the disclosed expense or business drivers; cite only the selected report.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Compute NVIDIA's percentage revenue change in FY2023 versus FY2022, and explain the business drivers disclosed in the FY2023 filing. Use only the selected document and cite the prose.",
+    "claims": [
+      {
+        "statement": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming.",
+        "chunk_id": "passage:77a60df0d501b3b32200a313",
+        "quote": "The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a60df0d501b3b32200a313",
+        "text": "NVDA FY2023 item-7\nRevenue from sales to customers outside of the United States accounted for 69% and 84% of total revenue for fiscal years 2023 and 2022, respectively. The decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming. Revenue by geographic region is allocated to countries based on the billed location even if the revenue may be attributable to end customers in a different location.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fa5d6320801aa831d56b8b4e",
+        "text": "NVDA FY2023 item-7\nOEM and Other revenue was down 61% from a year ago driven by notebook OEM and CMP. CMP revenue was nominal in fiscal year 2023 and $550 million in fiscal year 2022.",
+        "locator": "dom-block=747|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-7": {
+    "question": "基于已选的 NVIDIA FY2023 财报，计算营业利润较上一个财年的变化率，并用财报原文解释相关成本或业务因素。请用英文叙述解释性结论，并逐项引用英文原文。",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:6e6dc0ef40d90f442787f972",
+        "quote": "Operating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4d3235ebbff6bf9250ec45d4",
+        "text": "NVDA FY2023 item-7\nCompute & Networking - The gross margin of our Compute & Networking segment decreased during fiscal year 2023 when compared to fiscal year 2022, primarily due to inventory provisions.",
+        "locator": "dom-block=823|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6e6dc0ef40d90f442787f972",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1738|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nNVDA FY2023 item-15\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Compute & Networking |  | Graphics |  | All Other |  | Consolidated\n |  |  |  |  |  |  | \n | (In millions)\nYear Ended January 29, 2023: |  |  |  |  |  |  | \nRevenue | $ | 15,068 |  |  | $ | 11,906 |  |  | $ | — |  |  | $ | 26,974 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 5,083 |  |  | $ | 4,552 |  |  | $ | ( 5,411 ) |  |  | $ | 4,224 | \n |  |  |  |  |  |  | \nYear Ended January 30, 2022: |  |  |  |  |  |  | \nRevenue | $ | 11,046 |  |  | $ | 15,868 |  |  | $ | — |  |  | $ | 26,914 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 4,598 |  |  | $ | 8,492 |  |  | $ | ( 3,049 ) |  |  | $ | 10,041 | \n |  |  |  |  |  |  | \nYear Ended January 31, 2021: |  |  |  |  |  |  | \nRevenue | $ | 6,841 |  |  | $ | 9,834 |  |  | $ | — |  |  | $ | 16,675 | \n |  |  |  |  |  |  | \nOperating income (loss) | $ | 2,548 |  |  | $ | 4,612 |  |  | $ | ( 2,628 ) |  |  | $ | 4,532 | ",
+        "locator": "dom-block=1738|part=0|strategy=structured",
+        "company": "NVDA",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1738|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1738|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1738|ix:nonfraction=3",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "0f1cb4ee5d3be827e15ad3982f68d04bbfb0151c2dda090d18e542d8e7717d10": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states Compute & Networking gross margin decreased in FY2023 vs FY2022 primarily due to inventory provisions; the decline in consolidated operating income is supported by the segment table (4,224 vs 10,041)."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The segment table shows consolidated operating income of 4,224 (FY2023) vs 10,041 (FY2022), Graphics operating income 4,552 vs 8,492 (lower), and All Other operating loss (5,411) vs (3,049) (larger)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 1800,
+      "total_tokens": 1946,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1544
+    }
+  },
+  "1ac11f64972a3fdaf45993747bf43cb1dd47b0a0345ff67e4e19d875556cc126": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The segment table shows consolidated operating income of $4,224 million in FY2023 versus $10,041 million in FY2022, a decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Graphics operating income fell from $8,492M (FY2022) to $4,552M (FY2023), while Compute & Networking rose from $4,598M to $5,083M."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The excerpt directly states the Compute & Networking gross margin decreased in FY2023 vs FY2022 primarily due to inventory provisions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 1649,
+      "total_tokens": 1816,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1393
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is verbatim from the NVDA FY2023 filing and directly states that operating results have fluctuated and may continue to fluctuate due to numerous risk factors, and that past comparisons should not be relied upon for future performance."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 927,
+      "total_tokens": 1008,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 671
+    }
+  },
+  "80db2d6e1ce305b4c0ea6b3575caa6acb09c613a985b36d679f6efc023691271": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states OEM and Other revenue was down 61% driven by notebook OEM and CMP, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 862,
+      "total_tokens": 969,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 606
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage and is directly supported by the source text."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 55,
+      "prompt_tokens": 798,
+      "total_tokens": 853,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 542
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table only reports operating income figures; it contains no management guarantee, no forecast of doubling, and no statement about absence of risks. The claim is invented and unsupported."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 71,
+      "prompt_tokens": 1449,
+      "total_tokens": 1520,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1193
+    }
+  },
+  "2266d20efe7b6cb2416a09875cebfdd12fed58fb777dd00ab662f14cdbfb53c9": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows consolidated operating income of $4,224 million for FY2023 versus $10,041 million for FY2022, so consolidated operating income decreased; the quote contains the relevant figures."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the Compute & Networking segment gross margin decreased in FY2023 vs FY2022 primarily due to inventory provisions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 1793,
+      "total_tokens": 1910,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1409
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage attributes the decline to China and Taiwan related to Data Center and Gaming; it says nothing about the chief executive's personal investments, so the claim of exclusive causation is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 75,
+      "prompt_tokens": 781,
+      "total_tokens": 856,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 525
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table only reports operating income figures; it contains no mention of the chief executive, personal investments, or exclusive causation, so the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 1668,
+      "total_tokens": 1728,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1284
+    }
+  },
+  "7b93d4839e7b66c9dc16aef249f2dd573487b9c83a33ec6f0dc65c2012fe8cdb": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states OEM and Other revenue was down 61% driven by notebook OEM and CMP."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 99,
+      "prompt_tokens": 873,
+      "total_tokens": 972,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 617
+    }
+  },
+  "dbf683d41152c73348213337ca5bde58b5f89bfed59716a4b92ac232a96d00b6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states OEM and Other revenue was down 61% driven by notebook OEM and CMP."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 99,
+      "prompt_tokens": 865,
+      "total_tokens": 964,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 609
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming, matching the claim verbatim."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 798,
+      "total_tokens": 866,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  "434fc07bc35206adcaa986bbd9e4a99774012d474840a0f2a29d97a515c23d46": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states the decline in revenue outside the U.S. was primarily driven by China and Taiwan related to Data Center and Gaming, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states OEM and Other revenue was down 61% driven by notebook OEM and CMP, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 876,
+      "total_tokens": 983,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 620
+    }
+  },
+  "e207bc1a8489da8b8d32f62b43b1a27a8f0acfa3b3792c2d1626fd6a7fba3de8": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cash flow table shows net income of $9,752 million for the year ended January 30, 2022 and $4,368 million for the year ended January 29, 2023, confirming the decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate was lower than the 21% statutory rate due primarily to FDII deduction, stock-based compensation, and U.S. federal research tax credit benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 135,
+      "prompt_tokens": 1764,
+      "total_tokens": 1899,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1508
+    }
+  },
+  "59cc1585b53d682754ccc8aa7188ec333bdca8f15a0766a7264efbebcbe72055": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states operating results have fluctuated and may continue to fluctuate due to numerous factors, and that investors should not rely on past comparisons as an indication of future performance."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim identifies product, system security, and data breaches and cyber-attacks as a risk that could disrupt operations and adversely affect financial condition, stock price and reputation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 1018,
+      "total_tokens": 1125,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 634
+    }
+  },
+  "55f3d8e5ab653fb401ebf5bcedd97393b41d3ed79dfadb256ee302d41bd8c0d1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The segment table shows consolidated operating income of $4,224 million in FY2023 versus $10,041 million in FY2022, a decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Graphics operating income fell from $8,492 million to $4,552 million, while Compute & Networking rose from $4,598 million to $5,083 million."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The excerpt states the Compute & Networking gross margin decreased in FY2023 versus FY2022 primarily due to inventory provisions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 157,
+      "prompt_tokens": 1649,
+      "total_tokens": 1806,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1265
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row verbatim shows Net income of $4,368 million for FY2023, $9,752 million for FY2022, and $4,332 million for FY2021, matching the claim's figures."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 82,
+      "prompt_tokens": 1628,
+      "total_tokens": 1710,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1244
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited quote discusses a gross margin decrease due to inventory provisions; it contains no management guarantee of doubling performance or absence of risks. The claim is an invented guarantee unsupported by the excerpt."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 1653,
+      "total_tokens": 1726,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1269
+    }
+  },
+  "bd185beeca6a745971bfcf1c35e5b7eb63b14f8af0c600ad187be4c6159617d2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cash flow reconciliation shows net income of $4,368 million for FY2023 versus $9,752 million for FY2022, so net income decreased year over year."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The excerpt states the effective tax rate was lower than the 21% statutory rate due primarily to FDII deduction, stock-based compensation tax benefits, and the U.S. federal research tax credit."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The reconciliation includes a 'Deferred income taxes' line as an adjustment to reconcile net income to operating cash flow."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 1831,
+      "total_tokens": 1977,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1447
+    }
+  },
+  "35359446c256421416dc1b45946ca21917b9b9b400de8c14474a5e042095a5db": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows consolidated operating income of $4,224 million for FY2023 (year ended January 29, 2023) versus $10,041 million for FY2022 (year ended January 30, 2022), so consolidated operating income decreased."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The excerpt directly states the Compute & Networking segment gross margin decreased in FY2023 vs FY2022 primarily due to inventory provisions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 1794,
+      "total_tokens": 1925,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 1282
+    }
+  }
+}

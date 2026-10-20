@@ -1,0 +1,516 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "all": {
+        "attempts": 50,
+        "mechanical_successes": 49,
+        "strict_successes": 48,
+        "strict_rate": 0.96,
+        "primary_only_successes": 48,
+        "unique_questions": 50,
+        "all_repeats_pass_questions": 48,
+        "all_repeats_pass_wilson_95": [
+          0.8653990931249297,
+          0.9889611156723802
+        ],
+        "requests": 74,
+        "tokens": 99996,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.67522,
+        "repairs": 5
+      },
+      "common": {
+        "attempts": 36,
+        "mechanical_successes": 35,
+        "strict_successes": 35,
+        "strict_rate": 0.9722222222222222,
+        "primary_only_successes": 35,
+        "unique_questions": 36,
+        "all_repeats_pass_questions": 35,
+        "all_repeats_pass_wilson_95": [
+          0.8583028134672614,
+          0.9950795928601897
+        ],
+        "requests": 45,
+        "tokens": 56161,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.7902222222222224,
+        "repairs": 1
+      },
+      "new_capabilities": {
+        "attempts": 14,
+        "mechanical_successes": 14,
+        "strict_successes": 13,
+        "strict_rate": 0.9285714285714286,
+        "primary_only_successes": 13,
+        "unique_questions": 14,
+        "all_repeats_pass_questions": 13,
+        "all_repeats_pass_wilson_95": [
+          0.6853129557584889,
+          0.9872777847521093
+        ],
+        "requests": 29,
+        "tokens": 43835,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 6.950928571428571,
+        "repairs": 4
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 8,
+          "strict_rate": 1,
+          "primary_only_successes": 8,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 8,
+          "all_repeats_pass_wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "requests": 8,
+          "tokens": 9272,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.92,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 4,
+          "mechanical_successes": 4,
+          "strict_successes": 4,
+          "strict_rate": 1,
+          "primary_only_successes": 4,
+          "unique_questions": 4,
+          "all_repeats_pass_questions": 4,
+          "all_repeats_pass_wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "requests": 4,
+          "tokens": 4598,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.851,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "mechanical_successes": 6,
+          "strict_successes": 6,
+          "strict_rate": 1,
+          "primary_only_successes": 6,
+          "unique_questions": 6,
+          "all_repeats_pass_questions": 6,
+          "all_repeats_pass_wilson_95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "requests": 6,
+          "tokens": 7017,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.7548333333333335,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 8,
+          "mechanical_successes": 7,
+          "strict_successes": 7,
+          "strict_rate": 0.875,
+          "primary_only_successes": 7,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 7,
+          "all_repeats_pass_wilson_95": [
+            0.5291118177871464,
+            0.9775825085499433
+          ],
+          "requests": 17,
+          "tokens": 23741,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 7.206875,
+          "repairs": 1
+        },
+        "hybrid": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 8,
+          "strict_rate": 1,
+          "primary_only_successes": 8,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 8,
+          "all_repeats_pass_wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "requests": 19,
+          "tokens": 29477,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 8.203125,
+          "repairs": 3
+        },
+        "metric_query": {
+          "attempts": 10,
+          "mechanical_successes": 10,
+          "strict_successes": 10,
+          "strict_rate": 1,
+          "primary_only_successes": 10,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 10,
+          "tokens": 11533,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.75,
+          "repairs": 0
+        },
+        "upload": {
+          "attempts": 6,
+          "mechanical_successes": 6,
+          "strict_successes": 5,
+          "strict_rate": 0.8333333333333334,
+          "primary_only_successes": 5,
+          "unique_questions": 6,
+          "all_repeats_pass_questions": 5,
+          "all_repeats_pass_wilson_95": [
+            0.43649717781352987,
+            0.9699466302516935
+          ],
+          "requests": 10,
+          "tokens": 14358,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 5.281333333333333,
+          "repairs": 1
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 50,
+          "mechanical_successes": 49,
+          "strict_successes": 48,
+          "strict_rate": 0.96,
+          "primary_only_successes": 48,
+          "unique_questions": 50,
+          "all_repeats_pass_questions": 48,
+          "all_repeats_pass_wilson_95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ],
+          "requests": 74,
+          "tokens": 99996,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.67522,
+          "repairs": 5
+        }
+      }
+    },
+    "legacy": {
+      "all": {
+        "attempts": 36,
+        "mechanical_successes": 33,
+        "strict_successes": 32,
+        "strict_rate": 0.8888888888888888,
+        "primary_only_successes": 32,
+        "unique_questions": 36,
+        "all_repeats_pass_questions": 32,
+        "all_repeats_pass_wilson_95": [
+          0.7468519140963513,
+          0.9559335969968435
+        ],
+        "requests": 45,
+        "tokens": 43945,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.6031666666666666,
+        "repairs": 1
+      },
+      "common": {
+        "attempts": 36,
+        "mechanical_successes": 33,
+        "strict_successes": 32,
+        "strict_rate": 0.8888888888888888,
+        "primary_only_successes": 32,
+        "unique_questions": 36,
+        "all_repeats_pass_questions": 32,
+        "all_repeats_pass_wilson_95": [
+          0.7468519140963513,
+          0.9559335969968435
+        ],
+        "requests": 45,
+        "tokens": 43945,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.6031666666666666,
+        "repairs": 1
+      },
+      "new_capabilities": {
+        "attempts": 0,
+        "mechanical_successes": 0,
+        "strict_successes": 0,
+        "strict_rate": null,
+        "primary_only_successes": 0,
+        "unique_questions": 0,
+        "all_repeats_pass_questions": 0,
+        "all_repeats_pass_wilson_95": null,
+        "requests": 0,
+        "tokens": 0,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": null,
+        "repairs": 0
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "mechanical_successes": 8,
+          "strict_successes": 8,
+          "strict_rate": 1,
+          "primary_only_successes": 8,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 8,
+          "all_repeats_pass_wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "requests": 8,
+          "tokens": 6944,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.777125,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 4,
+          "mechanical_successes": 4,
+          "strict_successes": 4,
+          "strict_rate": 1,
+          "primary_only_successes": 4,
+          "unique_questions": 4,
+          "all_repeats_pass_questions": 4,
+          "all_repeats_pass_wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "requests": 4,
+          "tokens": 3486,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.98425,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "mechanical_successes": 6,
+          "strict_successes": 6,
+          "strict_rate": 1,
+          "primary_only_successes": 6,
+          "unique_questions": 6,
+          "all_repeats_pass_questions": 6,
+          "all_repeats_pass_wilson_95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "requests": 6,
+          "tokens": 5265,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.6353333333333335,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 8,
+          "mechanical_successes": 5,
+          "strict_successes": 4,
+          "strict_rate": 0.5,
+          "primary_only_successes": 4,
+          "unique_questions": 8,
+          "all_repeats_pass_questions": 4,
+          "all_repeats_pass_wilson_95": [
+            0.21521606221387757,
+            0.7847839377861224
+          ],
+          "requests": 17,
+          "tokens": 19591,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.503875,
+          "repairs": 1
+        },
+        "metric_query": {
+          "attempts": 10,
+          "mechanical_successes": 10,
+          "strict_successes": 10,
+          "strict_rate": 1,
+          "primary_only_successes": 10,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 10,
+          "tokens": 8659,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.7717,
+          "repairs": 0
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 36,
+          "mechanical_successes": 33,
+          "strict_successes": 32,
+          "strict_rate": 0.8888888888888888,
+          "primary_only_successes": 32,
+          "unique_questions": 36,
+          "all_repeats_pass_questions": 32,
+          "all_repeats_pass_wilson_95": [
+            0.7468519140963513,
+            0.9559335969968435
+          ],
+          "requests": 45,
+          "tokens": 43945,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 3.6031666666666666,
+          "repairs": 1
+        }
+      }
+    }
+  },
+  "paired": {
+    "pairs": 36,
+    "question_clusters": 36,
+    "wins": 3,
+    "losses": 0,
+    "ties": 33,
+    "task_bootstrap": {
+      "left_run": "current",
+      "right_run": "legacy",
+      "method": "paired_case_cluster_percentile_bootstrap",
+      "seed": 17,
+      "draws": 10000,
+      "case_clusters": 36,
+      "repeats_per_case": 1,
+      "mean_difference": 0.08333333333333333,
+      "confidence_level": 0.95,
+      "interval": [
+        0.0,
+        0.19444444444444445
+      ],
+      "repeats_treated_as_independent_cases": false
+    },
+    "primary_fact_cluster_sensitivity": {
+      "clusters": 4,
+      "interval_95": [
+        0.0,
+        0.21428571428571427
+      ],
+      "method": "resample primary company-year clusters; cross-company dependence not fully removed"
+    }
+  },
+  "failures": [
+    {
+      "case_id": "8f0247b9c8c8e7343a1d",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "e7e993a5aade7481b1b2765c656fad7f6228aff3b4290f677f1a2f3854bd2d8c"
+    },
+    {
+      "case_id": "8f0247b9c8c8e7343a1d",
+      "repeat": 0,
+      "arm": "current",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {},
+      "error_type": "ValueError",
+      "error": "A claim quote must be an exact source substring",
+      "review_sample": null
+    },
+    {
+      "case_id": "f1938bdb9ea377d2168f",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "f71e2ac9bdfb297631deca2bedd3ca71431d64d92a230611e961d54f72fa12da"
+    },
+    {
+      "case_id": "aaf41e7fbe15945e147e",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": false,
+        "request_scope": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "ecd756d0680f4aadd6572912233333f39fd34200884ad9bba52b43d2138d598f"
+    },
+    {
+      "case_id": "911af61323be7b4590f6",
+      "repeat": 0,
+      "arm": "legacy",
+      "category": "explanation",
+      "score": 0,
+      "strict_score": 0,
+      "checks": {},
+      "error_type": "ValueError",
+      "error": "Directly describe the requested net income change in a statement with a quote naming that metric. State explicitly whether it increased, decreased, or stayed unchanged using the supplied year headings and table observations. Merely saying that a table presents the metric is incomplete. Keep the supported cost/business-driver claims, without adding amounts or invented causes",
+      "review_sample": null
+    },
+    {
+      "case_id": "3c88895eb915bdd9dcdd",
+      "repeat": 0,
+      "arm": "current",
+      "category": "upload",
+      "score": 1,
+      "strict_score": 0,
+      "checks": {
+        "source_validation": true,
+        "task_type": true,
+        "numeric": true,
+        "narrative": true,
+        "request_scope": true,
+        "financial_schema": true,
+        "financial_status": true,
+        "financial_numeric": true,
+        "financial_units": true,
+        "financial_periods": true,
+        "financial_citations": true,
+        "financial_formula": true,
+        "joint_completion": true
+      },
+      "error_type": null,
+      "error": null,
+      "review_sample": "ab516c49829b1dc6810f47cd476cc655de4e3f6d3e20c04ad2642d3728d1c995"
+    }
+  ],
+  "tasks_sha256": "eae93bf7fdebef1869c42b33f2319b3b581fbe90b98cd1f394b3aa215c10135b",
+  "review_summary_sha256": "a359a4eff3908c12db1d04b30576fa954c127c4fe454dfd740f82238dd37b5ea",
+  "review_directory": "scope-validation-review",
+  "strict_rule": "mechanical checks and every claim supported and relevance=2 and interpretation=2; intersection where two reviewers available",
+  "no_repeated_answer_independence_assumption": true
+}

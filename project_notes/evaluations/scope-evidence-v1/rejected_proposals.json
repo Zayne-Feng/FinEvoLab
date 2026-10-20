@@ -1,0 +1,90 @@
+[
+  {
+    "profile": "AAPL:2024:net_income",
+    "proposal_index": 0,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What one-time tax item caused Apple's 2024 effective tax rate to be higher than the statutory federal rate?",
+      "statement": "Apple's 2024 effective tax rate exceeded the statutory federal income tax rate primarily because of a one-time income tax charge of $10.2 billion, net, tied to the State Aid Decision, along with state income taxes.",
+      "candidate_id": "paragraph-612",
+      "quote": "The Company’s effective tax rate for 2024 was higher than the statutory federal income tax rate due primarily to a one-time income tax charge of $10.2 billion, net, related to the State Aid Decision"
+    }
+  },
+  {
+    "profile": "AAPL:2024:net_income",
+    "proposal_index": 1,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "Why was Apple's 2024 effective tax rate higher than in 2023?",
+      "statement": "Apple's 2024 effective tax rate rose versus 2023 mainly due to the one-time $10.2 billion net income tax charge from the State Aid Decision, a higher effective tax rate on foreign earnings, and lower tax benefits from share-based compensation.",
+      "candidate_id": "paragraph-613",
+      "quote": "The Company’s effective tax rate for 2024 was higher compared to 2023 due primarily to a one-time income tax charge of $10.2 billion, net, related to the State Aid Decision, a higher effective tax rate on foreign earnings and lower tax benefits from share-based compensation."
+    }
+  },
+  {
+    "profile": "NVDA:2024:net_income",
+    "proposal_index": 0,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What effect did the February 2023 change in estimated useful lives of property, plant, and equipment have on NVIDIA's fiscal year 2024 net income?",
+      "statement": "NVIDIA's fiscal year 2024 net income increased by $114 million after tax due to the change in estimated useful lives of property, plant, and equipment.",
+      "candidate_id": "paragraph-776",
+      "quote": "The estimated effect of this change for fiscal year 2024 was a benefit of $33 million and $102 million for cost of revenue and operating expenses, respectively, which resulted in an increase in operating income of $135 million and net income of $114 million after tax, or $0.05 per both basic and diluted share."
+    }
+  },
+  {
+    "profile": "NVDA:2024:operating_income",
+    "proposal_index": 0,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What change in estimated useful lives of property, plant, and equipment affected NVIDIA's fiscal year 2024 operating income, and by how much?",
+      "statement": "NVIDIA disclosed that a February 2023 change extending the estimated useful lives of certain equipment increased fiscal year 2024 operating income by $135 million.",
+      "candidate_id": "paragraph-776",
+      "quote": "The estimated effect of this change for fiscal year 2024 was a benefit of $33 million and $102 million for cost of revenue and operating expenses, respectively, which resulted in an increase in operating income of $135 million and net income of $114 million after tax, or $0.05 per both basic and diluted share."
+    }
+  },
+  {
+    "profile": "TSLA:2023:operating_income",
+    "proposal_index": 0,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What drove the decline in Tesla's total automotive gross margin in 2023 compared with 2022?",
+      "statement": "Tesla's total automotive gross margin fell from 28.5% to 19.4% in 2023 versus 2022, primarily because of a lower average selling price on its vehicles, partly offset by a favorable change in average combined cost per unit and IRA manufacturing credits.",
+      "candidate_id": "paragraph-757",
+      "quote": "Gross margin for total automotive decreased from 28.5% to 19.4% in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a lower average selling price on our vehicles partially offset by the favorable change in our average combined cost per unit of our vehicles and IRA manufacturing credits earned as discussed above."
+    }
+  },
+  {
+    "profile": "TSLA:2023:operating_income",
+    "proposal_index": 1,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What drove the improvement in Tesla's energy generation and storage gross margin in 2023 compared with 2022?",
+      "statement": "Tesla's energy generation and storage gross margin rose from 7.4% to 18.9% in 2023 versus 2022, driven by improved Megapack gross margin from lower average cost per MWh, a higher proportion of Megapack within the segment, and a margin benefit from IRA manufacturing credits.",
+      "candidate_id": "paragraph-768",
+      "quote": "Gross margin for energy generation and storage increased from 7.4% to 18.9% in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The increase was driven by an improvement in our Megapack gross margin from lower average cost per MWh and a higher proportion of Megapack, which operated at a higher gross margin, within the segment as compared to the prior year periods. Additionally, there was a margin benefit from IRA manufacturing credits earned."
+    }
+  },
+  {
+    "profile": "TSLA:2023:revenue",
+    "proposal_index": 0,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "According to Tesla's 2023 Form 10-K, what drove the increase in automotive sales revenue compared with 2022?",
+      "statement": "Tesla's 2023 automotive sales revenue rose primarily because of higher combined Model 3 and Model Y cash deliveries from global Model Y production ramping, partly offset by a lower average selling price due to price reductions, sales mix, and a stronger U.S. dollar.",
+      "candidate_id": "paragraph-729",
+      "quote": "Automotive sales revenue increased $11.30 billion, or 17%, in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to an increase of 473,382 combined Model 3 and Model Y cash deliveries from production ramping of Model Y globally."
+    }
+  },
+  {
+    "profile": "TSLA:2023:revenue",
+    "proposal_index": 1,
+    "reason": "quote_not_exact_raw_source_substring",
+    "fact": {
+      "question": "What total revenue and year-over-year increase did Tesla report for 2023, and what activities does it cite to enable further revenue growth?",
+      "statement": "Tesla reported 2023 total revenues of $96.77 billion, up $15.31 billion from the prior year, and cites continued production ramping, new manufacturing capacity, expanded operations, and R&D investment in AI, software, and fleet-based profits to support further revenue growth.",
+      "candidate_id": "paragraph-655",
+      "quote": "In 2023, we recognized total revenues of $96.77 billion, representing an increase of $15.31 billion, compared to the prior year. We continue to ramp production, build new manufacturing capacity and expand our operations to enable increased deliveries and deployments of our products, and invest in research and development to accelerate our AI, software and fleet-based profits for further revenue growth."
+    }
+  }
+]

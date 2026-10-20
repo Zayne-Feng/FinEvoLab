@@ -1,0 +1,93 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "attempts": 300,
+      "successes": 294,
+      "success_rate": 0.98,
+      "categories": {
+        "annual_growth": {
+          "attempts": 30,
+          "successes": 30
+        },
+        "boundary": {
+          "attempts": 30,
+          "successes": 30
+        },
+        "company_comparison": {
+          "attempts": 45,
+          "successes": 45
+        },
+        "explanation": {
+          "attempts": 45,
+          "successes": 45
+        },
+        "hybrid": {
+          "attempts": 45,
+          "successes": 45
+        },
+        "metric_query": {
+          "attempts": 45,
+          "successes": 45
+        },
+        "upload": {
+          "attempts": 60,
+          "successes": 54
+        }
+      },
+      "mean_seconds": 4.55982,
+      "requests": 437,
+      "tokens": 606112,
+      "unknown_usage_tasks": 0,
+      "repairs": 14,
+      "failed_checks": {
+        "narrative": 3,
+        "joint_completion": 3
+      }
+    },
+    "legacy": {
+      "attempts": 195,
+      "successes": 180,
+      "success_rate": 0.9230769230769231,
+      "categories": {
+        "annual_growth": {
+          "attempts": 30,
+          "successes": 30
+        },
+        "boundary": {
+          "attempts": 30,
+          "successes": 27
+        },
+        "company_comparison": {
+          "attempts": 45,
+          "successes": 45
+        },
+        "explanation": {
+          "attempts": 45,
+          "successes": 33
+        },
+        "metric_query": {
+          "attempts": 45,
+          "successes": 45
+        }
+      },
+      "mean_seconds": 3.6904717948717947,
+      "requests": 246,
+      "tokens": 234672,
+      "unknown_usage_tasks": 0,
+      "repairs": 6,
+      "failed_checks": {
+        "narrative": 12,
+        "numeric": 3,
+        "financial_status": 3,
+        "financial_numeric": 3,
+        "financial_units": 3,
+        "financial_periods": 3,
+        "financial_citations": 3,
+        "financial_formula": 3
+      }
+    }
+  },
+  "planned": 495,
+  "mechanical_only_until_blind_review": true
+}

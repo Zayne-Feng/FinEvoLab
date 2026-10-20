@@ -1,0 +1,967 @@
+{
+  "b785f575821b2864d75a1506639341643d137991f3ca652faaccdc98d89679aa": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statements of operations show net income of $99,803 million in FY2022 versus $94,680 million in FY2021, an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the FY2022 effective tax rate was lower than the statutory federal rate due primarily to lower foreign earnings tax rate, share-based compensation benefits, and the U.S. federal R&D credit, partially offset by state income taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the Company is subject to changes in tax rates, new U.S. or international tax legislation, and exposure to additional tax liabilities."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 178,
+      "prompt_tokens": 1854,
+      "total_tokens": 2032,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 190
+    }
+  },
+  "ab516c49829b1dc6810f47cd476cc655de4e3f6d3e20c04ad2642d3728d1c995": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states automotive leasing revenue decreased 14% and attributes it primarily to lower direct sales-type leasing revenue from lower deliveries, partially offset by growth in the direct operating lease portfolio."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states cost of automotive leasing revenue decreased 16% and attributes it primarily to lower direct sales-type leasing cost of revenue driven by lower deliveries."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 105,
+      "prompt_tokens": 1005,
+      "total_tokens": 1110,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 237
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage appears verbatim in the supplied source and states the revenue increase and segment-wide growth."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 767,
+      "total_tokens": 813,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 255
+    }
+  },
+  "b0bd66ad917d472ec284c28a1d4a41f28b14b671a1941e9c3d3b81be4ddd5eaa": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Operating income of 119,437 for the year ended September 24, 2022 versus 108,949 for September 25, 2021, so the increase is directly supported by the reported figures."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states Products gross margin percentage increased in 2022 vs 2021 due primarily to a different Products mix, partially offset by foreign currency weakness relative to the U.S. dollar."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage lists excluded costs from segment operating income including R&D, corporate marketing, certain share-based compensation, income taxes, nonrecurring charges, and other separately managed G&A costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 191,
+      "prompt_tokens": 1973,
+      "total_tokens": 2164,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 181
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table only shows net income figures and percentage change; it does not mention the chief executive's personal investments, let alone prove exclusive causation."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 1362,
+      "total_tokens": 1426,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 210
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited MSFT FY2024 passage, so it is directly supported."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 58,
+      "prompt_tokens": 943,
+      "total_tokens": 1001,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 175
+    }
+  },
+  "007e3c325131e1db3ad348bec0fd165893193398504d0c06c612c6defa704491": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statement shows operating income of 119,437 for the year ended September 24, 2022 versus 108,949 for September 25, 2021, so the claim that FY2022 operating income exceeded the prior year is directly supported."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states Products gross margin percentage increased in 2022 vs 2021 primarily due to a different Products mix, partially offset by weakness in foreign currencies relative to the U.S. dollar, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The segment note lists excluded corporate costs including R&D, corporate marketing, certain share-based compensation, income taxes, nonrecurring charges and other separately managed G&A costs, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 202,
+      "prompt_tokens": 1950,
+      "total_tokens": 2152,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage, which states total net sales increased 8% or $28.5 billion in 2022 vs 2021, driven primarily by higher iPhone, Services and Mac net sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 83,
+      "prompt_tokens": 799,
+      "total_tokens": 882,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 159
+    }
+  },
+  "b35c8347c5027bba9b60fae7008216ca6d8bb3e40a0baf26d2d132b11fa56fdf": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that adverse macroeconomic conditions can adversely impact consumer confidence and spending and materially adversely affect demand for the Company's products and services."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states trade measures can make products more expensive, less competitive, reduce consumer demand, and adversely impact operations and supply chain."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states reliance on single or limited sources creates significant supply and pricing risks, including industry-wide shortages and commodity pricing fluctuations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 1591,
+      "total_tokens": 1738,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 183
+    }
+  },
+  "cc9122d73d00c6b64be9a016b45e29600a6ce8d3c380f38289f0083be4840904": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The comparative table shows income from operations of 8,891 in 2023 versus 13,656 in 2022, a decline, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the segment gross margin decreased from 26.5% to 18.2% primarily due to the automotive gross margin decrease discussed above."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 1578,
+      "total_tokens": 1695,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 170
+    }
+  },
+  "819a6d5e6df968b70ba451a8b96bec294fabf93a13234806c55ae3f9c4080a39": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that competition law enforcement actions and new market regulations may result in fines or hinder providing software benefits, reducing product attractiveness and related revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly lists adverse effects including withdrawing or modifying products, decreasing asset value, harming monetization, and inhibiting acquisitions."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states operations and financial results are subject to risks that could adversely affect business, operations, financial condition, results of operations, liquidity, and stock trading price."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 156,
+      "prompt_tokens": 1178,
+      "total_tokens": 1334,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 154
+    }
+  },
+  "5e598554c81cd01fd34ef4369b997803089b21615c2bbaf2b30905e3ecea0d5b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage states revenue increased 16% 'driven by growth across each of our segments,' directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quoted passage explicitly attributes Intelligent Cloud growth to Azure, Productivity and Business Processes to Office 365 Commercial, and More Personal Computing to Gaming."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quoted passage states enterprise and partner services revenue decreased $306 million or 4% driven by declines in Enterprise Support Services and Industry Solutions."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 148,
+      "prompt_tokens": 1016,
+      "total_tokens": 1164,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 248
+    }
+  },
+  "543c1b062ec960a9012ec8149b198d5c2c14b90c08c5a41ae06b288dcaee0cba": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that global/regional economic conditions affecting suppliers can affect the Company's ability to obtain components and that it remains subject to significant risks of supply shortages and price increases."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote lists management distraction, greater-than-expected liabilities and expenses, regulatory approval failures, impairment and write-offs, and states failure of a significant investment could materially adversely affect business, reputation, results of operations and financial condition."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote covers industrial accidents causing injuries/loss of life, business disruption and reputational harm, and major public health issues including COVID-19 adversely affecting the Company via economy/demand, public safety measures, and supply chain/distribution disruptions."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote states import/export controls could adversely impact operations and supply chain and limit ability to offer products as designed; the source text also notes such measures can require changing suppliers, restructuring relationships, and be expensive and time-consuming."
+      },
+      {
+        "index": 4,
+        "supported": true,
+        "reason": "The quote states compliance changes could negatively impact privacy/security reputation and result in harm to reputation, reduced demand, and lost sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 299,
+      "prompt_tokens": 2434,
+      "total_tokens": 2733,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2300
+      },
+      "prompt_cache_hit_tokens": 2300,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "e7e993a5aade7481b1b2765c656fad7f6228aff3b4290f677f1a2f3854bd2d8c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cited passage states operating income increased $11.7 billion or 31%, matching the claim of a dollar and percentage increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The cited passage states operating income increased $6.4 billion or 19%, matching the claim of a dollar and percentage increase."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The cited passage states operating income increased $2.9 billion or 17%, matching the claim of a dollar and percentage increase."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 878,
+      "total_tokens": 1004,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 238
+    }
+  },
+  "60fdaed32cfa29b33ac0e89b18b07941b92e068d9724d6db4227418341b53e42": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income of 109,433 vs 88,523 with a 24% percentage change, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states prior year operating income was negatively impacted by the Q2 charge with a $1.2 billion decrease, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states gross margin increased driven by growth in Azure and gross margin percentage decreased slightly, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 1537,
+      "total_tokens": 1682,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1403
+      },
+      "prompt_cache_hit_tokens": 1403,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cited passage verbatim states operating income increased $11.7 billion or 31%, matching the claim exactly."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 58,
+      "prompt_tokens": 748,
+      "total_tokens": 806,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 236
+    }
+  },
+  "9e113abec37b2d85cc8bcc789b6dc7b80df34422da7f89e26df92d082c4f12c7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The discussion analysis table shows net income of 88,136 in FY2024 versus 72,361 in FY2023, a 22% increase, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the decrease in effective tax rate for FY2024 vs FY2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing products/services through the foreign regional operations center in Ireland."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 1615,
+      "total_tokens": 1807,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 207
+    }
+  },
+  "f7387db1530522a6d152a4627fdfaebf83a7d7f51bd066d0a048021066e3a4d9": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states revenue increased $33.2 billion or 16% driven by growth across each segment, and attributes Intelligent Cloud to Azure, Productivity and Business Processes to Office 365 Commercial, and More Personal Computing to Gaming."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states server products and cloud services revenue growth was driven by Azure and other cloud services, Azure growth driven by consumption-based services, and server products growth driven by demand for hybrid solutions."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states revenue fluctuates quarterly and is generally higher in the fourth quarter, driven by a higher volume of multi-year contracts executed during the period."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 181,
+      "prompt_tokens": 1185,
+      "total_tokens": 1366,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 161
+    }
+  },
+  "aa550f9dc20e858ef00e8b52ac10ffe08647f969b48e2075197516bb102ab865": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total net sales increased 8% driven primarily by higher net sales of iPhone, Services and Mac, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states weakness in foreign currencies had an unfavorable year-over-year impact on all Products and Services net sales during 2022, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The cited passage attributes Rest of Asia Pacific net sales increase primarily to higher iPhone, Mac and Services, and notes unfavorable currency impact, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 969,
+      "total_tokens": 1124,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage attributes the increase to higher iPhone, Services and Mac sales, not to the chief executive's personal investments; the claim of exclusive causation by personal investments is unsupported and contradicted by the drivers disclosed."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 746,
+      "total_tokens": 824,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 234
+    }
+  },
+  "ecd756d0680f4aadd6572912233333f39fd34200884ad9bba52b43d2138d598f": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": null
+  },
+  "6a4016d53b6c338e92098f283732d0b855a6ae232b9efb6fcba2be92490f36e6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that failure to comply can lead to litigation, government investigations, investigatory expenses, and significant fees or fines."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect business, results of operations and financial condition."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote lists changing suppliers, restructuring business relationships, and ceasing to offer third-party applications, and states such changes can be expensive, time-consuming and disruptive."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote states changes to business practices to comply with new laws/regulations or legal proceedings could harm reputation, cause loss of competitive advantage, poor market acceptance, reduced demand, and lost sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 1919,
+      "total_tokens": 2131,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 255
+    }
+  },
+  "58f7d7b6d801bcb5acb726b2859d5a79ddc0682243eee27803231ac233773acf": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income of $99,803 million for the year ended September 24, 2022 versus $94,680 million for the year ended September 25, 2021, so the increase is supported."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the 2022 effective tax rate was lower than the statutory federal rate due primarily to a lower effective tax rate on foreign earnings, share-based compensation tax benefits, and the U.S. federal R&D credit, partially offset by state income taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the Company is subject to changes in tax rates, new U.S. or international tax legislation, and exposure to additional tax liabilities."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 1888,
+      "total_tokens": 2084,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 224
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage states operations and financial results are subject to risks and uncertainties that could adversely affect the business; it does not guarantee doubling of financial performance or absence of risks. The claim contradicts the quote and is unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 1324,
+      "total_tokens": 1403,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 172
+    }
+  },
+  "5d4b12193b1ad6d80ac57e1791be1ab4863b9346d478762dd67c77f6a8710727": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage states revenue increased $33.2 billion or 16% driven by growth across each segment, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly names Azure for Intelligent Cloud, Office 365 Commercial for Productivity and Business Processes, and Gaming for More Personal Computing as segment drivers."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quoted passage states server products and cloud services revenue growth was driven by Azure and other cloud services, and that Azure growth was driven by consumption-based services."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 135,
+      "prompt_tokens": 956,
+      "total_tokens": 1091,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 188
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote only states revenue increased $33.2 billion or 16% driven by segment growth; it does not guarantee doubling next year or absence of risks, so the claim is unsupported and invented."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 76,
+      "prompt_tokens": 841,
+      "total_tokens": 917,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  "d8b40561007a688b8ef087c26680e2745719fdd8a1ee7e28d2fea8e6ea78a23f": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total net sales increased 8% or $28.5 billion in 2022 vs 2021, driven primarily by iPhone, Services and Mac, with foreign currency weakness having an unfavorable impact."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states Rest of Asia Pacific net sales increased in 2022 vs 2021 due primarily to higher iPhone, Mac and Services, with foreign currency weakness unfavorable."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote explicitly gives the fiscal year end date as September 24, 2022."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 164,
+      "prompt_tokens": 1122,
+      "total_tokens": 1286,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  "0752ee81a6e46e0fc600dcb48c9012dc136b23c17ed126e9c2c6f8cf128ef0b6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The discussion analysis table shows Net income 88,136 in 2024 vs 72,361 in 2023 with 22% change, supporting an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the decrease in effective tax rate was primarily due to tax benefits from tax law changes including the delay of the effective date of final foreign tax credit regulations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through the Ireland operations center."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 1598,
+      "total_tokens": 1768,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 190
+    }
+  },
+  "a799fcc2a9f2aca8709869ac8c357ad18991618032712011ef20424051fa40e6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim and is from the MSFT FY2024 report, directly supporting the disclosure of risks affecting business, operations, financial condition, results of operations, liquidity, and stock trading price."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the global nature creates operational, economic, and geopolitical risks and that economic developments, monetary policy, inflation, recession, and political/military disputes may adversely affect results of operations, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder providing software benefits, reducing product attractiveness and revenue, matching the claim."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The quote supports both parts: perceptions of mismanagement driven by regulatory activity or negative public reaction could negatively impact product and feature adoption, and development delays/problems creating new products could adversely affect business, financial condition, and results of operations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 1761,
+      "total_tokens": 2012,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 225
+    }
+  },
+  "568fe985949be745a734a9a8439eb9b1a56bc21d4a312ef37a30849dbe5165e7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total net sales increased 8% or $28.5 billion in 2022 vs 2021, driven primarily by higher net sales of iPhone, Services and Mac, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly states weakness in foreign currencies relative to the U.S. dollar had an unfavorable year-over-year impact on all Products and Services net sales during 2022."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states iPad net sales decreased during 2022 compared to 2021 due primarily to lower net sales of iPad Pro."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 171,
+      "prompt_tokens": 928,
+      "total_tokens": 1099,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 160
+    }
+  },
+  "4cd7c3141dec867b91f27140526ba6f0ec6382a540b7ade7a6cf366800902f69": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states MSFT faces intense competition across all markets, which may adversely affect results of operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states competition law enforcement actions, court decisions, and new market regulations may result in fines or hinder providing software benefits, reducing product attractiveness and revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states competitive pressures may cause decreased sales volumes, price reductions, and/or increased operating costs such as R&D, marketing, and sales incentives."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 132,
+      "prompt_tokens": 1162,
+      "total_tokens": 1294,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "ec31c1b20ebda7eb4525effcc9dc935688a1ffd77c852d98d6f9dd6342de057a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income attributable to common stockholders of $14,997M in 2023 versus $12,556M in 2022, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quoted passage states the effective tax rate changed from an 8% expense to a 50% benefit, primarily due to release of the valuation allowance on U.S. federal and certain state deferred tax assets."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states TSLA is subject to income taxes in the U.S. and many foreign jurisdictions and describes the asset and liability method for computing income taxes."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 1661,
+      "total_tokens": 1838,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 253
+    }
+  },
+  "f71e2ac9bdfb297631deca2bedd3ca71431d64d92a230611e961d54f72fa12da": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": null
+  }
+}

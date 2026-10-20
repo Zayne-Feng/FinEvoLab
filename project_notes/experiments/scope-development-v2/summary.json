@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "attempts": 50,
+      "successes": 50,
+      "success_rate": 1,
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "successes": 8
+        },
+        "boundary": {
+          "attempts": 4,
+          "successes": 4
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "successes": 6
+        },
+        "explanation": {
+          "attempts": 8,
+          "successes": 8
+        },
+        "hybrid": {
+          "attempts": 8,
+          "successes": 8
+        },
+        "metric_query": {
+          "attempts": 10,
+          "successes": 10
+        },
+        "upload": {
+          "attempts": 6,
+          "successes": 6
+        }
+      },
+      "mean_seconds": 4.62246,
+      "requests": 72,
+      "tokens": 98672,
+      "unknown_usage_tasks": 0,
+      "repairs": 3,
+      "failed_checks": {}
+    }
+  },
+  "planned": 50,
+  "mechanical_only_until_blind_review": true
+}

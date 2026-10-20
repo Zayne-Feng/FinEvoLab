@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "attempts": 50,
+      "successes": 48,
+      "success_rate": 0.96,
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "successes": 8
+        },
+        "boundary": {
+          "attempts": 4,
+          "successes": 4
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "successes": 6
+        },
+        "explanation": {
+          "attempts": 8,
+          "successes": 7
+        },
+        "hybrid": {
+          "attempts": 8,
+          "successes": 7
+        },
+        "metric_query": {
+          "attempts": 10,
+          "successes": 10
+        },
+        "upload": {
+          "attempts": 6,
+          "successes": 6
+        }
+      },
+      "mean_seconds": 4.81872,
+      "requests": 75,
+      "tokens": 102870,
+      "unknown_usage_tasks": 2,
+      "repairs": 4,
+      "failed_checks": {}
+    },
+    "legacy": {
+      "attempts": 36,
+      "successes": 34,
+      "success_rate": 0.9444444444444444,
+      "categories": {
+        "annual_growth": {
+          "attempts": 8,
+          "successes": 8
+        },
+        "boundary": {
+          "attempts": 4,
+          "successes": 4
+        },
+        "company_comparison": {
+          "attempts": 6,
+          "successes": 6
+        },
+        "explanation": {
+          "attempts": 8,
+          "successes": 6
+        },
+        "metric_query": {
+          "attempts": 10,
+          "successes": 10
+        }
+      },
+      "mean_seconds": 3.8310833333333334,
+      "requests": 47,
+      "tokens": 47578,
+      "unknown_usage_tasks": 1,
+      "repairs": 2,
+      "failed_checks": {
+        "narrative": 1
+      }
+    }
+  },
+  "planned": 86,
+  "mechanical_only_until_blind_review": true
+}

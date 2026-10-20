@@ -1,0 +1,11 @@
+{
+  "run_id": "scope-evidence-initial-json-probe",
+  "recording_method": "transcribed_from_actual_command_error",
+  "execution_status": "failed",
+  "http_status": 400,
+  "request_id": "e8538d3b-0b07-469d-af28-51d9ffa00ad4",
+  "error_type": "invalid_request_error",
+  "reason": "JSON mode required an explicit JSON word in the prompt",
+  "usage": null,
+  "included_in_task_accuracy": false
+}

@@ -1,0 +1,88 @@
+{
+  "run_id": "scope-test-v1",
+  "executed_commit": "e3f9a4003c177f44570fadc0e1fdb5a592cc3f3a",
+  "archive_commit": "c3cbe4fb5b92aab9549a421f698345f208dd72ec",
+  "input_sha256": {
+    "finevolab/agent.py": "0cdc139544efe5eef564fc3cb976be80772e47a86d626aa4ec1654e18059f148",
+    "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+    "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "967b941c8469576b48d1d7a2cf89a9e4f5766b1cb5a6f1cdb5b8bf6afd2d080c",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/grounded.py": "d1a933b01ac7a9e3550b4484121b2b9a3eea29eefbc62a4fe993e4f5018bf54f",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+    "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+    "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+    "finevolab/reporting.py": "48afacc9f4466d20dee1db9bcb0ee658ea3e074a4ac8b95b32a6d17463e1ea2f",
+    "finevolab/retrieval.py": "5565b61ca49f8ad4cd76893e3f7cf1f5d721666f749c29771318ab33d9a773c2",
+    "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+    "finevolab/runtime.py": "40d67a53b9366ed17423b88d098e272d1e9900b9926042210d2c0aff5113c6e3",
+    "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+    "finevolab/sdk_runtime.py": "3a0e666c539b18bbfa5681141bff7b416fc1e8c6750ad58ede7fd84495f10a30",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+    "finevolab/tools.py": "2669f13d2e8346b5dbd2a93187a2b8971c51ccaba6467c84625f8acc4d67edc7",
+    "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+    "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+    "finevolab/validation.py": "ff2d890f887de832a9e2ff6fc70c01fcf053ca2cbc7acfe02d96f539cb8669c1",
+    "finevolab/web.py": "bc6348689af1516e4b68c695d69ff54f9ae6312ee03c3a8f95af19778fa0f94c",
+    "finevolab/workflow.py": "68d6dc0ecb3f3464b200074cd54d26f8654b00706a8e67790958d6bf67d4771e",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "scripts/run_scope_experiments.py": "9307f2d6feac37c15b7c0ea0e2ae1dca92cb7fe80cf7ae08b8e1708e186e6496",
+    "configs/company_aliases.json": "76defbbeb4562bfd0b9b81ceada4ec91a2f49d370a78a9984453c7e583e16e3a",
+    "prompts/benchmark.json": "b309162e87e7316792c25817ba950966f5dcc6cc3544b264c867de7d72da76a6",
+    "data/processed/reports.json": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+    "data/sources.json": "f58a6a65b7f9e7b55290fa1851e14d88ceaa6e6e208a2f10458282c7199ff11e",
+    "data/sec_sources.json": "e75659914d52f6d95e930b029bcfa435327c7823da522702898afd82a7e940ba",
+    "data/filing_sources.json": "f86b2ed2e220535d8eafc9822860538ebe5c49633dcfb79006208c6a7165e88c",
+    "data/acceptance_sources.json": "c0e53925ccff87babe61cb8281f2af3fddcd99c435230f2f80ca2392b92c0162",
+    "data/indexes/structured.json": "c1ed02fa508f84aaf0483912a290c7db95e97250ba17329d57c67bd401dc7d84",
+    "data/indexes/structured.metadata.json": "963bb95fe8798d8cde3513bf29e0f41ea4957010582e70c5c54277c0c93575b8",
+    "data/indexes/contextual/structured.json": "d59939820eb02638ff78a6dcfa325743fcda4db7c9ee1f4bec7c6dbd12a6dd9d",
+    "data/indexes/contextual/structured.metadata.json": "9a5419bc47805f9419457f316cec7e2b663bf2605e81b866c44de58a635e9dfe",
+    "configs/retrieval.json": "8cf86b23d16603ebfe10193cb6523f7f4968297e9640998d48e591ffe9356879"
+  },
+  "historical_newline_variants": [
+    {
+      "path": "data/processed/reports.json",
+      "runtime_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+      "executed_git_sha256": "107b0c0153162ace11fd0973787bff205e37f8edf0796795b17dc8bca4084c33",
+      "difference": "CRLF_LF_only",
+      "json_equal": true
+    },
+    {
+      "path": "data/sec_sources.json",
+      "runtime_sha256": "e75659914d52f6d95e930b029bcfa435327c7823da522702898afd82a7e940ba",
+      "executed_git_sha256": "1ef9be3dd0d2464c28e5746d59b6ef7f6121f7ad2845e7147607a2a5288ff45b",
+      "difference": "CRLF_LF_only",
+      "json_equal": true
+    },
+    {
+      "path": "data/filing_sources.json",
+      "runtime_sha256": "f86b2ed2e220535d8eafc9822860538ebe5c49633dcfb79006208c6a7165e88c",
+      "executed_git_sha256": "77c61bce8f4cb7ecc6ce87d5d809149db8386616ed9030d2edeeb9879862393c",
+      "difference": "CRLF_LF_only",
+      "json_equal": true
+    },
+    {
+      "path": "data/indexes/structured.json",
+      "runtime_sha256": "c1ed02fa508f84aaf0483912a290c7db95e97250ba17329d57c67bd401dc7d84",
+      "executed_git_sha256": "e33524a9582512f9132d2353596d77a3e5106c11577e8391210e0401922f686d",
+      "difference": "CRLF_LF_only",
+      "json_equal": true
+    },
+    {
+      "path": "data/indexes/structured.metadata.json",
+      "runtime_sha256": "963bb95fe8798d8cde3513bf29e0f41ea4957010582e70c5c54277c0c93575b8",
+      "executed_git_sha256": "da1916ef74edddb260ebde68583f0134a7b84cfce69e87889f47556bbb87511f",
+      "difference": "CRLF_LF_only",
+      "json_equal": true
+    }
+  ],
+  "runtime_bytes_changed": false,
+  "financial_values_changed": false,
+  "normalization_rule": "JSON outer line endings only; code must match executed commit exactly"
+}
