@@ -1,0 +1,37 @@
+{
+    "scope": "Function-level findings; no new end-to-end success-rate estimate",
+    "method": "Deterministic local function probes with explicitly provided RequestPlan; no provider call",
+    "fmp_requests": 0,
+    "model_requests": 0,
+    "commit": "5f81c0ebf55a075493103dacb5a9bb30d621fbae",
+    "component": "finevolab.grounded.resolve_request_intent",
+    "status": "confirmed_request_normalization_defects",
+    "run_id": "closure-semantic-review",
+    "source_sha256": "45248dda9b100f56b98376446c35d5959ad71ec3c1ca8382e685270f8595fd7d",
+    "cases": [
+        {
+            "question": "What is driving MSFT revenue growth in FY2024, and why?",
+            "initial_intent": "explanation",
+            "observed_numeric_intent": "growth",
+            "initial_numeric_intent": "metric",
+            "topic": "revenue",
+            "observed_intent": "hybrid"
+        },
+        {
+            "question": "How much did MSFT revenue grow in FY2024, and why?",
+            "initial_intent": "hybrid",
+            "observed_numeric_intent": "metric",
+            "initial_numeric_intent": "growth",
+            "topic": "revenue",
+            "observed_intent": "hybrid"
+        },
+        {
+            "question": "List the risks and explain how they could affect MSFT revenue.",
+            "initial_intent": "explanation",
+            "observed_numeric_intent": "metric",
+            "initial_numeric_intent": "metric",
+            "topic": "risk",
+            "observed_intent": "hybrid"
+        }
+    ]
+}

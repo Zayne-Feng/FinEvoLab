@@ -1,0 +1,70 @@
+{
+  "run_id": "closure-development-v1",
+  "status": "complete",
+  "planned": 20,
+  "attempted": 20,
+  "groups": {
+    "improved": {
+      "all": {
+        "attempts": 20,
+        "successes": 12.0,
+        "success_rate": 0.6,
+        "mean_seconds": 4.2211,
+        "p50_seconds": 2.6645000000000003,
+        "p95_seconds": 20.969,
+        "known_usage": {
+          "requests": 12,
+          "input_tokens": 9901,
+          "output_tokens": 499,
+          "total_tokens": 10400
+        },
+        "unknown_usage_tasks": 8,
+        "repairs": 0,
+        "first_pass_successes": 12.0,
+        "error_types": {
+          "BadRequestError": 8
+        }
+      },
+      "numeric": {
+        "attempts": 12,
+        "successes": 12.0,
+        "success_rate": 1.0,
+        "mean_seconds": 2.4884166666666667,
+        "p50_seconds": 2.6094999999999997,
+        "p95_seconds": 2.703,
+        "known_usage": {
+          "requests": 12,
+          "input_tokens": 9901,
+          "output_tokens": 499,
+          "total_tokens": 10400
+        },
+        "unknown_usage_tasks": 0,
+        "repairs": 0,
+        "first_pass_successes": 12.0,
+        "error_types": {}
+      },
+      "explanation": {
+        "attempts": 8,
+        "successes": 0.0,
+        "success_rate": 0.0,
+        "mean_seconds": 6.820125,
+        "p50_seconds": 4.8355,
+        "p95_seconds": 20.969,
+        "known_usage": {
+          "requests": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "unknown_usage_tasks": 8,
+        "repairs": 0,
+        "first_pass_successes": 0.0,
+        "error_types": {
+          "BadRequestError": 8
+        }
+      }
+    }
+  },
+  "changed_source_files": [],
+  "text_baseline": "same_explanation_adapter_old_retrieval_not_legacy_native_capability"
+}

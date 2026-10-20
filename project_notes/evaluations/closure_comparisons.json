@@ -1,0 +1,570 @@
+{
+  "acceptance_manifest_sha256": "6d5b0ff4cd3620f971ef6a7522f37adaf316824f62e595b44b49a1ed1a01ed3d",
+  "engineering": {
+    "left_run": "baseline",
+    "right_run": "improved",
+    "complete_pairing": true,
+    "observed_pairs": 36,
+    "expected_pairs": 36,
+    "pairs": [
+      {
+        "case_id": "1a45d333161058dbda6c",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "1a45d333161058dbda6c",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "1a45d333161058dbda6c",
+        "repeat": 2,
+        "left": 0.0,
+        "right": 1.0,
+        "difference": 1.0
+      },
+      {
+        "case_id": "2370ea0c83a066e9e969",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "2370ea0c83a066e9e969",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "2370ea0c83a066e9e969",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "2ab13c16eed3d55f624b",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "2ab13c16eed3d55f624b",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "2ab13c16eed3d55f624b",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "42de7e09852f14800db4",
+        "repeat": 0,
+        "left": 0.0,
+        "right": 1.0,
+        "difference": 1.0
+      },
+      {
+        "case_id": "42de7e09852f14800db4",
+        "repeat": 1,
+        "left": 0.0,
+        "right": 1.0,
+        "difference": 1.0
+      },
+      {
+        "case_id": "42de7e09852f14800db4",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "515095133a6b37997202",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "515095133a6b37997202",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "515095133a6b37997202",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "5239fdd2c218efa43b03",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "5239fdd2c218efa43b03",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "5239fdd2c218efa43b03",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "77179f4efcfaf2c96835",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "77179f4efcfaf2c96835",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "77179f4efcfaf2c96835",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "797b037a2fce9cd8ac8e",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "797b037a2fce9cd8ac8e",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "797b037a2fce9cd8ac8e",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7fd6937d101ba516b398",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7fd6937d101ba516b398",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7fd6937d101ba516b398",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "85f4bea4b5c8050f0b06",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "85f4bea4b5c8050f0b06",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "85f4bea4b5c8050f0b06",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "90a4bb7b333c54d0ccc8",
+        "repeat": 0,
+        "left": 0.0,
+        "right": 1.0,
+        "difference": 1.0
+      },
+      {
+        "case_id": "90a4bb7b333c54d0ccc8",
+        "repeat": 1,
+        "left": 0.0,
+        "right": 1.0,
+        "difference": 1.0
+      },
+      {
+        "case_id": "90a4bb7b333c54d0ccc8",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "939a581c1015fd57f537",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "939a581c1015fd57f537",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "939a581c1015fd57f537",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      }
+    ],
+    "uncertainty": {
+      "left_run": "baseline",
+      "right_run": "improved",
+      "method": "paired_case_cluster_percentile_bootstrap",
+      "seed": 17,
+      "draws": 10000,
+      "case_clusters": 12,
+      "repeats_per_case": 3,
+      "mean_difference": 0.13888888888888887,
+      "confidence_level": 0.95,
+      "interval": [
+        0.0,
+        0.3055555555555555
+      ],
+      "repeats_treated_as_independent_cases": false
+    },
+    "wins_losses_ties": {
+      "wins": 5,
+      "losses": 0,
+      "ties": 31
+    }
+  },
+  "gepa": {
+    "left_run": "gepa_initial",
+    "right_run": "gepa_selected",
+    "complete_pairing": true,
+    "observed_pairs": 36,
+    "expected_pairs": 36,
+    "pairs": [
+      {
+        "case_id": "0af8ea0a15d35ce44ef8",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "0af8ea0a15d35ce44ef8",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "0af8ea0a15d35ce44ef8",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7bf49cfe5efa08c27cfe",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7bf49cfe5efa08c27cfe",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7bf49cfe5efa08c27cfe",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7e43c6920c66a0950640",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7e43c6920c66a0950640",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7e43c6920c66a0950640",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7f39d3ca4d51d2b23182",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7f39d3ca4d51d2b23182",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "7f39d3ca4d51d2b23182",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "8b60c0dcd5b7371b6e16",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "8b60c0dcd5b7371b6e16",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "8b60c0dcd5b7371b6e16",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca09986cc23c3e479b8d",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca09986cc23c3e479b8d",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca09986cc23c3e479b8d",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca534378bb822ddf96e2",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca534378bb822ddf96e2",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "ca534378bb822ddf96e2",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d5107011a9f7c139fc07",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d5107011a9f7c139fc07",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d5107011a9f7c139fc07",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d82d06d16abf1ecef917",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d82d06d16abf1ecef917",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "d82d06d16abf1ecef917",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "e47b468571d89c703133",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "e47b468571d89c703133",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "e47b468571d89c703133",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "f10fca5b57247343c9a7",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "f10fca5b57247343c9a7",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "f10fca5b57247343c9a7",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "fcb9202883d52ba05f4d",
+        "repeat": 0,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "fcb9202883d52ba05f4d",
+        "repeat": 1,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      },
+      {
+        "case_id": "fcb9202883d52ba05f4d",
+        "repeat": 2,
+        "left": 1.0,
+        "right": 1.0,
+        "difference": 0.0
+      }
+    ],
+    "uncertainty": {
+      "left_run": "gepa_initial",
+      "right_run": "gepa_selected",
+      "method": "paired_case_cluster_percentile_bootstrap",
+      "seed": 17,
+      "draws": 10000,
+      "case_clusters": 12,
+      "repeats_per_case": 3,
+      "mean_difference": 0.0,
+      "confidence_level": 0.95,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "repeats_treated_as_independent_cases": false
+    },
+    "wins_losses_ties": {
+      "wins": 0,
+      "losses": 0,
+      "ties": 36
+    }
+  },
+  "historical_failure_checks": {
+    "status": 7
+  }
+}

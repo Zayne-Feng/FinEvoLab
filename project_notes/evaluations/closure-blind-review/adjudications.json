@@ -1,0 +1,26 @@
+[
+  {
+    "id": "control-7",
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage attributes the North America operating loss to increased fulfillment and shipping costs, technology and content costs, and growth in certain operating expenses, partially offset by unit sales and advertising sales. It says nothing about the chief executive's personal investments, and no original source supports an exclusive cause of all revenue changes; the claim is unsupported and contradicted by the disclosed drivers."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 109,
+      "prompt_tokens": 1640,
+      "total_tokens": 1749,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1640
+    }
+  }
+]

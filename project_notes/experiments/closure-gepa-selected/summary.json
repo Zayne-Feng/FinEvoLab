@@ -1,0 +1,48 @@
+{
+  "run_id": "closure-gepa-selected",
+  "status": "complete",
+  "planned": 36,
+  "attempted": 36,
+  "groups": {
+    "improved": {
+      "all": {
+        "attempts": 36,
+        "successes": 36.0,
+        "success_rate": 1.0,
+        "mean_seconds": 2.5637222222222222,
+        "p50_seconds": 2.578,
+        "p95_seconds": 3.046,
+        "known_usage": {
+          "requests": 36,
+          "input_tokens": 24519,
+          "output_tokens": 1614,
+          "total_tokens": 26133
+        },
+        "unknown_usage_tasks": 0,
+        "repairs": 0,
+        "first_pass_successes": 36.0,
+        "error_types": {}
+      },
+      "numeric": {
+        "attempts": 36,
+        "successes": 36.0,
+        "success_rate": 1.0,
+        "mean_seconds": 2.5637222222222222,
+        "p50_seconds": 2.578,
+        "p95_seconds": 3.046,
+        "known_usage": {
+          "requests": 36,
+          "input_tokens": 24519,
+          "output_tokens": 1614,
+          "total_tokens": 26133
+        },
+        "unknown_usage_tasks": 0,
+        "repairs": 0,
+        "first_pass_successes": 36.0,
+        "error_types": {}
+      }
+    }
+  },
+  "changed_source_files": [],
+  "text_baseline": "same_explanation_adapter_old_retrieval_not_legacy_native_capability"
+}

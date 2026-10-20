@@ -1,0 +1,18 @@
+{
+    "pdf":  "output\\pdf\\closure_explanation.pdf",
+    "sha256":  "2b04194a9df43b45636d3065f34c0ffcf0d6e2f10bde6c11c40e42b1a6ac6022",
+    "pages":  [
+                  {
+                      "page":  1,
+                      "preview":  "output\\pdf\\closure_explanation-page-1.png",
+                      "sha256":  "0a873d896e355594a38e211f98905361c790cbb42132ca40f82b10c758297ef3",
+                      "characters":  2705
+                  }
+              ],
+    "renderer":  "pypdfium2-5.14.0",
+    "visual_review":  "passed",
+    "findings":  [
+                     "All text, claims, exact quotes, source locations and footer are legible without clipping.",
+                     "One page reviewed after final rendering."
+                 ]
+}

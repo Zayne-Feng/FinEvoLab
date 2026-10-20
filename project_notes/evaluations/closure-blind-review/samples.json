@@ -1,0 +1,1235 @@
+[
+  {
+    "id": "65dc9de0a4eca342771e",
+    "group": "baseline",
+    "case_id": "920e6fedb7221e14bbe8",
+    "question": "Using MSFT's FY2022 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [],
+    "sources": [],
+    "execution_status": "completed"
+  },
+  {
+    "id": "1fbc4f0712b2406619f7",
+    "group": "improved",
+    "case_id": "920e6fedb7221e14bbe8",
+    "question": "Using MSFT's FY2022 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "MSFT disclosed that FY2022 revenue increased $30.2 billion or 18%, driven by growth across each segment.",
+        "chunk_id": "passage:244d63c7101fce0e79dfbd10",
+        "quote": "Revenue increased $30.2 billion or 18% driven by growth across each of our segments."
+      },
+      {
+        "statement": "Intelligent Cloud revenue growth was attributed to Azure and other cloud services.",
+        "chunk_id": "passage:244d63c7101fce0e79dfbd10",
+        "quote": "Intelligent Cloud revenue increased driven by Azure and other cloud services."
+      },
+      {
+        "statement": "Productivity and Business Processes revenue growth was attributed to Office 365 Commercial and LinkedIn.",
+        "chunk_id": "passage:244d63c7101fce0e79dfbd10",
+        "quote": "Productivity and Business Processes revenue increased driven by Office 365 Commercial and LinkedIn."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:244d63c7101fce0e79dfbd10",
+        "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/msft-10k_20220630.htm",
+        "company": "MSFT",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=2207|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2022 item-7\nRevenue increased $30.2 billion or 18% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure and other cloud services. Productivity and Business Processes revenue increased driven by Office 365 Commercial and LinkedIn. More Personal Computing revenue increased driven by Search and news advertising and Windows.",
+        "score": 0.02175894281157439,
+        "disclosed_at": "2022-07-28",
+        "source_path": "data/raw/sec_msft_2022.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "b9595d4366fd2357932f",
+    "group": "improved",
+    "case_id": "bfe860686bd26455c74e",
+    "question": "Using AAPL's FY2023 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Total operating income decreased from $119,437 in 2022 to $114,301 in 2023, with segment operating income also declining from $152,895 to $150,888.",
+        "chunk_id": "passage:a1a0b8d54e91c060ea6e411e",
+        "quote": "Segment operating income | $ | 150,888 |  |  | $ | 152,895 |  |  | $ | 137,006 | \nResearch and development expense | ( 29,915 ) |  |  | ( 26,251 ) |  |  | ( 21,914 ) | \nOther corporate expenses, net (1) | ( 6,672 ) |  |  | ( 7,207 ) |  |  | ( 6,143 ) | \nTotal operating income | $ | 114,301 |  |  | $ | 119,437 |  |  | $ | 108,949 |"
+      },
+      {
+        "statement": "Products gross margin decreased in 2023 versus 2022 due to weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "chunk_id": "passage:e87c5648257919c4c8a369db",
+        "quote": "Products gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix."
+      },
+      {
+        "statement": "Services gross margin percentage decreased in 2023 versus 2022 due to higher Services costs and foreign currency weakness, partially offset by a different Services mix.",
+        "chunk_id": "passage:7b5ef33d9432df758640ed64",
+        "quote": "Services gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7b5ef33d9432df758640ed64",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=589|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AAPL FY2023 item-7\nServices gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix.",
+        "score": 0.032266458495966696,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      },
+      {
+        "id": "passage:a1a0b8d54e91c060ea6e411e",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-8",
+        "locator": "dom-block=1075|part=0|strategy=structured",
+        "kind": "table",
+        "text": "AAPL FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | 2023 |  | 2022 |  | 2021\nSegment operating income | $ | 150,888 |  |  | $ | 152,895 |  |  | $ | 137,006 | \nResearch and development expense | ( 29,915 ) |  |  | ( 26,251 ) |  |  | ( 21,914 ) | \nOther corporate expenses, net (1) | ( 6,672 ) |  |  | ( 7,207 ) |  |  | ( 6,143 ) | \nTotal operating income | $ | 114,301 |  |  | $ | 119,437 |  |  | $ | 108,949 | ",
+        "score": 0.03076923076923077,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      },
+      {
+        "id": "passage:e87c5648257919c4c8a369db",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AAPL FY2023 item-7\nProducts gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "score": 0.03057889822595705,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "9f8977d4923691e66a58",
+    "group": "baseline",
+    "case_id": "bfe860686bd26455c74e",
+    "question": "Using AAPL's FY2023 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [],
+    "sources": [],
+    "execution_status": "completed"
+  },
+  {
+    "id": "fd0ce348727c3e0dbd64",
+    "group": "baseline",
+    "case_id": "08fdaa1390cceed2bef0",
+    "question": "Using GOOGL's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report discloses that revenue growth rate could decline due to factors including changes in devices and modalities, geographic mix, advertiser spending, competition, customer usage and demand, pricing decreases, product and policy changes, and shifts to lower priced products and services.",
+        "chunk_id": "passage:dae1d90acc4e2412b6218951",
+        "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services."
+      },
+      {
+        "statement": "The report states that innovations in products and services could change user behavior and affect revenue trends, involving risks such as different monetization models.",
+        "chunk_id": "passage:a19a643ac63ade1721d62a62",
+        "quote": "Innovations in our products and services could also result in changes to user behavior and affect our revenue trends."
+      },
+      {
+        "statement": "The report cautions that historical revenue growth rate and historical operating margin may not be indicative of future performance, citing factors including higher investment in technical infrastructure and costs that are less variable.",
+        "chunk_id": "passage:ceeaed696bcc15540ec99b3a",
+        "quote": "Due to these factors and the evolving nature of our business, our historical revenue growth rate and historical operating margin may not be indicative of our future performance."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a19a643ac63ade1721d62a62",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=357|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nInnovations in our products and services could also result in changes to user behavior and affect our revenue trends. These endeavors involve significant risks and uncertainties, including diversion of resources and management attention from current operations, different monetization models, and the use of alternative investment, governance, or compensation structures that may fail to adequately align incentives across the company or otherwise accomplish their objectives.",
+        "score": 0.02803921568627451,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:ceeaed696bcc15540ec99b3a",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=372|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nfor many aspects of our business, including higher level of investment in technical infrastructure. Further, certain of our costs and expenses are generally less variable in nature and may not correlate to changes in revenue. We may also not be able to continue to execute our efficiency efforts successfully or in a timely manner. Due to these factors and the evolving nature of our business, our historical revenue growth rate and historical operating margin may not be indicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and Revenues and Monetization Metrics in Part II, Item 7 of this Annual Report on Form 10-K.",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:dae1d90acc4e2412b6218951",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=363|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nOur revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+        "score": 0.02548701298701299,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "9bc65c970fba544aeb53",
+    "group": "improved",
+    "case_id": "08fdaa1390cceed2bef0",
+    "question": "Using GOOGL's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Google Network revenues decreased $953 million from 2023 to 2024, primarily driven by a decrease in Google Ad Manager and AdMob revenues, and were also adversely affected by foreign currency exchange rate changes.",
+        "chunk_id": "passage:8dc7827f3ae715d31736c232",
+        "quote": "Google Network revenues decreased $953 million from 2023 to 2024, primarily driven by a decrease in Google Ad Manager and AdMob revenues. Additionally, Google Network revenues were adversely affected by changes in foreign currency exchange rates."
+      },
+      {
+        "statement": "Google Cloud revenues increased $10.1 billion from 2023 to 2024, primarily driven by growth in Google Cloud Platform largely from infrastructure services.",
+        "chunk_id": "passage:e2756f29838155295a20e52e",
+        "quote": "Google Cloud revenues increased $10.1 billion from 2023 to 2024 primarily driven by growth in Google Cloud Platform largely from infrastructure services."
+      },
+      {
+        "statement": "YouTube ads revenues increased $4.6 billion from 2023 to 2024, driven by brand advertising products followed by direct response advertising products, both benefiting from increased advertiser spending.",
+        "chunk_id": "passage:3cf4b58827431786f1689fe5",
+        "quote": "YouTube ads revenues increased $4.6 billion from 2023 to 2024. The growth was driven by our brand advertising products followed by our direct response advertising products, both of which benefited from increased spending by our advertisers."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3cf4b58827431786f1689fe5",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=871|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nYouTube ads revenues increased $4.6 billion from 2023 to 2024. The growth was driven by our brand advertising products followed by our direct response advertising products, both of which benefited from increased spending by our advertisers.",
+        "score": 0.019625,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:8dc7827f3ae715d31736c232",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=873|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nGoogle Network revenues decreased $953 million from 2023 to 2024, primarily driven by a decrease in Google Ad Manager and AdMob revenues. Additionally, Google Network revenues were adversely affected by changes in foreign currency exchange rates.",
+        "score": 0.021116138763197588,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:e2756f29838155295a20e52e",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=892|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nGoogle Cloud revenues increased $10.1 billion from 2023 to 2024 primarily driven by growth in Google Cloud Platform largely from infrastructure services.",
+        "score": 0.02102307225258045,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "e13e3e9f939275917674",
+    "group": "improved",
+    "case_id": "8a422c9038b431c13248",
+    "question": "Using AMZN's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report states that the discussed risk events and consequences could have a material adverse effect on multiple aspects of the business, including operating results, cash flows, and liquidity.",
+        "chunk_id": "passage:6a6301b8cfbe6168467d5a21",
+        "quote": "The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price."
+      },
+      {
+        "statement": "The report discloses that global economic and geopolitical conditions and unforeseen events may give rise to or amplify many of the risks discussed.",
+        "chunk_id": "passage:6a6301b8cfbe6168467d5a21",
+        "quote": "global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed below."
+      },
+      {
+        "statement": "The report states that because China-based sellers account for significant portions of third-party seller services and advertising revenues, and China-based suppliers provide significant portions of components and finished goods, factors negatively impacting them could adversely affect operating results.",
+        "chunk_id": "passage:9326eb5b9c0b9193cc07ec6b",
+        "quote": "In addition, because China-based sellers account for significant portions of our third-party seller services and advertising revenues, and China-based suppliers provide significant portions of our components and finished goods, regulatory and trade restrictions, data protection and cybersecurity laws, economic factors, geopolitical events, security issues, or other factors negatively impacting China-based sellers and suppliers could adversely affect our operating results."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:6a6301b8cfbe6168467d5a21",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=194|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price. These risk factors do not identify all risks that we face; our operations could also be affected by factors, events, or uncertainties that are not presently known to us or that we currently do not consider to present significant risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of Financial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed below. Many of the risks discussed below also impact our customers, including third-pa",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:9326eb5b9c0b9193cc07ec6b",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=236|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nIn addition, because China-based sellers account for significant portions of our third-party seller services and advertising revenues, and China-based suppliers provide significant portions of our components and finished goods, regulatory and trade restrictions, data protection and cybersecurity laws, economic factors, geopolitical events, security issues, or other factors negatively impacting China-based sellers and suppliers could adversely affect our operating results.",
+        "score": 0.02442002442002442,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "e455417089db3e57ed96",
+    "group": "baseline",
+    "case_id": "8a422c9038b431c13248",
+    "question": "Using AMZN's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report states that the discussed risk events and consequences could have a material adverse effect on multiple aspects of the business, including growth, reputation, prospects, financial condition, operating results, cash flows, liquidity, and stock price.",
+        "chunk_id": "passage:6a6301b8cfbe6168467d5a21",
+        "quote": "The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price."
+      },
+      {
+        "statement": "The report discloses that outcomes of legal proceedings and other contingencies are inherently unpredictable and could be material to operating results and cash flows for a particular period, and that losses in excess of recorded amounts could materially affect the business, financial position, results of operations, or cash flows.",
+        "chunk_id": "passage:512d187e99d8127e407f9586",
+        "quote": "The outcomes of our legal proceedings and other contingencies are inherently unpredictable, subject to significant uncertainties, and could be material to our operating results and cash flows for a particular period."
+      },
+      {
+        "statement": "The report states that although systems and processes are designed to protect customer data and prevent security incidents, such measures cannot provide absolute security and may fail to operate as intended or be circumvented.",
+        "chunk_id": "passage:6fae8d21f0bb1c32e916388e",
+        "quote": "Although we have developed systems and processes that are designed to protect customer data and prevent such incidents, including systems and processes designed to reduce the impact of a security breach at a third-party vendor or customer, such measures cannot provide absolute security and may fail to operate as intended or be circumvented."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:512d187e99d8127e407f9586",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=1319|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nThe outcomes of our legal proceedings and other contingencies are inherently unpredictable, subject to significant uncertainties, and could be material to our operating results and cash flows for a particular period. We evaluate, on a regular basis, developments in our legal proceedings and other contingencies that could affect the amount of liability, including amounts in excess of any previous accruals and reasonably possible losses disclosed, and make adjustments and changes to our accruals and disclosures as appropriate. For the matters we disclose that do not include an estimate of the amount of loss or range of losses, such an estimate is not possible or is immaterial, and we may be unable to estimate the possible loss or range of losses that could potentially result from the application of non-monetary remedies. Until the final resolution of such matters, if any of our estimates and assumptions change or prove to have been incorrect, we may experience losses in excess of the amounts recorded, which could have a material effect on our business, consolidated financial position, results of operations, or cash flows.",
+        "score": 0.026553280111072546,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:6a6301b8cfbe6168467d5a21",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=194|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price. These risk factors do not identify all risks that we face; our operations could also be affected by factors, events, or uncertainties that are not presently known to us or that we currently do not consider to present significant risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of Financial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed below. Many of the risks discussed below also impact our customers, including third-pa",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:6fae8d21f0bb1c32e916388e",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=304|part=1|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\ne no assurance that future incidents will not have material adverse effects on our operations or financial results. Although we have developed systems and processes that are designed to protect customer data and prevent such incidents, including systems and processes designed to reduce the impact of a security breach at a third-party vendor or customer, such measures cannot provide absolute security and may fail to operate as intended or be circumvented.",
+        "score": 0.02603648424543947,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "5780488c8f8f9e7d2d24",
+    "group": "baseline",
+    "case_id": "ef2c4f8d02d4c41c62e8",
+    "question": "Using META's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [],
+    "sources": [],
+    "execution_status": "completed"
+  },
+  {
+    "id": "56846dd15fef5958a1e1",
+    "group": "improved",
+    "case_id": "ef2c4f8d02d4c41c62e8",
+    "question": "Using META's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Advertising revenue increased in 2024, attributed to increases in ad impressions delivered and average price per ad.",
+        "chunk_id": "passage:6af40a068be8999ab17e5449",
+        "quote": "Advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad."
+      },
+      {
+        "statement": "The increase in average price per ad was disclosed as driven by an increase in advertising demand, which the company attributes mainly to ongoing improvements to ad performance from ad targeting and measurement tools.",
+        "chunk_id": "passage:6af40a068be8999ab17e5449",
+        "quote": "The increase in average price per ad in 2024 was driven by an increase in advertising demand, which we believe is mainly due to ongoing improvements to our ad performance from our ad targeting and measurement tools."
+      },
+      {
+        "statement": "FoA other revenue increased in 2024, primarily driven by WhatsApp Business Platform revenue.",
+        "chunk_id": "passage:1915528e929e452c4b9102e0",
+        "quote": "FoA other revenue in 2024 increased $664 million, or 63%, compared to 2023. The increase was primarily driven by WhatsApp Business Platform revenue."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:1915528e929e452c4b9102e0",
+        "source_sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "company": "META",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=1669|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2024 item-7\nFoA other revenue in 2024 increased $664 million, or 63%, compared to 2023. The increase was primarily driven by WhatsApp Business Platform revenue.",
+        "score": 0.023912239615432023,
+        "disclosed_at": "2025-01-30",
+        "source_path": "data/raw/sec_meta_2024.html"
+      },
+      {
+        "id": "passage:6af40a068be8999ab17e5449",
+        "source_sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "company": "META",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=1665|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2024 item-7\nAdvertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad. In 2024, ad impressions delivered increased by 11%, as compared with a 28% increase in 2023, year-over-year. Ad impressions delivered during 2024 grew in all regions, especially in Asia-Pacific and Rest of World, which was mostly driven by increases in users and their engagement on our products. In 2024, the average price per ad increased by 10%, as compared with a decrease of 9% in 2023, year-over-year. The increase in average price per ad in 2024 was driven by an increase in advertising demand, which we believe is mainly due to ongoing improvements to our ad performance from our ad targeting and measurement tools. This increase was partially offset by a higher number of ad impressions delivered, especially in geographies and in products, such as Reels, that monetize at lower rates. Other factors are discussed in the section entitled \"—Executive Overview of Full Year 2024 Results.\" In addition, the online commerce vertical was the largest contributor to the increase in advertising revenue in 2024 compared to 2023. We anticipate that ",
+        "score": 0.023376623376623377,
+        "disclosed_at": "2025-01-30",
+        "source_path": "data/raw/sec_meta_2024.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "bde6b91bdeacbca4f835",
+    "group": "improved",
+    "case_id": "155b372474f2c2b4ca76",
+    "question": "Using AMZN's FY2022 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The North America operating loss in 2022 versus prior-year operating income was primarily attributed to increased fulfillment and shipping costs, increased technology and content costs, and growth in certain operating expenses, partially offset by increased unit sales and advertising sales.",
+        "chunk_id": "passage:e797312cddc9eb5f7eac5a6e",
+        "quote": "The North America operating loss in 2022, as compared to the operating income in the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased unit sales, including sales by third-party sellers, and advertising sales."
+      },
+      {
+        "statement": "The increase in AWS operating income in absolute dollars was primarily due to increased sales and cost structure productivity, including a reduction in depreciation and amortization expense from the change in estimated useful lives of servers and networking equipment, partially offset by increased payroll and related expenses and spending on technology infrastructure.",
+        "chunk_id": "passage:c484c9fcdaa2ac8e2786f154",
+        "quote": "The increase in AWS operating income in absolute dollars in 2022, compared to the prior year, is primarily due to increased sales and cost structure productivity, including a reduction in depreciation and amortization expense from our change in the estimated useful lives of our servers and networking equipment, partially offset by increased payroll and related expenses and spending on technology infrastructure, all of which were primarily driven by additional investments to support AWS business growth."
+      },
+      {
+        "statement": "The increase in International operating loss in absolute dollars was primarily due to increased fulfillment and shipping costs, increased technology and content costs, and growth in certain operating expenses, partially offset by increased advertising sales and increased unit sales.",
+        "chunk_id": "passage:ee1702a35a25b89cd05878a5",
+        "quote": "The increase in International operating loss in absolute dollars in 2022, compared to the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased advertising sales and increased unit sales, including sales by third-party sellers."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c484c9fcdaa2ac8e2786f154",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=555|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe increase in AWS operating income in absolute dollars in 2022, compared to the prior year, is primarily due to increased sales and cost structure productivity, including a reduction in depreciation and amortization expense from our change in the estimated useful lives of our servers and networking equipment, partially offset by increased payroll and related expenses and spending on technology infrastructure, all of which were primarily driven by additional investments to support AWS business growth. Changes in foreign currency exchange rates positively impacted operating income by $1.4 billion in 2022.",
+        "score": 0.020277777777777777,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      },
+      {
+        "id": "passage:e797312cddc9eb5f7eac5a6e",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=553|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe North America operating loss in 2022, as compared to the operating income in the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased unit sales, including sales by third-party sellers, and advertising sales. Changes in foreign currency exchange rates positively impacted operating loss by $274 million in 2022.",
+        "score": 0.032018442622950824,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      },
+      {
+        "id": "passage:ee1702a35a25b89cd05878a5",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=554|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe increase in International operating loss in absolute dollars in 2022, compared to the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased advertising sales and increased unit sales, including sales by third-party sellers. Changes in foreign currency exchange rates negatively impacted operating loss by $857 million in 2022.",
+        "score": 0.03252247488101534,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "ff5faaa88410f7bce3c8",
+    "group": "baseline",
+    "case_id": "155b372474f2c2b4ca76",
+    "question": "Using AMZN's FY2022 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [],
+    "sources": [],
+    "execution_status": "completed"
+  },
+  {
+    "id": "0bb42f52611fcadf09ce",
+    "group": "baseline",
+    "case_id": "02ed5e8dfc4654490797",
+    "question": "Using META's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report states that its business is subject to risks that may prevent it from achieving business objectives or may adversely affect its business, financial condition, results of operations, cash flows, and prospects.",
+        "chunk_id": "passage:3073a05d1cac4ded58c964f6",
+        "quote": "Our business is subject to a number of risks, including risks that may prevent us from achieving our business objectives or may adversely affect our business, financial condition, results of operations, cash flows, and prospects."
+      },
+      {
+        "statement": "The report discloses that if any of the described risks occurs, the business, financial condition, results of operations, and future prospects could be materially and adversely affected, and the trading price of Class A common stock could decline.",
+        "chunk_id": "passage:5c8af0fea922a655ee1f7924",
+        "quote": "If any of the following risks actually occurs, our business, financial condition, results of operations, and future prospects could be materially and adversely affected. In that event, the trading price of our Class A common stock could decline, and you could lose part or all of your investment."
+      },
+      {
+        "statement": "The report notes that additional risks and uncertainties it is unaware of, or currently believes are not material, may also become important factors that adversely affect its business.",
+        "chunk_id": "passage:5c8af0fea922a655ee1f7924",
+        "quote": "Additional risks and uncertainties that we are unaware of, or that we currently believe are not material, may also become important factors that adversely affect our business."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3073a05d1cac4ded58c964f6",
+        "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "company": "META",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=434|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2023 item-1a\nOur business is subject to a number of risks, including risks that may prevent us from achieving our business objectives or may adversely affect our business, financial condition, results of operations, cash flows, and prospects. These risks are discussed more fully below and include, but are not limited to, risks related to:",
+        "score": 0.025488400488400488,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_meta_2023.html"
+      },
+      {
+        "id": "passage:5c8af0fea922a655ee1f7924",
+        "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "company": "META",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=430|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2023 item-1a\nCertain factors may have a material adverse effect on our business, financial condition, and results of operations. You should consider carefully the risks and uncertainties described below, in addition to other information contained in this Annual Report on Form 10-K, including our consolidated financial statements and related notes. The risks and uncertainties described below are not the only ones we face. Additional risks and uncertainties that we are unaware of, or that we currently believe are not material, may also become important factors that adversely affect our business. If any of the following risks actually occurs, our business, financial condition, results of operations, and future prospects could be materially and adversely affected. In that event, the trading price of our Class A common stock could decline, and you could lose part or all of your investment.",
+        "score": 0.02454080096356519,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_meta_2023.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "40c81c7489f4e56cf425",
+    "group": "improved",
+    "case_id": "02ed5e8dfc4654490797",
+    "question": "Using META's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "META discloses inventory risks for its consumer hardware products tied to factors such as rapid product cycle and pricing changes, unsafe or defective merchandise, supply chain disruptions, and changes in consumer demand and spending patterns.",
+        "chunk_id": "passage:6717849d772dbcebbc7875b0",
+        "quote": "We are exposed to inventory risks with respect to our consumer hardware products as a result of rapid changes in product cycles and pricing, unsafe or defective merchandise, supply chain disruptions, changes in consumer demand and consumer spending patterns, changes in consumer tastes with respect to our consumer hardware products, and other factors."
+      },
+      {
+        "statement": "META states that failure to expand internationally and manage global operations complexity could adversely affect its financial results.",
+        "chunk_id": "passage:3e2b0190078271eb011bbcec",
+        "quote": "If we are unable to expand internationally and manage the complexity of our global operations successfully, our financial results could be adversely affected."
+      },
+      {
+        "statement": "META discloses exposure to public health crises and catastrophic events, noting the COVID-19 pandemic previously significantly impacted its business and results of operations and led to volatility in demand for and pricing of its advertising services.",
+        "chunk_id": "passage:02928894d536bbd8d535921e",
+        "quote": "For example, the COVID-19 pandemic previously significantly impacted our business and results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:02928894d536bbd8d535921e",
+        "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "company": "META",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=873|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2023 item-1a\nWe are subject to the risk of public health crises such as pandemics, earthquakes, adverse weather conditions, other natural disasters, terrorism, geopolitical conflict, other physical security threats, power loss, cyber-attacks, and other catastrophic events and crises. For example, the COVID-19 pandemic previously significantly impacted our business and results of operations. In particular, the pandemic resulted in authorities implementing numerous preventative measures from time to time to contain or mitigate the outbreak of the virus, such as travel bans and restrictions, limitations on business activity, quarantines, and shelter-in-place orders, which caused business slowdowns or shutdowns in certain affected countries and regions. These developments led to volatility in the demand for and pricing of our advertising services at various points throughout the pandemic, and we may experience similar effects in the future as a result of the pandemic or other catastrophic events. Such events also expose our business, operations, and workforce to a variety of other risks, including:",
+        "score": 0.026200135226504394,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_meta_2023.html"
+      },
+      {
+        "id": "passage:3e2b0190078271eb011bbcec",
+        "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "company": "META",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1009|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2023 item-1a\nIf we are unable to expand internationally and manage the complexity of our global operations successfully, our financial results could be adversely affected. We also may be required to or elect to cease or modify our operations or the offering of our products and services in certain regions, including as a result of the risks described above, which could adversely affect our business, user growth and engagement, and financial results.",
+        "score": 0.02786377708978328,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_meta_2023.html"
+      },
+      {
+        "id": "passage:6717849d772dbcebbc7875b0",
+        "source_sha256": "45e4e9ff58090f25aed247f54668391f861b5a1be3420e860d9398776325b478",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "company": "META",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1028|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2023 item-1a\nWe are exposed to inventory risks with respect to our consumer hardware products as a result of rapid changes in product cycles and pricing, unsafe or defective merchandise, supply chain disruptions, changes in consumer demand and consumer spending patterns, changes in consumer tastes with respect to our consumer hardware products, and other factors. The demand for our products can also change significantly between the time inventory or components are ordered and the date of sale. While we endeavor to accurately predict these trends and avoid overstocking or understocking consumer hardware products we may sell, from time to time we have experienced difficulties in accurately predicting and meeting the consumer demand for our products. In addition, when we begin selling or manufacturing a new consumer hardware product or enter new international regions, it may be difficult to establish vendor relationships, determine appropriate product or component selection, and accurately forecast demand. The acquisition of certain types of inventory or components may require significant lead-time and prepayment and they may not be returnable. Any one of the foregoing factors may adversely affect",
+        "score": 0.028283227848101264,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_meta_2023.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "08651e373ef9abacdea0",
+    "group": "improved",
+    "case_id": "9aca44bb9e6cd89f4e80",
+    "question": "Using MSFT's FY2024 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that intense competition across all markets may adversely affect its results of operations.",
+        "chunk_id": "passage:a48bbe5b6321011568fea307",
+        "quote": "We face intense competition across all markets for our products and services, which may adversely affect our results of operations."
+      },
+      {
+        "statement": "Competition law enforcement actions and court decisions, along with new market regulations, may result in fines or hinder MSFT's ability to provide software benefits, reducing product attractiveness and revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "Disruptions in developed or emerging markets could negatively impact demand, impair operations in certain regions, or increase operating costs, and significant foreign exchange fluctuations may adversely affect results of operations.",
+        "chunk_id": "passage:de98fe0a06783017966f3ef4",
+        "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a48bbe5b6321011568fea307",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=997|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\nWe face intense competition across all markets for our products and services, which may adversely affect our results of operations.",
+        "score": 0.03252247488101534,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "score": 0.032266458495966696,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      },
+      {
+        "id": "passage:de98fe0a06783017966f3ef4",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1199|part=1|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+        "score": 0.027783137179239824,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "495709e34a46a034527b",
+    "group": "baseline",
+    "case_id": "9aca44bb9e6cd89f4e80",
+    "question": "Using MSFT's FY2024 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report states that if products and services do not work as intended, are used in unintended ways, violate law, or harm individuals or businesses, the company may face legal claims or enforcement actions, which could increase costs, damage reputation, or adversely affect results of operations.",
+        "chunk_id": "passage:11d69aaa6f1c500390c8031d",
+        "quote": "oducts and services do not work as intended, are utilized in methods not intended, violate the law, or harm individuals or businesses, we may be subject to legal claims or enforcement actions. These risks, if realized, may increase our costs, damage our reputation, or adversely affect our results of operations."
+      },
+      {
+        "statement": "The report discloses that the global nature of the business creates operational, economic, and geopolitical risks, and that global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect results of operations.",
+        "chunk_id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "quote": "The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations."
+      },
+      {
+        "statement": "The report states that abrupt political change, terrorist activity, and armed conflict such as the ongoing conflict in Ukraine pose economic and other risks that may negatively impact the ability to sell to and collect from customers, increase operating costs, or otherwise disrupt operations.",
+        "chunk_id": "passage:74c606ae9ae63dd59ca7f9ec",
+        "quote": "Abrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our operating costs, or otherwise disrupt our operations in markets both directly and indirectly impacted by such events."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:11d69aaa6f1c500390c8031d",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1104|part=1|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\noducts and services do not work as intended, are utilized in methods not intended, violate the law, or harm individuals or businesses, we may be subject to legal claims or enforcement actions. These risks, if realized, may increase our costs, damage our reputation, or adversely affect our results of operations.",
+        "score": 0.027031963470319637,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      },
+      {
+        "id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1199|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\nOur global business exposes us to operational and economic risks. Our customers are located throughout the world and a significant part of our revenue comes from international sales. The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations. In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, the environment, and political expression in specific countries may significantly alter the trade and commercial environments. Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe",
+        "score": 0.02266725352112676,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      },
+      {
+        "id": "passage:74c606ae9ae63dd59ca7f9ec",
+        "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+        "company": "MSFT",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=1196|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2024 item-1a\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our operating costs, or otherwise disrupt our operations in markets both directly and indirectly impacted by such events. These conditions also may add uncertainty to the timing and budget for technology investment decisions by our customers and may cause supply chain disruptions for hardware manufacturers. Geopolitical change may result in changing regulatory systems and requirements and market interventions that could impact our operating strategies, access to national, regional, and global markets, hiring, and profitability. Geopolitical instability may lead to sanctions and impact our ability to do business in some markets or with some public-sector customers. Any of these changes may negatively affect our results of operations.",
+        "score": 0.02255017709563164,
+        "disclosed_at": "2024-07-30",
+        "source_path": "data/raw/sec_msft_2024.html"
+      }
+    ],
+    "execution_status": "completed"
+  },
+  {
+    "id": "control-0",
+    "group": "control",
+    "expected_supported": true,
+    "question": "Using MSFT's FY2022 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Revenue increased $30.2 billion or 18% driven by growth across each of our segments.",
+        "chunk_id": "passage:244d63c7101fce0e79dfbd10",
+        "quote": "Revenue increased $30.2 billion or 18% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:244d63c7101fce0e79dfbd10",
+        "source_sha256": "842ef8d6f823dd15a77449d3c3b447950e288dd75453302458d8e9d0e82c87eb",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/msft-10k_20220630.htm",
+        "company": "MSFT",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=2207|part=0|strategy=structured",
+        "kind": "p",
+        "text": "MSFT FY2022 item-7\nRevenue increased $30.2 billion or 18% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure and other cloud services. Productivity and Business Processes revenue increased driven by Office 365 Commercial and LinkedIn. More Personal Computing revenue increased driven by Search and news advertising and Windows.",
+        "score": 0.02175894281157439,
+        "disclosed_at": "2022-07-28",
+        "source_path": "data/raw/sec_msft_2022.html"
+      }
+    ]
+  },
+  {
+    "id": "control-1",
+    "group": "control",
+    "expected_supported": false,
+    "question": "Using AAPL's FY2023 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Management guarantees that revenue will double next fiscal year without any business risks.",
+        "chunk_id": "passage:a1a0b8d54e91c060ea6e411e",
+        "quote": "Segment operating income | $ | 150,888 |  |  | $ | 152,895 |  |  | $ | 137,006 | \nResearch and development expense | ( 29,915 ) |  |  | ( 26,251 ) |  |  | ( 21,914 ) | \nOther corporate expenses, net (1) | ( 6,672 ) |  |  | ( 7,207 ) |  |  | ( 6,143 ) | \nTotal operating income | $ | 114,301 |  |  | $ | 119,437 |  |  | $ | 108,949 |"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7b5ef33d9432df758640ed64",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=589|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AAPL FY2023 item-7\nServices gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix.",
+        "score": 0.032266458495966696,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      },
+      {
+        "id": "passage:a1a0b8d54e91c060ea6e411e",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-8",
+        "locator": "dom-block=1075|part=0|strategy=structured",
+        "kind": "table",
+        "text": "AAPL FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | 2023 |  | 2022 |  | 2021\nSegment operating income | $ | 150,888 |  |  | $ | 152,895 |  |  | $ | 137,006 | \nResearch and development expense | ( 29,915 ) |  |  | ( 26,251 ) |  |  | ( 21,914 ) | \nOther corporate expenses, net (1) | ( 6,672 ) |  |  | ( 7,207 ) |  |  | ( 6,143 ) | \nTotal operating income | $ | 114,301 |  |  | $ | 119,437 |  |  | $ | 108,949 | ",
+        "score": 0.03076923076923077,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      },
+      {
+        "id": "passage:e87c5648257919c4c8a369db",
+        "source_sha256": "deff248143bb5dca78d07aaf43b4453ffb3c5b8b3560cd9c439d887ae7741075",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "company": "AAPL",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AAPL FY2023 item-7\nProducts gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "score": 0.03057889822595705,
+        "disclosed_at": "2023-11-03",
+        "source_path": "data/raw/sec_aapl_2023.html"
+      }
+    ]
+  },
+  {
+    "id": "control-2",
+    "group": "control",
+    "expected_supported": true,
+    "question": "Using GOOGL's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+        "chunk_id": "passage:dae1d90acc4e2412b6218951",
+        "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:a19a643ac63ade1721d62a62",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=357|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nInnovations in our products and services could also result in changes to user behavior and affect our revenue trends. These endeavors involve significant risks and uncertainties, including diversion of resources and management attention from current operations, different monetization models, and the use of alternative investment, governance, or compensation structures that may fail to adequately align incentives across the company or otherwise accomplish their objectives.",
+        "score": 0.02803921568627451,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:ceeaed696bcc15540ec99b3a",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=372|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nfor many aspects of our business, including higher level of investment in technical infrastructure. Further, certain of our costs and expenses are generally less variable in nature and may not correlate to changes in revenue. We may also not be able to continue to execute our efficiency efforts successfully or in a timely manner. Due to these factors and the evolving nature of our business, our historical revenue growth rate and historical operating margin may not be indicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and Revenues and Monetization Metrics in Part II, Item 7 of this Annual Report on Form 10-K.",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:dae1d90acc4e2412b6218951",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-1a",
+        "locator": "dom-block=363|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-1a\nOur revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+        "score": 0.02548701298701299,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      }
+    ]
+  },
+  {
+    "id": "control-3",
+    "group": "control",
+    "expected_supported": false,
+    "question": "Using GOOGL's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report proves that all revenue changes were caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:8dc7827f3ae715d31736c232",
+        "quote": "Google Network revenues decreased $953 million from 2023 to 2024, primarily driven by a decrease in Google Ad Manager and AdMob revenues. Additionally, Google Network revenues were adversely affected by changes in foreign currency exchange rates."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3cf4b58827431786f1689fe5",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=871|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nYouTube ads revenues increased $4.6 billion from 2023 to 2024. The growth was driven by our brand advertising products followed by our direct response advertising products, both of which benefited from increased spending by our advertisers.",
+        "score": 0.019625,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:8dc7827f3ae715d31736c232",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=873|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nGoogle Network revenues decreased $953 million from 2023 to 2024, primarily driven by a decrease in Google Ad Manager and AdMob revenues. Additionally, Google Network revenues were adversely affected by changes in foreign currency exchange rates.",
+        "score": 0.021116138763197588,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      },
+      {
+        "id": "passage:e2756f29838155295a20e52e",
+        "source_sha256": "12b267ba333bb4d096e97a9c534eac004893c85610e98e0849fd38ba3f27ff7e",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=892|part=0|strategy=structured",
+        "kind": "div",
+        "text": "GOOGL FY2024 item-7\nGoogle Cloud revenues increased $10.1 billion from 2023 to 2024 primarily driven by growth in Google Cloud Platform largely from infrastructure services.",
+        "score": 0.02102307225258045,
+        "disclosed_at": "2025-02-05",
+        "source_path": "data/raw/sec_googl_2024.html"
+      }
+    ]
+  },
+  {
+    "id": "control-4",
+    "group": "control",
+    "expected_supported": true,
+    "question": "Using AMZN's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price.",
+        "chunk_id": "passage:6a6301b8cfbe6168467d5a21",
+        "quote": "The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:6a6301b8cfbe6168467d5a21",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=194|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price. These risk factors do not identify all risks that we face; our operations could also be affected by factors, events, or uncertainties that are not presently known to us or that we currently do not consider to present significant risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of Financial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed below. Many of the risks discussed below also impact our customers, including third-pa",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:9326eb5b9c0b9193cc07ec6b",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=236|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nIn addition, because China-based sellers account for significant portions of our third-party seller services and advertising revenues, and China-based suppliers provide significant portions of our components and finished goods, regulatory and trade restrictions, data protection and cybersecurity laws, economic factors, geopolitical events, security issues, or other factors negatively impacting China-based sellers and suppliers could adversely affect our operating results.",
+        "score": 0.02442002442002442,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      }
+    ]
+  },
+  {
+    "id": "control-5",
+    "group": "control",
+    "expected_supported": false,
+    "question": "Using AMZN's FY2023 annual report, explain specific operating risks and their possible effects. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Management guarantees that revenue will double next fiscal year without any business risks.",
+        "chunk_id": "passage:6a6301b8cfbe6168467d5a21",
+        "quote": "The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:512d187e99d8127e407f9586",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=1319|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nThe outcomes of our legal proceedings and other contingencies are inherently unpredictable, subject to significant uncertainties, and could be material to our operating results and cash flows for a particular period. We evaluate, on a regular basis, developments in our legal proceedings and other contingencies that could affect the amount of liability, including amounts in excess of any previous accruals and reasonably possible losses disclosed, and make adjustments and changes to our accruals and disclosures as appropriate. For the matters we disclose that do not include an estimate of the amount of loss or range of losses, such an estimate is not possible or is immaterial, and we may be unable to estimate the possible loss or range of losses that could potentially result from the application of non-monetary remedies. Until the final resolution of such matters, if any of our estimates and assumptions change or prove to have been incorrect, we may experience losses in excess of the amounts recorded, which could have a material effect on our business, consolidated financial position, results of operations, or cash flows.",
+        "score": 0.026553280111072546,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:6a6301b8cfbe6168467d5a21",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=194|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately predict, recognize, or control, have a material adverse effect on our business, growth, reputation, prospects, financial condition, operating results (including components of our financial results), cash flows, liquidity, and stock price. These risk factors do not identify all risks that we face; our operations could also be affected by factors, events, or uncertainties that are not presently known to us or that we currently do not consider to present significant risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of Financial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed below. Many of the risks discussed below also impact our customers, including third-pa",
+        "score": 0.03278688524590164,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      },
+      {
+        "id": "passage:6fae8d21f0bb1c32e916388e",
+        "source_sha256": "13268d65b8cb871eb4683d5fa7a6b96b2605b40eabec5ebba15d28b339f3bfca",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm",
+        "company": "AMZN",
+        "report_year": 2023,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=304|part=1|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2023 report\ne no assurance that future incidents will not have material adverse effects on our operations or financial results. Although we have developed systems and processes that are designed to protect customer data and prevent such incidents, including systems and processes designed to reduce the impact of a security breach at a third-party vendor or customer, such measures cannot provide absolute security and may fail to operate as intended or be circumvented.",
+        "score": 0.02603648424543947,
+        "disclosed_at": "2024-02-02",
+        "source_path": "data/raw/sec_amzn_2023.html"
+      }
+    ]
+  },
+  {
+    "id": "control-6",
+    "group": "control",
+    "expected_supported": true,
+    "question": "Using META's FY2024 annual report, explain revenue changes and their disclosed business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "Advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad.",
+        "chunk_id": "passage:6af40a068be8999ab17e5449",
+        "quote": "Advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:1915528e929e452c4b9102e0",
+        "source_sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "company": "META",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=1669|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2024 item-7\nFoA other revenue in 2024 increased $664 million, or 63%, compared to 2023. The increase was primarily driven by WhatsApp Business Platform revenue.",
+        "score": 0.023912239615432023,
+        "disclosed_at": "2025-01-30",
+        "source_path": "data/raw/sec_meta_2024.html"
+      },
+      {
+        "id": "passage:6af40a068be8999ab17e5449",
+        "source_sha256": "6606cf98f6d5f32d521c5f8b671861bd71f6f4885cb3b60d39b5bb34ec475753",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "company": "META",
+        "report_year": 2024,
+        "report_type": "10-K",
+        "section": "item-7",
+        "locator": "dom-block=1665|part=0|strategy=structured",
+        "kind": "div",
+        "text": "META FY2024 item-7\nAdvertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad. In 2024, ad impressions delivered increased by 11%, as compared with a 28% increase in 2023, year-over-year. Ad impressions delivered during 2024 grew in all regions, especially in Asia-Pacific and Rest of World, which was mostly driven by increases in users and their engagement on our products. In 2024, the average price per ad increased by 10%, as compared with a decrease of 9% in 2023, year-over-year. The increase in average price per ad in 2024 was driven by an increase in advertising demand, which we believe is mainly due to ongoing improvements to our ad performance from our ad targeting and measurement tools. This increase was partially offset by a higher number of ad impressions delivered, especially in geographies and in products, such as Reels, that monetize at lower rates. Other factors are discussed in the section entitled \"—Executive Overview of Full Year 2024 Results.\" In addition, the online commerce vertical was the largest contributor to the increase in advertising revenue in 2024 compared to 2023. We anticipate that ",
+        "score": 0.023376623376623377,
+        "disclosed_at": "2025-01-30",
+        "source_path": "data/raw/sec_meta_2024.html"
+      }
+    ]
+  },
+  {
+    "id": "control-7",
+    "group": "control",
+    "expected_supported": false,
+    "question": "Using AMZN's FY2022 annual report, explain operating income changes and their disclosed cost or business drivers. Give source passages for each main statement; do not invent causes or forecasts.",
+    "claims": [
+      {
+        "statement": "The report proves that all revenue changes were caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:e797312cddc9eb5f7eac5a6e",
+        "quote": "The North America operating loss in 2022, as compared to the operating income in the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased unit sales, including sales by third-party sellers, and advertising sales."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c484c9fcdaa2ac8e2786f154",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=555|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe increase in AWS operating income in absolute dollars in 2022, compared to the prior year, is primarily due to increased sales and cost structure productivity, including a reduction in depreciation and amortization expense from our change in the estimated useful lives of our servers and networking equipment, partially offset by increased payroll and related expenses and spending on technology infrastructure, all of which were primarily driven by additional investments to support AWS business growth. Changes in foreign currency exchange rates positively impacted operating income by $1.4 billion in 2022.",
+        "score": 0.020277777777777777,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      },
+      {
+        "id": "passage:e797312cddc9eb5f7eac5a6e",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=553|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe North America operating loss in 2022, as compared to the operating income in the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased unit sales, including sales by third-party sellers, and advertising sales. Changes in foreign currency exchange rates positively impacted operating loss by $274 million in 2022.",
+        "score": 0.032018442622950824,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      },
+      {
+        "id": "passage:ee1702a35a25b89cd05878a5",
+        "source_sha256": "c914c797f820a42cdec0ad042b8f3c914051a765cf455e10e3c4ac0fe5b9c19a",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm",
+        "company": "AMZN",
+        "report_year": 2022,
+        "report_type": "10-K",
+        "section": "report",
+        "locator": "dom-block=554|part=0|strategy=structured",
+        "kind": "div",
+        "text": "AMZN FY2022 report\nThe increase in International operating loss in absolute dollars in 2022, compared to the prior year, is primarily due to increased fulfillment and shipping costs, due in part to increases in investments in our fulfillment network, transportation costs, and wage rates and incentives, increased technology and content costs, and growth in certain operating expenses, partially offset by increased advertising sales and increased unit sales, including sales by third-party sellers. Changes in foreign currency exchange rates negatively impacted operating loss by $857 million in 2022.",
+        "score": 0.03252247488101534,
+        "disclosed_at": "2023-02-03",
+        "source_path": "data/raw/sec_amzn_2022.html"
+      }
+    ]
+  }
+]

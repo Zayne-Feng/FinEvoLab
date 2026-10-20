@@ -1,0 +1,674 @@
+{
+  "65dc9de0a4eca342771e": {
+    "id": "65dc9de0a4eca342771e",
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 394,
+      "total_tokens": 412,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "1fbc4f0712b2406619f7": {
+    "id": "1fbc4f0712b2406619f7",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The source text states verbatim that revenue increased $30.2 billion or 18% driven by growth across each segment."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The source states Intelligent Cloud revenue increased driven by Azure and other cloud services."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The source states Productivity and Business Processes revenue increased driven by Office 365 Commercial and LinkedIn."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 880,
+      "total_tokens": 1005,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 752
+    }
+  },
+  "b9595d4366fd2357932f": {
+    "id": "b9595d4366fd2357932f",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table in passage:a1a0b8d54e91c060ea6e411e shows Total operating income of $114,301 (2023) vs $119,437 (2022) and Segment operating income of $150,888 vs $152,895, matching the claim's figures and direction."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from passage:e87c5648257919c4c8a369db directly states Products gross margin decreased due to foreign currency weakness and lower Products volume, partially offset by cost savings and different Products mix."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote from passage:7b5ef33d9432df758640ed64 directly states Services gross margin percentage decreased due to higher Services costs and foreign currency weakness, partially offset by a different Services mix."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 220,
+      "prompt_tokens": 1768,
+      "total_tokens": 1988,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1640
+    }
+  },
+  "9f8977d4923691e66a58": {
+    "id": "9f8977d4923691e66a58",
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 397,
+      "total_tokens": 415,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 141
+    }
+  },
+  "fd0ce348727c3e0dbd64": {
+    "id": "fd0ce348727c3e0dbd64",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from passage:dae1d90acc4e2412b6218951 matches the statement's list of disclosed factors verbatim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Passage:a19a643ac63ade1721d62a62 states innovations could change user behavior and affect revenue trends, and lists different monetization models among the risks."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Passage:ceeaed696bcc15540ec99b3a contains the quoted caution and the preceding context cites higher investment in technical infrastructure and less variable costs."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 1687,
+      "total_tokens": 1854,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1431
+    }
+  },
+  "9bc65c970fba544aeb53": {
+    "id": "9bc65c970fba544aeb53",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The source passage states Google Network revenues decreased $953 million from 2023 to 2024, driven by a decrease in Google Ad Manager and AdMob revenues, and adversely affected by foreign currency exchange rate changes, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The source passage states Google Cloud revenues increased $10.1 billion from 2023 to 2024, primarily driven by growth in Google Cloud Platform largely from infrastructure services, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The source passage states YouTube ads revenues increased $4.6 billion from 2023 to 2024, driven by brand advertising products followed by direct response advertising products, both benefiting from increased advertiser spending, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 200,
+      "prompt_tokens": 1493,
+      "total_tokens": 1693,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1237
+    }
+  },
+  "e13e3e9f939275917674": {
+    "id": "e13e3e9f939275917674",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly lists material adverse effects on business, growth, reputation, prospects, financial condition, operating results, cash flows, liquidity, and stock price, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly states global economic and geopolitical conditions and additional or unforeseen circumstances may give rise to or amplify many of the risks discussed."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states China-based sellers account for significant portions of third-party seller services and advertising revenues and China-based suppliers provide significant portions of components and finished goods, and that factors negatively impacting them could adversely affect operating results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 171,
+      "prompt_tokens": 1495,
+      "total_tokens": 1666,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1239
+    }
+  },
+  "e455417089db3e57ed96": {
+    "id": "e455417089db3e57ed96",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly matches the statement, listing business, growth, reputation, prospects, financial condition, operating results, cash flows, liquidity, and stock price as potentially affected."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote confirms outcomes are inherently unpredictable and could be material to operating results and cash flows; the source text also states losses in excess of recorded amounts could materially affect business, financial position, results of operations, or cash flows."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states systems are designed to protect customer data and prevent incidents but cannot provide absolute security and may fail to operate as intended or be circumvented."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 176,
+      "prompt_tokens": 1945,
+      "total_tokens": 2121,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1817
+    }
+  },
+  "5780488c8f8f9e7d2d24": {
+    "id": "5780488c8f8f9e7d2d24",
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 394,
+      "total_tokens": 412,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "56846dd15fef5958a1e1": {
+    "id": "56846dd15fef5958a1e1",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "Directly matches the source passage stating advertising revenue increased $28.68 billion, or 22%, due to increases in ad impressions delivered and average price per ad."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Source states the average price per ad increase was driven by increased advertising demand, believed mainly due to ongoing improvements to ad performance from ad targeting and measurement tools."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Source passage states FoA other revenue increased $664 million, or 63%, primarily driven by WhatsApp Business Platform revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 1411,
+      "total_tokens": 1566,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1027
+    }
+  },
+  "bde6b91bdeacbca4f835": {
+    "id": "bde6b91bdeacbca4f835",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from passage:e797312cddc9eb5f7eac5a6e directly states the North America operating loss drivers: increased fulfillment and shipping costs, increased technology and content costs, growth in certain operating expenses, partially offset by increased unit sales and advertising sales."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote from passage:c484c9fcdaa2ac8e2786f154 directly states the AWS operating income increase was primarily due to increased sales and cost structure productivity including reduced depreciation/amortization from the useful-life change, partially offset by increased payroll and technology infrastructure spending."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote from passage:ee1702a35a25b89cd05878a5 directly states the International operating loss increase drivers: increased fulfillment and shipping costs, increased technology and content costs, growth in certain operating expenses, partially offset by increased advertising sales and unit sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 239,
+      "prompt_tokens": 1845,
+      "total_tokens": 2084,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1717
+    }
+  },
+  "ff5faaa88410f7bce3c8": {
+    "id": "ff5faaa88410f7bce3c8",
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 397,
+      "total_tokens": 415,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 141
+    }
+  },
+  "0bb42f52611fcadf09ce": {
+    "id": "0bb42f52611fcadf09ce",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote matches the source passage verbatim, stating the business is subject to risks that may prevent achieving objectives or adversely affect business, financial condition, results of operations, cash flows, and prospects."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The source passage states that if any of the following risks occurs, business, financial condition, results of operations, and future prospects could be materially and adversely affected, and the trading price of Class A common stock could decline."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The source passage explicitly states that additional risks and uncertainties the company is unaware of, or currently believes are not material, may also become important factors that adversely affect its business."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 184,
+      "prompt_tokens": 1387,
+      "total_tokens": 1571,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1259
+    }
+  },
+  "40c81c7489f4e56cf425": {
+    "id": "40c81c7489f4e56cf425",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote from passage:6717849d772dbcebbc7875b0 directly lists these inventory risk factors (rapid product cycles/pricing, unsafe or defective merchandise, supply chain disruptions, changes in consumer demand and spending patterns), matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Passage:3e2b0190078271eb011bbcec states verbatim that failure to expand internationally and manage global operations complexity could adversely affect financial results."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Passage:02928894d536bbd8d535921e confirms exposure to public health crises/catastrophic events, that COVID-19 previously significantly impacted business and results, and that these led to volatility in demand for and pricing of advertising services."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 207,
+      "prompt_tokens": 1806,
+      "total_tokens": 2013,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1550
+    }
+  },
+  "08651e373ef9abacdea0": {
+    "id": "08651e373ef9abacdea0",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote matches the source passage verbatim and directly states that intense competition may adversely affect results of operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote matches the source passage verbatim, covering fines, hindering software benefits, reduced attractiveness, and revenue impact."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote matches the source passage verbatim, covering demand impact, impaired regional operations, increased costs, and foreign exchange effects."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 137,
+      "prompt_tokens": 1620,
+      "total_tokens": 1757,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1364
+    }
+  },
+  "495709e34a46a034527b": {
+    "id": "495709e34a46a034527b",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that if products/services do not work as intended, are used in unintended ways, violate law, or harm individuals/businesses, the company may face legal claims or enforcement actions that could increase costs, damage reputation, or adversely affect results of operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly states the global nature of the business creates operational, economic, and geopolitical risks, and that global/regional/local economic developments, monetary policy, inflation, recession, and political/military disputes may adversely affect results of operations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states abrupt political change, terrorist activity, and armed conflict such as the ongoing conflict in Ukraine pose economic and other risks that may negatively impact ability to sell to and collect from customers, increase operating costs, or otherwise disrupt operations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 215,
+      "prompt_tokens": 1900,
+      "total_tokens": 2115,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1772
+    }
+  },
+  "control-0": {
+    "id": "control-0",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The statement is a verbatim quote from the supplied MSFT FY2022 10-K item-7 passage, which explicitly states revenue increased $30.2 billion or 18% driven by growth across each of our segments."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 749,
+      "total_tokens": 830,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 365
+    }
+  },
+  "control-1": {
+    "id": "control-1",
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted table only shows segment operating income, R&D, other corporate expenses, and total operating income figures; it contains no management guarantee of revenue doubling or any statement about business risks. The claim invents a forecast and guarantee not present in the source."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 86,
+      "prompt_tokens": 1522,
+      "total_tokens": 1608,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1138
+    }
+  },
+  "control-2": {
+    "id": "control-2",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage matches the cited source passage:dae1d90acc4e2412b6218951 verbatim, and that source is a GOOGL FY2024 10-K item-1a passage listing factors that could cause revenue growth rate to decline."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 90,
+      "prompt_tokens": 1550,
+      "total_tokens": 1640,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1294
+    }
+  },
+  "control-3": {
+    "id": "control-3",
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage attributes the Google Network revenue decrease to lower Ad Manager/AdMob revenues and FX effects, not to the CEO's personal investments. No source mentions the chief executive's personal investments as a cause, and the claim's 'proves... exclusively' assertion is unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 93,
+      "prompt_tokens": 1260,
+      "total_tokens": 1353,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1260
+    }
+  },
+  "control-4": {
+    "id": "control-4",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote matches the source passage verbatim and is a general risk-factor statement from AMZN's FY2023 10-K."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1291,
+      "total_tokens": 1352,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1035
+    }
+  },
+  "control-5": {
+    "id": "control-5",
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote is a general risk-factor caveat about potential material adverse effects; it does not state any guarantee that revenue will double, nor does it claim the absence of business risks. The claim's guarantee and no-risk assertion are unsupported and contradicted by the source's cautionary language."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 93,
+      "prompt_tokens": 1662,
+      "total_tokens": 1755,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1406
+    }
+  },
+  "control-6": {
+    "id": "control-6",
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The cited passage states verbatim that advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 1231,
+      "total_tokens": 1312,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1103
+    }
+  },
+  "control-7": {
+    "id": "control-7",
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage attributes the North America operating loss to increased fulfillment and shipping costs, technology and content costs, and growth in certain operating expenses, partially offset by unit sales and advertising sales. It says nothing about the chief executive's personal investments, and no original source supports an exclusive cause of all revenue changes; the claim is unsupported and contradicted by the disclosed drivers."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 109,
+      "prompt_tokens": 1640,
+      "total_tokens": 1749,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1640
+    }
+  }
+}

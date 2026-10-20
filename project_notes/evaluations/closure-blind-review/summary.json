@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "groups": {
+    "baseline": [
+      {
+        "samples": 8,
+        "claims": 12,
+        "supported_claims": 12,
+        "relevance_mean": 0.875,
+        "interpretation_mean": 0.75
+      },
+      {
+        "samples": 8,
+        "claims": 12,
+        "supported_claims": 12,
+        "relevance_mean": 0.875,
+        "interpretation_mean": 0.75
+      }
+    ],
+    "improved": [
+      {
+        "samples": 8,
+        "claims": 24,
+        "supported_claims": 24,
+        "relevance_mean": 2.0,
+        "interpretation_mean": 2.0
+      },
+      {
+        "samples": 8,
+        "claims": 24,
+        "supported_claims": 24,
+        "relevance_mean": 2.0,
+        "interpretation_mean": 2.0
+      }
+    ],
+    "control": [
+      {
+        "samples": 8,
+        "claims": 8,
+        "supported_claims": 4,
+        "relevance_mean": 1.375,
+        "interpretation_mean": 0.625
+      },
+      {
+        "samples": 8,
+        "claims": 8,
+        "supported_claims": 4,
+        "relevance_mean": 1.25,
+        "interpretation_mean": 0.625
+      }
+    ]
+  },
+  "calls": 48,
+  "control_errors": [
+    0,
+    0
+  ],
+  "rating_disagreements": [
+    "control-7"
+  ],
+  "method": "same_model_isolated_claim_level_blind_review",
+  "human_calibrated": false,
+  "coverage": "prespecified_repeat_zero_only",
+  "adjudication_calls": 1,
+  "adjudication": "source_based_single_call_per_disputed_sample_raw_reviews_retained"
+}
