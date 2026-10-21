@@ -1,0 +1,1199 @@
+{
+  "93e5d12311c3af849afb37c20ae0ece50fb5ed63d1fc8852ff17a021ea260c94": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income 88,136 (2024) vs 72,361 (2023) with 22% change, supporting an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decrease was primarily due to tax benefits from tax law changes including the delay of final foreign tax credit regulations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions via the Ireland operations center."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 165,
+      "prompt_tokens": 1623,
+      "total_tokens": 1788,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 215
+    }
+  },
+  "a8a801792a3783b5c36f2ae187546b57eaf5e2e5f45caab184898c8b3a56a285": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim and states manufacturing and supply chain risks could affect ability to supply products and services."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim, listing business, reputation, financial condition, and operating results as potentially harmed."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim supports the claim about government-initiated restrictions harming relationships, reputation, and increasing costs, negatively affecting business."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 138,
+      "prompt_tokens": 1162,
+      "total_tokens": 1300,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "86386c366eeeab1a9d274eda544c00b65b3f82a4c94c36c921123c26d8ca0709": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage states restrictions on international trade such as tariffs and import/export controls can materially adversely affect operations and supply chain and limit ability to offer/distribute products, and that impact is particularly significant where the Company derives a significant portion of revenues."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly links changes to App Store distribution management and developer communication about alternative purchasing mechanisms to reduced sales volume and lower commission earned on those sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the Company generates a significant portion of net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 1477,
+      "total_tokens": 1635,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 197
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited passage only shows net income figures ($96,995M in FY2023 vs $99,803M in FY2022); it contains no information about the chief executive's personal investments, and no source supports exclusive causation by that factor."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 85,
+      "prompt_tokens": 1726,
+      "total_tokens": 1811,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 190
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is verbatim from the provided FY2023 income statement passage, showing net income of $96,995M (2023), $99,803M (2022), and $94,680M (2021)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 82,
+      "prompt_tokens": 1634,
+      "total_tokens": 1716,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  "2f5b6693c7161008ddbf630d7c872af130528c3319797cd174492c39cf85d71d": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $93,736M in FY2024 versus $96,995M in FY2023, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim attributes the higher 2024 effective tax rate to the $10.2B State Aid charge, higher foreign earnings tax rate, and lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Provision for income taxes rose from $16,741M to $29,749M and effective tax rate rose from 14.7% to 24.1%, supporting the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 2110,
+      "total_tokens": 2287,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 190
+    }
+  },
+  "94ec687f6d966aefe3ef159db9be2deba7e65b4ad82549bd93dd273b42315422": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statements of operations show net income of $93,736M in FY2024 versus $96,995M in FY2023, a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim discloses the higher effective tax rate driven primarily by the $10.2B State Aid charge, higher foreign earnings tax rate, and lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The tax rate table shows effective tax rate of 24.1% in 2024 versus 14.7% in 2023, an increase."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 2100,
+      "total_tokens": 2267,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 180
+    }
+  },
+  "c2bac60930dbe17744622cd7999040230bed5c0399b6efc416010edfb0a3421b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated income statement shows income from operations of 69,380 in 2024 versus 46,751 in 2023, supporting the increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states income from operations rose $22.63 billion or 48% versus 2023, driven by increased advertising revenue partially offset by higher costs and expenses."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim attributes the cost increase mainly to data center/technical infrastructure operational expenses and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 1735,
+      "total_tokens": 1881,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 199
+    }
+  },
+  "6f24bc984f57bd9e19c7624f8a4260bb2c10b84d294764e1f782f2c8c5e32263": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage states trade restrictions can materially adversely affect operations and supply chain, limit ability to offer/distribute products, and impact is particularly significant where the Company derives significant revenues, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states changes regarding alternative purchasing mechanisms could reduce the volume of sales and the commission earned on those sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the Company generates a significant portion of net sales from a single product and a decline in demand could significantly impact quarterly net sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 1475,
+      "total_tokens": 1633,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 195
+    }
+  },
+  "632d249fb7f1d746eec0e1f2be9c85061a7aed50f5f076932e92421b1c6a5fc7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income of 88,136 in 2024 vs 72,361 in 2023 with a 22% change, supporting the increase claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decrease was primarily due to tax benefits from tax law changes including the delay of the final foreign tax credit regulations effective date."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through the Ireland operations center."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 171,
+      "prompt_tokens": 1626,
+      "total_tokens": 1797,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 218
+    }
+  },
+  "79830605f27d56c0b350e5906878f826d1a0b5fab304b9f37a237e3d98b8df9b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $93,736M in FY2024 versus $96,995M in FY2023, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the higher effective tax rate was due primarily to a one-time $10.2B State Aid charge, higher foreign earnings tax rate, and lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The table shows provision for income taxes and effective tax rate for 2024, 2023, and 2022, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 2112,
+      "total_tokens": 2281,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 192
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is a verbatim excerpt from the provided FY2023 income statement passage showing net income of $96,995M (2023), $99,803M (2022), and $94,680M (2021)."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 83,
+      "prompt_tokens": 1634,
+      "total_tokens": 1717,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  "4f5b97bf22dc69bd46163cb7f780b73e40bdab42fedf10588ea803b3dcc13eef": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim lists the same factors for potential revenue growth rate decline, matching the statement."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the evolving foreign policy landscape may adversely affect revenues and lists litigation, regulatory costs, uncertainty, and liabilities."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states changes to advertising policies and data privacy practices, including phasing out third-party cookies, have affected and may affect advertising provided."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 140,
+      "prompt_tokens": 1468,
+      "total_tokens": 1608,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 188
+    }
+  },
+  "39e17d7f70363dbc01f68c92f3c2066288aa7f6ed8ef1736a0acd48df4f56b79": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim states risks could harm business, reputation, financial condition, and operating results; revenue/sales outcomes fall within financial results/operating results as a reasonable paraphrase."
+      },
+      {
+        "index": 1,
+        "supported": false,
+        "reason": "The quote only says supply chain risks could affect ability to supply products and services; it does not link this to ability to generate sales, which is an added unsupported conclusion."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states government-initiated restrictions/blockages could harm key relationships with users, customers, advertisers, content providers and increase costs, negatively affecting business."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 1185,
+      "total_tokens": 1355,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 161
+    }
+  },
+  "0017352a9eb67d6a9bfcce2826a116f468d37104f360ebbf1f1b8b354eff8505": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim states that investment in new business strategies and acquisitions could disrupt ongoing business and materially adversely affect results of operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The source passage states new business strategies or acquisitions may involve significant risks and uncertainties, and that failure of any significant investment could materially adversely affect results of operations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business and results of operations."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 1282,
+      "total_tokens": 1435,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1148
+      },
+      "prompt_cache_hit_tokens": 1148,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "eb07f767842720e112213776e57a319c07be21b286f893b9928f4d8f78ffb502": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows income from operations of 69,380 in 2024 versus 46,751 in 2023, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states income from operations rose $22.63 billion or 48%, driven by higher advertising revenue partially offset by higher costs and expenses."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage directly attributes the cost increase to data center/technical infrastructure operational expenses and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 156,
+      "prompt_tokens": 1731,
+      "total_tokens": 1887,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 195
+    }
+  },
+  "3d7cfe9569cf4a95acdae89a678a502040ac5fba3b7e81de3c78d22f11cb0e8a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statements of operations show net income of $96,995M in 2023 versus $99,803M in 2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states the 2023 effective tax rate was lower than 2022 due primarily to lower foreign earnings rate and U.S. foreign tax credit regulations, partially offset by lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states the 2023 and 2022 effective tax rate was below the statutory federal rate due primarily to lower foreign earnings rate, U.S. federal R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 1940,
+      "total_tokens": 2138,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 148
+    }
+  },
+  "1dfc4cb65b967e2dccd67eaf874de75144cf4d7e892b40ef9dbd2bf364483ffe": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statements of operations shows net income of $96,995M in 2023 versus $99,803M in 2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the 2023 effective tax rate was lower than 2022 due primarily to lower foreign earnings tax rate and U.S. foreign tax credit regulations, partially offset by lower share-based compensation benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate was below the statutory federal rate due primarily to lower foreign earnings tax rate, U.S. federal R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 191,
+      "prompt_tokens": 1932,
+      "total_tokens": 2123,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 140
+    }
+  },
+  "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim lists deceleration or declines in advertiser spending, competition, and customer usage and demand as factors that could cause revenue growth rate to decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states an evolving foreign policy landscape may adversely affect revenues."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states changes to advertising policies and data privacy practices, such as phasing out third-party cookies, have in the past and may in the future affect the advertising provided."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 1382,
+      "total_tokens": 1529,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 230
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row shows Net income of 88,136 vs 72,361 with a 22% change, matching the claim verbatim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 1380,
+      "total_tokens": 1445,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 228
+    }
+  },
+  "510efb79d2bb1dea386c90294c21b115be9f82f53eaa7cd50bbd5449c4579ddd": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The discussion analysis table shows Net income 88,136 (2024) vs 72,361 (2023), a 22% increase, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the decrease in effective tax rate for FY2024 vs FY2023 was primarily due to tax benefits from tax law changes, including the delay of the effective date of final foreign tax credit regulations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through the foreign regional operations center in Ireland."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 183,
+      "prompt_tokens": 1629,
+      "total_tokens": 1812,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 221
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote appears verbatim in the provided table-text source, showing net income of 88,136 vs 72,361 with 22% change (in millions USD)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 1380,
+      "total_tokens": 1450,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 228
+    }
+  },
+  "307741d33a650a0420413ee0853cef0f7cc56e8328eed4b4bb5025ab95623474": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted income statement shows net income of $93,736M in FY2024 versus $96,995M in FY2023, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states the effective tax rate was higher due primarily to the $10.2B State Aid charge, higher foreign earnings tax rate, and lower share-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The table shows provision for income taxes rising from $16,741M to $29,749M and effective tax rate rising from 14.7% to 24.1% in FY2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 2146,
+      "total_tokens": 2328,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  "12a5763fd2a35d1395793fd828d1b429dff4b16e5e490339cb7e021799cfb807": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income 88,136 vs 72,361 with 22% change, supporting an increase in FY2024 vs FY2023."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Passage states effective tax rate was 18% vs 19% and the decrease was primarily due to tax benefits from tax law changes including Notices 2023-55 and 2023-80."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Passage states effective tax rate was lower than the U.S. federal statutory rate primarily due to earnings taxed at lower rates in foreign jurisdictions through the Ireland operations center."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 174,
+      "prompt_tokens": 1727,
+      "total_tokens": 1901,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 191
+    }
+  },
+  "fe61f0d0220679304ac0b51426b67fc77eb2f778915448d07a8a3309961154e5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement row shows income from operations of 78,714 (2021), 74,842 (2022), and 84,293 (2023), so FY2023 operating income (84,293) exceeds FY2022 (74,842), supporting the stated increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states Google Services operating income increased $13.2 billion from 2022 to 2023, driven primarily by increased revenues, partially offset by higher content acquisition costs and compensation expenses including SBC—matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states operating expenses were $89.8 billion, up 10% year over year, primarily driven by compensation expenses and office space optimization charges, with compensation increases largely from employee severance and higher SBC expense—matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 223,
+      "prompt_tokens": 1876,
+      "total_tokens": 2099,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 212
+    }
+  },
+  "00686a08c835a449b0692078dd1b289aac7912a2498e1f04eb8ba2439c41c3c4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statements of operations show net income of $96,995M in FY2023 versus $99,803M in FY2022, confirming the decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the FY2023 effective tax rate was lower than 2022 due primarily to lower foreign earnings tax rate and U.S. foreign tax credit regulations, partially offset by lower share-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim lists the factors affecting effective tax rates: earnings mix across countries, deferred tax valuation changes, new taxes, and tax law changes or interpretation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 2021,
+      "total_tokens": 2198,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 229
+    }
+  },
+  "bc3eaae847f15c334c6a839d1643bc362f1897f007e5f04f954271303114d223": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of operations shows income from operations of 69,380 in 2024 versus 46,751 in 2023, supporting the year-over-year increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states the $22.63 billion/48% increase was driven by higher advertising revenue, partially offset by higher costs and expenses, with cost growth mainly from data center/technical infrastructure operational expenses and employee compensation, partly offset by lower restructuring and legal-related costs."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The FoA passage states segment operating income rose $24.24 billion/39%, driven by higher advertising revenue partially offset by higher costs, mainly data center/technical infrastructure operational expenses (mostly higher depreciation) and employee compensation, partly offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_tokens": 2038,
+      "total_tokens": 2251,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 246
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited quote only lists net income figures for three years; it contains no management guarantee, no forecast of doubling, and no risk disclaimer. The claim is an invented forward-looking guarantee unsupported by the excerpt."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 77,
+      "prompt_tokens": 1616,
+      "total_tokens": 1693,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 208
+    }
+  },
+  "2890af591a36c541d2b0915bfca4652d3261b70c8052a978f5a3a0cc4487ad0b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $96,995M in 2023 versus $99,803M in 2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2023 effective tax rate was lower than 2022 due primarily to lower foreign earnings tax rate and U.S. foreign tax credit regulations, partially offset by lower share-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the 2023 and 2022 effective tax rates were below the statutory federal rate due primarily to lower foreign earnings tax rate, U.S. federal R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 1924,
+      "total_tokens": 2120,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1790
+      },
+      "prompt_cache_hit_tokens": 1790,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "d34afe97ac194e643bedb7f7d5910c9696efe7a1e485ae01e72fe5851aa8e624": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows net income (loss) of $(2,722)M in 2022, $30,425M in 2023, and $59,248M in 2024, so net income increased in FY2024 versus FY2023."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states the 2024 tax provision was higher primarily due to increased pretax income, partially offset by greater excess tax benefits from stock-based compensation and a larger foreign income deduction."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage lists variability in pre-tax and taxable income, jurisdictional mix, and changes in deferred tax assets and liabilities and their valuation among factors causing significant effective tax rate variation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 193,
+      "prompt_tokens": 1869,
+      "total_tokens": 2062,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 205
+    }
+  },
+  "1acb6b13392685e45910acd1ccd36829ac480f90aa4a6543e7d4a0cb0d43b071": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row shows operating income rising from $74,842 (2022) to $84,293 (2023), a $9,451 / 13% increase, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses rose 10% primarily due to compensation expenses and office space optimization charges, with compensation growth largely from severance and increased SBC expense."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage explicitly states operating expenses benefited from the change in estimated useful lives of servers and certain network equipment."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 163,
+      "prompt_tokens": 1732,
+      "total_tokens": 1895,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 196
+    }
+  },
+  "3c8ddd5b01eb32405e2afee03ce834991c50903ce0cd68cdb1f864674ffa85dd": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income rising from $74,842M (2022) to $84,293M (2023), a $9,451M / 13% increase, supporting the claim of an increase in FY2023 vs FY2022."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "Passage states the increase was primarily driven by higher revenues, partially offset by higher content acquisition costs and compensation including SBC, and benefited from the change in estimated useful lives of servers/network equipment."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "Passage states operating expenses rose 10% YoY driven by compensation expenses and office space optimization charges, with severance and SBC in compensation, and benefited from the change in estimated useful lives of servers/network equipment."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 205,
+      "prompt_tokens": 1907,
+      "total_tokens": 2112,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 243
+    }
+  },
+  "0d2720c0d30915c711341de4423cba04ccc933b35efa1e7cd2728177e258964b": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement row shows net income of $30,425M in 2023 and $59,248M in 2024, supporting the claim that net income increased in FY2024 versus FY2023."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2024 tax provision was higher primarily due to increased pretax income, partially offset by increased excess tax benefits from stock-based compensation and an increased foreign income deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 134,
+      "prompt_tokens": 1377,
+      "total_tokens": 1511,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 225
+    }
+  },
+  "0615494342bdc1241cf436b792df13eb5aca848f667bcda427eb215c31e1f1b4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that investment in new business strategies and acquisitions could disrupt ongoing business and materially adversely affect results of operations."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states new ventures are inherently risky and may not be successful, and failure of a significant investment could materially adversely affect results of operations."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect business, results of operations and financial condition."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 150,
+      "prompt_tokens": 1294,
+      "total_tokens": 1444,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 142
+    }
+  },
+  "a65e0a6c101351ecfa3ced0fb042dced8b8b3ebae7a0366bc12c832b2f2fb28d": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statement of income shows income from operations of 78,714 (2021), 74,842 (2022), and 84,293 (2023), so FY2023 (84,293) exceeds FY2022 (74,842), supporting the stated increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states Google Services operating income increased $13.2 billion from 2022 to 2023, driven primarily by increased revenues, partially offset by higher content acquisition costs and compensation expenses including SBC expense, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states operating expenses were $89.8 billion, up 10% year over year, primarily driven by increased compensation expenses and office space optimization charges, with compensation growth largely from employee severance and increased SBC expense, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 222,
+      "prompt_tokens": 1874,
+      "total_tokens": 2096,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 210
+    }
+  },
+  "27f5df973070340b7002c1bb75f190797935fed4425453ff0be787e49d957479": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated income statement shows net income of $30,425M in 2023 rising to $59,248M in 2024, directly supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the 2024 tax provision was higher primarily due to increased pretax income, partially offset by greater excess tax benefits from stock-based compensation and a larger foreign income deduction."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 128,
+      "prompt_tokens": 1366,
+      "total_tokens": 1494,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 214
+    }
+  },
+  "13f727fc9d82fcd892b965881c183793acb3237e705cdf36ef1b00bd2bfe60b4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement excerpt shows Income from operations of 69,380 in 2024 versus 46,751 in 2023, supporting an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states income from operations rose $22.63 billion or 48%, driven by advertising revenue, partially offset by higher costs and expenses."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim attributes the cost increase mainly to data center/technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 138,
+      "prompt_tokens": 1736,
+      "total_tokens": 1874,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 200
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote only shows net income figures (88,136 vs 72,361, 22% change); it contains no management guarantee of doubling performance or any risk disclaimer, so the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 1433,
+      "total_tokens": 1512,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 153
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited quote only shows net income figures (88,136 vs 72,361, 22% change); it says nothing about the chief executive's personal investments, let alone exclusive causation. The claim is an invented, unsupported exclusive cause."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 85,
+      "prompt_tokens": 1380,
+      "total_tokens": 1465,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 228
+    }
+  }
+}

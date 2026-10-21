@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 16,
+      "mechanical_successes": 12,
+      "strict_successes": 12,
+      "strict_rate": 0.75,
+      "primary_only_successes": 12,
+      "unique_questions": 16,
+      "all_repeats_pass_questions": 12,
+      "all_repeats_pass_wilson_95": [
+        0.5050168346449122,
+        0.8981793250878696
+      ],
+      "requests": 26,
+      "tokens": 40737,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 4.6044375,
+      "repairs": 0
+    },
+    "after": {
+      "attempts": 16,
+      "mechanical_successes": 16,
+      "strict_successes": 16,
+      "strict_rate": 1,
+      "primary_only_successes": 16,
+      "unique_questions": 16,
+      "all_repeats_pass_questions": 16,
+      "all_repeats_pass_wilson_95": [
+        0.8063923194655637,
+        1.0000000000000002
+      ],
+      "requests": 26,
+      "tokens": 40835,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 4.8038125,
+      "repairs": 0
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 16,
+      "unique_cases": 16,
+      "wins": 4,
+      "losses": 0,
+      "ties": 12,
+      "difference": 0.25,
+      "case_cluster_bootstrap_95": [
+        0.0625,
+        0.5
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains"
+    }
+  },
+  "tasks_sha256": "16c9e533f6fc091a18b01658f34955c140625ea09f0b86d24d87c9579448aecb",
+  "review": "renewed-development-review-v1",
+  "review_summary_sha256": "3549db9236714619fdc7b26e0b27e3303bb250124bca41575fb57336d6fdba9b",
+  "failures": [
+    {
+      "case_id": "6d9cec00737cfa06bdde",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "b8aaa93190a745e69eb4e7a017a5f0e440ce6d9bf48d52740dfeb74eabfa875c"
+    },
+    {
+      "case_id": "cb19abf3214b579d7c1a",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "afa2849dd89711c37a19d5b058399f465f9f0fe3b57d1067877e05965242b661"
+    },
+    {
+      "case_id": "ce2d3787656a2065f936",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "13f65a11f0a2a6e412caffd49ed17e8b38eee3d3777c84e96917fee7939bdeef"
+    },
+    {
+      "case_id": "c1718fa09878935a08a6",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "34a48ac9bc1d25b7b8a12ef4e45fb164d353e7eab289d054f6de4d7a7fa022bd"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

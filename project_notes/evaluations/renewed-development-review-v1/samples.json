@@ -1,0 +1,1474 @@
+{
+  "b8aaa93190a745e69eb4e7a017a5f0e440ce6d9bf48d52740dfeb74eabfa875c": {
+    "question": "What is driving MSFT revenue growth in FY2024, and why? Use its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in FY2024, with growth reported across each of its segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      },
+      {
+        "statement": "Within Intelligent Cloud, server products and cloud services revenue growth was driven by Azure and other cloud services, which itself grew on consumption-based services.",
+        "chunk_id": "passage:13aa4483d109f4585524a100",
+        "quote": "Server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services."
+      },
+      {
+        "statement": "Gaming revenue growth was driven by Xbox content and services, which the report attributes in part to the Activision Blizzard acquisition, while Xbox hardware declined on lower console volume.",
+        "chunk_id": "passage:d15e2354633256c7dd781a96",
+        "quote": "Gaming revenue increased $6.0 billion or 39% driven by growth in Xbox content and services. Xbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard acquisition. Xbox hardware revenue decreased 13% driven by lower volume of consoles sold."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:d15e2354633256c7dd781a96",
+        "text": "MSFT FY2024 item-7\nGaming revenue increased $6.0 billion or 39% driven by growth in Xbox content and services. Xbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard acquisition. Xbox hardware revenue decreased 13% driven by lower volume of consoles sold.",
+        "locator": "dom-block=2321|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "0c8254cbc26d1eb2c9e80d151fea76b43abbb4c7684bc4505b94aa4c036a337f": {
+    "question": "What is driving MSFT revenue growth in FY2024, and why? Use its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in FY2024, with growth reported across each of its segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      },
+      {
+        "statement": "Within Intelligent Cloud, revenue growth was driven by Azure.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Intelligent Cloud revenue increased driven by Azure."
+      },
+      {
+        "statement": "Office Commercial products and cloud services revenue growth was driven by Office 365 Commercial growth.",
+        "chunk_id": "passage:39124509878a20d8ca95e214",
+        "quote": "Office Commercial products and cloud services revenue increased 14% driven by Office 365 Commercial growth of 16%."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:39124509878a20d8ca95e214",
+        "text": "MSFT FY2024 item-7\nOffice Commercial products and cloud services revenue increased 14% driven by Office 365 Commercial growth of 16%.",
+        "locator": "dom-block=1674|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "bb0987d984ee9f0b08d10a6cc10fdb278bc9e91c1b1abe20e9c9b04f4f18454a": {
+    "question": "How much did MSFT revenue grow in FY2024 as an annual percentage change, and why? Use exact FY2024 report quotations for disclosed drivers.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in FY2024, with the report attributing the growth to increases across each of its segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      },
+      {
+        "statement": "Among disclosed segment drivers, Intelligent Cloud revenue growth was driven by Azure.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Intelligent Cloud revenue increased driven by Azure."
+      },
+      {
+        "statement": "Productivity and Business Processes revenue growth was disclosed as driven by Office 365 Commercial, while More Personal Computing growth was driven by Gaming.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "d0d45ee762ce6b07cf229a6e4b7ca3b36aaf3af6bd4be186c0c81b9393d3ddb4": {
+    "question": "How much did MSFT revenue grow in FY2024 as an annual percentage change, and why? Use exact FY2024 report quotations for disclosed drivers.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in FY2024, as shown by the consolidated total revenue row comparing FY2024 to FY2023.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      },
+      {
+        "statement": "The report discloses that revenue growth was driven by growth across each of the company's segments, with Intelligent Cloud growth driven by Azure, Productivity and Business Processes driven by Office 365 Commercial, and More Personal Computing driven by Gaming.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#income-statements|block=0|table-text",
+          "declarations": [
+            {
+              "locator": "article#income-statements|block=0|table-text",
+              "text": "(In millions, except per share amounts) Year Ended June 30, 2024 2023 2022 Revenue: Product $ 64,773 $ 64,699 $ 72,732 Service and other 180,349 147,216 125,538 Total revenue 245,122 211,915 198,270 Cost of revenue: Product 15,272 17,804 19,064 Service and other 58,842 48,059 43,586 Total cost of revenue 74,114 65,863 62,650 Gross margin 171,008 146,052 135,620 Research and development 29,510 27,195 24,512 Sales and marketing 24,456 22,759 21,825 General and administrative 7,609 7,575 5,900 Operating income 109,433 88,523 83,383 Other income (expense), net (1,646) 788 333 Income before income taxes 107,787 89,311 83,716 Provision for income taxes 19,651 16,950 10,978 Net income $ 88,136 $ 72"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "afa2849dd89711c37a19d5b058399f465f9f0fe3b57d1067877e05965242b661": {
+    "question": "List the risks and explain how they could affect MSFT revenue. Use only its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      },
+      {
+        "statement": "MSFT states that competition law enforcement actions and new market regulations could reduce the attractiveness of its products and the revenue derived from them.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "MSFT discloses that disruptions in developed or emerging markets could negatively impact demand for its products and services, impair its ability to operate in certain regions, or increase operating costs.",
+        "chunk_id": "passage:de98fe0a06783017966f3ef4",
+        "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:de98fe0a06783017966f3ef4",
+        "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+        "locator": "dom-block=1199|part=1|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "0274538acf03a09e2f8ed30011c849d3857ed129fc2692730fffe272715a0d53": {
+    "question": "List the risks and explain how they could affect MSFT revenue. Use only its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      },
+      {
+        "statement": "MSFT states that certain events could result in loss of revenue, indicating a disclosed pathway by which risks could affect revenue.",
+        "chunk_id": "passage:f5d8d9583d27bc5d574c6655",
+        "quote": "Any of the foregoing events could result in reputational harm, loss of revenue, increased costs, or otherwise adversely affect our business, financial condition, and results of operations."
+      },
+      {
+        "statement": "MSFT discloses that competition law enforcement actions and new market regulations could reduce the attractiveness of its products and the revenue derived from them.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f5d8d9583d27bc5d574c6655",
+        "text": "MSFT FY2024 item-1a\nAny of the foregoing events could result in reputational harm, loss of revenue, increased costs, or otherwise adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1078|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "481f819a6cbf30b60c0d49b34c9e3c7b970838254272bc23aa7cf71af4ccf838": {
+    "question": "Give AAPL FY2023 revenue in USD. Do not calculate growth; explain the disclosed revenue drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "AAPL's total net sales decreased in FY2023 compared to FY2022, as shown in the consolidated total net sales row of the income statement.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Total net sales | 383,285 |  |  | 394,328 |  |  | 365,817"
+      },
+      {
+        "statement": "The report discloses that the total net sales decrease consisted primarily of lower Mac and iPhone net sales, partially offset by higher Services net sales, with foreign currency weakness accounting for more than the entire decrease.",
+        "chunk_id": "passage:de4fe3e8f7c3e5df6c275835",
+        "quote": "The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services."
+      },
+      {
+        "statement": "Services net sales increased during FY2023 compared to FY2022, which the report attributes to higher net sales across all lines of business.",
+        "chunk_id": "passage:30b1045872955e80762fe7f9",
+        "quote": "Services net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:30b1045872955e80762fe7f9",
+        "text": "AAPL FY2023 item-7\nServices net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+        "locator": "dom-block=571|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:de4fe3e8f7c3e5df6c275835",
+        "text": "AAPL FY2023 item-7\nThe Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.",
+        "locator": "dom-block=506|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "a5a5a81bea50bce5f70502f781a7b5f6225807ade38629825e5d3dc1b21d3474": {
+    "question": "Give AAPL FY2023 revenue in USD. Do not calculate growth; explain the disclosed revenue drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "AAPL's total net sales decreased in FY2023 compared to FY2022, and the report attributes the decline to foreign currency weakness and lower Mac and iPhone sales, partly offset by higher Services sales.",
+        "chunk_id": "passage:de4fe3e8f7c3e5df6c275835",
+        "quote": "The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services."
+      },
+      {
+        "statement": "The consolidated income statement shows total net sales for FY2023 alongside the prior two fiscal years, confirming the consolidated total revenue figure.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Total net sales | 383,285 |  |  | 394,328 |  |  | 365,817"
+      },
+      {
+        "statement": "iPhone net sales declined in FY2023, which the report attributes to lower non-Pro iPhone model sales partly offset by higher Pro iPhone model sales.",
+        "chunk_id": "passage:b78b891e4fb8eca966d73e3f",
+        "quote": "iPhone net sales decreased 2% or $4.9 billion during 2023 compared to 2022 due to lower net sales of non-Pro iPhone models, partially offset by higher net sales of Pro iPhone models."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:b78b891e4fb8eca966d73e3f",
+        "text": "AAPL FY2023 item-7\niPhone net sales decreased 2% or $4.9 billion during 2023 compared to 2022 due to lower net sales of non-Pro iPhone models, partially offset by higher net sales of Pro iPhone models.",
+        "locator": "dom-block=563|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:de4fe3e8f7c3e5df6c275835",
+        "text": "AAPL FY2023 item-7\nThe Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.",
+        "locator": "dom-block=506|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "68cc28b9dc4ba741116c637c18c0f14d822f37c440ff74e3c10f46833429e31b": {
+    "question": "Provide AMZN FY2023 annual net income in USD with fiscal dates, and explain the change and disclosed drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "AMZN's net income increased in FY2023 compared with FY2022, moving from a net loss to net income, as shown in the consolidated income statement row for Net income (loss).",
+        "chunk_id": "passage:d66962a58c70aa6c709588c6",
+        "quote": "Net income (loss) | $ | 33,364 |  |  | $ | ( 2,722 ) |  |  | $ | 30,425"
+      },
+      {
+        "statement": "The report discloses that the shift from an income tax benefit in 2022 to a provision for income taxes in 2023 was primarily driven by an increase in pretax income, a decrease in the tax impact of foreign earnings and losses from a decline in favorable corporate restructuring effects, and an increase in tax shortfalls from stock-based compensation, partially offset by increased federal R&D credits.",
+        "chunk_id": "passage:fb98989252f5d3271988bc4b",
+        "quote": "We recorded a provision for income taxes in 2023 as compared to an income tax benefit in 2022 primarily due to an increase in pretax income, a decrease in the tax impact of foreign earnings and losses driven by a decline in the favorable effects of corporate restructuring transactions, and an increase in tax shortfalls from stock-based compensation."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:d66962a58c70aa6c709588c6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=811|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2023 report\n | Year Ended December 31,\n | 2021 |  | 2022 |  | 2023\nBenefit (provision) for income taxes | ( 4,791 ) |  |  | 3,217 |  |  | ( 7,120 ) | \nEquity-method investment activity, net of tax | 4 |  |  | ( 3 ) |  |  | ( 12 ) | \nNet income (loss) | $ | 33,364 |  |  | $ | ( 2,722 ) |  |  | $ | 30,425 | \nBasic earnings per share | $ | 3.30 |  |  | $ | ( 0.27 ) |  |  | $ | 2.95 | \nDiluted earnings per share | $ | 3.24 |  |  | $ | ( 0.27 ) |  |  | $ | 2.90 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,117 |  |  | 10,189 |  |  | 10,304 | \nDiluted | 10,296 |  |  | 10,189 |  |  | 10,492 | ",
+        "locator": "dom-block=811|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=811|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=811|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=811|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=811|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:fb98989252f5d3271988bc4b",
+        "text": "AMZN FY2023 report\nWe recorded a provision for income taxes in 2023 as compared to an income tax benefit in 2022 primarily due to an increase in pretax income, a decrease in the tax impact of foreign earnings and losses driven by a decline in the favorable effects of corporate restructuring transactions, and an increase in tax shortfalls from stock-based compensation. This was partially offset by an increase in federal research and development credits, which included approximately $ 600 million of tax benefit recorded in 2023 related to a change in the estimated qualifying expenditures associated with our 2022 U.S. federal R&D credit.",
+        "locator": "dom-block=1382|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "03fe147525bb7fbdc3af6ce735090f94bcdaed5839e5bfb1a6cc53b4f6a2cc13": {
+    "question": "Provide AMZN FY2023 annual net income in USD with fiscal dates, and explain the change and disclosed drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "AMZN's consolidated net income increased in FY2023 compared with FY2022, moving from a net loss to net income, as shown in the consolidated results table.",
+        "chunk_id": "passage:d66962a58c70aa6c709588c6",
+        "quote": "Net income (loss) | $ | 33,364 |  |  | $ | ( 2,722 ) |  |  | $ | 30,425"
+      },
+      {
+        "statement": "The report discloses that the shift from an income tax benefit in 2022 to a provision for income taxes in 2023 was driven primarily by an increase in pretax income, a decrease in the tax impact of foreign earnings and losses tied to a decline in favorable corporate restructuring effects, and an increase in tax shortfalls from stock-based compensation, partially offset by higher federal R&D credits.",
+        "chunk_id": "passage:fb98989252f5d3271988bc4b",
+        "quote": "We recorded a provision for income taxes in 2023 as compared to an income tax benefit in 2022 primarily due to an increase in pretax income, a decrease in the tax impact of foreign earnings and losses driven by a decline in the favorable effects of corporate restructuring transactions, and an increase in tax shortfalls from stock-based compensation."
+      },
+      {
+        "statement": "The report notes that its effective tax rate is subject to significant variation from numerous factors, including variability in pre-tax and taxable income and loss and the mix of jurisdictions, and that the rate can be more volatile depending on the amount of pre-tax income or loss.",
+        "chunk_id": "passage:aeff368053556d34cf609ee4",
+        "quote": "Our effective tax rate is subject to significant variation due to several factors, including variability in our pre-tax and taxable income and loss and the mix of jurisdictions to which they relate"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:aeff368053556d34cf609ee4",
+        "text": "AMZN FY2023 report\nOur effective tax rate is subject to significant variation due to several factors, including variability in our pre-tax and taxable income and loss and the mix of jurisdictions to which they relate, intercompany transactions, the applicability of special tax regimes, changes in how we do business, acquisitions, investments, developments in tax controversies, changes in our stock price, changes in our deferred tax assets and liabilities and their valuation, foreign currency gains (losses), changes in statutes, regulations, case law, and administrative practices, principles, and interpretations related to tax, including changes to the global tax framework, competition, and other laws and accounting rules in various jurisdictions, and relative changes of expenses or losses for which tax benefits are not recognized. Our effective tax rate can be more or less volatile based on the amount of pre-tax income or loss. For example, the impact of discrete items and non-deductible expenses on our effective tax rate is greater when our pre-tax income is lower. In addition, we record valuation allowances against deferred tax assets when there is uncertainty about our ability to generate future i",
+        "locator": "dom-block=637|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:d66962a58c70aa6c709588c6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=811|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAMZN FY2023 report\n | Year Ended December 31,\n | 2021 |  | 2022 |  | 2023\nBenefit (provision) for income taxes | ( 4,791 ) |  |  | 3,217 |  |  | ( 7,120 ) | \nEquity-method investment activity, net of tax | 4 |  |  | ( 3 ) |  |  | ( 12 ) | \nNet income (loss) | $ | 33,364 |  |  | $ | ( 2,722 ) |  |  | $ | 30,425 | \nBasic earnings per share | $ | 3.30 |  |  | $ | ( 0.27 ) |  |  | $ | 2.95 | \nDiluted earnings per share | $ | 3.24 |  |  | $ | ( 0.27 ) |  |  | $ | 2.90 | \nWeighted-average shares used in computation of earnings per share: |  |  |  |  | \nBasic | 10,117 |  |  | 10,189 |  |  | 10,304 | \nDiluted | 10,296 |  |  | 10,189 |  |  | 10,492 | ",
+        "locator": "dom-block=811|part=1|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=811|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=811|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=811|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=811|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:fb98989252f5d3271988bc4b",
+        "text": "AMZN FY2023 report\nWe recorded a provision for income taxes in 2023 as compared to an income tax benefit in 2022 primarily due to an increase in pretax income, a decrease in the tax impact of foreign earnings and losses driven by a decline in the favorable effects of corporate restructuring transactions, and an increase in tax shortfalls from stock-based compensation. This was partially offset by an increase in federal research and development credits, which included approximately $ 600 million of tax benefit recorded in 2023 related to a change in the estimated qualifying expenditures associated with our 2022 U.S. federal R&D credit.",
+        "locator": "dom-block=1382|part=0|strategy=structured",
+        "company": "AMZN",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "d7bff835659ae6f195f6537f65dc7e0f306525b99d4c732c40973ae5eab2832b": {
+    "question": "Provide META FY2024 annual revenue in USD with fiscal dates, and explain the change and disclosed drivers using exact FY2024 report quotations.",
+    "claims": [
+      {
+        "statement": "META's total revenue increased in FY2024 compared to FY2023, as shown in the consolidated total revenue row for the year ended December 31.",
+        "chunk_id": "passage:8f63ad5dea913dbf8081dfc1",
+        "quote": "Total revenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609"
+      },
+      {
+        "statement": "The company disclosed that Family of Apps revenue growth in 2024 was almost entirely driven by advertising revenue.",
+        "chunk_id": "passage:aececcd5557e0aaaf8fb3371",
+        "quote": "FoA revenue in 2024 increased $29.35 billion, or 22%, compared to 2023. The increase was almost entirely driven by advertising revenue."
+      },
+      {
+        "statement": "Advertising revenue growth was disclosed as driven by increases in ad impressions delivered and average price per ad, with the online commerce vertical the largest contributor.",
+        "chunk_id": "passage:6af40a068be8999ab17e5449",
+        "quote": "Advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:6af40a068be8999ab17e5449",
+        "text": "META FY2024 item-7\nAdvertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad. In 2024, ad impressions delivered increased by 11%, as compared with a 28% increase in 2023, year-over-year. Ad impressions delivered during 2024 grew in all regions, especially in Asia-Pacific and Rest of World, which was mostly driven by increases in users and their engagement on our products. In 2024, the average price per ad increased by 10%, as compared with a decrease of 9% in 2023, year-over-year. The increase in average price per ad in 2024 was driven by an increase in advertising demand, which we believe is mainly due to ongoing improvements to our ad performance from our ad targeting and measurement tools. This increase was partially offset by a higher number of ad impressions delivered, especially in geographies and in products, such as Reels, that monetize at lower rates. Other factors are discussed in the section entitled \"—Executive Overview of Full Year 2024 Results.\" In addition, the online commerce vertical was the largest contributor to the increase in advertising revenue in 2024 compared to 2023. We anticipate that ",
+        "locator": "dom-block=1665|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8f63ad5dea913dbf8081dfc1",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2436|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nAdvertising | $ | 160,633 |  |  | $ | 131,948 |  |  | $ | 113,642 | \nOther revenue | 1,722 |  |  | 1,058 |  |  | 808 | \nFamily of Apps | 162,355 |  |  | 133,006 |  |  | 114,450 | \nReality Labs | 2,146 |  |  | 1,896 |  |  | 2,159 | \nTotal revenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | ",
+        "locator": "dom-block=2436|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2436|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2436|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2436|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2436|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:aececcd5557e0aaaf8fb3371",
+        "text": "META FY2024 item-7\nFoA revenue in 2024 increased $29.35 billion, or 22%, compared to 2023. The increase was almost entirely driven by advertising revenue.",
+        "locator": "dom-block=1661|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "053bcf78dc396c596b2b0274ade0a827b9d85e6b949aab4614ed5316f76d8c76": {
+    "question": "Provide META FY2024 annual revenue in USD with fiscal dates, and explain the change and disclosed drivers using exact FY2024 report quotations.",
+    "claims": [
+      {
+        "statement": "META's total revenue increased in FY2024 compared to FY2023, as shown in the consolidated total revenue row of the annual report table.",
+        "chunk_id": "passage:8f63ad5dea913dbf8081dfc1",
+        "quote": "Total revenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609"
+      },
+      {
+        "statement": "The report attributes the total revenue increase primarily to an increase in advertising revenue.",
+        "chunk_id": "passage:263fb8ac509da97cda1e4ba9",
+        "quote": "Total revenue for 2024 was $164.50 billion, an increase of 22% compared to 2023, due to an increase in advertising revenue."
+      },
+      {
+        "statement": "The disclosed drivers of the advertising revenue increase were increases in ad impressions delivered and average price per ad.",
+        "chunk_id": "passage:6af40a068be8999ab17e5449",
+        "quote": "Advertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:263fb8ac509da97cda1e4ba9",
+        "text": "META FY2024 item-7\nOur financial results and key Family metrics for 2024 are set forth below. Total revenue for 2024 was $164.50 billion, an increase of 22% compared to 2023, due to an increase in advertising revenue. Revenue on a constant currency basis would have increased 23% compared to 2023. Ad impressions delivered across our Family of Apps in 2024 increased 11% year-over-year, and our average price per ad increased 10% year-over-year.",
+        "locator": "dom-block=1362|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:6af40a068be8999ab17e5449",
+        "text": "META FY2024 item-7\nAdvertising revenue in 2024 increased $28.68 billion, or 22%, compared to 2023 due to increases in ad impressions delivered and average price per ad. In 2024, ad impressions delivered increased by 11%, as compared with a 28% increase in 2023, year-over-year. Ad impressions delivered during 2024 grew in all regions, especially in Asia-Pacific and Rest of World, which was mostly driven by increases in users and their engagement on our products. In 2024, the average price per ad increased by 10%, as compared with a decrease of 9% in 2023, year-over-year. The increase in average price per ad in 2024 was driven by an increase in advertising demand, which we believe is mainly due to ongoing improvements to our ad performance from our ad targeting and measurement tools. This increase was partially offset by a higher number of ad impressions delivered, especially in geographies and in products, such as Reels, that monetize at lower rates. Other factors are discussed in the section entitled \"—Executive Overview of Full Year 2024 Results.\" In addition, the online commerce vertical was the largest contributor to the increase in advertising revenue in 2024 compared to 2023. We anticipate that ",
+        "locator": "dom-block=1665|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8f63ad5dea913dbf8081dfc1",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2436|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nAdvertising | $ | 160,633 |  |  | $ | 131,948 |  |  | $ | 113,642 | \nOther revenue | 1,722 |  |  | 1,058 |  |  | 808 | \nFamily of Apps | 162,355 |  |  | 133,006 |  |  | 114,450 | \nReality Labs | 2,146 |  |  | 1,896 |  |  | 2,159 | \nTotal revenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | ",
+        "locator": "dom-block=2436|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2436|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2436|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2436|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2436|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "e29f7095bf2d37f7f999cd2d6f6b560b711d4e6785b5f606374a4f23e976a6ea": {
+    "question": "Describe why AAPL operating income changed in FY2023. Use exact FY2023 annual report quotations and state its change direction.",
+    "claims": [
+      {
+        "statement": "AAPL's operating income decreased in FY2023 compared to FY2022, as shown in the consolidated income statement.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Operating income | 114,301 |  |  | 119,437 |  |  | 108,949"
+      },
+      {
+        "statement": "The report discloses that Products gross margin decreased in FY2023 due to foreign currency weakness and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "chunk_id": "passage:e87c5648257919c4c8a369db",
+        "quote": "Products gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix."
+      },
+      {
+        "statement": "The report discloses that Services gross margin increased in FY2023 primarily due to higher Services net sales, partially offset by foreign currency weakness and higher Services costs.",
+        "chunk_id": "passage:914996d18a32e600077098c5",
+        "quote": "Services gross margin increased during 2023 compared to 2022 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar and higher Services costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:914996d18a32e600077098c5",
+        "text": "AAPL FY2023 item-7\nServices gross margin increased during 2023 compared to 2022 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar and higher Services costs.",
+        "locator": "dom-block=588|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:e87c5648257919c4c8a369db",
+        "text": "AAPL FY2023 item-7\nProducts gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "10031eea893b69b254546aa8414dc60ebb6822c9f9dfb528c9e12c000fecff2c": {
+    "question": "Describe why AAPL operating income changed in FY2023. Use exact FY2023 annual report quotations and state its change direction.",
+    "claims": [
+      {
+        "statement": "AAPL's operating income decreased in FY2023 compared to FY2022, as shown in the consolidated income statement.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Operating income | 114,301 |  |  | 119,437 |  |  | 108,949"
+      },
+      {
+        "statement": "The report attributes the decline in Products gross margin to foreign currency weakness and lower Products volume, partly offset by cost savings and a different Products mix.",
+        "chunk_id": "passage:e87c5648257919c4c8a369db",
+        "quote": "Products gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix."
+      },
+      {
+        "statement": "The report attributes the decline in Services gross margin percentage to higher Services costs and foreign currency weakness, partly offset by a different Services mix.",
+        "chunk_id": "passage:7b5ef33d9432df758640ed64",
+        "quote": "Services gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:7b5ef33d9432df758640ed64",
+        "text": "AAPL FY2023 item-7\nServices gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar, partially offset by a different Services mix.",
+        "locator": "dom-block=589|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e87c5648257919c4c8a369db",
+        "text": "AAPL FY2023 item-7\nProducts gross margin decreased during 2023 compared to 2022 due to the weakness in foreign currencies relative to the U.S. dollar and lower Products volume, partially offset by cost savings and a different Products mix.",
+        "locator": "dom-block=585|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "0d2b6412ffb943d37606bda3d720ff9b9fce863748ed96ee074165bdcbc98bdb": {
+    "question": "Describe why GOOGL net income changed in FY2024. Use exact FY2024 annual report quotations and state its change direction.",
+    "claims": [
+      {
+        "statement": "GOOGL's net income increased in FY2024, as shown by the consolidated net income row in the report's comparison table.",
+        "chunk_id": "passage:75c5bccce256fb3e8b87f296",
+        "quote": "Net income |  |  | $ | 73,795 |  |  | $ | 100,118 |  |  | $ | 26,323 |  |  | 36 | %"
+      },
+      {
+        "statement": "The report attributes the increase in OI&E, net to higher net gains on equity securities and lower net losses on foreign currency exchange, which is a disclosed driver of the overall profit change.",
+        "chunk_id": "passage:52f6e46a08458b5085f31b9a",
+        "quote": "OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decrease in net losses on foreign currency exchange."
+      },
+      {
+        "statement": "The report discloses that the effective tax rate rose from 2023 to 2024, primarily due to a one-time IRS tax rule adjustment affecting the 2023 rate and a separate R&D capitalization/amortization rule change.",
+        "chunk_id": "passage:738645083c5cdae637a9bb17",
+        "quote": "The effective tax rate increased from 2023 to 2024. This increase was primarily due to a one-time adjustment for tax rule changes issued by the Internal Revenue Service (IRS) that affected the 2023 rate related to U.S. federal foreign tax credits, as well as a separate rule change with guidance on the capitalization and amortization of R&D"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:52f6e46a08458b5085f31b9a",
+        "text": "GOOGL FY2024 item-7\nOI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decrease in net losses on foreign currency exchange. The net gains on equity securities were primarily due to net unrealized gains on non-marketable equity securities driven by fair value adjustments related to observable transactions, partially offset by a decrease in net unrealized gains on marketable equity securities due to market-driven changes. Foreign currency exchange net losses decreased compared to the prior year primarily due to prior year losses in unhedged currencies.",
+        "locator": "dom-block=983|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:738645083c5cdae637a9bb17",
+        "text": "GOOGL FY2024 item-7\nThe effective tax rate increased from 2023 to 2024. This increase was primarily due to a one-time adjustment for tax rule changes issued by the Internal Revenue Service (IRS) that affected the 2023 rate related to U.S. federal foreign tax credits, as well as a separate rule change with guidance on the capitalization and amortization of R&D",
+        "locator": "dom-block=991|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:75c5bccce256fb3e8b87f296",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=833. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2024 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2023 |  | 2024 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 307,394 |  |  | $ | 350,018 |  |  | $ | 42,624 |  |  | 14 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 15 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 133,332 |  |  | $ | 146,306 |  |  | $ | 12,974 |  |  | 10 | %\nOperating expenses |  |  | $ | 89,769 |  |  | $ | 91,322 |  |  | $ | 1,553 |  |  | 2 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 84,293 |  |  | $ | 112,390 |  |  | $ | 28,097 |  |  | 33 | %\nOperating margin |  |  | 27 | % |  | 32 | % |  |  |  | 5 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | 1,424 |  |  | $ | 7,425 |  |  | $ | 6,001 |  |  | 421 | %\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 73,795 |  |  | $ | 100,118 |  |  | $ | 26,323 |  |  | 36 | %\nDiluted EPS (2) |  |  | $ | 5.80 |  |  | $ | 8.04 |  |  | $ | 2.24 |  |  | 39 | %",
+        "locator": "dom-block=835|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=833",
+          "declarations": [
+            {
+              "locator": "dom-block=833",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "8bf220000c53821d4ea1589d46e7a157e513eef74c7536565720d34dd660b9ea": {
+    "question": "Describe why GOOGL net income changed in FY2024. Use exact FY2024 annual report quotations and state its change direction.",
+    "claims": [
+      {
+        "statement": "GOOGL's net income increased in FY2024, as shown by the consolidated net income row in the annual report table.",
+        "chunk_id": "passage:75c5bccce256fb3e8b87f296",
+        "quote": "Net income |  |  | $ | 73,795 |  |  | $ | 100,118 |  |  | $ | 26,323 |  |  | 36 | %"
+      },
+      {
+        "statement": "The report discloses that OI&E, net increased primarily due to an increase in net gains on equity securities and a decrease in net losses on foreign currency exchange, which is a disclosed driver of the change in net income.",
+        "chunk_id": "passage:52f6e46a08458b5085f31b9a",
+        "quote": "OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decrease in net losses on foreign currency exchange."
+      },
+      {
+        "statement": "The report discloses that the effective tax rate increased from 2023 to 2024, primarily due to a one-time adjustment for IRS tax rule changes affecting the 2023 rate and a separate rule change on R&D capitalization and amortization.",
+        "chunk_id": "passage:738645083c5cdae637a9bb17",
+        "quote": "The effective tax rate increased from 2023 to 2024. This increase was primarily due to a one-time adjustment for tax rule changes issued by the Internal Revenue Service (IRS) that affected the 2023 rate related to U.S. federal foreign tax credits, as well as a separate rule change with guidance on the capitalization and amortization of R&D"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:52f6e46a08458b5085f31b9a",
+        "text": "GOOGL FY2024 item-7\nOI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decrease in net losses on foreign currency exchange. The net gains on equity securities were primarily due to net unrealized gains on non-marketable equity securities driven by fair value adjustments related to observable transactions, partially offset by a decrease in net unrealized gains on marketable equity securities due to market-driven changes. Foreign currency exchange net losses decreased compared to the prior year primarily due to prior year losses in unhedged currencies.",
+        "locator": "dom-block=983|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:738645083c5cdae637a9bb17",
+        "text": "GOOGL FY2024 item-7\nThe effective tax rate increased from 2023 to 2024. This increase was primarily due to a one-time adjustment for tax rule changes issued by the Internal Revenue Service (IRS) that affected the 2023 rate related to U.S. federal foreign tax credits, as well as a separate rule change with guidance on the capitalization and amortization of R&D",
+        "locator": "dom-block=991|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:75c5bccce256fb3e8b87f296",
+        "text": "Monetary context: currency=unverified; multiply raw monetary figures by 1000000; source=dom-block=833. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2024 item-7\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n |  |  | Year Ended December 31, |  |  |  | \n |  |  | 2023 |  | 2024 |  | $ Change |  | % Change\nConsolidated revenues |  |  | $ | 307,394 |  |  | $ | 350,018 |  |  | $ | 42,624 |  |  | 14 | %\nChange in consolidated constant currency revenues (1) |  |  |  |  |  |  |  |  | 15 | %\n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  | \nCost of revenues |  |  | $ | 133,332 |  |  | $ | 146,306 |  |  | $ | 12,974 |  |  | 10 | %\nOperating expenses |  |  | $ | 89,769 |  |  | $ | 91,322 |  |  | $ | 1,553 |  |  | 2 | %\n |  |  |  |  |  |  |  |  | \nOperating income |  |  | $ | 84,293 |  |  | $ | 112,390 |  |  | $ | 28,097 |  |  | 33 | %\nOperating margin |  |  | 27 | % |  | 32 | % |  |  |  | 5 | %\n |  |  |  |  |  |  |  |  | \nOther income (expense), net |  |  | $ | 1,424 |  |  | $ | 7,425 |  |  | $ | 6,001 |  |  | 421 | %\n |  |  |  |  |  |  |  |  | \nNet income |  |  | $ | 73,795 |  |  | $ | 100,118 |  |  | $ | 26,323 |  |  | 36 | %\nDiluted EPS (2) |  |  | $ | 5.80 |  |  | $ | 8.04 |  |  | $ | 2.24 |  |  | 39 | %",
+        "locator": "dom-block=835|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "scale_only",
+          "currency": null,
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "dom-block=833",
+          "declarations": [
+            {
+              "locator": "dom-block=833",
+              "text": "The following table summarizes our consolidated financial results (in millions, except for per share information and percentages):"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "13f65a11f0a2a6e412caffd49ed17e8b38eee3d3777c84e96917fee7939bdeef": {
+    "question": "解释 GOOGL FY2023 收入变化的原因，并引用 FY2023 年报原文，不需要计算增长率。",
+    "claims": [
+      {
+        "statement": "GOOGL's total revenues increased in FY2023, as shown by the consolidated total revenues row in the segment table.",
+        "chunk_id": "passage:fcdd6831cdd6aecb0eeb164d",
+        "quote": "Total revenues | $ | 257,637 |  |  | $ | 282,836 |  |  | $ | 307,394"
+      },
+      {
+        "statement": "The report attributes Google Search & other revenue growth to increases in search queries from user adoption and usage on mobile devices, growth in advertiser spending, and improvements in ad formats and delivery.",
+        "chunk_id": "passage:d7f139960b3f70ab286b8a56",
+        "quote": "The overall growth was driven by interrelated factors including increases in search queries resulting from growth in user adoption and usage on mobile devices; growth in advertiser spending; and improvements we have made in ad formats and delivery."
+      },
+      {
+        "statement": "The report attributes growth in Google subscriptions, platforms, and devices revenues primarily to subscription growth, largely for YouTube services, driven by an increase in paid subscribers.",
+        "chunk_id": "passage:baf70e70d17a194522a38e0e",
+        "quote": "Google subscriptions, platforms, and devices revenues increased $5.6 billion from 2022 to 2023 primarily driven by growth in subscriptions, largely for YouTube services. The growth in YouTube services was primarily due to an increase in paid subscribers."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:baf70e70d17a194522a38e0e",
+        "text": "GOOGL FY2023 item-7\nGoogle subscriptions, platforms, and devices revenues increased $5.6 billion from 2022 to 2023 primarily driven by growth in subscriptions, largely for YouTube services. The growth in YouTube services was primarily due to an increase in paid subscribers.",
+        "locator": "dom-block=876|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:d7f139960b3f70ab286b8a56",
+        "text": "GOOGL FY2023 item-7\nGoogle Search & other revenues increased $12.6 billion from 2022 to 2023. The overall growth was driven by interrelated factors including increases in search queries resulting from growth in user adoption and usage on mobile devices; growth in advertiser spending; and improvements we have made in ad formats and delivery.",
+        "locator": "dom-block=855|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcdd6831cdd6aecb0eeb164d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1999|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2021 |  | 2022 |  | 2023\nRevenues: |  |  |  |  | \nGoogle Services | $ | 237,529 |  |  | $ | 253,528 |  |  | $ | 272,543 | \nGoogle Cloud | 19,206 |  |  | 26,280 |  |  | 33,088 | \nOther Bets | 753 |  |  | 1,068 |  |  | 1,527 | \nHedging gains (losses) | 149 |  |  | 1,960 |  |  | 236 | \nTotal revenues | $ | 257,637 |  |  | $ | 282,836 |  |  | $ | 307,394 | \nOperating income (loss): |  |  |  |  | \nGoogle Services | $ | 88,132 |  |  | $ | 82,699 |  |  | $ | 95,858 | \nGoogle Cloud | ( 2,282 ) |  |  | ( 1,922 ) |  |  | 1,716 | \nOther Bets | ( 4,051 ) |  |  | ( 4,636 ) |  |  | ( 4,095 ) | \nAlphabet-level activities | ( 3,085 ) |  |  | ( 1,299 ) |  |  | ( 9,186 ) | \nTotal income from operations | $ | 78,714 |  |  | $ | 74,842 |  |  | $ | 84,293 | ",
+        "locator": "dom-block=1999|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1999|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1999|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1999|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1999|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "edcff6c6bac6084e9faf0adc1ec065d2876658b049ad1c8d7e3ee6170236b92d": {
+    "question": "解释 GOOGL FY2023 收入变化的原因，并引用 FY2023 年报原文，不需要计算增长率。",
+    "claims": [
+      {
+        "statement": "GOOGL's total revenues increased from 2022 to 2023, as shown in the consolidated total revenues row of the segment table.",
+        "chunk_id": "passage:fcdd6831cdd6aecb0eeb164d",
+        "quote": "Total revenues | $ | 257,637 |  |  | $ | 282,836 |  |  | $ | 307,394"
+      },
+      {
+        "statement": "A disclosed driver of revenue growth was Google Search & other revenues, which the report attributes to increases in search queries, advertiser spending, and improvements in ad formats and delivery.",
+        "chunk_id": "passage:d7f139960b3f70ab286b8a56",
+        "quote": "Google Search & other revenues increased $12.6 billion from 2022 to 2023. The overall growth was driven by interrelated factors including increases in search queries resulting from growth in user adoption and usage on mobile devices; growth in advertiser spending; and improvements we have made in ad formats and delivery."
+      },
+      {
+        "statement": "Another disclosed driver was growth in Google subscriptions, platforms, and devices revenues, primarily from subscriptions largely for YouTube services due to an increase in paid subscribers.",
+        "chunk_id": "passage:baf70e70d17a194522a38e0e",
+        "quote": "Google subscriptions, platforms, and devices revenues increased $5.6 billion from 2022 to 2023 primarily driven by growth in subscriptions, largely for YouTube services. The growth in YouTube services was primarily due to an increase in paid subscribers."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:baf70e70d17a194522a38e0e",
+        "text": "GOOGL FY2023 item-7\nGoogle subscriptions, platforms, and devices revenues increased $5.6 billion from 2022 to 2023 primarily driven by growth in subscriptions, largely for YouTube services. The growth in YouTube services was primarily due to an increase in paid subscribers.",
+        "locator": "dom-block=876|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:d7f139960b3f70ab286b8a56",
+        "text": "GOOGL FY2023 item-7\nGoogle Search & other revenues increased $12.6 billion from 2022 to 2023. The overall growth was driven by interrelated factors including increases in search queries resulting from growth in user adoption and usage on mobile devices; growth in advertiser spending; and improvements we have made in ad formats and delivery.",
+        "locator": "dom-block=855|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:fcdd6831cdd6aecb0eeb164d",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=1999|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nGOOGL FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2021 |  | 2022 |  | 2023\nRevenues: |  |  |  |  | \nGoogle Services | $ | 237,529 |  |  | $ | 253,528 |  |  | $ | 272,543 | \nGoogle Cloud | 19,206 |  |  | 26,280 |  |  | 33,088 | \nOther Bets | 753 |  |  | 1,068 |  |  | 1,527 | \nHedging gains (losses) | 149 |  |  | 1,960 |  |  | 236 | \nTotal revenues | $ | 257,637 |  |  | $ | 282,836 |  |  | $ | 307,394 | \nOperating income (loss): |  |  |  |  | \nGoogle Services | $ | 88,132 |  |  | $ | 82,699 |  |  | $ | 95,858 | \nGoogle Cloud | ( 2,282 ) |  |  | ( 1,922 ) |  |  | 1,716 | \nOther Bets | ( 4,051 ) |  |  | ( 4,636 ) |  |  | ( 4,095 ) | \nAlphabet-level activities | ( 3,085 ) |  |  | ( 1,299 ) |  |  | ( 9,186 ) | \nTotal income from operations | $ | 78,714 |  |  | $ | 74,842 |  |  | $ | 84,293 | ",
+        "locator": "dom-block=1999|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=1999|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=1999|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1999|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=1999|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "9aa9a832c773b9105b6c65438aec9cc0a4c082464ebf5589877d12327abd8906": {
+    "question": "给出 AAPL FY2024 收入同比增幅，并解释原因，引用 FY2024 年报原文。",
+    "claims": [
+      {
+        "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated total net sales row.",
+        "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+        "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+      },
+      {
+        "statement": "The report discloses that Services net sales rose year over year, driven primarily by higher advertising, App Store and cloud services net sales.",
+        "chunk_id": "passage:25a7f09eb76def7c336ccad5",
+        "quote": "Services net sales increased during 2024 compared to 2023 due primarily to higher net sales from advertising, the App Store ® and cloud services."
+      },
+      {
+        "statement": "The report discloses that Americas net sales increased year over year, driven primarily by higher Services net sales.",
+        "chunk_id": "passage:54982812b3b75ed9d888df49",
+        "quote": "Americas net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:25a7f09eb76def7c336ccad5",
+        "text": "AAPL FY2024 item-7\nServices net sales increased during 2024 compared to 2023 due primarily to higher net sales from advertising, the App Store ® and cloud services.",
+        "locator": "dom-block=590|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:54982812b3b75ed9d888df49",
+        "text": "AAPL FY2024 item-7\nAmericas net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services.",
+        "locator": "dom-block=551|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:622d4b6dd32e1d4f08ee00f9",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=735|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=735|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=735|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=735|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=735|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "34a48ac9bc1d25b7b8a12ef4e45fb164d353e7eab289d054f6de4d7a7fa022bd": {
+    "question": "给出 AAPL FY2024 收入同比增幅，并解释原因，引用 FY2024 年报原文。",
+    "claims": [
+      {
+        "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown by the consolidated total net sales row in the annual report.",
+        "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+        "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+      },
+      {
+        "statement": "The report discloses that Greater China net sales decreased during 2024 versus 2023, driven primarily by lower iPhone and iPad net sales, with renminbi weakness also an unfavorable factor.",
+        "chunk_id": "passage:19b03c3f3701422127377441",
+        "quote": "Greater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad."
+      },
+      {
+        "statement": "The report discloses that Rest of Asia Pacific net sales increased during 2024 versus 2023, driven primarily by higher Services net sales, while foreign currency weakness was a net unfavorable factor.",
+        "chunk_id": "passage:804c59ff65162f57e89bacd3",
+        "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:19b03c3f3701422127377441",
+        "text": "AAPL FY2024 item-7\nGreater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad. The weakness in the renminbi relative to the U.S. dollar had an unfavorable year-over-year impact on Greater China net sales during 2024.",
+        "locator": "dom-block=557|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:622d4b6dd32e1d4f08ee00f9",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=735|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=735|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=735|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=735|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=735|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:804c59ff65162f57e89bacd3",
+        "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024.",
+        "locator": "dom-block=563|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-0": {
+    "question": "What is driving MSFT revenue growth in FY2024, and why? Use its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:d15e2354633256c7dd781a96",
+        "text": "MSFT FY2024 item-7\nGaming revenue increased $6.0 billion or 39% driven by growth in Xbox content and services. Xbox content and services revenue increased 50% driven by 44 points of net impact from the Activision Blizzard acquisition. Xbox hardware revenue decreased 13% driven by lower volume of consoles sold.",
+        "locator": "dom-block=2321|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "What is driving MSFT revenue growth in FY2024, and why? Use its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:39124509878a20d8ca95e214",
+        "text": "MSFT FY2024 item-7\nOffice Commercial products and cloud services revenue increased 14% driven by Office 365 Commercial growth of 16%.",
+        "locator": "dom-block=1674|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-2": {
+    "question": "How much did MSFT revenue grow in FY2024 as an annual percentage change, and why? Use exact FY2024 report quotations for disclosed drivers.",
+    "claims": [
+      {
+        "statement": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "How much did MSFT revenue grow in FY2024 as an annual percentage change, and why? Use exact FY2024 report quotations for disclosed drivers.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "source_declaration",
+          "locator": "article#income-statements|block=0|table-text",
+          "declarations": [
+            {
+              "locator": "article#income-statements|block=0|table-text",
+              "text": "(In millions, except per share amounts) Year Ended June 30, 2024 2023 2022 Revenue: Product $ 64,773 $ 64,699 $ 72,732 Service and other 180,349 147,216 125,538 Total revenue 245,122 211,915 198,270 Cost of revenue: Product 15,272 17,804 19,064 Service and other 58,842 48,059 43,586 Total cost of revenue 74,114 65,863 62,650 Gross margin 171,008 146,052 135,620 Research and development 29,510 27,195 24,512 Sales and marketing 24,456 22,759 21,825 General and administrative 7,609 7,575 5,900 Operating income 109,433 88,523 83,383 Other income (expense), net (1,646) 788 333 Income before income taxes 107,787 89,311 83,716 Provision for income taxes 19,651 16,950 10,978 Net income $ 88,136 $ 72"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-4": {
+    "question": "List the risks and explain how they could affect MSFT revenue. Use only its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:de98fe0a06783017966f3ef4",
+        "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+        "locator": "dom-block=1199|part=1|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-5": {
+    "question": "List the risks and explain how they could affect MSFT revenue. Use only its FY2024 annual report and exact quotations.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:f5d8d9583d27bc5d574c6655",
+        "text": "MSFT FY2024 item-1a\nAny of the foregoing events could result in reputational harm, loss of revenue, increased costs, or otherwise adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1078|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Give AAPL FY2023 revenue in USD. Do not calculate growth; explain the disclosed revenue drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "Total net sales | 383,285 |  |  | 394,328 |  |  | 365,817",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Total net sales | 383,285 |  |  | 394,328 |  |  | 365,817"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:30b1045872955e80762fe7f9",
+        "text": "AAPL FY2023 item-7\nServices net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+        "locator": "dom-block=571|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:de4fe3e8f7c3e5df6c275835",
+        "text": "AAPL FY2023 item-7\nThe Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.",
+        "locator": "dom-block=506|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-7": {
+    "question": "Give AAPL FY2023 revenue in USD. Do not calculate growth; explain the disclosed revenue drivers using exact FY2023 report quotations.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:de4fe3e8f7c3e5df6c275835",
+        "quote": "The Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:b78b891e4fb8eca966d73e3f",
+        "text": "AAPL FY2023 item-7\niPhone net sales decreased 2% or $4.9 billion during 2023 compared to 2022 due to lower net sales of non-Pro iPhone models, partially offset by higher net sales of Pro iPhone models.",
+        "locator": "dom-block=563|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:de4fe3e8f7c3e5df6c275835",
+        "text": "AAPL FY2023 item-7\nThe Company’s total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales, which consisted primarily of lower net sales of Mac and iPhone, partially offset by higher net sales of Services.",
+        "locator": "dom-block=506|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  }
+}

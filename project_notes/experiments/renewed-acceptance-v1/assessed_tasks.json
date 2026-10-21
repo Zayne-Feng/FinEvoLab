@@ -1,0 +1,1298 @@
+[
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 0,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "0a1931afeff4a8f586be03441f3f44ef2ce6ebea9f1c12926a07ab36032b2994"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "33b4899787cef97b22aaa3f25817b41c5ac853af3da45071f58a35b8735bd955"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "e27abd6e9a9366855167c3624374941bb9aa3fadc56db4037a32ea8d1a722f58"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "0952e6a32dd112bfef16a21fd330d85ff0257401643cbc82ae56791ee9680396"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "9eca299e1a65bc228b7f63719943c7be167f38440f19d7cb6bc749215418b527"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "72186c981e2624cfef15dc0de2730ecf0074ff3d766848a171d33a34fb9345ff"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "b0b74cb59a217dc3a6058fbfe1de287c62fd8b8f5176618f048f8d47c83814fb"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "fd49c47961c55d05234c90fa1cc0e88872f86534e54df6c1cb21d27f9b90dac0"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "1c501cceebc3276fb10d5637d4c8f92e0261c4315e4020c6d203cf34e84ae335"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "b3be32a674be496431848b0df6a582be02f43d05448d5f82a58f78948e827dd0"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 0,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "0947cb2f2cc03551a736af865b2cee02715a2be06e6eae451f081544097c48fe"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "fa5df9837282e63453dca30eb3d9ed2552870f87c44e7c340f75d52c7bc2f715"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "5f78331632b7b6363e25d748a3316a8483364e1eed6893914345134beeb5ab14"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "3a953772f399e5335a30b8ad5a39a7dd40230f4abc7ddb6685973430605534bb"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "f09f342b59824a932c1af4417712263ad0eaa89f2e990023da8ea38b3905e9f2"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "cc94d8bc1f958dd1be30f04fb4c0eeab4becb7fd455de54b26aaa5bbc372bbe4"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "0ab15593875917a3f468323195d2d9ddd2d9a284a45aca9a359562521022f914"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "5e993bcba707cb41342e6d5a53216e4858ae8f424de97079995a3864980736e6"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "47f41a64302b811e9f722b4cd4d62b0857884c77c77bbc2da3930e73b4d1d01e"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "8ef4bdcc67e561cba97ce7fe70a374f9f8403c835bfba37beb788e82e85ae058"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 1,
+    "review_sample": "957b8bf30588dde422d1dd0df158f54382c2f971e4f3b7ae274b95b00ec4c2d1"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "8ef4bdcc67e561cba97ce7fe70a374f9f8403c835bfba37beb788e82e85ae058"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "07569efba0a013d8a2f7e45c8028988c2ef016c3a0ffefd02476b9a12da1c4d0"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "315dc4d10b67652b7069724dc571262a7e78a534a798a6f5ade33198c621405d"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 0,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "717edc409a960c5bb2a9288772a03e44b92c0853a35acc480ae0bc473af7d419"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 0,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 0,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 0,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 0,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "afad3a64b61a649f6aa60c745c5a773f7c154f9db1e926dca088727332cdbf86"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "2dd4e49089ff9ae64dad32466306742de15fcb62b4b6e70b16d7b2dc1b1ea3ad"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "114f1fb83bbb9b0987791da272743aceb8c5ffbf88d7175726812d3c588e6f6f"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 1,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "23a4c49e922a2530bc26b862f24103980c3d8642ac1526156b6c6cab4e5ba86a"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "df3a029437d53b4f55b6ced6b451a9d252e0eb586973db483215bd710b791620"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "fd49c47961c55d05234c90fa1cc0e88872f86534e54df6c1cb21d27f9b90dac0"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "b0b74cb59a217dc3a6058fbfe1de287c62fd8b8f5176618f048f8d47c83814fb"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "e5bfeb457be58265560349f4881d53f6bb45d7d078b5ab4929d868b131c2f830"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "72d6313c4bd56d2c39aaece796e9af7c742f0234df86a7634c9f9ca68546f808"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 1,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "f7da05a2cfc0eeca3146d72dc61b014b334bad1a87eefd1911a650f5fc729693"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "607b60bb6918ae086efa2fed2e8658504c8cdf0d866141f1b6ec29f6e8bb9125"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "8325b3d12e7865b368a768fa0943195f8bfac7ddaba6cb3c3eb75d7656ac73c3"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "70dc9294e05ce8adcb8ba38b531294b52140970db79cb256a38ef2387fb2a5e8"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "3377d24f3ac0b8ad502b8caec10a1422e5c1711d5cdd4ab2d4173ee8ac11da42"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "cc94d8bc1f958dd1be30f04fb4c0eeab4becb7fd455de54b26aaa5bbc372bbe4"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "0ab15593875917a3f468323195d2d9ddd2d9a284a45aca9a359562521022f914"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "5e993bcba707cb41342e6d5a53216e4858ae8f424de97079995a3864980736e6"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "af464623b891635c3bc8adf7fd63d9a7173303ff0da2bf4191a50a879fddc01b"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a4d005ff0112627314bb0b33d65ffc982143192653a59d7f45c4b68a80d38ef4"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a4d005ff0112627314bb0b33d65ffc982143192653a59d7f45c4b68a80d38ef4"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a4d005ff0112627314bb0b33d65ffc982143192653a59d7f45c4b68a80d38ef4"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "4e34ffaa5a975a86ea828e2845f749acf7e26bcdedc40ef7b3f209744717e2e1"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "db557b5f7fffd759db5ba5d7b187a0fa74cb39185a7db985cf8657158fb47fc6"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "52da61e5509f26b4c017e2e4446f10357fbee3160a59cb508e75be4ce56f630a"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "db557b5f7fffd759db5ba5d7b187a0fa74cb39185a7db985cf8657158fb47fc6"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 1,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "dfce2bb124419b6c31b64b0bdd952cc7b43f915a2dcb5fb32ce0a553b3e507d2"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a2443d9dbf69b617e0a5171fa4343cf3471e4c0e899066bcafeb05e87c469ffc"
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 1,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 1,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 1,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 1,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "37b8407f86a6e5c9c884c70901c034db48ed57eb37f46e62e6045e06806f4822"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "8e7b6828c65c92a7981667ee3212c46c4b3fee42ebf8f66c0c78239aa5cdc7cd"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 2,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "c61a2165fec1fd45a8bdc571faf2cb35c5d82da8c3ab6a3052550955a7a95f25"
+  },
+  {
+    "case_id": "b75db02a3254fdb4b38f",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "37b8407f86a6e5c9c884c70901c034db48ed57eb37f46e62e6045e06806f4822"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "92eae62ddc323e193c6259fffb9ebb14fe5131102bb281575b87e334567fc239"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "5e396cfcee9531edaa191f2e4978b7fb6417f8b3fac9910782249356ea987d8c"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "72186c981e2624cfef15dc0de2730ecf0074ff3d766848a171d33a34fb9345ff"
+  },
+  {
+    "case_id": "b1ee837f0eaf1d799342",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "30063d45fbc0cf22a012b2e157922d65fbd1313e5b5a77448f7fdbff90258b44"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 2,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "1c501cceebc3276fb10d5637d4c8f92e0261c4315e4020c6d203cf34e84ae335"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a722f1a38cf5f8eaca95eba4e2e5362dd4740c457f7b16813ed6af4b2e00eba9"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "672508e0ede4947f4287c309f4d02a1b9edbda0435bf8002e6ddb55a15ef874e"
+  },
+  {
+    "case_id": "db724c66b9c45278f3d6",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "6887aa5dae766701097c163816591beaf84c7ed2fe24de942a4b428e1380daeb"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "70dc9294e05ce8adcb8ba38b531294b52140970db79cb256a38ef2387fb2a5e8"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "91200fe060ea6d4c53c9f2897bdb1baa56a61f491688436d6d9c2a099fa77eae"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "0921fb81897e3558c4cd",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "a0cfe4547d9ac2cf3936fa4396ee1174ccd81acaedd1679748b732a9dbdb43e0"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "0594cf70eb489bb2955fe5fe7c9e8c3e7b3dd715950bdec38a1f62f3b89b1ffc"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "eafd0c2377e6e5d5a7b5dd0dc5993ebbab8b583adafbdb5d9d293b7c84960d60"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "8140c67ae95727d89a8247ce7b398cfcd13c649a47eec43027758070dca35d86"
+  },
+  {
+    "case_id": "3d6049a4fb304c7bbcbe",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "af464623b891635c3bc8adf7fd63d9a7173303ff0da2bf4191a50a879fddc01b"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "a60aae611250a23a515c",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "ae40306db38928e2acf26be6b05cf6637ed2acb6b59f976138d38de40b7a2c46"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "be0b2c404ed9ddb9e115d1b17abdfb509e2baf066ce6541505a518637c022b44"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "6417b56d3141df603b53324eef90b8585c9945dd4a45cd2f0496c24402f37afe"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "fd331580bb495054b3e52cfb6dd0724b7bbe66ed51b3a445d0671f75cb9d48d6"
+  },
+  {
+    "case_id": "ce3e8c6d9020bd7ad473",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "4e34ffaa5a975a86ea828e2845f749acf7e26bcdedc40ef7b3f209744717e2e1"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "340ff04c359fe9aa2da61be9cfb9824eee4d9f9d1dc694a26fe47f2ff064bdf5"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": "f49f091fec70afe545f4c60a96a5f793ed1705d90ca37fc93f1d8ca07e57cb48"
+  },
+  {
+    "case_id": "364ef48d5fbe821229f9",
+    "repeat": 2,
+    "arm": "before",
+    "score": 0,
+    "strict_score": 0,
+    "primary_score": 0,
+    "review_sample": "6b03f7d06a66948c45b6ec5299ff11dfdb308221e34f5c852fc8e2bbd1b6c85e"
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "29aa93cf68a69f18da3f",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "1dccfb5313d089977e47",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c4c82309fc69974c6e2c",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 2,
+    "arm": "after",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 2,
+    "arm": "optimized",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 2,
+    "arm": "after_old_retrieval",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  },
+  {
+    "case_id": "c44aa5848604c80b66f2",
+    "repeat": 2,
+    "arm": "before",
+    "score": 1,
+    "strict_score": 1,
+    "primary_score": 1,
+    "review_sample": null
+  }
+]

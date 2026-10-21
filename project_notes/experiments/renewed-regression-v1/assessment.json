@@ -1,0 +1,216 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "all": {
+        "attempts": 100,
+        "mechanical_successes": 100,
+        "strict_successes": 100,
+        "strict_rate": 1,
+        "primary_only_successes": 100,
+        "unique_questions": 100,
+        "all_repeats_pass_questions": 100,
+        "all_repeats_pass_wilson_95": [
+          0.9630065017930143,
+          1.0
+        ],
+        "requests": 142,
+        "tokens": 232990,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 4.31474,
+        "repairs": 1
+      },
+      "common": {
+        "attempts": 65,
+        "mechanical_successes": 65,
+        "strict_successes": 65,
+        "strict_rate": 1,
+        "primary_only_successes": 65,
+        "unique_questions": 65,
+        "all_repeats_pass_questions": 65,
+        "all_repeats_pass_wilson_95": [
+          0.9441984686771432,
+          1.0
+        ],
+        "requests": 80,
+        "tokens": 120378,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 3.6213076923076923,
+        "repairs": 0
+      },
+      "new_capabilities": {
+        "attempts": 35,
+        "mechanical_successes": 35,
+        "strict_successes": 35,
+        "strict_rate": 1,
+        "primary_only_successes": 35,
+        "unique_questions": 35,
+        "all_repeats_pass_questions": 35,
+        "all_repeats_pass_wilson_95": [
+          0.9010990076755959,
+          0.9999999999999999
+        ],
+        "requests": 62,
+        "tokens": 112612,
+        "unknown_usage_tasks": 0,
+        "mean_seconds": 5.602542857142857,
+        "repairs": 1
+      },
+      "categories": {
+        "annual_growth": {
+          "attempts": 10,
+          "mechanical_successes": 10,
+          "strict_successes": 10,
+          "strict_rate": 1,
+          "primary_only_successes": 10,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 10,
+          "tokens": 13305,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.6921,
+          "repairs": 0
+        },
+        "boundary": {
+          "attempts": 10,
+          "mechanical_successes": 10,
+          "strict_successes": 10,
+          "strict_rate": 1,
+          "primary_only_successes": 10,
+          "unique_questions": 10,
+          "all_repeats_pass_questions": 10,
+          "all_repeats_pass_wilson_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "requests": 10,
+          "tokens": 13251,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.7639,
+          "repairs": 0
+        },
+        "company_comparison": {
+          "attempts": 15,
+          "mechanical_successes": 15,
+          "strict_successes": 15,
+          "strict_rate": 1,
+          "primary_only_successes": 15,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 15,
+          "tokens": 20140,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.8864,
+          "repairs": 0
+        },
+        "explanation": {
+          "attempts": 15,
+          "mechanical_successes": 15,
+          "strict_successes": 15,
+          "strict_rate": 1,
+          "primary_only_successes": 15,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 30,
+          "tokens": 53754,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.565666666666667,
+          "repairs": 0
+        },
+        "hybrid": {
+          "attempts": 15,
+          "mechanical_successes": 15,
+          "strict_successes": 15,
+          "strict_rate": 1,
+          "primary_only_successes": 15,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 31,
+          "tokens": 58158,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 6.7123333333333335,
+          "repairs": 1
+        },
+        "metric_query": {
+          "attempts": 15,
+          "mechanical_successes": 15,
+          "strict_successes": 15,
+          "strict_rate": 1,
+          "primary_only_successes": 15,
+          "unique_questions": 15,
+          "all_repeats_pass_questions": 15,
+          "all_repeats_pass_wilson_95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "requests": 15,
+          "tokens": 19928,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 2.602933333333333,
+          "repairs": 0
+        },
+        "upload": {
+          "attempts": 20,
+          "mechanical_successes": 20,
+          "strict_successes": 20,
+          "strict_rate": 1,
+          "primary_only_successes": 20,
+          "unique_questions": 20,
+          "all_repeats_pass_questions": 20,
+          "all_repeats_pass_wilson_95": [
+            0.8388748419471806,
+            1.0
+          ],
+          "requests": 31,
+          "tokens": 54454,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.7702,
+          "repairs": 0
+        }
+      },
+      "repeats": {
+        "0": {
+          "attempts": 100,
+          "mechanical_successes": 100,
+          "strict_successes": 100,
+          "strict_rate": 1,
+          "primary_only_successes": 100,
+          "unique_questions": 100,
+          "all_repeats_pass_questions": 100,
+          "all_repeats_pass_wilson_95": [
+            0.9630065017930143,
+            1.0
+          ],
+          "requests": 142,
+          "tokens": 232990,
+          "unknown_usage_tasks": 0,
+          "mean_seconds": 4.31474,
+          "repairs": 1
+        }
+      }
+    }
+  },
+  "paired": null,
+  "failures": [],
+  "tasks_sha256": "cdf2562b61df223a622e10158c79da9b5addc24391d29a5e49cb72bf32763595",
+  "review_summary_sha256": "6c130d1fb6b81ba5ea5a8f25574f5a0354f65a80f983c8f19c86f8dd35aa0c18",
+  "review_directory": "renewed-regression-review-v1",
+  "strict_rule": "mechanical checks and every claim supported and relevance=2 and interpretation=2; intersection where two reviewers available",
+  "no_repeated_answer_independence_assumption": true
+}

@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "samples": 72,
+  "mapped_outputs": 96,
+  "primary_reviews": 72,
+  "secondary_reviews": 35,
+  "control_errors": {
+    "A": 0,
+    "B": 0
+  },
+  "disagreements": [
+    "control-7",
+    "0a1931afeff4a8f586be03441f3f44ef2ce6ebea9f1c12926a07ab36032b2994",
+    "control-1",
+    "3a953772f399e5335a30b8ad5a39a7dd40230f4abc7ddb6685973430605534bb",
+    "b3be32a674be496431848b0df6a582be02f43d05448d5f82a58f78948e827dd0",
+    "957b8bf30588dde422d1dd0df158f54382c2f971e4f3b7ae274b95b00ec4c2d1",
+    "control-2",
+    "07569efba0a013d8a2f7e45c8028988c2ef016c3a0ffefd02476b9a12da1c4d0"
+  ],
+  "decision": "conservative intersection on double-reviewed samples; primary elsewhere"
+}

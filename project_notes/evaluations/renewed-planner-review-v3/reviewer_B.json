@@ -1,0 +1,621 @@
+{
+  "e6b6a4fcbcd25f3683f83fbfede8572eca865bacf54b4cada65ac7dcf7bf5215": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statements of income show net income of $29,760M for FY2024 (Jan 28, 2024) versus $4,368M for FY2023 (Jan 29, 2023), supporting the increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states effective tax rates for fiscal years 2024 and 2023 were lower than the 21% statutory rate due primarily to FDII deduction, stock-based compensation, and the U.S. federal research tax credit."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states the fiscal year 2024 effective tax rate was additionally benefited by the IRS audit resolution."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 189,
+      "prompt_tokens": 1754,
+      "total_tokens": 1943,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 218
+    }
+  },
+  "b3e0e541ecaa598d3e868592f9ec694f254cc3fff29b4ac78b653eea73e348ce": {
+    "claims": [],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": null
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The statement is a verbatim quote from the cited passage (e4f090b3f676a57e7cf7dfe4), which discusses government/economic incentives being reduced or amended and their negative impact on demand and pricing."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 84,
+      "prompt_tokens": 1265,
+      "total_tokens": 1349,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 241
+    }
+  },
+  "b3203891a75ace4be38fc5711c32b66108a04b7993a3365c407eff11e79e5c53": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that consequences of developments include negative effects on user trust and engagement and adverse effects on business and financial results."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states that failure to expand internationally and manage global operations complexity could adversely affect financial results."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states that ceasing or modifying operations or offerings in certain regions could adversely affect business, user growth and engagement, and financial results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 122,
+      "prompt_tokens": 1054,
+      "total_tokens": 1176,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  "8ab05bb37d418044243a5ba4112b83cc11ee2bfefd860d865c441b38e98509d8": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that rapidly changing regulations may delay, restrict or prohibit certain functionalities and vehicle designs and could adversely affect the business, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states that decreases in retail or wholesale electricity prices could make products less attractive and lead to increased customer defaults, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states that unknown or immaterial risks may materially adversely affect business, financial condition and operating results, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 1300,
+      "total_tokens": 1453,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 148
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is verbatim from the supplied passage fc99b58ac8c11fb34683f7b0, which is a META FY2024 risk factor excerpt."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 72,
+      "prompt_tokens": 833,
+      "total_tokens": 905,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 193
+    }
+  },
+  "c0a47d6cab4ed0890594ac01f592440993d74d8ee4905566865d72dd2b6cb514": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage states government/economic incentives may be reduced, eliminated, amended or exhausted, and that such developments could negatively impact demand for Tesla's vehicles, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage explicitly states rising interest rates may lead consumers to pull back spending, including on Tesla's products, which may harm demand, business and operating results."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states regulations continue to rapidly change and may delay, restrict or prohibit availability of certain functionalities and vehicle designs, which could adversely affect the business."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 162,
+      "prompt_tokens": 1471,
+      "total_tokens": 1633,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 191
+    }
+  },
+  "aa2a0a78cfccfaf20889c1b94e4374eaf50c9589a9ba51e61b83265335afc549": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of income shows net income of $29,760 million for FY2024 (Jan 28, 2024) versus $4,368 million for FY2023 (Jan 29, 2023), supporting the increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states effective tax rates for FY2024 and FY2023 were lower than the 21% statutory rate due primarily to FDII deduction, stock-based compensation, and the U.S. federal research tax credit."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote explicitly states the FY2024 effective tax rate was additionally benefited by the IRS audit resolution."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 183,
+      "prompt_tokens": 1750,
+      "total_tokens": 1933,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 214
+    }
+  },
+  "2d29efe8c7a6104c54df38c114aaa0eba69a4260e5a53cb7c8a50e40fb54437d": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement shows net income of $29,760M for FY2024 (Jan 28, 2024) versus $4,368M for FY2023 (Jan 29, 2023), supporting the increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states effective tax rates for FY2024 and FY2023 were below the 21% statutory rate due primarily to FDII deduction, stock-based compensation, and the U.S. federal research tax credit."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote explicitly states the FY2024 effective tax rate was additionally benefited by the IRS audit resolution."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 1750,
+      "total_tokens": 1930,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 214
+    }
+  },
+  "f330add8c1b19f09030ed07f2d3ef38586d210884aa49616fe8a9bf4df61c7d3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states negative publicity about misinformation/objectionable use could adversely affect marketer demand for advertising, resulting in decreased revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states failure to effectively scale technical infrastructure may adversely affect user engagement and advertising revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states competitors may acquire/engage users or generate revenue at Meta's expense, negatively affecting business and financial results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 136,
+      "prompt_tokens": 1401,
+      "total_tokens": 1537,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 249
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage discusses regulatory changes affecting Autopilot/FSD and business, not the chief executive's personal investments; it does not prove exclusive causation by personal investments."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 1084,
+      "total_tokens": 1144,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 188
+    }
+  },
+  "d0b997e1de85f5cb930dff520de65b74d08cce19e33c743f3554a7af66381b31": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The passage states that government and economic incentives may be reduced, eliminated, amended or exhausted, and that such developments could negatively impact demand for Tesla's vehicles, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states rising interest rates may lead consumers to pull back spending, including on Tesla's products, which may harm demand, business and operating results."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states regulations continue to rapidly change and may delay, restrict or prohibit availability of certain functionalities and vehicle designs, which could adversely affect the business."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 163,
+      "prompt_tokens": 1489,
+      "total_tokens": 1652,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 209
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is verbatim from the cited passage and directly states that negative publicity could reduce revenue, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 58,
+      "prompt_tokens": 1235,
+      "total_tokens": 1293,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 211
+    }
+  },
+  "82c7cd51ef0b5c5472261f61db64e96464ca796b86f0f961f8965eb7a53d01c7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of income shows net income of $29,760M for FY2024 (Jan 28, 2024) versus $4,368M for FY2023 (Jan 29, 2023), supporting the increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states effective tax rates for FY2024 and FY2023 were lower than the 21% statutory rate due primarily to FDII deduction, stock-based compensation, and the U.S. federal research tax credit."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states the effective tax rate increased due to decreased impact of those tax benefits relative to the increase in income before income tax, partially offset by the IRS audit resolution benefit."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 200,
+      "prompt_tokens": 1964,
+      "total_tokens": 2164,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 172
+    }
+  },
+  "c55afc16f1c2379e1c33d7a41aa9ee5e101c5a095ccf4e954eed7bdff0fe99f3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim and states that failure to expand internationally and manage global operations complexity could adversely affect financial results."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim supports that META may cease or modify operations or product offerings in certain regions, adversely affecting business, user growth and engagement, and financial results."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim lists consequences including negative effects on user trust and engagement, harm to reputation and brands, and adverse effects on business and financial results."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 1063,
+      "total_tokens": 1218,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 167
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited quote discusses competition law regulatory actions and their potential impact on revenue; it does not state any management guarantee of doubled financial performance or absence of risks. The claim is an invented guarantee unsupported by the excerpt."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 1290,
+      "total_tokens": 1368,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  "5458fc1ddc74cf0ae1d795be1aebd9d4e2f38accf5fec07624b4f8599c166b60": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states negative publicity about misinformation/objectionable use could adversely affect marketer demand for advertising, resulting in decreased revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states failure to effectively scale technical infrastructure may adversely affect user engagement and advertising revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states competitors may acquire users or generate advertising revenue at Meta's expense, negatively affecting business and financial results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 135,
+      "prompt_tokens": 1398,
+      "total_tokens": 1533,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 246
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote describes negative publicity potentially decreasing revenue; it does not guarantee doubled financial performance or absence of risks, and guarantees are unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 1188,
+      "total_tokens": 1250,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 164
+    }
+  },
+  "84fb9f57441153c377481dcbfac3dee2872ea7455e43249abeb8263e865d04e5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "引文直接说明竞争法执法与法院裁决可能降低产品吸引力并减少由此带来的收入。"
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "引文提到政治突变、恐怖活动、武装冲突造成经济扰乱，并明确称这些变化可能对收入产生负面影响。"
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "引文明确表示若产品不符合客户期望或法律要求，可能失去销售机会。"
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 112,
+      "prompt_tokens": 1849,
+      "total_tokens": 1961,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 185
+    }
+  },
+  "589cd89e89cee933e7a29016bb6cc650e204fc47728b7fc13a119ded04423698": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "引文明确说明竞争法执法行动和法院裁决可能降低产品吸引力并减少由此产生的收入，与陈述一致。"
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "引文明确说明地缘政治不稳定可能导致制裁、影响在部分市场或公共部门客户开展业务，并可能对收入产生负面影响。"
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "引文明确说明若产品不符合客户期望或法律要求，可能失去销售机会或面临监管/法律行动，与陈述一致。"
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 149,
+      "prompt_tokens": 1816,
+      "total_tokens": 1965,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 152
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote discusses consequences of unspecified 'foregoing developments' on trust, reputation, and financial results; it does not mention the chief executive's personal investments or exclusive causation, so the claim is invented and unsupported."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 848,
+      "total_tokens": 926,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 208
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the supplied passage a9e38e66001695d25fde4825, which explicitly links competition law actions to reduced product attractiveness and revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 1318,
+      "total_tokens": 1392,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 166
+    }
+  }
+}

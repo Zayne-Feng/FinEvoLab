@@ -1,0 +1,1511 @@
+{
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is a verbatim excerpt from the provided source table showing net income of 72,738 (FY2022) vs 61,271 (FY2021) and a 19% change, matching the claim."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 1435,
+      "total_tokens": 1516,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 923
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is a verbatim excerpt from the provided source passage showing net income of $96,995 (FY2023), $99,803 (FY2022), and $94,680 (FY2021)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 1740,
+      "total_tokens": 1819,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1484
+    }
+  },
+  "22bd7219dc3b7586fa60f1b8966854fe7db7ff01bc8e40b042f5ff4ba35b7576": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows income from operations of 84,293 in 2023 and 112,390 in 2024, an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses rose 2% year over year, driven by depreciation, employee compensation, and third-party services fees, partially offset by reductions in legal/other matters and office space optimization charges."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states Google Services operating income increased $25.4 billion, driven by revenue increases, partially offset by content acquisition costs and TAC, with reduced employee compensation also contributing."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 173,
+      "prompt_tokens": 1860,
+      "total_tokens": 2033,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1604
+    }
+  },
+  "19e3cdffc47e558e9fb2297467b4687b70ca61887ec5206457b9ff4184731cec": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows operating income of 6,741 in FY2024 versus 6,650 in FY2023, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses increased primarily due to the $1 billion Figma termination fee incurred in fiscal 2024, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage explicitly states the termination fee was recorded in operating expenses in the Consolidated Statements of Income during fiscal 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 151,
+      "prompt_tokens": 1880,
+      "total_tokens": 2031,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1624
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote is only an operating income table row; it contains no management guarantee, no doubling forecast, and no risk statement. The claim invents guarantees and forecasts unsupported by the excerpt."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 1559,
+      "total_tokens": 1632,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1303
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage discusses supply shortages and price increases from global/regional economic conditions; it says nothing about the chief executive's personal investments, let alone exclusive causation."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 67,
+      "prompt_tokens": 1213,
+      "total_tokens": 1280,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 957
+    }
+  },
+  "c22aa023935c561ee192fa28b31d49bd259efbb26c29bb9bb1cc594b68ac20ed": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement excerpt shows operating income of 6,741 in FY2024 versus 6,650 in FY2023, supporting the claim that operating income increased."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The excerpt directly states operating expenses increased by $2.00 billion, or 19%, primarily due to the $1 billion Figma termination fee incurred in fiscal 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 1622,
+      "total_tokens": 1729,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1366
+    }
+  },
+  "d58667277486dafb4c9664606b6fa32916040d64aa599d2b5019a04ec494aa77": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim and is from MSFT's FY2022 report, directly supporting the stated risk and effects."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim matches the claim and is from MSFT's FY2022 report, directly supporting the sanctions/revenue risk."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote closely matches the claim (minor wording 'orders we stop' vs 'orders to stop') and is from MSFT's FY2022 report, supporting the compliance cost and noncompliance penalty risk."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 161,
+      "prompt_tokens": 1218,
+      "total_tokens": 1379,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 962
+    }
+  },
+  "4115f9d288f5a278f41d5eb23c68e8c9b28f7c70a3eca4aa9019bfa2878c94b4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote shows net income of $5,428M in FY2023 versus $4,756M in FY2022, supporting the increase claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate was lower than the 21% statutory rate due to research tax credit and non-U.S. operations, partly offset by state taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate decreased about one percentage point versus fiscal 2022, primarily due to increased net tax benefit from non-U.S. operations."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 1804,
+      "total_tokens": 1970,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1548
+    }
+  },
+  "9dd1179d0d74c15158bc8060526cf4cca17824c3bd0e2a8f4bbdd98af0fdda2a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statement of income shows income from operations of 78,714 in 2021 and 74,842 in 2022, a decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states operating expenses rose 20% year over year, primarily driven by compensation expenses due to headcount growth, third-party service fees, and advertising and promotional expenses."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The Google Services passage states the decrease in operating income was primarily driven by increases in compensation expenses and TAC, partially offset by growth in revenues."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 162,
+      "prompt_tokens": 1723,
+      "total_tokens": 1885,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1467
+    }
+  },
+  "eaea44e5c00ab28d1eb340525489899eae4eb82a1c5c1ada67a99cf7597906cd": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Total revenues of $307,394M in 2023 and $350,018M in 2024, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the growth was driven by interrelated factors including search query increases from mobile adoption/usage, advertiser spending growth, and ad format/delivery improvements."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states YouTube ads growth was driven by brand advertising products followed by direct response products, both benefiting from increased advertiser spending."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 1626,
+      "total_tokens": 1784,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1370
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the cited passage, which states total net sales decreased 3% or $11.0 billion during 2023 compared to 2022."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 63,
+      "prompt_tokens": 793,
+      "total_tokens": 856,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 537
+    }
+  },
+  "5387a935b070e97e020e1d3175d463b197b7bbf06d1a878adf644e95e4f8f22e": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows operating income of 114,301 in FY2023 versus 119,437 in FY2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states Products gross margin decreased in 2023 vs 2022 due to foreign currency weakness and lower Products volume, partially offset by cost savings and different Products mix."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states Services gross margin increased in 2023 vs 2022 primarily due to higher Services net sales, partially offset by foreign currency weakness and higher Services costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 172,
+      "prompt_tokens": 1788,
+      "total_tokens": 1960,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1532
+    }
+  },
+  "5c799de968943ad022dc1f1cc83620ea90d563d44ec33d771e50a58794ca9a2a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states revenues increased 10% year over year primarily driven by Google Services and Google Cloud revenue increases, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote confirms growth driven by brand advertising then direct response products, benefiting from advertiser spending and format/delivery improvements, and adversely affected by unfavorable FX rates."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote confirms Google other revenues increased $1.0B driven by YouTube non-advertising and hardware, partially offset by Google Play decrease, and the overall increase was adversely affected by unfavorable FX rates."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 1251,
+      "total_tokens": 1418,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 995
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage discusses geopolitical and armed conflict risks, not the chief executive's personal investments; it does not prove exclusive causation by any such factor."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 945,
+      "total_tokens": 1009,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 689
+    }
+  },
+  "5d923642f0132629174c5aaa04fe70f7564c50480c4169398e58b3eb7db2bd6c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated results table shows operating income of 114,301 in FY2023 versus 119,437 in FY2022, confirming a decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states Products gross margin decreased due to foreign currency weakness and lower Products volume, partially offset by cost savings and a different Products mix."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states Services gross margin increased due primarily to higher Services net sales, partially offset by foreign currency weakness and higher Services costs."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 1808,
+      "total_tokens": 1961,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1552
+    }
+  },
+  "9796060d6e61c917897f3af21015c94504e357f9b0c5b20518f747104af1e35f": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $73,795M in 2023 and $100,118M in 2024, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate increased from 2023 to 2024, primarily due to a one-time IRS tax rule change affecting the 2023 rate related to U.S. federal foreign tax credits and a separate rule change on R&D capitalization/amortization."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states a decrease in the 2024 U.S. federal FDII tax deduction contributed to a higher effective tax rate, partially offset by increased stock-based compensation-related tax benefits in 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 195,
+      "prompt_tokens": 1825,
+      "total_tokens": 2020,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1569
+    }
+  },
+  "4a691ce33c7024482e25564cbb709abf49f5c9d9a6d68e32523e0b3613c2f53c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is verbatim from the supplied FY2022 GOOGL passage and directly states the manufacturing and supply chain risk disclosure."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote is verbatim from the supplied FY2022 GOOGL passage and directly states the international operations risk disclosure."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The statement accurately paraphrases the supplied passage, which lists supply shortages, price increases, longer lead times, and the cited drivers including raw material/component availability, manufacturing capacity, labor shortages, and inflation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 1276,
+      "total_tokens": 1434,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 892
+    }
+  },
+  "e7bbfa92cb71f7cf688c812697a00884962ea2c622eff3e22ffcb0f429c65966": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows total net sales of 383,285 in FY2023 versus 394,328 in FY2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states total net sales decreased 3% or $11.0 billion, foreign currency weakness accounted for more than the entire decrease, driven primarily by lower Mac and iPhone sales partially offset by higher Services sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states iPhone net sales decreased 2% or $4.9 billion due to lower non-Pro iPhone model sales, partially offset by higher Pro iPhone model sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 1887,
+      "total_tokens": 2067,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1631
+    }
+  },
+  "801e11b7018825b94b6451c764fcd5375a1abd30b23a6f431823b78ab3a58084": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated revenue table shows total revenue of 21,505 in FY2024 versus 19,409 in FY2023, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly attributes Digital Media revenue growth to Creative and Document Cloud subscription offerings, continued demand, strong engagement, and migration to higher valued subscription offerings."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states Digital Experience revenue increased $473 million driven by subscription revenue growth across offerings, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 134,
+      "prompt_tokens": 1819,
+      "total_tokens": 1953,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1563
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited table shows a 19% operating income change, not a management guarantee of doubling performance, and no such guarantee or risk-free claim appears in the excerpts."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1318,
+      "total_tokens": 1386,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1062
+    }
+  },
+  "c045eceb9c1285179d2bab81fc4ee7cb68304b68a3ded941a6ce36a347e290d4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that global/regional economic conditions affecting suppliers can affect the Company's ability to obtain components, leaving it subject to supply shortages and price increases that can materially adversely affect business, results of operations and financial condition."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states new ventures are inherently risky and may not be successful, and that failure of any significant investment could materially adversely affect business, reputation, results of operations and financial condition."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote lists increased credit and collectibility risk on trade receivables, reduced liquidity, and other impacts that can materially adversely affect business, results of operations, financial condition and stock price."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 185,
+      "prompt_tokens": 1520,
+      "total_tokens": 1705,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1264
+    }
+  },
+  "9bcec1c3e5bbbd1c03cdb4a53879e77dabf23fd8b49bf749227c01641cd6840c": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The consolidated statement of operations shows income from operations of 84,293 in 2023 and 112,390 in 2024, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states Google Services operating income increased $25.4 billion from 2023 to 2024, driven primarily by revenue increases, partially offset by content acquisition costs and TAC, with reduced employee compensation also contributing."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states Google Cloud operating income increased $4.4 billion from 2023 to 2024, driven primarily by revenue increases, partially offset by technical infrastructure usage costs and employee compensation expenses largely from headcount growth."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 1822,
+      "total_tokens": 2014,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1566
+    }
+  },
+  "8bb8e58bc28072b0e51e4d9b581643c159766336293ef2df124a9e0773d3d4f8": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that worsening economic conditions including inflation, recession, or pandemic may cause lower IT spending and adversely affect revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states that abrupt political change, terrorism, and armed conflict such as the ongoing conflict in Ukraine pose a risk of general economic disruption that may increase operating costs and negatively impact ability to sell to and collect from customers in affected markets."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states that compliance with these types of regulation may involve significant costs or require changes in products or business practices that result in reduced revenue."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 1320,
+      "total_tokens": 1489,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1064
+    }
+  },
+  "6cdb62ca3db27bbdd109df60d0a9c666c13b2baa85eaf5f513a78cd3af77cc7a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $76,033M in 2021 and $59,972M in 2022, confirming a decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2021 to 2022 primarily driven by R&D capitalization/amortization under the 2017 Tax Cuts and Jobs Act generating an increase in the FDII deduction."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states the decrease was partially offset by a decrease in pre-tax earnings in lower statutory rate countries and a decrease in the stock-based compensation related tax benefit."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 1765,
+      "total_tokens": 1945,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1509
+    }
+  },
+  "44563c4c7a027bbd58c845625ef6b543b1e87d986a410f912ee5943276cc613e": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The revenue table shows total revenue of 21,505 in FY2024 versus 19,409 in FY2023, an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states Digital Media revenue increased $1.65 billion driven by Creative and Document Cloud subscription offerings due to continued demand, engagement, and migration to higher valued offerings."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states Digital Experience revenue increased $473 million driven by subscription revenue growth across offerings."
+      },
+      {
+        "index": 3,
+        "supported": true,
+        "reason": "The table shows total revenues of $97,690 million in 2024 versus $96,773 million in 2023, an increase."
+      },
+      {
+        "index": 4,
+        "supported": true,
+        "reason": "The passage states services and other revenue increased $2.22 billion, or 27%, primarily due to increases in used vehicle sales, non-warranty maintenance and collision, paid Supercharging, insurance services, and part sales."
+      },
+      {
+        "index": 5,
+        "supported": true,
+        "reason": "The passage states energy generation and storage revenue increased $4.05 billion, or 67%, primarily due to a 16.7 GWh increase in Megapack and Powerwall deployments."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 310,
+      "prompt_tokens": 3110,
+      "total_tokens": 3420,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2854
+    }
+  },
+  "b707c199615d638c01ee108a2f75be1d65358132b11741db558845c5b5a15949": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income of 72,738 in 2022 vs 61,271 in 2021 with a 19% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate decreased (13% vs 14%) primarily due to a $3.3 billion net income tax benefit from transfer of intangible properties, offset in part by income mix changes and prior-year tax benefits, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate primarily due to the intangible property transfer tax benefit, lower foreign rates from Ireland operations, and stock-based compensation tax benefits, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 200,
+      "prompt_tokens": 1812,
+      "total_tokens": 2012,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1556
+    }
+  },
+  "60a57ea749f62e47c376eebfefb0f97e73c3485183158fe9717ff4cd599e1699": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows total revenues of $257,637M in 2021 and $282,836M in 2022, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states growth was driven by increases in search queries from user adoption/usage, advertiser spending, and ad format/delivery improvements, and was adversely affected by unfavorable FX rates."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage attributes Google other revenue growth to YouTube non-advertising and hardware, partially offset by a decrease in Google Play, and notes adverse FX effects."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 168,
+      "prompt_tokens": 1851,
+      "total_tokens": 2019,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1595
+    }
+  },
+  "99473d1cb926568ea69dff05360162c0c1e27e3014d91dbb85b43f97ebf8ef46": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows Total revenue of 198,270 (FY2022) vs 168,088 (FY2021), confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states revenue increased $30.2 billion or 18% driven by growth across each of our segments."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage attributes each segment's growth to the named drivers (Azure/cloud, Office 365 Commercial/LinkedIn, Search/news advertising/Windows)."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 1751,
+      "total_tokens": 1903,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1495
+    }
+  },
+  "c7d6d4cbd4f11b6eb82c63e7cce19433941245643edb0f26e7f164291e44518a": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table shows net income of $5,560M in FY2024 versus $5,428M in FY2023, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the FY2024 effective tax rate was lower than the 21% statutory rate due to non-U.S. operations and research tax credit, partially offset by the Figma termination fee and state taxes, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the FY2024 effective tax rate remained relatively flat versus FY2023, with the non-deductible Figma fee largely offset by increases in net tax benefits from non-U.S. operations and stock-based compensation, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 1797,
+      "total_tokens": 1995,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1541
+    }
+  },
+  "fa9305054f7a494d74bb6c5fad99371d9235d22f0d8b8de087205b4ec749face": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows total revenue of 21,505 in FY2024 versus 19,409 in FY2023, supporting the statement that revenue increased."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quoted passage directly states Digital Media revenue increased $1.65 billion driven by Creative and Document Cloud subscription offerings due to continued demand, strong engagement, and migration to higher valued subscription offerings."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quoted passage directly states Digital Experience revenue increased $473 million driven by subscription revenue growth across offerings."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 156,
+      "prompt_tokens": 1838,
+      "total_tokens": 1994,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1582
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted passage is a verbatim excerpt from the FY2022 income statement showing Total revenue of 198,270 (2022), 168,088 (2021), and 143,015 (2020), matching the claim exactly."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 84,
+      "prompt_tokens": 1558,
+      "total_tokens": 1642,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1302
+    }
+  },
+  "5de11bf70694458fae9f94b761216ff883fa97e4fb0ab035ffab631fb0b60468": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement excerpt shows Total revenue of 198,270 in FY2022 versus 168,088 in FY2021, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states revenue increased $30.2 billion or 18% driven by growth across each of our segments, matching the claim."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states Intelligent Cloud revenue increased driven by Azure and other cloud services, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 1678,
+      "total_tokens": 1821,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1422
+    }
+  },
+  "993b16a41679c1b92840e142c20c3ff4bede13b5a38ae5b81f58971227467d15": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $96,995M in FY2023 versus $99,803M in FY2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate for 2023 was lower than 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued in 2022, partially offset by lower tax benefits from share-based compensation."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states effective tax rates are affected by changes in the mix of earnings in countries with differing statutory tax rates, among other listed factors."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 186,
+      "prompt_tokens": 2008,
+      "total_tokens": 2194,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1752
+    }
+  },
+  "84fbc91569fe7fcc20a499ed3b1b6f8c0d1a44da763f143fafe2edcf98a0cb92": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income of 83,383 in 2022 versus 69,916 in 2021, a 19% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states competitive pressures may cause increased operating costs such as R&D, marketing, and sales incentives, leading to lower operating income."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage verbatim states failure to execute organizational/technical changes or generate sufficient usage may negatively impact gross margins and operating income."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 1576,
+      "total_tokens": 1734,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1320
+    }
+  },
+  "89bbcfa98c1d00683cb3f4b372c4c6fe1e7578c85d8eb017567de98983e94fe5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim lists these factors (devices/modalities, geographic mix, deceleration/declines in advertiser spending) as reasons revenue growth rate could decline."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote states downward pressure on operating margin from expansion into hardware, Google Cloud, subscription products, and Other Bets, which may have lower margins than advertising."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states volume-based pricing/minimum purchase requirements could cause increased costs or liabilities making products costlier per unit and harming financial condition and operating results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 163,
+      "prompt_tokens": 1606,
+      "total_tokens": 1769,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1350
+    }
+  },
+  "fa05fcdf6b7af04d66a35a579951cbf471ba6c95496c8e074690e8b12315c1e1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Net income of 72,738 in 2022 vs 61,271 in 2021 with 19% change, supporting an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate decreased from 14% to 13%, primarily due to a $3.3 billion net income tax benefit from transfer of intangible properties, offset in part by income mix changes and prior-year tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate was lower than the U.S. federal statutory rate primarily due to the intangible transfer tax benefit, lower foreign tax rates from Ireland operations, and stock-based compensation tax benefits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 189,
+      "prompt_tokens": 1828,
+      "total_tokens": 2017,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1572
+    }
+  },
+  "15cd7009dc77dd9f56fc8a3b54939c971feff67dc5119a2e5c72b748913bb01d": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of income shows net income of $76,033M in 2021 and $59,972M in 2022, supporting the stated decrease."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states the effective tax rate decreased from 2021 to 2022, primarily driven by R&D capitalization/amortization under the 2017 Tax Cuts and Jobs Act increasing the U.S. federal FDII tax deduction."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the decrease was partially offset by a decrease in pre-tax earnings, including in countries with lower statutory rates, and a decrease in the stock-based compensation related tax benefit."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 189,
+      "prompt_tokens": 1811,
+      "total_tokens": 2000,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1555
+    }
+  },
+  "ce989a0d378a7cfe55dbb43d15e33624783cc40df254bfaae1b023027e718117": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows Income from operations of 74,842 for 2022, and the monetary context confirms USD in millions (scale 6)."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states operating expenses were $81.8 billion, up 20% year over year, driven by compensation/headcount growth, third-party service fees, and advertising/promotional expenses."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states Google Services operating income decreased $5.3 billion from 2021 to 2022, driven primarily by increases in compensation expenses and TAC, partially offset by revenue growth."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 1743,
+      "total_tokens": 1920,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1487
+    }
+  },
+  "4cb39725526fa70e4cf0f202cc8de45d7a1ec97679111b59e49843c2ac123936": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement excerpt shows total revenue of 19,409 in fiscal 2023 versus 17,606 in fiscal 2022, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states that success in driving ARR growth positively affected revenue growth and that Digital Media segment revenue growth was driven by strong net new user growth."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states that the U.S. Dollar strengthened against EMEA and APAC currencies, decreasing revenue by approximately $371 million, and that this was offset in part by net hedging gains of $41 million."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 195,
+      "prompt_tokens": 1976,
+      "total_tokens": 2171,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1720
+    }
+  },
+  "013b422bf877c5db75d7323742b387bd3c4a087a6da6e8bb941186bdb4975b71": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The table shows operating income of 83,383 in 2022 vs 69,916 in 2021, a 19% increase, supporting the claim of an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states competitive pressures may cause increased operating costs and lead to lower operating income."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage directly states failure to execute organizational/technical changes or generate sufficient usage may negatively impact operating income."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 1569,
+      "total_tokens": 1712,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1313
+    }
+  },
+  "9499633b53d5111150c071408f55765818e14631b1e621ea1628677a6d3733e2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statements of operations shows net income of $96,995M in 2023 versus $99,803M in 2022, a decrease, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the 2023 effective tax rate was lower than 2022 due primarily to lower foreign earnings tax rate and U.S. foreign tax credit regulations, partially offset by lower share-based compensation tax benefits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states 2023 and 2022 effective tax rates were below the statutory federal rate due primarily to lower foreign earnings tax rate, U.S. R&D credit, and share-based compensation benefits, partially offset by state income taxes."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 197,
+      "prompt_tokens": 1958,
+      "total_tokens": 2155,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1702
+    }
+  },
+  "9c75aeb6e2cc0698bcc7430b57e1bab3256673b82b981ece8c19b590ac68375e": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table shows net income of $5,560M in FY2024 versus $5,428M in FY2023, supporting an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage directly states the FY2024 effective tax rate was lower than the 21% statutory rate due to non-U.S. operations and research tax credit, partly offset by Figma termination fee and state taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states the effective tax rate remained relatively flat versus fiscal 2023, with the non-deductible Figma termination fee largely offset by increases in net tax benefits from non-U.S. operations and stock-based compensation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 186,
+      "prompt_tokens": 1819,
+      "total_tokens": 2005,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1563
+    }
+  },
+  "4c94896836f015d0675e5439a5bf33ed41603b2832b6fe83d8f21c481cb77fc5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement of income shows net income of $73,795M in 2023 and $100,118M in 2024, supporting the claim that net income increased in FY2024 versus the prior year."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage states the effective tax rate increased from 2023 to 2024, primarily due to a one-time IRS tax rule change affecting the 2023 rate related to U.S. federal foreign tax credits, plus a separate rule change on capitalization and amortization of R&D."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contributed to an increase in the effective tax rate, partially offset by an increase in stock-based compensation-related tax benefits in 2024."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 1849,
+      "total_tokens": 2048,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1593
+    }
+  },
+  "098970f0424d8a9f93c694608ad51ad6ec221869096328e5abb6a1294fd72cea": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated statement shows operating income of 6,650 in FY2023 versus 6,098 in FY2022, an increase, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage explicitly states operating expenses increased by $1.06 billion, or 11%, in fiscal 2023 from fiscal 2022."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 113,
+      "prompt_tokens": 1595,
+      "total_tokens": 1708,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1339
+    }
+  },
+  "a6bbb59ba6f948338e7e2d37a38e8a8ba4351a31893c50a87801affe7c2c7063": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row shows total revenues of 307,394 in 2023 and 350,018 in 2024, supporting the statement that total revenues increased from 2023 to 2024."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The passage verbatim states Google Search & other growth was driven by interrelated factors including increases in search queries from user adoption/usage on mobile devices, advertiser spending growth, and improvements in ad formats and delivery."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The passage states YouTube ads growth was driven by brand advertising products followed by direct response advertising products, both benefiting from increased advertiser spending."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 178,
+      "prompt_tokens": 1649,
+      "total_tokens": 1827,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1393
+    }
+  },
+  "598574166190bb98956bff9231fd1783b835172d01788a6717bbfea53dbebb13": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total net sales decreased 3% or $11.0 billion during 2023 compared to 2022."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly states foreign currency weakness accounted for more than the entire year-over-year decrease in total net sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly attributes the iPhone net sales decrease to lower non-Pro iPhone sales, partially offset by higher Pro iPhone sales."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 140,
+      "prompt_tokens": 1001,
+      "total_tokens": 1141,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 745
+    }
+  },
+  "832ce282d795e1eefee3c1dace27a6b296ef484d28ebd664c8fc6f7ffde11540": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that restrictions on international trade such as tariffs and import/export controls can materially adversely affect operations and supply chain and limit ability to offer and distribute products and services."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the Company generates a significant portion of net sales from a single product and a decline in demand could significantly impact quarterly net sales."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states major public health issues including pandemics have adversely affected and could materially adversely affect the Company through global economy and demand impacts, public safety measures, and disruptions to operations, supply chain and sales/distribution channels."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 1655,
+      "total_tokens": 1832,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1399
+    }
+  }
+}

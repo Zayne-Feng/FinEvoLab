@@ -1,0 +1,230 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 3,
+      "mechanical_successes": 3,
+      "strict_successes": 1,
+      "strict_rate": 0.3333333333333333,
+      "primary_only_successes": 2,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 1,
+      "all_repeats_pass_wilson_95": [
+        0.06149194472039621,
+        0.7923403991979522
+      ],
+      "requests": 6,
+      "tokens": 9916,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.417,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.266,
+        6.7439
+      ],
+      "tokens_per_strict_success": 9916.0,
+      "categories": {
+        "explanation": {
+          "attempts": 2,
+          "strict_successes": 1
+        },
+        "hybrid_metric": {
+          "attempts": 1,
+          "strict_successes": 0
+        }
+      }
+    },
+    "after": {
+      "attempts": 3,
+      "mechanical_successes": 3,
+      "strict_successes": 3,
+      "strict_rate": 1,
+      "primary_only_successes": 3,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 3,
+      "all_repeats_pass_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "requests": 6,
+      "tokens": 10580,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.468666666666667,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.515,
+        6.5861
+      ],
+      "tokens_per_strict_success": 3526.6666666666665,
+      "categories": {
+        "explanation": {
+          "attempts": 2,
+          "strict_successes": 2
+        },
+        "hybrid_metric": {
+          "attempts": 1,
+          "strict_successes": 1
+        }
+      }
+    },
+    "optimized": {
+      "attempts": 3,
+      "mechanical_successes": 3,
+      "strict_successes": 3,
+      "strict_rate": 1,
+      "primary_only_successes": 3,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 3,
+      "all_repeats_pass_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "requests": 6,
+      "tokens": 10019,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.322666666666667,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.265,
+        6.5746
+      ],
+      "tokens_per_strict_success": 3339.6666666666665,
+      "categories": {
+        "explanation": {
+          "attempts": 2,
+          "strict_successes": 2
+        },
+        "hybrid_metric": {
+          "attempts": 1,
+          "strict_successes": 1
+        }
+      }
+    },
+    "after_old_retrieval": {
+      "attempts": 3,
+      "mechanical_successes": 3,
+      "strict_successes": 1,
+      "strict_rate": 0.3333333333333333,
+      "primary_only_successes": 3,
+      "unique_questions": 3,
+      "all_repeats_pass_questions": 1,
+      "all_repeats_pass_wilson_95": [
+        0.06149194472039621,
+        0.7923403991979522
+      ],
+      "requests": 6,
+      "tokens": 10136,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 5.479333333333333,
+      "repairs": 0,
+      "latency_p50_p95": [
+        5.313,
+        6.2688
+      ],
+      "tokens_per_strict_success": 10136.0,
+      "categories": {
+        "explanation": {
+          "attempts": 2,
+          "strict_successes": 0
+        },
+        "hybrid_metric": {
+          "attempts": 1,
+          "strict_successes": 1
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 3,
+      "unique_cases": 3,
+      "wins": 2,
+      "losses": 0,
+      "ties": 1,
+      "difference": 0.6666666666666666,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 664,
+      "token_relative_change": 0.06696248487293266
+    },
+    "after_vs_after_old_retrieval": {
+      "pairs": 3,
+      "unique_cases": 3,
+      "wins": 2,
+      "losses": 0,
+      "ties": 1,
+      "difference": 0.6666666666666666,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 444,
+      "token_relative_change": 0.04380426203630616
+    },
+    "optimized_vs_after": {
+      "pairs": 3,
+      "unique_cases": 3,
+      "wins": 0,
+      "losses": 0,
+      "ties": 3,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": -561,
+      "token_relative_change": -0.0530245746691872
+    }
+  },
+  "tasks_sha256": "e45c694d673231f892007124662c1b79a6cd698f8a18049b14107a5396880558",
+  "review": "renewed-evidence-development-review-v2",
+  "review_summary_sha256": "1a8fd4da0f14cde767d8dcf2374cd3d386edd276b391c180361646dac52e6ab5",
+  "failures": [
+    {
+      "case_id": "db724c66b9c45278f3d6",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "3804f6655f5642342ca3cd44444cb695a430a11acc1c1bbfecb549c1fe0784c6"
+    },
+    {
+      "case_id": "0921fb81897e3558c4cd",
+      "repeat": 0,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "3491458b166b4d0b5dfadc4dffc5053e35d8785ba8f2e9815c6c1cd016fee639"
+    },
+    {
+      "case_id": "ce3e8c6d9020bd7ad473",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "98b27aaafc3117bf478434d2de245f4948a4808e4c9af7abf523544dbc78df24"
+    },
+    {
+      "case_id": "ce3e8c6d9020bd7ad473",
+      "repeat": 0,
+      "arm": "before",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "191d3a66a618c17058337af2c7e0eaf160008a1c1d42860a4b94871bf8630143"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

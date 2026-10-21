@@ -1,0 +1,310 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 12,
+      "mechanical_successes": 4,
+      "strict_successes": 4,
+      "strict_rate": 0.3333333333333333,
+      "primary_only_successes": 4,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 1,
+      "all_repeats_pass_wilson_95": [
+        0.04558726080970055,
+        0.6993581574175981
+      ],
+      "requests": 26,
+      "tokens": 41601,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.076833333333333,
+      "repairs": 2,
+      "latency_p50_p95": [
+        6.562,
+        10.31575
+      ],
+      "tokens_per_strict_success": 10400.25,
+      "categories": {
+        "explanation": {
+          "attempts": 9,
+          "strict_successes": 1
+        },
+        "hybrid_metric": {
+          "attempts": 3,
+          "strict_successes": 3
+        }
+      }
+    },
+    "after": {
+      "attempts": 12,
+      "mechanical_successes": 12,
+      "strict_successes": 12,
+      "strict_rate": 1,
+      "primary_only_successes": 12,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 4,
+      "all_repeats_pass_wilson_95": [
+        0.5101091635454027,
+        1.0
+      ],
+      "requests": 24,
+      "tokens": 41817,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.515416666666667,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.523,
+        6.83315
+      ],
+      "tokens_per_strict_success": 3484.75,
+      "categories": {
+        "explanation": {
+          "attempts": 9,
+          "strict_successes": 9
+        },
+        "hybrid_metric": {
+          "attempts": 3,
+          "strict_successes": 3
+        }
+      }
+    },
+    "optimized": {
+      "attempts": 12,
+      "mechanical_successes": 12,
+      "strict_successes": 12,
+      "strict_rate": 1,
+      "primary_only_successes": 12,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 4,
+      "all_repeats_pass_wilson_95": [
+        0.5101091635454027,
+        1.0
+      ],
+      "requests": 24,
+      "tokens": 39438,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.5142500000000005,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.5385,
+        7.0756
+      ],
+      "tokens_per_strict_success": 3286.5,
+      "categories": {
+        "explanation": {
+          "attempts": 9,
+          "strict_successes": 9
+        },
+        "hybrid_metric": {
+          "attempts": 3,
+          "strict_successes": 3
+        }
+      }
+    },
+    "after_old_retrieval": {
+      "attempts": 12,
+      "mechanical_successes": 10,
+      "strict_successes": 8,
+      "strict_rate": 0.6666666666666666,
+      "primary_only_successes": 8,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 2,
+      "all_repeats_pass_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "requests": 26,
+      "tokens": 42941,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.1525,
+      "repairs": 2,
+      "latency_p50_p95": [
+        6.7265,
+        9.794649999999999
+      ],
+      "tokens_per_strict_success": 5367.625,
+      "categories": {
+        "explanation": {
+          "attempts": 9,
+          "strict_successes": 5
+        },
+        "hybrid_metric": {
+          "attempts": 3,
+          "strict_successes": 3
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 12,
+      "unique_cases": 4,
+      "wins": 8,
+      "losses": 0,
+      "ties": 4,
+      "difference": 0.6666666666666666,
+      "case_cluster_bootstrap_95": [
+        0.25,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 216,
+      "token_relative_change": 0.005192182880219276
+    },
+    "after_vs_after_old_retrieval": {
+      "pairs": 12,
+      "unique_cases": 4,
+      "wins": 4,
+      "losses": 0,
+      "ties": 8,
+      "difference": 0.3333333333333333,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": -1124,
+      "token_relative_change": -0.026175450036096004
+    },
+    "optimized_vs_after": {
+      "pairs": 12,
+      "unique_cases": 4,
+      "wins": 0,
+      "losses": 0,
+      "ties": 12,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": -2379,
+      "token_relative_change": -0.0568907382165148
+    }
+  },
+  "tasks_sha256": "b2182d175673d96a580ffb62eeb9174fcd7ed2cf833778de9badf07d939e985d",
+  "review": "renewed-planner-review-v3",
+  "review_summary_sha256": "5d144f43d08fff7f0cc98d286e5d63d227e2e5679b85f636c224a310ff748810",
+  "failures": [
+    {
+      "case_id": "7efd88dc2d4a01a64766",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "c55afc16f1c2379e1c33d7a41aa9ee5e101c5a095ccf4e954eed7bdff0fe99f3"
+    },
+    {
+      "case_id": "f1e956e5456d9845e1cb",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Unknown or cross-company passage identifier",
+      "review_sample": null
+    },
+    {
+      "case_id": "f1e956e5456d9845e1cb",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "b3e0e541ecaa598d3e868592f9ec694f254cc3fff29b4ac78b653eea73e348ce"
+    },
+    {
+      "case_id": "9ad96f2c4369fab6f30e",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "8ab05bb37d418044243a5ba4112b83cc11ee2bfefd860d865c441b38e98509d8"
+    },
+    {
+      "case_id": "7efd88dc2d4a01a64766",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "36e592275d5c41ddee82ca11e6ab8590a668933c70e92638116a4c1a1eb0baa6"
+    },
+    {
+      "case_id": "7efd88dc2d4a01a64766",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "5685c7004b73993fffb70b75ba2b91bd651e0bb98e6a3b0a2512dc10250e1cd3"
+    },
+    {
+      "case_id": "9ad96f2c4369fab6f30e",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "8ab05bb37d418044243a5ba4112b83cc11ee2bfefd860d865c441b38e98509d8"
+    },
+    {
+      "case_id": "7efd88dc2d4a01a64766",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "781455c9fd862035951935d13d14b4db37f7219af087aa96db78b79ee0fb95bf"
+    },
+    {
+      "case_id": "7efd88dc2d4a01a64766",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "6aafb60e680717b635e8cc16179e3e75f61ba3e2939701609a5aa567f0d8b5a9"
+    },
+    {
+      "case_id": "f1e956e5456d9845e1cb",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "b3e0e541ecaa598d3e868592f9ec694f254cc3fff29b4ac78b653eea73e348ce"
+    },
+    {
+      "case_id": "f1e956e5456d9845e1cb",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": "ValueError",
+      "error": "Unknown or cross-company passage identifier",
+      "review_sample": null
+    },
+    {
+      "case_id": "9ad96f2c4369fab6f30e",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "8ab05bb37d418044243a5ba4112b83cc11ee2bfefd860d865c441b38e98509d8"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

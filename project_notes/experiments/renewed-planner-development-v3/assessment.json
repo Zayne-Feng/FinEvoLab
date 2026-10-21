@@ -1,0 +1,214 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 4,
+      "mechanical_successes": 2,
+      "strict_successes": 2,
+      "strict_rate": 0.5,
+      "primary_only_successes": 2,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 2,
+      "all_repeats_pass_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "requests": 8,
+      "tokens": 14217,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 5.8245000000000005,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.149,
+        6.38635
+      ],
+      "tokens_per_strict_success": 7108.5,
+      "categories": {
+        "explanation": {
+          "attempts": 4,
+          "strict_successes": 2
+        }
+      }
+    },
+    "after": {
+      "attempts": 4,
+      "mechanical_successes": 4,
+      "strict_successes": 4,
+      "strict_rate": 1,
+      "primary_only_successes": 4,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 4,
+      "all_repeats_pass_wilson_95": [
+        0.5101091635454027,
+        1.0
+      ],
+      "requests": 8,
+      "tokens": 15328,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.3125,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.3435,
+        6.5546
+      ],
+      "tokens_per_strict_success": 3832.0,
+      "categories": {
+        "explanation": {
+          "attempts": 4,
+          "strict_successes": 4
+        }
+      }
+    },
+    "optimized": {
+      "attempts": 4,
+      "mechanical_successes": 4,
+      "strict_successes": 4,
+      "strict_rate": 1,
+      "primary_only_successes": 4,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 4,
+      "all_repeats_pass_wilson_95": [
+        0.5101091635454027,
+        1.0
+      ],
+      "requests": 8,
+      "tokens": 14552,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.539,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.586,
+        6.6889
+      ],
+      "tokens_per_strict_success": 3638.0,
+      "categories": {
+        "explanation": {
+          "attempts": 4,
+          "strict_successes": 4
+        }
+      }
+    },
+    "after_old_retrieval": {
+      "attempts": 4,
+      "mechanical_successes": 4,
+      "strict_successes": 2,
+      "strict_rate": 0.5,
+      "primary_only_successes": 2,
+      "unique_questions": 4,
+      "all_repeats_pass_questions": 2,
+      "all_repeats_pass_wilson_95": [
+        0.15003898915214947,
+        0.8499610108478506
+      ],
+      "requests": 8,
+      "tokens": 14775,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.53125,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.391,
+        6.90865
+      ],
+      "tokens_per_strict_success": 7387.5,
+      "categories": {
+        "explanation": {
+          "attempts": 4,
+          "strict_successes": 2
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 4,
+      "unique_cases": 4,
+      "wins": 2,
+      "losses": 0,
+      "ties": 2,
+      "difference": 0.5,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 1111,
+      "token_relative_change": 0.07814588169093328
+    },
+    "after_vs_after_old_retrieval": {
+      "pairs": 4,
+      "unique_cases": 4,
+      "wins": 2,
+      "losses": 0,
+      "ties": 2,
+      "difference": 0.5,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 553,
+      "token_relative_change": 0.03742808798646369
+    },
+    "optimized_vs_after": {
+      "pairs": 4,
+      "unique_cases": 4,
+      "wins": 0,
+      "losses": 0,
+      "ties": 4,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": -776,
+      "token_relative_change": -0.050626304801670186
+    }
+  },
+  "tasks_sha256": "9b396bbc2d143a7221c6d9d4775c58c6f5dd3a710eeaddfb028447b4392c3132",
+  "review": "renewed-planner-development-review-v3",
+  "review_summary_sha256": "4d32d2d29a8f1232eddc19a43db00429f55eaf8c777a86a1c28967e5b5214fe9",
+  "failures": [
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "cc3dab5224ea65a3a2399e4b30d7660d568b1e0b5684216d0717cfaeea7a76ee"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "7aca72e6b719c5f6403996e505411fb8c7553f2cecb0a9234325d353a17e8c1f"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 1,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "59e5e12f4338ce64d4c9b4c3024c1f4aed4154e044271c48f92767ee3c7572e4"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "59e5e12f4338ce64d4c9b4c3024c1f4aed4154e044271c48f92767ee3c7572e4"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

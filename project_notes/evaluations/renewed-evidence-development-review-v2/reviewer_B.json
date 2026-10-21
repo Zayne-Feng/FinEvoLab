@@ -1,0 +1,549 @@
+{
+  "3804f6655f5642342ca3cd44444cb695a430a11acc1c1bbfecb549c1fe0784c6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim states the risk factors and consequences could have a material adverse effect on business, growth, reputation, prospects, financial condition, operating results, cash flows, liquidity, and stock price."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give rise to or amplify many of the risks discussed."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim identifies foreign transactions as carrying additional risks related to integration across cultures/languages and economic, political, and regulatory risks of specific countries."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 1220,
+      "total_tokens": 1389,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 196
+    }
+  },
+  "control-0": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The statement is a verbatim quote from the supplied FY2023 AMZN passage, so it is directly supported as a copied excerpt."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 62,
+      "prompt_tokens": 1149,
+      "total_tokens": 1211,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 253
+    }
+  },
+  "cee4552c11412e1d736353cd01ccc53a3ea609826eeab4a0f5136bb0b5c70ce1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states total revenue increased 22% to $164.50 billion due to an increase in advertising revenue, matching the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote explicitly attributes the $28.68 billion (22%) advertising revenue increase to increases in ad impressions delivered and average price per ad."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states RL revenue increased $250 million (13%) mostly due to an increase in RL consumer hardware products sold."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 1315,
+      "total_tokens": 1462,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 163
+    }
+  },
+  "0ea0e2cf64a1fe77b19b334e0e2957e5ea28b2777cc1fb5638a6912c1436c248": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that competition may cause lost business or required price reductions, which could materially reduce sales."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states failure to stock/restock popular products could significantly affect revenue and future growth."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states the discussed risk factors could have a material adverse effect on operating results including components of financial results."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 1579,
+      "total_tokens": 1712,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 171
+    }
+  },
+  "control-1": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quote discusses competition risks that could reduce sales and profits; it does not state any guarantee of doubling financial performance, and it contradicts the claim by describing risks."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 67,
+      "prompt_tokens": 1350,
+      "total_tokens": 1417,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 198
+    }
+  },
+  "ef52ad525cc6cf116a17d2441b6f49342b478df809f0a16a2cb14bb02362a807": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote directly states that competition may require increased spending or lower prices, which could materially reduce sales and profits."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote verbatim states that failure to stock or restock popular products could significantly affect revenue and future growth."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote states the discussed risk factors could have a material adverse effect on operating results, among other listed items."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 1577,
+      "total_tokens": 1710,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 169
+    }
+  },
+  "control-4": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The statement is a verbatim quote from the supplied FY2024 META passage, so it is directly supported by the source text."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 53,
+      "prompt_tokens": 1156,
+      "total_tokens": 1209,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1022
+      },
+      "prompt_cache_hit_tokens": 1022,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  "fe94c3fc7250aae5bcfc89681caa3527dd4e4bc88a40706891910dd720ab7a60": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted consolidated table shows Total revenue of $164,501 million in 2024 versus $134,902 million in 2023, supporting the stated increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states FoA revenue increased $29.35 billion, or 22%, and that the increase was almost entirely driven by advertising revenue."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly attributes the 2024 advertising revenue increase to increases in ad impressions delivered and average price per ad."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 134,
+      "prompt_tokens": 1640,
+      "total_tokens": 1774,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 232
+    }
+  },
+  "da2673178395ef42c7c3a88a96ca8f19e0803d7decd1ba4d448674b9e8b27df5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote verbatim states the risk factors could have a material adverse effect on operating results, which bears on revenue."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote lists competition, management of growth, international growth and expansion, and variability in demand among factors causing actual results to differ."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote verbatim states global economic and geopolitical conditions and unforeseen events may give rise to or amplify many of the risks."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 140,
+      "prompt_tokens": 1306,
+      "total_tokens": 1446,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 154
+    }
+  },
+  "control-3": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted passage is a generic risk-factor disclaimer about material adverse effects; it does not mention the chief executive's personal investments or prove exclusive causation for any change."
+      }
+    ],
+    "relevance": 0,
+    "interpretation": 0,
+    "usage": {
+      "completion_tokens": 67,
+      "prompt_tokens": 952,
+      "total_tokens": 1019,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 184
+    }
+  },
+  "23131061267ff1eca10af94fea6e65932e69ccda685f58eb9dadf808c4798d98": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The income statement shows net income of $39,098M in 2023 vs $23,200M in 2022, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the provision for income taxes increased due to an increase in income before provision for income taxes."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate decreased primarily due to excess tax benefits from share-based compensation and IRS temporary relief on foreign tax credits."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 148,
+      "prompt_tokens": 1849,
+      "total_tokens": 1997,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 185
+    }
+  },
+  "control-2": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The claim is a verbatim quote from the supplied AMZN FY2023 passage, so it is supported as a direct quotation."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1386,
+      "total_tokens": 1447,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 234
+    }
+  },
+  "control-5": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The quoted excerpt only states FY2024 revenue was $164.50 billion, up 22% due to increased advertising revenue; it contains no management guarantee of doubling performance or absence of risks."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 1137,
+      "total_tokens": 1211,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 241
+    }
+  },
+  "006eb6676e5c6add99c5ce8ea0260050a8eb420683efce113ece492003a1fbb9": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted FY2024 passage states total revenue increased 22% to $164.50 billion due to an increase in advertising revenue, directly supporting the claim."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quoted FY2024 passage states advertising revenue increased due to increases in ad impressions delivered and average price per ad."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quoted FY2024 passage states RL revenue increased $250 million, or 13%, mostly due to an increase in RL consumer hardware products sold."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 1320,
+      "total_tokens": 1453,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 168
+    }
+  },
+  "98b27aaafc3117bf478434d2de245f4948a4808e4c9af7abf523544dbc78df24": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted cash flow table shows net income of $39,098M in 2023 vs $23,200M in 2022, confirming an increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states the effective tax rate decreased in 2023 vs 2022 primarily due to excess tax benefits from share-based compensation and IRS temporary relief on foreign tax credits."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote directly states the provision for income taxes increased $2.71 billion, or 48%, due to an increase in income before provision for income taxes."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 168,
+      "prompt_tokens": 1811,
+      "total_tokens": 1979,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 147
+    }
+  },
+  "3491458b166b4d0b5dfadc4dffc5053e35d8785ba8f2e9815c6c1cd016fee639": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted table row shows total revenue of $164,501M in 2024 versus $134,902M in 2023, supporting the stated increase."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote directly states FoA revenue increased and was almost entirely driven by advertising revenue."
+      },
+      {
+        "index": 2,
+        "supported": false,
+        "reason": "The quote only attributes growth to increases in ad impressions and average price per ad; the demand/performance-improvement attribution and the offset by lower-monetizing geographies/products are not in this quote."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 157,
+      "prompt_tokens": 1671,
+      "total_tokens": 1828,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 135
+    }
+  },
+  "191d3a66a618c17058337af2c7e0eaf160008a1c1d42860a4b94871bf8630143": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quoted cash flow statement shows net income of $39,098M in 2023 vs $23,200M in 2022, supporting the claim that net income increased."
+      },
+      {
+        "index": 1,
+        "supported": true,
+        "reason": "The quote supports the operating cash flow driver (customer collections/revenue growth, decreased vendor payments); the claim correctly frames it as an operating cash flow driver, not a direct net income cause."
+      },
+      {
+        "index": 2,
+        "supported": true,
+        "reason": "The quote supports that the tax provision rose due to higher pre-tax income, and the claim appropriately notes it is a tax disclosure rather than a direct net income explanation."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 175,
+      "prompt_tokens": 1850,
+      "total_tokens": 2025,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 186
+    }
+  },
+  "control-6": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": true,
+        "reason": "The quote is a verbatim excerpt from the FY2024 income statement table showing total revenue of $164,501 million for 2024, matching the claim."
+      }
+    ],
+    "relevance": 2,
+    "interpretation": 2,
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 1481,
+      "total_tokens": 1549,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  "control-7": {
+    "claims": [
+      {
+        "index": 0,
+        "supported": false,
+        "reason": "The cited quote is only a revenue table row and says nothing about the chief executive's personal investments or exclusive causation; the claim is an invented cause unsupported by the excerpts."
+      }
+    ],
+    "relevance": 1,
+    "interpretation": 1,
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 1466,
+      "total_tokens": 1536,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 186
+    }
+  }
+}

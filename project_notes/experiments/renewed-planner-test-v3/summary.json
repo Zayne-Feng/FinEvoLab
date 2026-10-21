@@ -1,0 +1,23 @@
+{
+  "groups": {
+    "before": {
+      "attempted": 12,
+      "successes": 4
+    },
+    "after": {
+      "attempted": 12,
+      "successes": 12
+    },
+    "optimized": {
+      "attempted": 12,
+      "successes": 12
+    },
+    "after_old_retrieval": {
+      "attempted": 12,
+      "successes": 10
+    }
+  },
+  "planned": 48,
+  "completed": 48,
+  "mechanical_only_until_blind_review": true
+}

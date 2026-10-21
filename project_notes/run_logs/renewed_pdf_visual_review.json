@@ -1,0 +1,30 @@
+{
+    "pages": [
+        {
+            "page": 1,
+            "preview": "output\\pdf\\selected_source_702b405571284c79bb783a23ea488464-page-1.png",
+            "sha256": "fb2c3205907ed2a7ac2876120aa88a4c0018a680881b4fca05ec157b9c7b0fe7",
+            "characters": 2292
+        },
+        {
+            "page": 2,
+            "preview": "output\\pdf\\selected_source_702b405571284c79bb783a23ea488464-page-2.png",
+            "sha256": "da601bdb9328a1194a1b9a2f36fc3e0dd55927adac572d1fdce2c79675f957d9",
+            "characters": 2442
+        }
+    ],
+    "renderer": "pypdfium2-5.14.0",
+    "pdf_sha256": "e6f96760d6b131af3834386489f0238d06e2975ca5b3c071f77d98b41c4b9e25",
+    "reviewed_pages": [
+        1,
+        2
+    ],
+    "status": "passed",
+    "pdf": "output\\pdf\\selected_source_702b405571284c79bb783a23ea488464.pdf",
+    "checks": [
+        "No clipped or overlapping text",
+        "Financial table and fiscal dates are readable",
+        "Statements, source quotations and locators are readable",
+        "Page numbers and source hashes are visible"
+    ]
+}

@@ -1,0 +1,1164 @@
+{
+  "1dfc4cb65b967e2dccd67eaf874de75144cf4d7e892b40ef9dbd2bf364483ffe": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "AAPL's net income decreased in fiscal 2023 compared with fiscal 2022, as shown in the consolidated statements of operations.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      },
+      {
+        "statement": "AAPL's effective tax rate for 2023 was lower than in 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "chunk_id": "passage:3c3f94b94569a5679060a859",
+        "quote": "The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation."
+      },
+      {
+        "statement": "AAPL's effective tax rate was below the statutory federal rate due primarily to a lower effective tax rate on foreign earnings, the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "chunk_id": "passage:e3f0e239cb313903bea4cc3b",
+        "quote": "The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "583295152e32c7895d47026ed540da20c7a77cd74391a5c09591ad8192e407c1": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "AAPL's net income decreased in fiscal 2023 compared with fiscal 2022, as shown in the consolidated statements of operations.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      },
+      {
+        "statement": "AAPL's effective tax rate for 2023 was lower than in 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations, partially offset by lower tax benefits from share-based compensation.",
+        "chunk_id": "passage:3c3f94b94569a5679060a859",
+        "quote": "The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation."
+      },
+      {
+        "statement": "AAPL's effective tax rate was below the statutory federal rate primarily because of a lower effective tax rate on foreign earnings, the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "chunk_id": "passage:e3f0e239cb313903bea4cc3b",
+        "quote": "The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "2127ed6a99d25e5c15c537af6a8a91d492e6efced7c0f591502cfc68793f7e86": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "AAPL's net income decreased in fiscal 2023 compared with fiscal 2022, as shown in the consolidated statements of operations.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      },
+      {
+        "statement": "AAPL's effective tax rate for 2023 was lower than in 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "chunk_id": "passage:3c3f94b94569a5679060a859",
+        "quote": "The Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation."
+      },
+      {
+        "statement": "AAPL's effective tax rate in 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "chunk_id": "passage:e3f0e239cb313903bea4cc3b",
+        "quote": "The Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "cbe1281478dc0cbb1ea68c631e94dd2dcb7e010b3ff022c6abefd96749c86295": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "META's consolidated income from operations increased in FY2024 compared to FY2023, as shown in the consolidated statements of income.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      },
+      {
+        "statement": "The company attributes the increase in income from operations to higher advertising revenue, partially offset by an increase in costs and expenses.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "Income from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses."
+      },
+      {
+        "statement": "The increase in costs and expenses was mainly due to higher operational expenses related to data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "eb07f767842720e112213776e57a319c07be21b286f893b9928f4d8f78ffb502": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "META's income from operations increased in 2024 compared to 2023, as shown in the consolidated income statement.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      },
+      {
+        "statement": "The company attributes the increase in income from operations primarily to higher advertising revenue, partly offset by higher costs and expenses.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "Income from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses."
+      },
+      {
+        "statement": "The rise in costs and expenses was mainly due to higher operational expenses for data centers and technical infrastructure and higher employee compensation, partly offset by lower restructuring and legal-related costs.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "984a4718b28a6d05834139de302a85da0a3e9885bce66542ca384dc7bd42085b": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Meta's consolidated income from operations increased in FY2024 compared to FY2023, as shown in the consolidated statements of income.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      },
+      {
+        "statement": "The company attributes the increase in income from operations to higher advertising revenue, partially offset by higher costs and expenses.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "Income from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses."
+      },
+      {
+        "statement": "The increase in costs and expenses was mainly due to higher operational expenses related to data centers and technical infrastructure and higher employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "c4d383b1e8a8b32e7ee001889e759f58ae0b362e51f15cb0db721a36d4310561": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "META's income from operations increased in 2024 compared to 2023, as shown in the consolidated income statement.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      },
+      {
+        "statement": "The company attributes the increase in income from operations to higher advertising revenue, partially offset by an increase in costs and expenses.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "Income from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses."
+      },
+      {
+        "statement": "The increase in costs and expenses was mainly due to higher operational expenses related to data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "chunk_id": "passage:436e3c32a5c4f7aeff8a66db",
+        "quote": "The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "6b75ce6329a0bf2baa4a1385b7bafc6f1056e2306e80823dd2560e32abdca4a9": {
+    "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that restrictions on international trade, such as tariffs and import/export controls, can materially adversely affect its operations and supply chain and limit its ability to offer and distribute products and services, with particularly significant impact where it derives a significant portion of revenues.",
+        "chunk_id": "passage:040cd1fe352dd7d4186db210",
+        "quote": "Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers."
+      },
+      {
+        "statement": "AAPL discloses that changes to its App Store practices, including how developers communicate with consumers about alternative purchasing mechanisms, could reduce the volume of sales and the commission it earns on those sales.",
+        "chunk_id": "passage:ec47968632b04b1cf11d4b4e",
+        "quote": "manages distribution of apps outside of the App Store, and how and to what extent it allows developers to communicate with consumers inside the App Store regarding alternative purchasing mechanisms. This could reduce the volume of sales, and the commission that the Company earns on those sales, would decrease."
+      },
+      {
+        "statement": "AAPL discloses that it generates a significant portion of net sales from a single product and that a decline in demand for that product could significantly impact quarterly net sales.",
+        "chunk_id": "passage:3eb3eac472d7538864ba3b3a",
+        "quote": "Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:040cd1fe352dd7d4186db210",
+        "text": "AAPL FY2023 item-1a\nThe Company has a large, global business with sales outside the U.S. representing a majority of the Company’s total net sales, and the Company believes that it generally benefits from growth in international trade. Substantially all of the Company’s manufacturing is performed in whole or in part by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam. Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers. The impact can be particularly significant if these restrictive measures apply to countries and regions where the Company derives a significant portion of its revenues and/or has significant supply chain operations. Restrictive measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed restrictions on",
+        "locator": "dom-block=276|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:3eb3eac472d7538864ba3b3a",
+        "text": "AAPL FY2023 item-1a\nThe Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales. The Company could also be subject to unexpected developments, such as lower-than-anticipated demand for the Company’s products or services, issues with new product or service introductions, information technology system failures or network disruptions, or failure of one of the Company’s logistics, components supply, or manufacturing partners.",
+        "locator": "dom-block=409|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ec47968632b04b1cf11d4b4e",
+        "text": "AAPL FY2023 item-1a\nmanages distribution of apps outside of the App Store, and how and to what extent it allows developers to communicate with consumers inside the App Store regarding alternative purchasing mechanisms. This could reduce the volume of sales, and the commission that the Company earns on those sales, would decrease. If the rate of the commission that the Company retains on such sales is reduced, or if it is otherwise narrowed in scope or eliminated, the Company’s business, results of operations and financial condition could be materially adversely affected.",
+        "locator": "dom-block=331|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "cc3dab5224ea65a3a2399e4b30d7660d568b1e0b5684216d0717cfaeea7a76ee": {
+    "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that investment in new business strategies and acquisitions could disrupt its ongoing business and materially adversely affect its results of operations.",
+        "chunk_id": "passage:ceba5f67ed1cd72207116265",
+        "quote": "Investment in new business strategies and acquisitions could disrupt the Company’s ongoing business, present risks not originally contemplated and materially adversely affect the Company’s business, reputation, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that supply shortages and price increases can materially adversely affect its business and results of operations.",
+        "chunk_id": "passage:8714fb35faeed24e99d31d3d",
+        "quote": "Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that adverse economic conditions can materially adversely affect its business and results of operations.",
+        "chunk_id": "passage:99044a618981883844c00333",
+        "quote": "These and other impacts can materially adversely affect the Company’s business, results of operations, financial condition and stock price."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8714fb35faeed24e99d31d3d",
+        "text": "AAPL FY2023 item-1a\nsonable terms or at all. The effects of global or regional economic conditions on the Company’s suppliers, described in “ The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations and financial condition, ” above, can also affect the Company’s ability to obtain components . Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition.",
+        "locator": "dom-block=307|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:99044a618981883844c00333",
+        "text": "AAPL FY2023 item-1a\nAdverse economic conditions can also lead to increased credit and collectibility risk on the Company’s trade receivables; the failure of derivative counterparties and other financial institutions; limitations on the Company’s ability to issue new debt; reduced liquidity; and declines in the fair values of the Company’s financial instruments. These and other impacts can materially adversely affect the Company’s business, results of operations, financial condition and stock price.",
+        "locator": "dom-block=268|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ceba5f67ed1cd72207116265",
+        "text": "AAPL FY2023 item-1a\nInvestment in new business strategies and acquisitions could disrupt the Company’s ongoing business, present risks not originally contemplated and materially adversely affect the Company’s business, reputation, results of operations and financial condition.",
+        "locator": "dom-block=362|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "7aca72e6b719c5f6403996e505411fb8c7553f2cecb0a9234325d353a17e8c1f": {
+    "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "AAPL discloses that investment in new business strategies and acquisitions could disrupt ongoing business and materially adversely affect results of operations.",
+        "chunk_id": "passage:ceba5f67ed1cd72207116265",
+        "quote": "Investment in new business strategies and acquisitions could disrupt the Company’s ongoing business, present risks not originally contemplated and materially adversely affect the Company’s business, reputation, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that supply shortages and price increases can materially adversely affect its business and results of operations.",
+        "chunk_id": "passage:8714fb35faeed24e99d31d3d",
+        "quote": "Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition."
+      },
+      {
+        "statement": "AAPL discloses that adverse economic conditions can materially adversely affect its business, results of operations, financial condition and stock price.",
+        "chunk_id": "passage:99044a618981883844c00333",
+        "quote": "These and other impacts can materially adversely affect the Company’s business, results of operations, financial condition and stock price."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:8714fb35faeed24e99d31d3d",
+        "text": "AAPL FY2023 item-1a\nsonable terms or at all. The effects of global or regional economic conditions on the Company’s suppliers, described in “ The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations and financial condition, ” above, can also affect the Company’s ability to obtain components . Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations and financial condition.",
+        "locator": "dom-block=307|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:99044a618981883844c00333",
+        "text": "AAPL FY2023 item-1a\nAdverse economic conditions can also lead to increased credit and collectibility risk on the Company’s trade receivables; the failure of derivative counterparties and other financial institutions; limitations on the Company’s ability to issue new debt; reduced liquidity; and declines in the fair values of the Company’s financial instruments. These and other impacts can materially adversely affect the Company’s business, results of operations, financial condition and stock price.",
+        "locator": "dom-block=268|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ceba5f67ed1cd72207116265",
+        "text": "AAPL FY2023 item-1a\nInvestment in new business strategies and acquisitions could disrupt the Company’s ongoing business, present risks not originally contemplated and materially adversely affect the Company’s business, reputation, results of operations and financial condition.",
+        "locator": "dom-block=362|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "133b38706bb388d70c754ef68773a00bf88d9e89b1e90d18b1bfe1a5ec9985b7": {
+    "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "Restrictions on international trade, such as tariffs and import/export controls, can materially adversely affect the Company's operations and supply chain and limit its ability to offer and distribute products and services to customers, with particularly significant impact where the Company derives a significant portion of its revenues.",
+        "chunk_id": "passage:040cd1fe352dd7d4186db210",
+        "quote": "Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers. The impact can be particularly significant if these restrictive measures apply to countries and regions where the Company derives a significant portion of its revenues and/or has significant supply chain operations."
+      },
+      {
+        "statement": "Changes to the App Store, including how developers communicate with consumers regarding alternative purchasing mechanisms, could reduce the volume of sales and decrease the commission the Company earns on those sales.",
+        "chunk_id": "passage:ec47968632b04b1cf11d4b4e",
+        "quote": "manages distribution of apps outside of the App Store, and how and to what extent it allows developers to communicate with consumers inside the App Store regarding alternative purchasing mechanisms. This could reduce the volume of sales, and the commission that the Company earns on those sales, would decrease."
+      },
+      {
+        "statement": "The Company generates a significant portion of its net sales from a single product, and a decline in demand for that product could significantly impact quarterly net sales.",
+        "chunk_id": "passage:3eb3eac472d7538864ba3b3a",
+        "quote": "Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:040cd1fe352dd7d4186db210",
+        "text": "AAPL FY2023 item-1a\nThe Company has a large, global business with sales outside the U.S. representing a majority of the Company’s total net sales, and the Company believes that it generally benefits from growth in international trade. Substantially all of the Company’s manufacturing is performed in whole or in part by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam. Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers. The impact can be particularly significant if these restrictive measures apply to countries and regions where the Company derives a significant portion of its revenues and/or has significant supply chain operations. Restrictive measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed restrictions on",
+        "locator": "dom-block=276|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:3eb3eac472d7538864ba3b3a",
+        "text": "AAPL FY2023 item-1a\nThe Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales. The Company could also be subject to unexpected developments, such as lower-than-anticipated demand for the Company’s products or services, issues with new product or service introductions, information technology system failures or network disruptions, or failure of one of the Company’s logistics, components supply, or manufacturing partners.",
+        "locator": "dom-block=409|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ec47968632b04b1cf11d4b4e",
+        "text": "AAPL FY2023 item-1a\nmanages distribution of apps outside of the App Store, and how and to what extent it allows developers to communicate with consumers inside the App Store regarding alternative purchasing mechanisms. This could reduce the volume of sales, and the commission that the Company earns on those sales, would decrease. If the rate of the commission that the Company retains on such sales is reduced, or if it is otherwise narrowed in scope or eliminated, the Company’s business, results of operations and financial condition could be materially adversely affected.",
+        "locator": "dom-block=331|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "59e5e12f4338ce64d4c9b4c3024c1f4aed4154e044271c48f92767ee3c7572e4": {
+    "question": "Which risks disclosed in GOOGL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "GOOGL discloses that manufacturing and supply chain management risks could affect its ability to supply both its products and its services.",
+        "chunk_id": "passage:b09987182f4ead5d25ed40ec",
+        "quote": "We face a number of risks related to manufacturing and supply chain management, which could affect our ability to supply both our products and our services."
+      },
+      {
+        "statement": "GOOGL discloses that its operations and financial results are subject to various risks and uncertainties that could harm its business, reputation, financial condition, and operating results.",
+        "chunk_id": "passage:bf0f9ffea5b4d0b731197e5a",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and affect the trading price of our Class A and Class C stock."
+      },
+      {
+        "statement": "GOOGL discloses that government-initiated restrictions or blockages of its products and services in some jurisdictions could harm key relationships and increase costs, negatively affecting its business.",
+        "chunk_id": "passage:68a6b4a120b83e1c843d848e",
+        "quote": "In addition, in some jurisdictions, our products and services have been subject to government-initiated restrictions or blockages. These could harm existing key relationships, including with our users, customers, advertisers, and/or content providers, and impair our ability to attract new ones; harm our reputation; and increase costs, thereby negatively affecting our business."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:68a6b4a120b83e1c843d848e",
+        "text": "GOOGL FY2023 item-1a\negrade, or charge for access to certain of our products and services. In addition, in some jurisdictions, our products and services have been subject to government-initiated restrictions or blockages. These could harm existing key relationships, including with our users, customers, advertisers, and/or content providers, and impair our ability to attract new ones; harm our reputation; and increase costs, thereby negatively affecting our business.",
+        "locator": "dom-block=460|part=1|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:b09987182f4ead5d25ed40ec",
+        "text": "GOOGL FY2023 item-1a\nWe face a number of risks related to manufacturing and supply chain management, which could affect our ability to supply both our products and our services.",
+        "locator": "dom-block=378|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bf0f9ffea5b4d0b731197e5a",
+        "text": "GOOGL FY2023 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and affect the trading price of our Class A and Class C stock.",
+        "locator": "dom-block=335|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "76d56b506375d7bf6d2e7ca11124f19804d5d75ab3e4df2b656af41c064d9fd7": {
+    "question": "Which risks disclosed in GOOGL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "GOOGL discloses that its revenue growth rate could decline due to several enumerated factors, including changes in advertiser spending, competition, and customer demand.",
+        "chunk_id": "passage:bcceb113faa6447fe2404439",
+        "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services."
+      },
+      {
+        "statement": "GOOGL discloses that an evolving foreign policy landscape may adversely affect its revenues and expose it to litigation and new regulatory costs and challenges.",
+        "chunk_id": "passage:805e30a430aa7ca73cf4f2ed",
+        "quote": "an evolving foreign policy landscape that may adversely affect our revenues and could subject us to litigation, new regulatory costs and challenges (including new customer requirements), uncertainty regarding regulatory outcomes, and other liabilities under local laws that may not offer due process or clear legal precedent;"
+      },
+      {
+        "statement": "GOOGL discloses that changes to its advertising policies and data privacy practices, such as phasing out third-party cookies, have affected and may affect the advertising it can provide.",
+        "chunk_id": "passage:269563ce703c7906d8f35b90",
+        "quote": "Changes to our advertising policies and data privacy practices, such as our initiatives to phase out third-party cookies, as well as changes to other companies’ advertising and/or data privacy practices have in the past, and may in the future, affect the advertising that we are able to provide."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:269563ce703c7906d8f35b90",
+        "text": "GOOGL FY2023 item-1a\nWe generated more than 75% of total revenues from online advertising in 2023. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time. These partners may not continue to do business with us if we do not create more value (such as increased numbers of users or customers, new sales leads, increased brand awareness, or more effective monetization) than their available alternatives. Changes to our advertising policies and data privacy practices, such as our initiatives to phase out third-party cookies, as well as changes to other companies’ advertising and/or data privacy practices have in the past, and may in the future, affect the advertising that we are able to provide. In addition, technologies have been developed that make customized ads more difficult, or that block the display of ads altogether, and some providers of online services have integrated these technologies that could potentially impair the availability and functionality of third-party digital advertising. Failing to provide superior value or deliver advertisements effectively and competitively could harm o",
+        "locator": "dom-block=338|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:805e30a430aa7ca73cf4f2ed",
+        "text": "GOOGL FY2023 item-1a\n• an evolving foreign policy landscape that may adversely affect our revenues and could subject us to litigation, new regulatory costs and challenges (including new customer requirements), uncertainty regarding regulatory outcomes, and other liabilities under local laws that may not offer due process or clear legal precedent;",
+        "locator": "dom-block=406|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bcceb113faa6447fe2404439",
+        "text": "GOOGL FY2023 item-1a\nOur revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+        "locator": "dom-block=360|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "602cda30fa3ad8fc9c78d36dcb0d50aed0f722f36ab6ef8d09060c22a4142353": {
+    "question": "Which risks disclosed in GOOGL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "GOOGL discloses that its revenue growth rate could decline due to factors including deceleration or declines in advertiser spending, competition, and customer usage and demand.",
+        "chunk_id": "passage:bcceb113faa6447fe2404439",
+        "quote": "Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services."
+      },
+      {
+        "statement": "GOOGL discloses that an evolving foreign policy landscape may adversely affect its revenues.",
+        "chunk_id": "passage:805e30a430aa7ca73cf4f2ed",
+        "quote": "an evolving foreign policy landscape that may adversely affect our revenues and could subject us to litigation, new regulatory costs and challenges (including new customer requirements), uncertainty regarding regulatory outcomes, and other liabilities under local laws that may not offer due process or clear legal precedent;"
+      },
+      {
+        "statement": "GOOGL discloses that changes to its advertising policies and data privacy practices, such as initiatives to phase out third-party cookies, have affected and may affect the advertising it is able to provide.",
+        "chunk_id": "passage:269563ce703c7906d8f35b90",
+        "quote": "Changes to our advertising policies and data privacy practices, such as our initiatives to phase out third-party cookies, as well as changes to other companies’ advertising and/or data privacy practices have in the past, and may in the future, affect the advertising that we are able to provide."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:269563ce703c7906d8f35b90",
+        "text": "GOOGL FY2023 item-1a\nWe generated more than 75% of total revenues from online advertising in 2023. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time. These partners may not continue to do business with us if we do not create more value (such as increased numbers of users or customers, new sales leads, increased brand awareness, or more effective monetization) than their available alternatives. Changes to our advertising policies and data privacy practices, such as our initiatives to phase out third-party cookies, as well as changes to other companies’ advertising and/or data privacy practices have in the past, and may in the future, affect the advertising that we are able to provide. In addition, technologies have been developed that make customized ads more difficult, or that block the display of ads altogether, and some providers of online services have integrated these technologies that could potentially impair the availability and functionality of third-party digital advertising. Failing to provide superior value or deliver advertisements effectively and competitively could harm o",
+        "locator": "dom-block=338|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:805e30a430aa7ca73cf4f2ed",
+        "text": "GOOGL FY2023 item-1a\n• an evolving foreign policy landscape that may adversely affect our revenues and could subject us to litigation, new regulatory costs and challenges (including new customer requirements), uncertainty regarding regulatory outcomes, and other liabilities under local laws that may not offer due process or clear legal precedent;",
+        "locator": "dom-block=406|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:bcceb113faa6447fe2404439",
+        "text": "GOOGL FY2023 item-1a\nOur revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; customer usage and demand for our products; decreases in our pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services.",
+        "locator": "dom-block=360|part=0|strategy=structured",
+        "company": "GOOGL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-0": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-1": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-2": {
+    "question": "Using the AAPL FY2023 annual report, explain the annual net income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680",
+        "chunk_id": "passage:8862db0b5fe19950a0879e47",
+        "quote": "Net income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3c3f94b94569a5679060a859",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 was lower compared to 2022 due primarily to a lower effective tax rate on foreign earnings and the impact of U.S. foreign tax credit regulations issued by the U.S. Department of the Treasury in 2022, partially offset by lower tax benefits from share-based compensation.",
+        "locator": "dom-block=611|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:8862db0b5fe19950a0879e47",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=704|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2023 item-8\n | Years ended\n | September 30, 2023 |  | September 24, 2022 |  | September 25, 2021\nNet sales: |  |  |  |  | \nProducts | $ | 298,085 |  |  | $ | 316,199 |  |  | $ | 297,392 | \nServices | 85,200 |  |  | 78,129 |  |  | 68,425 | \nTotal net sales | 383,285 |  |  | 394,328 |  |  | 365,817 | \nCost of sales: |  |  |  |  | \nProducts | 189,282 |  |  | 201,471 |  |  | 192,266 | \nServices | 24,855 |  |  | 22,075 |  |  | 20,715 | \nTotal cost of sales | 214,137 |  |  | 223,546 |  |  | 212,981 | \nGross margin | 169,148 |  |  | 170,782 |  |  | 152,836 | \nOperating expenses: |  |  |  |  | \nResearch and development | 29,915 |  |  | 26,251 |  |  | 21,914 | \nSelling, general and administrative | 24,932 |  |  | 25,094 |  |  | 21,973 | \nTotal operating expenses | 54,847 |  |  | 51,345 |  |  | 43,887 | \nOperating income | 114,301 |  |  | 119,437 |  |  | 108,949 | \nOther income/(expense), net | ( 565 ) |  |  | ( 334 ) |  |  | 258 | \nIncome before provision for income taxes | 113,736 |  |  | 119,103 |  |  | 109,207 | \nProvision for income taxes | 16,741 |  |  | 19,300 |  |  | 14,527 | \nNet income | $ | 96,995 |  |  | $ | 99,803 |  |  | $ | 94,680 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=704|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=704|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=704|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=704|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      },
+      {
+        "id": "passage:e3f0e239cb313903bea4cc3b",
+        "text": "AAPL FY2023 item-7\nThe Company’s effective tax rate for 2023 and 2022 was lower than the statutory federal income tax rate due primarily to a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes.",
+        "locator": "dom-block=610|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  },
+  "control-3": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-4": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-5": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that all financial performance will double next year without any risks.",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-6": {
+    "question": "Using the META FY2024 annual report, explain the annual operating income change and the disclosed operating or tax drivers, with original source passages.",
+    "claims": [
+      {
+        "statement": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944",
+        "chunk_id": "passage:739bbe46283391ff3a3a1cb3",
+        "quote": "Income from operations | 69,380 |  |  | 46,751 |  |  | 28,944"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:436e3c32a5c4f7aeff8a66db",
+        "text": "META FY2024 item-7\nIncome from operations for 2024 was $69.38 billion, an increase of $22.63 billion, or 48%, compared to 2023, driven by an increase in advertising revenue, partially offset by an increase in costs and expenses. The increase in costs and expenses was mainly due to increases in operational expenses related to our data centers and technical infrastructure and employee compensation, partially offset by lower restructuring and legal-related costs.",
+        "locator": "dom-block=1364|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": null
+      },
+      {
+        "id": "passage:739bbe46283391ff3a3a1cb3",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=2087|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nMETA FY2024 item-8\n | Year Ended December 31,\n | 2024 |  | 2023 |  | 2022\nRevenue | $ | 164,501 |  |  | $ | 134,902 |  |  | $ | 116,609 | \nCosts and expenses: |  |  |  |  | \nCost of revenue | 30,161 |  |  | 25,959 |  |  | 25,249 | \nResearch and development | 43,873 |  |  | 38,483 |  |  | 35,338 | \nMarketing and sales | 11,347 |  |  | 12,301 |  |  | 15,262 | \nGeneral and administrative | 9,740 |  |  | 11,408 |  |  | 11,816 | \nTotal costs and expenses | 95,121 |  |  | 88,151 |  |  | 87,665 | \nIncome from operations | 69,380 |  |  | 46,751 |  |  | 28,944 | \nInterest and other income (expense), net | 1,283 |  |  | 677 |  |  | ( 125 ) | \nIncome before provision for income taxes | 70,663 |  |  | 47,428 |  |  | 28,819 | \nProvision for income taxes | 8,303 |  |  | 8,330 |  |  | 5,619 | \nNet income | $ | 62,360 |  |  | $ | 39,098 |  |  | $ | 23,200 | \nEarnings per share: |  |  |  |  | \nBasic | $ | 24.61 |  |  | $ | 15.19 |  |  | $ | 8.63 | \nDiluted | $ | 23.86 |  |  | $ | 14.87 |  |  | $ | 8.59 | \nWeighted-average shares used to compute earnings per share: |  |  |  |  | \nBasic | 2,534 |  |  | 2,574 |  |  | 2,687 | \nDiluted | 2,614 |  |  | 2,629 |  |  | 2,702 | ",
+        "locator": "dom-block=2087|part=0|strategy=structured",
+        "company": "META",
+        "report_year": 2024,
+        "unit_context": {
+          "status": "verified",
+          "currency": "USD",
+          "scale": 6,
+          "multiplier": "1000000",
+          "method": "inline_xbrl_table_facts",
+          "locator": "dom-block=2087|ix:nonfraction",
+          "declarations": [
+            {
+              "locator": "dom-block=2087|ix:nonfraction=0",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=1",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            },
+            {
+              "locator": "dom-block=2087|ix:nonfraction=2",
+              "text": "unitRef=usd; scale=6; unit=USD"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "control-7": {
+    "question": "Which risks disclosed in AAPL's FY2023 annual report could affect its revenue or sales? Explain the disclosed connections and cite original passages.",
+    "claims": [
+      {
+        "statement": "The report proves that every change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:040cd1fe352dd7d4186db210",
+        "quote": "Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:040cd1fe352dd7d4186db210",
+        "text": "AAPL FY2023 item-1a\nThe Company has a large, global business with sales outside the U.S. representing a majority of the Company’s total net sales, and the Company believes that it generally benefits from growth in international trade. Substantially all of the Company’s manufacturing is performed in whole or in part by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam. Restrictions on international trade, such as tariffs and other controls on imports or exports of goods, technology or data, can materially adversely affect the Company’s operations and supply chain and limit the Company’s ability to offer and distribute its products and services to customers. The impact can be particularly significant if these restrictive measures apply to countries and regions where the Company derives a significant portion of its revenues and/or has significant supply chain operations. Restrictive measures can require the Company to take various actions, including changing suppliers, restructuring business relationships, and ceasing to offer third-party applications on its platforms. Changing the Company’s operations in accordance with new or changed restrictions on",
+        "locator": "dom-block=276|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:3eb3eac472d7538864ba3b3a",
+        "text": "AAPL FY2023 item-1a\nThe Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. Further, the Company generates a significant portion of its net sales from a single product and a decline in demand for that product could significantly impact quarterly net sales. The Company could also be subject to unexpected developments, such as lower-than-anticipated demand for the Company’s products or services, issues with new product or service introductions, information technology system failures or network disruptions, or failure of one of the Company’s logistics, components supply, or manufacturing partners.",
+        "locator": "dom-block=409|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      },
+      {
+        "id": "passage:ec47968632b04b1cf11d4b4e",
+        "text": "AAPL FY2023 item-1a\nmanages distribution of apps outside of the App Store, and how and to what extent it allows developers to communicate with consumers inside the App Store regarding alternative purchasing mechanisms. This could reduce the volume of sales, and the commission that the Company earns on those sales, would decrease. If the rate of the commission that the Company retains on such sales is reduced, or if it is otherwise narrowed in scope or eliminated, the Company’s business, results of operations and financial condition could be materially adversely affected.",
+        "locator": "dom-block=331|part=1|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2023,
+        "unit_context": null
+      }
+    ]
+  }
+}

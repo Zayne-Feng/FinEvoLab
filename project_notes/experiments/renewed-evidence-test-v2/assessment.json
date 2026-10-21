@@ -1,0 +1,446 @@
+{
+  "status": "completed",
+  "groups": {
+    "before": {
+      "attempts": 24,
+      "mechanical_successes": 18,
+      "strict_successes": 18,
+      "strict_rate": 0.75,
+      "primary_only_successes": 18,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 6,
+      "all_repeats_pass_wilson_95": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "requests": 48,
+      "tokens": 85751,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.446625,
+      "repairs": 0,
+      "latency_p50_p95": [
+        6.4605,
+        7.298099999999999
+      ],
+      "tokens_per_strict_success": 4763.944444444444,
+      "categories": {
+        "explanation": {
+          "attempts": 12,
+          "strict_successes": 6
+        },
+        "hybrid_growth": {
+          "attempts": 6,
+          "strict_successes": 6
+        },
+        "hybrid_metric": {
+          "attempts": 6,
+          "strict_successes": 6
+        }
+      }
+    },
+    "after": {
+      "attempts": 24,
+      "mechanical_successes": 18,
+      "strict_successes": 18,
+      "strict_rate": 0.75,
+      "primary_only_successes": 18,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 6,
+      "all_repeats_pass_wilson_95": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "requests": 54,
+      "tokens": 105532,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 7.4225,
+      "repairs": 6,
+      "latency_p50_p95": [
+        6.695,
+        10.53755
+      ],
+      "tokens_per_strict_success": 5862.888888888889,
+      "categories": {
+        "explanation": {
+          "attempts": 12,
+          "strict_successes": 6
+        },
+        "hybrid_growth": {
+          "attempts": 6,
+          "strict_successes": 6
+        },
+        "hybrid_metric": {
+          "attempts": 6,
+          "strict_successes": 6
+        }
+      }
+    },
+    "optimized": {
+      "attempts": 24,
+      "mechanical_successes": 18,
+      "strict_successes": 18,
+      "strict_rate": 0.75,
+      "primary_only_successes": 18,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 6,
+      "all_repeats_pass_wilson_95": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "requests": 52,
+      "tokens": 94085,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.835916666666667,
+      "repairs": 4,
+      "latency_p50_p95": [
+        6.289,
+        10.14395
+      ],
+      "tokens_per_strict_success": 5226.944444444444,
+      "categories": {
+        "explanation": {
+          "attempts": 12,
+          "strict_successes": 6
+        },
+        "hybrid_growth": {
+          "attempts": 6,
+          "strict_successes": 6
+        },
+        "hybrid_metric": {
+          "attempts": 6,
+          "strict_successes": 6
+        }
+      }
+    },
+    "after_old_retrieval": {
+      "attempts": 24,
+      "mechanical_successes": 18,
+      "strict_successes": 18,
+      "strict_rate": 0.75,
+      "primary_only_successes": 18,
+      "unique_questions": 8,
+      "all_repeats_pass_questions": 6,
+      "all_repeats_pass_wilson_95": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "requests": 52,
+      "tokens": 97524,
+      "unknown_usage_tasks": 0,
+      "mean_seconds": 6.908083333333334,
+      "repairs": 4,
+      "latency_p50_p95": [
+        6.446,
+        9.9489
+      ],
+      "tokens_per_strict_success": 5418.0,
+      "categories": {
+        "explanation": {
+          "attempts": 12,
+          "strict_successes": 6
+        },
+        "hybrid_growth": {
+          "attempts": 6,
+          "strict_successes": 6
+        },
+        "hybrid_metric": {
+          "attempts": 6,
+          "strict_successes": 6
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "after_vs_before": {
+      "pairs": 24,
+      "unique_cases": 8,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 19781,
+      "token_relative_change": 0.23067952560319993
+    },
+    "after_vs_after_old_retrieval": {
+      "pairs": 24,
+      "unique_cases": 8,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": 8008,
+      "token_relative_change": 0.08211312087281075
+    },
+    "optimized_vs_after": {
+      "pairs": 24,
+      "unique_cases": 8,
+      "wins": 0,
+      "losses": 0,
+      "ties": 24,
+      "difference": 0.0,
+      "case_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired resampling of questions, retaining all repeats; shared-source dependence remains",
+      "token_difference": -11447,
+      "token_relative_change": -0.10846946897623466
+    }
+  },
+  "tasks_sha256": "e9da820072162a57ea2c3b3aa2ef349e9e31a772466a43a14011400db39d702e",
+  "review": "renewed-evidence-review-v2",
+  "review_summary_sha256": "9b6cca49a70087e6f81f56f0df75dec267c4be71fa7e1f16f9e430df4f622dcc",
+  "failures": [
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "86386c366eeeab1a9d274eda544c00b65b3f82a4c94c36c921123c26d8ca0709"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "6f24bc984f57bd9e19c7624f8a4260bb2c10b84d294764e1f782f2c8c5e32263"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "0615494342bdc1241cf436b792df13eb5aca848f667bcda427eb215c31e1f1b4"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "0017352a9eb67d6a9bfcce2826a116f468d37104f360ebbf1f1b8b354eff8505"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "a8a801792a3783b5c36f2ae187546b57eaf5e2e5f45caab184898c8b3a56a285"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "39e17d7f70363dbc01f68c92f3c2066288aa7f6ed8ef1736a0acd48df4f56b79"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4f5b97bf22dc69bd46163cb7f780b73e40bdab42fedf10588ea803b3dcc13eef"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 0,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 1,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "f664f1b3b69d43b7f7c880c0391ef52654b4d7ea0f42cc96f1ed88076f94d588"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "7aca72e6b719c5f6403996e505411fb8c7553f2cecb0a9234325d353a17e8c1f"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "8dbc73a3887b16cfdf19cd155a92000ba2bf5fe11365188b4723f0f3803dbc27"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 1,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "6f24bc984f57bd9e19c7624f8a4260bb2c10b84d294764e1f782f2c8c5e32263"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 1,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "5ada54deccd1ce8a1601cd9f00832a4acdb1af2793071fba045844749599a0ae"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 1,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 1,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 1,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "06ad64d9d623c5d68da5005698fba2b00be3cbc76bf30f6388a0ec77a17b27b9"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "7aca72e6b719c5f6403996e505411fb8c7553f2cecb0a9234325d353a17e8c1f"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "93b7088183fd522332e7835e5eeb188beccb2202e41de5f90cf713dffc457915"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 2,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "b41c7896ec70f5cfa082a90a53762975040ca369f2b58193a5ee7888b78a70bd"
+    },
+    {
+      "case_id": "966e8796c78d27ee0ff3",
+      "repeat": 2,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "5f81e8cd0c289e8f68293c05b3417d50870b4eca6d12426452681243cea4c931"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 2,
+      "arm": "after",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 2,
+      "arm": "optimized",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "4580505cb1bfec943dac73a2c07d93f2ba4235756d170a5085ad72a93b03d8b2"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 2,
+      "arm": "after_old_retrieval",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "59e5e12f4338ce64d4c9b4c3024c1f4aed4154e044271c48f92767ee3c7572e4"
+    },
+    {
+      "case_id": "9558382ceb1fa5139313",
+      "repeat": 2,
+      "arm": "before",
+      "score": 0,
+      "strict_score": 0,
+      "error_type": null,
+      "error": null,
+      "review_sample": "98428b65399016493e0b7318e1b1f1aa858e11519b96564a638431e50965cdd7"
+    }
+  ],
+  "repeated_calls_are_not_independent_questions": true
+}

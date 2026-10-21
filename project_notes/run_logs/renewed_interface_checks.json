@@ -1,0 +1,361 @@
+{
+    "run_id": "renewed-interface-checks",
+    "negative_paths": {
+        "run_id": "dashboard-quality",
+        "status": "passed",
+        "checks": [
+            {
+                "name": "ticker pattern compiles under browser Unicode Sets rules",
+                "status": "passed"
+            },
+            {
+                "name": "blank question is blocked before an HTTP request",
+                "status": "passed"
+            },
+            {
+                "name": "blank search is blocked before an HTTP request",
+                "status": "passed"
+            },
+            {
+                "name": "a collapsed source picker opens when too many reports are selected",
+                "status": "passed"
+            },
+            {
+                "name": "HTTP error with non-JSON body is not described as a connection failure",
+                "status": "passed"
+            },
+            {
+                "name": "successful malformed response is described as a response error",
+                "status": "passed"
+            },
+            {
+                "name": "analysis requests include an abort signal",
+                "status": "passed"
+            },
+            {
+                "name": "request timeout actually aborts a pending transport",
+                "status": "passed"
+            },
+            {
+                "name": "request timeout also covers a stalled response body",
+                "status": "passed"
+            },
+            {
+                "name": "concurrent analysis submissions are prevented",
+                "status": "passed"
+            },
+            {
+                "name": "timeout has a specific message and releases the action",
+                "status": "passed"
+            },
+            {
+                "name": "failed HTML extraction is not reported as a usable source",
+                "status": "passed"
+            },
+            {
+                "name": "unsupported file type is rejected before upload",
+                "status": "passed"
+            },
+            {
+                "name": "resume status appears next to the saved result",
+                "status": "passed"
+            },
+            {
+                "name": "resume conflict remains visible after loading saved details",
+                "status": "passed"
+            },
+            {
+                "name": "uploaded source choice explains its exclusive scope",
+                "status": "passed"
+            },
+            {
+                "name": "favicon is provided without a missing-resource request",
+                "status": "passed"
+            },
+            {
+                "name": "upload metadata pattern and file hint describe accepted input",
+                "status": "passed"
+            }
+        ],
+        "passed": 18,
+        "total": 18,
+        "failed": [],
+        "method": "jsdom negative-path and API-contract checks"
+    },
+    "dashboard_sha256": "d67c352359edfc90a0ea4a382f33d1098d2df4dbaa585ecc4e465b7d929b1366",
+    "language": {
+        "run_id": "dashboard-language",
+        "status": "passed",
+        "checks": [
+            {
+                "name": "language button switches labels, title, placeholders and accessibility names",
+                "status": "passed"
+            },
+            {
+                "name": "Chinese static interface has no untranslated catalog messages",
+                "status": "passed"
+            },
+            {
+                "name": "Chinese locale defaults to Chinese and saved preference takes priority",
+                "status": "passed"
+            },
+            {
+                "name": "blocked storage does not prevent switching",
+                "status": "passed"
+            },
+            {
+                "name": "custom question and source selections survive switching without API requests",
+                "status": "passed"
+            },
+            {
+                "name": "example questions switch languages while edited questions remain unchanged",
+                "status": "passed"
+            },
+            {
+                "name": "existing results translate labels without changing numbers, quotes, links or run data",
+                "status": "passed"
+            },
+            {
+                "name": "localized input validation changes language without losing invalid state",
+                "status": "passed"
+            },
+            {
+                "name": "switching during an analysis preserves the busy state and sends no duplicate request",
+                "status": "passed"
+            },
+            {
+                "name": "new search results and errors use the active language and preserve source text",
+                "status": "passed"
+            },
+            {
+                "name": "upload status and appended inspection links switch together",
+                "status": "passed"
+            },
+            {
+                "name": "switching repeatedly leaves the interface error-free",
+                "status": "passed"
+            }
+        ],
+        "count": 12,
+        "method": "jsdom with mocked responses; no model calls"
+    },
+    "rendered_browser": false,
+    "interaction": {
+        "run_id": "dashboard-macaron",
+        "status": "passed",
+        "checks": [
+            "unique IDs and named form fields",
+            "uploaded source list populated",
+            "suggestion changes question without sending a request",
+            "six report selections rejected",
+            "question uses selected reports and renders saved hybrid result",
+            "claim links open the matching evidence",
+            "partial business result is distinct from completed workflow",
+            "dynamic text is escaped and unsafe source URLs are not linked",
+            "quick analysis retains the existing API contract",
+            "report search uses independent filters",
+            "empty search has a useful message",
+            "search connection failure restores the action",
+            "large report rejected before upload",
+            "new upload selected and ready for the next question",
+            "image-only report is not selected as a usable source",
+            "resume keeps the saved session endpoint",
+            "analysis failure clears busy state",
+            "script has no uncaught errors or unused mock responses"
+        ],
+        "count": 18,
+        "saved_session": "7653de132a594346a5c3f9c159f62d01",
+        "method": "jsdom with mocked API responses; no model calls"
+    },
+    "model_requests": 0,
+    "status": "passed",
+    "real_http": {
+        "run_id": "dashboard-live-quality",
+        "status": "passed",
+        "checks": [
+            {
+                "name": "live page, source list, navigation anchors and favicon",
+                "status": "passed",
+                "uploaded_reports": 16
+            },
+            {
+                "name": "offline analysis and reports · MSFT FY2024",
+                "status": "passed",
+                "task_id": "d33c7dd6e75248d2aca7aecd1f1040a6"
+            },
+            {
+                "name": "offline analysis and reports · MSFT FY2023",
+                "status": "passed",
+                "task_id": "75c9ddbd008b4e139c9d62111910a4be"
+            },
+            {
+                "name": "offline analysis and reports · AAPL FY2024",
+                "status": "passed",
+                "task_id": "16323f6eaad1473cb9c16713d3c4b54b"
+            },
+            {
+                "name": "offline analysis and reports · AAPL FY2023",
+                "status": "passed",
+                "task_id": "70a7fda69d4345f793c64794016aeb8b"
+            },
+            {
+                "name": "offline analysis and reports · GOOGL FY2024",
+                "status": "passed",
+                "task_id": "6fa545bc29c14d66bd4f6d70ed02ea30"
+            },
+            {
+                "name": "offline analysis and reports · GOOGL FY2023",
+                "status": "passed",
+                "task_id": "298da393807c433e932902def9cf6f0a"
+            },
+            {
+                "name": "offline analysis and reports · AMZN FY2024",
+                "status": "passed",
+                "task_id": "b13ec04a5c51498ea2d4456282ec18da"
+            },
+            {
+                "name": "offline analysis and reports · AMZN FY2023",
+                "status": "passed",
+                "task_id": "2fc6d74067a947868ac8ef655fac8686"
+            },
+            {
+                "name": "offline analysis and reports · META FY2024",
+                "status": "passed",
+                "task_id": "f5a5a8639430405ba125d1332a96187f"
+            },
+            {
+                "name": "offline analysis and reports · META FY2023",
+                "status": "passed",
+                "task_id": "d33d96d6eb5e40b5a91f52373d3ed83e"
+            },
+            {
+                "name": "live report search · MSFT 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · MSFT 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · MSFT 2022",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AAPL 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AAPL 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AAPL 2022",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · GOOGL 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · GOOGL 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · GOOGL 2022",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AMZN 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AMZN 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · AMZN 2022",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · META 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · META 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · META 2022",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · TSLA 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · TSLA 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · ADBE 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · ADBE 2023",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · NVDA 2024",
+                "status": "passed"
+            },
+            {
+                "name": "live report search · NVDA 2023",
+                "status": "passed"
+            },
+            {
+                "name": "existing report upload and extracted-values links",
+                "status": "passed",
+                "document_id": "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6",
+                "passages": 970
+            },
+            {
+                "name": "invalid upload and task parameters return handled errors",
+                "status": "passed"
+            },
+            {
+                "name": "no uncaught script errors",
+                "status": "passed"
+            }
+        ],
+        "count": 35,
+        "model_runs": [],
+        "task_ids": [
+            "d33c7dd6e75248d2aca7aecd1f1040a6",
+            "75c9ddbd008b4e139c9d62111910a4be",
+            "16323f6eaad1473cb9c16713d3c4b54b",
+            "70a7fda69d4345f793c64794016aeb8b",
+            "6fa545bc29c14d66bd4f6d70ed02ea30",
+            "298da393807c433e932902def9cf6f0a",
+            "b13ec04a5c51498ea2d4456282ec18da",
+            "2fc6d74067a947868ac8ef655fac8686",
+            "f5a5a8639430405ba125d1332a96187f",
+            "d33d96d6eb5e40b5a91f52373d3ed83e"
+        ],
+        "method": "Real local HTTP APIs driven through jsdom; not a rendered-browser inspection"
+    },
+    "real_http_chinese": {
+        "run_id": "dashboard-language-live",
+        "status": "passed",
+        "task_id": "6f2fecca2c57466d92f3f9d4c7b85514",
+        "checks": [
+            "Live bilingual page returns HTTP 200",
+            "Stored Chinese preference applied",
+            "Chinese controls preserve the offline API payload",
+            "Chinese result labels and status",
+            "Real PDF report returns HTTP 200",
+            "Language switching preserves results without extra requests"
+        ],
+        "model_calls": 0,
+        "method": "Real HTTP APIs through jsdom; no rendered browser"
+    }
+}
