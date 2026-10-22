@@ -1,0 +1,194 @@
+{
+  "status": "completed",
+  "attempted": 240,
+  "repairs": 0,
+  "first": {
+    "successes": 211,
+    "semantic_successes": 211,
+    "semantic_success_rate": 0.8791666666666667,
+    "success_rate": 0.8791666666666667,
+    "json_valid": 240,
+    "schema_valid": 240,
+    "fields": {
+      "companies": {
+        "correct": 240,
+        "eligible": 240
+      },
+      "fiscal_year": {
+        "correct": 192,
+        "eligible": 200
+      },
+      "intent": {
+        "correct": 216,
+        "eligible": 240
+      },
+      "metrics": {
+        "correct": 152,
+        "eligible": 152
+      },
+      "numeric_intent": {
+        "correct": 21,
+        "eligible": 24
+      },
+      "report_year": {
+        "correct": 192,
+        "eligible": 192
+      },
+      "scope": {
+        "correct": 234,
+        "eligible": 240
+      },
+      "topic": {
+        "correct": 56,
+        "eligible": 56
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "boundary": {
+        "attempts": 48,
+        "successes": 41,
+        "semantic_successes": 41
+      },
+      "comparison": {
+        "attempts": 24,
+        "successes": 20,
+        "semantic_successes": 20
+      },
+      "explanation": {
+        "attempts": 24,
+        "successes": 22,
+        "semantic_successes": 22
+      },
+      "growth": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "hybrid": {
+        "attempts": 24,
+        "successes": 21,
+        "semantic_successes": 21
+      },
+      "metric": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "selected_document": {
+        "attempts": 24,
+        "successes": 16,
+        "semantic_successes": 16
+      },
+      "summary": {
+        "attempts": 24,
+        "successes": 19,
+        "semantic_successes": 19
+      }
+    }
+  },
+  "final": {
+    "successes": 211,
+    "semantic_successes": 211,
+    "semantic_success_rate": 0.8791666666666667,
+    "success_rate": 0.8791666666666667,
+    "json_valid": 240,
+    "schema_valid": 240,
+    "fields": {
+      "companies": {
+        "correct": 240,
+        "eligible": 240
+      },
+      "fiscal_year": {
+        "correct": 192,
+        "eligible": 200
+      },
+      "intent": {
+        "correct": 216,
+        "eligible": 240
+      },
+      "metrics": {
+        "correct": 152,
+        "eligible": 152
+      },
+      "numeric_intent": {
+        "correct": 21,
+        "eligible": 24
+      },
+      "report_year": {
+        "correct": 192,
+        "eligible": 192
+      },
+      "scope": {
+        "correct": 234,
+        "eligible": 240
+      },
+      "topic": {
+        "correct": 56,
+        "eligible": 56
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "boundary": {
+        "attempts": 48,
+        "successes": 41,
+        "semantic_successes": 41
+      },
+      "comparison": {
+        "attempts": 24,
+        "successes": 20,
+        "semantic_successes": 20
+      },
+      "explanation": {
+        "attempts": 24,
+        "successes": 22,
+        "semantic_successes": 22
+      },
+      "growth": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "hybrid": {
+        "attempts": 24,
+        "successes": 21,
+        "semantic_successes": 21
+      },
+      "metric": {
+        "attempts": 24,
+        "successes": 24,
+        "semantic_successes": 24
+      },
+      "selected_document": {
+        "attempts": 24,
+        "successes": 16,
+        "semantic_successes": 16
+      },
+      "summary": {
+        "attempts": 24,
+        "successes": 19,
+        "semantic_successes": 19
+      }
+    }
+  },
+  "known_tokens": 314442,
+  "unknown_usage_attempts": 0,
+  "model_attempts": 240,
+  "mean_total_seconds": 5.531688643340021,
+  "errors": {},
+  "peak_allocated_bytes": 3212456960,
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda": "13.0"
+  }
+}

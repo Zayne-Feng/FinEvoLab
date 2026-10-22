@@ -1,0 +1,38 @@
+{
+  "excluded_from_scores": true,
+  "attempts": [
+    {
+      "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+      "elapsed_seconds": 6.240425022318959,
+      "usage": {
+        "requests": 1,
+        "input_tokens": 1249,
+        "output_tokens": 49,
+        "total_tokens": 1298
+      },
+      "peak_allocated_bytes": 3188367872
+    },
+    {
+      "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+      "elapsed_seconds": 5.215457389131188,
+      "usage": {
+        "requests": 1,
+        "input_tokens": 1248,
+        "output_tokens": 49,
+        "total_tokens": 1297
+      },
+      "peak_allocated_bytes": 3188083200
+    },
+    {
+      "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+      "elapsed_seconds": 5.300950113683939,
+      "usage": {
+        "requests": 1,
+        "input_tokens": 1249,
+        "output_tokens": 50,
+        "total_tokens": 1299
+      },
+      "peak_allocated_bytes": 3188367872
+    }
+  ]
+}
