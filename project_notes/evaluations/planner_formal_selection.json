@@ -1,0 +1,168 @@
+{
+  "shared": {
+    "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+    "generation": {
+      "temperature": 0,
+      "max_new_tokens": 512,
+      "max_input_tokens": 8192,
+      "repairs": 0,
+      "output_constraint": "prompt_only",
+      "automatic_transport_retries": 0
+    },
+    "implementation": {
+      "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+      "scripts/planner_benchmark.py": "f1ed18df9a46b5e7b86ae53bfa1e7743993ba96c95b49a3e0796f06ecc5ca8ea",
+      "finevolab/grounded.py": "08e9dcecefec4e4dc0c0dfbb56e5952872515add7ce1fd3be8d2b9b1e564ff07",
+      "finevolab/sdk_runtime.py": "fe1dede073a013218dc4c206c8280e68ca77227adc7a20fa02e66b9cce561858",
+      "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+      "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+      "scripts/estimate_paired_uncertainty.py": "0b567ee64fbccb1555d3762ed7b31fa33fa5793f9b6a630f6c68a076f38d18e9"
+    }
+  },
+  "arms": {
+    "deepseek": {
+      "backend": "api",
+      "model": "deepseek-flash",
+      "endpoint": "https://api.deepseek.com/",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "adapter": null,
+      "packages": {
+        "torch": "2.9.1+cpu",
+        "transformers": "4.57.6",
+        "peft": null,
+        "bitsandbytes": null,
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      }
+    },
+    "qwen_base": {
+      "backend": "transformers",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "adapter": null,
+      "dtype": "bfloat16",
+      "quantization": "none",
+      "device": "cuda",
+      "packages": {
+        "torch": "2.14.1+cu130",
+        "transformers": "4.57.6",
+        "peft": "0.17.1",
+        "bitsandbytes": "0.48.1",
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      },
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "total_memory": 25296044032,
+        "cuda": "13.0"
+      },
+      "threads": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "TOKENIZERS_PARALLELISM": "false"
+      }
+    },
+    "qwen_lora": {
+      "backend": "transformers",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "adapter": {
+        "files": {
+          "adapter_config.json": "6dad1301e8c857d1c882e78bc3b2ecca94ef548d041de3bd4181e40a4e494f49",
+          "adapter_model.safetensors": "0ea99b2d4cd0f1c72527ce0a9e5b5b7fde1054f0190a561c30728c0aab098486",
+          "training_identity.json": "872a284789aafb3034fc259ec37dc718f8d02e3b5a262fd6b2ae6d2a3f09e3e3"
+        },
+        "sha256": "017f71aef27642637f3e0018c6cee70958f27a4e6035bbd579e45e982b98409c",
+        "training": {
+          "model": "Qwen/Qwen3-4B-Instruct-2507",
+          "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+          "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+          "training_manifest_sha256": "394075027f3a139978565372886bcc2e4d5698bbd1f8fafd5e63913dfc63315b"
+        }
+      },
+      "dtype": "bfloat16",
+      "quantization": "none",
+      "device": "cuda",
+      "packages": {
+        "torch": "2.14.1+cu130",
+        "transformers": "4.57.6",
+        "peft": "0.17.1",
+        "bitsandbytes": "0.48.1",
+        "openai": "1.109.1",
+        "pydantic": "2.14.1"
+      },
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "total_memory": 25296044032,
+        "cuda": "13.0"
+      },
+      "threads": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "TOKENIZERS_PARALLELISM": "false"
+      }
+    }
+  },
+  "additional_models": {
+    "qwen_lora": [
+      {
+        "backend": "transformers",
+        "model": "Qwen/Qwen3-4B-Instruct-2507",
+        "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "adapter": {
+          "files": {
+            "adapter_config.json": "b1875e4915e379b19b14c7dbb0e881dec5540dcdb15e1dd541d5c57325dd1a98",
+            "adapter_model.safetensors": "ad03e1a59865502238547291a895482b65751c3dd993d3caddf36cb2d1bac718",
+            "training_identity.json": "7d5e1dfc7991e64ff3f9a6c6de4fdcf37560359ce5bce2b6ca06b1026258b11b"
+          },
+          "sha256": "8575fdb7e9b4c33873b8708d04b0acdcd260fc1550ce26992363e77d286347f9",
+          "training": {
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+            "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+            "training_manifest_sha256": "ea7af78357111bba6accdb1eccca5fd41026437c6baae69fe76e1d918dfb717f"
+          }
+        },
+        "dtype": "bfloat16",
+        "quantization": "none",
+        "device": "cuda",
+        "packages": {
+          "torch": "2.14.1+cu130",
+          "transformers": "4.57.6",
+          "peft": "0.17.1",
+          "bitsandbytes": "0.48.1",
+          "openai": "1.109.1",
+          "pydantic": "2.14.1"
+        },
+        "hardware": {
+          "gpu": "NVIDIA GeForce RTX 3090",
+          "total_memory": 25296044032,
+          "cuda": "13.0"
+        },
+        "threads": {
+          "OMP_NUM_THREADS": "4",
+          "MKL_NUM_THREADS": "4",
+          "TOKENIZERS_PARALLELISM": "false"
+        }
+      }
+    ]
+  },
+  "validation_runs": {
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-deepseek-validation": {
+      "manifest": "bd91201b5325e617271d2e2c519f5ab50b018a9d3bd13514c27c7bd85c88573f",
+      "predictions": "000868ed8bbb1dee439f924552536efd33d8d2308145c5635ca4a5d1779004e6"
+    },
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-base-validation": {
+      "manifest": "328826475577851feb2bd07d15d600582c09ad130e7242d3ec6c51c06d0cc6b1",
+      "predictions": "da256d015689048043e9b81292da71a105c8a6f3ae1e750f65b480c018410f99"
+    },
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-lora17-epoch1-validation": {
+      "manifest": "3af2b0093a25236281b828cc2ee5b58deadecf8108a92742a24e0ef2afd91068",
+      "predictions": "ec50fbdf216b7cd8ed49250773deddbd6c419beefefa4e4bf9962f71055cebee"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "groups": {
+    "deepseek": {
+      "attempts": 116,
+      "mechanical_successes": 103,
+      "downstream_requests": 0,
+      "known_downstream_tokens": 0,
+      "unknown_usage_tasks": 0,
+      "failures": {
+        "failed_checks": 13
+      }
+    },
+    "qwen_base": {
+      "attempts": 116,
+      "mechanical_successes": 49,
+      "downstream_requests": 0,
+      "known_downstream_tokens": 0,
+      "unknown_usage_tasks": 0,
+      "failures": {
+        "ValueError": 3,
+        "ValidationError": 23,
+        "failed_checks": 41
+      }
+    },
+    "qwen_lora": {
+      "attempts": 116,
+      "mechanical_successes": 101,
+      "downstream_requests": 0,
+      "known_downstream_tokens": 0,
+      "unknown_usage_tasks": 0,
+      "failures": {
+        "failed_checks": 15
+      }
+    }
+  },
+  "excluded_cases": 124,
+  "semantic_review": "not_applicable"
+}

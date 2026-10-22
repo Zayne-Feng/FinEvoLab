@@ -1,0 +1,190 @@
+{
+  "status": "completed",
+  "attempted": 120,
+  "repairs": 0,
+  "first": {
+    "successes": 62,
+    "semantic_successes": 88,
+    "semantic_success_rate": 0.7333333333333333,
+    "success_rate": 0.5166666666666667,
+    "json_valid": 119,
+    "schema_valid": 86,
+    "fields": {
+      "companies": {
+        "correct": 85,
+        "eligible": 120
+      },
+      "fiscal_year": {
+        "correct": 68,
+        "eligible": 100
+      },
+      "intent": {
+        "correct": 67,
+        "eligible": 120
+      },
+      "metrics": {
+        "correct": 64,
+        "eligible": 76
+      },
+      "numeric_intent": {
+        "correct": 8,
+        "eligible": 12
+      },
+      "report_year": {
+        "correct": 64,
+        "eligible": 96
+      },
+      "scope": {
+        "correct": 76,
+        "eligible": 120
+      },
+      "topic": {
+        "correct": 9,
+        "eligible": 28
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 12,
+        "successes": 0,
+        "semantic_successes": 12
+      },
+      "boundary": {
+        "attempts": 24,
+        "successes": 3,
+        "semantic_successes": 3
+      },
+      "comparison": {
+        "attempts": 12,
+        "successes": 7,
+        "semantic_successes": 11
+      },
+      "explanation": {
+        "attempts": 12,
+        "successes": 3,
+        "semantic_successes": 7
+      },
+      "growth": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      },
+      "hybrid": {
+        "attempts": 12,
+        "successes": 5,
+        "semantic_successes": 7
+      },
+      "metric": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      },
+      "selected_document": {
+        "attempts": 12,
+        "successes": 8,
+        "semantic_successes": 12
+      },
+      "summary": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      }
+    }
+  },
+  "final": {
+    "successes": 62,
+    "semantic_successes": 88,
+    "semantic_success_rate": 0.7333333333333333,
+    "success_rate": 0.5166666666666667,
+    "json_valid": 119,
+    "schema_valid": 86,
+    "fields": {
+      "companies": {
+        "correct": 85,
+        "eligible": 120
+      },
+      "fiscal_year": {
+        "correct": 68,
+        "eligible": 100
+      },
+      "intent": {
+        "correct": 67,
+        "eligible": 120
+      },
+      "metrics": {
+        "correct": 64,
+        "eligible": 76
+      },
+      "numeric_intent": {
+        "correct": 8,
+        "eligible": 12
+      },
+      "report_year": {
+        "correct": 64,
+        "eligible": 96
+      },
+      "scope": {
+        "correct": 76,
+        "eligible": 120
+      },
+      "topic": {
+        "correct": 9,
+        "eligible": 28
+      }
+    },
+    "categories": {
+      "alignment": {
+        "attempts": 12,
+        "successes": 0,
+        "semantic_successes": 12
+      },
+      "boundary": {
+        "attempts": 24,
+        "successes": 3,
+        "semantic_successes": 3
+      },
+      "comparison": {
+        "attempts": 12,
+        "successes": 7,
+        "semantic_successes": 11
+      },
+      "explanation": {
+        "attempts": 12,
+        "successes": 3,
+        "semantic_successes": 7
+      },
+      "growth": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      },
+      "hybrid": {
+        "attempts": 12,
+        "successes": 5,
+        "semantic_successes": 7
+      },
+      "metric": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      },
+      "selected_document": {
+        "attempts": 12,
+        "successes": 8,
+        "semantic_successes": 12
+      },
+      "summary": {
+        "attempts": 12,
+        "successes": 12,
+        "semantic_successes": 12
+      }
+    }
+  },
+  "known_tokens": 160464,
+  "unknown_usage_attempts": 0,
+  "model_attempts": 120,
+  "mean_total_seconds": 3.1054257190786303,
+  "errors": {},
+  "peak_allocated_bytes": 8361033728,
+  "predictions_sha256": "da256d015689048043e9b81292da71a105c8a6f3ae1e750f65b480c018410f99"
+}

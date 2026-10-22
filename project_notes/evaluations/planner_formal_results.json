@@ -1,0 +1,3511 @@
+{
+  "status": "completed",
+  "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+  "code_sha256": "c4a4c64bab2d5d063a87683dfcf80cca48702ef47302ec04d7e53e29cb182ac4",
+  "selection": {
+    "selected_epoch": 1,
+    "candidates": [
+      {
+        "epoch": 1,
+        "strict_successes": 221,
+        "semantic_successes": 221,
+        "denominator": 240
+      },
+      {
+        "epoch": 2,
+        "strict_successes": 219,
+        "semantic_successes": 219,
+        "denominator": 240
+      }
+    ],
+    "rule": "mean_strict_then_mean_semantic_then_earlier_epoch",
+    "primary_seed": 17,
+    "replicate_seed": 29,
+    "test_used": false,
+    "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+    "selection_sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
+  },
+  "test_cases": 240,
+  "template_clusters": 60,
+  "semantic_rule": "explicit_fields_with_only_declared_schema_defaults",
+  "seeds": {
+    "17": {
+      "arms": {
+        "deepseek": {
+          "cases": 240,
+          "strict_successes": 227,
+          "semantic_successes": 227,
+          "raw_explicit_semantic_successes": 227,
+          "schema_valid": 240,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 115,
+              "semantic": 115
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 112,
+              "semantic": 112
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 113,
+              "semantic": 113
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 113,
+              "semantic": 113
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 1,
+              "semantic": 1
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 35,
+              "semantic": 35
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            }
+          },
+          "macro_category_strict_rate": 0.9699074074074074
+        },
+        "qwen_base": {
+          "cases": 240,
+          "strict_successes": 109,
+          "semantic_successes": 159,
+          "raw_explicit_semantic_successes": 159,
+          "schema_valid": 158,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 53,
+              "semantic": 78
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 56,
+              "semantic": 81
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 55,
+              "semantic": 80
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 53,
+              "semantic": 78
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 1,
+              "semantic": 1
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 0,
+              "semantic": 22
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 7,
+              "semantic": 9
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 6,
+              "semantic": 17
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 4,
+              "semantic": 12
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 23,
+              "semantic": 23
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 12,
+              "semantic": 14
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 12,
+              "semantic": 17
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 21,
+              "semantic": 21
+            }
+          },
+          "macro_category_strict_rate": 0.48842592592592593
+        },
+        "qwen_lora": {
+          "cases": 240,
+          "strict_successes": 212,
+          "semantic_successes": 212,
+          "raw_explicit_semantic_successes": 212,
+          "schema_valid": 240,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 105,
+              "semantic": 105
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 107,
+              "semantic": 107
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 103,
+              "semantic": 103
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 102,
+              "semantic": 102
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 7,
+              "semantic": 7
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 40,
+              "semantic": 40
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 20,
+              "semantic": 20
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 20,
+              "semantic": 20
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 18,
+              "semantic": 18
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 18,
+              "semantic": 18
+            }
+          },
+          "macro_category_strict_rate": 0.888888888888889
+        }
+      },
+      "paired_effects": {
+        "strict": {
+          "left_run": "qwen_base",
+          "right_run": "qwen_lora",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 60,
+          "repeats_per_case": 1,
+          "mean_difference": 0.42916666666666664,
+          "confidence_level": 0.95,
+          "interval": [
+            0.3125,
+            0.5458333333333333
+          ],
+          "repeats_treated_as_independent_cases": false,
+          "wins": 106,
+          "losses": 3,
+          "ties": 131
+        },
+        "semantic": {
+          "left_run": "qwen_base",
+          "right_run": "qwen_lora",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 60,
+          "repeats_per_case": 1,
+          "mean_difference": 0.22083333333333333,
+          "confidence_level": 0.95,
+          "interval": [
+            0.125,
+            0.32083333333333336
+          ],
+          "repeats_treated_as_independent_cases": false,
+          "wins": 57,
+          "losses": 4,
+          "ties": 179
+        }
+      },
+      "strict_gain_mechanisms": {
+        "schema_and_semantic_recovery": 26,
+        "schema_recovery_only": 49,
+        "semantic_field_recovery": 31
+      },
+      "failures": [
+        {
+          "case_id": "test_15_0_en",
+          "group_id": "test_15",
+          "question": "I want the Microsoft versus AAPL FY2024 revenue amounts even if their fiscal calendars differ.",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\",\"AAPL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_0_zh",
+          "group_id": "test_15",
+          "question": "即使财年日历不同，我仍需要比较Microsoft与AAPL在2024财年的营收金额。",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"alignment\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\",\"AAPL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_1_en",
+          "group_id": "test_15",
+          "question": "I want the NVDA versus GOOGL FY2023 operating income amounts even if their fiscal calendars differ.",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA",
+              "GOOGL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"NVDA\",\"GOOGL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_1_zh",
+          "group_id": "test_15",
+          "question": "即使财年日历不同，我仍需要比较NVDA与GOOGL在2023财年的营业利润金额。",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA",
+              "GOOGL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"alignment\",\"numeric_intent\":\"comparison\",\"companies\":[\"NVDA\",\"GOOGL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_25_0_en",
+          "group_id": "test_25",
+          "question": "Create three FY2024 entries for Microsoft: revenue, operating profit, and net income.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_25_1_en",
+          "group_id": "test_25",
+          "question": "Create three FY2023 entries for TSLA: revenue, operating profit, and net income.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "TSLA"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"TSLA\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_0_en",
+          "group_id": "test_29",
+          "question": "Give one table containing Meta's FY2024 revenue, operating income, and net earnings with their units.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_0_zh",
+          "group_id": "test_29",
+          "question": "用一张表给出Meta在2024财年的营收、营业利润和净利润及单位。",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_1_en",
+          "group_id": "test_29",
+          "question": "Give one table containing ADBE's FY2023 revenue, operating income, and net earnings with their units.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_1_zh",
+          "group_id": "test_29",
+          "question": "用一张表给出ADBE在2023财年的营收、营业利润和净利润及单位。",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_41_0_en",
+          "group_id": "test_41",
+          "question": "For FY2024, show both Apple's and GOOGL's revenue amounts and identify risks separately for each issuer.",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "AAPL",
+              "GOOGL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\",\"GOOGL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_0_zh",
+          "group_id": "test_41",
+          "question": "针对2024财年，展示Apple与GOOGL各自营收金额，并分别识别两家发行人的风险。",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "AAPL",
+              "GOOGL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\",\"GOOGL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_1_en",
+          "group_id": "test_41",
+          "question": "For FY2023, show both ADBE's and AMZN's revenue amounts and identify risks separately for each issuer.",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "ADBE",
+              "AMZN"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\",\"AMZN\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_1_zh",
+          "group_id": "test_41",
+          "question": "针对2023财年，展示ADBE与AMZN各自营收金额，并分别识别两家发行人的风险。",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "ADBE",
+              "AMZN"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\",\"AMZN\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_44_0_en",
+          "group_id": "test_44",
+          "question": "Project META's net income for the fiscal year after 2023 from the latest annual evidence.",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_0_zh",
+          "group_id": "test_46",
+          "question": "返回AAPL在2022与2023财年的两项年度营业利润金额，作为序列而非增长计算。",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_1_zh",
+          "group_id": "test_46",
+          "question": "返回Tesla在2023与2024财年的两项年度净利润金额，作为序列而非增长计算。",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "TSLA"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"TSLA\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_48_0_en",
+          "group_id": "test_48",
+          "question": "Find AMZN's reported annual revenue; the reporting year is intentionally left open.",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [
+              "AMZN"
+            ],
+            "fiscal_year": 1900,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"AMZN\"],\"fiscal_year\":2023,\"report_year\":null,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            }
+          }
+        },
+        {
+          "case_id": "test_48_0_zh",
+          "group_id": "test_48",
+          "question": "查找AMZN报告的全年营收，报告年份暂未确定。",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [
+              "AMZN"
+            ],
+            "fiscal_year": 1900,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"AMZN\"],\"fiscal_year\":1900,\"report_year\":null,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true
+            }
+          }
+        },
+        {
+          "case_id": "test_48_1_en",
+          "group_id": "test_48",
+          "question": "Find Nvidia's reported annual operating income; the reporting year is intentionally left open.",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA"
+            ],
+            "fiscal_year": 1900,
+            "report_year": null,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"NVDA\"],\"fiscal_year\":2023,\"report_year\":null,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            }
+          }
+        },
+        {
+          "case_id": "test_48_1_zh",
+          "group_id": "test_48",
+          "question": "查找Nvidia报告的全年营业利润，报告年份暂未确定。",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA"
+            ],
+            "fiscal_year": 1900,
+            "report_year": null,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"NVDA\"],\"fiscal_year\":2023,\"report_year\":null,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false
+            }
+          }
+        },
+        {
+          "case_id": "test_52_1_zh",
+          "group_id": "test_52",
+          "question": "请求的数值为2024财年的全年净利润，发行人尚未确定。",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"unavailable\",\"numeric_intent\":\"metric\",\"companies\":[],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"unsupported\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_56_0_en",
+          "group_id": "test_56",
+          "question": "Keep the selected report as the evidence source, but extract the prior fiscal 2022 net income comparison.",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2022,
+            "report_year": 2023,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_0_zh",
+          "group_id": "test_56",
+          "question": "保持选中报告作为证据来源，但提取上一2022财年的净利润对比数据。",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2022,
+            "report_year": 2023,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2022,\"report_year\":2023,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_1_en",
+          "group_id": "test_56",
+          "question": "Keep the selected report as the evidence source, but extract the prior fiscal 2023 revenue comparison.",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_1_zh",
+          "group_id": "test_56",
+          "question": "保持选中报告作为证据来源，但提取上一2023财年的营收对比数据。",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_0_en",
+          "group_id": "test_59",
+          "question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_1_en",
+          "group_id": "test_59",
+          "question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        }
+      ]
+    },
+    "29": {
+      "arms": {
+        "deepseek": {
+          "cases": 240,
+          "strict_successes": 227,
+          "semantic_successes": 227,
+          "raw_explicit_semantic_successes": 227,
+          "schema_valid": 240,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 115,
+              "semantic": 115
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 112,
+              "semantic": 112
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 113,
+              "semantic": 113
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 113,
+              "semantic": 113
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 1,
+              "semantic": 1
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 35,
+              "semantic": 35
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            }
+          },
+          "macro_category_strict_rate": 0.9699074074074074
+        },
+        "qwen_base": {
+          "cases": 240,
+          "strict_successes": 109,
+          "semantic_successes": 159,
+          "raw_explicit_semantic_successes": 159,
+          "schema_valid": 158,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 53,
+              "semantic": 78
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 56,
+              "semantic": 81
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 55,
+              "semantic": 80
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 53,
+              "semantic": 78
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 1,
+              "semantic": 1
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 0,
+              "semantic": 22
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 7,
+              "semantic": 9
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 6,
+              "semantic": 17
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 4,
+              "semantic": 12
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 23,
+              "semantic": 23
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 12,
+              "semantic": 14
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 12,
+              "semantic": 17
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 21,
+              "semantic": 21
+            }
+          },
+          "macro_category_strict_rate": 0.48842592592592593
+        },
+        "qwen_lora": {
+          "cases": 240,
+          "strict_successes": 213,
+          "semantic_successes": 213,
+          "raw_explicit_semantic_successes": 213,
+          "schema_valid": 240,
+          "cohorts": {
+            "english": {
+              "cases": 120,
+              "strict": 106,
+              "semantic": 106
+            },
+            "chinese": {
+              "cases": 120,
+              "strict": 107,
+              "semantic": 107
+            },
+            "held_out_entity": {
+              "cases": 116,
+              "strict": 103,
+              "semantic": 103
+            },
+            "training_entities": {
+              "cases": 116,
+              "strict": 104,
+              "semantic": 104
+            },
+            "unresolved_entity": {
+              "cases": 8,
+              "strict": 6,
+              "semantic": 6
+            }
+          },
+          "categories": {
+            "alignment": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "boundary": {
+              "cases": 48,
+              "strict": 42,
+              "semantic": 42
+            },
+            "comparison": {
+              "cases": 24,
+              "strict": 20,
+              "semantic": 20
+            },
+            "explanation": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "growth": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "hybrid": {
+              "cases": 24,
+              "strict": 20,
+              "semantic": 20
+            },
+            "metric": {
+              "cases": 24,
+              "strict": 24,
+              "semantic": 24
+            },
+            "selected_document": {
+              "cases": 24,
+              "strict": 16,
+              "semantic": 16
+            },
+            "summary": {
+              "cases": 24,
+              "strict": 19,
+              "semantic": 19
+            }
+          },
+          "macro_category_strict_rate": 0.8888888888888888
+        }
+      },
+      "paired_effects": {
+        "strict": {
+          "left_run": "qwen_base",
+          "right_run": "qwen_lora",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 60,
+          "repeats_per_case": 1,
+          "mean_difference": 0.43333333333333335,
+          "confidence_level": 0.95,
+          "interval": [
+            0.31666666666666665,
+            0.55
+          ],
+          "repeats_treated_as_independent_cases": false,
+          "wins": 106,
+          "losses": 2,
+          "ties": 132
+        },
+        "semantic": {
+          "left_run": "qwen_base",
+          "right_run": "qwen_lora",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 60,
+          "repeats_per_case": 1,
+          "mean_difference": 0.225,
+          "confidence_level": 0.95,
+          "interval": [
+            0.1290625000000001,
+            0.325
+          ],
+          "repeats_treated_as_independent_cases": false,
+          "wins": 57,
+          "losses": 3,
+          "ties": 180
+        }
+      },
+      "strict_gain_mechanisms": {
+        "schema_and_semantic_recovery": 24,
+        "schema_recovery_only": 49,
+        "semantic_field_recovery": 33
+      },
+      "failures": [
+        {
+          "case_id": "test_15_0_en",
+          "group_id": "test_15",
+          "question": "I want the Microsoft versus AAPL FY2024 revenue amounts even if their fiscal calendars differ.",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\",\"AAPL\"],\"fiscal_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_0_zh",
+          "group_id": "test_15",
+          "question": "即使财年日历不同，我仍需要比较Microsoft与AAPL在2024财年的营收金额。",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"alignment\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\",\"AAPL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_1_en",
+          "group_id": "test_15",
+          "question": "I want the NVDA versus GOOGL FY2023 operating income amounts even if their fiscal calendars differ.",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA",
+              "GOOGL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"NVDA\",\"GOOGL\"],\"fiscal_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_15_1_zh",
+          "group_id": "test_15",
+          "question": "即使财年日历不同，我仍需要比较NVDA与GOOGL在2023财年的营业利润金额。",
+          "expected": {
+            "intent": "comparison",
+            "numeric_intent": "metric",
+            "companies": [
+              "NVDA",
+              "GOOGL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"alignment\",\"numeric_intent\":\"metric\",\"companies\":[\"NVDA\",\"GOOGL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_25_0_en",
+          "group_id": "test_25",
+          "question": "Create three FY2024 entries for Microsoft: revenue, operating profit, and net income.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"MSFT\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_25_1_en",
+          "group_id": "test_25",
+          "question": "Create three FY2023 entries for TSLA: revenue, operating profit, and net income.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "TSLA"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"TSLA\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_0_en",
+          "group_id": "test_29",
+          "question": "Give one table containing Meta's FY2024 revenue, operating income, and net earnings with their units.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_1_en",
+          "group_id": "test_29",
+          "question": "Give one table containing ADBE's FY2023 revenue, operating income, and net earnings with their units.",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_29_1_zh",
+          "group_id": "test_29",
+          "question": "用一张表给出ADBE在2023财年的营收、营业利润和净利润及单位。",
+          "expected": {
+            "intent": "summary",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue",
+              "operating_income",
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\",\"operating_income\",\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_41_0_en",
+          "group_id": "test_41",
+          "question": "For FY2024, show both Apple's and GOOGL's revenue amounts and identify risks separately for each issuer.",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "AAPL",
+              "GOOGL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\",\"GOOGL\"],\"fiscal_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_0_zh",
+          "group_id": "test_41",
+          "question": "针对2024财年，展示Apple与GOOGL各自营收金额，并分别识别两家发行人的风险。",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "AAPL",
+              "GOOGL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\",\"GOOGL\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_1_en",
+          "group_id": "test_41",
+          "question": "For FY2023, show both ADBE's and AMZN's revenue amounts and identify risks separately for each issuer.",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "ADBE",
+              "AMZN"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\",\"AMZN\"],\"fiscal_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_41_1_zh",
+          "group_id": "test_41",
+          "question": "针对2023财年，展示ADBE与AMZN各自营收金额，并分别识别两家发行人的风险。",
+          "expected": {
+            "intent": "hybrid",
+            "numeric_intent": "comparison",
+            "companies": [
+              "ADBE",
+              "AMZN"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics",
+            "topic",
+            "numeric_intent"
+          ],
+          "raw": "{\"intent\":\"hybrid\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\",\"AMZN\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            },
+            "fields": {
+              "intent": true,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true,
+              "topic": true,
+              "numeric_intent": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_0_en",
+          "group_id": "test_46",
+          "question": "Return two annual operating income amounts for AAPL: FY2022 and FY2023, as a series rather than a growth calculation.",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_0_zh",
+          "group_id": "test_46",
+          "question": "返回AAPL在2022与2023财年的两项年度营业利润金额，作为序列而非增长计算。",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_1_en",
+          "group_id": "test_46",
+          "question": "Return two annual net income amounts for Tesla: FY2023 and FY2024, as a series rather than a growth calculation.",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "TSLA"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"summary\",\"numeric_intent\":\"metric\",\"companies\":[\"TSLA\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_46_1_zh",
+          "group_id": "test_46",
+          "question": "返回Tesla在2023与2024财年的两项年度净利润金额，作为序列而非增长计算。",
+          "expected": {
+            "intent": "unavailable",
+            "numeric_intent": "metric",
+            "companies": [
+              "TSLA"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "unsupported"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"metric\",\"numeric_intent\":\"metric\",\"companies\":[\"TSLA\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_52_0_zh",
+          "group_id": "test_52",
+          "question": "请求的数值为2023财年的全年营业利润，发行人尚未确定。",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "operating_income"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"unavailable\",\"numeric_intent\":\"metric\",\"companies\":[],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"operating_income\"],\"topic\":\"revenue\",\"scope\":\"unsupported\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_52_1_zh",
+          "group_id": "test_52",
+          "question": "请求的数值为2024财年的全年净利润，发行人尚未确定。",
+          "expected": {
+            "intent": "clarification",
+            "numeric_intent": "metric",
+            "companies": [],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "ambiguous"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope"
+          ],
+          "raw": "{\"intent\":\"unavailable\",\"numeric_intent\":\"metric\",\"companies\":[],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"unsupported\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false
+            }
+          }
+        },
+        {
+          "case_id": "test_56_0_en",
+          "group_id": "test_56",
+          "question": "Keep the selected report as the evidence source, but extract the prior fiscal 2022 net income comparison.",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2022,
+            "report_year": 2023,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_0_zh",
+          "group_id": "test_56",
+          "question": "保持选中报告作为证据来源，但提取上一2022财年的净利润对比数据。",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "AAPL"
+            ],
+            "fiscal_year": 2022,
+            "report_year": 2023,
+            "metrics": [
+              "net_income"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"AAPL\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"net_income\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_1_en",
+          "group_id": "test_56",
+          "question": "Keep the selected report as the evidence source, but extract the prior fiscal 2023 revenue comparison.",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": false,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_56_1_zh",
+          "group_id": "test_56",
+          "question": "保持选中报告作为证据来源，但提取上一2023财年的营收对比数据。",
+          "expected": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "metrics"
+          ],
+          "raw": "{\"intent\":\"comparison\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"revenue\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "metrics": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_0_en",
+          "group_id": "test_59",
+          "question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"ambiguous\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": false,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_0_zh",
+          "group_id": "test_59",
+          "question": "仅使用选中文件的元数据确定请求的风险讨论涉及哪家公司与哪个财年。",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "META"
+            ],
+            "fiscal_year": 2024,
+            "report_year": 2024,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"META\"],\"fiscal_year\":2024,\"report_year\":2024,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_1_en",
+          "group_id": "test_59",
+          "question": "Use only the selected document's metadata to resolve which issuer and year the requested risk discussion concerns.",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        },
+        {
+          "case_id": "test_59_1_zh",
+          "group_id": "test_59",
+          "question": "仅使用选中文件的元数据确定请求的风险讨论涉及哪家公司与哪个财年。",
+          "expected": {
+            "intent": "explanation",
+            "numeric_intent": "metric",
+            "companies": [
+              "ADBE"
+            ],
+            "fiscal_year": 2023,
+            "report_year": 2023,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "risk",
+            "scope": "annual_fiscal"
+          },
+          "required_fields": [
+            "intent",
+            "companies",
+            "scope",
+            "fiscal_year",
+            "report_year",
+            "topic"
+          ],
+          "raw": "{\"intent\":\"clarification\",\"numeric_intent\":\"metric\",\"companies\":[\"ADBE\"],\"fiscal_year\":2023,\"report_year\":2023,\"metrics\":[\"revenue\"],\"topic\":\"risk\",\"scope\":\"annual_fiscal\"}",
+          "checks": {
+            "json_valid": true,
+            "schema_valid": true,
+            "score": 0,
+            "semantic_score": 0,
+            "semantic_fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            },
+            "fields": {
+              "intent": false,
+              "companies": true,
+              "scope": true,
+              "fiscal_year": true,
+              "report_year": true,
+              "topic": true
+            }
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "planner-formal-base-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 160464,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.1054257190786303,
+      "peak_allocated_bytes": 8361033728,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_base",
+      "split": "validation",
+      "predictions_sha256": "da256d015689048043e9b81292da71a105c8a6f3ae1e750f65b480c018410f99"
+    },
+    "planner-formal-base-test": {
+      "attempted": 240,
+      "model_attempts": 240,
+      "known_tokens": 321491,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.1237666140388076,
+      "peak_allocated_bytes": 8362338304,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_base",
+      "split": "test",
+      "predictions_sha256": "fdd146a5c97d62fb5005d80569fea03aa0fc4825d5f1c5c3768bcce326bbc308"
+    },
+    "planner-formal-deepseek-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 157490,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 2.856474999999409,
+      "peak_allocated_bytes": null,
+      "model": "deepseek-flash",
+      "arm": "deepseek",
+      "split": "validation",
+      "predictions_sha256": "000868ed8bbb1dee439f924552536efd33d8d2308145c5635ca4a5d1779004e6"
+    },
+    "planner-formal-deepseek-test": {
+      "attempted": 240,
+      "model_attempts": 240,
+      "known_tokens": 315346,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 2.7020499999997507,
+      "peak_allocated_bytes": null,
+      "model": "deepseek-flash",
+      "arm": "deepseek",
+      "split": "test",
+      "predictions_sha256": "675213216ff8171550b89b7d91d63428e082975c7e358b2c2cb85dfc13197bff"
+    },
+    "planner-formal-lora17-epoch1-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 156992,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.7513467838987706,
+      "peak_allocated_bytes": 8580857856,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "validation",
+      "predictions_sha256": "ec50fbdf216b7cd8ed49250773deddbd6c419beefefa4e4bf9962f71055cebee"
+    },
+    "planner-formal-lora17-epoch2-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 156992,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 4.018698728162175,
+      "peak_allocated_bytes": 8580857856,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "validation",
+      "predictions_sha256": "dc4ef6e849f4e1f078bb590481fa06d19e76311c046e76ad2c9f31f0a60fe25a"
+    },
+    "planner-formal-lora29-epoch1-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 156924,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.9387746724920967,
+      "peak_allocated_bytes": 8580857856,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "validation",
+      "predictions_sha256": "8ff062383af0e123ad1d17f8279635a9454331d9f722c4b46e42269eb0598765"
+    },
+    "planner-formal-lora29-epoch2-validation": {
+      "attempted": 120,
+      "model_attempts": 120,
+      "known_tokens": 156962,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.9320390364931277,
+      "peak_allocated_bytes": 8580857856,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "validation",
+      "predictions_sha256": "0bd55114ebfe5539513c381fadba0a31d54a26ba15e1a11ae38a9721df2def4b"
+    },
+    "planner-formal-lora17-test": {
+      "attempted": 240,
+      "model_attempts": 240,
+      "known_tokens": 314436,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.714189110416919,
+      "peak_allocated_bytes": 8584386560,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "test",
+      "predictions_sha256": "4ab1f6ee461e1686feca0f3754220e96e6021c4a5da0232805805ea16b3b72eb"
+    },
+    "planner-formal-lora29-test": {
+      "attempted": 240,
+      "model_attempts": 240,
+      "known_tokens": 314332,
+      "unknown_usage_attempts": 0,
+      "mean_total_seconds": 3.70520872392226,
+      "peak_allocated_bytes": 8584386560,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "arm": "qwen_lora",
+      "split": "test",
+      "predictions_sha256": "d15d25a01447f73c5e93ba1af925f3ab04a0b71dad2aab119b0cee903f93c0dd"
+    }
+  },
+  "training": {
+    "17": {
+      "status": "completed",
+      "metrics": {
+        "train_runtime": 1603.0126,
+        "train_samples_per_second": 0.749,
+        "train_steps_per_second": 0.094,
+        "total_flos": 3.47832380886528e+16,
+        "train_loss": 0.011400163368228581,
+        "epoch": 2.0
+      },
+      "peak_allocated_bytes": 9291463680,
+      "adapter_sha256": "bf53311ea870ae2f44e62938677d7035faf470c5ffe8bc306a963303d0b4926d",
+      "adapter_config_sha256": "6dad1301e8c857d1c882e78bc3b2ecca94ef548d041de3bd4181e40a4e494f49"
+    },
+    "29": {
+      "status": "completed",
+      "metrics": {
+        "train_runtime": 1601.0885,
+        "train_samples_per_second": 0.749,
+        "train_steps_per_second": 0.094,
+        "total_flos": 3.477650631739392e+16,
+        "train_loss": 0.01096773612464555,
+        "epoch": 2.0
+      },
+      "peak_allocated_bytes": 9291459072,
+      "adapter_sha256": "742b00ce837b9ed29061337cdfcc157b475c6884075174d50c6ba2c441ce9fbe",
+      "adapter_config_sha256": "b1875e4915e379b19b14c7dbb0e881dec5540dcdb15e1dd541d5c57325dd1a98"
+    }
+  },
+  "total_inference_requests": 1680,
+  "known_inference_tokens": 2211429,
+  "unknown_usage_attempts": 0,
+  "training_wall_seconds": 3204.1011,
+  "verified_adapter_files": {
+    "17": {
+      "adapter_config.json": "6dad1301e8c857d1c882e78bc3b2ecca94ef548d041de3bd4181e40a4e494f49",
+      "adapter_model.safetensors": "0ea99b2d4cd0f1c72527ce0a9e5b5b7fde1054f0190a561c30728c0aab098486",
+      "training_identity.json": "872a284789aafb3034fc259ec37dc718f8d02e3b5a262fd6b2ae6d2a3f09e3e3"
+    },
+    "29": {
+      "adapter_config.json": "b1875e4915e379b19b14c7dbb0e881dec5540dcdb15e1dd541d5c57325dd1a98",
+      "adapter_model.safetensors": "ad03e1a59865502238547291a895482b65751c3dd993d3caddf36cb2d1bac718",
+      "training_identity.json": "7d5e1dfc7991e64ff3f9a6c6de4fdcf37560359ce5bce2b6ca06b1026258b11b"
+    }
+  }
+}

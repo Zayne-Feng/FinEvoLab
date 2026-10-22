@@ -1,0 +1,23 @@
+{
+  "selected_epoch": 1,
+  "candidates": [
+    {
+      "epoch": 1,
+      "strict_successes": 221,
+      "semantic_successes": 221,
+      "denominator": 240
+    },
+    {
+      "epoch": 2,
+      "strict_successes": 219,
+      "semantic_successes": 219,
+      "denominator": 240
+    }
+  ],
+  "rule": "mean_strict_then_mean_semantic_then_earlier_epoch",
+  "primary_seed": 17,
+  "replicate_seed": 29,
+  "test_used": false,
+  "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+  "selection_sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
+}

@@ -1,0 +1,6513 @@
+{
+  "split": "validation",
+  "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
+  "status": "completed",
+  "groups": {
+    "deepseek": {
+      "attempted": 120,
+      "repairs": 0,
+      "first": {
+        "successes": 113,
+        "semantic_successes": 113,
+        "semantic_success_rate": 0.9416666666666667,
+        "success_rate": 0.9416666666666667,
+        "json_valid": 120,
+        "schema_valid": 120,
+        "fields": {
+          "companies": {
+            "correct": 120,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 100,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 115,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 76,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 12,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 96,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 115,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 28,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 17,
+            "semantic_successes": 17
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "final": {
+        "successes": 113,
+        "semantic_successes": 113,
+        "semantic_success_rate": 0.9416666666666667,
+        "success_rate": 0.9416666666666667,
+        "json_valid": 120,
+        "schema_valid": 120,
+        "fields": {
+          "companies": {
+            "correct": 120,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 100,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 115,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 76,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 12,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 96,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 115,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 28,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 17,
+            "semantic_successes": 17
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "known_tokens": 157490,
+      "unknown_usage_attempts": 0,
+      "model_attempts": 120,
+      "mean_total_seconds": 2.856474999999409,
+      "errors": {},
+      "peak_allocated_bytes": null
+    },
+    "qwen_base": {
+      "attempted": 120,
+      "repairs": 0,
+      "first": {
+        "successes": 62,
+        "semantic_successes": 88,
+        "semantic_success_rate": 0.7333333333333333,
+        "success_rate": 0.5166666666666667,
+        "json_valid": 119,
+        "schema_valid": 86,
+        "fields": {
+          "companies": {
+            "correct": 85,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 68,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 67,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 64,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 8,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 64,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 76,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 9,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 0,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 3,
+            "semantic_successes": 3
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 7,
+            "semantic_successes": 11
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 3,
+            "semantic_successes": 7
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 5,
+            "semantic_successes": 7
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 8,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "final": {
+        "successes": 62,
+        "semantic_successes": 88,
+        "semantic_success_rate": 0.7333333333333333,
+        "success_rate": 0.5166666666666667,
+        "json_valid": 119,
+        "schema_valid": 86,
+        "fields": {
+          "companies": {
+            "correct": 85,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 68,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 67,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 64,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 8,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 64,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 76,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 9,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 0,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 3,
+            "semantic_successes": 3
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 7,
+            "semantic_successes": 11
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 3,
+            "semantic_successes": 7
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 5,
+            "semantic_successes": 7
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 8,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "known_tokens": 160464,
+      "unknown_usage_attempts": 0,
+      "model_attempts": 120,
+      "mean_total_seconds": 3.1054257190786303,
+      "errors": {},
+      "peak_allocated_bytes": 8361033728
+    },
+    "qwen_lora": {
+      "attempted": 120,
+      "repairs": 0,
+      "first": {
+        "successes": 111,
+        "semantic_successes": 111,
+        "semantic_success_rate": 0.925,
+        "success_rate": 0.925,
+        "json_valid": 120,
+        "schema_valid": 120,
+        "fields": {
+          "companies": {
+            "correct": 120,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 100,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 113,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 76,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 10,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 96,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 113,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 28,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 17,
+            "semantic_successes": 17
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 10,
+            "semantic_successes": 10
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "final": {
+        "successes": 111,
+        "semantic_successes": 111,
+        "semantic_success_rate": 0.925,
+        "success_rate": 0.925,
+        "json_valid": 120,
+        "schema_valid": 120,
+        "fields": {
+          "companies": {
+            "correct": 120,
+            "eligible": 120
+          },
+          "fiscal_year": {
+            "correct": 100,
+            "eligible": 100
+          },
+          "intent": {
+            "correct": 113,
+            "eligible": 120
+          },
+          "metrics": {
+            "correct": 76,
+            "eligible": 76
+          },
+          "numeric_intent": {
+            "correct": 10,
+            "eligible": 12
+          },
+          "report_year": {
+            "correct": 96,
+            "eligible": 96
+          },
+          "scope": {
+            "correct": 113,
+            "eligible": 120
+          },
+          "topic": {
+            "correct": 28,
+            "eligible": 28
+          }
+        },
+        "categories": {
+          "alignment": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "boundary": {
+            "attempts": 24,
+            "successes": 17,
+            "semantic_successes": 17
+          },
+          "comparison": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "explanation": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "growth": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "hybrid": {
+            "attempts": 12,
+            "successes": 10,
+            "semantic_successes": 10
+          },
+          "metric": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "selected_document": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          },
+          "summary": {
+            "attempts": 12,
+            "successes": 12,
+            "semantic_successes": 12
+          }
+        }
+      },
+      "known_tokens": 156924,
+      "unknown_usage_attempts": 0,
+      "model_attempts": 120,
+      "mean_total_seconds": 3.9387746724920967,
+      "errors": {},
+      "peak_allocated_bytes": 8580857856
+    }
+  },
+  "comparisons": {
+    "qwen_base_to_qwen_lora": {
+      "first": {
+        "phase": "first",
+        "metric": "score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          }
+        ],
+        "wins": 49,
+        "losses": 0,
+        "ties": 71,
+        "execution_weighted_difference": 0.4083333333333333,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": 0.4083333333333333,
+          "confidence_level": 0.95,
+          "interval": [
+            0.25833333333333336,
+            0.5666666666666667
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      },
+      "final": {
+        "phase": "final",
+        "metric": "score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          }
+        ],
+        "wins": 49,
+        "losses": 0,
+        "ties": 71,
+        "execution_weighted_difference": 0.4083333333333333,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": 0.4083333333333333,
+          "confidence_level": 0.95,
+          "interval": [
+            0.25833333333333336,
+            0.5666666666666667
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      },
+      "semantic": {
+        "phase": "first",
+        "metric": "semantic_score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          }
+        ],
+        "wins": 23,
+        "losses": 0,
+        "ties": 97,
+        "execution_weighted_difference": 0.19166666666666668,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": 0.19166666666666668,
+          "confidence_level": 0.95,
+          "interval": [
+            0.08333333333333333,
+            0.31666666666666665
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      }
+    },
+    "deepseek_to_qwen_lora": {
+      "first": {
+        "phase": "first",
+        "metric": "score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          }
+        ],
+        "wins": 2,
+        "losses": 4,
+        "ties": 114,
+        "execution_weighted_difference": -0.016666666666666666,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": -0.016666666666666666,
+          "confidence_level": 0.95,
+          "interval": [
+            -0.06666666666666667,
+            0.03333333333333333
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      },
+      "final": {
+        "phase": "final",
+        "metric": "score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          }
+        ],
+        "wins": 2,
+        "losses": 4,
+        "ties": 114,
+        "execution_weighted_difference": -0.016666666666666666,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": -0.016666666666666666,
+          "confidence_level": 0.95,
+          "interval": [
+            -0.06666666666666667,
+            0.03333333333333333
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      },
+      "semantic": {
+        "phase": "first",
+        "metric": "semantic_score",
+        "complete_pairing": true,
+        "pairs": [
+          {
+            "case_id": "validation_00_0_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_0_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_en",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_00_1_zh",
+            "group_id": "validation_00",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_0_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_en",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_01_1_zh",
+            "group_id": "validation_01",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_0_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_en",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_02_1_zh",
+            "group_id": "validation_02",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_0_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_en",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_03_1_zh",
+            "group_id": "validation_03",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_0_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_en",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_04_1_zh",
+            "group_id": "validation_04",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_0_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_en",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_05_1_zh",
+            "group_id": "validation_05",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_0_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_en",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_06_1_zh",
+            "group_id": "validation_06",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_0_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_en",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_07_1_zh",
+            "group_id": "validation_07",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_0_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_en",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_08_1_zh",
+            "group_id": "validation_08",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_0_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_en",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_09_1_zh",
+            "group_id": "validation_09",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_0_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_en",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_10_1_zh",
+            "group_id": "validation_10",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_0_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_en",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_11_1_zh",
+            "group_id": "validation_11",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_0_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_en",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_12_1_zh",
+            "group_id": "validation_12",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_0_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_en",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_13_1_zh",
+            "group_id": "validation_13",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_0_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_en",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_14_1_zh",
+            "group_id": "validation_14",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_0_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_en",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_15_1_zh",
+            "group_id": "validation_15",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_0_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_en",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_16_1_zh",
+            "group_id": "validation_16",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_0_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_en",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_17_1_zh",
+            "group_id": "validation_17",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_0_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_en",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_18_1_zh",
+            "group_id": "validation_18",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_0_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_en",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_19_1_zh",
+            "group_id": "validation_19",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_0_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_20_1_en",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_20_1_zh",
+            "group_id": "validation_20",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_21_0_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_0_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_en",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_21_1_zh",
+            "group_id": "validation_21",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_0_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_en",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_22_1_zh",
+            "group_id": "validation_22",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_0_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_en",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_23_1_zh",
+            "group_id": "validation_23",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_0_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_en",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_24_1_zh",
+            "group_id": "validation_24",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_0_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_25_0_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 0,
+            "right": 0,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_en",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_25_1_zh",
+            "group_id": "validation_25",
+            "repeat": 0,
+            "left": 1,
+            "right": 0,
+            "difference": -1
+          },
+          {
+            "case_id": "validation_26_0_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_0_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_26_1_en",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 0,
+            "right": 1,
+            "difference": 1
+          },
+          {
+            "case_id": "validation_26_1_zh",
+            "group_id": "validation_26",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_0_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_en",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_27_1_zh",
+            "group_id": "validation_27",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_0_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_en",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_28_1_zh",
+            "group_id": "validation_28",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_0_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_en",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          },
+          {
+            "case_id": "validation_29_1_zh",
+            "group_id": "validation_29",
+            "repeat": 0,
+            "left": 1,
+            "right": 1,
+            "difference": 0
+          }
+        ],
+        "wins": 2,
+        "losses": 4,
+        "ties": 114,
+        "execution_weighted_difference": -0.016666666666666666,
+        "group_weighted_uncertainty": {
+          "left_run": "left",
+          "right_run": "right",
+          "method": "paired_case_cluster_percentile_bootstrap",
+          "seed": 17,
+          "draws": 10000,
+          "case_clusters": 30,
+          "repeats_per_case": 1,
+          "mean_difference": -0.016666666666666666,
+          "confidence_level": 0.95,
+          "interval": [
+            -0.06666666666666667,
+            0.03333333333333333
+          ],
+          "repeats_treated_as_independent_cases": false
+        }
+      }
+    }
+  },
+  "inputs": {
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-deepseek-validation": {
+      "manifest": "bd91201b5325e617271d2e2c519f5ab50b018a9d3bd13514c27c7bd85c88573f",
+      "predictions": "000868ed8bbb1dee439f924552536efd33d8d2308145c5635ca4a5d1779004e6"
+    },
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-base-validation": {
+      "manifest": "328826475577851feb2bd07d15d600582c09ad130e7242d3ec6c51c06d0cc6b1",
+      "predictions": "da256d015689048043e9b81292da71a105c8a6f3ae1e750f65b480c018410f99"
+    },
+    "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-lora29-epoch1-validation": {
+      "manifest": "ce02a4bd2fd5225964d48bb45644264262b03c2f45712399b1641b6f0721d6c2",
+      "predictions": "8ff062383af0e123ad1d17f8279635a9454331d9f722c4b46e42269eb0598765"
+    }
+  }
+}

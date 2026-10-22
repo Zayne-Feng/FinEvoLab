@@ -1,0 +1,153 @@
+{
+    "status": "completed",
+    "report_sha256": "86c5b5d74248593525afd3dc78f7948ce419640d2cefa2bffdd35fa323664abe",
+    "analysis_sha256": "c4a4c64bab2d5d063a87683dfcf80cca48702ef47302ec04d7e53e29cb182ac4",
+    "template_sha256": "33f3b613903f1265440a5f9fc7e1ba5546c3553837c600f347a17dd29920720f",
+    "numeric_replays": {
+        "17": {
+            "status": "completed",
+            "groups": {
+                "deepseek": {
+                    "attempts": 116,
+                    "mechanical_successes": 103,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "failed_checks": 13
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 68
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 35
+                        }
+                    }
+                },
+                "qwen_base": {
+                    "attempts": 116,
+                    "mechanical_successes": 49,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "ValueError": 3,
+                        "ValidationError": 23,
+                        "failed_checks": 41
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 42
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 7
+                        }
+                    }
+                },
+                "qwen_lora": {
+                    "attempts": 116,
+                    "mechanical_successes": 101,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "failed_checks": 15
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 61
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 40
+                        }
+                    }
+                }
+            },
+            "excluded_cases": 124,
+            "semantic_review": "not_applicable"
+        },
+        "29": {
+            "status": "completed",
+            "groups": {
+                "deepseek": {
+                    "attempts": 116,
+                    "mechanical_successes": 103,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "failed_checks": 13
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 68
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 35
+                        }
+                    }
+                },
+                "qwen_base": {
+                    "attempts": 116,
+                    "mechanical_successes": 49,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "ValueError": 3,
+                        "ValidationError": 23,
+                        "failed_checks": 41
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 42
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 7
+                        }
+                    }
+                },
+                "qwen_lora": {
+                    "attempts": 116,
+                    "mechanical_successes": 104,
+                    "downstream_requests": 0,
+                    "known_downstream_tokens": 0,
+                    "unknown_usage_tasks": 0,
+                    "failures": {
+                        "failed_checks": 12
+                    },
+                    "strata": {
+                        "numeric": {
+                            "cases": 68,
+                            "successes": 62
+                        },
+                        "boundary": {
+                            "cases": 48,
+                            "successes": 42
+                        }
+                    }
+                }
+            },
+            "excluded_cases": 124,
+            "semantic_review": "not_applicable"
+        }
+    },
+    "final_regression": {
+        "tests": 151,
+        "seconds": 24.906,
+        "exit_code": 0,
+        "environment": "finevolab",
+        "command": "python -m unittest discover -s tests"
+    }
+}
