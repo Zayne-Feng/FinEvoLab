@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "task_ids": [
+    "a8f38105c85f4f648fdd0633d97ea2e2"
+  ],
+  "backend": "lora_nf4",
+  "planner": {
+    "adapter_sha256": "0ea99b2d4cd0f1c72527ce0a9e5b5b7fde1054f0190a561c30728c0aab098486",
+    "backend": "lora_nf4",
+    "contract_sha256": "2219fdfa79a49d984420a708897b2018c416ac40ec72401dee4be987960a5003",
+    "dtype": "bfloat16",
+    "elapsed_seconds": 5.328000000008615,
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "peak_allocated_bytes": 3190200832,
+    "quantization": "nf4",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "service_request_id": "6013472bd1834cd2ac96bd3f6eae4429"
+  },
+  "checks": [
+    "Chinese question reaches the real NF4 planner",
+    "Program-calculated revenue growth is 15.67 percent",
+    "Actual fiscal dates and original evidence are visible",
+    "HTML and PDF report links are present",
+    "Chinese-English-Chinese switching preserves the task and selected model",
+    "Controls return to enabled state",
+    "No horizontal overflow at 1280 pixels",
+    "Rendered screenshots saved"
+  ],
+  "console_errors": [],
+  "width": 1280,
+  "documentWidth": 1265,
+  "screenshots": [
+    "project_notes/evaluations/planner_screenshots/nf4_result.png",
+    "project_notes/evaluations/planner_screenshots/nf4_selection.png"
+  ]
+}

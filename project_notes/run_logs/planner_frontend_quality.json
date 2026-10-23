@@ -1,0 +1,82 @@
+{
+  "run_id": "planner-frontend-quality",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "ticker pattern compiles under browser Unicode Sets rules",
+      "status": "passed"
+    },
+    {
+      "name": "blank question is blocked before an HTTP request",
+      "status": "passed"
+    },
+    {
+      "name": "blank search is blocked before an HTTP request",
+      "status": "passed"
+    },
+    {
+      "name": "a collapsed source picker opens when too many reports are selected",
+      "status": "passed"
+    },
+    {
+      "name": "HTTP error with non-JSON body is not described as a connection failure",
+      "status": "passed"
+    },
+    {
+      "name": "successful malformed response is described as a response error",
+      "status": "passed"
+    },
+    {
+      "name": "analysis requests include an abort signal",
+      "status": "passed"
+    },
+    {
+      "name": "request timeout actually aborts a pending transport",
+      "status": "passed"
+    },
+    {
+      "name": "request timeout also covers a stalled response body",
+      "status": "passed"
+    },
+    {
+      "name": "concurrent analysis submissions are prevented",
+      "status": "passed"
+    },
+    {
+      "name": "timeout has a specific message and releases the action",
+      "status": "passed"
+    },
+    {
+      "name": "failed HTML extraction is not reported as a usable source",
+      "status": "passed"
+    },
+    {
+      "name": "unsupported file type is rejected before upload",
+      "status": "passed"
+    },
+    {
+      "name": "resume status appears next to the saved result",
+      "status": "passed"
+    },
+    {
+      "name": "resume conflict remains visible after loading saved details",
+      "status": "passed"
+    },
+    {
+      "name": "uploaded source choice explains its exclusive scope",
+      "status": "passed"
+    },
+    {
+      "name": "favicon is provided without a missing-resource request",
+      "status": "passed"
+    },
+    {
+      "name": "upload metadata pattern and file hint describe accepted input",
+      "status": "passed"
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "failed": [],
+  "method": "jsdom negative-path and API-contract checks"
+}

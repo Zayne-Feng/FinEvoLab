@@ -1,0 +1,27 @@
+{
+  "run_id": "planner-frontend-main",
+  "status": "passed",
+  "checks": [
+    "unique IDs and named form fields",
+    "uploaded source list populated",
+    "suggestion changes question without sending a request",
+    "six report selections rejected",
+    "question uses selected reports and renders saved hybrid result",
+    "claim links open the matching evidence",
+    "partial business result is distinct from completed workflow",
+    "dynamic text is escaped and unsafe source URLs are not linked",
+    "quick analysis retains the existing API contract",
+    "report search uses independent filters",
+    "empty search has a useful message",
+    "search connection failure restores the action",
+    "large report rejected before upload",
+    "new upload selected and ready for the next question",
+    "image-only report is not selected as a usable source",
+    "resume keeps the saved session endpoint",
+    "analysis failure clears busy state",
+    "script has no uncaught errors or unused mock responses"
+  ],
+  "count": 18,
+  "saved_session": "7653de132a594346a5c3f9c159f62d01",
+  "method": "jsdom with mocked API responses; no model calls"
+}

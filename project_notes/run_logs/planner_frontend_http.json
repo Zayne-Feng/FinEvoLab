@@ -1,0 +1,174 @@
+{
+  "run_id": "planner-frontend-http",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "live page, source list, navigation anchors and favicon",
+      "status": "passed",
+      "uploaded_reports": 16
+    },
+    {
+      "name": "offline analysis and reports · MSFT FY2024",
+      "status": "passed",
+      "task_id": "d73a5884fb8c4d39b8d1bd486c466f5a"
+    },
+    {
+      "name": "offline analysis and reports · MSFT FY2023",
+      "status": "passed",
+      "task_id": "7c518df954354b2c87dc69f4a214e651"
+    },
+    {
+      "name": "offline analysis and reports · AAPL FY2024",
+      "status": "passed",
+      "task_id": "b8886c72bc6f4159a2610ac213f6c343"
+    },
+    {
+      "name": "offline analysis and reports · AAPL FY2023",
+      "status": "passed",
+      "task_id": "1ff0ea629822466a8d67b25505b98e2e"
+    },
+    {
+      "name": "offline analysis and reports · GOOGL FY2024",
+      "status": "passed",
+      "task_id": "dc13ac9f51664f23b9979a9592fc12a8"
+    },
+    {
+      "name": "offline analysis and reports · GOOGL FY2023",
+      "status": "passed",
+      "task_id": "f2c2434254df4b8b89f848364d184380"
+    },
+    {
+      "name": "offline analysis and reports · AMZN FY2024",
+      "status": "passed",
+      "task_id": "70fb63b9ebeb482b84819b5bd037d572"
+    },
+    {
+      "name": "offline analysis and reports · AMZN FY2023",
+      "status": "passed",
+      "task_id": "cbd3d13f19d64d52907e3d7134deca42"
+    },
+    {
+      "name": "offline analysis and reports · META FY2024",
+      "status": "passed",
+      "task_id": "fdbdd8400d4249b8b65fa777843170ad"
+    },
+    {
+      "name": "offline analysis and reports · META FY2023",
+      "status": "passed",
+      "task_id": "62d559bf467849f6833ebcfdea001cc1"
+    },
+    {
+      "name": "live report search · MSFT 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · MSFT 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · MSFT 2022",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AAPL 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AAPL 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AAPL 2022",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · GOOGL 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · GOOGL 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · GOOGL 2022",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AMZN 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AMZN 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · AMZN 2022",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · META 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · META 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · META 2022",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · TSLA 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · TSLA 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · ADBE 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · ADBE 2023",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · NVDA 2024",
+      "status": "passed"
+    },
+    {
+      "name": "live report search · NVDA 2023",
+      "status": "passed"
+    },
+    {
+      "name": "existing report upload and extracted-values links",
+      "status": "passed",
+      "document_id": "128377cc2d334562f31c210c13c6cde35cbbc883cbddc89a16e1ab9b3f41edf6",
+      "passages": 970
+    },
+    {
+      "name": "invalid upload and task parameters return handled errors",
+      "status": "passed"
+    },
+    {
+      "name": "no uncaught script errors",
+      "status": "passed"
+    }
+  ],
+  "count": 35,
+  "model_runs": [],
+  "task_ids": [
+    "d73a5884fb8c4d39b8d1bd486c466f5a",
+    "7c518df954354b2c87dc69f4a214e651",
+    "b8886c72bc6f4159a2610ac213f6c343",
+    "1ff0ea629822466a8d67b25505b98e2e",
+    "dc13ac9f51664f23b9979a9592fc12a8",
+    "f2c2434254df4b8b89f848364d184380",
+    "70fb63b9ebeb482b84819b5bd037d572",
+    "cbd3d13f19d64d52907e3d7134deca42",
+    "fdbdd8400d4249b8b65fa777843170ad",
+    "62d559bf467849f6833ebcfdea001cc1"
+  ],
+  "method": "Real local HTTP APIs driven through jsdom; not a rendered-browser inspection"
+}

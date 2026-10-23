@@ -1,0 +1,56 @@
+{
+  "run_id": "planner-frontend-language",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "language button switches labels, title, placeholders and accessibility names",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese static interface has no untranslated catalog messages",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese locale defaults to Chinese and saved preference takes priority",
+      "status": "passed"
+    },
+    {
+      "name": "blocked storage does not prevent switching",
+      "status": "passed"
+    },
+    {
+      "name": "custom question and source selections survive switching without API requests",
+      "status": "passed"
+    },
+    {
+      "name": "example questions switch languages while edited questions remain unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "existing results translate labels without changing numbers, quotes, links or run data",
+      "status": "passed"
+    },
+    {
+      "name": "localized input validation changes language without losing invalid state",
+      "status": "passed"
+    },
+    {
+      "name": "switching during an analysis preserves the busy state and sends no duplicate request",
+      "status": "passed"
+    },
+    {
+      "name": "new search results and errors use the active language and preserve source text",
+      "status": "passed"
+    },
+    {
+      "name": "upload status and appended inspection links switch together",
+      "status": "passed"
+    },
+    {
+      "name": "switching repeatedly leaves the interface error-free",
+      "status": "passed"
+    }
+  ],
+  "count": 12,
+  "method": "jsdom with mocked responses; no model calls"
+}

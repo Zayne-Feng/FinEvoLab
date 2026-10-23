@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "mode": "live",
+  "checks": [
+    "explicit API, BF16 and NF4 choices",
+    "lora_bf16 selection reaches the selected backend and restores controls",
+    "lora_nf4 selection reaches the selected backend and restores controls"
+  ],
+  "errors": [],
+  "task_ids": [
+    "5948ed5cc29e4c318d58cb669ac10437",
+    "8c5c07d14fe5464f85e66a5776b397e3"
+  ],
+  "tasks": 2
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "mode": "mock",
+  "checks": [
+    "explicit API, BF16 and NF4 choices",
+    "lora_bf16 selection reaches the selected backend and restores controls",
+    "lora_nf4 selection reaches the selected backend and restores controls",
+    "unavailable service is visible without an API fallback"
+  ],
+  "errors": [],
+  "task_ids": [],
+  "tasks": 0
+}

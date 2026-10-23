@@ -1,0 +1,15 @@
+{
+  "run_id": "planner-frontend-language-http",
+  "status": "passed",
+  "task_id": "94d3cfe128c042f79095fbb39f3f28cc",
+  "checks": [
+    "Live bilingual page returns HTTP 200",
+    "Stored Chinese preference applied",
+    "Chinese controls preserve the offline API payload",
+    "Chinese result labels and status",
+    "Real PDF report returns HTTP 200",
+    "Language switching preserves results without extra requests"
+  ],
+  "model_calls": 0,
+  "method": "Real HTTP APIs through jsdom; no rendered browser"
+}
