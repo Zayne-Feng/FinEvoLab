@@ -1,0 +1,62 @@
+{
+  "run_id": "fmp-stable-delivery-checks",
+  "code_commit": "a9435bd64388636e6dfd61383da4aa2fde474c35",
+  "status": "passed",
+  "tests": {
+    "passed": 110,
+    "seconds": 21.475,
+    "log_sha256": "92fa10f444ad08e899a95aafafe8ce05c305e164e653240f97a98d42245f5acb"
+  },
+  "archived_sources_verified": 19,
+  "legacy_http_403": 5,
+  "stable_http_200": 14,
+  "statement_quality_checks": 30,
+  "pinned_metric_checks": 9,
+  "upstream_historical_metric_checks": 9,
+  "final_verification_http_calls": 0,
+  "final_verification_model_calls": 0,
+  "pdf": {
+    "path": "output/reports/fmp_stable-offline/report_verified/Professional_Equity_Report_MSFT.pdf",
+    "sha256": "52a4de0346b0f7861dff6d6c0a7d9a36c1508b375e199ba4fc68e6a63dfb9acb",
+    "pages": 4,
+    "page_characters": [
+      299,
+      792,
+      979,
+      838
+    ],
+    "visual_review": "passed",
+    "visual_review_method": "Assistant inspection of all four rendered pages",
+    "reviewed_pages": [
+      {
+        "page": 1,
+        "preview": "output\\reports\\fmp_stable-offline\\report_verified\\Professional_Equity_Report_MSFT-page-1.png",
+        "sha256": "fb38a1b23250521fd1da2edc5ca68104728e8eba990797141f73858bf2c2789e",
+        "characters": 306
+      },
+      {
+        "page": 2,
+        "preview": "output\\reports\\fmp_stable-offline\\report_verified\\Professional_Equity_Report_MSFT-page-2.png",
+        "sha256": "1f0a354aadcaf96102c35d4dfa8ba87a14834978daf0d64230a12280fa778632",
+        "characters": 811
+      },
+      {
+        "page": 3,
+        "preview": "output\\reports\\fmp_stable-offline\\report_verified\\Professional_Equity_Report_MSFT-page-3.png",
+        "sha256": "bd614ef5f8b89c9dc097c1388b5aeab76c3a59d0972497672bf08e185b829d86",
+        "characters": 1006
+      },
+      {
+        "page": 4,
+        "preview": "output\\reports\\fmp_stable-offline\\report_verified\\Professional_Equity_Report_MSFT-page-4.png",
+        "sha256": "2195d601594bfc6e76b9f8039f38859658bd2d89a63067d66b43f90b84a43654",
+        "characters": 850
+      }
+    ],
+    "render_manifest_sha256": "a5f960a6a1ea7f633b79bf7ee21a1d3eda6a91257755e63f1250e2190b8a2874"
+  },
+  "configured_credentials_excluded": true,
+  "upstream_legal_files": "unchanged",
+  "optional_news_and_target_price": "HTTP_402_recorded_and_excluded_from_numeric_mode",
+  "identity": "Stable-compatible upstream numeric report; not pristine Legacy reproduction"
+}

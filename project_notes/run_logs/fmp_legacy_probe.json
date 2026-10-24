@@ -1,0 +1,36 @@
+{
+  "run_id": "fmp-readiness",
+  "provider": "Financial Modeling Prep",
+  "credential_kind": "financial_data_api_key",
+  "configured": true,
+  "requests_sent": 5,
+  "status": "endpoint_probe_failed",
+  "legacy_endpoint_access": "not_verified",
+  "checks": [
+    {
+      "endpoint": "/api/v3/income-statement/MSFT",
+      "status_code": 403,
+      "passed": false
+    },
+    {
+      "endpoint": "/api/v3/balance-sheet-statement/MSFT",
+      "status_code": 403,
+      "passed": false
+    },
+    {
+      "endpoint": "/api/v3/cash-flow-statement/MSFT",
+      "status_code": 403,
+      "passed": false
+    },
+    {
+      "endpoint": "/api/v3/profile/MSFT",
+      "status_code": 403,
+      "passed": false
+    },
+    {
+      "endpoint": "/api/v3/quote/MSFT",
+      "status_code": 403,
+      "passed": false
+    }
+  ]
+}
