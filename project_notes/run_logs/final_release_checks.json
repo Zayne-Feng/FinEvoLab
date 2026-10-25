@@ -1,0 +1,561 @@
+{
+  "run_id": "final-release-checks",
+  "commit": "1aaa8720a9062c54722b2077937785656a5e58ef",
+  "worktree_status": [
+    "?? project_notes/run_logs/final_release_checks.json"
+  ],
+  "source_hashes": {
+    "configs/company_aliases.json": "76defbbeb4562bfd0b9b81ceada4ec91a2f49d370a78a9984453c7e583e16e3a",
+    "configs/open_text_rubric.json": "e0f3a493494a4222f11680262a4201f811c2d128282c6746b998ab6d5b4dae0b",
+    "configs/provider_pricing.json": "fb3c8171f0472afe6e78de1f3d606383bf5ae07b65d2e34e876561cab849f0b2",
+    "configs/retrieval.json": "8cf86b23d16603ebfe10193cb6523f7f4968297e9640998d48e591ffe9356879",
+    "configs/sec_companies.json": "266f7da26b0a38f36d022c2fda5609fdd6fd4b74104e703bfe915f5477f07596",
+    "data/evaluation/calibration/controls.json": "eefddccbf3c4118511c23173c448706fc7c72d79367b5a813a3ed7afeb67d17b",
+    "data/evaluation/closure/acceptance.json": "146381cbb8961673918ca76acf4cce073859f483bc5f8280b2584d3cef2b2f80",
+    "data/evaluation/closure/development.json": "34271de9617256c26bcf371a84fc57779b5bebef15cf8167e8bf733692fead3f",
+    "data/evaluation/closure/gepa_acceptance.json": "66c0a8584b95f7d9340516cad5ca895df0f0d2310d3c601b1e8a30cb81cda1ae",
+    "data/evaluation/closure/manifest.json": "eb53c99d9fbb0b6ee9f2b0b460ca7b1ed05e6ac478ab034574acc34b525b7857",
+    "data/evaluation/development.json": "1d956cc8387aa229aa0aef120c4491cf23f25d89e66c6aea682a85b71e04f984",
+    "data/evaluation/manifest.json": "cbb649304ea49c59a01b3951479f3dd2b5b4cfc391be10e367011e09a1035c60",
+    "data/evaluation/pilot_development.json": "e1cc23353e5736ae697df0c181ed0df9238e4ba8af5530e0a998bedf9f241c16",
+    "data/evaluation/pilot_test.json": "238d8a3080a22959e30f070615afd758d961b256bb78a0afe5d0d207d3249008",
+    "data/evaluation/pilot_validation.json": "64b4093f416da7c9ba4552addc4b5ea2e7185846cac1d0aa82455558dffd7908",
+    "data/evaluation/scope_supplemental/manifest.json": "f35f260d95fc03ccc25487b0a46ac340274cd56af1cdf0577d1c2c1a1597fab3",
+    "data/evaluation/scope_supplemental/seeds.json": "cf574592c56eaf71cbc0a64dc8515ba3e21912224a343a0e6a2d4d537ebb2535",
+    "data/evaluation/scope_supplemental/test.json": "771f943116e3949366fe105c804d69119d102da72c07597d67219cce546f19a5",
+    "data/evaluation/scope_v3/development.json": "e4a06db67060db6c5b47cd55cc9df44f25f5b04c57266a70a5beb43af480ce97",
+    "data/evaluation/scope_v3/documents.json": "9f083f9d8d7b5af7b52807c0de0b4b67c1ca97b6c4599e49dc5263f93f36955b",
+    "data/evaluation/scope_v3/financial_reference_audit.json": "c07efd5307f376b35afaf80dcd84a307a4359cc2437822ac1571460ee84db3ec",
+    "data/evaluation/scope_v3/manifest.json": "a9472cb3cfca759b8c5a0e50a997ac053dc02c79416db20ee69a925343f8c321",
+    "data/evaluation/scope_v3/source_anchors.json": "dcee9d87f6f1b284314e70d5e894fa6bb9d07871bbd60be044486d92918d7967",
+    "data/evaluation/scope_v3/test.json": "0660436900694aeda000682293668e6857d154b6b9ca152ef9aaf6beb503a2ac",
+    "data/evaluation/scope_v3/validation.json": "12e93af5151f9ee19bb55e74752ef1893c8ecad0a906bb83ea723f119599d1dd",
+    "data/evaluation/test.json": "c94f01ec727500dd12b173782b9aba10f95c9372fd42b540b720c479d0a312b2",
+    "data/evaluation/v2/development.json": "0dd14b4b588486a7acdf5f2bbccf83b261156efb888493ea144b8a5b16accbea",
+    "data/evaluation/v2/manifest.json": "d484934627cfce9595850c92da571ff3b02ec7768b277ee629cdf6a5eb5d9666",
+    "data/evaluation/v2/test.json": "9e8810318e03808cea51a4bbf0bcf2f8b994bef5d75f69e58670ccec373703c6",
+    "data/evaluation/v2/validation.json": "8a0ec469a49d730ba0bf18b0911149478d73df47f47fb1e8b640ea5aa26b09ba",
+    "data/evaluation/validation.json": "34d8648c8b5a26d404efa303d43c93b555296d742e81417ed8f2cf13618edad7",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "finevolab/agent.py": "0fcd63160e0f14469f1ecb39030ae4eab46cca9318ab2ef8576dc0bd600187ad",
+    "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+    "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+    "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "967b941c8469576b48d1d7a2cf89a9e4f5766b1cb5a6f1cdb5b8bf6afd2d080c",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/grounded.py": "e698ee69f53771a280f5a22b5a29b2ebebf401e061f0a4841aa42453555ebe0e",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+    "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+    "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+    "finevolab/reporting.py": "dc3772aa8eaad8436438c441991317a8e2f9f13506de93185b9605bb90591550",
+    "finevolab/retrieval.py": "5565b61ca49f8ad4cd76893e3f7cf1f5d721666f749c29771318ab33d9a773c2",
+    "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+    "finevolab/runtime.py": "37f7eb8e5c137009ae943c768a6a8a68cbe6859757a8a0c9a952e757c7146866",
+    "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+    "finevolab/sdk_runtime.py": "3a0e666c539b18bbfa5681141bff7b416fc1e8c6750ad58ede7fd84495f10a30",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+    "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+    "finevolab/tools.py": "2669f13d2e8346b5dbd2a93187a2b8971c51ccaba6467c84625f8acc4d67edc7",
+    "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+    "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+    "finevolab/validation.py": "ff2d890f887de832a9e2ff6fc70c01fcf053ca2cbc7acfe02d96f539cb8669c1",
+    "finevolab/web.py": "bc6348689af1516e4b68c695d69ff54f9ae6312ee03c3a8f95af19778fa0f94c",
+    "finevolab/workflow.py": "68d6dc0ecb3f3464b200074cd54d26f8654b00706a8e67790958d6bf67d4771e",
+    "prompts/benchmark.json": "b309162e87e7316792c25817ba950966f5dcc6cc3544b264c867de7d72da76a6",
+    "prompts/default.json": "8093fb0364b332f621a8e920c5f6e44c4af971318c5dc29ef8397ee53a3adbd6",
+    "requirements/development.lock.txt": "a9c243def88045df1ea5aa81d0acddb28b98f35dc6d0cf394a5e4678e326dd3f",
+    "requirements/upstream.lock.txt": "9620e237832daf48f53ef3c3ccfb54988ad9bafa09df5d8de28b660b5c836fd3",
+    "scripts/analyze_revenue.py": "9b1393f565fa4aa4f74c899b1286de11f486835fad3879389a8264cc63be1b8d",
+    "scripts/archive_scope_inputs.py": "d1581ec33a1d3ec3e5f393a8b347be57810f27dcdb6473652c39f40c25307c07",
+    "scripts/audit_closure_release.py": "58834bd6295779d0e7506cc8c6339dfacb27219e9bab9a1ffda2383a7af0f5e2",
+    "scripts/audit_scope_release.py": "6b204839013981daabb715e95cb6c227034bb4a5476b3e1f5c4b1ffada763bd0",
+    "scripts/audit_scope_sources.py": "41a05c9d6d64ce4595c62e795e0796d77281b793114c3c18c098aa5bf6f14906",
+    "scripts/audit_scope_tasks.py": "3ae43705efdcd33e553a91df8b109d52b98e60837e68f44c72d3ef4ef55f93f7",
+    "scripts/build_contextual_index.py": "3627568732dea8241260f42105557f1db835fb60ada76ea7747b0da815c487ac",
+    "scripts/build_evaluation_set.py": "270dab637758387b830ab21e9d5e02742214efa26b58526e5976baa76da1b2b6",
+    "scripts/build_index.py": "0886916d21480239a821cf481f0a3584b5eb6ebcf759237b490105eb35ca00e7",
+    "scripts/build_pilot_cases.py": "1558518be1f049135993d1bcc101f13452468581b0d6d28638f12f685f947c93",
+    "scripts/build_report.py": "52547bffdab724c98544636071aa84261c70cbe2d574ff51452224d0f8844c28",
+    "scripts/build_reviewed_evaluation.py": "70720e54a5187e6db0bb7ba4b18cfffe8160b451ece28d571dfb69ba6767fe34",
+    "scripts/build_vectors.py": "16432422a289b3badea282670443fa033d599747c7ea62cc617a31c1289f803f",
+    "scripts/calibrate_open_text.py": "7857d57dcca31c40a98dfd466192964066aa0a03e43aca6042b22dac06667255",
+    "scripts/check_fmp_readiness.py": "0187e52715a9f43c506f06872f5a638fb2982a6b12dcce1e285872a686ce3411",
+    "scripts/compare_experiments.py": "6bca01a348d1e92b25b3f4dead73f4560dacba3f48317d78a62ad8cf58905c0c",
+    "scripts/download_acceptance_sources.py": "6fba4c450a253e73fbfcc65ee6928f25934c0c13bac23ec0f599e53f19268cff",
+    "scripts/download_filings.py": "42ad93f53ececa7dcccfd786cdd9cda04fd860b8fa27035e0226b308dec94cd2",
+    "scripts/download_reports.py": "55f4746f776d842c0944ac1b159dfbcd7104a646ed94f0d3f37d47c35c645d14",
+    "scripts/download_sec.py": "ffbeee69d378ae69ccfe91ace7368824e1d217a3faa6779ee9783870bd244841",
+    "scripts/estimate_paired_uncertainty.py": "0b567ee64fbccb1555d3762ed7b31fa33fa5793f9b6a630f6c68a076f38d18e9",
+    "scripts/evaluate_retrieval.py": "05cc603b7ee379e16ab3d3aeea9d2fb95e9fc4650adfce929b0a4c112136e41e",
+    "scripts/evaluate_scope_retrieval.py": "a5554d322cc5b8bcb029d18c75fbd4fb7001675f7489d6ecfab2996cc539d9cb",
+    "scripts/freeze_evaluation.py": "4e30fef23392c2b92f65980cbc6e424e7b8c21ed24143792ad32f6bacc59ba02",
+    "scripts/prepare_closure_tasks.py": "242ff33cd6dc194156d519e507ff61464cd56090807cfb3283dd2e958db0e968",
+    "scripts/prepare_open_text_review.py": "55befdacbc939511eb7aaa1108a331daaa1a9f913f91c3c1ff61745e3b033ca9",
+    "scripts/prepare_reports.py": "b0ce20337c002d7fdbb7bd772335190ce1fa8992d8aac20ee220543038c03309",
+    "scripts/prepare_scope_supplemental.py": "eabbee0c05b45a9ed55b36c171afdf575a0f54c00ba6f167ec70ddc542d40d48",
+    "scripts/prepare_scope_tasks.py": "a1bf554a67e440a8b000f4435f324bda2a2abba800aeea4c465b65ddf6513639",
+    "scripts/render_report_previews.py": "907cc39146f0634c065c53bd6afa86afe42dc4caf71d4bff9947400a3138f322",
+    "scripts/repair_component_answers.py": "23b1ff2cb3a4b750f61e0d9aaf571ec3493691de6108e9edf83bf5b3b111f445",
+    "scripts/replay_scope_validation.py": "8b07fa1095a88c45a60afdc4e253be24a8f7c6b3b3578f10effc87efcb5de851",
+    "scripts/review_closure_answers.py": "219e036ce48f2bdf6e83271a500066a2c6086efe8964aac326c3955f5fed4db9",
+    "scripts/review_component_ablations.py": "cb99bf68705f5396dea69c79df64f32511358467c5af9a71c8a659aab89256ce",
+    "scripts/review_scope_answers.py": "0b21ab1bf2b02c10b78d26d8f342f43cffe92143c4ec2ce2e80372e26c771559",
+    "scripts/run_analysis.py": "7cd2f5475cdf3117e79ee2ed478b15fe37f45c3b6b6fb4beba81ccd8b66b8bfb",
+    "scripts/run_blind_review.py": "170c6aaeb8588b5c416e49f2e890994dd2797bd159487d1fd4e45f68a8189174",
+    "scripts/run_closure_experiments.py": "5c3e31410d989098522221144c405418156ede46a540d24c5fa73159ae48b412",
+    "scripts/run_closure_gepa.py": "e8dafddc5f9a6faae29a8cb98ea48c040a3293d8a05a4875380289f64a75eea8",
+    "scripts/run_component_ablations.py": "f662e11a7357107ab373db6fd6b472ad7d632da414ef0b85a215deead7028da1",
+    "scripts/run_experiments.py": "e19e4f30c2d71228ee8076567b1c6144b3a9eda76c3a2784a06b864526b45275",
+    "scripts/run_fault_experiments.py": "16db72c02b85f4c4067089392c55be15927e40f46a559e3c60dd5965c1b19867",
+    "scripts/run_gepa.py": "f97070bbb0ef026f3aea37cfc4500226f85063342d52afd0ec380615e8b7015f",
+    "scripts/run_harness_ablations.py": "67912328c17a2eef319b47b6d0b2a5113ed143380fa2f086bd18076d05e571b1",
+    "scripts/run_question.py": "5a49257991ee1c1388fcd69793bc1b09c476b0ea75c263c8ecf8fb72e035f003",
+    "scripts/run_retrieval_experiments.py": "53795b08662b5eb8604ea725231ed131487897bfc922d47c95a5f91f79a9833f",
+    "scripts/run_scope_experiments.py": "9307f2d6feac37c15b7c0ea0e2ae1dca92cb7fe80cf7ae08b8e1708e186e6496",
+    "scripts/run_scope_supplemental.py": "1e50ba2f55269f0b64ae8ccd0934dbe7445df2a42859d4f9d238ed4c185657a8",
+    "scripts/settle_project_costs.py": "b6b409722b6cbb6f1041f986d236f9c7184b9b7495b0c66de270014d3bdaf737",
+    "scripts/summarize_closure_results.py": "e676536dbf044cad575817e5c6399f77bc3028ac88c1108b2260388a2460160f",
+    "scripts/summarize_component_ablations.py": "9e65348adc72a217e04eca06fa593cc17eabe31c6642c2c78ac08fa37e78abe9",
+    "scripts/summarize_scope_results.py": "0e471e8c3070543b80218c022dfcdd1ea920bcf621d3094c0f08ae0d8ea4e455",
+    "scripts/summarize_scope_usage.py": "f92329becdc6d924c90c481852029805caea48e7329bc0547fd2052abcdf8ad8",
+    "scripts/summarize_usage.py": "e617d2592a7b8778172521404f978e4b6622b779c96c92c25a6ff8a5da1a606b",
+    "scripts/verify_checkpoint.py": "55709638dcbf9017f6c013d554ecb012d064bf0a2a636cd2af244ad1a018b16c",
+    "scripts/verify_closure_delivery.py": "a987e6625427decb364da91fd0e0c50639a69fed84aed86d18347438a0e4263b",
+    "scripts/verify_final_delivery.py": "e617bd992708c6021802c8db629da6fae4a6f9d3fdf6deea909e4591af46a947",
+    "scripts/verify_model.py": "29b1739ecca22954f14574131d31fa1f50d34650e70c44baef933dcc8e2f4e1c",
+    "scripts/verify_offline_delivery.py": "c66199a14e4e32bd68708e65069d2fbbcff0bb8bb16843048b54c610716c1b28",
+    "scripts/verify_scope_delivery.py": "c19cca3d8679f82577ce1c948bad13e47a1cd9a1afec4ebbeee7a3892d3c04fa",
+    "scripts/verify_scope_evidence.py": "b8e647123854af38ed8f9e5e1929225b9f695b20c74bb9ac8a0f1fd3623ddd07",
+    "scripts/verify_scope_repair.py": "698f4b7664c3ed2bea38da6864ae1eea6dd9d7c8ff64f19b8870b2f55c2e50a3",
+    "scripts/verify_scope_runtime.py": "85905b16d3be0e984972625b00ab55885dfb97c7b544928cc1a8e9348a282b1a",
+    "scripts/verify_upstream.py": "4614e7cac95fe147cc5b9f6bdcd52dc74b1c08c9574dda9179a236793dadde89",
+    "scripts/verify_workflow.py": "ee0521c01a4b70159a20aecc356d34bb102dd73ebe2f568051ccfc6dd4c03ab8"
+  },
+  "config": {
+    "url": "http://127.0.0.1:8003"
+  },
+  "config_sha256": "a7af49240a7e20c9f691e3e337b7a9e65a59dbc89531cde9a3b2a526d6c7a175",
+  "status": "passed_with_external_dependencies",
+  "tests": {
+    "passed": 95,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 19.453
+  },
+  "core_source_files_verified": 30,
+  "online_delivery": {
+    "path": "project_notes/run_logs/final_delivery.json",
+    "sha256": "542ff380241c8cc50064838fec40227abffefc27611af29ce1eba4018f1e3559",
+    "recovery_trajectories": 9,
+    "web_task_id": "21d6780fa45a4f0db922caa758562db8"
+  },
+  "cost_ledger": {
+    "path": "project_notes/evaluations/project_costs.json",
+    "sha256": "1e5dfc09cebd137c0584990719c0182e76614c5b01247d7e25dbf2c558402168",
+    "canonical_entries": 2402,
+    "estimated_usd_lower": "0.571314699",
+    "estimated_usd_upper": "2.8996419"
+  },
+  "frontend": {
+    "dashboard_checks.json": {
+      "sha256": "a65b919e06b1a4c2f79560b1738f4a8a8782f5a8bc6cbd5d7abedca0915981c6",
+      "result": {
+        "run_id": "dashboard-macaron",
+        "status": "passed",
+        "checks": [
+          "unique IDs and named form fields",
+          "uploaded source list populated",
+          "suggestion changes question without sending a request",
+          "six report selections rejected",
+          "question uses selected reports and renders saved hybrid result",
+          "claim links open the matching evidence",
+          "partial business result is distinct from completed workflow",
+          "dynamic text is escaped and unsafe source URLs are not linked",
+          "quick analysis retains the existing API contract",
+          "report search uses independent filters",
+          "empty search has a useful message",
+          "search connection failure restores the action",
+          "large report rejected before upload",
+          "new upload selected and ready for the next question",
+          "image-only report is not selected as a usable source",
+          "resume keeps the saved session endpoint",
+          "analysis failure clears busy state",
+          "script has no uncaught errors or unused mock responses"
+        ],
+        "count": 18,
+        "saved_session": "7653de132a594346a5c3f9c159f62d01",
+        "method": "jsdom with mocked API responses; no model calls"
+      }
+    },
+    "dashboard_quality.json": {
+      "sha256": "09ed93aba40c18002245f2a265094d5e750358bc0a38d01665324a12d69b61b0",
+      "result": {
+        "run_id": "dashboard-quality",
+        "status": "passed",
+        "checks": [
+          {
+            "name": "ticker pattern compiles under browser Unicode Sets rules",
+            "status": "passed"
+          },
+          {
+            "name": "blank question is blocked before an HTTP request",
+            "status": "passed"
+          },
+          {
+            "name": "blank search is blocked before an HTTP request",
+            "status": "passed"
+          },
+          {
+            "name": "a collapsed source picker opens when too many reports are selected",
+            "status": "passed"
+          },
+          {
+            "name": "HTTP error with non-JSON body is not described as a connection failure",
+            "status": "passed"
+          },
+          {
+            "name": "successful malformed response is described as a response error",
+            "status": "passed"
+          },
+          {
+            "name": "analysis requests include an abort signal",
+            "status": "passed"
+          },
+          {
+            "name": "request timeout actually aborts a pending transport",
+            "status": "passed"
+          },
+          {
+            "name": "request timeout also covers a stalled response body",
+            "status": "passed"
+          },
+          {
+            "name": "concurrent analysis submissions are prevented",
+            "status": "passed"
+          },
+          {
+            "name": "timeout has a specific message and releases the action",
+            "status": "passed"
+          },
+          {
+            "name": "failed HTML extraction is not reported as a usable source",
+            "status": "passed"
+          },
+          {
+            "name": "unsupported file type is rejected before upload",
+            "status": "passed"
+          },
+          {
+            "name": "resume status appears next to the saved result",
+            "status": "passed"
+          },
+          {
+            "name": "resume conflict remains visible after loading saved details",
+            "status": "passed"
+          },
+          {
+            "name": "uploaded source choice explains its exclusive scope",
+            "status": "passed"
+          },
+          {
+            "name": "favicon is provided without a missing-resource request",
+            "status": "passed"
+          },
+          {
+            "name": "upload metadata pattern and file hint describe accepted input",
+            "status": "passed"
+          }
+        ],
+        "passed": 18,
+        "total": 18,
+        "failed": [],
+        "method": "jsdom negative-path and API-contract checks"
+      }
+    },
+    "dashboard_language_checks.json": {
+      "sha256": "7704b49cbc2cd422d95551ad986d9f272d444a5742da0cb15580e0a32e8f4bca",
+      "result": {
+        "run_id": "dashboard-language",
+        "status": "passed",
+        "checks": [
+          {
+            "name": "language button switches labels, title, placeholders and accessibility names",
+            "status": "passed"
+          },
+          {
+            "name": "Chinese static interface has no untranslated catalog messages",
+            "status": "passed"
+          },
+          {
+            "name": "Chinese locale defaults to Chinese and saved preference takes priority",
+            "status": "passed"
+          },
+          {
+            "name": "blocked storage does not prevent switching",
+            "status": "passed"
+          },
+          {
+            "name": "custom question and source selections survive switching without API requests",
+            "status": "passed"
+          },
+          {
+            "name": "example questions switch languages while edited questions remain unchanged",
+            "status": "passed"
+          },
+          {
+            "name": "existing results translate labels without changing numbers, quotes, links or run data",
+            "status": "passed"
+          },
+          {
+            "name": "localized input validation changes language without losing invalid state",
+            "status": "passed"
+          },
+          {
+            "name": "switching during an analysis preserves the busy state and sends no duplicate request",
+            "status": "passed"
+          },
+          {
+            "name": "new search results and errors use the active language and preserve source text",
+            "status": "passed"
+          },
+          {
+            "name": "upload status and appended inspection links switch together",
+            "status": "passed"
+          },
+          {
+            "name": "switching repeatedly leaves the interface error-free",
+            "status": "passed"
+          }
+        ],
+        "count": 12,
+        "method": "jsdom with mocked responses; no model calls"
+      }
+    },
+    "dashboard_live_quality.json": {
+      "sha256": "c54f69f15c91c6e5c9f3b5fccdcf31b2a46631c543148fe05f240fe31f3f9986",
+      "result": {
+        "run_id": "dashboard-live-quality",
+        "status": "passed",
+        "checks": [
+          {
+            "name": "live page, source list, navigation anchors and favicon",
+            "status": "passed",
+            "uploaded_reports": 6
+          },
+          {
+            "name": "offline analysis and reports · MSFT FY2024",
+            "status": "passed",
+            "task_id": "db5f3bd7e4c042aea4080b53a1cc7958"
+          },
+          {
+            "name": "offline analysis and reports · MSFT FY2023",
+            "status": "passed",
+            "task_id": "418add4d72a04815a191bcd2b078322e"
+          },
+          {
+            "name": "offline analysis and reports · AAPL FY2024",
+            "status": "passed",
+            "task_id": "7075da4be9be475f9b3c26f41b94142b"
+          },
+          {
+            "name": "offline analysis and reports · AAPL FY2023",
+            "status": "passed",
+            "task_id": "ec53aaeb37c348729f1c264a6ce227f9"
+          },
+          {
+            "name": "offline analysis and reports · GOOGL FY2024",
+            "status": "passed",
+            "task_id": "7ea22a5644d44473a538e9c5b6e53280"
+          },
+          {
+            "name": "offline analysis and reports · GOOGL FY2023",
+            "status": "passed",
+            "task_id": "cd9db6a3e5ed48ee8255d23edb06492a"
+          },
+          {
+            "name": "offline analysis and reports · AMZN FY2024",
+            "status": "passed",
+            "task_id": "4597d6db833042b2b67d62b458169379"
+          },
+          {
+            "name": "offline analysis and reports · AMZN FY2023",
+            "status": "passed",
+            "task_id": "96cbfe5fa3454e09948d9c4706587c2b"
+          },
+          {
+            "name": "offline analysis and reports · META FY2024",
+            "status": "passed",
+            "task_id": "5ac524127e2a49048f01e7823d128a79"
+          },
+          {
+            "name": "offline analysis and reports · META FY2023",
+            "status": "passed",
+            "task_id": "b4019272cb6f4f5c8e8300ee8129cbde"
+          },
+          {
+            "name": "live report search · MSFT 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · MSFT 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · MSFT 2022",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AAPL 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AAPL 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AAPL 2022",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · GOOGL 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · GOOGL 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · GOOGL 2022",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AMZN 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AMZN 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · AMZN 2022",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · META 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · META 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · META 2022",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · TSLA 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · TSLA 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · ADBE 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · ADBE 2023",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · NVDA 2024",
+            "status": "passed"
+          },
+          {
+            "name": "live report search · NVDA 2023",
+            "status": "passed"
+          },
+          {
+            "name": "existing report upload and extracted-values links",
+            "status": "passed",
+            "document_id": "35cee3c931795158e665dd0c762bf38074b14722e0651194f80cf6d1850c2a63",
+            "passages": 857
+          },
+          {
+            "name": "invalid upload and task parameters return handled errors",
+            "status": "passed"
+          },
+          {
+            "name": "no uncaught script errors",
+            "status": "passed"
+          }
+        ],
+        "count": 35,
+        "model_runs": [],
+        "task_ids": [
+          "db5f3bd7e4c042aea4080b53a1cc7958",
+          "418add4d72a04815a191bcd2b078322e",
+          "7075da4be9be475f9b3c26f41b94142b",
+          "ec53aaeb37c348729f1c264a6ce227f9",
+          "7ea22a5644d44473a538e9c5b6e53280",
+          "cd9db6a3e5ed48ee8255d23edb06492a",
+          "4597d6db833042b2b67d62b458169379",
+          "96cbfe5fa3454e09948d9c4706587c2b",
+          "5ac524127e2a49048f01e7823d128a79",
+          "b4019272cb6f4f5c8e8300ee8129cbde"
+        ],
+        "method": "Real local HTTP APIs driven through jsdom; not a rendered-browser inspection"
+      }
+    },
+    "dashboard_language_live_checks.json": {
+      "sha256": "de381651ddb155e9978ab0fe8e3137232f90bd6e3f69cc9c92e74270d729d051",
+      "result": {
+        "run_id": "dashboard-language-live",
+        "status": "passed",
+        "task_id": "484f629fe1724f5a8515fc089318804f",
+        "checks": [
+          "Live bilingual page returns HTTP 200",
+          "Stored Chinese preference applied",
+          "Chinese controls preserve the offline API payload",
+          "Chinese result labels and status",
+          "Real PDF report returns HTTP 200",
+          "Language switching preserves results without extra requests"
+        ],
+        "model_calls": 0,
+        "method": "Real HTTP APIs through jsdom; no rendered browser"
+      }
+    }
+  },
+  "dashboard_sha256": "d67c352359edfc90a0ea4a382f33d1098d2df4dbaa585ecc4e465b7d929b1366",
+  "upstream_legal_files": "unchanged",
+  "private_config_tracked": false,
+  "fmp": {
+    "run_id": "fmp-readiness",
+    "provider": "Financial Modeling Prep",
+    "credential_kind": "financial_data_api_key",
+    "configured": false,
+    "requests_sent": 0,
+    "status": "waiting_for_fmp_key",
+    "legacy_endpoint_access": "not_verified",
+    "checks": []
+  },
+  "external_dependencies": {
+    "fmp_original_report": "not_run_without_data_key",
+    "provider_invoice": "not_supplied",
+    "rendered_browser_automation": "runtime_unavailable"
+  },
+  "canonical_git_archive": {
+    "status": "passed",
+    "sources_verified": 49,
+    "staged_json_values": "unchanged",
+    "archive_reference": "Commit containing this record",
+    "hashes_reference": "cost_ledger.path -> source_sha256"
+  },
+  "configured_credentials_excluded": true
+}

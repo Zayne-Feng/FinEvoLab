@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "release_commit": "2dba70b8159e69ab007d3dae696d0c6c24187649",
+  "evidence": {
+    "project_closure_reinspection": "c7a9dcc03505fcef62d9cc1cb7c1e16ad60a14b0602b90a783adc3d9205ab178",
+    "project_closure_frontend": "e999589a343c78d7607e9d64458b3ba7426369e758ce2b80a9379af408c71444",
+    "project_closure_live_question": "1526f112562c90d086a8041eb429dca1a700e2f8949f730acd3031e1e5588ca8"
+  },
+  "unit_tests": 158,
+  "frontend_mock_checks": 52,
+  "frontend_http_checks": 35,
+  "frontend_chinese_http_checks": 6,
+  "live_api_requests": 2,
+  "live_api_tokens": 3566,
+  "gpu_requests": 0,
+  "fmp_requests": 0,
+  "environment_checks": {
+    "finevolab": "pip check passed",
+    "finevolab-upstream": "pip check passed"
+  },
+  "business_code_changed": false,
+  "closure": "all_agreed_stages_completed"
+}

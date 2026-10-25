@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "driver": "check_dashboard.cjs",
+      "status": "passed",
+      "count": 18
+    },
+    {
+      "driver": "check_dashboard_quality.cjs",
+      "status": "passed",
+      "count": 18
+    },
+    {
+      "driver": "check_dashboard_language.cjs",
+      "status": "passed",
+      "count": 12
+    },
+    {
+      "driver": "check_planner_web.cjs",
+      "status": "passed",
+      "count": 4
+    },
+    {
+      "driver": "check_dashboard_live.cjs",
+      "status": "passed",
+      "count": 35
+    },
+    {
+      "driver": "check_dashboard_language_live.cjs",
+      "status": "passed",
+      "count": 6
+    }
+  ],
+  "model_requests": 0,
+  "gpu_requests": 0,
+  "fmp_requests": 0,
+  "historical_receipts_preserved": true
+}

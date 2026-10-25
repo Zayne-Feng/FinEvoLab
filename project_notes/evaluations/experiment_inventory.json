@@ -1,0 +1,4418 @@
+{
+  "run_id": "project-experiment-inventory",
+  "commit": "5ce8403da58fb8cae9ea7b6b949c965a381dfbd9",
+  "worktree_status": [
+    " M project_notes/run_logs/renewed_planner_audit.json",
+    " M project_notes/run_logs/renewed_planner_preservation_replay.json",
+    "?? project_notes/evaluations/experiment_inventory.json",
+    "?? project_notes/run_logs/renewed_release_audit.json"
+  ],
+  "source_hashes": {
+    "configs/company_aliases.json": "76defbbeb4562bfd0b9b81ceada4ec91a2f49d370a78a9984453c7e583e16e3a",
+    "configs/open_text_rubric.json": "e0f3a493494a4222f11680262a4201f811c2d128282c6746b998ab6d5b4dae0b",
+    "configs/provider_pricing.json": "fb3c8171f0472afe6e78de1f3d606383bf5ae07b65d2e34e876561cab849f0b2",
+    "configs/retrieval.json": "8cf86b23d16603ebfe10193cb6523f7f4968297e9640998d48e591ffe9356879",
+    "configs/sec_companies.json": "266f7da26b0a38f36d022c2fda5609fdd6fd4b74104e703bfe915f5477f07596",
+    "data/evaluation/calibration/controls.json": "eefddccbf3c4118511c23173c448706fc7c72d79367b5a813a3ed7afeb67d17b",
+    "data/evaluation/closure/acceptance.json": "146381cbb8961673918ca76acf4cce073859f483bc5f8280b2584d3cef2b2f80",
+    "data/evaluation/closure/development.json": "34271de9617256c26bcf371a84fc57779b5bebef15cf8167e8bf733692fead3f",
+    "data/evaluation/closure/gepa_acceptance.json": "66c0a8584b95f7d9340516cad5ca895df0f0d2310d3c601b1e8a30cb81cda1ae",
+    "data/evaluation/closure/manifest.json": "eb53c99d9fbb0b6ee9f2b0b460ca7b1ed05e6ac478ab034574acc34b525b7857",
+    "data/evaluation/development.json": "1d956cc8387aa229aa0aef120c4491cf23f25d89e66c6aea682a85b71e04f984",
+    "data/evaluation/followup_v1/common.json": "3ec676f6be5812e620e75720815a6537f56bbc5d0c78a4e44e362821ba776f01",
+    "data/evaluation/followup_v1/development.json": "15505a3e6bad3c7319886e877d737b278e161e082a74fd2676ba086080dd76ef",
+    "data/evaluation/followup_v1/documents.json": "ca82b0e3b6d0b00fd369bdbb578cd4531bd8f2fe33fdf681410f7e2c3d922750",
+    "data/evaluation/followup_v1/manifest.json": "dd07045bf01a2c0c93e5c790183ddaa4aa5838cd8335bf67abb8ab6db2c1cd6a",
+    "data/evaluation/followup_v1/test.json": "1efe9a99ccdb761d0c74635de8359772dd96a8296d715b30d220970cdb83cecc",
+    "data/evaluation/followup_v2/development.json": "244f4c330b2e035fd624c70f08dc0809a85eb9272d871e2b9054707c01a73bec",
+    "data/evaluation/followup_v2/documents.json": "0d41480ca6fb449fb1b3098ccabf60addc52aad13e198aab3292f3f76e46b11f",
+    "data/evaluation/followup_v2/manifest.json": "1f52050c6ae947b04a6a91f1668a920f01e2cca0efa6d49e9d16eccd0dee36b6",
+    "data/evaluation/followup_v2/test.json": "465a37ddaec609257e58cc77289279a456093167cff4a63c30444c0dde6bb278",
+    "data/evaluation/followup_v3/development.json": "22432c34fb32d803b0c6e4f52ebf7e5159b75b0cfe1827908371128d0593766b",
+    "data/evaluation/followup_v3/documents.json": "0d41480ca6fb449fb1b3098ccabf60addc52aad13e198aab3292f3f76e46b11f",
+    "data/evaluation/followup_v3/manifest.json": "91bc7f0497dd164fdea343ef61660d24c250bf56ea9f7c6f5b8b328a72171dc7",
+    "data/evaluation/followup_v3/test.json": "6bbdc1c51ab5a135c9ef842b2cae1769d5c36f83ae2ff23877cc34b1e8bfe1e8",
+    "data/evaluation/manifest.json": "cbb649304ea49c59a01b3951479f3dd2b5b4cfc391be10e367011e09a1035c60",
+    "data/evaluation/pilot_development.json": "e1cc23353e5736ae697df0c181ed0df9238e4ba8af5530e0a998bedf9f241c16",
+    "data/evaluation/pilot_test.json": "238d8a3080a22959e30f070615afd758d961b256bb78a0afe5d0d207d3249008",
+    "data/evaluation/pilot_validation.json": "64b4093f416da7c9ba4552addc4b5ea2e7185846cac1d0aa82455558dffd7908",
+    "data/evaluation/renewed_v1/acceptance.json": "ca2697c2ed16fd28710ae212d609dc14a6e1c99d193a56eeecdc8f82bf146198",
+    "data/evaluation/renewed_v1/development.json": "46e28cd0fbed83bf8e8f5a2e497464e7b03aa23105d28624044ee034e5dce016",
+    "data/evaluation/renewed_v1/documents.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "data/evaluation/renewed_v1/manifest.json": "9935687d84eb0d362788286c3b68270acfacfe6ecca525beeb9d499b1b6c0338",
+    "data/evaluation/renewed_v1/validation.json": "989b159cc4aa8b34ae8570b4b803c6500fe00a4ffb2044bfa0aaa0c3704c3f2c",
+    "data/evaluation/renewed_v2/development.json": "2bbc5facc7640a749eb671aafcd92cedad7eb9d4d59a343e479b8d21ac93e22c",
+    "data/evaluation/renewed_v2/documents.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "data/evaluation/renewed_v2/manifest.json": "3e349f69e33eb934184a379d23a857e60457836c1a63df22e820022fdc44bfde",
+    "data/evaluation/renewed_v2/test.json": "e8c177bcf460dc74a734253b0799aa22e350142c0cd6784a37ca7f9b0a030cfa",
+    "data/evaluation/renewed_v3/development.json": "31d51263b948655c416883a5f888c39a727a442b40bc4d56fed0c11204f3b9da",
+    "data/evaluation/renewed_v3/documents.json": "b1251e9db5a9ae47b2455b263901bb50981ca8d479e30b1be622ec7b5ac97085",
+    "data/evaluation/renewed_v3/manifest.json": "e876df570a8816849e3d80941ded0bf400d44bdbff19f68a6990b49cb1cd3a8b",
+    "data/evaluation/renewed_v3/test.json": "9c75242a200d367fdf530e4099462e76174465c43f371112f2f25929fae81942",
+    "data/evaluation/scope_supplemental/manifest.json": "f35f260d95fc03ccc25487b0a46ac340274cd56af1cdf0577d1c2c1a1597fab3",
+    "data/evaluation/scope_supplemental/seeds.json": "cf574592c56eaf71cbc0a64dc8515ba3e21912224a343a0e6a2d4d537ebb2535",
+    "data/evaluation/scope_supplemental/test.json": "771f943116e3949366fe105c804d69119d102da72c07597d67219cce546f19a5",
+    "data/evaluation/scope_v3/development.json": "e4a06db67060db6c5b47cd55cc9df44f25f5b04c57266a70a5beb43af480ce97",
+    "data/evaluation/scope_v3/documents.json": "9f083f9d8d7b5af7b52807c0de0b4b67c1ca97b6c4599e49dc5263f93f36955b",
+    "data/evaluation/scope_v3/financial_reference_audit.json": "c07efd5307f376b35afaf80dcd84a307a4359cc2437822ac1571460ee84db3ec",
+    "data/evaluation/scope_v3/manifest.json": "a9472cb3cfca759b8c5a0e50a997ac053dc02c79416db20ee69a925343f8c321",
+    "data/evaluation/scope_v3/source_anchors.json": "dcee9d87f6f1b284314e70d5e894fa6bb9d07871bbd60be044486d92918d7967",
+    "data/evaluation/scope_v3/test.json": "0660436900694aeda000682293668e6857d154b6b9ca152ef9aaf6beb503a2ac",
+    "data/evaluation/scope_v3/validation.json": "12e93af5151f9ee19bb55e74752ef1893c8ecad0a906bb83ea723f119599d1dd",
+    "data/evaluation/test.json": "c94f01ec727500dd12b173782b9aba10f95c9372fd42b540b720c479d0a312b2",
+    "data/evaluation/v2/development.json": "0dd14b4b588486a7acdf5f2bbccf83b261156efb888493ea144b8a5b16accbea",
+    "data/evaluation/v2/manifest.json": "d484934627cfce9595850c92da571ff3b02ec7768b277ee629cdf6a5eb5d9666",
+    "data/evaluation/v2/test.json": "9e8810318e03808cea51a4bbf0bcf2f8b994bef5d75f69e58670ccec373703c6",
+    "data/evaluation/v2/validation.json": "8a0ec469a49d730ba0bf18b0911149478d73df47f47fb1e8b640ea5aa26b09ba",
+    "data/evaluation/validation.json": "34d8648c8b5a26d404efa303d43c93b555296d742e81417ed8f2cf13618edad7",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "finevolab/agent.py": "0fcd63160e0f14469f1ecb39030ae4eab46cca9318ab2ef8576dc0bd600187ad",
+    "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+    "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+    "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "cb980f8223823705c962ef44bbb6ba33aa099d65dc1970e1bab7acf98e1d3d46",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/grounded.py": "08e9dcecefec4e4dc0c0dfbb56e5952872515add7ce1fd3be8d2b9b1e564ff07",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+    "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+    "finevolab/provider.py": "e3c93c735a43cfe5abc28148807f6e2bc293906dfda0c0b81176cb0007a08d12",
+    "finevolab/reporting.py": "dc3772aa8eaad8436438c441991317a8e2f9f13506de93185b9605bb90591550",
+    "finevolab/retrieval.py": "36193fe96de7196b42f6d39db6952cbcf5d81391e6642b1b7899bcd41e9480db",
+    "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+    "finevolab/runtime.py": "37f7eb8e5c137009ae943c768a6a8a68cbe6859757a8a0c9a952e757c7146866",
+    "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+    "finevolab/sdk_runtime.py": "fe1dede073a013218dc4c206c8280e68ca77227adc7a20fa02e66b9cce561858",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+    "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+    "finevolab/tools.py": "2669f13d2e8346b5dbd2a93187a2b8971c51ccaba6467c84625f8acc4d67edc7",
+    "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+    "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+    "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+    "finevolab/validation.py": "ff2d890f887de832a9e2ff6fc70c01fcf053ca2cbc7acfe02d96f539cb8669c1",
+    "finevolab/web.py": "bc6348689af1516e4b68c695d69ff54f9ae6312ee03c3a8f95af19778fa0f94c",
+    "finevolab/workflow.py": "68d6dc0ecb3f3464b200074cd54d26f8654b00706a8e67790958d6bf67d4771e",
+    "prompts/benchmark.json": "b309162e87e7316792c25817ba950966f5dcc6cc3544b264c867de7d72da76a6",
+    "prompts/default.json": "8093fb0364b332f621a8e920c5f6e44c4af971318c5dc29ef8397ee53a3adbd6",
+    "requirements/development.lock.txt": "a9c243def88045df1ea5aa81d0acddb28b98f35dc6d0cf394a5e4678e326dd3f",
+    "requirements/upstream.lock.txt": "9620e237832daf48f53ef3c3ccfb54988ad9bafa09df5d8de28b660b5c836fd3",
+    "scripts/analyze_revenue.py": "9b1393f565fa4aa4f74c899b1286de11f486835fad3879389a8264cc63be1b8d",
+    "scripts/archive_scope_inputs.py": "d1581ec33a1d3ec3e5f393a8b347be57810f27dcdb6473652c39f40c25307c07",
+    "scripts/audit_closure_release.py": "58834bd6295779d0e7506cc8c6339dfacb27219e9bab9a1ffda2383a7af0f5e2",
+    "scripts/audit_renewed_planner.py": "cfc023a0081afe820aa7aad2cf2ec55671f9b08236cb555fd6501f2fcf92f207",
+    "scripts/audit_renewed_release.py": "af9187468b4a35963c102f45e4c15f1d1ff83f16eed04143a3c6f96ca8903749",
+    "scripts/audit_scope_release.py": "6b204839013981daabb715e95cb6c227034bb4a5476b3e1f5c4b1ffada763bd0",
+    "scripts/audit_scope_sources.py": "41a05c9d6d64ce4595c62e795e0796d77281b793114c3c18c098aa5bf6f14906",
+    "scripts/audit_scope_tasks.py": "3ae43705efdcd33e553a91df8b109d52b98e60837e68f44c72d3ef4ef55f93f7",
+    "scripts/build_contextual_index.py": "3627568732dea8241260f42105557f1db835fb60ada76ea7747b0da815c487ac",
+    "scripts/build_evaluation_set.py": "270dab637758387b830ab21e9d5e02742214efa26b58526e5976baa76da1b2b6",
+    "scripts/build_index.py": "0886916d21480239a821cf481f0a3584b5eb6ebcf759237b490105eb35ca00e7",
+    "scripts/build_pilot_cases.py": "1558518be1f049135993d1bcc101f13452468581b0d6d28638f12f685f947c93",
+    "scripts/build_report.py": "52547bffdab724c98544636071aa84261c70cbe2d574ff51452224d0f8844c28",
+    "scripts/build_reviewed_evaluation.py": "70720e54a5187e6db0bb7ba4b18cfffe8160b451ece28d571dfb69ba6767fe34",
+    "scripts/build_vectors.py": "16432422a289b3badea282670443fa033d599747c7ea62cc617a31c1289f803f",
+    "scripts/calibrate_open_text.py": "7857d57dcca31c40a98dfd466192964066aa0a03e43aca6042b22dac06667255",
+    "scripts/check_fmp_readiness.py": "655a164f4d658fd01e0c29d5a14f706304788591c53c1673601a380a50b4c109",
+    "scripts/compare_experiments.py": "6bca01a348d1e92b25b3f4dead73f4560dacba3f48317d78a62ad8cf58905c0c",
+    "scripts/decide_renewed_candidate.py": "d6f75b44665313301d18c8debe2c3893172697ecb5ce4dd4b4049678c29782c3",
+    "scripts/download_acceptance_sources.py": "6fba4c450a253e73fbfcc65ee6928f25934c0c13bac23ec0f599e53f19268cff",
+    "scripts/download_filings.py": "42ad93f53ececa7dcccfd786cdd9cda04fd860b8fa27035e0226b308dec94cd2",
+    "scripts/download_reports.py": "55f4746f776d842c0944ac1b159dfbcd7104a646ed94f0d3f37d47c35c645d14",
+    "scripts/download_sec.py": "ffbeee69d378ae69ccfe91ace7368824e1d217a3faa6779ee9783870bd244841",
+    "scripts/estimate_paired_uncertainty.py": "0b567ee64fbccb1555d3762ed7b31fa33fa5793f9b6a630f6c68a076f38d18e9",
+    "scripts/evaluate_retrieval.py": "05cc603b7ee379e16ab3d3aeea9d2fb95e9fc4650adfce929b0a4c112136e41e",
+    "scripts/evaluate_scope_retrieval.py": "a5554d322cc5b8bcb029d18c75fbd4fb7001675f7489d6ecfab2996cc539d9cb",
+    "scripts/freeze_evaluation.py": "4e30fef23392c2b92f65980cbc6e424e7b8c21ed24143792ad32f6bacc59ba02",
+    "scripts/prepare_closure_tasks.py": "242ff33cd6dc194156d519e507ff61464cd56090807cfb3283dd2e958db0e968",
+    "scripts/prepare_followup_revision.py": "7b747b0b315075ec97684c596e9512008ba8fa9f2ade3591080473d10c7c4290",
+    "scripts/prepare_followup_tasks.py": "a22f27181181b7aa8b624d1683e69ef828bc388a2ebd09ba6dce874eac35fb40",
+    "scripts/prepare_open_text_review.py": "55befdacbc939511eb7aaa1108a331daaa1a9f913f91c3c1ff61745e3b033ca9",
+    "scripts/prepare_renewed_planner_tasks.py": "d18b3f3deed8e4d82f71618a9d5fbec749dfc2f920c1a182ac8a1d4a3e72ee05",
+    "scripts/prepare_renewed_revision.py": "bf67a87548def5037c4275d319d1f98bf72d9e6277441ad9b962211cfdb11695",
+    "scripts/prepare_renewed_tasks.py": "63a7551129a918047f9ab7255cafc5244f7985e460665f5414d2f4620adc52f4",
+    "scripts/prepare_reports.py": "b0ce20337c002d7fdbb7bd772335190ce1fa8992d8aac20ee220543038c03309",
+    "scripts/prepare_scope_supplemental.py": "eabbee0c05b45a9ed55b36c171afdf575a0f54c00ba6f167ec70ddc542d40d48",
+    "scripts/prepare_scope_tasks.py": "a1bf554a67e440a8b000f4435f324bda2a2abba800aeea4c465b65ddf6513639",
+    "scripts/prepare_table_acceptance.py": "efc30fa6cf7a169e9c303476db99a9ec1330d670041eae1ea92dbdc3825d089c",
+    "scripts/render_report_previews.py": "907cc39146f0634c065c53bd6afa86afe42dc4caf71d4bff9947400a3138f322",
+    "scripts/repair_component_answers.py": "23b1ff2cb3a4b750f61e0d9aaf571ec3493691de6108e9edf83bf5b3b111f445",
+    "scripts/replay_scope_validation.py": "8b07fa1095a88c45a60afdc4e253be24a8f7c6b3b3578f10effc87efcb5de851",
+    "scripts/review_closure_answers.py": "219e036ce48f2bdf6e83271a500066a2c6086efe8964aac326c3955f5fed4db9",
+    "scripts/review_component_ablations.py": "cb99bf68705f5396dea69c79df64f32511358467c5af9a71c8a659aab89256ce",
+    "scripts/review_scope_answers.py": "3b24f593d4a82b975942c377c2583641caebec3d74c7607cf710f95ab6e949ad",
+    "scripts/run_analysis.py": "7cd2f5475cdf3117e79ee2ed478b15fe37f45c3b6b6fb4beba81ccd8b66b8bfb",
+    "scripts/run_blind_review.py": "170c6aaeb8588b5c416e49f2e890994dd2797bd159487d1fd4e45f68a8189174",
+    "scripts/run_closure_experiments.py": "5c3e31410d989098522221144c405418156ede46a540d24c5fa73159ae48b412",
+    "scripts/run_closure_gepa.py": "e8dafddc5f9a6faae29a8cb98ea48c040a3293d8a05a4875380289f64a75eea8",
+    "scripts/run_component_ablations.py": "f662e11a7357107ab373db6fd6b472ad7d632da414ef0b85a215deead7028da1",
+    "scripts/run_experiments.py": "e19e4f30c2d71228ee8076567b1c6144b3a9eda76c3a2784a06b864526b45275",
+    "scripts/run_fault_experiments.py": "16db72c02b85f4c4067089392c55be15927e40f46a559e3c60dd5965c1b19867",
+    "scripts/run_followup_uploads.py": "4e3f0b07fe2123a995c685c511156f27d5b96cf293cf2c52d51686209231b07d",
+    "scripts/run_gepa.py": "f97070bbb0ef026f3aea37cfc4500226f85063342d52afd0ec380615e8b7015f",
+    "scripts/run_harness_ablations.py": "67912328c17a2eef319b47b6d0b2a5113ed143380fa2f086bd18076d05e571b1",
+    "scripts/run_question.py": "5a49257991ee1c1388fcd69793bc1b09c476b0ea75c263c8ecf8fb72e035f003",
+    "scripts/run_renewed_gepa.py": "3f20ea2fd74feea926fbc8b0bcfd0f21b35bc8e2ca7c21eaaf53d2cf733a4265",
+    "scripts/run_retrieval_experiments.py": "53795b08662b5eb8604ea725231ed131487897bfc922d47c95a5f91f79a9833f",
+    "scripts/run_scope_experiments.py": "019b5f2698ef9e113fbe8b3d6df081449b90203454993c2832c770b46f2f5230",
+    "scripts/run_scope_supplemental.py": "1e50ba2f55269f0b64ae8ccd0934dbe7445df2a42859d4f9d238ed4c185657a8",
+    "scripts/run_upstream_comparison.py": "f875f7bd6cc9cf71076286d993ec23d3b2f1498371530781b2ea89e509584b8e",
+    "scripts/seed_fmp_cache.py": "692e545d82c6a0c4a4a0c0ff9bfe219ceacf5fb0c1a497dfca6c03847466d1da",
+    "scripts/settle_followup_costs.py": "607fcb44aedbcd0c50464383d1f8089f691f47ee85fa43e96c91ce2f1d5adcde",
+    "scripts/settle_project_costs.py": "b6b409722b6cbb6f1041f986d236f9c7184b9b7495b0c66de270014d3bdaf737",
+    "scripts/summarize_closure_results.py": "e676536dbf044cad575817e5c6399f77bc3028ac88c1108b2260388a2460160f",
+    "scripts/summarize_component_ablations.py": "9e65348adc72a217e04eca06fa593cc17eabe31c6642c2c78ac08fa37e78abe9",
+    "scripts/summarize_followup_results.py": "3d00c6d53dd34c5aaa426ff629b04bbaa65c9dd93549330effc89ea65fbf67bf",
+    "scripts/summarize_project_experiments.py": "2d1db7713386211412f3960f45aa5e66d0b280d594949168e649699439de887b",
+    "scripts/summarize_scope_results.py": "0e471e8c3070543b80218c022dfcdd1ea920bcf621d3094c0f08ae0d8ea4e455",
+    "scripts/summarize_scope_usage.py": "f92329becdc6d924c90c481852029805caea48e7329bc0547fd2052abcdf8ad8",
+    "scripts/summarize_usage.py": "e617d2592a7b8778172521404f978e4b6622b779c96c92c25a6ff8a5da1a606b",
+    "scripts/verify_checkpoint.py": "55709638dcbf9017f6c013d554ecb012d064bf0a2a636cd2af244ad1a018b16c",
+    "scripts/verify_closure_delivery.py": "a987e6625427decb364da91fd0e0c50639a69fed84aed86d18347438a0e4263b",
+    "scripts/verify_final_delivery.py": "e617bd992708c6021802c8db629da6fae4a6f9d3fdf6deea909e4591af46a947",
+    "scripts/verify_fmp_offline.py": "d9261ae0cd0556e5743956e8294937bd56280730c1ce3f1804dd9fe7fa256623",
+    "scripts/verify_fmp_stable.py": "f7490439ca8b4ad92b67d40eee31faec6b9d4c422b85a231cf52f52e89fdea3f",
+    "scripts/verify_followup_release.py": "8b7668bd26a01ea9ee4c4bec0deba626d979078e52d69ce090d9a4376679192b",
+    "scripts/verify_model.py": "29b1739ecca22954f14574131d31fa1f50d34650e70c44baef933dcc8e2f4e1c",
+    "scripts/verify_offline_delivery.py": "c66199a14e4e32bd68708e65069d2fbbcff0bb8bb16843048b54c610716c1b28",
+    "scripts/verify_renewed_semantics.py": "5491fe1aec3ea71746996b6367e16d778a12cf36c98250153d97ca4422086519",
+    "scripts/verify_scope_delivery.py": "c19cca3d8679f82577ce1c948bad13e47a1cd9a1afec4ebbeee7a3892d3c04fa",
+    "scripts/verify_scope_evidence.py": "b8e647123854af38ed8f9e5e1929225b9f695b20c74bb9ac8a0f1fd3623ddd07",
+    "scripts/verify_scope_repair.py": "698f4b7664c3ed2bea38da6864ae1eea6dd9d7c8ff64f19b8870b2f55c2e50a3",
+    "scripts/verify_scope_runtime.py": "85905b16d3be0e984972625b00ab55885dfb97c7b544928cc1a8e9348a282b1a",
+    "scripts/verify_upstream.py": "4614e7cac95fe147cc5b9f6bdcd52dc74b1c08c9574dda9179a236793dadde89",
+    "scripts/verify_workflow.py": "ee0521c01a4b70159a20aecc356d34bb102dd73ebe2f568051ccfc6dd4c03ab8"
+  },
+  "config": {
+    "calculator": "2d1db7713386211412f3960f45aa5e66d0b280d594949168e649699439de887b"
+  },
+  "config_sha256": "2e439cc2b1d2a038cf572ce455cca77db62405121f44b11a6a75cb400b44b7de",
+  "status": "completed",
+  "runs": [
+    {
+      "area": "optimization",
+      "run_id": "gepa-pilot-run-01",
+      "code_commit": null,
+      "summary_status": "stopped_after_provider_failures",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 3
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "unspecified": 3
+      },
+      "arms": {
+        "b92ffda7cce56d3add40": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/optimization/gepa-pilot-run-01/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/gepa-pilot-run-01/evaluations.jsonl": "ee8d9a5fe4a1f56ef6645baeceaaa6624585eec458a189c16907e3fe904d850a",
+        "project_notes/optimization/gepa-pilot-run-01/summary.json": "de4f892e0bfd47cf1a8c88f110035fac85ad96016caef1218e1a5bf41f0fde58"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "structured-preflight",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 1
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 1,
+      "execution_status_counts": {
+        "completed": 1
+      },
+      "arms": {
+        "unspecified": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        }
+      },
+      "summary_path": "project_notes/experiments/structured-preflight/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/structured-preflight/tasks.jsonl": "6a4ad712dc426781d7007c188f258f261538a8d90d1150c94bad2534c2255a67",
+        "project_notes/experiments/structured-preflight/manifest.json": "125476148b651f2d4a5e519dc4a0419d466fddb3035e0a662b0cd571ef8d72c9",
+        "project_notes/experiments/structured-preflight/summary.json": "5f3e40200d26fffa40733d534f3b46cbd9813ab46b0d44da09b710991d009d90"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "retrieval-validation-run-01",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "retrieval.jsonl": 324
+      },
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/retrieval-validation-run-01/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/retrieval-validation-run-01/retrieval.jsonl": "e284fe81916c7516a002ce21a78a26a8eb467920158631f233c2c4a0c8edd64b",
+        "project_notes/experiments/retrieval-validation-run-01/manifest.json": "b88cd2c0f9cce3f49355e341f82812790ee61d44a82c92ba3dc96a221d7915a4",
+        "project_notes/experiments/retrieval-validation-run-01/summary.json": "09b780a5d018ffbaaaf0cfb4c4ece8651cd92a8c9fe9d13650abb97ea4dcd974"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "gepa-pilot-run-02",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "failed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 3
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "infrastructure_failure": 3
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/optimization/gepa-pilot-run-02/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/gepa-pilot-run-02/evaluations.jsonl": "3a4acfa49b6f9cee4d459e0f180c2c5ad0f059ff0392e725ef939be2ca3e5c9d",
+        "project_notes/optimization/gepa-pilot-run-02/manifest.json": "b1d3227a636750447d0689c6aba2f16c5517e0201e66a2f3096b2350e0c16db2",
+        "project_notes/optimization/gepa-pilot-run-02/summary.json": "e0e1c504042750ef944d4873bb3a652575515c129b5ff455a4fffcf137f42dc1"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "fault-injection-run-01",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "invalid_fixture",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/fault-injection-run-01/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/fault-injection-run-01/manifest.json": "aeae99a16cd6c37a746631bdafbcbd958012473e6c940e640587fdb544c1838f",
+        "project_notes/experiments/fault-injection-run-01/summary.json": "28461b60182e4646bdcbbae1892faff74dfd92f7cbd57e9f38315591735bb081"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "fault-injection-run-02",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/fault-injection-run-02/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/fault-injection-run-02/manifest.json": "ea9fdcfebf03da27f0514a0c0215245ff58dba8aa9e60d53e4b3c58b45cfe095",
+        "project_notes/experiments/fault-injection-run-02/summary.json": "e4f3d56769f9a4a2ff4289eb64049c051b71890b8cff27c11fe82f647cd3f8a8"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "tools-validation",
+      "code_commit": "47385adddeac20365098fe2d05594d302c0ed0ad",
+      "summary_status": "interrupted",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 3
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "infrastructure_failure": 3
+      },
+      "arms": {
+        "unspecified": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/tools-validation/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/tools-validation/tasks.jsonl": "d2f4fcd59bc49d864a469fc6cdfa7e373529c67b21254ad8f2e6e488af905c4e",
+        "project_notes/experiments/tools-validation/manifest.json": "bdc317154bc7962ed87c53da19d38b645fd8feee679d38b528987d5d27a8496a",
+        "project_notes/experiments/tools-validation/summary.json": "3815c31802bafe889aae2229132108d7c9417a2aaea368e6b24af7a6d86bce2e"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "rag-validation-run-01",
+      "code_commit": "cd3629ccc022b87026b5e8735fc2f01aac368663",
+      "summary_status": "invalid_setup",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 3
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "execution_failure": 1,
+        "completed": 2
+      },
+      "arms": {
+        "unspecified": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/rag-validation-run-01/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/rag-validation-run-01/tasks.jsonl": "2d3d9390c28b36bf1e06d98177e9640a638cfdad3858398eb35b8b8d3d566b89",
+        "project_notes/experiments/rag-validation-run-01/manifest.json": "0e5ef0a7b732a0c22a3d19e821de0d153bcc0f7ea6774179396ff07756ddfc6e",
+        "project_notes/experiments/rag-validation-run-01/summary.json": "31320d63b274fdf74ded1c092fbb1604c00b5e355dc541bedb32e90d8a24c3ad"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "retrieval-validation-run-02",
+      "code_commit": "0c1e868636512c0feacd809e4d64d8a8d3ca88de",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "retrieval.jsonl": 324
+      },
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/retrieval-validation-run-02/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/retrieval-validation-run-02/retrieval.jsonl": "abe20869b0b5bbbdf73392ea8fbab520e38c9ecdd1c38caf11152a0f97af2f37",
+        "project_notes/experiments/retrieval-validation-run-02/manifest.json": "3171779c94655e8a1d45de4fbac5597f4a3695c92f71899d07df9e7213be7afb",
+        "project_notes/experiments/retrieval-validation-run-02/summary.json": "4a17caa5f5efbc36bf7cd6ba7617661fd8b5a60fe949d9d2107ebbadf22c5c7c"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "gepa-pilot-run-03",
+      "code_commit": "0c1e868636512c0feacd809e4d64d8a8d3ca88de",
+      "summary_status": "failed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 3
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "infrastructure_failure": 3
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/optimization/gepa-pilot-run-03/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/gepa-pilot-run-03/evaluations.jsonl": "eb4746e3300926e37e3703c6118cfc40cd20955d352c0e47a2ddb0147c1efa8d",
+        "project_notes/optimization/gepa-pilot-run-03/manifest.json": "ece7a5fd4ba22e0d8b3eb580c10d8a9306affbf7ea199bb8cd232fedd3a13ae4",
+        "project_notes/optimization/gepa-pilot-run-03/summary.json": "502f9ff55f3ecd95dce37108de732c8215a05d10382966ae1e4ac33cd2dce03f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "rag-validation-run-02",
+      "code_commit": "36c4daf23dc48b730017d4bebfa71b407b26ae59",
+      "summary_status": "interrupted",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 3
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "infrastructure_failure": 3
+      },
+      "arms": {
+        "unspecified": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/rag-validation-run-02/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/rag-validation-run-02/tasks.jsonl": "5297511f7912524d0b5b408f698fb5d58adb3d9005cb3d06a7b47c187adbd6db",
+        "project_notes/experiments/rag-validation-run-02/manifest.json": "d96691e48ca99743a6e8972d3401875e0f8e51edced7b654ea5bb91d019dac54",
+        "project_notes/experiments/rag-validation-run-02/summary.json": "04f8f7da5bb3a2f3db8990bffa42d7ac59010bc3e6ed89eb4a6156b38d7e8b9a"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "offline-delivery-run-01",
+      "code_commit": "a30fd262425247e659e8a3fa325fd5d7349341b8",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/offline-delivery-run-01/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/offline-delivery-run-01/manifest.json": "d0f6a0e3c21a71ca63c4753562f8b6a2441574d2634cd35e11b27280a8692b13",
+        "project_notes/experiments/offline-delivery-run-01/summary.json": "2e1ccc8d354f7e5ede57bf007d5fb2823d71c0a4259a260b2d9b504837127752"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "offline-delivery-run-02",
+      "code_commit": "a30fd262425247e659e8a3fa325fd5d7349341b8",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/offline-delivery-run-02/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/offline-delivery-run-02/manifest.json": "738fb6aa49025b5d2d26e258b77414bfdeb85e8516dd118813089f5606775d75",
+        "project_notes/experiments/offline-delivery-run-02/summary.json": "192604268467978e9c3b8b42ffa2f2a3241d0f03ae752617dab19f536fd0e7d2"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "offline-delivery-run-03",
+      "code_commit": "a30fd262425247e659e8a3fa325fd5d7349341b8",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/offline-delivery-run-03/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/offline-delivery-run-03/manifest.json": "f6fd75f969319e7c0ba9b3b65cec9f9825ccbe508d10896ecb001775aa0b5785",
+        "project_notes/experiments/offline-delivery-run-03/summary.json": "db2375b4a9d3d49b6b62e52a07e16b6e6dfe1d0470153d9567c0967f5228c36c"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "gepa-pilot-run-04",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 12,
+        "reflections.jsonl": 2
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 6,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 6,
+          "scored_records": 6,
+          "sum_scores": 5.0
+        },
+        "12a8ee791b5cc9ed038e": {
+          "records": 6,
+          "scored_records": 6,
+          "sum_scores": 6.0
+        }
+      },
+      "summary_path": "project_notes/optimization/gepa-pilot-run-04/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/gepa-pilot-run-04/evaluations.jsonl": "d31283925ca759628dc9bafe2e8f707514d2a5aae7fadd0a6f3203971605af4b",
+        "project_notes/optimization/gepa-pilot-run-04/reflections.jsonl": "d52f59ca0969a3c920f443f082f9d81539bd2bf03e75e66d74c1d24e7a1851eb",
+        "project_notes/optimization/gepa-pilot-run-04/manifest.json": "9baedcbb2044b8cf727c2d3d16729b18d4c7f2276b228bf08d16295e74c37972",
+        "project_notes/optimization/gepa-pilot-run-04/summary.json": "13fd1d4edbcf887c26ea3c310f254c784168481986099b12a61cf178a8a44bcd"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "retrieval-validation-run-03",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "retrieval.jsonl": 324
+      },
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/retrieval-validation-run-03/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/retrieval-validation-run-03/retrieval.jsonl": "d4023989bab51c136c52b5ce1b9e0ecdc640cf7fd31e1c4eb249d509d0e71190",
+        "project_notes/experiments/retrieval-validation-run-03/manifest.json": "e84dac75f1aa96f14cc8826e8f7247cd383112f6e6a55e3617421dad3489eef2",
+        "project_notes/experiments/retrieval-validation-run-03/summary.json": "4d40dace3848eb377d3c0f373bd5c12daed2a55d75d393c9b1fc3994099cf54d"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "gepa-benchmark",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 152,
+        "reflections.jsonl": 12
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 26,
+      "execution_status_counts": {
+        "completed": 152
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 22,
+          "scored_records": 22,
+          "sum_scores": 16.0
+        },
+        "93842cfd9eeb58b847d5": {
+          "records": 22,
+          "scored_records": 22,
+          "sum_scores": 18.0
+        },
+        "9dcf125695deff3955ae": {
+          "records": 22,
+          "scored_records": 22,
+          "sum_scores": 19.0
+        },
+        "ab4e3f61c41bb690d4ba": {
+          "records": 23,
+          "scored_records": 23,
+          "sum_scores": 20.0
+        },
+        "65ebcfc080cf6e7a8f36": {
+          "records": 21,
+          "scored_records": 21,
+          "sum_scores": 16.0
+        },
+        "4783cd4ba446573a5420": {
+          "records": 21,
+          "scored_records": 21,
+          "sum_scores": 16.0
+        },
+        "a5491aa4d6c89e334bf1": {
+          "records": 21,
+          "scored_records": 21,
+          "sum_scores": 17.0
+        }
+      },
+      "summary_path": "project_notes/optimization/gepa-benchmark/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/gepa-benchmark/evaluations.jsonl": "ab2fb84214121bcc4bd6f118977dec1cdc5b03ad3b39317497b4236391b59ec2",
+        "project_notes/optimization/gepa-benchmark/reflections.jsonl": "92562ea4d6fc1f04d2257dac9823169d4761c3467db71620e13e7b3dc685ccda",
+        "project_notes/optimization/gepa-benchmark/manifest.json": "ad9973752af1898156a22494b90fcf983d3d2a08a187e9745b4218f9e0c68e18",
+        "project_notes/optimization/gepa-benchmark/summary.json": "7601c59b1fcf375468fd5a4e158f138c01532315350c30e9f3132a9c37148c47"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "deepseek-v2-tools-validation",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 60
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 60
+      },
+      "arms": {
+        "unspecified": {
+          "records": 60,
+          "scored_records": 60,
+          "sum_scores": 53.0
+        }
+      },
+      "summary_path": "project_notes/experiments/deepseek-v2-tools-validation/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/deepseek-v2-tools-validation/tasks.jsonl": "670df2494821c209690f4a429c6ff90c4bdc48809aa01a28df5a8b702086487b",
+        "project_notes/experiments/deepseek-v2-tools-validation/manifest.json": "f567c565452670de65f5e9702a43b99a20b62a974a2559b1c6b72c4c888f90a8",
+        "project_notes/experiments/deepseek-v2-tools-validation/summary.json": "051ee7757d7acda0f6bc7cc1fd9b62b52c9baa91d7534782e489af4f663d3420"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "deepseek-v2-rag-validation",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 60
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 59,
+        "execution_failure": 1
+      },
+      "arms": {
+        "unspecified": {
+          "records": 60,
+          "scored_records": 60,
+          "sum_scores": 29.0
+        }
+      },
+      "summary_path": "project_notes/experiments/deepseek-v2-rag-validation/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/deepseek-v2-rag-validation/tasks.jsonl": "cb595190e9bf058f4d39dfb7549718b4ee74fbfdf155d19e6c4c02568513047a",
+        "project_notes/experiments/deepseek-v2-rag-validation/manifest.json": "1a19cf31bf2e00adfc0df4589bcecf9f23f2f7e0371fa6f3b7c4c74a97870568",
+        "project_notes/experiments/deepseek-v2-rag-validation/summary.json": "ae9a1c31bb5b5bbe8b33d18d8bfe944b5a0c68fb43a01fa6eab36402f9d665be"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "deepseek-v2-harness-validation",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 60
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 58,
+        "execution_failure": 2
+      },
+      "arms": {
+        "unspecified": {
+          "records": 60,
+          "scored_records": 60,
+          "sum_scores": 51.0
+        }
+      },
+      "summary_path": "project_notes/experiments/deepseek-v2-harness-validation/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/deepseek-v2-harness-validation/tasks.jsonl": "d6119546b95568bc9fe5e522c637a68f59661cdc2e977afc8ba13f1990bcfde4",
+        "project_notes/experiments/deepseek-v2-harness-validation/manifest.json": "949e061fa25246c14aaed5b3a0f303ee88e56b6ce4406e382b349fd05a9ce00d",
+        "project_notes/experiments/deepseek-v2-harness-validation/summary.json": "6c11aae107873afbb4980d8b11168626a88aa08a7ca5ef3cf90ec7a9071de18d"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "deepseek-v2-initial-test",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 90
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 30,
+      "execution_status_counts": {
+        "completed": 90
+      },
+      "arms": {
+        "unspecified": {
+          "records": 90,
+          "scored_records": 90,
+          "sum_scores": 84.0
+        }
+      },
+      "summary_path": "project_notes/experiments/deepseek-v2-initial-test/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/deepseek-v2-initial-test/tasks.jsonl": "9070a4e1984aef5341971d8cfc7b76c3022813ece4b5cbeee218a789b52e5f75",
+        "project_notes/experiments/deepseek-v2-initial-test/manifest.json": "ce7dfdb17f70e1dbaff33ccef1c61674ab59ab47208f25f2356d42f683130387",
+        "project_notes/experiments/deepseek-v2-initial-test/summary.json": "04db7d64bc564276bd0fbb4a1f452ac1d6f4b1b62ed0d9c36446e8aa8051b469"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "deepseek-v2-selected-test",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 90
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 30,
+      "execution_status_counts": {
+        "completed": 90
+      },
+      "arms": {
+        "unspecified": {
+          "records": 90,
+          "scored_records": 90,
+          "sum_scores": 80.0
+        }
+      },
+      "summary_path": "project_notes/experiments/deepseek-v2-selected-test/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/deepseek-v2-selected-test/tasks.jsonl": "9cffb8d043522bbf7ab2d1d21d908e522698d2f9efa7e132b20ccdf7f5a8aec2",
+        "project_notes/experiments/deepseek-v2-selected-test/manifest.json": "fd2ea2cce32b2856948880e09445835a24546d3d587d7099a0ed6e3d8759a6b0",
+        "project_notes/experiments/deepseek-v2-selected-test/summary.json": "acd22756079fa9c03cef9fe4680dbb2ba2ca7e92daff1385acb15bace3c052f1"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "deepseek-v2-blind-review",
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/evaluations/deepseek-v2-blind-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/deepseek-v2-blind-review/manifest.json": "a2510ba17d0d3b21dee7ccaf13863060a72f8fea96f8f3770d416566bcfa524a",
+        "project_notes/evaluations/deepseek-v2-blind-review/summary.json": "fc068e11bd7f0cf34778cd981c9c6a7022cfb19926bc470fe195625fa0d18528"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "closure-development-v1",
+      "code_commit": "c5f4cb8b67b3299f8c4291f375ac245eab214c1b",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 20
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 12,
+        "execution_failure": 8
+      },
+      "arms": {
+        "unspecified": {
+          "records": 20,
+          "scored_records": 20,
+          "sum_scores": 12.0
+        }
+      },
+      "summary_path": "project_notes/experiments/closure-development-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/closure-development-v1/tasks.jsonl": "93d4356156ef9bc66426b7ed8bd5cdc89921750ee163754db8c4dccc8fa9fe74",
+        "project_notes/experiments/closure-development-v1/manifest.json": "bbafe43d4752750e7ff74d39ad0cc980201941e00d3b79ed6f27485edb161216",
+        "project_notes/experiments/closure-development-v1/summary.json": "a048b58011b2e4eeb2ec502950bf290ec5199c79daed8a2c84e9808183589c6c"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "closure-development-v2",
+      "code_commit": "c5f4cb8b67b3299f8c4291f375ac245eab214c1b",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 40
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 40
+      },
+      "arms": {
+        "unspecified": {
+          "records": 40,
+          "scored_records": 40,
+          "sum_scores": 34.0
+        }
+      },
+      "summary_path": "project_notes/experiments/closure-development-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/closure-development-v2/tasks.jsonl": "e1019fa576ef1ec8452417e4c8b6db004b83ff20cf6b5e18a8f4e439a014de3b",
+        "project_notes/experiments/closure-development-v2/manifest.json": "fd07d22bf03fc613ce24d0e67911fcfbf5b755bb720e8bb51f2850db971bf3b9",
+        "project_notes/experiments/closure-development-v2/summary.json": "9342e5777b6ae992b3f212426a68b1033c533ab835692b91357e1e4ee1411f56"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "closure-acceptance",
+      "code_commit": "c5f4cb8b67b3299f8c4291f375ac245eab214c1b",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 120
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 120
+      },
+      "arms": {
+        "unspecified": {
+          "records": 120,
+          "scored_records": 120,
+          "sum_scores": 102.0
+        }
+      },
+      "summary_path": "project_notes/experiments/closure-acceptance/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/closure-acceptance/tasks.jsonl": "4e13ff5cf379f2b5fff21260d0b95460a774c5f07019b358129c09471de22f47",
+        "project_notes/experiments/closure-acceptance/manifest.json": "6d5b0ff4cd3620f971ef6a7522f37adaf316824f62e595b44b49a1ed1a01ed3d",
+        "project_notes/experiments/closure-acceptance/summary.json": "4aad69a544a6af489259c158966755687b3afb1778fa81f873f4c6408479e33b"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "closure-blind-review",
+      "code_commit": "c5f4cb8b67b3299f8c4291f375ac245eab214c1b",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 49
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 49
+      },
+      "arms": {
+        "unspecified": {
+          "records": 49,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/closure-blind-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/closure-blind-review/requests.jsonl": "34137e1aaa7b31b727ec8367ccb7d5bd75e9709bca547079e2a6083af36fc961",
+        "project_notes/evaluations/closure-blind-review/manifest.json": "04ae17e27b0bbf8e7fe0434ecbeb9f5f085949a177b6752256e5ec556e370371",
+        "project_notes/evaluations/closure-blind-review/summary.json": "06d3db914ed3548ee1f7806acd3e7c402d743159f511002e06f02df04afee6c1"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "closure-gepa",
+      "code_commit": "5a4fbc0d4bd346acb3a3b2a8e2d08aa68260f416",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 46,
+        "reflections.jsonl": 8
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 46
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 8,
+          "scored_records": 8,
+          "sum_scores": 8.0
+        },
+        "5167452442606c9397ea": {
+          "records": 10,
+          "scored_records": 10,
+          "sum_scores": 10.0
+        },
+        "0b502fe24743a5a7aca9": {
+          "records": 10,
+          "scored_records": 10,
+          "sum_scores": 10.0
+        },
+        "8d95375984a7ca874768": {
+          "records": 18,
+          "scored_records": 18,
+          "sum_scores": 18.0
+        }
+      },
+      "summary_path": "project_notes/optimization/closure-gepa/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/closure-gepa/evaluations.jsonl": "19728840178d9473a8ff4aba51ebb396cc3e7a940a08a8a3f1b8214a91e49bbe",
+        "project_notes/optimization/closure-gepa/reflections.jsonl": "447c16a607802db305c22f4c3ff289d51f567579f8651cca5216cb7b63766f42",
+        "project_notes/optimization/closure-gepa/manifest.json": "a9cd9ec8eb1f6605e3466dadc4144bfe547833ea2d3ab5f9f4fd1fa4e0658846",
+        "project_notes/optimization/closure-gepa/summary.json": "9ea64c5ab9abd13c7559a57065e5de81d349f7c75d1e2f271990400aa482b0d6"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "closure-gepa-compact",
+      "code_commit": "5a4fbc0d4bd346acb3a3b2a8e2d08aa68260f416",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 26,
+        "reflections.jsonl": 4
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 10,
+      "execution_status_counts": {
+        "completed": 26
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 8,
+          "scored_records": 8,
+          "sum_scores": 8.0
+        },
+        "af345d6627c771610db5": {
+          "records": 10,
+          "scored_records": 10,
+          "sum_scores": 10.0
+        },
+        "82bebb0cb6debc602ee4": {
+          "records": 8,
+          "scored_records": 8,
+          "sum_scores": 8.0
+        }
+      },
+      "summary_path": "project_notes/optimization/closure-gepa-compact/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/closure-gepa-compact/evaluations.jsonl": "5b55b046a95fad365e4db8c9331926371c8e6ac04019aef23415565f83a332a8",
+        "project_notes/optimization/closure-gepa-compact/reflections.jsonl": "7250969233268503d2744ad9b81598c50b52c808717c1f1aa17708040bb94e7d",
+        "project_notes/optimization/closure-gepa-compact/manifest.json": "a815eeb497f3d64d338d8025cb8ed161391a454fa29f0214e49b6aa153c1d9fd",
+        "project_notes/optimization/closure-gepa-compact/summary.json": "422fbe79ce19fd06a9e8706d1dece7d51a392cf376c797ef30d64a2955e7d508"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "closure-gepa-initial",
+      "code_commit": "5a4fbc0d4bd346acb3a3b2a8e2d08aa68260f416",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 36
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 36
+      },
+      "arms": {
+        "unspecified": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36.0
+        }
+      },
+      "summary_path": "project_notes/experiments/closure-gepa-initial/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/closure-gepa-initial/tasks.jsonl": "fc6923fa9886fa2b3172a5537d9f7c3d2a65c3260e0bdfc54ef8e2d4c284c0a8",
+        "project_notes/experiments/closure-gepa-initial/manifest.json": "b37a1d657649fdf82cec22b11d3c11cd6e98ec699b344a13264f652e0bc5af6c",
+        "project_notes/experiments/closure-gepa-initial/summary.json": "a170285fbf3b6f2673b9ab8c023f99178dc9cde2976a87697efe4a6fbd2d060c"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "closure-gepa-selected",
+      "code_commit": "5a4fbc0d4bd346acb3a3b2a8e2d08aa68260f416",
+      "summary_status": "complete",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 36
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 36
+      },
+      "arms": {
+        "unspecified": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36.0
+        }
+      },
+      "summary_path": "project_notes/experiments/closure-gepa-selected/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/closure-gepa-selected/tasks.jsonl": "f3f091a3b058ffd787da79dff815ea55f128d12bce292f486ff2c70fe9d1aa12",
+        "project_notes/experiments/closure-gepa-selected/manifest.json": "3d55be2345a4ea1d0b80630b6903e2eba6db4525cb7f7b97e649bebfe03cb3b7",
+        "project_notes/experiments/closure-gepa-selected/summary.json": "3180d75aa0f2ae4ed212215597d949b18d22e577c9fb037c5f970f540e5ef24f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-numeric-dev",
+      "code_commit": "b4618391c04123d7a32f24cc32889f918a99294d",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 4,
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "program_assembly": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4.0
+        },
+        "model_assembly": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 0.0
+        },
+        "model_calculation": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 1.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-numeric-dev/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-numeric-dev/plans.jsonl": "69f1ff917249cd20e7f09ce7d08b3b5081b68db0474ce048a83a9c6823d76347",
+        "project_notes/experiments/component-numeric-dev/tasks.jsonl": "46cb08b54bcf1d3b8e0ce6f2a60e0b616f097b0e53893d61e574dbebd7a2b4a2",
+        "project_notes/experiments/component-numeric-dev/manifest.json": "d53d63ad2b816ddc9072f5e4415fed6c24128e25525cbff07275a4ce1578b644",
+        "project_notes/experiments/component-numeric-dev/summary.json": "96a10b9919cb4ade63133f57565e8af59e9630ace97170a44db7c51e9c79b58a"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-numeric-dev-v2",
+      "code_commit": "b4618391c04123d7a32f24cc32889f918a99294d",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 4,
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "program_assembly": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4.0
+        },
+        "model_assembly": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4.0
+        },
+        "model_calculation": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 2.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-numeric-dev-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-numeric-dev-v2/plans.jsonl": "9b7127527dae5fdb6703071b6871d9269320f4023a80ef06fc350ce9dadb1adc",
+        "project_notes/experiments/component-numeric-dev-v2/tasks.jsonl": "71ddc0e478c90f9d6fe86330bf0c4ae08e4c7599088d6303174246dc6b2a07f9",
+        "project_notes/experiments/component-numeric-dev-v2/manifest.json": "557e0957d8070509175bb5ddc4b26ec222f7e402eb2cdcc28ddafabf531f6484",
+        "project_notes/experiments/component-numeric-dev-v2/summary.json": "1e1add46d446300e4c61388e51e84c9312ee9c3a0e5eb58953ef2a28dcb7794f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-rag-dev",
+      "code_commit": "b4618391c04123d7a32f24cc32889f918a99294d",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 1,
+        "tasks.jsonl": 5
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 1,
+      "execution_status_counts": {
+        "completed": 5
+      },
+      "arms": {
+        "baseline": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 0.0
+        },
+        "no_expansion": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "no_priority": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "improved": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "none": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-rag-dev/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-rag-dev/plans.jsonl": "baa5024125157e47805171d3be46c891a174c9a75ba36bac4e7427d00b7a9880",
+        "project_notes/experiments/component-rag-dev/tasks.jsonl": "2476b06d9e681424a467ae13229b01d18a73f5aa0fd06570b7f027848a282892",
+        "project_notes/experiments/component-rag-dev/manifest.json": "97d2536f5225ac8903def48c91c7d9e2c00a2bfe7bab0064337ec48cc33cb1ba",
+        "project_notes/experiments/component-rag-dev/summary.json": "7e398cd4d2ca104354e9353157328f737f28564007d6bdbb5adf3b5261cf12d6"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-numeric",
+      "code_commit": "00eaad671a79eb6bd949729ed1ad8db85c0e649e",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 36,
+        "tasks.jsonl": 108
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 108
+      },
+      "arms": {
+        "program_assembly": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36.0
+        },
+        "model_assembly": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36.0
+        },
+        "model_calculation": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 33.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-numeric/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-numeric/plans.jsonl": "0c179611ad41a829a8c5619838149f1f9d0731d1b5a15df55598065c9db347dd",
+        "project_notes/experiments/component-numeric/tasks.jsonl": "1e9f4e2e9e187c85383f1132d5c41baefa30ffb36d78f3aaec3e88cba279c0b9",
+        "project_notes/experiments/component-numeric/manifest.json": "8c06bb05ef840db2a1226857959d530a57d2567b559068cfaf138e890bc29c0e",
+        "project_notes/experiments/component-numeric/summary.json": "027103c9c44d40e99c4b749b00ee20c4394a3728a1994ade33d6b60ef74580d9"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-rag",
+      "code_commit": "00eaad671a79eb6bd949729ed1ad8db85c0e649e",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 24,
+        "tasks.jsonl": 120
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "completed": 120
+      },
+      "arms": {
+        "baseline": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 11.0
+        },
+        "no_expansion": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 20.0
+        },
+        "no_priority": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 20.0
+        },
+        "improved": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "none": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-rag/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-rag/plans.jsonl": "df65f58813d4949a3e440aa3ab134be72440f5bdf4510ce9100919d3ff06d0f6",
+        "project_notes/experiments/component-rag/tasks.jsonl": "18e9e9c48c76caf45f51dc4995414337ae3eda6c2163488778940b430c00b845",
+        "project_notes/experiments/component-rag/manifest.json": "b79fae4b978325c78e23c0bb14e89a3de03cb11d6a20baf25794256595a1f242",
+        "project_notes/experiments/component-rag/summary.json": "c1c27ae1c1f7c174a1eb9d5c44e77332b8092e747a4bfbba9ea25a44c6bee4db"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-rag-dev-v2",
+      "code_commit": "00eaad671a79eb6bd949729ed1ad8db85c0e649e",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 1,
+        "tasks.jsonl": 5
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 1,
+      "execution_status_counts": {
+        "completed": 5
+      },
+      "arms": {
+        "baseline": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 0.0
+        },
+        "no_expansion": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "no_priority": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "improved": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1.0
+        },
+        "none": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-rag-dev-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-rag-dev-v2/plans.jsonl": "b0512a5876d3c4436dfc48d9b21fb1afccab04f8a83988d6cc87b7a56fffde04",
+        "project_notes/experiments/component-rag-dev-v2/tasks.jsonl": "a4a7222dbcf15ebe75df4c12e92f2040db302cd92aa5839f608fa0b540570c97",
+        "project_notes/experiments/component-rag-dev-v2/manifest.json": "665fd9a261d9e045843deb71eaa1aec5c88e166e238e69243aba063a2ed5bd72",
+        "project_notes/experiments/component-rag-dev-v2/summary.json": "08ad1ff4d321e8ed57998c2986d0efa6e39369446eb755f89a02d3295d000c5f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-rag-v2",
+      "code_commit": "85eb646267c7abe22c2eac7bf96d249e316dbf45",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "plans.jsonl": 24,
+        "tasks.jsonl": 120
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "completed": 120
+      },
+      "arms": {
+        "baseline": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 10.0
+        },
+        "no_expansion": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 21.0
+        },
+        "no_priority": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "improved": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "none": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-rag-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-rag-v2/plans.jsonl": "5331658b30c5b966a44b16a76a8211b900cbdf450290099835f1517370dbf5ac",
+        "project_notes/experiments/component-rag-v2/tasks.jsonl": "1abee4b547ea6b5f0d2a03e5f5dcdac59ce8a3118484ddd0a9e133170919da1b",
+        "project_notes/experiments/component-rag-v2/manifest.json": "26dc6ee9e6cda46fc2826c477c8f36ddbed326c233d09d55acffcf49cbcef6cc",
+        "project_notes/experiments/component-rag-v2/summary.json": "1516c0f6bb9a8c0c51e4cb321a163be38226ce6c5b91bf86ab6be84c6a7fdc94"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-harness",
+      "code_commit": "85eb646267c7abe22c2eac7bf96d249e316dbf45",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "checkpoint.jsonl": 12,
+        "checkpoint_calls.jsonl": 15,
+        "repair.jsonl": 18
+      },
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": null,
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-harness/checkpoint.jsonl": "080e42bd0f9a1a5e9e71a56e206c2b307264110f6d39cb02b479617f2e4fe65d",
+        "project_notes/experiments/component-harness/checkpoint_calls.jsonl": "c22c47fb94be96d59860260d73a6389fa852b0fdfa8d87f709c98777defe72ec",
+        "project_notes/experiments/component-harness/repair.jsonl": "eda818cc03ab2a937371b8d3511d8667442abcb76e567bb1aea76d87a139d783",
+        "project_notes/experiments/component-harness/manifest.json": "a6da9bc229c7c634ca6881a0df82f254b6829d64b7ad578d8d140d2528fdffac"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "component-blind-review",
+      "code_commit": "85eb646267c7abe22c2eac7bf96d249e316dbf45",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "ratings.jsonl": 176,
+        "requests.jsonl": 122
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 122
+      },
+      "arms": {
+        "unspecified": {
+          "records": 122,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/component-blind-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/component-blind-review/ratings.jsonl": "5a1aebae6273dd1cd8c9d3c134a19903adc0ef9060740924aa21a3b1e407e500",
+        "project_notes/evaluations/component-blind-review/requests.jsonl": "f3a0e400f61dfd21040a16d870598c4a108183bc08347405c9098384fb2be1f8",
+        "project_notes/evaluations/component-blind-review/manifest.json": "a16a31673a588120f971338adf52897c3d51deff2bb6e78d8de54250f969b66d",
+        "project_notes/evaluations/component-blind-review/summary.json": "6f28a676ab0ca5dab7ca25fb74575fa84dd5fc191eeface225c6b12c1bddeb80"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-focus-repair",
+      "code_commit": "6c8a1662b1de0514f3403e46447e091690cb8c5b",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 5,
+        "tasks.jsonl": 120
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "unspecified": 120
+      },
+      "arms": {
+        "baseline": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 10.0
+        },
+        "no_expansion": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 21.0
+        },
+        "no_priority": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "improved": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "none": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-focus-repair/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-focus-repair/requests.jsonl": "32bae016f42328f2a7df8830f804088389c7e81bbbe6175173fedabbbce540aa",
+        "project_notes/experiments/component-focus-repair/tasks.jsonl": "8be8b7023854b278c0ca4ee1b17674d978355bf248c6b0ba70f76beaaf84813a",
+        "project_notes/experiments/component-focus-repair/manifest.json": "294b509738667c2aea96f04429f70aef9b59f0f9f8d217a3f32714bcd148e40e",
+        "project_notes/experiments/component-focus-repair/summary.json": "7a77daae2deed2fa7b51ad6f443e448450a8220d9524f3afd5220671b949d578"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "component-focus-review",
+      "code_commit": "6c8a1662b1de0514f3403e46447e091690cb8c5b",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "ratings.jsonl": 176,
+        "requests.jsonl": 8
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 8
+      },
+      "arms": {
+        "unspecified": {
+          "records": 8,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/component-focus-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/component-focus-review/ratings.jsonl": "1f6995b536f8c7d1dda76d2cc82a82a45aba7d958c302efa241df4577791aa4f",
+        "project_notes/evaluations/component-focus-review/requests.jsonl": "679be2dd0a7abab40622c8e873502115d89cfc9db831931fd6e39b269d2887ed",
+        "project_notes/evaluations/component-focus-review/manifest.json": "4550f51ffeaa32711ff0e25789d64bb22c867582a3e928530070418b47139866",
+        "project_notes/evaluations/component-focus-review/summary.json": "e884fed24f9eb089eb0d699ddb7ffc0592365dd727b7319c0f5591c4168f789f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "component-focus-repair-v2",
+      "code_commit": "7890f2c3271b78947768b0d656ee794f048b5cc3",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 6,
+        "tasks.jsonl": 120
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "unspecified": 120
+      },
+      "arms": {
+        "baseline": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 10.0
+        },
+        "no_expansion": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 21.0
+        },
+        "no_priority": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "improved": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24.0
+        },
+        "none": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 0.0
+        }
+      },
+      "summary_path": "project_notes/experiments/component-focus-repair-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/component-focus-repair-v2/requests.jsonl": "11855425e371432d271a44811bbee89a95497d8ef2a32da65723edc3c513ca37",
+        "project_notes/experiments/component-focus-repair-v2/tasks.jsonl": "66e0fd0d4f6624eeb71e4d48ae00e69323cfc8d90b0a1437c5bf3cd8961d7c2c",
+        "project_notes/experiments/component-focus-repair-v2/manifest.json": "5431dc7823ca6e39c785516889e9f1737c5d0d771566ca995613d1b96977e750",
+        "project_notes/experiments/component-focus-repair-v2/summary.json": "31b811550689eaa7461f356d964bc1abd8b25f62704447dc9157f822c8f623c1"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "component-focus-review-v2",
+      "code_commit": "7890f2c3271b78947768b0d656ee794f048b5cc3",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "ratings.jsonl": 176,
+        "requests.jsonl": 12
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 12
+      },
+      "arms": {
+        "unspecified": {
+          "records": 12,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/component-focus-review-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/component-focus-review-v2/ratings.jsonl": "6d34e52a8ccf582359f95e65971aecfb22b8ee0b7db4fe50cb723364056f4a8d",
+        "project_notes/evaluations/component-focus-review-v2/requests.jsonl": "9a7ea65816d28c289517fcbe00a2c39cdc1cac40e8b531ff359c8284418f59b1",
+        "project_notes/evaluations/component-focus-review-v2/manifest.json": "adc847cdf9dde48fb131cfe707f855d95c540a8339631cd35218a70688985c2e",
+        "project_notes/evaluations/component-focus-review-v2/summary.json": "e44717c436d6a58b1d290c9131fb0ee22c40acaf11d6e487b0ab677d66a74446"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-development-v1",
+      "code_commit": "d2fcca26d2e6a92cce695d46708054625769148a",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 50
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 50,
+      "execution_status_counts": {
+        "completed": 50
+      },
+      "arms": {
+        "current": {
+          "records": 50,
+          "scored_records": 50,
+          "sum_scores": 45
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-development-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-development-v1/tasks.jsonl": "c5516d2bc92c4e1fe332618731f0c52e78737663be0d647e64ae512fbaea93cb",
+        "project_notes/experiments/scope-development-v1/manifest.json": "84cadb0a1376007178fa789ff67c9597e4c6c850fe937d52c48cd36e65667ad9",
+        "project_notes/experiments/scope-development-v1/summary.json": "0e8f73ac03ed36d9430d349e4be09fca21791532e5d4d264fd797319142a8732"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-development-v2",
+      "code_commit": "d2fcca26d2e6a92cce695d46708054625769148a",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 50
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 50,
+      "execution_status_counts": {
+        "completed": 50
+      },
+      "arms": {
+        "current": {
+          "records": 50,
+          "scored_records": 50,
+          "sum_scores": 50
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-development-v2/summary.json",
+      "assessment_path": "project_notes/experiments/scope-development-v2/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/scope-development-v2/tasks.jsonl": "f40d4b7d3e5f357e7c4776da1852baabb15d44d81266d2a0b0be9f1cca931497",
+        "project_notes/experiments/scope-development-v2/manifest.json": "45c66ebc73467fc019e070020211a38b628aeb3b177a56882b99ab91202617f6",
+        "project_notes/experiments/scope-development-v2/summary.json": "0bdefa6ea2a558aaf3d62f0ab4ee35308b7b83d084d0d1960a246d71c6705f04",
+        "project_notes/experiments/scope-development-v2/assessment.json": "72742a2240f3eac0cc9492dacbb723f39d1839ade7e821eb2d803e5ce57f97ad"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "scope-evidence-v1",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 90
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 90
+      },
+      "arms": {
+        "unspecified": {
+          "records": 90,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/scope-evidence-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/scope-evidence-v1/requests.jsonl": "27cf32604addb677d9cd9de5ee409e71f5cbdc423abe7b6b317d6ab4c226706a",
+        "project_notes/evaluations/scope-evidence-v1/manifest.json": "559a2a228ce1bdff9fd76d815ff77526c8872ee466e78469be1aca704a024d7e",
+        "project_notes/evaluations/scope-evidence-v1/summary.json": "d596da68f36181e156dcd7035a3ba6e42cfb21624d33f85adb1f87fffd2d4504"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "scope-development-review",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 54
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 54
+      },
+      "arms": {
+        "unspecified": {
+          "records": 54,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/scope-development-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/scope-development-review/requests.jsonl": "a002f9c1dcc7630c9b19577a9b99056a6474f72ebc0a530f1c0e5bcfcf9d773f",
+        "project_notes/evaluations/scope-development-review/manifest.json": "f4c4e6b4231b394ca4cd8196cd06ed393d71b84044ee92c1d488df105046e593",
+        "project_notes/evaluations/scope-development-review/summary.json": "2029c7050756da477abec414f321adc2ab7886d38616e3f4d57bae60877d01be"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-retrieval-v1",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-retrieval-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-retrieval-v1/manifest.json": "cd216e2274b618625e419ac12104283584fee884f9e24cf7920f2bf888434c95",
+        "project_notes/experiments/scope-retrieval-v1/summary.json": "0e97658a8a9f451fcbdb17a3a6e9e8039940582b65c7d98445b825a763e718a3"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-retrieval-development-v2",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-retrieval-development-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-retrieval-development-v2/manifest.json": "476efab3fbd1125596fd14ced4274a5cab1f8a758c5ce4ae2c5b2f99986f8237",
+        "project_notes/experiments/scope-retrieval-development-v2/summary.json": "a98e9992fc78518d2f42c5addc3afd80c0769bc6247469cd4b566537f6d732ef"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-development-v3",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 50
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 50,
+      "execution_status_counts": {
+        "completed": 50
+      },
+      "arms": {
+        "current": {
+          "records": 50,
+          "scored_records": 50,
+          "sum_scores": 50
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-development-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-development-v3/tasks.jsonl": "721edce676dc54a10d382dd1d97715a538cc904bb5ba47cc1ac12d2797bfede0",
+        "project_notes/experiments/scope-development-v3/manifest.json": "fcf777334e03761ca063ac6708fe4674402ce94cac3058c89876d44c454745e6",
+        "project_notes/experiments/scope-development-v3/summary.json": "672006d845a1388cf1fa93753a7e1639e8a3d8859696a39875344af7f24f0e0f"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-retrieval-development-v3",
+      "code_commit": "a690103d5769c297b6efe6b735a54650aeccba52",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-retrieval-development-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-retrieval-development-v3/manifest.json": "544df8f59d3aa921da8f4b50317cf68a7cf231a520e26f66bcb34344bad5129c",
+        "project_notes/experiments/scope-retrieval-development-v3/summary.json": "d7d449c95173058def298a60b114049cbb302603a16380229348ff5f59045b4e"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-validation-v1",
+      "code_commit": "fd064f427bd92eef386aba77102d943342d2b2c8",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 86
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 50,
+      "execution_status_counts": {
+        "completed": 83,
+        "failed": 3
+      },
+      "arms": {
+        "current": {
+          "records": 50,
+          "scored_records": 50,
+          "sum_scores": 48
+        },
+        "legacy": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 34
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-validation-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-validation-v1/tasks.jsonl": "618abfd2f8e861aebdfc67a64843aa470daf4915ba517ac8f2e7cda31a48eab7",
+        "project_notes/experiments/scope-validation-v1/manifest.json": "cdebab6b7f5c22c447adc693c50e05cf32dc9e032ef3f9e7fe67f1bbee25803f",
+        "project_notes/experiments/scope-validation-v1/summary.json": "66cf584beb72503bb834f5088d1f26ea043943e266c74347a5a8d85c9df868fc"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-retrieval-final",
+      "code_commit": "fd064f427bd92eef386aba77102d943342d2b2c8",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-retrieval-final/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-retrieval-final/manifest.json": "0f5a3f9b1c79877d8bcbfc6b51c4483a78249ebb67d632eeeffec16890386f73",
+        "project_notes/experiments/scope-retrieval-final/summary.json": "6a5a0242d98896dc275f4c2e1f89df6708a481804b79ec4614b898c0a1c675d1"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-validation-v2",
+      "code_commit": "52a04c5cb1ae8139d98ff3761805c45a7eb3cf59",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 86
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 50,
+      "execution_status_counts": {
+        "completed": 84,
+        "failed": 2
+      },
+      "arms": {
+        "current": {
+          "records": 50,
+          "scored_records": 50,
+          "sum_scores": 49
+        },
+        "legacy": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 33
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-validation-v2/summary.json",
+      "assessment_path": "project_notes/experiments/scope-validation-v2/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/scope-validation-v2/tasks.jsonl": "eae93bf7fdebef1869c42b33f2319b3b581fbe90b98cd1f394b3aa215c10135b",
+        "project_notes/experiments/scope-validation-v2/manifest.json": "a2a4b8acef990d7af132f9dd6dd86affd70217f31da4f407e20e7b80c549c40f",
+        "project_notes/experiments/scope-validation-v2/summary.json": "7b74d98f3bb008d39844ad2d36772763631efb2fc3aff67dc12c100c77e6de57",
+        "project_notes/experiments/scope-validation-v2/assessment.json": "ce63e72585b15cdf90f9539f0a4375a1a30798da9c330486dee8e8431140dd63"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-retrieval-release",
+      "code_commit": "52a04c5cb1ae8139d98ff3761805c45a7eb3cf59",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-retrieval-release/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-retrieval-release/manifest.json": "70a6557c485a7c5ba25d32996a47301119c03ef35e35f9619729b91f0950b0d8",
+        "project_notes/experiments/scope-retrieval-release/summary.json": "e7fb68d2812f995cedebab395f0ffcfef9f9731178dfb47ebd81e6a187669c22"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "scope-validation-review",
+      "code_commit": "52a04c5cb1ae8139d98ff3761805c45a7eb3cf59",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 62
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 62
+      },
+      "arms": {
+        "unspecified": {
+          "records": 62,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/scope-validation-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/scope-validation-review/requests.jsonl": "2a2d4770f624ac429392e5771966c163b8dc29b1a8dc9db0cecfff6eb4ba149c",
+        "project_notes/evaluations/scope-validation-review/manifest.json": "0f95d29fdc1d825eb9941110feb02ed2043c84c58da0974e859978d1b93524f9",
+        "project_notes/evaluations/scope-validation-review/summary.json": "a359a4eff3908c12db1d04b30576fa954c127c4fe454dfd740f82238dd37b5ea"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-test-v1",
+      "code_commit": "e3f9a4003c177f44570fadc0e1fdb5a592cc3f3a",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 495
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 100,
+      "execution_status_counts": {
+        "completed": 492,
+        "failed": 3
+      },
+      "arms": {
+        "current": {
+          "records": 300,
+          "scored_records": 300,
+          "sum_scores": 294
+        },
+        "legacy": {
+          "records": 195,
+          "scored_records": 195,
+          "sum_scores": 180
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-test-v1/summary.json",
+      "assessment_path": "project_notes/experiments/scope-test-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/scope-test-v1/tasks.jsonl": "39b34092b7a7ac1d744890595ea4209cd87d01ce9ecf2cd0de9d8b3571d82b19",
+        "project_notes/experiments/scope-test-v1/manifest.json": "22c1a272bf629933321340ac2215cc785487482837612dd1b6e77930b1394665",
+        "project_notes/experiments/scope-test-v1/summary.json": "ff4ffb3975387350233b97aefc42eacf47eecd712cf73826a84748de7484110f",
+        "project_notes/experiments/scope-test-v1/assessment.json": "ea3f214f028ef9e7f003c5a4e3c7ce2c6b1de3a125bf7365e8595cb8a487fc06"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-validation-controls",
+      "code_commit": "e3f9a4003c177f44570fadc0e1fdb5a592cc3f3a",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {},
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": null,
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-validation-controls/manifest.json": "0043ba88fd2b58add9ef659b19a3165eb6dc3abe1f15ddf131caf99f22c40ac0"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-supplemental-v1",
+      "code_commit": "eec93da4f690ab8047940dd35f5ed0785a9125db",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\scope_supplemental\\test.json",
+      "ledger_records": {
+        "tasks.jsonl": 60
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 20,
+      "execution_status_counts": {
+        "completed": 60
+      },
+      "arms": {
+        "current": {
+          "records": 60,
+          "scored_records": 60,
+          "sum_scores": 60
+        }
+      },
+      "summary_path": "project_notes/experiments/scope-supplemental-v1/summary.json",
+      "assessment_path": "project_notes/experiments/scope-supplemental-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/scope-supplemental-v1/tasks.jsonl": "b00cbaca02e1e49e57ca124aa6d00b9f7f626b77d67c3483307fd2be7764cd73",
+        "project_notes/experiments/scope-supplemental-v1/manifest.json": "004ee621eedc0098e7582ce4144e5a0a03f36348621d34816c851b32477df546",
+        "project_notes/experiments/scope-supplemental-v1/summary.json": "94306d416912ecbe57ba7dd50a7c33b087b0649089052737222d9e78dde70b8f",
+        "project_notes/experiments/scope-supplemental-v1/assessment.json": "2d232d871f79ddc54b53ecdbf1104798010eb9b81b908ebb0703c95bc7f37a2e"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "scope-sdk-repair",
+      "code_commit": "eec93da4f690ab8047940dd35f5ed0785a9125db",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "repair.jsonl": 18
+      },
+      "primary_ledger": null,
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {},
+      "arms": {},
+      "summary_path": "project_notes/experiments/scope-sdk-repair/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/scope-sdk-repair/repair.jsonl": "6187b03e54f7dfc29cca7f72b9e2d13bc90f29b9ab3706382a6ee4e09c0f8e5a",
+        "project_notes/experiments/scope-sdk-repair/manifest.json": "39cc80f5166bc9b4a3840aa988a08fe7746e40f26bf4605df9d9b5e3b33542d4",
+        "project_notes/experiments/scope-sdk-repair/summary.json": "403bb6728f77b5832d16a30f59790b81cb82f8f46572dfb8b90f18d3f8c9cc4e"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "scope-test-review",
+      "code_commit": "eec93da4f690ab8047940dd35f5ed0785a9125db",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 185
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 185
+      },
+      "arms": {
+        "unspecified": {
+          "records": 185,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/scope-test-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/scope-test-review/requests.jsonl": "cf0d469501cdbf3324f2993a3d33797f2102eaefd0c3eed14088d95b75f7f389",
+        "project_notes/evaluations/scope-test-review/manifest.json": "8c443a846560ea9cb6d936ef9b744a981228a63eabd8dd3c6709edec652ac382",
+        "project_notes/evaluations/scope-test-review/summary.json": "978c0d544ac415a6d44d0e1abb4d2e2926003de959e2e95065958d4235133590"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "scope-supplemental-review",
+      "code_commit": "eec93da4f690ab8047940dd35f5ed0785a9125db",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 34
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 34
+      },
+      "arms": {
+        "unspecified": {
+          "records": 34,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/scope-supplemental-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/scope-supplemental-review/requests.jsonl": "a5a4fd28a650f3016e1c7a73354bc0861b4cd1ec9c4209fb648d8aaaba8fc1ff",
+        "project_notes/evaluations/scope-supplemental-review/manifest.json": "f6e307ec06089e959cdda88ee1b02f469735fa1679f17127d40d07f7ca401f40",
+        "project_notes/evaluations/scope-supplemental-review/summary.json": "55cc935238d0a8e709a254bb40ec8cbfb597267a685b2ae0898fd80625f49dd0"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upstream-preflight",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 2
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 1,
+      "execution_status_counts": {
+        "completed": 2
+      },
+      "arms": {
+        "current": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1
+        },
+        "upstream": {
+          "records": 1,
+          "scored_records": 1,
+          "sum_scores": 1
+        }
+      },
+      "summary_path": "project_notes/experiments/upstream-preflight/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upstream-preflight/tasks.jsonl": "1de66dceddffbc5f63b5317a7fc759b94dba204a78987333286543fb2b48796d",
+        "project_notes/experiments/upstream-preflight/manifest.json": "af18e6463fe3953197f544f87897072fc04bd2670fe8187981f0669a0ab06c81",
+        "project_notes/experiments/upstream-preflight/summary.json": "c40baed667d4cededbd784e7331ebeb913a4b14b4deea3fed88d5cb4097f5676"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v1",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 4
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 3,
+        "failed": 1
+      },
+      "arms": {
+        "after": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 3
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v1/tasks.jsonl": "078a2e56b8f7fc0d057f46e8ffd8ef9ca70b3708f07982341db74dd4b68a0b0f",
+        "project_notes/experiments/upload-development-v1/manifest.json": "1937980a5d53a32ee0b43b5d17d058769bc5906861cc2e82d1975100e1a58e0a",
+        "project_notes/experiments/upload-development-v1/summary.json": "bc1446cdbe0b05b15387ee2e2f4d94a957bafb1f63cf584cd81249660b8f0769"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v2",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 11,
+        "failed": 1
+      },
+      "arms": {
+        "after": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 11
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v2/tasks.jsonl": "677f63fbccaf89d6fa935ec79b6a02a6a8fcd02332732130415686d1bc55bd62",
+        "project_notes/experiments/upload-development-v2/manifest.json": "029a023089b85eb934884fe02ecd80a8a81fa1c9e3a8cfe205c85bfda863d1f7",
+        "project_notes/experiments/upload-development-v2/summary.json": "e3cc7268a5caf9988a0d19600571a6038b64919f668009ff9a91bd15282035a4"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v3",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "after": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 12
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v3/tasks.jsonl": "06bba2a6d911547510b9cd9b405f448e4dde089adddfcf75b295e424aee9a2f8",
+        "project_notes/experiments/upload-development-v3/manifest.json": "ba220508053e60695e9bcc7e19db24a22de0725dcd1d8e631090e3f3264b1975",
+        "project_notes/experiments/upload-development-v3/summary.json": "490c51a2a21fce67de9d395ac819cfcc0b1d57d6f4d06238066023931ba8e9e6"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "upload-development-review",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 30
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 30
+      },
+      "arms": {
+        "unspecified": {
+          "records": 30,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/upload-development-review/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/upload-development-review/requests.jsonl": "071c6b026cb55c7c844f5b12cc528cbc779808f26eec608efe5ae7844db6443a",
+        "project_notes/evaluations/upload-development-review/manifest.json": "687b7da8139bdd12de49754f1d58ff8b324a1d94faad60b88dad44d3fc79c91f",
+        "project_notes/evaluations/upload-development-review/summary.json": "2adea3d1777d346703f13330f58d22dc8861ff72f39a8942122e459d3a9a2f47"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v4",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "after": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 12
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v4/summary.json",
+      "assessment_path": "project_notes/experiments/upload-development-v4/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v4/tasks.jsonl": "6f34b42b87a29c7066dd386660a4c66594d395a6d849b08f63149f676c2c8143",
+        "project_notes/experiments/upload-development-v4/manifest.json": "9bd584cac7abc32c1b800393bb5e986d1501b07a7ebdcba0d240c865ffeff6de",
+        "project_notes/experiments/upload-development-v4/summary.json": "490c51a2a21fce67de9d395ac819cfcc0b1d57d6f4d06238066023931ba8e9e6",
+        "project_notes/experiments/upload-development-v4/assessment.json": "95b7d7332bb39b0b6ffae087c0fef8df4695d163d153ab37991ddf6116888c66"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "upload-development-review-v4",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 31
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 31
+      },
+      "arms": {
+        "unspecified": {
+          "records": 31,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/upload-development-review-v4/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/upload-development-review-v4/requests.jsonl": "6fdb0a0e85ad4cb2ebb4114654300c1637c9c986b1ee1a1cea25c517d4b6cd92",
+        "project_notes/evaluations/upload-development-review-v4/manifest.json": "1fa325eedba45f7555a6fc8abd8bb220b12c9835809cb676e23a4907a71d790e",
+        "project_notes/evaluations/upload-development-review-v4/summary.json": "de228aac2203eba04d843df58843cac234ebf2e1150e72a80762869cd3d736c4"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v5",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 4
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 4
+      },
+      "arms": {
+        "after": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v5/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v5/tasks.jsonl": "07534ae0ce3721a4ead29e35eb5a61b3064794ac8c4d83d86d5ac0bbdcf424d8",
+        "project_notes/experiments/upload-development-v5/manifest.json": "6b74b5fb10ffb637b557cf401ab507c36ac4111ac0eb24a942106661290d3fec",
+        "project_notes/experiments/upload-development-v5/summary.json": "232d62e4a86b4ad8358ba0b67362e4f606cfaf123afc3fc5673e76778e25aa60"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upstream-common-v1",
+      "code_commit": "944a59ff12d63f8bd35664bfa2b9a4ffa9dec7aa",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 60
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 10,
+      "execution_status_counts": {
+        "completed": 60
+      },
+      "arms": {
+        "current": {
+          "records": 30,
+          "scored_records": 30,
+          "sum_scores": 30
+        },
+        "upstream": {
+          "records": 30,
+          "scored_records": 30,
+          "sum_scores": 30
+        }
+      },
+      "summary_path": "project_notes/experiments/upstream-common-v1/summary.json",
+      "assessment_path": "project_notes/experiments/upstream-common-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/upstream-common-v1/tasks.jsonl": "6d00ea54aac17ad7ea8559e705faf19a62cec7f82a0d54c3635725055cdf14b5",
+        "project_notes/experiments/upstream-common-v1/manifest.json": "a10a867edc50a04e7bba7470f1f8b0dc1a8993a670efa8696e997b14ff291ba4",
+        "project_notes/experiments/upstream-common-v1/summary.json": "c7cdd1bd1310d214c5c5d0a861ba037a2cf6e8199e9b993cae62e710bf8e9f3f",
+        "project_notes/experiments/upstream-common-v1/assessment.json": "c10afbc05752b418c32406a9fc1d8ed468ec7177c79af3b520b5fbb1e6747086"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-test-v1",
+      "code_commit": "d4c87147372ff90bc234df8b8d26eac9ccd9a8e2",
+      "summary_status": null,
+      "invalidated": true,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 42
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "completed": 41,
+        "failed": 1
+      },
+      "arms": {
+        "before": {
+          "records": 14,
+          "scored_records": 14,
+          "sum_scores": 0
+        },
+        "after": {
+          "records": 14,
+          "scored_records": 14,
+          "sum_scores": 0
+        },
+        "after_old_retrieval": {
+          "records": 14,
+          "scored_records": 14,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-test-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-test-v1/tasks.jsonl": "e836a15b17d73493472ec9451e19b40385bd951dca09be3fae19c7d3e5962308",
+        "project_notes/experiments/upload-test-v1/manifest.json": "506ff9c4246385457918543e6908ee1d0fe19676bdd706df4955b2de0a0675ba",
+        "project_notes/experiments/upload-test-v1/summary.json": "01c3aac5230f72a5ac983d1522cc28871f227eab318d0cfe1f6ae09bfb2af993",
+        "project_notes/experiments/upload-test-v1/invalidated.json": "914e95835fc73f07b7ae72ba35b59a02236c145585077aa4fb3151229f0bab2d"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v6",
+      "code_commit": "d4c87147372ff90bc234df8b8d26eac9ccd9a8e2",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v2\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 9,
+        "failed": 3
+      },
+      "arms": {
+        "after": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 9
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v6/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v6/tasks.jsonl": "77e79f285c3ff85343e49aab42f1535433f98ac966011cda95d2ee55b7793dbc",
+        "project_notes/experiments/upload-development-v6/manifest.json": "f4c2a1d0267ad80bdcd8be7100325c41b46da5ee11f8d1cb8d9c72cf4b06d214",
+        "project_notes/experiments/upload-development-v6/summary.json": "1e6f2358c128f3348d1f4cf05265bccebd33d516f708c08267a23617ed91cab9"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v7",
+      "code_commit": "d4c87147372ff90bc234df8b8d26eac9ccd9a8e2",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v2\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 3
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "completed": 3
+      },
+      "arms": {
+        "after": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 1
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v7/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v7/tasks.jsonl": "cceed1bbbf053250286c570813f1b8552a2293d17aa74d3d7d805d0e0adb8025",
+        "project_notes/experiments/upload-development-v7/manifest.json": "f99c827ebf4ddf3fa46d7d7b34688cb739cdcb2c63f62cf2121892bdaaed9801",
+        "project_notes/experiments/upload-development-v7/summary.json": "6beb018b6abd8ab398b978ab2fc0528b3e085c7dbf17f028ef0e41dffd1f779b"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-development-v8",
+      "code_commit": "d4c87147372ff90bc234df8b8d26eac9ccd9a8e2",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v2\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 2
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 2,
+      "execution_status_counts": {
+        "completed": 2
+      },
+      "arms": {
+        "after": {
+          "records": 2,
+          "scored_records": 2,
+          "sum_scores": 2
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-development-v8/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-development-v8/tasks.jsonl": "65a83a5c6875245a785c3e1230ddd5752f35a8a83e871b01d54cda38ce6f574d",
+        "project_notes/experiments/upload-development-v8/manifest.json": "436e553d55f71887f9e1ae2bc21c899a7540ac30ff05b305827d8a089ede79ee",
+        "project_notes/experiments/upload-development-v8/summary.json": "efa7c9ac2629c32a360144700fa80c0779a922540df9684e740d3716c2f94703"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-test-v2",
+      "code_commit": "260a7da73ffc13708735484e5fcc2fd89ddb4fd5",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v2\\test.json",
+      "ledger_records": {
+        "tasks.jsonl": 72
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "completed": 66,
+        "failed": 6
+      },
+      "arms": {
+        "before": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 19
+        },
+        "after": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 21
+        },
+        "after_old_retrieval": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 24
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-test-v2/summary.json",
+      "assessment_path": "project_notes/experiments/upload-test-v2/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/upload-test-v2/tasks.jsonl": "a7a4c1183e77421b4400b31e40480f9c2b0a52ac578581971354a804c2052164",
+        "project_notes/experiments/upload-test-v2/manifest.json": "328fcba63ce1d8d331ec155d562d57c4fce45ee43b28522b5a7c41b1b57c3935",
+        "project_notes/experiments/upload-test-v2/summary.json": "205346aebfd1a4db0b86ece249fcc9e294dc9d87cecf30a248f3e8c59ffb1bb0",
+        "project_notes/experiments/upload-test-v2/assessment.json": "25647537408461380a777a719adae1f3c68f31af3aa5e62a6c7093057e6de3ae"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "upload-test-review-v2",
+      "code_commit": "260a7da73ffc13708735484e5fcc2fd89ddb4fd5",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 101
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 101
+      },
+      "arms": {
+        "unspecified": {
+          "records": 101,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/upload-test-review-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/upload-test-review-v2/requests.jsonl": "8df1f0dd7cda97678bf0c917debce349372f5d4313731204aae67cb5596938bd",
+        "project_notes/evaluations/upload-test-review-v2/manifest.json": "7928ee95f9977e67ba7b2c3e3bf3a95732e005c45a67a7d55e4bc4fd5955e03d",
+        "project_notes/evaluations/upload-test-review-v2/summary.json": "813d68b76b5447c44c350ef8c901c574be3f230b328fdd7008e75daac12641d3"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-table-regression-v3",
+      "code_commit": "260a7da73ffc13708735484e5fcc2fd89ddb4fd5",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v3\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 3
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 1,
+      "execution_status_counts": {
+        "completed": 3
+      },
+      "arms": {
+        "after": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 3
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-table-regression-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/experiments/upload-table-regression-v3/tasks.jsonl": "8a2b9ccf30281963edfcf0bede67517d5711e2385078fdb6ec556804c0e45d02",
+        "project_notes/experiments/upload-table-regression-v3/manifest.json": "ffde507afba209759d3879054256bd09422d55f5e16352a1da94ec4ae1029df6",
+        "project_notes/experiments/upload-table-regression-v3/summary.json": "2c1f066b1a58f183e8f25dd9e20e3876e0449adb7aaf2c331b2a271bc047b192"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "upload-table-test-v3",
+      "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\followup_v3\\test.json",
+      "ledger_records": {
+        "tasks.jsonl": 18
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "failed": 3,
+        "completed": 15
+      },
+      "arms": {
+        "before": {
+          "records": 9,
+          "scored_records": 9,
+          "sum_scores": 6
+        },
+        "after": {
+          "records": 9,
+          "scored_records": 9,
+          "sum_scores": 9
+        }
+      },
+      "summary_path": "project_notes/experiments/upload-table-test-v3/summary.json",
+      "assessment_path": "project_notes/experiments/upload-table-test-v3/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/upload-table-test-v3/tasks.jsonl": "a62e41ea64f6e5bff206e0ef58333198b224aee45f12e477c18232ca9d61fb5a",
+        "project_notes/experiments/upload-table-test-v3/manifest.json": "569e33809e3764a6d874dc5cd6583e71c099893aea93125a44632ec2bb963a0a",
+        "project_notes/experiments/upload-table-test-v3/summary.json": "d6c89c0d1463cd799e48f6dde0ead368c23ad0a9ad0b0f06e516b39db2fc06c7",
+        "project_notes/experiments/upload-table-test-v3/assessment.json": "d7f44396cdb2e9ac7ec7af497446f621299bb9cadbc46683dd2db5f7c558bf29"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "upload-table-review-v3",
+      "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 33
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 33
+      },
+      "arms": {
+        "unspecified": {
+          "records": 33,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/upload-table-review-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/upload-table-review-v3/requests.jsonl": "a0c8f5f809e85abcca95b4670cc999b1ddb341c565b21713dc4f2f46e93e432b",
+        "project_notes/evaluations/upload-table-review-v3/manifest.json": "0cc0aa999dedcda19c02747f0dc1502112ab427c7c5638b6b6f42934e56ff132",
+        "project_notes/evaluations/upload-table-review-v3/summary.json": "51cf53f42fdaea9649394f636c197352198f32c961cb3b8f3fc2bb2532d89d01"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-development-v1",
+      "code_commit": "5eb2a196bc67d050ac02285c0885668f3d5882d7",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v1\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 32
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 16,
+      "execution_status_counts": {
+        "completed": 32
+      },
+      "arms": {
+        "before": {
+          "records": 16,
+          "scored_records": 16,
+          "sum_scores": 12
+        },
+        "after": {
+          "records": 16,
+          "scored_records": 16,
+          "sum_scores": 16
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-development-v1/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-development-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-development-v1/tasks.jsonl": "16c9e533f6fc091a18b01658f34955c140625ea09f0b86d24d87c9579448aecb",
+        "project_notes/experiments/renewed-development-v1/manifest.json": "758be8afcdf2765cc11de6be85919fd0fa25f089195c5aed1ba67e3df8aa6bd9",
+        "project_notes/experiments/renewed-development-v1/summary.json": "46fc7aad78cfd207d0aa1fce4961ba24551d6735d597f808a5b64b307920ea53",
+        "project_notes/experiments/renewed-development-v1/assessment.json": "7b1c5138ebb4598af628a38b00f642fdd91269b2e5b38cc735d0541d00b225f6"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-development-review-v1",
+      "code_commit": "5eb2a196bc67d050ac02285c0885668f3d5882d7",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 56
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 56
+      },
+      "arms": {
+        "unspecified": {
+          "records": 56,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-development-review-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-development-review-v1/requests.jsonl": "a2b6cf39ebf3423e483a94062bde67259d9868ac77685de2be1cab825baf755d",
+        "project_notes/evaluations/renewed-development-review-v1/manifest.json": "801a7b2f9bcda77e148382e428722eeada6c13832bd472ce3ebdafcda179fd11",
+        "project_notes/evaluations/renewed-development-review-v1/summary.json": "3549db9236714619fdc7b26e0b27e3303bb250124bca41575fb57336d6fdba9b"
+      }
+    },
+    {
+      "area": "optimization",
+      "run_id": "renewed-gepa-v1",
+      "code_commit": "5eb2a196bc67d050ac02285c0885668f3d5882d7",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "evaluations.jsonl": 92,
+        "reflections.jsonl": 6
+      },
+      "primary_ledger": "evaluations.jsonl",
+      "unique_recorded_case_ids": 14,
+      "execution_status_counts": {
+        "completed": 92
+      },
+      "arms": {
+        "fe469ea3117b5677be55": {
+          "records": 34,
+          "scored_records": 34,
+          "sum_scores": 34
+        },
+        "f269d83a1d486afee7c4": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 12
+        },
+        "c4d319c7d66d7155ea18": {
+          "records": 46,
+          "scored_records": 46,
+          "sum_scores": 46
+        }
+      },
+      "summary_path": "project_notes/optimization/renewed-gepa-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/optimization/renewed-gepa-v1/evaluations.jsonl": "f7d1f5da68c95892c7ac314f3de05a0462a24e74a59fcf235b47c84b095f6646",
+        "project_notes/optimization/renewed-gepa-v1/reflections.jsonl": "cba87a2ad56a29870875d9e943f5f26caadb0a0970a4c103a9d3f25545d96e7c",
+        "project_notes/optimization/renewed-gepa-v1/manifest.json": "8e878ea05713270f75fd9c5fdb7a6151ec5fc720bf73c4c29c011a4212250c25",
+        "project_notes/optimization/renewed-gepa-v1/summary.json": "e062d77710649e23da63d53fec4b552a36b42b03dae172cd3482f71046ce2ac2"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-acceptance-v1",
+      "code_commit": "f9184fc4eb10e14709854cc9e8fcbc607720d43e",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v1\\acceptance.json",
+      "ledger_records": {
+        "tasks.jsonl": 144
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 12,
+      "execution_status_counts": {
+        "completed": 144
+      },
+      "arms": {
+        "before": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 27
+        },
+        "after": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36
+        },
+        "optimized": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36
+        },
+        "after_old_retrieval": {
+          "records": 36,
+          "scored_records": 36,
+          "sum_scores": 36
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-acceptance-v1/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-acceptance-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-acceptance-v1/tasks.jsonl": "ba34163489ce20fe85a5b088ecf43437335d7e29ed31cc1395a561ca74c985c6",
+        "project_notes/experiments/renewed-acceptance-v1/manifest.json": "c8701e0f1a30aff5573ee388b474ce5c3fb7b057608a6c1214f1da705bc2c5f7",
+        "project_notes/experiments/renewed-acceptance-v1/summary.json": "3a81072fe9e295d33e9bc73f6ef45712a7e177661e3d05943b2c46eb475a5bd1",
+        "project_notes/experiments/renewed-acceptance-v1/assessment.json": "9b7363ecda1e2d56a714484dd20d5cfe1d72e38941fb6a338bdefd2dcf4b5f1f"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-acceptance-review-v1",
+      "code_commit": "4d8703880b6aba4da43e2c0b3ac0a810613eda22",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 107
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 107
+      },
+      "arms": {
+        "unspecified": {
+          "records": 107,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-acceptance-review-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-acceptance-review-v1/requests.jsonl": "a26209c4aa66478fe352928108747a7e716aa634f638bed830f9427df7c67104",
+        "project_notes/evaluations/renewed-acceptance-review-v1/manifest.json": "9d45daea5c1b660ff01297bbd5d9e79c98c69e747dc8f7aa2a8a6309d6325d8a",
+        "project_notes/evaluations/renewed-acceptance-review-v1/summary.json": "f70168a9629b4e697901c0bad5e8ed0317992fd9343ba651ab8ba8e883d8b6f5"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-evidence-development-v2",
+      "code_commit": "cdf2a033d6a5fbeb125b5e7d946e343176d84523",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v2\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 12
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 3,
+      "execution_status_counts": {
+        "completed": 12
+      },
+      "arms": {
+        "before": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 3
+        },
+        "after": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 3
+        },
+        "optimized": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 3
+        },
+        "after_old_retrieval": {
+          "records": 3,
+          "scored_records": 3,
+          "sum_scores": 3
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-evidence-development-v2/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-evidence-development-v2/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-evidence-development-v2/tasks.jsonl": "e45c694d673231f892007124662c1b79a6cd698f8a18049b14107a5396880558",
+        "project_notes/experiments/renewed-evidence-development-v2/manifest.json": "4f284dfffa3528c1891d6ed2eacd8e0a7e55a269d7cecd836e2b9a73afa20a64",
+        "project_notes/experiments/renewed-evidence-development-v2/summary.json": "7a50682442952599b0de4dd66fbc35b364e532578804fb82ad9408252a73e945",
+        "project_notes/experiments/renewed-evidence-development-v2/assessment.json": "992433d34aef1bf6735cf1ad75bb6783fe4f771e135838cf367b2a04d8c0e945"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-evidence-development-review-v2",
+      "code_commit": "cdf2a033d6a5fbeb125b5e7d946e343176d84523",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 38
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 38
+      },
+      "arms": {
+        "unspecified": {
+          "records": 38,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-evidence-development-review-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-evidence-development-review-v2/requests.jsonl": "8de09a2439e16d3450db8c0c6230b3c21d8696cf3552f331ca454c3b4cb15f9e",
+        "project_notes/evaluations/renewed-evidence-development-review-v2/manifest.json": "8cef828ab04b46afd84fc3cd8f1be438dbe0e796e3c443d70656111074b4fe35",
+        "project_notes/evaluations/renewed-evidence-development-review-v2/summary.json": "1a8fd4da0f14cde767d8dcf2374cd3d386edd276b391c180361646dac52e6ab5"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-evidence-test-v2",
+      "code_commit": "9437bcb9183f6e699b33a940c5cd3d50a896348a",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v2\\test.json",
+      "ledger_records": {
+        "tasks.jsonl": 96
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 8,
+      "execution_status_counts": {
+        "completed": 96
+      },
+      "arms": {
+        "before": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 18
+        },
+        "after": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 18
+        },
+        "optimized": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 18
+        },
+        "after_old_retrieval": {
+          "records": 24,
+          "scored_records": 24,
+          "sum_scores": 18
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-evidence-test-v2/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-evidence-test-v2/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-evidence-test-v2/tasks.jsonl": "e9da820072162a57ea2c3b3aa2ef349e9e31a772466a43a14011400db39d702e",
+        "project_notes/experiments/renewed-evidence-test-v2/manifest.json": "32989c15f4d2fb504a008c891c28a1054bdb66bd47b981098ba13d458d764dce",
+        "project_notes/experiments/renewed-evidence-test-v2/summary.json": "182908a284c6e20403b1594b75953ec60acc6e3e28feff73c1ef89043cfb773e",
+        "project_notes/experiments/renewed-evidence-test-v2/assessment.json": "a282a32f76b14be1d9182c524c12b411231b07f190a2d4c151d1e5b44f5c58ec"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-evidence-review-v2",
+      "code_commit": "9437bcb9183f6e699b33a940c5cd3d50a896348a",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 118
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 118
+      },
+      "arms": {
+        "unspecified": {
+          "records": 118,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-evidence-review-v2/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-evidence-review-v2/requests.jsonl": "6b137b9dccd0fde3c4bec3c2da3abc2be12bb0c31167811f03643623f6158c9a",
+        "project_notes/evaluations/renewed-evidence-review-v2/manifest.json": "46c5d6ec4eb60caca0827a07cf2942f666aa76b13e9a8af6910fa22614024f53",
+        "project_notes/evaluations/renewed-evidence-review-v2/summary.json": "9b6cca49a70087e6f81f56f0df75dec267c4be71fa7e1f16f9e430df4f622dcc"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-planner-development-v3",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v3\\development.json",
+      "ledger_records": {
+        "tasks.jsonl": 16
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 16
+      },
+      "arms": {
+        "before": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 2
+        },
+        "after": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4
+        },
+        "optimized": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4
+        },
+        "after_old_retrieval": {
+          "records": 4,
+          "scored_records": 4,
+          "sum_scores": 4
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-planner-development-v3/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-planner-development-v3/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-planner-development-v3/tasks.jsonl": "9b396bbc2d143a7221c6d9d4775c58c6f5dd3a710eeaddfb028447b4392c3132",
+        "project_notes/experiments/renewed-planner-development-v3/manifest.json": "7bcac07e3322ac7af784fafe9b651b5e99be52c976078ea154475f7785acd88f",
+        "project_notes/experiments/renewed-planner-development-v3/summary.json": "8ca52a2acebe09830347a3759771087ac56cf5feb72137c8ca199813f3dbca26",
+        "project_notes/experiments/renewed-planner-development-v3/assessment.json": "3463e76c9854094c0fa600e56ebefbbd1109a0dfbefeaf0e6d3c5811fcc81367"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-planner-development-review-v3",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 44
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 44
+      },
+      "arms": {
+        "unspecified": {
+          "records": 44,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-planner-development-review-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-planner-development-review-v3/requests.jsonl": "339de716f8e9617f079d021dd4cc2514d7c9de79b822c009517d0b52a8c262ea",
+        "project_notes/evaluations/renewed-planner-development-review-v3/manifest.json": "5ac64d659709817f2df8f5cbe7771a12fe3bc484152f7934e90a2d48b1396550",
+        "project_notes/evaluations/renewed-planner-development-review-v3/summary.json": "4d32d2d29a8f1232eddc19a43db00429f55eaf8c777a86a1c28967e5b5214fe9"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-planner-test-v3",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": null,
+      "invalidated": false,
+      "dataset_path": "data\\evaluation\\renewed_v3\\test.json",
+      "ledger_records": {
+        "tasks.jsonl": 48
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 4,
+      "execution_status_counts": {
+        "completed": 46,
+        "failed": 2
+      },
+      "arms": {
+        "before": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 4
+        },
+        "after": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 12
+        },
+        "optimized": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 12
+        },
+        "after_old_retrieval": {
+          "records": 12,
+          "scored_records": 12,
+          "sum_scores": 10
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-planner-test-v3/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-planner-test-v3/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-planner-test-v3/tasks.jsonl": "b2182d175673d96a580ffb62eeb9174fcd7ed2cf833778de9badf07d939e985d",
+        "project_notes/experiments/renewed-planner-test-v3/manifest.json": "44d617516862b90f05b58cd373f212e0e5a376cd924d7a65f5c1da3025468ef1",
+        "project_notes/experiments/renewed-planner-test-v3/summary.json": "c49c54a32fcb11348399aa937540467e4eadd342fd33a24c9c94b4846edf4dc1",
+        "project_notes/experiments/renewed-planner-test-v3/assessment.json": "4d51353ea3ca9ff12fdf23d2df7df8f3d73ba327dd40427a25c6ab93d8a49562"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-planner-review-v3",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 63
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 63
+      },
+      "arms": {
+        "unspecified": {
+          "records": 63,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-planner-review-v3/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-planner-review-v3/requests.jsonl": "32121940ed5010c30629dfb052b92bde872270acfdaacde444b7c74acf534662",
+        "project_notes/evaluations/renewed-planner-review-v3/manifest.json": "5f27809a4eeebbd8d8fb379250a41dbca6f908e960e5e0e9b5287c57c0eceacf",
+        "project_notes/evaluations/renewed-planner-review-v3/summary.json": "5d144f43d08fff7f0cc98d286e5d63d227e2e5679b85f636c224a310ff748810"
+      }
+    },
+    {
+      "area": "experiments",
+      "run_id": "renewed-regression-v1",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "tasks.jsonl": 100
+      },
+      "primary_ledger": "tasks.jsonl",
+      "unique_recorded_case_ids": 100,
+      "execution_status_counts": {
+        "completed": 100
+      },
+      "arms": {
+        "current": {
+          "records": 100,
+          "scored_records": 100,
+          "sum_scores": 100
+        }
+      },
+      "summary_path": "project_notes/experiments/renewed-regression-v1/summary.json",
+      "assessment_path": "project_notes/experiments/renewed-regression-v1/assessment.json",
+      "source_sha256": {
+        "project_notes/experiments/renewed-regression-v1/tasks.jsonl": "cdf2562b61df223a622e10158c79da9b5addc24391d29a5e49cb72bf32763595",
+        "project_notes/experiments/renewed-regression-v1/manifest.json": "15224e38965a66765f7d06276b74e4534968b3f1eab1c03b3159ae64a1b6cb7c",
+        "project_notes/experiments/renewed-regression-v1/summary.json": "21cc2b195ca24c823159c4bd0b4d445f22c54b1eb130beb1fe035e2259aafb16",
+        "project_notes/experiments/renewed-regression-v1/assessment.json": "bc1f6a38735d05b05f06cd4504f08e0057c70436e87f920b5a4a93a4e6f4aa0e"
+      }
+    },
+    {
+      "area": "evaluations",
+      "run_id": "renewed-regression-review-v1",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de",
+      "summary_status": "completed",
+      "invalidated": false,
+      "dataset_path": null,
+      "ledger_records": {
+        "requests.jsonl": 96
+      },
+      "primary_ledger": "requests.jsonl",
+      "unique_recorded_case_ids": null,
+      "execution_status_counts": {
+        "unspecified": 96
+      },
+      "arms": {
+        "unspecified": {
+          "records": 96,
+          "scored_records": 0,
+          "sum_scores": 0
+        }
+      },
+      "summary_path": "project_notes/evaluations/renewed-regression-review-v1/summary.json",
+      "assessment_path": null,
+      "source_sha256": {
+        "project_notes/evaluations/renewed-regression-review-v1/requests.jsonl": "0faa3b2ced39dee2b9f0817359104c41dd72dbfd3da7c163592a3cb445019334",
+        "project_notes/evaluations/renewed-regression-review-v1/manifest.json": "82f87d1c816107e717c0e81aa2f18956abf1ab1ff3b6bf34fdba872d1381a42f",
+        "project_notes/evaluations/renewed-regression-review-v1/summary.json": "6c130d1fb6b81ba5ea5a8f25574f5a0354f65a80f983c8f19c86f8dd35aa0c18"
+      }
+    }
+  ],
+  "verification_records": [
+    {
+      "path": "project_notes/run_logs/checkpoint_audit.json",
+      "sha256": "160862ea62f0dfbababf970de50a1251cba3d6d2ca010fd05563609d8c3888e4",
+      "run_id": "checkpoint",
+      "status": null,
+      "code_commit": "0c1e868636512c0feacd809e4d64d8a8d3ca88de"
+    },
+    {
+      "path": "project_notes/run_logs/closure_delivery.json",
+      "sha256": "289b302d36e1a9f3243dc8a16f47a7db5515ce1e28f725e9fb0d851a4d44e486",
+      "run_id": "closure-delivery",
+      "status": "passed",
+      "code_commit": "c5f4cb8b67b3299f8c4291f375ac245eab214c1b"
+    },
+    {
+      "path": "project_notes/run_logs/closure_pdf_review.json",
+      "sha256": "5c64363682721552b9d915850cea24a47d305bff2c4414715486b59dc3941db2",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/closure_release_audit.json",
+      "sha256": "06ffc3796c629c4876beb1ecc0757cbfc2de5be259a796cdabd2e927183aab10",
+      "run_id": null,
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/closure_semantic_review.json",
+      "sha256": "1bdbe2039235459e239627f77f4c2d9fedb6e6e89d9ab015afe687be0358a945",
+      "run_id": "closure-semantic-review",
+      "status": "confirmed_request_normalization_defects",
+      "code_commit": "5f81c0ebf55a075493103dacb5a9bb30d621fbae"
+    },
+    {
+      "path": "project_notes/run_logs/closure_tests.json",
+      "sha256": "19049adfd4f97642b19a6504ebdd1cb96b9e7ff4255e491c1b2fa3bf4a4ba72a",
+      "run_id": null,
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/component_tests.json",
+      "sha256": "101b0fd1c8650bd4813137cd6d216e4b9fd5802291345cfaefc4f9944734e48e",
+      "run_id": null,
+      "status": "passed",
+      "code_commit": "7890f2c3271b78947768b0d656ee794f048b5cc3"
+    },
+    {
+      "path": "project_notes/run_logs/contextual_index.json",
+      "sha256": "06d2fe7fc0d3abc9b74b74c92710d259efe716ea0d4ed018a6f7a12f60d55de1",
+      "run_id": "contextual-index-v1",
+      "status": null,
+      "code_commit": "d2fcca26d2e6a92cce695d46708054625769148a"
+    },
+    {
+      "path": "project_notes/run_logs/dashboard_language_checks.json",
+      "sha256": "ca354bfb243b069b0d537c4b7dee99b5df55376395640c7804353f05acf2573d",
+      "run_id": "dashboard-language",
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/dashboard_quality_checks.json",
+      "sha256": "7d88ab0e1f646a9a2eecab42bea4795199dcc271f0088f920358b463368bfab2",
+      "run_id": "dashboard-quality",
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/dashboard_reinspection.json",
+      "sha256": "572d566fe7362f06fe1efda624f5455ab7a2676f74755d21060760da2ff300dd",
+      "run_id": "dashboard-reinspection",
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/dashboard_ui_checks.json",
+      "sha256": "cede24272776cbfe5872cf42c8ba8efc1105eef998219ad62b9c6e9c92a917cb",
+      "run_id": "dashboard-macaron",
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/experiment_tests.json",
+      "sha256": "a41ebe12b84dcb2970cdb141b20dc69c3aa3f7861e515f651ec630e94a65704a",
+      "run_id": "regression",
+      "status": null,
+      "code_commit": "a8937da2acd6280ed84b186cdd3d4184253ce189"
+    },
+    {
+      "path": "project_notes/run_logs/final_delivery.json",
+      "sha256": "542ff380241c8cc50064838fec40227abffefc27611af29ce1eba4018f1e3559",
+      "run_id": "final_delivery",
+      "status": "passed",
+      "code_commit": "0adb737f5bb32157579672331655fe2822d46763"
+    },
+    {
+      "path": "project_notes/run_logs/final_release_checks.json",
+      "sha256": "dbf5a2b9700b1ce4d33e6c643d8a15ec05aefef919242103f89a9a9d7767a19c",
+      "run_id": "final-release-checks",
+      "status": "passed_with_external_dependencies",
+      "code_commit": "1aaa8720a9062c54722b2077937785656a5e58ef"
+    },
+    {
+      "path": "project_notes/run_logs/financial_analysis.json",
+      "sha256": "68d59d5ef52511340ec076f682ce3b5026dfa38602139ed2d2b5ef0a55af110f",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/fmp_legacy_probe.json",
+      "sha256": "b3e02118f5d2b619ebd59fdde8483a82b27b997c4244f52f830f187907bca580",
+      "run_id": "fmp-readiness",
+      "status": "endpoint_probe_failed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/fmp_readiness.json",
+      "sha256": "e9abd91270e34b4912d05ff6d976d9f5ad5b9215f56616926abad1178893a1b6",
+      "run_id": "fmp-readiness",
+      "status": "waiting_for_fmp_key",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/fmp_stable_access.json",
+      "sha256": "a9ec9af2f25eedae076fb0362be303dbba06220ba2a2955e3940364f00c2ea28",
+      "run_id": "fmp-stable-access",
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/fmp_stable_delivery_checks.json",
+      "sha256": "aed973ceb84abfee46e7788aee1ed6274e5619e5e891c549d19528b2d61facec",
+      "run_id": "fmp-stable-delivery-checks",
+      "status": "passed",
+      "code_commit": "a9435bd64388636e6dfd61383da4aa2fde474c35"
+    },
+    {
+      "path": "project_notes/run_logs/fmp_stable_offline.json",
+      "sha256": "7e8ccd96e09d79eb98b8499530e41ca4d6a0385e1a52550e2bd97f89846531b0",
+      "run_id": "fmp-stable-offline",
+      "status": "passed",
+      "code_commit": "513116ed56ed4d9aa6afb2b0fcf25399c1e84c7e"
+    },
+    {
+      "path": "project_notes/run_logs/fmp_stable_report.json",
+      "sha256": "b7cf46c6ccc60966d898b8df4bc9e6a33ba6c395e4ce2312611e7068f68f7216",
+      "run_id": "fmp_stable_report",
+      "status": "passed_numeric_report",
+      "code_commit": "513116ed56ed4d9aa6afb2b0fcf25399c1e84c7e"
+    },
+    {
+      "path": "project_notes/run_logs/followup_delivery.json",
+      "sha256": "3a8c61172c3769017fc0fd5f8c65c6b37ddc6e8021c98176698b7601c7433d68",
+      "run_id": "followup_delivery",
+      "status": "passed",
+      "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731"
+    },
+    {
+      "path": "project_notes/run_logs/followup_interface_checks.json",
+      "sha256": "9c3ea0ec792f038d88999f4aa1fda30816f00f0afe029138692531a101f62a25",
+      "run_id": "followup-interface",
+      "status": null,
+      "code_commit": "d4c87147372ff90bc234df8b8d26eac9ccd9a8e2"
+    },
+    {
+      "path": "project_notes/run_logs/followup_pdf_visual_review.json",
+      "sha256": "14b33d44cfd0d5f3af66a665b117d0041e077bdd6868b9e5cb410c60fc1a13fe",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/followup_regression_checks.json",
+      "sha256": "a32cc22c1a2c6c43092cb7622ab05cc05faab87fb40a9d37b84d91e5e75727bb",
+      "run_id": "followup-regression",
+      "status": null,
+      "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731"
+    },
+    {
+      "path": "project_notes/run_logs/followup_release_audit.json",
+      "sha256": "6beb022b22688d583da788a58de33c4da36ec1caca2d61628f15d985bf7fa4d0",
+      "run_id": "followup-release-audit",
+      "status": "passed",
+      "code_commit": "7d8511d5cd7b8c2be326dd0a98ebe66825973731"
+    },
+    {
+      "path": "project_notes/run_logs/general_workflow.json",
+      "sha256": "1eb8f895e1f7b67b22a00c107cab5db021584a3a78f61dd21df6011d7500dbd3",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/initial_completion_release_reaudit.json",
+      "sha256": "972428bde86d6c6496ea4ab8241d4947627d6ca68754bf8e76d7a9a20bb14028",
+      "run_id": "initial-completion-release-reaudit",
+      "status": "passed",
+      "code_commit": "0adb737f5bb32157579672331655fe2822d46763"
+    },
+    {
+      "path": "project_notes/run_logs/m1_upstream_smoke.json",
+      "sha256": "c1b9394c24e5522808441f75ba338c909cb69d5e6924c82510c3dab5a11acf5d",
+      "run_id": "m1-local-baseline",
+      "status": null,
+      "code_commit": "2717499b8e30f242640af08c4ad9afd1113c2d45"
+    },
+    {
+      "path": "project_notes/run_logs/model_verification.json",
+      "sha256": "c2a0b1582ec48fcd65a1bc148769c721100c46c7a1fb55c09c4da4fc17e3be85",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/pdf_visual_review.json",
+      "sha256": "490a4d1d65b1ba91bfc9436d66dd51d3549b792a19b7d3696cddeca30889aca4",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/release_audit.json",
+      "sha256": "6f1dac54c030e5ba83477a70f54d09f54d6a8946f8ebe5efad0ccb1f543b58ea",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/renewed_delivery.json",
+      "sha256": "cb97d0d06c768bccf3b950e4c34a6fb2392a2784681078bdd6695dd5784a121c",
+      "run_id": "renewed_delivery",
+      "status": "passed",
+      "code_commit": "44c7252e54d3f6cfda547f7c8e21c298676921de"
+    },
+    {
+      "path": "project_notes/run_logs/renewed_interface_checks.json",
+      "sha256": "e4356004f452e8e155210d3716808147d43b92e8cd22a7c14dc02e5ab3c179ad",
+      "run_id": "renewed-interface-checks",
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/renewed_pdf_visual_review.json",
+      "sha256": "1e36f133f3ee819e8c957a5b55536036ec632e93c8ba1f501486fa53c3d51746",
+      "run_id": null,
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/renewed_planner_audit.json",
+      "sha256": "ffb8e875a8dc29f8f1d77df26190d9d1dc3cb9654c75d902b1d7cea341cae74b",
+      "run_id": "renewed-planner-audit",
+      "status": null,
+      "code_commit": "5ce8403da58fb8cae9ea7b6b949c965a381dfbd9"
+    },
+    {
+      "path": "project_notes/run_logs/renewed_planner_preservation_replay.json",
+      "sha256": "65a746b5f8c29a9529fc349a2263ada81d8b140ca9416b1614a97d0099e71dc5",
+      "run_id": "renewed-planner-preservation-replay",
+      "status": "passed",
+      "code_commit": "5ce8403da58fb8cae9ea7b6b949c965a381dfbd9"
+    },
+    {
+      "path": "project_notes/run_logs/renewed_release_audit.json",
+      "sha256": "652ec33b2a83ef432a317aa86dfde712a00f6cb242a7a7b5763ed1ddce7c7e21",
+      "run_id": "renewed-release-audit",
+      "status": "passed",
+      "code_commit": "5ce8403da58fb8cae9ea7b6b949c965a381dfbd9"
+    },
+    {
+      "path": "project_notes/run_logs/renewed_semantic_replay.json",
+      "sha256": "77e22abd0cd8a10721c753e00a589fd6a2472427211e2d66c74ac1e753d69f02",
+      "run_id": "renewed-semantic-replay",
+      "status": "passed",
+      "code_commit": "f9184fc4eb10e14709854cc9e8fcbc607720d43e"
+    },
+    {
+      "path": "project_notes/run_logs/scope_annotation_initial_error.json",
+      "sha256": "56ccdbc0d2d0c8691317ed26ca70327ad652e221dc3ede3427e2f1e91cb1b84e",
+      "run_id": "scope-evidence-initial-json-probe",
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/scope_delivery_v1.json",
+      "sha256": "1fc7a7b4cc9850e3bd2f0ea8ea5089e2f0c16273534f50969fa7f0455d66e8c5",
+      "run_id": "scope_delivery_v1",
+      "status": "passed",
+      "code_commit": "52a04c5cb1ae8139d98ff3761805c45a7eb3cf59"
+    },
+    {
+      "path": "project_notes/run_logs/scope_pdf_visual_review.json",
+      "sha256": "3a5ba883455004a7f32335db7fc3fe0013efb5bd9beb83fc4505c51bde3483c1",
+      "run_id": null,
+      "status": "passed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/scope_release_audit.json",
+      "sha256": "0c0df83f80f55cae1774f52ea432c2bee756f34f2ccf0183ccb7ba28c1304cd6",
+      "run_id": "scope-release-audit",
+      "status": "passed",
+      "code_commit": "04156faa74ea88b936d67f9f824a8a46778cc4e8"
+    },
+    {
+      "path": "project_notes/run_logs/scope_sdk_smoke.json",
+      "sha256": "8da61a1aa3dca72c8dda700acb560fabea5823302bea0b861d329b4f19f288cc",
+      "run_id": "scope-sdk-smoke-v1",
+      "status": "passed",
+      "code_commit": "d2fcca26d2e6a92cce695d46708054625769148a"
+    },
+    {
+      "path": "project_notes/run_logs/scope_source_audit.json",
+      "sha256": "7812f375878299cf59204b5eed5f2fd8194f1197bd97ad25be7ede22a37f1360",
+      "run_id": "scope-source-audit",
+      "status": "passed",
+      "code_commit": "52a04c5cb1ae8139d98ff3761805c45a7eb3cf59"
+    },
+    {
+      "path": "project_notes/run_logs/scope_usage.json",
+      "sha256": "a0ecb70c84cc763c4905a2881581f588937dd897cc8fc973eddf45a310378aee",
+      "run_id": null,
+      "status": "completed",
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/web_question_smoke.json",
+      "sha256": "bdd9c2495b5b6b6eff83ea5cdcd841bd42e4de003a4a35544091665f516cd1c0",
+      "run_id": null,
+      "status": null,
+      "code_commit": null
+    },
+    {
+      "path": "project_notes/run_logs/workflow_smoke.json",
+      "sha256": "119209aae354b3abb288c2b6d4b1a85c47a471159a7a1d3389bb4c19af96a4e5",
+      "run_id": null,
+      "status": "complete",
+      "code_commit": null
+    }
+  ],
+  "directory_counts": {
+    "optimization": 8,
+    "experiments": 67,
+    "evaluations": 21
+  },
+  "recorded_task_rows": 2827,
+  "recorded_optimization_evaluations": 337,
+  "recorded_reflection_attempts": 16,
+  "recorded_evaluation_response_rows": 1333,
+  "invalidated_run_ids": [
+    "upload-test-v1"
+  ],
+  "invalidation_marker_policy": "Only explicit invalidated.json markers; superseded execution statuses remain unchanged",
+  "datasets": {
+    "split_files": [
+      {
+        "path": "data/evaluation/closure/acceptance.json",
+        "records": 20,
+        "sha256": "146381cbb8961673918ca76acf4cce073859f483bc5f8280b2584d3cef2b2f80"
+      },
+      {
+        "path": "data/evaluation/closure/development.json",
+        "records": 20,
+        "sha256": "34271de9617256c26bcf371a84fc57779b5bebef15cf8167e8bf733692fead3f"
+      },
+      {
+        "path": "data/evaluation/closure/gepa_acceptance.json",
+        "records": 12,
+        "sha256": "66c0a8584b95f7d9340516cad5ca895df0f0d2310d3c601b1e8a30cb81cda1ae"
+      },
+      {
+        "path": "data/evaluation/development.json",
+        "records": 30,
+        "sha256": "1d956cc8387aa229aa0aef120c4491cf23f25d89e66c6aea682a85b71e04f984"
+      },
+      {
+        "path": "data/evaluation/followup_v1/common.json",
+        "records": 10,
+        "sha256": "3ec676f6be5812e620e75720815a6537f56bbc5d0c78a4e44e362821ba776f01"
+      },
+      {
+        "path": "data/evaluation/followup_v1/development.json",
+        "records": 4,
+        "sha256": "15505a3e6bad3c7319886e877d737b278e161e082a74fd2676ba086080dd76ef"
+      },
+      {
+        "path": "data/evaluation/followup_v1/test.json",
+        "records": 8,
+        "sha256": "1efe9a99ccdb761d0c74635de8359772dd96a8296d715b30d220970cdb83cecc"
+      },
+      {
+        "path": "data/evaluation/followup_v2/development.json",
+        "records": 12,
+        "sha256": "244f4c330b2e035fd624c70f08dc0809a85eb9272d871e2b9054707c01a73bec"
+      },
+      {
+        "path": "data/evaluation/followup_v2/test.json",
+        "records": 8,
+        "sha256": "465a37ddaec609257e58cc77289279a456093167cff4a63c30444c0dde6bb278"
+      },
+      {
+        "path": "data/evaluation/followup_v3/development.json",
+        "records": 1,
+        "sha256": "22432c34fb32d803b0c6e4f52ebf7e5159b75b0cfe1827908371128d0593766b"
+      },
+      {
+        "path": "data/evaluation/followup_v3/test.json",
+        "records": 3,
+        "sha256": "6bbdc1c51ab5a135c9ef842b2cae1769d5c36f83ae2ff23877cc34b1e8bfe1e8"
+      },
+      {
+        "path": "data/evaluation/renewed_v1/acceptance.json",
+        "records": 12,
+        "sha256": "ca2697c2ed16fd28710ae212d609dc14a6e1c99d193a56eeecdc8f82bf146198"
+      },
+      {
+        "path": "data/evaluation/renewed_v1/development.json",
+        "records": 16,
+        "sha256": "46e28cd0fbed83bf8e8f5a2e497464e7b03aa23105d28624044ee034e5dce016"
+      },
+      {
+        "path": "data/evaluation/renewed_v1/validation.json",
+        "records": 8,
+        "sha256": "989b159cc4aa8b34ae8570b4b803c6500fe00a4ffb2044bfa0aaa0c3704c3f2c"
+      },
+      {
+        "path": "data/evaluation/renewed_v2/development.json",
+        "records": 36,
+        "sha256": "2bbc5facc7640a749eb671aafcd92cedad7eb9d4d59a343e479b8d21ac93e22c"
+      },
+      {
+        "path": "data/evaluation/renewed_v2/test.json",
+        "records": 8,
+        "sha256": "e8c177bcf460dc74a734253b0799aa22e350142c0cd6784a37ca7f9b0a030cfa"
+      },
+      {
+        "path": "data/evaluation/renewed_v3/development.json",
+        "records": 44,
+        "sha256": "31d51263b948655c416883a5f888c39a727a442b40bc4d56fed0c11204f3b9da"
+      },
+      {
+        "path": "data/evaluation/renewed_v3/test.json",
+        "records": 4,
+        "sha256": "9c75242a200d367fdf530e4099462e76174465c43f371112f2f25929fae81942"
+      },
+      {
+        "path": "data/evaluation/scope_supplemental/test.json",
+        "records": 20,
+        "sha256": "771f943116e3949366fe105c804d69119d102da72c07597d67219cce546f19a5"
+      },
+      {
+        "path": "data/evaluation/scope_v3/development.json",
+        "records": 50,
+        "sha256": "e4a06db67060db6c5b47cd55cc9df44f25f5b04c57266a70a5beb43af480ce97"
+      },
+      {
+        "path": "data/evaluation/scope_v3/test.json",
+        "records": 100,
+        "sha256": "0660436900694aeda000682293668e6857d154b6b9ca152ef9aaf6beb503a2ac"
+      },
+      {
+        "path": "data/evaluation/scope_v3/validation.json",
+        "records": 50,
+        "sha256": "12e93af5151f9ee19bb55e74752ef1893c8ecad0a906bb83ea723f119599d1dd"
+      },
+      {
+        "path": "data/evaluation/test.json",
+        "records": 30,
+        "sha256": "c94f01ec727500dd12b173782b9aba10f95c9372fd42b540b720c479d0a312b2"
+      },
+      {
+        "path": "data/evaluation/v2/development.json",
+        "records": 30,
+        "sha256": "0dd14b4b588486a7acdf5f2bbccf83b261156efb888493ea144b8a5b16accbea"
+      },
+      {
+        "path": "data/evaluation/v2/test.json",
+        "records": 30,
+        "sha256": "9e8810318e03808cea51a4bbf0bcf2f8b994bef5d75f69e58670ccec373703c6"
+      },
+      {
+        "path": "data/evaluation/v2/validation.json",
+        "records": 20,
+        "sha256": "8a0ec469a49d730ba0bf18b0911149478d73df47f47fb1e8b640ea5aa26b09ba"
+      },
+      {
+        "path": "data/evaluation/validation.json",
+        "records": 20,
+        "sha256": "34d8648c8b5a26d404efa303d43c93b555296d742e81417ed8f2cf13618edad7"
+      }
+    ],
+    "unique_task_ids": 429,
+    "exact_question_strings": 498,
+    "semantic_independence_claimed": false
+  },
+  "usage": {
+    "canonical_entries": 3946,
+    "models": {
+      "deepseek-flash": {
+        "entries": 3940,
+        "requests": 6643,
+        "input_tokens": 9280288,
+        "output_tokens": 1278912,
+        "total_tokens": 10559200,
+        "priced_entries": 3940,
+        "estimated_usd_lower": "0.795188064",
+        "estimated_usd_upper": "4.3187808",
+        "pricing_status": "priced"
+      },
+      "glm-4.7-flash": {
+        "entries": 6,
+        "requests": 10,
+        "input_tokens": 3233,
+        "output_tokens": 1086,
+        "total_tokens": 4319,
+        "priced_entries": 0,
+        "estimated_usd_lower": "0",
+        "estimated_usd_upper": "0",
+        "pricing_status": "unpriced"
+      }
+    },
+    "groups": {
+      "formal_v2": {
+        "entries": 8,
+        "requests": 1615,
+        "input_tokens": 2573819,
+        "output_tokens": 509929,
+        "total_tokens": 3083748,
+        "priced_entries": 8,
+        "estimated_usd_lower": "0.313678857",
+        "estimated_usd_upper": "1.3840605",
+        "pricing_status": "priced"
+      },
+      "closure": {
+        "entries": 384,
+        "requests": 545,
+        "input_tokens": 595426,
+        "output_tokens": 75071,
+        "total_tokens": 670497,
+        "priced_entries": 384,
+        "estimated_usd_lower": "0.046828878",
+        "estimated_usd_upper": "0.2687130",
+        "pricing_status": "priced"
+      },
+      "components": {
+        "entries": 650,
+        "requests": 609,
+        "input_tokens": 728430,
+        "output_tokens": 113806,
+        "total_tokens": 842236,
+        "priced_entries": 650,
+        "estimated_usd_lower": "0.070468890",
+        "estimated_usd_upper": "0.3550962",
+        "pricing_status": "priced"
+      },
+      "scope": {
+        "entries": 1326,
+        "requests": 1674,
+        "input_tokens": 2026102,
+        "output_tokens": 216252,
+        "total_tokens": 2242354,
+        "priced_entries": 1326,
+        "estimated_usd_lower": "0.135829506",
+        "estimated_usd_upper": "0.8673330",
+        "pricing_status": "priced"
+      },
+      "dashboard": {
+        "entries": 5,
+        "requests": 9,
+        "input_tokens": 9925,
+        "output_tokens": 1215,
+        "total_tokens": 11140,
+        "priced_entries": 5,
+        "estimated_usd_lower": "0.000758775",
+        "estimated_usd_upper": "0.0044355",
+        "pricing_status": "priced"
+      },
+      "provider_checks": {
+        "entries": 11,
+        "requests": 16,
+        "input_tokens": 4315,
+        "output_tokens": 1284,
+        "total_tokens": 5599,
+        "priced_entries": 5,
+        "estimated_usd_lower": "0.000122046",
+        "estimated_usd_upper": "0.0005622",
+        "pricing_status": "partially_priced"
+      },
+      "workflow_checks": {
+        "entries": 5,
+        "requests": 15,
+        "input_tokens": 21008,
+        "output_tokens": 3835,
+        "total_tokens": 24843,
+        "priced_entries": 5,
+        "estimated_usd_lower": "0.002364024",
+        "estimated_usd_upper": "0.0109044",
+        "pricing_status": "priced"
+      },
+      "final_delivery": {
+        "entries": 13,
+        "requests": 18,
+        "input_tokens": 20441,
+        "output_tokens": 2004,
+        "total_tokens": 22445,
+        "priced_entries": 13,
+        "estimated_usd_lower": "0.001263723",
+        "estimated_usd_upper": "0.0085371",
+        "pricing_status": "priced"
+      },
+      "upload-development-v1": {
+        "entries": 4,
+        "requests": 11,
+        "input_tokens": 19213,
+        "output_tokens": 2314,
+        "total_tokens": 21527,
+        "priced_entries": 4,
+        "estimated_usd_lower": "0.001446039",
+        "estimated_usd_upper": "0.0085407",
+        "pricing_status": "priced"
+      },
+      "upload-development-v2": {
+        "entries": 12,
+        "requests": 28,
+        "input_tokens": 46478,
+        "output_tokens": 7435,
+        "total_tokens": 53913,
+        "priced_entries": 12,
+        "estimated_usd_lower": "0.004600434",
+        "estimated_usd_upper": "0.0228654",
+        "pricing_status": "priced"
+      },
+      "upload-development-v3": {
+        "entries": 12,
+        "requests": 27,
+        "input_tokens": 43938,
+        "output_tokens": 5591,
+        "total_tokens": 49529,
+        "priced_entries": 12,
+        "estimated_usd_lower": "0.003486414",
+        "estimated_usd_upper": "0.0198906",
+        "pricing_status": "priced"
+      },
+      "upload-development-v4": {
+        "entries": 12,
+        "requests": 28,
+        "input_tokens": 46671,
+        "output_tokens": 5846,
+        "total_tokens": 52517,
+        "priced_entries": 12,
+        "estimated_usd_lower": "0.003647613",
+        "estimated_usd_upper": "0.0210165",
+        "pricing_status": "priced"
+      },
+      "upload-development-v5": {
+        "entries": 4,
+        "requests": 9,
+        "input_tokens": 14766,
+        "output_tokens": 1827,
+        "total_tokens": 16593,
+        "priced_entries": 4,
+        "estimated_usd_lower": "0.001140498",
+        "estimated_usd_upper": "0.0066222",
+        "pricing_status": "priced"
+      },
+      "upload-development-v6": {
+        "entries": 12,
+        "requests": 28,
+        "input_tokens": 46959,
+        "output_tokens": 5521,
+        "total_tokens": 52480,
+        "priced_entries": 12,
+        "estimated_usd_lower": "0.003453477",
+        "estimated_usd_upper": "0.0207129",
+        "pricing_status": "priced"
+      },
+      "upload-development-v7": {
+        "entries": 3,
+        "requests": 8,
+        "input_tokens": 13811,
+        "output_tokens": 1578,
+        "total_tokens": 15389,
+        "priced_entries": 3,
+        "estimated_usd_lower": "0.000988233",
+        "estimated_usd_upper": "0.0060369",
+        "pricing_status": "priced"
+      },
+      "upload-development-v8": {
+        "entries": 2,
+        "requests": 6,
+        "input_tokens": 10703,
+        "output_tokens": 1411,
+        "total_tokens": 12114,
+        "priced_entries": 2,
+        "estimated_usd_lower": "0.000878709",
+        "estimated_usd_upper": "0.0049041",
+        "pricing_status": "priced"
+      },
+      "upload-table-regression-v3": {
+        "entries": 3,
+        "requests": 6,
+        "input_tokens": 10152,
+        "output_tokens": 1676,
+        "total_tokens": 11828,
+        "priced_entries": 3,
+        "estimated_usd_lower": "0.001036056",
+        "estimated_usd_upper": "0.0050568",
+        "pricing_status": "priced"
+      },
+      "upload-table-test-v3": {
+        "entries": 18,
+        "requests": 39,
+        "input_tokens": 69079,
+        "output_tokens": 8350,
+        "total_tokens": 77429,
+        "priced_entries": 18,
+        "estimated_usd_lower": "0.005217237",
+        "estimated_usd_upper": "0.0307437",
+        "pricing_status": "priced"
+      },
+      "upload-test-v1": {
+        "entries": 42,
+        "requests": 91,
+        "input_tokens": 138673,
+        "output_tokens": 13930,
+        "total_tokens": 152603,
+        "priced_entries": 42,
+        "estimated_usd_lower": "0.008774019",
+        "estimated_usd_upper": "0.0583179",
+        "pricing_status": "priced"
+      },
+      "upload-test-v2": {
+        "entries": 72,
+        "requests": 162,
+        "input_tokens": 253647,
+        "output_tokens": 30447,
+        "total_tokens": 284094,
+        "priced_entries": 72,
+        "estimated_usd_lower": "0.019029141",
+        "estimated_usd_upper": "0.1126305",
+        "pricing_status": "priced"
+      },
+      "upstream-common-v1": {
+        "entries": 60,
+        "requests": 60,
+        "input_tokens": 49464,
+        "output_tokens": 18722,
+        "total_tokens": 68186,
+        "priced_entries": 60,
+        "estimated_usd_lower": "0.011381592",
+        "estimated_usd_upper": "0.0373056",
+        "pricing_status": "priced"
+      },
+      "upstream-preflight": {
+        "entries": 2,
+        "requests": 2,
+        "input_tokens": 1648,
+        "output_tokens": 701,
+        "total_tokens": 2349,
+        "priced_entries": 2,
+        "estimated_usd_lower": "0.000425544",
+        "estimated_usd_upper": "0.0013356",
+        "pricing_status": "priced"
+      },
+      "renewed-acceptance-v1": {
+        "entries": 144,
+        "requests": 240,
+        "input_tokens": 337566,
+        "output_tokens": 36898,
+        "total_tokens": 374464,
+        "priced_entries": 144,
+        "estimated_usd_lower": "0.023151498",
+        "estimated_usd_upper": "0.1455474",
+        "pricing_status": "priced"
+      },
+      "renewed-development-v1": {
+        "entries": 32,
+        "requests": 52,
+        "input_tokens": 73852,
+        "output_tokens": 7720,
+        "total_tokens": 81572,
+        "priced_entries": 32,
+        "estimated_usd_lower": "0.004853556",
+        "estimated_usd_upper": "0.0314196",
+        "pricing_status": "priced"
+      },
+      "renewed-evidence-development-v2": {
+        "entries": 12,
+        "requests": 24,
+        "input_tokens": 36270,
+        "output_tokens": 4381,
+        "total_tokens": 40651,
+        "priced_entries": 12,
+        "estimated_usd_lower": "0.002737410",
+        "estimated_usd_upper": "0.0161382",
+        "pricing_status": "priced"
+      },
+      "renewed-evidence-test-v2": {
+        "entries": 96,
+        "requests": 206,
+        "input_tokens": 340158,
+        "output_tokens": 42734,
+        "total_tokens": 382892,
+        "priced_entries": 96,
+        "estimated_usd_lower": "0.026660874",
+        "estimated_usd_upper": "0.1533282",
+        "pricing_status": "priced"
+      },
+      "renewed-planner-development-v3": {
+        "entries": 16,
+        "requests": 32,
+        "input_tokens": 52404,
+        "output_tokens": 6468,
+        "total_tokens": 58872,
+        "priced_entries": 16,
+        "estimated_usd_lower": "0.004038012",
+        "estimated_usd_upper": "0.0234828",
+        "pricing_status": "priced"
+      },
+      "renewed-planner-test-v3": {
+        "entries": 48,
+        "requests": 100,
+        "input_tokens": 147253,
+        "output_tokens": 18544,
+        "total_tokens": 165797,
+        "priced_entries": 48,
+        "estimated_usd_lower": "0.011568159",
+        "estimated_usd_upper": "0.0664287",
+        "pricing_status": "priced"
+      },
+      "renewed-regression-v1": {
+        "entries": 100,
+        "requests": 142,
+        "input_tokens": 213205,
+        "output_tokens": 19785,
+        "total_tokens": 232990,
+        "priced_entries": 100,
+        "estimated_usd_lower": "0.012510615",
+        "estimated_usd_upper": "0.0877035",
+        "pricing_status": "priced"
+      },
+      "upload-development-review": {
+        "entries": 30,
+        "requests": 30,
+        "input_tokens": 60834,
+        "output_tokens": 4392,
+        "total_tokens": 65226,
+        "priced_entries": 30,
+        "estimated_usd_lower": "0.002817702",
+        "estimated_usd_upper": "0.0235206",
+        "pricing_status": "priced"
+      },
+      "upload-development-review-v4": {
+        "entries": 31,
+        "requests": 31,
+        "input_tokens": 62056,
+        "output_tokens": 4364,
+        "total_tokens": 66420,
+        "priced_entries": 31,
+        "estimated_usd_lower": "0.002804568",
+        "estimated_usd_upper": "0.0238536",
+        "pricing_status": "priced"
+      },
+      "upload-table-review-v3": {
+        "entries": 33,
+        "requests": 33,
+        "input_tokens": 55501,
+        "output_tokens": 3955,
+        "total_tokens": 59456,
+        "priced_entries": 33,
+        "estimated_usd_lower": "0.002539503",
+        "estimated_usd_upper": "0.0213963",
+        "pricing_status": "priced"
+      },
+      "upload-test-review-v2": {
+        "entries": 101,
+        "requests": 101,
+        "input_tokens": 163683,
+        "output_tokens": 16625,
+        "total_tokens": 180308,
+        "priced_entries": 101,
+        "estimated_usd_lower": "0.010466049",
+        "estimated_usd_upper": "0.0690549",
+        "pricing_status": "priced"
+      },
+      "renewed-acceptance-review-v1": {
+        "entries": 107,
+        "requests": 107,
+        "input_tokens": 183990,
+        "output_tokens": 15870,
+        "total_tokens": 199860,
+        "priced_entries": 107,
+        "estimated_usd_lower": "0.010073970",
+        "estimated_usd_upper": "0.0742410",
+        "pricing_status": "priced"
+      },
+      "renewed-development-review-v1": {
+        "entries": 56,
+        "requests": 56,
+        "input_tokens": 82494,
+        "output_tokens": 7491,
+        "total_tokens": 89985,
+        "priced_entries": 56,
+        "estimated_usd_lower": "0.004742082",
+        "estimated_usd_upper": "0.0337374",
+        "pricing_status": "priced"
+      },
+      "renewed-evidence-development-review-v2": {
+        "entries": 38,
+        "requests": 38,
+        "input_tokens": 54430,
+        "output_tokens": 4497,
+        "total_tokens": 58927,
+        "priced_entries": 38,
+        "estimated_usd_lower": "0.002861490",
+        "estimated_usd_upper": "0.0217254",
+        "pricing_status": "priced"
+      },
+      "renewed-evidence-review-v2": {
+        "entries": 118,
+        "requests": 118,
+        "input_tokens": 198464,
+        "output_tokens": 18719,
+        "total_tokens": 217183,
+        "priced_entries": 118,
+        "estimated_usd_lower": "0.011826792",
+        "estimated_usd_upper": "0.0820020",
+        "pricing_status": "priced"
+      },
+      "renewed-planner-development-review-v3": {
+        "entries": 44,
+        "requests": 44,
+        "input_tokens": 68330,
+        "output_tokens": 5737,
+        "total_tokens": 74067,
+        "priced_entries": 44,
+        "estimated_usd_lower": "0.003647190",
+        "estimated_usd_upper": "0.0273834",
+        "pricing_status": "priced"
+      },
+      "renewed-planner-review-v3": {
+        "entries": 63,
+        "requests": 63,
+        "input_tokens": 90668,
+        "output_tokens": 8474,
+        "total_tokens": 99142,
+        "priced_entries": 63,
+        "estimated_usd_lower": "0.005356404",
+        "estimated_usd_upper": "0.0373692",
+        "pricing_status": "priced"
+      },
+      "renewed-regression-review-v1": {
+        "entries": 96,
+        "requests": 96,
+        "input_tokens": 159710,
+        "output_tokens": 14849,
+        "total_tokens": 174559,
+        "priced_entries": 96,
+        "estimated_usd_lower": "0.009388530",
+        "estimated_usd_upper": "0.0657318",
+        "pricing_status": "priced"
+      },
+      "renewed-gepa-v1": {
+        "entries": 95,
+        "requests": 95,
+        "input_tokens": 102780,
+        "output_tokens": 4815,
+        "total_tokens": 107595,
+        "priced_entries": 95,
+        "estimated_usd_lower": "0.003197340",
+        "estimated_usd_upper": "0.0366120",
+        "pricing_status": "priced"
+      },
+      "followup_delivery": {
+        "entries": 13,
+        "requests": 18,
+        "input_tokens": 23045,
+        "output_tokens": 1974,
+        "total_tokens": 25019,
+        "priced_entries": 13,
+        "estimated_usd_lower": "0.001253535",
+        "estimated_usd_upper": "0.0092823",
+        "pricing_status": "priced"
+      },
+      "renewed_delivery": {
+        "entries": 13,
+        "requests": 21,
+        "input_tokens": 32160,
+        "output_tokens": 2961,
+        "total_tokens": 35121,
+        "priced_entries": 13,
+        "estimated_usd_lower": "0.001873080",
+        "estimated_usd_upper": "0.0132012",
+        "pricing_status": "priced"
+      }
+    },
+    "known_requests": 6653,
+    "known_tokens": 10563519,
+    "known_priced_usd_lower": "0.795188064",
+    "known_priced_usd_upper": "4.3187808",
+    "unknown_usage": {
+      "project_costs.json": {
+        "formal_v2": {
+          "records": 1,
+          "partial_observed_tokens": 6224
+        },
+        "closure": {
+          "records": 9,
+          "partial_observed_tokens": 7893
+        },
+        "components": {
+          "records": 0,
+          "partial_observed_tokens": 0
+        },
+        "scope": {
+          "records": 2,
+          "partial_observed_tokens": null
+        },
+        "provider_checks": {
+          "records": 11,
+          "unrecorded_usage": [
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "tool-run-01"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "structured-run-01"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "structured-run-02"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "structured-run-03"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "upstream-run-01"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "minimal-run-02"
+            },
+            {
+              "source": "project_notes/run_logs/model_verification.json",
+              "run_id": "minimal-run-03"
+            },
+            {
+              "source": "project_notes/run_logs/financial_analysis.json",
+              "run_id": "analysis-run-01"
+            },
+            {
+              "source": "project_notes/run_logs/financial_analysis.json",
+              "run_id": "analysis-run-02"
+            },
+            {
+              "source": "project_notes/run_logs/financial_analysis.json",
+              "run_id": "analysis-run-03"
+            },
+            {
+              "source": "project_notes/run_logs/financial_analysis.json",
+              "run_id": "analysis-run-04"
+            }
+          ]
+        }
+      },
+      "followup_costs.json": [
+        {
+          "source": "project_notes/experiments/upload-test-v1/invalidated.json",
+          "possible_in_flight_request": true,
+          "usage": null,
+          "reason": "The process was stopped; an in-flight response may not have been recorded"
+        }
+      ]
+    },
+    "invoice_cost": null,
+    "source_sha256": {
+      "project_notes/evaluations/project_costs.json": "1e5dfc09cebd137c0584990719c0182e76614c5b01247d7e25dbf2c558402168",
+      "project_notes/evaluations/followup_costs.json": "8ba780bfeeee8ff39c57119d1e644b2c38354aa0f21a85ad32f83e7a5da98469"
+    },
+    "deduplication": "source path and canonical record identity; aggregate ledgers retained as authoritative"
+  },
+  "financial_data": {
+    "metric_records": 63,
+    "unique_fact_ids": 48,
+    "main_2022_2024_fact_ids": 45,
+    "source_catalogue_records": {
+      "filing_sources.json": 15,
+      "acceptance_sources.json": 9
+    }
+  },
+  "counting_policy": "Execution rows, optimization evaluations and review responses are distinct; do not sum them as independent questions"
+}

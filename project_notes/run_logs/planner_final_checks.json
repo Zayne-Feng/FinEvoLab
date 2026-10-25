@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "staged_files": 228,
+  "byte_verified_files": 192,
+  "full_regression_tests": 158,
+  "full_regression_seconds": 14.961,
+  "receipts": {
+    "planner_delivery_audit": "a5af17f55d004a82096cd7062e2ae2c0916c8f336160aedc94e5bfcfa0ab5848",
+    "planner_offline_checks": "f7c6a938fffad9a7c24bab53e715b8551c9411b61d7fdf0daee0f327eb766dcd",
+    "planner_web_live": "d02b39cc575bf16c336dea709d6bd46d1e19a9e1e18e02c80655faa894c2a3be",
+    "planner_web_mock": "920acbaa8fc690517e01337cb45f49f69c6df18d270da3eb68218bc35d0d98ab",
+    "planner_frontend_main": "0a9dad44c9e9b99600a991ba6a9edde0a86e3348dd5ce30db3a87ee10e869486",
+    "planner_frontend_quality": "a6c14ce5158b63ee79e3dab3eb6da7b74daca4b5bfffa6ff98d08c194c1e59b3",
+    "planner_frontend_language": "3ec6a7f1583edf7791fb419e8d6fc2aeb8f39d43a8b936ba354e64585d3377dd",
+    "planner_frontend_http": "41016e51b5c6590b5545c49abe8b10e4db2b9ccb6358d223e409ac30e7208c2b",
+    "planner_frontend_language_http": "5ce390609f139f49bebb9ff41a8551c42054a0f109cf8a2170ba6704da562b5e",
+    "planner_browser_checks": "a8d31a591882ecd0f477271a71fb6652c21a9564d15f95550011a804548a3fbf"
+  },
+  "credentials_staged": false,
+  "legal_files_changed": false
+}

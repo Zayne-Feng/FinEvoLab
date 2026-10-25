@@ -1,0 +1,181 @@
+{
+    "status": "completed",
+    "planner_runs": [
+        {
+            "run_id": "planner-base-test",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 40,
+            "tokens": 53509,
+            "unknown_usage": 0,
+            "manifest_sha256": "cab41168eab4fcd3b352fb111cc6f4e929281a39ba2a034c02629545c3c4d7e4",
+            "predictions_sha256": "2140a04588132050e5c3a245aa1719aabd27e9b3beb85f8f0fb133faa110036b"
+        },
+        {
+            "run_id": "planner-base-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 40,
+            "tokens": 53498,
+            "unknown_usage": 0,
+            "manifest_sha256": "9e338b35ce09fe40df5a5c7e7e7a17bdb1b25239e464a1eb7c6483ff93d6b33f",
+            "predictions_sha256": "7dd16cba9786b095d2eb5f9d1d410ea944f8e2ec348f5624befeb15ed8209c8c"
+        },
+        {
+            "run_id": "planner-deepseek-test",
+            "backend": "api",
+            "model": "deepseek-flash",
+            "requests": 40,
+            "tokens": 52484,
+            "unknown_usage": 0,
+            "manifest_sha256": "b05b840912ba843587677038a43a0825c31fc65eb569e081e4e3740d8a8bfbb8",
+            "predictions_sha256": "f2bebcdcd70da2c6d81851cfc78b5dafadcd525c2290b8e60549de0310219405"
+        },
+        {
+            "run_id": "planner-deepseek-validation",
+            "backend": "api",
+            "model": "deepseek-flash",
+            "requests": 40,
+            "tokens": 52485,
+            "unknown_usage": 0,
+            "manifest_sha256": "b63fa78874adb8231d66eed542fab9e939a551275b234104eb5ad6fb42634c76",
+            "predictions_sha256": "59c45b37bcd54efecdaf4ebd78be3a5098eab8e3cc8b0536ddbcf5ea164b8792"
+        },
+        {
+            "run_id": "planner-formal-base-test",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 240,
+            "tokens": 321491,
+            "unknown_usage": 0,
+            "manifest_sha256": "42e6a177fd95ee164691af2d9d7b745005ec4dd49cc150b53820ee4ccc8c1c01",
+            "predictions_sha256": "fdd146a5c97d62fb5005d80569fea03aa0fc4825d5f1c5c3768bcce326bbc308"
+        },
+        {
+            "run_id": "planner-formal-base-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 120,
+            "tokens": 160464,
+            "unknown_usage": 0,
+            "manifest_sha256": "328826475577851feb2bd07d15d600582c09ad130e7242d3ec6c51c06d0cc6b1",
+            "predictions_sha256": "da256d015689048043e9b81292da71a105c8a6f3ae1e750f65b480c018410f99"
+        },
+        {
+            "run_id": "planner-formal-deepseek-test",
+            "backend": "api",
+            "model": "deepseek-flash",
+            "requests": 240,
+            "tokens": 315346,
+            "unknown_usage": 0,
+            "manifest_sha256": "fbb8e10b236038d84819864d03fc715a9916f6a4575001cddd274615ad859f0a",
+            "predictions_sha256": "675213216ff8171550b89b7d91d63428e082975c7e358b2c2cb85dfc13197bff"
+        },
+        {
+            "run_id": "planner-formal-deepseek-validation",
+            "backend": "api",
+            "model": "deepseek-flash",
+            "requests": 120,
+            "tokens": 157490,
+            "unknown_usage": 0,
+            "manifest_sha256": "bd91201b5325e617271d2e2c519f5ab50b018a9d3bd13514c27c7bd85c88573f",
+            "predictions_sha256": "000868ed8bbb1dee439f924552536efd33d8d2308145c5635ca4a5d1779004e6"
+        },
+        {
+            "run_id": "planner-formal-lora17-epoch1-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 120,
+            "tokens": 156992,
+            "unknown_usage": 0,
+            "manifest_sha256": "3af2b0093a25236281b828cc2ee5b58deadecf8108a92742a24e0ef2afd91068",
+            "predictions_sha256": "ec50fbdf216b7cd8ed49250773deddbd6c419beefefa4e4bf9962f71055cebee"
+        },
+        {
+            "run_id": "planner-formal-lora17-epoch2-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 120,
+            "tokens": 156992,
+            "unknown_usage": 0,
+            "manifest_sha256": "0fd3097c4b5908b98bf28f597a425dae386d7c38ee11360db6ded86b21b150d0",
+            "predictions_sha256": "dc4ef6e849f4e1f078bb590481fa06d19e76311c046e76ad2c9f31f0a60fe25a"
+        },
+        {
+            "run_id": "planner-formal-lora17-test",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 240,
+            "tokens": 314436,
+            "unknown_usage": 0,
+            "manifest_sha256": "23675aad3ec12c19c535abb5218d490f42472d7e41cd157101681d1bec3ce220",
+            "predictions_sha256": "4ab1f6ee461e1686feca0f3754220e96e6021c4a5da0232805805ea16b3b72eb"
+        },
+        {
+            "run_id": "planner-formal-lora29-epoch1-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 120,
+            "tokens": 156924,
+            "unknown_usage": 0,
+            "manifest_sha256": "ce02a4bd2fd5225964d48bb45644264262b03c2f45712399b1641b6f0721d6c2",
+            "predictions_sha256": "8ff062383af0e123ad1d17f8279635a9454331d9f722c4b46e42269eb0598765"
+        },
+        {
+            "run_id": "planner-formal-lora29-epoch2-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 120,
+            "tokens": 156962,
+            "unknown_usage": 0,
+            "manifest_sha256": "fca80145803d4322f0ed513347cf6f76440b070cb6274cba9e72c34cd8adf1b9",
+            "predictions_sha256": "0bd55114ebfe5539513c381fadba0a31d54a26ba15e1a11ae38a9721df2def4b"
+        },
+        {
+            "run_id": "planner-formal-lora29-test",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 240,
+            "tokens": 314332,
+            "unknown_usage": 0,
+            "manifest_sha256": "4f54d3e375969e108327946b933a44e3583b52f9b8e0406be69e39b16d82c2e4",
+            "predictions_sha256": "d15d25a01447f73c5e93ba1af925f3ab04a0b71dad2aab119b0cee903f93c0dd"
+        },
+        {
+            "run_id": "planner-lora-test",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 40,
+            "tokens": 52066,
+            "unknown_usage": 0,
+            "manifest_sha256": "18e6411f2414cd3becbe092c615a6becb8203de15ec72150990b168a2460e4be",
+            "predictions_sha256": "62c6faa2b7c4422a3fceafb874f6c45a930e322a6b131fa0f3f81933a28253c2"
+        },
+        {
+            "run_id": "planner-lora-validation",
+            "backend": "transformers",
+            "model": "Qwen/Qwen3-4B-Instruct-2507",
+            "requests": 40,
+            "tokens": 52098,
+            "unknown_usage": 0,
+            "manifest_sha256": "1fe71c96b29fb53fec0a0ce548a1f31df4497aceebeccda90026e25753bcd164",
+            "predictions_sha256": "0b9ac67c82e14447a8a6943a46b8cc8c1b4d6e36b63f260e7371f6fa32aa325b"
+        }
+    ],
+    "planner_api_requests": 440,
+    "planner_api_tokens": 577805,
+    "planner_local_requests": 1480,
+    "planner_local_tokens": 1949764,
+    "planner_unknown_usage": 0,
+    "pre_sft_known_api_requests": 6653,
+    "pre_sft_known_api_tokens": 10563519,
+    "combined_known_api_requests": 7093,
+    "combined_known_api_tokens": 11141324,
+    "combined_api_and_local_requests": 8573,
+    "combined_api_and_local_tokens": 13091088,
+    "new_api_invoice_cost": null,
+    "new_gpu_invoice_cost": null,
+    "historical_inventory_path": "project_notes/evaluations/experiment_inventory.json",
+    "historical_inventory_sha256": "0173c85202532ce56eae595120dc37d67f548355c64d0fec60df08d81b3b9857",
+    "numeric_replays_counted_as_model_requests": false
+}

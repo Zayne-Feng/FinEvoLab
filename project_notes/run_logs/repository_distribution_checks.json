@@ -1,0 +1,120 @@
+{
+  "run_id": "repository-distribution",
+  "status": "passed",
+  "base_commit": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "workspace_tests": {
+    "tests": 168,
+    "seconds": 16.24,
+    "passed": true
+  },
+  "distribution_tests": {
+    "tests": 168,
+    "seconds": 36.797,
+    "passed": true
+  },
+  "export": {
+    "path": "output\\rename_web_checks\\distribution-02",
+    "files": 2063,
+    "private_configuration_present": false,
+    "model_cache_present": false,
+    "local_markdown_files": 0,
+    "source_imported_from_copy": true,
+    "reused_local_conda_environment": true
+  },
+  "frontend": {
+    "suites": [
+      {
+        "driver": "check_dashboard.cjs",
+        "checks": 18,
+        "status": "passed"
+      },
+      {
+        "driver": "check_dashboard_quality.cjs",
+        "checks": 18,
+        "status": "passed"
+      },
+      {
+        "driver": "check_dashboard_language.cjs",
+        "checks": 12,
+        "status": "passed"
+      },
+      {
+        "driver": "check_planner_web.cjs",
+        "checks": 4,
+        "status": "passed"
+      },
+      {
+        "driver": "check_dashboard_live.cjs",
+        "checks": 37,
+        "status": "passed"
+      },
+      {
+        "driver": "check_dashboard_language_live.cjs",
+        "checks": 6,
+        "status": "passed"
+      }
+    ],
+    "checks": 95,
+    "method": "JSDOM interactions against real HTTP APIs; not a rendered-browser inspection",
+    "recent_history_reports_verified": 5
+  },
+  "rename_checks": {
+    "destinations_verified": 471,
+    "missing_files": 0,
+    "stale_code_references": 0
+  },
+  "state_file_concurrency": {
+    "attempts": 50,
+    "failures": 0,
+    "errors": [],
+    "final_json_valid": true
+  },
+  "verification_model_usage": {
+    "requests": 8,
+    "input_tokens": 9141,
+    "output_tokens": 1175,
+    "total_tokens": 10316
+  },
+  "fmp_requests": 0,
+  "gpu_requests": 0,
+  "readme_powershell_blocks": 6,
+  "source_sha256": {
+    ".gitignore": "f67f2a2452e43713b30e4dd3f033e980166232a54ebcbf3d8e246fd169211f0e",
+    "README.md": "06c46472ed4a7ae68cc8295ddd21a159c5370ac4086a408bb8ce629c4a80de9c",
+    "README_CN.md": "f700c5d86127d4e8e3aff5ee49e3cb322afdcc3f9287b20eacfe02ac00cb709d",
+    "configs/readme_sync.json": "b1a46b6ee2b49b3242f7a3421b98b2c2bbfcfb1b9f0c4c2b7ee77c0334252725",
+    "finevolab/runtime.py": "98d79d528a1716b3908bac7b9ecc04037a19490714d2070358c1eda1663c932d",
+    "finevolab/templates/dashboard.html": "c258dfb302cd8108f55dae2a85935533542cc6a0d3fa57e393954bc2afdc32de",
+    "finevolab/web.py": "f20eb1fc9429d951a4579ab8f0fa1c101fd230d07a1c04a132794c6208edbe73",
+    "finevolab/workflow.py": "2646b3a92f5688d10392c52b1a7c4d6f2636fcf40c9baa48c01bedd88b1b3daf",
+    "finrobot_equity/core/src/create_equity_report.py": "3f64f11d9717cb3c63b47731d61028322dcb37410d917840d73706754a69c5f7",
+    "finrobot_equity/core/src/generate_financial_analysis.py": "f23dcf8c3ac8f89e83c97ee66082c22dfbf348df18a05a9e612adc7eeacae6f3",
+    "finrobot_equity/core/src/generate_pdf_report.py": "39ca9f98b8b706c033b5dad6034f11111ba317e9ef8b2e537755ad36e056d07a",
+    "finrobot_equity/core/src/modules/market_data_api.py": "fb5dab300d6524aafca6a5343522781567380ae36cac8647c542f40aa7ea2ab6",
+    "finrobot_equity/core/src/modules/professional_pdf_report.py": "0d44e52c55a662b3f06d98189c2ccf0bc5d235dfdd4abcbc8415ae53d4bf9761",
+    "finrobot_equity/web_app/main.py": "fcbeae5615fea84f40be18256bebd6bc9c09af51723a47aac6f62e6dcb87d36d",
+    "scripts/check_readme_sync.py": "68f47b9232a2b06aefad1841f7f924adb97b5003f0372b0be060cd0c6c328b26",
+    "scripts/verify_repository_distribution.py": "a2f2175cbad3ea8fa8188f51eff7c0530ce898a6ca58c6e3aa5d03c6c635ff2e",
+    "tests/test_runtime.py": "bfca373315749c559d7dd632cd50c675d95cc0f6a07b58e6b4c265e259f018d9"
+  },
+  "history_rewritten": false,
+  "commit_created": false,
+  "push_executed": false,
+  "annotation_review": {
+    "status": "passed",
+    "scope_files": 1028,
+    "python_files": 180,
+    "non_english_annotations": 0,
+    "development_narrative_annotations": 0,
+    "changes": {
+      "comments_removed": 320,
+      "comments_rewritten": 42,
+      "docstrings_rewritten": 55
+    },
+    "executable_ast_unchanged": true,
+    "strict_json_files": 652,
+    "strict_jsonl_files": 136,
+    "offline_frontend_checks": 52,
+    "excluded_zero_byte_runtime_locks": 4
+  }
+}
