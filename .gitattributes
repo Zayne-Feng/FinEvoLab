@@ -90,3 +90,7 @@ scripts/*planner*.py -text whitespace=cr-at-eol
 scripts/*quantization*.py -text whitespace=cr-at-eol
 configs/planner*.json -text whitespace=cr-at-eol
 tests/frontend/** text eol=lf
+
+showcase/** text eol=lf
+
+.github/workflows/showcase-pages.yml text eol=lf

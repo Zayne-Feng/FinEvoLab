@@ -116,6 +116,16 @@ Start the LoRA service with `python scripts/serve_planner.py --bundle data/train
 
 When using a retrained adapter, copy the `adapter_sha256` returned by the service's `GET /health` into the corresponding planner configuration and select that file through `FINEVOLAB_PLANNER_CONFIG`, keeping the client identity consistent with the actual weights.
 
+## Static showcase
+
+The [live showcase](https://finevolab.lunelu.com/) provides Chinese / English navigation, source-linked financial cases, and interactive experiment comparisons. It runs entirely as static files. Build it from the frozen observations and recorded results:
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py
+```
+
+The output is in `output/showcase/`. The Pages workflow publishes this directory. Source files are in `showcase/`; frontend checks run with `npm run test:showcase --prefix tests/frontend` after installing the frontend dependencies.
+
 ## License
 
 FinEvoLab's own code and documentation use **Apache-2.0**; copyright and licensing are stated in [COPYRIGHT](COPYRIGHT). The upstream [LICENSE](LICENSE), [NOTICE](NOTICE), and [Trademark policy](TRADEMARK_POLICY.md) are retained. Third-party data, models, and other materials remain subject to their respective terms.

@@ -8,6 +8,7 @@
   "scripts": {
     "test": "node check_dashboard.cjs && node check_dashboard_quality.cjs && node check_dashboard_language.cjs && node check_planner_web.cjs",
     "test:live": "node check_dashboard_live.cjs && node check_dashboard_language_live.cjs",
-    "test:planner:live": "node check_planner_web.cjs --live"
+    "test:planner:live": "node check_planner_web.cjs --live",
+    "test:showcase": "node check_showcase.cjs"
   }
 }

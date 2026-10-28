@@ -116,6 +116,16 @@ LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/
 
 使用重新训练的 adapter 时，将服务 `GET /health` 返回的 `adapter_sha256` 填入对应的规划器配置，并通过 `FINEVOLAB_PLANNER_CONFIG` 指定该配置文件，保持客户端与实际权重身份一致。
 
+## 静态展示
+
+[在线展示页](https://finevolab.lunelu.com/)提供中英文切换、带来源引用的财务案例及可交互的实验对比，完全由静态文件运行。使用固定财务观测和已记录的实验结果构建：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py
+```
+
+产物位于 `output/showcase/`，Pages 工作流发布该目录。源文件位于 `showcase/`；安装前端依赖后，可通过 `npm run test:showcase --prefix tests/frontend` 运行前端检查。
+
 ## 许可证
 
 FinEvoLab 自有代码与文档采用 **Apache-2.0**，版权与许可声明见 [COPYRIGHT](COPYRIGHT)。保留上游 [LICENSE](LICENSE)、[NOTICE](NOTICE) 和 [Trademark policy](TRADEMARK_POLICY.md)。第三方数据、模型与其他材料遵循各自条款。

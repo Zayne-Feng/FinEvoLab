@@ -1,0 +1,57 @@
+name: Deploy static showcase
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "showcase/**"
+      - "scripts/build_showcase.py"
+      - "tests/frontend/**"
+      - "data/processed/reports.json"
+      - "project_notes/experiments/scope-test-v1/assessment.json"
+      - "project_notes/evaluations/planner_formal_results.json"
+      - "project_notes/evaluations/planner_quantization.json"
+      - ".github/workflows/showcase-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Build static files
+        run: python scripts/build_showcase.py
+      - name: Install frontend test dependencies
+        run: npm ci --prefix tests/frontend --ignore-scripts --no-audit --no-fund
+      - name: Check local interactions
+        run: npm run test:showcase --prefix tests/frontend
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: output/showcase
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
