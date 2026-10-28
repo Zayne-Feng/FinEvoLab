@@ -250,13 +250,15 @@ let invitation = "";
       real_execution: execution,
       static_model_calls: 0,
     };
-    const name = real
-      ? "experience_live_checks.json"
-      : url.startsWith("https:")
-        ? "experience_public_checks.json"
-        : "experience_browser_checks.json";
+    const name =
+      process.env.FINEVOLAB_BROWSER_REPORT ||
+      (real
+        ? "experience_live_checks.json"
+        : url.startsWith("https:")
+          ? "experience_public_checks.json"
+          : "experience_browser_checks.json");
     await fs.writeFile(
-      path.join(root, "project_notes/run_logs", name),
+      path.resolve(root, "project_notes/run_logs", name),
       JSON.stringify(report, null, 2) + "\n",
     );
     console.log(
@@ -274,6 +276,11 @@ let invitation = "";
   const message = invitation
     ? String(error).split(invitation).join("[redacted]")
     : String(error);
-  console.error(message);
+  console.error(
+    message.replace(
+      /finevolab_session=[A-Za-z0-9_-]+/g,
+      "finevolab_session=[redacted]",
+    ),
+  );
   process.exitCode = 1;
 });

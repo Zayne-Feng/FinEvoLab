@@ -16,6 +16,7 @@ from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from starlette.middleware.trustedhost import TrustedHostMiddleware
 from filelock import FileLock
 from pydantic import BaseModel, Field
 
@@ -127,7 +128,8 @@ class AccessStore:
             db.execute("UPDATE tasks SET status=?, error_type=? WHERE id=?", (status, error_type, task_id))
 
 
-def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None) -> FastAPI:
+def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
+               public_url: str | None = None) -> FastAPI:
     root = root.resolve()
     access_path = access_path or Path(os.environ.get("FINEVOLAB_ACCESS_CONFIG", str(root / "output/experience/access.json")))
     policy = json.loads(access_path.read_text(encoding="utf-8"))
@@ -136,6 +138,15 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None) 
     for owner, user in policy["users"].items():
         if not owner or len(user["invite_sha256"]) != 64 or user["daily_tasks"] < 1:
             raise ValueError("Invalid invitation policy")
+    public_url = public_url or policy.get("public_url")
+    public_host = None
+    if public_url:
+        parsed = urlsplit(public_url)
+        if (parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password
+                or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or parsed.port):
+            raise ValueError("The public URL must be an HTTPS origin without a port")
+        public_host = parsed.hostname
+        public_url = "https://" + public_host
     budget = RunBudget(**policy["budget"])
     if min(budget.max_model_calls, budget.max_tool_calls, budget.max_total_tokens, budget.timeout_seconds) < 1:
         raise ValueError("Positive task budgets are required")
@@ -155,9 +166,14 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None) 
 
     app = FastAPI(title="FinEvoLab Experience", lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
     app.state.access = access
+    if public_host:
+        app.add_middleware(TrustedHostMiddleware, allowed_hosts=[public_host, "127.0.0.1", "localhost"],
+                           www_redirect=False)
 
     @app.middleware("http")
     async def browser_boundary(request: Request, call_next):
+        if public_host and request.url.hostname == public_host and request.url.scheme != "https":
+            return JSONResponse({"detail": "HTTPS required"}, status_code=403)
         if request.method not in {"GET", "HEAD", "OPTIONS"}:
             origin = request.headers.get("origin")
             if request.headers.get("x-finevolab") != "1" or (origin and (urlsplit(origin).scheme, urlsplit(origin).netloc) != (request.url.scheme, request.url.netloc)):
@@ -170,11 +186,15 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None) 
             response.headers["Cache-Control"] = "no-store"
         return response
 
+    @app.get("/experience/api/health")
+    async def health():
+        return {"status": "ok", "application": "FinEvoLab Experience", "public_origin": public_url}
+
     @app.post("/experience/api/login")
     async def login(body: LoginRequest, request: Request):
         owner, token = access.login(body.invite, request.client.host if request.client else "unknown")
         response = JSONResponse({"user": owner})
-        response.set_cookie(COOKIE, token, httponly=True, secure=policy.get("secure_cookie", False),
+        response.set_cookie(COOKIE, token, httponly=True, secure=bool(public_host and request.url.hostname == public_host) or policy.get("secure_cookie", False),
                             samesite="strict", max_age=12 * 3600, path="/experience/api")
         return response
 

@@ -69,7 +69,7 @@ openai_base_url = https://api.deepseek.com/
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **178 项通过**，按提交范围导出的独立文件副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **188 项通过**，见 [Tunnel 验收](project_notes/run_logs/tunnel_live_checks.json)。按提交范围导出的独立文件副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 ## 复现实验
 
@@ -135,7 +135,24 @@ LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/
 & $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve
 ```
 
-打开 `http://127.0.0.1:8085/experience.html`，使用保存在 `output/experience/invite-*.txt` 的邀请口令。服务读取已有 `FINEVOLAB_MODEL_CONFIG` 设置。邀请摘要与策略保存在 `output/experience/access.json`，会话与任务归属保存在 `output/experience/access.sqlite3`，均留在本地。独立应用按账户隔离任务与报告下载，执行原子化的个人及全站每日任务额度、并发限制、幂等提交和单任务 `RunBudget`。每日额度按 UTC 计算，失败与中断的执行也计入额度；重启后任务标记为中断。默认每人每天 5 个任务，全站每天 20 个任务，同时运行 1 个；单任务最多 6 次模型调用、10 次工具调用、20,000 个 Token 和 240 秒。启动服务前配置邀请与额度。浏览器会话有效期为 12 小时。服务默认仅监听本机；HTTPS 部署在本地策略中设置 `secure_cookie: true`。公开 Pages 工作台的回放与证据浏览不发起模型请求。
+打开 `http://127.0.0.1:8085/experience.html`，使用保存在 `output/experience/invite-*.txt` 的邀请口令。服务读取已有 `FINEVOLAB_MODEL_CONFIG` 设置。邀请摘要与策略保存在 `output/experience/access.json`，会话与任务归属保存在 `output/experience/access.sqlite3`，均留在本地。独立应用按账户隔离任务与报告下载，执行原子化的个人及全站每日任务额度、并发限制、幂等提交和单任务 `RunBudget`。每日额度按 UTC 计算，失败与中断的执行也计入额度；重启后任务标记为中断。默认每人每天 5 个任务，全站每天 20 个任务，同时运行 1 个；单任务最多 6 次模型调用、10 次工具调用、20,000 个 Token 和 240 秒。启动服务前配置邀请与额度。浏览器会话有效期为 12 小时。服务默认仅监听本机。配置 `--public-url` 后，公开主机名要求 HTTPS，并使用安全会话 Cookie；转发头仅信任本机连接器。公开 Pages 工作台的回放与证据浏览不发起模型请求。
+
+通过 Cloudflare Tunnel 公开同一个邀请制应用时，配置 `configs/tunnel.json`，将连接器令牌本身保存到 `output/tunnel/token.txt`。安装器校验固定发行版的 SHA-256。在一个终端中启动后端：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py install
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve --public-url https://app.lunelu.com
+```
+
+在另一个终端中启动隐藏运行的连接器并检查就绪状态：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py start
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py status
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py verify
+```
+
+在 Cloudflare 隧道配置中添加已发布应用路由：主机名 `app.lunelu.com`，服务 `http://127.0.0.1:8085`，路径过滤留空。[真实分析工作台](https://app.lunelu.com/experience.html)使用这条路由。本地后端与连接器均需保持运行。`verify` 检查 HTTPS 路由、真实工作台和匿名任务访问拦截，不调用模型。安装连接器或验证公网需要代理时使用 `--proxy`。`stop` 仅停止受管理的连接器。另行记录浏览器验收时，可通过 `FINEVOLAB_BROWSER_REPORT` 指定独立的报告文件名。
 
 工作台验收见[工作台检查](project_notes/run_logs/experience_acceptance.json)。实际浏览器检查使用 `FINEVOLAB_CHROMIUM` 指定已安装的 Chromium 可执行文件，在本地服务运行时执行 `node tests/frontend/check_experience_live.cjs`。将 `FINEVOLAB_INVITATION_FILE` 指向本地邀请文件，并添加 `--real`，即可执行真实模型分析，验证工具、引用、校验、报告、刷新恢复及幂等提交。驱动读取邀请口令而不输出其内容。
 

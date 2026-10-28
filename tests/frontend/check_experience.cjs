@@ -43,6 +43,12 @@ function open(live = false) {
       !id("local-instructions").hidden,
       "Public workspace must explain local startup",
     );
+    check(
+      !id("public-entry").hidden &&
+        id("public-entry").querySelector("a").href ===
+          "https://app.lunelu.com/experience.html",
+      "Public workspace must link to the HTTPS analysis application",
+    );
     for (const stage of ["plan", "tools", "answer", "validation", "usage"]) {
       d.querySelector(`[data-stage="${stage}"]`).click();
       check(

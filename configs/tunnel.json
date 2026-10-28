@@ -1,0 +1,13 @@
+{
+  "hostname": "app.lunelu.com",
+  "tunnel_name": "finevolab-local",
+  "origin": "http://127.0.0.1:8085",
+  "metrics": "127.0.0.1:20241",
+  "protocol": "auto",
+  "cloudflared": {
+    "version": "2026.10.5",
+    "url": "https://github.com/cloudflare/cloudflared/releases/download/2026.10.5/cloudflared-windows-amd64.exe",
+    "sha256": "db4e4c413612a0916f3e1679d3caaf376f94911952d163028fb726fb2e0516a9",
+    "bytes": 55343328
+  }
+}

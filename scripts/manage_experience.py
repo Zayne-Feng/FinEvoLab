@@ -19,6 +19,7 @@ def main():
     parser.add_argument("--config", type=Path, default=ROOT / "output/experience/access.json")
     parser.add_argument("--port", type=int, default=8085)
     parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--public-url")
     args = parser.parse_args()
     if args.action == "invite":
         policy = json.loads(args.config.read_text(encoding="utf-8")) if args.config.exists() else {
@@ -38,7 +39,8 @@ def main():
         os.environ["FINEVOLAB_ACCESS_CONFIG"] = str(args.config.resolve())
         import uvicorn
         from finevolab.experience import create_app
-        uvicorn.run(create_app(), host=args.host, port=args.port, access_log=False)
+        uvicorn.run(create_app(public_url=args.public_url), host=args.host, port=args.port, access_log=False,
+                    proxy_headers=True, forwarded_allow_ips="127.0.0.1,::1")
 
 
 if __name__ == "__main__":

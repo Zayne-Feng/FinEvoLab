@@ -36,9 +36,9 @@ class ExperienceTests(unittest.TestCase):
                       for name, token in TOKENS.items()}}
         self.config = self.root / "access.json"
 
-    def app(self, runner=None):
+    def app(self, runner=None, public_url=None):
         self.config.write_text(json.dumps(self.policy))
-        return create_app(self.root, self.config, runner or self.runner)
+        return create_app(self.root, self.config, runner or self.runner, public_url=public_url)
 
     async def runner(self, task_id, question):
         directory = self.root / "output/tasks" / task_id
@@ -169,6 +169,47 @@ class ExperienceTests(unittest.TestCase):
             for _ in range(10):
                 self.assertEqual(client.post("/experience/api/login", json={"invite": "x" * 43}, headers=HEADERS).status_code, 401)
             self.assertEqual(client.post("/experience/api/login", json={"invite": TOKENS["alice"]}, headers=HEADERS).status_code, 429)
+
+    def test_public_https_cookie_and_origin(self):
+        app = self.app(public_url="https://app.lunelu.com")
+        with TestClient(app, base_url="https://app.lunelu.com") as client:
+            response = client.post("/experience/api/login", json={"invite": TOKENS["alice"]},
+                                   headers={**HEADERS, "Origin": "https://app.lunelu.com"})
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("; Secure", response.headers["set-cookie"])
+            self.assertEqual(client.get("/experience/api/session").status_code, 200)
+            self.assertEqual(client.get("/experience/api/health").json()["public_origin"], "https://app.lunelu.com")
+            self.assertEqual(client.post("/experience/api/logout", headers={**HEADERS,
+                "Origin": "https://other.invalid"}).status_code, 403)
+            client.post("/experience/api/logout", headers=HEADERS)
+            self.assertEqual(client.get("/experience/api/session").status_code, 401)
+
+    def test_forwarded_https_requires_a_trusted_connector(self):
+        from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
+        app = ProxyHeadersMiddleware(self.app(public_url="https://app.lunelu.com"),
+                                     trusted_hosts=["127.0.0.1", "::1"])
+        headers = {**HEADERS, "Origin": "https://app.lunelu.com", "X-Forwarded-Proto": "https"}
+        with TestClient(app, base_url="http://app.lunelu.com", client=("127.0.0.1", 40000)) as client:
+            response = client.post("/experience/api/login", json={"invite": TOKENS["alice"]}, headers=headers)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("; Secure", response.headers["set-cookie"])
+        with TestClient(app, base_url="http://app.lunelu.com", client=("198.51.100.2", 40000)) as client:
+            self.assertEqual(client.post("/experience/api/login", json={"invite": TOKENS["alice"]},
+                                         headers=headers).status_code, 403)
+
+    def test_local_http_and_public_host_allowlist(self):
+        app = self.app(public_url="https://app.lunelu.com")
+        with TestClient(app, base_url="http://127.0.0.1:8085") as client:
+            response = self.login(client)
+            self.assertNotIn("; Secure", response.headers["set-cookie"])
+            self.assertEqual(client.get("/experience/api/session").status_code, 200)
+            self.assertEqual(client.get("/experience/api/health", headers={"Host": "other.invalid"}).status_code, 400)
+
+    def test_invalid_public_origin_is_rejected(self):
+        for origin in ("http://app.lunelu.com", "https://app.lunelu.com/path", "https://app.lunelu.com:443",
+                       "https://user:secret@app.lunelu.com", "https://app.lunelu.com?query=1"):
+            with self.subTest(origin=origin), self.assertRaises(ValueError):
+                self.app(public_url=origin)
 
     def test_execution_and_business_statuses_are_distinct(self):
         result = public_result({"task_id": "a" * 32, "status": "complete", "phases": {

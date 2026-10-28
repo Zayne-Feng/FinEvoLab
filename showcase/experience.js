@@ -8,7 +8,7 @@
       skip: "跳转到正文",
       title: "看见证据，理解执行。",
       intro:
-        "从真实归档任务追踪分析过程，浏览公开财报证据，并在本地运行邀请制真实分析。",
+        "从真实归档任务追踪分析过程，浏览公开财报证据，并使用邀请制真实分析。",
       home: "返回项目展示 ↗",
       replay: "执行回放",
       evidence: "证据浏览器",
@@ -40,10 +40,11 @@
       liveNote:
         "登录后，使用服务端 DeepSeek 配置执行请求规划、财报检索、金融工具、harness 校验与报告生成。",
       publicMode:
-        "公开工作台：执行回放与证据浏览器直接可用。真实分析通过本地服务提供。",
-      localMode: "本地真实分析服务已接入，请使用邀请口令登录。",
+        "执行回放与证据浏览器直接可用。持有邀请口令可进入真实分析工作台。",
+      localMode: "真实分析服务已接入，请使用邀请口令登录。",
       startLocal: "在本机启动真实分析服务后，打开本地工作台：",
       openLocal: "打开本地工作台 ↗",
+      openPublic: "进入真实分析工作台 ↗",
       invite: "邀请口令",
       signIn: "登录",
       signOut: "退出登录",
@@ -71,10 +72,10 @@
       download: "下载报告",
       unauthorized: "请先登录，或重新检查邀请口令。",
       busy: "额度或并发限制已触发，请稍后重试。",
-      unavailable: "服务暂时不可用，请检查本地服务状态。",
+      unavailable: "服务暂时不可用，请稍后重试。",
       invalid: "请求未通过校验，请检查输入。",
       notFound: "任务不存在或不属于当前账户。",
-      network: "连接失败，请检查本地服务后重试。",
+      network: "连接失败，请检查网络后重试。",
       signedOut: "已退出登录。",
       progress: "当前任务",
       error: "错误类型",
@@ -86,7 +87,7 @@
       skip: "Skip to content",
       title: "Evidence in view. Execution explained.",
       intro:
-        "Follow a recorded analysis, explore public financial evidence, and run invite-only analysis on your local service.",
+        "Follow a recorded analysis, explore public financial evidence, and run invite-only live analysis.",
       home: "Back to the showcase ↗",
       replay: "Execution replay",
       evidence: "Evidence explorer",
@@ -118,12 +119,12 @@
       liveNote:
         "After signing in, use the server-side DeepSeek configuration for request planning, report retrieval, financial tools, harness validation, and report generation.",
       publicMode:
-        "Public workspace: replay and evidence browsing are ready. Live analysis runs through the local service.",
-      localMode:
-        "Local analysis service connected. Sign in with your invitation.",
+        "Replay and evidence browsing are ready. Open the live workspace to sign in with your invitation.",
+      localMode: "Analysis service connected. Sign in with your invitation.",
       startLocal:
         "Start the analysis service on your computer, then open the local workspace:",
       openLocal: "Open local workspace ↗",
+      openPublic: "Open live analysis workspace ↗",
       invite: "Invitation code",
       signIn: "Sign in",
       signOut: "Sign out",
@@ -151,10 +152,10 @@
       download: "Download report",
       unauthorized: "Sign in or check your invitation code.",
       busy: "Quota or concurrency limit reached. Please try again later.",
-      unavailable: "Service unavailable. Check the local service.",
+      unavailable: "Service unavailable. Please try again later.",
       invalid: "Request validation failed. Check your input.",
       notFound: "Task not found for this account.",
-      network: "Connection failed. Check the local service and retry.",
+      network: "Connection failed. Check your network and retry.",
       signedOut: "Signed out.",
       progress: "Current task",
       error: "Error type",
@@ -487,6 +488,7 @@
     );
     id("live-mode").textContent = t(live ? "localMode" : "publicMode");
     id("local-instructions").hidden = live;
+    id("public-entry").hidden = live;
     filterOptions(
       "filter-company",
       [...new Set(data.observations.map((item) => item.company))].sort(),
