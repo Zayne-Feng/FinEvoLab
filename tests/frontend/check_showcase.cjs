@@ -42,7 +42,21 @@ function open(options = {}) {
   return dom;
 }
 (async () => {
-  check(!payload.includes("\r"), "Generated assets must use LF for reproducible hashes");
+  check(
+    [
+      "index.html",
+      "app.js",
+      "data.js",
+      "styles.css",
+      "experience.html",
+      "experience.css",
+      "experience.js",
+      "favicon.svg",
+    ].every(
+      (name) => !fs.readFileSync(path.join(site, name), "utf8").includes("\r"),
+    ),
+    "All published text assets must use LF for reproducible hashes",
+  );
   const dom = open();
   const { document } = dom.window;
   const id = (name) => document.getElementById(name);

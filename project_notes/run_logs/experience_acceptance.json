@@ -143,7 +143,7 @@
     "static_model_calls": 0
   },
   "static_interactions": {
-    "showcase": 88,
+    "showcase": 89,
     "workspace": 53,
     "public_api_calls": 0
   },
@@ -198,10 +198,18 @@
     "README.md": "b700f144335e4f7169eb02dcc8ff112136b55f95485fe15b0622f5c6a89b69d9",
     "README_CN.md": "57904e66a70f064ea27651be512bb402d6322d87a955ff7b588f2cfa4509f999",
     "configs/readme_sync.json": "50bd2c003453218359b95addf62ae682f0dc175471f3229f470875c4b58d135c",
-    "scripts/build_showcase.py": "63c0dc06f06552a283d5ccab3078fc2b9d3a80026e5cae05b11350d49989637a",
+    "scripts/build_showcase.py": "e495533ac6be9bb6fb0693f09cae37de9ccc4fd527ae1098cde3a01898b9a210",
     "showcase/app.js": "22f03a7cd25ea8d8cb7e7b998b0c269ea1bcadd1917e817e1d6dca158a1df8b4",
     "showcase/index.html": "759052b610d9e4f7b682eeae5f880c487cb1dbb3ac574b2066943ecf365bf816",
     "tests/frontend/package-lock.json": "b0897db5d0009b8b9d368d1558351cc2e73dfab213a5590c9580aed9f4a59d9f",
-    "tests/frontend/package.json": "33a0121e3cad7a5189bcf68904a10cafc161b02e8e19ecff5380e65e4b71e1e7"
+    "tests/frontend/package.json": "33a0121e3cad7a5189bcf68904a10cafc161b02e8e19ecff5380e65e4b71e1e7",
+    "tests/frontend/check_showcase.cjs": "6795f5e5a7397d33e2a1a9332440b773d6d10c276e443356c271165f2620c19e"
+  },
+  "public": {
+    "url": "https://finevolab.lunelu.com/experience.html",
+    "checks": 74,
+    "identical_assets": 8,
+    "model_calls": 0,
+    "record": "project_notes/run_logs/experience_public_checks.json"
   }
 }

@@ -4,7 +4,6 @@ import argparse
 from decimal import Decimal, ROUND_HALF_UP
 import json
 from pathlib import Path
-import shutil
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,7 +109,7 @@ def build(output):
             "quantization": "project_notes/evaluations/planner_quantization.json"}}
     output.mkdir(parents=True, exist_ok=True)
     for name in ("index.html", "styles.css", "app.js", "favicon.svg", "experience.html", "experience.css", "experience.js"):
-        shutil.copyfile(source / name, output / name)
+        (output / name).write_text((source / name).read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     (output / "data.js").write_text("window.FINEVOLAB_SHOWCASE=" + encoded + ";\n", encoding="utf-8", newline="\n")
     (output / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8", newline="\n")
