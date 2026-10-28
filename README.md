@@ -69,7 +69,7 @@ Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft rev
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean generation latency was 3.759 / 5.532 s.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **168 tests**. An independent file copy exported from the submission scope passed the same tests; see [reproduction-copy acceptance](project_notes/run_logs/repository_distribution_checks.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **178 tests**. An independent file copy exported from the submission scope passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 ## Reproducing experiments
 
@@ -125,6 +125,19 @@ The [live showcase](https://finevolab.lunelu.com/) provides Chinese / English na
 ```
 
 The output is in `output/showcase/`. The Pages workflow publishes this directory. Source files are in `showcase/`; frontend checks run with `npm run test:showcase --prefix tests/frontend` after installing the frontend dependencies.
+
+The [analysis workspace](https://finevolab.lunelu.com/experience.html) at `experience.html` includes a real archived hybrid analysis with request planning, retrieved passages, tool outputs, validation, repair status, and recorded usage. Its source links resolve uploaded evidence to public SEC snapshots by matching SHA-256. The evidence explorer filters financial observations by company, fact fiscal year, metric, and original text, preserving report year, units, and actual periods.
+
+Run invite-only analysis locally with the existing model configuration:
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve
+```
+
+Open `http://127.0.0.1:8085/experience.html` and use the invitation saved under `output/experience/invite-*.txt`. The server reads the existing `FINEVOLAB_MODEL_CONFIG` setting. Invitation hashes and policy are stored in `output/experience/access.json`; sessions and task ownership are stored in `output/experience/access.sqlite3`. All remain local. The dedicated application exposes owner-scoped tasks and report downloads. It enforces atomic per-user and global daily task quotas, concurrency, idempotent submissions, and per-task `RunBudget`. Daily quotas use UTC and count failed or interrupted executions. Restarted tasks are marked interrupted. Default limits are 5 tasks per user per day, 20 globally, and 1 concurrent task; each task allows 6 model calls, 10 tool calls, 20,000 tokens, and 240 seconds. Configure invitations and quotas before starting the server. Browser sessions last 12 hours. The default service binds to loopback; HTTPS deployments use `secure_cookie: true` in the local policy. The public Pages workspace runs replay and evidence browsing without model requests.
+
+Workspace acceptance is recorded in [workspace checks](project_notes/run_logs/experience_acceptance.json). For rendered-browser checks, set `FINEVOLAB_CHROMIUM` to an installed Chromium executable and run `node tests/frontend/check_experience_live.cjs` while the local service is running. Set `FINEVOLAB_INVITATION_FILE` to the local invitation file and add `--real` to execute a real model-backed analysis, verify tools, citations, validation, reports, refresh recovery, and idempotency. The driver reads the invitation without printing it.
 
 ## License
 

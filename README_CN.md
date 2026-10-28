@@ -69,7 +69,7 @@ openai_base_url = https://api.deepseek.com/
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **168 项通过**，按提交范围导出的独立文件副本也通过相同测试，见[复现副本验收](project_notes/run_logs/repository_distribution_checks.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **178 项通过**，按提交范围导出的独立文件副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 ## 复现实验
 
@@ -125,6 +125,19 @@ LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/
 ```
 
 产物位于 `output/showcase/`，Pages 工作流发布该目录。源文件位于 `showcase/`；安装前端依赖后，可通过 `npm run test:showcase --prefix tests/frontend` 运行前端检查。
+
+[分析工作台](https://finevolab.lunelu.com/experience.html)（`experience.html`）提供真实归档混合分析回放，包括请求计划、检索片段、工具输出、校验、修复状态和实际用量。上传证据通过 SHA-256 匹配公开 SEC 快照，提供可访问的来源链接。证据浏览器支持按公司、事实所属财年、指标和原文筛选，保留报告年份、单位和实际期间。
+
+使用已有模型配置，在本地启动邀请制真实分析：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve
+```
+
+打开 `http://127.0.0.1:8085/experience.html`，使用保存在 `output/experience/invite-*.txt` 的邀请口令。服务读取已有 `FINEVOLAB_MODEL_CONFIG` 设置。邀请摘要与策略保存在 `output/experience/access.json`，会话与任务归属保存在 `output/experience/access.sqlite3`，均留在本地。独立应用按账户隔离任务与报告下载，执行原子化的个人及全站每日任务额度、并发限制、幂等提交和单任务 `RunBudget`。每日额度按 UTC 计算，失败与中断的执行也计入额度；重启后任务标记为中断。默认每人每天 5 个任务，全站每天 20 个任务，同时运行 1 个；单任务最多 6 次模型调用、10 次工具调用、20,000 个 Token 和 240 秒。启动服务前配置邀请与额度。浏览器会话有效期为 12 小时。服务默认仅监听本机；HTTPS 部署在本地策略中设置 `secure_cookie: true`。公开 Pages 工作台的回放与证据浏览不发起模型请求。
+
+工作台验收见[工作台检查](project_notes/run_logs/experience_acceptance.json)。实际浏览器检查使用 `FINEVOLAB_CHROMIUM` 指定已安装的 Chromium 可执行文件，在本地服务运行时执行 `node tests/frontend/check_experience_live.cjs`。将 `FINEVOLAB_INVITATION_FILE` 指向本地邀请文件，并添加 `--real`，即可执行真实模型分析，验证工具、引用、校验、报告、刷新恢复及幂等提交。驱动读取邀请口令而不输出其内容。
 
 ## 许可证
 

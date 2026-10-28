@@ -5,10 +5,13 @@ from decimal import Decimal, ROUND_HALF_UP
 import json
 from pathlib import Path
 import shutil
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "https://github.com/Zayne-Feng/FinEvoLab"
 DOMAIN = "finevolab.lunelu.com"
+sys.path.insert(0, str(ROOT))
+from finevolab.experience_data import build_public_data
 
 
 def load(name):
@@ -48,7 +51,7 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/run_logs/repository_distribution_checks.json")
+    verification = load("project_notes/run_logs/experience_acceptance.json")
     if not verification["workspace_tests"]["passed"]:
         raise ValueError("The regression record must contain a passing result")
     if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:
@@ -90,7 +93,7 @@ def build(output):
         group = quant["groups"][key]
         quant_groups.append({"label": label, "successes": group["first"]["successes"], "total": quant["cases"],
             "memory": rounded(group["peak_allocated_gib"], 3), "latency": rounded(group["latency"]["mean"], 3)})
-    payload = {"repository": REPOSITORY, "domain": DOMAIN, "cases": cases, "planner": arms,
+    payload = {"experience": build_public_data(ROOT), "repository": REPOSITORY, "domain": DOMAIN, "cases": cases, "planner": arms,
         "business": {"total": current["all"]["attempts"], "successes": current["all"]["strict_successes"],
             "questions": current["all"]["unique_questions"], "repetitions": repetitions,
             "common_questions": current["common"]["unique_questions"], "common_total": current["common"]["attempts"],
@@ -106,14 +109,14 @@ def build(output):
             "planner": "project_notes/evaluations/planner_formal_results.json",
             "quantization": "project_notes/evaluations/planner_quantization.json"}}
     output.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "styles.css", "app.js", "favicon.svg"):
+    for name in ("index.html", "styles.css", "app.js", "favicon.svg", "experience.html", "experience.css", "experience.js"):
         shutil.copyfile(source / name, output / name)
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     (output / "data.js").write_text("window.FINEVOLAB_SHOWCASE=" + encoded + ";\n", encoding="utf-8")
     (output / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (output / ".nojekyll").write_text("", encoding="utf-8")
     names = {item.name for item in output.iterdir()}
-    expected = {"index.html", "styles.css", "app.js", "favicon.svg", "data.js", "CNAME", ".nojekyll"}
+    expected = {"index.html", "styles.css", "app.js", "favicon.svg", "data.js", "CNAME", ".nojekyll", "experience.html", "experience.css", "experience.js"}
     if names != expected:
         raise ValueError("The publication directory contains unexpected files")
     print(json.dumps({"status": "built", "files": sorted(names), "model_calls": 0, "domain": DOMAIN}))
