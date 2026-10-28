@@ -11,14 +11,20 @@ function check(value, message) {
   checks++;
 }
 function open(live = false) {
-  const html = fs
-    .readFileSync(path.join(site, "experience.html"), "utf8")
-    .replace('data-live="false"', `data-live="${live}"`);
+  const html = fs.readFileSync(
+    live
+      ? path.join(root, "finevolab/templates/experience.html")
+      : path.join(site, "index.html"),
+    "utf8",
+  );
   const dom = new JSDOM(html, {
-    url: "http://127.0.0.1:8085/experience.html",
+    url: live ? "http://127.0.0.1:8085/" : "https://finevolab.lunelu.com/",
     runScripts: "outside-only",
   });
-  dom.window.eval(fs.readFileSync(path.join(site, "data.js"), "utf8"));
+  if (!live) {
+    dom.window.eval(fs.readFileSync(path.join(site, "data.js"), "utf8"));
+    dom.window.eval(fs.readFileSync(path.join(site, "app.js"), "utf8"));
+  }
   return dom;
 }
 (async () => {
@@ -38,16 +44,13 @@ function open(live = false) {
   for (const lang of ["zh-CN", "en"]) {
     if (d.documentElement.lang !== lang) id("language-toggle").click();
     check(d.documentElement.lang === lang, "Language must change");
-    check(id("login-form").hidden, "Public workspace must hide login");
     check(
-      !id("local-instructions").hidden,
-      "Public workspace must explain local startup",
+      !id("login-form"),
+      "The showcase must not contain an analysis login form",
     );
     check(
-      !id("public-entry").hidden &&
-        id("public-entry").querySelector("a").href ===
-          "https://app.lunelu.com/experience.html",
-      "Public workspace must link to the HTTPS analysis application",
+      d.querySelector(".hero-actions a").href === "https://app.lunelu.com/",
+      "The primary action must open live analysis",
     );
     for (const stage of ["plan", "tools", "answer", "validation", "usage"]) {
       d.querySelector(`[data-stage="${stage}"]`).click();
@@ -110,9 +113,47 @@ function open(live = false) {
     "Public data must exclude local paths",
   );
   dom.window.close();
+  const redirectSource = fs.readFileSync(
+    path.join(site, "experience_redirect.js"),
+    "utf8",
+  );
+  for (const [hash, expected] of [
+    ["", "./index.html#replay"],
+    ["#replay", "./index.html#replay"],
+    ["#evidence", "./index.html#evidence"],
+    ["#live", "https://app.lunelu.com/"],
+    ["#unknown", "./index.html#replay"],
+  ]) {
+    let destination;
+    require("node:vm").runInNewContext(redirectSource, {
+      location: { hash, replace: (value) => (destination = value) },
+    });
+    check(
+      destination === expected,
+      "Legacy workspace links must reach their canonical destination",
+    );
+  }
+  const legacy = new JSDOM(
+    fs.readFileSync(path.join(site, "experience.html"), "utf8"),
+  );
+  check(
+    legacy.window.document
+      .querySelector('meta[http-equiv="refresh"]')
+      .content.includes("./index.html#replay"),
+    "Legacy navigation must work without JavaScript",
+  );
+  legacy.window.close();
   const live = open(true),
     lw = live.window,
     ld = lw.document;
+  check(
+    !ld.getElementById("replay") && !ld.getElementById("evidence"),
+    "Analysis must not duplicate public archive sections",
+  );
+  check(
+    !ld.querySelector('script[src$="data.js"]'),
+    "Analysis must not load the public archive payload",
+  );
   let authenticated = false,
     posts = 0;
   const saved = {
@@ -156,7 +197,7 @@ function open(live = false) {
   await tick();
   check(
     !ld.getElementById("login-form").hidden,
-    "Local workspace must show login",
+    "Analysis application must show login",
   );
   ld.getElementById("invite").value = "a".repeat(43);
   ld.getElementById("login-form").dispatchEvent(

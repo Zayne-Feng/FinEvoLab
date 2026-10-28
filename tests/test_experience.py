@@ -28,7 +28,9 @@ class ExperienceTests(unittest.TestCase):
         self.root = Path(self.directory.name)
         self.site = self.root / "output/showcase"
         self.site.mkdir(parents=True)
-        (self.site / "experience.html").write_text('<html data-live="false"></html>')
+        templates = self.root / "finevolab/templates"
+        templates.mkdir(parents=True)
+        (templates / "experience.html").write_text('<html data-live="true"></html>')
         self.policy = {"daily_tasks": 5, "concurrent_tasks": 1, "enabled": True,
             "budget": {"max_model_calls": 6, "max_tool_calls": 10, "max_total_tokens": 20000,
                        "timeout_seconds": 240},
@@ -77,7 +79,31 @@ class ExperienceTests(unittest.TestCase):
             self.assertEqual(self.submit(client).status_code, 401)
             for route in ("/api/questions", "/api/uploads", "/api/tasks", "/openapi.json", "/config.ini"):
                 self.assertEqual(client.get(route).status_code, 404)
-            self.assertIn('data-live="true"', client.get("/experience.html").text)
+            self.assertIn('data-live="true"', client.get("/").text)
+            for route in ("/experience.html", "/index.html"):
+                redirect = client.get(route, follow_redirects=False)
+                self.assertEqual(redirect.status_code, 308)
+                self.assertEqual(redirect.headers["location"], "/")
+            self.assertEqual(client.get("/data.js").status_code, 404)
+
+    def test_analysis_assets_are_versioned_and_cache_is_revalidated(self):
+        template = (ROOT / "finevolab/templates/experience.html").read_text(encoding="utf-8")
+        (self.root / "finevolab/templates/experience.html").write_text(template, encoding="utf-8")
+        assets = ("styles.css", "experience.css", "experience.js", "favicon.svg")
+        for name in assets:
+            (self.site / name).write_text(name, encoding="utf-8")
+        with TestClient(self.app()) as client:
+            page = client.get("/")
+            self.assertEqual(page.headers["cache-control"], "no-store")
+            for name in assets:
+                version = hashlib.sha256(name.encode()).hexdigest()[:16]
+                self.assertIn("./" + name + "?v=" + version, page.text)
+                self.assertEqual(client.get("/" + name).headers["cache-control"], "no-cache")
+            self.assertNotIn('id="replay"', page.text)
+            self.assertNotIn('id="evidence"', page.text)
+            self.assertNotIn('src="./data.js', page.text)
+            (self.site / "experience.js").write_text("updated", encoding="utf-8")
+            self.assertIn("experience.js?v=" + hashlib.sha256(b"updated").hexdigest()[:16], client.get("/").text)
 
     def test_origin_cookie_logout_and_expiry(self):
         with TestClient(self.app()) as client:

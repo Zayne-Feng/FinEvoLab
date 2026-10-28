@@ -1,14 +1,14 @@
 "use strict";
 (() => {
-  const data = window.FINEVOLAB_SHOWCASE.experience;
+  const data = window.FINEVOLAB_SHOWCASE?.experience;
   const live = document.documentElement.dataset.live === "true";
   const id = (name) => document.getElementById(name);
   const copy = {
     "zh-CN": {
       skip: "跳转到正文",
-      title: "看见证据，理解执行。",
+      title: "让问题，成为有据可循的分析。",
       intro:
-        "从真实归档任务追踪分析过程，浏览公开财报证据，并使用邀请制真实分析。",
+        "登录后提出财报问题，查看执行状态、证据引用与分析结果，并下载报告。",
       home: "返回项目展示 ↗",
       replay: "执行回放",
       evidence: "证据浏览器",
@@ -39,12 +39,7 @@
       usage: "用量与身份",
       liveNote:
         "登录后，使用服务端 DeepSeek 配置执行请求规划、财报检索、金融工具、harness 校验与报告生成。",
-      publicMode:
-        "执行回放与证据浏览器直接可用。持有邀请口令可进入真实分析工作台。",
-      localMode: "真实分析服务已接入，请使用邀请口令登录。",
-      startLocal: "在本机启动真实分析服务后，打开本地工作台：",
-      openLocal: "打开本地工作台 ↗",
-      openPublic: "进入真实分析工作台 ↗",
+      connectedMode: "真实分析服务已接入，请使用邀请口令登录。",
       invite: "邀请口令",
       signIn: "登录",
       signOut: "退出登录",
@@ -85,9 +80,9 @@
     },
     en: {
       skip: "Skip to content",
-      title: "Evidence in view. Execution explained.",
+      title: "Your question. An evidence-backed answer.",
       intro:
-        "Follow a recorded analysis, explore public financial evidence, and run invite-only live analysis.",
+        "Sign in, ask a financial question, follow execution, inspect cited evidence, and download your report.",
       home: "Back to the showcase ↗",
       replay: "Execution replay",
       evidence: "Evidence explorer",
@@ -118,13 +113,8 @@
       usage: "Usage & identity",
       liveNote:
         "After signing in, use the server-side DeepSeek configuration for request planning, report retrieval, financial tools, harness validation, and report generation.",
-      publicMode:
-        "Replay and evidence browsing are ready. Open the live workspace to sign in with your invitation.",
-      localMode: "Analysis service connected. Sign in with your invitation.",
-      startLocal:
-        "Start the analysis service on your computer, then open the local workspace:",
-      openLocal: "Open local workspace ↗",
-      openPublic: "Open live analysis workspace ↗",
+      connectedMode:
+        "Analysis service connected. Sign in with your invitation.",
       invite: "Invitation code",
       signIn: "Sign in",
       signOut: "Sign out",
@@ -476,39 +466,56 @@
     }
   }
   function languageChanged() {
-    document.documentElement.lang = language;
-    document.title = "FinEvoLab · " + t("title");
+    if (live) {
+      document.documentElement.lang = language;
+      document.title = "FinEvoLab · " + t("title");
+      id("language-toggle").textContent =
+        language === "en" ? "中文 ↗" : "EN ↗";
+      id("language-toggle").setAttribute(
+        "aria-label",
+        language === "en" ? "切换为简体中文" : "Switch to English",
+      );
+      id("live-mode").textContent = t("connectedMode");
+    }
     document.querySelectorAll("[data-text]").forEach((element) => {
       element.textContent = t(element.dataset.text);
     });
-    id("language-toggle").textContent = language === "en" ? "中文 ↗" : "EN ↗";
-    id("language-toggle").setAttribute(
-      "aria-label",
-      language === "en" ? "切换为简体中文" : "Switch to English",
+    if (!live) {
+      filterOptions(
+        "filter-company",
+        [...new Set(data.observations.map((item) => item.company))].sort(),
+      );
+      filterOptions(
+        "filter-year",
+        [...new Set(data.observations.map((item) => item.fiscal_year))].sort(
+          (a, b) => b - a,
+        ),
+      );
+      filterOptions(
+        "filter-metric",
+        [...new Set(data.observations.map((item) => item.name))].sort(),
+        true,
+      );
+      renderReplay();
+      renderEvidence();
+    } else {
+      renderSession();
+      if (lastState) renderTask(lastState);
+      if (session) history().catch(fail);
+    }
+  }
+  if (!live) {
+    ["filter-company", "filter-year", "filter-metric"].forEach(
+      (name) => (id(name).onchange = renderEvidence),
     );
-    id("live-mode").textContent = t(live ? "localMode" : "publicMode");
-    id("local-instructions").hidden = live;
-    id("public-entry").hidden = live;
-    filterOptions(
-      "filter-company",
-      [...new Set(data.observations.map((item) => item.company))].sort(),
-    );
-    filterOptions(
-      "filter-year",
-      [...new Set(data.observations.map((item) => item.fiscal_year))].sort(
-        (a, b) => b - a,
-      ),
-    );
-    filterOptions(
-      "filter-metric",
-      [...new Set(data.observations.map((item) => item.name))].sort(),
-      true,
-    );
-    renderReplay();
-    renderEvidence();
-    renderSession();
-    if (lastState) renderTask(lastState);
-    if (session) history().catch(fail);
+    id("filter-query").oninput = renderEvidence;
+    document.addEventListener("finevolab:language", (event) => {
+      language = event.detail.language;
+      languageChanged();
+    });
+    language = document.documentElement.lang === "en" ? "en" : "zh-CN";
+    languageChanged();
+    return;
   }
   id("language-toggle").onclick = () => {
     language = language === "en" ? "zh-CN" : "en";
@@ -517,13 +524,8 @@
     } catch {}
     languageChanged();
   };
-  ["filter-company", "filter-year", "filter-metric"].forEach(
-    (name) => (id(name).onchange = renderEvidence),
-  );
-  id("filter-query").oninput = renderEvidence;
   id("login-form").onsubmit = async (event) => {
     event.preventDefault();
-    if (!live) return;
     const button = id("login-form").querySelector("button");
     button.disabled = true;
     try {

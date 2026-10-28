@@ -81,7 +81,7 @@ def status(config):
     session = requests.Session()
     session.trust_env = False
     result = {"token_file_present": TOKEN.is_file(), "connector_installed": EXECUTABLE.is_file(),
-              "public_url": "https://" + config["hostname"] + "/experience.html"}
+              "public_url": "https://" + config["hostname"] + "/"}
     try:
         response = session.get(config["origin"] + "/experience/api/health", timeout=3)
         payload = response.json()
@@ -164,7 +164,7 @@ def verify(config, proxy=None):
     response.raise_for_status()
     if response.url != origin + "/experience/api/health" or response.json().get("public_origin") != origin:
         raise ValueError("The public route does not reach the configured analysis backend")
-    response = session.get(origin + "/experience.html", timeout=25)
+    response = session.get(origin + "/", timeout=25)
     response.raise_for_status()
     if 'data-live="true"' not in response.text:
         raise ValueError("The public workspace is not connected to the analysis backend")

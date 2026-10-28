@@ -11,7 +11,9 @@
       navWorkflow: "工作流",
       navCases: "分析案例",
       navResults: "实验结果",
-      navExperience: "分析工作台 ↗",
+      navReplay: "执行回放",
+      navEvidence: "证据浏览",
+      startAnalysis: "开始分析",
       eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
       heroLine1: "让每一个财务判断",
       heroLine2: "都有据可循。",
@@ -103,7 +105,7 @@
       datasetText:
         "业务任务 {businessDevelopment} / {businessValidation} / {businessTest}；自建双语合成规划任务 {plannerTrain} / {plannerValidation} / {plannerTest}，分别用于 development / validation / test。",
       viewData: "查看数据 ↗",
-      reproduceEyebrow: "04 / BUILD ON THE WORK",
+      reproduceEyebrow: "06 / BUILD ON THE WORK",
       reproduceTitle: "从阅读结果，到运行实验。",
       reproduceText:
         "源码、冻结数据、预测记录与评测入口均已公开。按照 README 准备环境，即可在本地运行完整分析工作流。",
@@ -124,7 +126,9 @@
       navWorkflow: "Workflow",
       navCases: "Case studies",
       navResults: "Results",
-      navExperience: "Workspace ↗",
+      navReplay: "Replay",
+      navEvidence: "Evidence",
+      startAnalysis: "Start analysis",
       eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
       heroLine1: "Financial insight.",
       heroLine2: "Evidence, attached.",
@@ -223,7 +227,7 @@
       datasetText:
         "Business tasks: {businessDevelopment} / {businessValidation} / {businessTest}. Internally authored synthetic bilingual planner tasks: {plannerTrain} / {plannerValidation} / {plannerTest} for development / validation / test.",
       viewData: "Explore the data ↗",
-      reproduceEyebrow: "04 / BUILD ON THE WORK",
+      reproduceEyebrow: "06 / BUILD ON THE WORK",
       reproduceTitle: "From reading results to running experiments.",
       reproduceText:
         "Source code, frozen data, predictions, and scoring tools are public. Follow the README to set up the environment and run the analysis workflow locally.",
@@ -492,6 +496,9 @@
     byId("regression-tests").textContent = data.regression_tests;
     renderCase();
     renderResult();
+    document.dispatchEvent(
+      new CustomEvent("finevolab:language", { detail: { language } }),
+    );
   }
   document.querySelectorAll('[role="tablist"]').forEach((list) => {
     const tabs = [...list.querySelectorAll('[role="tab"]')];

@@ -4,9 +4,7 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 const { chromium } = require("playwright-core");
 const root = path.resolve(__dirname, "../..");
-const url =
-  process.env.FINEVOLAB_EXPERIENCE_URL ||
-  "http://127.0.0.1:8085/experience.html";
+const url = process.env.FINEVOLAB_EXPERIENCE_URL || "http://127.0.0.1:8085/";
 const real = process.argv.includes("--real");
 let invitation = "";
 (async () => {
@@ -34,6 +32,15 @@ let invitation = "";
     const context = await browser.newContext({
       viewport: { width: 1365, height: 900 },
     });
+    if (process.env.FINEVOLAB_REQUEST_ID) {
+      assert(
+        /^[a-zA-Z0-9-]{16,64}$/.test(process.env.FINEVOLAB_REQUEST_ID),
+        "Invalid idempotency key",
+      );
+      await context.addInitScript((key) => {
+        crypto.randomUUID = () => key;
+      }, process.env.FINEVOLAB_REQUEST_ID);
+    }
     const page = await context.newPage();
     page.on("pageerror", (error) => errors.push(error.message));
     page.on("request", (request) => {
@@ -41,6 +48,27 @@ let invitation = "";
         calls.push(new URL(request.url()).pathname);
     });
     await page.goto(url, { waitUntil: "domcontentloaded" });
+    if (process.env.FINEVOLAB_EXPECT_URL)
+      await page.waitForURL(process.env.FINEVOLAB_EXPECT_URL, {
+        waitUntil: "domcontentloaded",
+      });
+    const archive = (await page.locator("#replay").count()) > 0;
+    const live =
+      (await page.locator("html").getAttribute("data-live")) === "true";
+    verify("page-responsibilities", archive !== live);
+    verify(
+      "no-duplicate-sections",
+      archive
+        ? (await page.locator("#login-form").count()) === 0
+        : (await page
+            .locator("#evidence, #replay, #local-instructions")
+            .count()) === 0,
+    );
+    if (process.env.FINEVOLAB_EXPECT_URL)
+      verify(
+        "canonical-navigation",
+        page.url() === process.env.FINEVOLAB_EXPECT_URL,
+      );
     for (const width of [1365, 768, 390, 360]) {
       await page.setViewportSize({ width, height: 900 });
       for (const language of ["zh-CN", "en"]) {
@@ -72,56 +100,78 @@ let invitation = "";
           `layout-${width}-${language}: ${JSON.stringify(layout)}`,
           layout.scroll <= layout.viewport + 1,
         );
-        for (const stage of [
-          "plan",
-          "tools",
-          "answer",
-          "validation",
-          "usage",
-        ]) {
-          await page.locator(`[data-stage="${stage}"]`).click();
+        if (archive) {
+          for (const stage of [
+            "plan",
+            "tools",
+            "answer",
+            "validation",
+            "usage",
+          ]) {
+            await page.locator(`[data-stage="${stage}"]`).click();
+            verify(
+              `replay-${stage}-${width}-${language}`,
+              (await page
+                .locator(`[data-stage="${stage}"]`)
+                .getAttribute("aria-pressed")) === "true",
+            );
+          }
+          await page.locator("#filter-company").selectOption("MSFT");
+          await page.locator("#filter-year").selectOption("2024");
+          await page.locator("#filter-metric").selectOption("revenue");
           verify(
-            `replay-${stage}-${width}-${language}`,
-            (await page
-              .locator(`[data-stage="${stage}"]`)
-              .getAttribute("aria-pressed")) === "true",
+            `evidence-${width}-${language}`,
+            (await page.locator("#evidence-rows details").count()) > 0,
+          );
+          verify(
+            `period-${width}-${language}`,
+            (await page.locator("#evidence-rows").textContent()).includes(
+              "2023-07-01",
+            ),
+          );
+          await page.locator("#filter-query").fill("impossible-matching-text");
+          verify(
+            `empty-${width}-${language}`,
+            (await page.locator("#evidence-rows details").count()) === 0,
+          );
+          await page.locator("#filter-query").fill("");
+        } else {
+          verify(
+            `analysis-labels-${width}-${language}`,
+            (await page.locator("#login-form button").textContent()).trim() ===
+              (language === "en" ? "Sign in" : "登录"),
           );
         }
-        await page.locator("#filter-company").selectOption("MSFT");
-        await page.locator("#filter-year").selectOption("2024");
-        await page.locator("#filter-metric").selectOption("revenue");
-        verify(
-          `evidence-${width}-${language}`,
-          (await page.locator("#evidence-rows details").count()) > 0,
-        );
-        verify(
-          `period-${width}-${language}`,
-          (await page.locator("#evidence-rows").textContent()).includes(
-            "2023-07-01",
-          ),
-        );
-        await page.locator("#filter-query").fill("impossible-matching-text");
-        verify(
-          `empty-${width}-${language}`,
-          (await page.locator("#evidence-rows details").count()) === 0,
-        );
-        await page.locator("#filter-query").fill("");
       }
     }
     await fs.mkdir(path.join(root, "output/experience/screenshots"), {
       recursive: true,
     });
-    await page.locator("#evidence").screenshot({
-      path: path.join(
-        root,
-        "output/experience/screenshots/evidence-mobile.png",
-      ),
-    });
-    await page.setViewportSize({ width: 1365, height: 900 });
-    await page.locator('[data-stage="tools"]').click();
-    await page.locator("#replay").screenshot({
-      path: path.join(root, "output/experience/screenshots/replay-desktop.png"),
-    });
+    if (archive) {
+      await page.locator("#evidence").screenshot({
+        path: path.join(
+          root,
+          "output/experience/screenshots/evidence-mobile.png",
+        ),
+      });
+      await page.setViewportSize({ width: 1365, height: 900 });
+      await page.locator('[data-stage="tools"]').click();
+      await page.locator("#replay").screenshot({
+        path: path.join(
+          root,
+          "output/experience/screenshots/replay-desktop.png",
+        ),
+      });
+    } else {
+      await page.screenshot({
+        path: path.join(
+          root,
+          "output/experience/screenshots/analysis-mobile.png",
+        ),
+        fullPage: true,
+      });
+      await page.setViewportSize({ width: 1365, height: 900 });
+    }
     let execution = null;
     if (real) {
       invitation = (
@@ -242,7 +292,10 @@ let invitation = "";
     verify("no-script-errors", errors.length === 0);
     const report = {
       status: "passed",
-      url,
+      url: page.url(),
+      requested_url: url,
+      page_kind: live ? "analysis" : "showcase",
+      idempotency_key_reused: Boolean(process.env.FINEVOLAB_REQUEST_ID),
       browser: browser.version(),
       checks: checks.length,
       check_names: checks,

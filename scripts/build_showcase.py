@@ -2,6 +2,7 @@
 
 import argparse
 from decimal import Decimal, ROUND_HALF_UP
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -50,7 +51,7 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/run_logs/experience_acceptance.json")
+    verification = load("project_notes/run_logs/site_layout_checks.json")
     if not verification["workspace_tests"]["passed"]:
         raise ValueError("The regression record must contain a passing result")
     if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:
@@ -108,14 +109,20 @@ def build(output):
             "planner": "project_notes/evaluations/planner_formal_results.json",
             "quantization": "project_notes/evaluations/planner_quantization.json"}}
     output.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "styles.css", "app.js", "favicon.svg", "experience.html", "experience.css", "experience.js"):
+    for name in ("index.html", "styles.css", "app.js", "favicon.svg", "experience.html", "experience.css", "experience.js", "experience_redirect.js"):
         (output / name).write_text((source / name).read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     (output / "data.js").write_text("window.FINEVOLAB_SHOWCASE=" + encoded + ";\n", encoding="utf-8", newline="\n")
+    for name in ("index.html", "experience.html"):
+        page = (output / name).read_text(encoding="utf-8")
+        for asset in ("styles.css", "app.js", "data.js", "experience.css", "experience.js", "experience_redirect.js", "favicon.svg"):
+            version = hashlib.sha256((output / asset).read_bytes()).hexdigest()[:16]
+            page = page.replace("./" + asset + '"', "./" + asset + "?v=" + version + '"')
+        (output / name).write_text(page, encoding="utf-8", newline="\n")
     (output / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8", newline="\n")
     (output / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
     names = {item.name for item in output.iterdir()}
-    expected = {"index.html", "styles.css", "app.js", "favicon.svg", "data.js", "CNAME", ".nojekyll", "experience.html", "experience.css", "experience.js"}
+    expected = {"index.html", "styles.css", "app.js", "favicon.svg", "data.js", "CNAME", ".nojekyll", "experience.html", "experience.css", "experience.js", "experience_redirect.js"}
     if names != expected:
         raise ValueError("The publication directory contains unexpected files")
     print(json.dumps({"status": "built", "files": sorted(names), "model_calls": 0, "domain": DOMAIN}))

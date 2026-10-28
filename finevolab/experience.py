@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from filelock import FileLock
 from pydantic import BaseModel, Field
@@ -182,8 +182,10 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "same-origin"
         response.headers["X-Frame-Options"] = "DENY"
-        if request.url.path.startswith("/experience/api/"):
+        if request.url.path.startswith("/experience/api/") or request.url.path in {"/", "/experience.html", "/index.html"}:
             response.headers["Cache-Control"] = "no-store"
+        else:
+            response.headers["Cache-Control"] = "no-cache"
         return response
 
     @app.get("/experience/api/health")
@@ -273,14 +275,24 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
 
     site = root / "output/showcase"
 
-    @app.get("/experience.html", response_class=HTMLResponse)
+    @app.get("/", response_class=HTMLResponse)
     async def experience_page():
-        return (site / "experience.html").read_text(encoding="utf-8").replace('data-live="false"', 'data-live="true"')
+        page = (root / "finevolab/templates/experience.html").read_text(encoding="utf-8")
+        for name in ("styles.css", "experience.css", "experience.js", "favicon.svg"):
+            reference = "./" + name
+            if reference + '"' in page:
+                version = hashlib.sha256((site / name).read_bytes()).hexdigest()[:16]
+                page = page.replace(reference + '"', reference + "?v=" + version + '"')
+        return page
+
+    @app.get("/experience.html")
+    @app.get("/index.html")
+    async def legacy_page():
+        return RedirectResponse("/", status_code=308)
 
     @app.get("/{name:path}")
     async def static_file(name: str):
-        allowed = {"index.html", "styles.css", "app.js", "data.js", "favicon.svg", "experience.js", "experience.css"}
-        name = name or "index.html"
+        allowed = {"styles.css", "favicon.svg", "experience.js", "experience.css"}
         if name not in allowed:
             raise HTTPException(404, "Page not found")
         return FileResponse(site / name)

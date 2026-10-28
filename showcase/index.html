@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-live="false">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -15,8 +15,10 @@
     <title>FinEvoLab · 有据可循的金融分析</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./experience.css" />
     <script defer src="./data.js"></script>
     <script defer src="./app.js"></script>
+    <script defer src="./experience.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">跳转到正文</a>
@@ -29,9 +31,9 @@
         >
         <nav aria-label="Main navigation" data-i18n-aria="navigation">
           <a href="#workflow" data-i18n="navWorkflow">工作流</a>
-          <a href="#cases" data-i18n="navCases">分析案例</a>
           <a href="#results" data-i18n="navResults">实验结果</a>
-          <a href="./experience.html" data-i18n="navExperience">分析工作台 ↗</a>
+          <a href="#replay" data-i18n="navReplay">执行回放</a>
+          <a href="#evidence" data-i18n="navEvidence">证据浏览</a>
         </nav>
         <div class="header-actions">
           <button
@@ -70,14 +72,12 @@
               RAG、金融工具与执行校验，让模型理解问题，让程序保障计算。
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#cases"
-                ><span data-i18n="exploreCases">探索分析案例</span
+              <a class="button primary" href="https://app.lunelu.com/"
+                ><span data-i18n="startAnalysis">开始分析</span
                 ><span aria-hidden="true">↗</span></a
-              ><a
-                class="button secondary"
-                href="#results"
-                data-i18n="exploreResults"
-                >查看实验结果</a
+              >
+              <a class="button secondary" href="#cases" data-i18n="exploreCases"
+                >探索分析案例</a
               >
             </div>
             <div class="hero-tags">
@@ -159,7 +159,7 @@
           </article>
           <article class="metric-card blue">
             <span class="metric-index">04 / ENGINEERING</span
-            ><strong id="regression-tests">168</strong>
+            ><strong id="regression-tests">189</strong>
             <p data-i18n="testsMetric">核心回归测试通过</p>
             <small data-i18n="testsScope">覆盖工具、工作流、服务与交付</small>
           </article>
@@ -419,10 +419,73 @@
             >
           </div>
         </section>
+        <section class="section" id="replay">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / EXECUTION REPLAY</p>
+              <h2 data-text="replay">执行回放</h2>
+            </div>
+            <p data-text="replayNote">
+              真实归档记录，按阶段查看。回放不发起新的模型调用；原始请求、财报片段与模型回答保留原文。
+            </p>
+          </div>
+          <article class="workspace-card">
+            <span class="mini-pill" data-text="archive"
+              >归档执行 · 非实时运行</span
+            >
+            <h3 id="replay-question"></h3>
+            <p id="replay-identity" class="technical"></p>
+            <a
+              id="replay-source"
+              class="text-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-text="record"
+              >查看原始记录 ↗</a
+            >
+            <div
+              class="step-buttons"
+              id="replay-steps"
+              aria-label="Execution stages"
+            ></div>
+            <div id="replay-detail" aria-live="polite"></div>
+          </article>
+        </section>
+        <section class="section" id="evidence">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">05 / EVIDENCE EXPLORER</p>
+              <h2 data-text="evidence">证据浏览器</h2>
+            </div>
+            <p data-text="evidenceNote">
+              按事实所属财年筛选。报告年份单独展示，保留原始单位、实际期间和原文定位。
+            </p>
+          </div>
+          <article class="workspace-card">
+            <div class="filter-grid">
+              <label
+                ><span data-text="company">公司</span
+                ><select id="filter-company"></select></label
+              ><label
+                ><span data-text="year">财年</span
+                ><select id="filter-year"></select></label
+              ><label
+                ><span data-text="metric">指标</span
+                ><select id="filter-metric"></select></label
+              ><label
+                ><span data-text="find">搜索原文</span
+                ><input id="filter-query" type="search" maxlength="200"
+              /></label>
+            </div>
+            <p id="evidence-count" role="status"></p>
+            <div id="evidence-rows"></div>
+            <p class="technical" id="data-version"></p>
+          </article>
+        </section>
         <section class="reproduction" id="reproduce">
           <div>
             <p class="eyebrow" data-i18n="reproduceEyebrow">
-              04 / BUILD ON THE WORK
+              06 / BUILD ON THE WORK
             </p>
             <h2 data-i18n="reproduceTitle">从阅读结果，到运行实验。</h2>
             <p data-i18n="reproduceText">

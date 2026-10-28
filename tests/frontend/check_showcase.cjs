@@ -51,6 +51,7 @@ function open(options = {}) {
       "experience.html",
       "experience.css",
       "experience.js",
+      "experience_redirect.js",
       "favicon.svg",
     ].every(
       (name) => !fs.readFileSync(path.join(site, name), "utf8").includes("\r"),
