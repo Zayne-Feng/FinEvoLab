@@ -28,9 +28,10 @@
       evidenceFirstSub: "每一步，都可追溯。",
       keyResults: "主要实测结果",
       businessMetric: "扩展业务主测严格成功率",
-      businessScope: "100 道任务 · 每题重复 3 次",
+      businessScope:
+        "{businessQuestions} 道任务 · 每题重复 {businessRepetitions} 次",
       plannerMetric: "微调后规划严格成功率提升",
-      plannerScope: "seed 17 对比 Qwen base · 240 题",
+      plannerScope: "seed 17 对比 Qwen base · {plannerTest} 条规划请求",
       memoryMetric: "NF4 峰值分配显存降低",
       memoryScope: "同权重 BF16 / NF4 配对对照",
       testsMetric: "核心回归测试通过",
@@ -46,7 +47,7 @@
       agentTitle: "请求规划",
       agentText: "识别公司、指标、期间与意图，调度财务工具。",
       harnessTitle: "计算与校验",
-      harnessText: "程序计算金额与同比；校验来源，定向修复并恢复执行。",
+      harnessText: "程序计算金额与同比；校验来源，最多一次定向修复并恢复执行。",
       reportTitle: "证据化报告",
       reportText: "呈现数值、期间、公式与引用，输出 HTML 和 PDF。",
       casesEyebrow: "02 / FINANCIAL CASE STUDIES",
@@ -81,25 +82,25 @@
       quantTab: "推理量化",
       viewEvidence: "查看实验依据",
       businessLabel: "严格业务成功 · 扩展主测",
-      businessTitle: "291 / 300 次严格成功",
+      businessTitle: "{businessSuccesses} / {businessTotal} 次严格成功",
       businessDescription:
-        "主测包含 100 道题，每题重复 3 次。右侧在 65 道共同题、195 次运行的相同范围内比较早期引擎与当前引擎。",
+        "主测包含 {businessQuestions} 道题，每题重复 {businessRepetitions} 次；严格评分按题型检查数值、期间、来源、任务合同及正文证据支持。右侧在 {commonQuestions} 道共同题、{commonTotal} 次运行的相同范围内比较两代引擎。",
       earlierEngine: "早期引擎 · 共同题",
       currentEngine: "当前引擎 · 共同题",
       plannerLabel: "Qwen3-4B-Instruct-2507 · RequestPlan",
-      plannerTitle: "600 条训练样本，240 题检验。",
+      plannerTitle: "{plannerTrain} 条训练样本，{plannerTest} 条请求检验。",
       plannerDescription:
-        "各组使用相同 test、生成预算与评分规则；修复次数为 0。两个 seed 采用 validation 选定的共同 epoch 1，DeepSeek 为共用 API 对照。",
+        "QLoRA 微调 RequestPlan 规划器，严格评分检查 schema 与请求语义。各组共用 {plannerTest} 条 test 请求（{plannerClusters} 个模板簇）、生成预算与评分规则，修复次数为 0。两个 seed 采用 validation 选定的共同 epoch {selectedEpoch}；DeepSeek 为共用 API 对照。",
       quantLabel: "同一 LoRA 权重 · 配对推理",
       quantTitle: "以更少显存，完成同题推理。",
       quantDescription:
-        "同权重、同题、同预算对照。NF4 峰值分配显存降低 {memory}%；平均生成延时增加 {latency}%。严格成功次数为 BF16 212/240、NF4 211/240。",
-      quantPrecision: "精度",
+        "同权重、同题、同预算对照。NF4 峰值分配显存降低 {memory}%；平均生成延时增加 {latency}%。严格成功次数为 BF16 {bf16Successes}/{quantTotal}、NF4 {nf4Successes}/{quantTotal}。",
+      quantPrecision: "推理精度",
       quantMemory: "峰值分配显存",
       quantLatency: "平均延时",
       datasetTitle: "冻结数据，让实验可复现。",
       datasetText:
-        "业务任务 50 / 50 / 100；双语规划任务 600 / 120 / 240，分别用于 development / validation / test。",
+        "业务任务 {businessDevelopment} / {businessValidation} / {businessTest}；自建双语合成规划任务 {plannerTrain} / {plannerValidation} / {plannerTest}，分别用于 development / validation / test。",
       viewData: "查看数据 ↗",
       reproduceEyebrow: "04 / BUILD ON THE WORK",
       reproduceTitle: "从阅读结果，到运行实验。",
@@ -139,9 +140,10 @@
       evidenceFirstSub: "Trace every step.",
       keyResults: "Key measured results",
       businessMetric: "Strict success on the expanded business test",
-      businessScope: "100 tasks · 3 repetitions per task",
+      businessScope:
+        "{businessQuestions} tasks · {businessRepetitions} repetitions per task",
       plannerMetric: "Planner strict success gain after fine-tuning",
-      plannerScope: "seed 17 vs. Qwen base · 240 tasks",
+      plannerScope: "seed 17 vs. Qwen base · {plannerTest} planning requests",
       memoryMetric: "Lower NF4 peak allocated GPU memory",
       memoryScope: "Same-weight BF16 / NF4 comparison",
       testsMetric: "Core regression tests passed",
@@ -161,7 +163,7 @@
         "Identify companies, metrics, periods, and intent, then select financial tools.",
       harnessTitle: "Compute & validate",
       harnessText:
-        "Compute values, validate evidence, repair once, and resume execution.",
+        "Compute values, validate evidence, repair at most once, and resume execution.",
       reportTitle: "Cited reports",
       reportText:
         "Present values, periods, formulas, and citations in HTML and PDF reports.",
@@ -199,25 +201,25 @@
       quantTab: "Quantization",
       viewEvidence: "Read the evidence",
       businessLabel: "STRICT BUSINESS SUCCESS · EXPANDED TEST",
-      businessTitle: "291 / 300 strict successes",
+      businessTitle: "{businessSuccesses} / {businessTotal} strict successes",
       businessDescription:
-        "The main test contains 100 tasks with 3 repetitions each. The chart compares the earlier and current engines on the same 65 common tasks, totaling 195 runs per engine.",
+        "The main test contains {businessQuestions} tasks with {businessRepetitions} repetitions each. Strict scoring applies task-specific checks for values, periods, sources, task contracts, and narrative evidence support. The chart compares both engines on {commonQuestions} common tasks, totaling {commonTotal} runs per engine.",
       earlierEngine: "Earlier engine · Common tasks",
       currentEngine: "Current engine · Common tasks",
       plannerLabel: "Qwen3-4B-Instruct-2507 · RequestPlan",
-      plannerTitle: "Train on 600. Evaluate on 240.",
+      plannerTitle: "Train on {plannerTrain}. Evaluate {plannerTest} requests.",
       plannerDescription:
-        "All arms share the test set, generation budget, and scoring rules, with 0 repairs. Both seeds use the validation-selected common epoch 1; DeepSeek is the shared API control.",
+        "QLoRA tunes the RequestPlan planner; strict scoring checks schema and request semantics. All arms share {plannerTest} test requests ({plannerClusters} template clusters), the generation budget, and scoring rules, with 0 repairs. Both seeds use validation-selected epoch {selectedEpoch}; DeepSeek is the shared API control.",
       quantLabel: "SAME LORA WEIGHTS · PAIRED INFERENCE",
       quantTitle: "Same tasks. A smaller memory footprint.",
       quantDescription:
-        "Same weights, tasks, and budget. NF4 reduces peak allocated memory by {memory}% and increases mean generation latency by {latency}%. Strict successes: BF16 212/240, NF4 211/240.",
-      quantPrecision: "Precision",
+        "Same weights, tasks, and budget. NF4 reduces peak allocated memory by {memory}% and increases mean generation latency by {latency}%. Strict successes: BF16 {bf16Successes}/{quantTotal}, NF4 {nf4Successes}/{quantTotal}.",
+      quantPrecision: "Inference precision",
       quantMemory: "Peak allocated memory",
       quantLatency: "Mean latency",
       datasetTitle: "Frozen inputs. Reproducible experiments.",
       datasetText:
-        "Business tasks: 50 / 50 / 100. Bilingual planner tasks: 600 / 120 / 240 for development / validation / test.",
+        "Business tasks: {businessDevelopment} / {businessValidation} / {businessTest}. Internally authored synthetic bilingual planner tasks: {plannerTrain} / {plannerValidation} / {plannerTest} for development / validation / test.",
       viewData: "Explore the data ↗",
       reproduceEyebrow: "04 / BUILD ON THE WORK",
       reproduceTitle: "From reading results to running experiments.",
@@ -249,7 +251,32 @@
   let selectedCase = "growth";
   let selectedResult = "business";
   const byId = (id) => document.getElementById(id);
-  const t = (key) => translations[language][key];
+  const values = {
+    businessQuestions: data.business.questions,
+    businessRepetitions: data.business.repetitions,
+    businessSuccesses: data.business.successes,
+    businessTotal: data.business.total,
+    commonQuestions: data.business.common_questions,
+    commonTotal: data.business.common_total,
+    businessDevelopment: data.splits.business.development,
+    businessValidation: data.splits.business.validation,
+    businessTest: data.splits.business.test,
+    plannerTrain: data.splits.planner.development,
+    plannerValidation: data.splits.planner.validation,
+    plannerTest: data.splits.planner.test,
+    plannerClusters: data.planner_template_clusters,
+    selectedEpoch: data.selected_epoch,
+    bf16Successes: data.quantization[0].successes,
+    nf4Successes: data.quantization[1].successes,
+    quantTotal: data.quantization[0].total,
+    memory: data.memory_reduction,
+    latency: data.latency_increase,
+  };
+  const t = (key) =>
+    translations[language][key]?.replace(/\{(\w+)\}/g, (_, name) => {
+      if (!(name in values)) throw new Error("A display value is missing");
+      return String(values[name]);
+    });
   const create = (tag, className, text) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -353,9 +380,7 @@
     const prefix = kind === "quantization" ? "quant" : kind;
     byId("result-label").textContent = t(prefix + "Label");
     byId("result-title").textContent = t(prefix + "Title");
-    byId("result-description").textContent = t(prefix + "Description")
-      .replace("{memory}", data.memory_reduction)
-      .replace("{latency}", data.latency_increase);
+    byId("result-description").textContent = t(prefix + "Description");
     byId("result-evidence").href =
       data.repository + "/blob/main/" + data.evidence[kind];
     const chart = byId("result-chart");
@@ -462,6 +487,7 @@
     );
     metric("planner-gain", "+" + data.planner_gain, "pp");
     metric("memory-saving", data.memory_reduction, "%");
+    byId("regression-tests").textContent = data.regression_tests;
     renderCase();
     renderResult();
   }

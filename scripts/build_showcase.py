@@ -46,10 +46,22 @@ def build(output):
     planner = load("project_notes/evaluations/planner_formal_results.json")
     quant = load("project_notes/evaluations/planner_quantization.json")
     reports = load("data/processed/reports.json")["reports"]
+    business_manifest = load("data/evaluation/scope_v3/manifest.json")
+    planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
+    verification = load("project_notes/run_logs/repository_distribution_checks.json")
+    if not verification["workspace_tests"]["passed"]:
+        raise ValueError("The regression record must contain a passing result")
+    if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:
+        raise ValueError("Planner results must match the frozen test manifest")
     current = scope["groups"]["current"]
     previous = scope["groups"]["legacy"]
     if current["common"]["attempts"] != previous["common"]["attempts"]:
         raise ValueError("Paired business groups require the same denominator")
+    if current["all"]["attempts"] % current["all"]["unique_questions"]:
+        raise ValueError("Business repetitions require an integral task count")
+    repetitions = current["all"]["attempts"] // current["all"]["unique_questions"]
+    if current["common"]["attempts"] != current["common"]["unique_questions"] * repetitions:
+        raise ValueError("Common tasks must use the same repetition count")
     seeds = planner["seeds"]
     arms = []
     for seed, arm, label in (("17", "qwen_base", "Qwen base"), ("17", "qwen_lora", "QLoRA · seed 17"),
@@ -80,8 +92,13 @@ def build(output):
             "memory": rounded(group["peak_allocated_gib"], 3), "latency": rounded(group["latency"]["mean"], 3)})
     payload = {"repository": REPOSITORY, "domain": DOMAIN, "cases": cases, "planner": arms,
         "business": {"total": current["all"]["attempts"], "successes": current["all"]["strict_successes"],
-            "questions": current["all"]["unique_questions"], "common_total": current["common"]["attempts"],
+            "questions": current["all"]["unique_questions"], "repetitions": repetitions,
+            "common_questions": current["common"]["unique_questions"], "common_total": current["common"]["attempts"],
             "common_before": previous["common"]["strict_successes"], "common_after": current["common"]["strict_successes"]},
+        "splits": {"business": business_manifest["counts"],
+            "planner": {name: split["cases"] for name, split in planner_manifest["splits"].items()}},
+        "planner_template_clusters": planner["template_clusters"], "selected_epoch": planner["selection"]["selected_epoch"],
+        "regression_tests": verification["workspace_tests"]["tests"],
         "quantization": quant_groups, "memory_reduction": rounded(quant["memory_reduction"] * 100),
         "latency_increase": rounded((quant["mean_latency_ratio"] - 1) * 100),
         "planner_gain": rounded(Decimal(arms[1]["successes"] - arms[0]["successes"]) / planner["test_cases"] * 100),

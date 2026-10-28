@@ -36,6 +36,8 @@ function open(options = {}) {
     throw new Error("A static showcase cannot call a backend");
   };
   dom.window.eval(payload);
+  if (options.transformData)
+    options.transformData(dom.window.FINEVOLAB_SHOWCASE);
   dom.window.eval(script);
   return dom;
 }
@@ -233,6 +235,57 @@ function open(options = {}) {
     "Language switching must work without storage",
   );
   blocked.window.close();
+  check(
+    !document.body.textContent.match(
+      /\{(?:business|planner|common|quant|bf16|nf4|selected)[A-Za-z]*\}/,
+    ),
+    "Data placeholders must resolve in the interface",
+  );
+  id("result-planner").click();
+  check(
+    id("result-description").textContent.includes("RequestPlan") &&
+      id("result-description").textContent.includes("60 template clusters"),
+    "Planner scoring must name its output contract and task clusters",
+  );
+  check(
+    document
+      .querySelector('[data-i18n="datasetText"]')
+      .textContent.includes("synthetic"),
+    "Planner data provenance must be stated",
+  );
+  id("result-business").click();
+  check(
+    id("result-description").textContent.includes("task contracts"),
+    "Business strict scoring must state its checks",
+  );
+  const updated = open({
+    transformData(value) {
+      value.business.successes = 290;
+      value.quantization[1].successes = 210;
+      value.regression_tests = 169;
+    },
+  });
+  const changed = updated.window.document;
+  check(
+    changed.getElementById("result-title").textContent.includes("290 / 300"),
+    "Result titles must follow recorded data",
+  );
+  check(
+    changed.getElementById("business-rate").textContent === "96.67%",
+    "Summary rates must follow the same data as titles",
+  );
+  changed.getElementById("result-quantization").click();
+  check(
+    changed
+      .getElementById("result-description")
+      .textContent.includes("210/240"),
+    "Quantization text must follow per-arm counts",
+  );
+  check(
+    changed.getElementById("regression-tests").textContent === "169",
+    "Regression counts must follow the verification record",
+  );
+  updated.window.close();
   const ids = [...document.querySelectorAll("[id]")].map((node) => node.id);
   check(ids.length === new Set(ids).size, "Document IDs must be unique");
   for (const link of document.querySelectorAll('a[href^="#"]'))
