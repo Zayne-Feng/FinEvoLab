@@ -42,6 +42,7 @@ function open(options = {}) {
   return dom;
 }
 (async () => {
+  check(!payload.includes("\r"), "Generated assets must use LF for reproducible hashes");
   const dom = open();
   const { document } = dom.window;
   const id = (name) => document.getElementById(name);

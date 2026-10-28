@@ -112,9 +112,9 @@ def build(output):
     for name in ("index.html", "styles.css", "app.js", "favicon.svg", "experience.html", "experience.css", "experience.js"):
         shutil.copyfile(source / name, output / name)
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
-    (output / "data.js").write_text("window.FINEVOLAB_SHOWCASE=" + encoded + ";\n", encoding="utf-8")
-    (output / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
-    (output / ".nojekyll").write_text("", encoding="utf-8")
+    (output / "data.js").write_text("window.FINEVOLAB_SHOWCASE=" + encoded + ";\n", encoding="utf-8", newline="\n")
+    (output / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8", newline="\n")
+    (output / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
     names = {item.name for item in output.iterdir()}
     expected = {"index.html", "styles.css", "app.js", "favicon.svg", "data.js", "CNAME", ".nojekyll", "experience.html", "experience.css", "experience.js"}
     if names != expected:
