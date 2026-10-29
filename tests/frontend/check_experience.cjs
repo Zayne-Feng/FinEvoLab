@@ -161,9 +161,32 @@ function open(live = false) {
     status: "complete",
     question: "test",
     phases: { validate: { status: "complete" } },
-    answer: { status: "complete" },
+    answer: {
+      status: "complete",
+      calculations: [
+        {
+          inputs: [
+            {
+              evidence_id: "metric-one",
+              fiscal_year: 2024,
+              period_start: "2023-07-01",
+              period_end: "2024-06-30",
+            },
+          ],
+        },
+      ],
+    },
     validation: { status: "passed" },
-    evidence: [],
+    evidence: [
+      {
+        id: "metric-one",
+        company: "MSFT",
+        report_year: 2026,
+        source_url: "https://example.com/filing",
+        text: "Revenue source",
+        locator: "income-statements",
+      },
+    ],
     reports: ["pdf"],
   };
   lw.fetch = async (url, options = {}) => {
@@ -212,6 +235,10 @@ function open(live = false) {
     ld.getElementById("invite").value === "",
     "Invitation must clear after authentication",
   );
+  check(
+    ld.getElementById("live-mode").textContent.includes("已登录"),
+    "Authenticated sessions must not display a login instruction",
+  );
   ld.getElementById("example").click();
   check(
     ld.getElementById("question").value.includes("Microsoft"),
@@ -227,9 +254,35 @@ function open(live = false) {
     "Validation result must be rendered",
   );
   check(
-    ld.querySelector("#task-output a").href.endsWith("/report/pdf"),
+    ld
+      .querySelector('#task-output a[href$="/report/pdf"]')
+      .href.endsWith("/report/pdf"),
     "Download must target the owned report route",
   );
+  const evidence = ld.querySelector('details[data-evidence-id="metric-one"]');
+  check(
+    evidence.querySelector("summary").textContent.includes("FY2024") &&
+      evidence.querySelector("summary").textContent.includes("2026"),
+    "Metric fiscal year must remain distinct from source report year",
+  );
+  check(
+    evidence.textContent.includes("2023-07-01") &&
+      evidence.textContent.includes("2024-06-30"),
+    "Actual financial periods must be visible",
+  );
+  ld.getElementById("language-toggle").click();
+  check(
+    ld.getElementById("live-mode").textContent.startsWith("Signed in."),
+    "Authenticated status must follow the selected language",
+  );
+  check(
+    ld
+      .querySelector('details[data-evidence-id="metric-one"] summary')
+      .textContent.includes("Source report year 2026"),
+    "Source-year labels must follow the selected language",
+  );
+  ld.getElementById("language-toggle").click();
+  await tick();
   authenticated = false;
   ld.getElementById("question-form").dispatchEvent(
     new lw.Event("submit", { cancelable: true }),
@@ -265,6 +318,10 @@ function open(live = false) {
   check(
     ld.getElementById("task-output").textContent === "",
     "Logout must clear task contents",
+  );
+  check(
+    ld.getElementById("live-mode").textContent.includes("请使用邀请口令登录"),
+    "Logout must restore the login instruction",
   );
   lw.close();
   console.log(

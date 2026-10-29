@@ -29,7 +29,7 @@
       net_income: "净利润",
       observations: "条观测",
       empty: "没有匹配的证据。",
-      reportYear: "报告年份",
+      reportYear: "来源报告年份",
       period: "实际期间",
       source: "打开原始来源 ↗",
       plan: "请求计划",
@@ -40,6 +40,9 @@
       liveNote:
         "登录后，使用服务端 DeepSeek 配置执行请求规划、财报检索、金融工具、harness 校验与报告生成。",
       connectedMode: "真实分析服务已接入，请使用邀请口令登录。",
+      signedInMode: "已登录，可提交分析问题或查看历史任务。",
+      sourceYearNote:
+        "指标财年由实际期间确定；来源报告可披露较早财年的对比数据。",
       invite: "邀请口令",
       signIn: "登录",
       signOut: "退出登录",
@@ -103,7 +106,7 @@
       net_income: "Net income",
       observations: "observations",
       empty: "No matching evidence.",
-      reportYear: "Report year",
+      reportYear: "Source report year",
       period: "Actual period",
       source: "Open original source ↗",
       plan: "Request plan",
@@ -115,6 +118,9 @@
         "After signing in, use the server-side DeepSeek configuration for request planning, report retrieval, financial tools, harness validation, and report generation.",
       connectedMode:
         "Analysis service connected. Sign in with your invitation.",
+      signedInMode: "Signed in. Ask a question or open a saved analysis.",
+      sourceYearNote:
+        "The metric fiscal year follows its actual period. A later source report can disclose earlier comparative figures.",
       invite: "Invitation code",
       signIn: "Sign in",
       signOut: "Sign out",
@@ -182,14 +188,26 @@
     element.rel = "noopener noreferrer";
     return element;
   }
-  function evidenceCard(item) {
+  function evidenceCard(item, observation) {
     const details = node("details"),
       summary = node(
         "summary",
-        `${item.company} · ${t("reportYear")} ${item.report_year} · ${item.section || item.kind || ""}`,
+        `${item.company}${observation ? " · FY" + observation.fiscal_year : ""} · ${t("reportYear")} ${item.report_year} · ${item.section || item.kind || ""}`,
       );
+    details.dataset.evidenceId = item.id;
+    details.append(summary);
+    if (observation) {
+      details.append(
+        node(
+          "p",
+          `${t("period")}: ${observation.period_start} → ${observation.period_end}`,
+          "evidence-meta",
+        ),
+      );
+      if (observation.fiscal_year !== item.report_year)
+        details.append(node("p", t("sourceYearNote"), "technical"));
+    }
     details.append(
-      summary,
       node("p", item.id, "technical"),
       node("pre", item.text),
       node("p", item.locator, "technical"),
@@ -290,6 +308,7 @@
   function renderSession() {
     id("login-form").hidden = !live || Boolean(session);
     id("analysis-workspace").hidden = !session;
+    id("live-mode").textContent = t(session ? "signedInMode" : "connectedMode");
     if (session)
       id("session-info").textContent =
         `${session.user} · ${t("quota")} ${session.used}/${session.daily_tasks} · UTC`;
@@ -328,7 +347,22 @@
       );
       target.append(details);
     }
-    (state.evidence || []).forEach((item) => target.append(evidenceCard(item)));
+    const observations = [
+      ...(state.answer?.metrics || []),
+      ...(state.answer?.calculations || []).flatMap(
+        (calculation) => calculation.inputs || [],
+      ),
+    ];
+    (state.evidence || []).forEach((item) =>
+      target.append(
+        evidenceCard(
+          item,
+          observations.find(
+            (observation) => observation.evidence_id === item.id,
+          ),
+        ),
+      ),
+    );
     if (state.validation)
       target.append(
         node("h3", t("validation")),
