@@ -1,0 +1,111 @@
+{
+  "run_id": "agent-roles-v1",
+  "commit": "04d1f610403dcbb85e585d54a5ad6bd896330f15",
+  "source_hashes": {
+    "configs/agent_review.json": "4e76d30c458f087cc1e060b236f259796e7c485a58df46c3f2b0103a51a7564d",
+    "configs/reranker.json": "e901395fe791119c45108380aaf68d7b72c47aaab46d96d3efa3bdac043890b2",
+    "configs/retrieval.json": "8cf86b23d16603ebfe10193cb6523f7f4968297e9640998d48e591ffe9356879",
+    "configs/retrieval_services.json": "e715e5c5f9cac95c8a195816bb2fc0a8fa291779f1d59f43cff579a410f0127a",
+    "data/evaluation/service_agents/validation.json": "f75072342ea41ec9772a81e2be9a107a1b34df3e9701ec77f2428215662cc3a7",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "finevolab/agent.py": "0fcd63160e0f14469f1ecb39030ae4eab46cca9318ab2ef8576dc0bd600187ad",
+    "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+    "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+    "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+    "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "ee96906771ff5aadb532c78818bf60e62a8592b5cfc8b009f59374f096a8b682",
+    "finevolab/experience.py": "d48e670ad52105afe0e36265392a4e4effefbb86da46f60a94f350f84c09d3f0",
+    "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/grounded.py": "442eba3aa016384c468701943873c55da456821cd59c3d8410b64cc7632a22e1",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+    "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+    "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+    "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+    "finevolab/provider.py": "50ca13ed86e7327528a4009438abda070a59ac203881e681d63cef6ee9bd2936",
+    "finevolab/reporting.py": "b55be991a00ca3024d1257657af02238928f14e9580d9eb5f927f8f41141d2f8",
+    "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+    "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+    "finevolab/retrieval_cache.py": "05a4c109a42d20b02b2acfff33101632dbdb63d0ac1a49a02ad5a0d4a169c1c3",
+    "finevolab/retrieval_settings.py": "708b0ec9e987c6990747aa33b3ce58cc8a789963f2b327efa08860df0a9320d9",
+    "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+    "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+    "finevolab/runtime.py": "529d62a108f9777c38483984b5c5467855c507281b8ad1903cad5759ed0f26ea",
+    "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+    "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+    "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+    "finevolab/tools.py": "2669f13d2e8346b5dbd2a93187a2b8971c51ccaba6467c84625f8acc4d67edc7",
+    "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+    "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+    "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+    "finevolab/validation.py": "ff2d890f887de832a9e2ff6fc70c01fcf053ca2cbc7acfe02d96f539cb8669c1",
+    "finevolab/vector_backends.py": "bd1405d62c2eee9224b33ad85b1cdfdd8e8a3457805d359c6337e17bdc339234",
+    "finevolab/web.py": "f20eb1fc9429d951a4579ab8f0fa1c101fd230d07a1c04a132794c6208edbe73",
+    "finevolab/workflow.py": "d3e0ee79da56dc0d0c3b449537b5f3507ca244bfd24ea165844711ea784074e0",
+    "prompts/benchmark.json": "b309162e87e7316792c25817ba950966f5dcc6cc3544b264c867de7d72da76a6",
+    "requirements/development.lock.txt": "a9c243def88045df1ea5aa81d0acddb28b98f35dc6d0cf394a5e4678e326dd3f",
+    "requirements/retrieval_services.in": "32683c05628a7ec962988f95356a36273563d0e1e3205940330a804ad23d74f0",
+    "scripts/benchmark_agent_roles.py": "d4526b844c3775baecbf270386a8310e8516b9416c55a039fccbca37d6bf89d8",
+    "scripts/benchmark_retrieval_services.py": "24c194599af525b0f413fa7a473f91b7b03abfb3d7ca0a0f3c4d8bfe6d8d37ca",
+    "scripts/benchmark_runtime_refinement.py": "c32afa93306429cd6d9e78c9845ff047d35833ebf7e2aecce014ac69f9b35d11",
+    "scripts/review_closure_answers.py": "219e036ce48f2bdf6e83271a500066a2c6086efe8964aac326c3955f5fed4db9",
+    "scripts/service_experiment_utils.py": "655125363a3427e4b24c940e01597a03d76f3e35541158425404db69f0b34e9b"
+  },
+  "config": {
+    "dataset_sha256": "f75072342ea41ec9772a81e2be9a107a1b34df3e9701ec77f2428215662cc3a7",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/",
+    "thinking": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "arms": {
+      "S": "off",
+      "R": "self_check",
+      "M": "reviewer"
+    },
+    "repeats": 1,
+    "budget": {
+      "model_calls": 6,
+      "tool_calls": 10,
+      "tokens": 20000,
+      "seconds": 240
+    },
+    "temperature": 0,
+    "max_tokens": 1600,
+    "retrieval_arm": "D",
+    "model_output_cache": false,
+    "deterministic_tool_cache": false,
+    "arm_order": "rotate by question index",
+    "source_tasks": 12,
+    "requests_per_arm": 24
+  },
+  "source_patch": "source.patch",
+  "source_patch_sha256": "c4123d54c897b6c477856aedb01d59f1e16cb5640ce71a777f1698e92aaa0ed0",
+  "packages": {
+    "redis": "8.1.0",
+    "pymilvus": "3.0.2",
+    "milvus-lite": "3.2.2",
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "faiss-cpu": "1.15.1"
+  },
+  "export": {
+    "path_fields": [
+      "source_path"
+    ],
+    "path_format": "repository-relative",
+    "raw_records_sha256": "18f2d8ba455486fa2955abf957ab8172c93bb70cb241bfda6c917c9930105167"
+  },
+  "supplementary_input_hashes": {
+    "finevolab/templates/analysis.html": "3fce320eb893dcbd232894bc315c31b66df50542acb4b4e0e3726699e7cd5586",
+    "data/evaluation/scope_v3/documents.json": "9f083f9d8d7b5af7b52807c0de0b4b67c1ca97b6c4599e49dc5263f93f36955b"
+  }
+}

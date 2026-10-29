@@ -1,0 +1,118 @@
+{
+  "status": "completed",
+  "groups": {
+    "A:first_pass": {
+      "evaluations": 77,
+      "evidence_hits": 42,
+      "mean_seconds": 0.08490965714301708,
+      "p50_seconds": 0.0673534000015934,
+      "p95_seconds": 0.18294367999769748,
+      "redis_hits": 0,
+      "milvus_requests": 0
+    },
+    "A:warm": {
+      "evaluations": 154,
+      "evidence_hits": 84,
+      "mean_seconds": 0.09113382532441038,
+      "p50_seconds": 0.08229845000460045,
+      "p95_seconds": 0.1661892300024192,
+      "redis_hits": 0,
+      "milvus_requests": 0
+    },
+    "B:first_pass": {
+      "evaluations": 77,
+      "evidence_hits": 42,
+      "mean_seconds": 0.08370887402553934,
+      "p50_seconds": 0.06703040000138571,
+      "p95_seconds": 0.20178111999848625,
+      "redis_hits": 0,
+      "milvus_requests": 0
+    },
+    "B:warm": {
+      "evaluations": 154,
+      "evidence_hits": 84,
+      "mean_seconds": 0.022437347402318394,
+      "p50_seconds": 0.005871450004633516,
+      "p95_seconds": 0.07597314499944333,
+      "redis_hits": 116,
+      "milvus_requests": 0
+    },
+    "C:first_pass": {
+      "evaluations": 77,
+      "evidence_hits": 42,
+      "mean_seconds": 0.8853020480517019,
+      "p50_seconds": 0.8872673000005307,
+      "p95_seconds": 1.9506556800013644,
+      "redis_hits": 0,
+      "milvus_requests": 262
+    },
+    "C:warm": {
+      "evaluations": 154,
+      "evidence_hits": 84,
+      "mean_seconds": 0.9328471590910246,
+      "p50_seconds": 0.9596014499984449,
+      "p95_seconds": 1.9024365200006286,
+      "redis_hits": 0,
+      "milvus_requests": 524
+    },
+    "D:first_pass": {
+      "evaluations": 77,
+      "evidence_hits": 42,
+      "mean_seconds": 0.864008402597203,
+      "p50_seconds": 0.8467137999978149,
+      "p95_seconds": 1.9648605000023969,
+      "redis_hits": 0,
+      "milvus_requests": 262
+    },
+    "D:warm": {
+      "evaluations": 154,
+      "evidence_hits": 84,
+      "mean_seconds": 0.02358582792190386,
+      "p50_seconds": 0.005656549998093396,
+      "p95_seconds": 0.0790176650018111,
+      "redis_hits": 116,
+      "milvus_requests": 0
+    }
+  },
+  "queries": 77,
+  "fixed_queries": 58,
+  "paired_backend_comparisons": 693,
+  "exact_passage_equivalence": true,
+  "cross_process_cache": [
+    {
+      "ids": [
+        "0ffcbbf71ca18d7c296ab72b",
+        "02c4704af33d9a037b13e3bf",
+        "2b643e217c241a6650a55816",
+        "1a1c63b021ac9466f2ec269e",
+        "77e77189dfc0607ea91fa64b"
+      ],
+      "events": [
+        {
+          "event": "retrieval_cache",
+          "backend": "redis",
+          "status": "miss"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "0ffcbbf71ca18d7c296ab72b",
+        "02c4704af33d9a037b13e3bf",
+        "2b643e217c241a6650a55816",
+        "1a1c63b021ac9466f2ec269e",
+        "77e77189dfc0607ea91fa64b"
+      ],
+      "events": [
+        {
+          "event": "retrieval_cache",
+          "backend": "redis",
+          "status": "hit"
+        }
+      ]
+    }
+  ],
+  "redis_used_memory_bytes": 888153,
+  "model_requests": 0,
+  "scope": "retrieval of final evidence contexts, including unchanged selected-document BM25 tasks"
+}

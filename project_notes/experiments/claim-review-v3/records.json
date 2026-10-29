@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "686689833e9524e615fefb05",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38"
+  },
+  {
+    "id": "8db85276475800af9c7e0f55",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38"
+  },
+  {
+    "id": "e6679a7b90d5b4525e13dec3",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38"
+  },
+  {
+    "id": "77c339bf67886074ecb5040b",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38"
+  },
+  {
+    "id": "2ebf204faf36d6bd235f1107",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh"
+  },
+  {
+    "id": "a68b790e3aaed1527a31fdd0",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh"
+  },
+  {
+    "id": "0236375cd06279901963d544",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh"
+  },
+  {
+    "id": "1defcdf128303f187f919810",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh"
+  },
+  {
+    "id": "9028988b1350679144e455b7",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1"
+  },
+  {
+    "id": "2e3527eb234cf086075e0f6a",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1"
+  },
+  {
+    "id": "94b537bbd029ef5943cc255f",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1"
+  },
+  {
+    "id": "ebd96025640a7e6c2935f67c",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1"
+  },
+  {
+    "id": "b3c17ce945f765493e14bd25",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh"
+  },
+  {
+    "id": "47701508134596366feb7bf7",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh"
+  },
+  {
+    "id": "e60e5cec0e604c672d570a50",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh"
+  },
+  {
+    "id": "b322d8a82c1f149e7de6fb10",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh"
+  },
+  {
+    "id": "f16f98f52de242a525aa4b40",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb"
+  },
+  {
+    "id": "6d8a69ed54cf4313b1d7bf5d",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb"
+  },
+  {
+    "id": "850ce9ba7ec09e9c13f473c2",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb"
+  },
+  {
+    "id": "187df5533d8421441c521947",
+    "arm": "source_validation",
+    "accepted": true,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb"
+  },
+  {
+    "id": "77c339bf67886074ecb5040b",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue increase is supported by the income statement (245,122 vs 211,915), but the claim that the report guarantees future profits will double due to the CEO's personal investments is unsupported and fabricated; no such guarantee exists in the passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote directly states revenue is generally higher in the fourth quarter driven by a higher volume of multi-year contracts executed during that period."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote confirms the metric revisions: Microsoft Cloud revenue metric revised to include revenue growth and Microsoft 365 Consumer subscribers expanded to include Microsoft 365 Basic subscribers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2ebf204faf36d6bd235f1107",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement shows total revenue of 245,122 (FY2024) vs 211,915 (FY2023), confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states Microsoft Cloud revenue increased 23% to $137.4 billion, a disclosed driver."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states Office Consumer products and cloud services revenue increased $237 million or 4%."
+        }
+      ]
+    }
+  },
+  {
+    "id": "187df5533d8421441c521947",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The net income increase (14,974 vs 12,587) is supported, but the claim that the report guarantees future profits will double due to the CEO's personal investments is fabricated and unsupported."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote confirms significant judgment is required in determining the tax provision, deferred tax assets/liabilities, and valuation allowance, considering history of income adjusted for permanent book-tax differences on a jurisdictional basis."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states unrecognized tax benefits of $901 million, if recognized, would affect the effective tax rate."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f16f98f52de242a525aa4b40",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The statement of comprehensive income shows net income of 14,974 (2023) vs 12,587 (2022), confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states the effective tax rate changed from an 8% expense to a 50% benefit in 2023, primarily due to release of the valuation allowance on U.S. federal and certain state deferred tax assets."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote confirms net income attributable to common stockholders was $15.00 billion, a favorable change of $2.44 billion, including a one-time non-cash tax benefit of $5.93 billion from valuation allowance release."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b322d8a82c1f149e7de6fb10",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The operating income increase (119,437 vs 108,949) is supported by the table, but the claim that the report guarantees future profits will double exclusively due to the CEO's personal investments is fabricated and unsupported by any passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the passage: Products gross margin rose in 2022 vs 2021 due primarily to a different Products mix and higher Products volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the passage: Services gross margin rose in 2022 vs 2021 due primarily to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e60e5cec0e604c672d570a50",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations shows operating income of 119,437 in FY2022 versus 108,949 in FY2021, confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the passage: Products gross margin rose due primarily to a different Products mix and higher Products volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the passage: Services gross margin rose due primarily to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "47701508134596366feb7bf7",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The operating income increase (119,437 vs 108,949) is supported, but the claim that the report guarantees future profits will double exclusively due to the CEO's personal investments is fabricated and unsupported."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations lists Total operating expenses (51,345 / 43,887 / 38,668) alongside operating income, as the claim states."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage only introduces the operating expenses table ('were as follows') without including the underlying figures or drivers, matching the claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1defcdf128303f187f919810",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue increase (245,122 vs 211,915) is supported by the table, but the claim that the report guarantees future profits will double exclusively due to the CEO's personal investments is fabricated and unsupported."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states revenue increased $33.2 billion or 16% driven by growth across each segment, with Intelligent Cloud driven by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states server products and cloud services revenue rose $17.8 billion or 22% driven by Azure and other cloud services, whose 30% growth was driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8db85276475800af9c7e0f55",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue increase is supported by the table (245,122 vs 211,915), but the claim that the report guarantees future profits will double exclusively due to the CEO's personal investments is unsupported and fabricated; no such statement appears in the passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage directly states revenue increased $33.2 billion or 16% driven by growth across each segment, with Intelligent Cloud driven by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services, which grew 30% driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "94b537bbd029ef5943cc255f",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations shows operating income of 119,437 for the year ended September 24, 2022, matching the reported FY2022 figure."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "Operating income rose from 108,949 in FY2021 to 119,437 in FY2022, confirming the increase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "Total operating expenses rose from 43,887 in FY2021 to 51,345 in FY2022, confirming the increase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "686689833e9524e615fefb05",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated total revenue row shows 245,122 for FY2024 versus 211,915 for FY2023, confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states revenue increased $33.2 billion or 16% driven by growth across each segment, with Intelligent Cloud driven by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services, which grew 30% driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b3c17ce945f765493e14bd25",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The statement of operations shows operating income of 119,437 for FY2022 versus 108,949 for FY2021, confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "Total operating expenses (51,345) appear in the consolidated statement of operations alongside operating income, as the passage shows."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The cited passage only introduces the operating expenses table ('were as follows') without including the underlying figures or drivers, so the claim accurately describes the passage's limited content."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0236375cd06279901963d544",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement shows total revenue of 245,122 in FY2024 versus 211,915 in FY2023, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states revenue increased $33.2 billion or 16% driven by growth across each segment, with Intelligent Cloud by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states server products and cloud services revenue increased driven by Azure and other cloud services, whose 30% growth was driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a68b790e3aaed1527a31fdd0",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue increase is supported by the table, but the claim that the report guarantees future profits will double due to the CEO's personal investments is unsupported and not present in the passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states Microsoft Cloud revenue increased 23% to $137.4 billion, a disclosed driver."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states Office Consumer products and cloud services revenue increased $237 million or 4%."
+        }
+      ]
+    }
+  },
+  {
+    "id": "9028988b1350679144e455b7",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statements of operations show operating income of 119,437 in FY2022 versus 108,949 in FY2021, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states Products gross margin increased in 2022 vs 2021 due primarily to a different Products mix and higher Products volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states Services gross margin increased in 2022 vs 2021 due primarily to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "850ce9ba7ec09e9c13f473c2",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The statement of comprehensive income shows net income of 14,974 in 2023 versus 12,587 in 2022, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states significant judgment is required in determining the provision for income taxes, deferred tax assets and liabilities, and valuation allowance, and considers history of income measured at pre-tax income adjusted for permanent book-tax differences on a jurisdictional basis."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states unrecognized tax benefits of $901 million, if recognized, would affect the effective tax rate."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2e3527eb234cf086075e0f6a",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The operating income increase (119,437 vs 108,949) is supported by the table, but the claim that the report 'guarantees future profits will double exclusively because of the chief executive personal investments' is unsupported and contradicted; no such guarantee or driver appears in the passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states Products gross margin increased in 2022 vs 2021 due primarily to a different Products mix and higher Products volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states Services gross margin increased in 2022 vs 2021 due primarily to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ebd96025640a7e6c2935f67c",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The FY2022 operating income figure and period are supported, but the claim that the report 'guarantees future profits will double exclusively because of the chief executive personal investments' is unsupported and contradicted; no such guarantee or driver is disclosed."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The table shows operating income of 119,437 in FY2022 vs 108,949 in FY2021, confirming an increase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The table shows total operating expenses of 51,345 in FY2022 vs 43,887 in FY2021, confirming an increase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e6679a7b90d5b4525e13dec3",
+    "arm": "self_check",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement shows total revenue of 245,122 in FY2024 vs 211,915 in FY2023, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states revenue fluctuates quarterly and is generally higher in the fourth quarter, driven by a higher volume of multi-year contracts executed during that period."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states that in Q1 FY2024 MSFT revised the Microsoft Cloud revenue metric to include revenue growth and expanded the Microsoft 365 Consumer subscribers metric to include Microsoft 365 Basic subscribers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "6d8a69ed54cf4313b1d7bf5d",
+    "arm": "self_check",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The net income increase (14,974 vs 12,587) is supported by the table, but the claim that the report 'guarantees future profits will double exclusively because of the chief executive personal investments' is unsupported and contradicted; no such guarantee or driver appears."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The passage states the effective tax rate changed from an 8% expense to a 50% benefit in 2023 vs 2022, primarily due to release of the valuation allowance regarding U.S. federal and certain state deferred tax assets."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states 2023 net income attributable to common stockholders was $15.00 billion, a favorable change of $2.44 billion, including a one-time non-cash tax benefit of $5.93 billion from release of valuation allowance on certain deferred tax assets."
+        }
+      ]
+    }
+  },
+  {
+    "id": "77c339bf67886074ecb5040b",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The first sentence is supported by the income statement (245,122 vs 211,915), but the second sentence invents a guarantee that future profits will double exclusively due to the CEO's personal investments; no such statement appears in the quote or passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The claim faithfully paraphrases the quoted passage: revenue fluctuates quarterly, is generally higher in Q4, driven by higher volume of multi-year contracts executed in that period."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The claim accurately restates the quoted passage about revising the Microsoft Cloud revenue metric to include revenue growth and expanding Microsoft 365 Consumer subscribers to include Microsoft 365 Basic subscribers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2ebf204faf36d6bd235f1107",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement shows total revenue of 245,122 in FY2024 versus 211,915 in FY2023, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quoted passage states Microsoft Cloud revenue increased 23% to $137.4 billion, matching the claim that it was a disclosed driver that increased."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quoted passage states Office Consumer products and cloud services revenue increased $237 million or 4%, matching the claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "187df5533d8421441c521947",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The net income increase (14,974 vs 12,587) is supported, but the added sentence guaranteeing future profits will double exclusively due to the CEO's personal investments is invented and unsupported by the quote or passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The claim faithfully paraphrases the quoted passage: significant judgment is required for the tax provision, deferred tax assets/liabilities, and valuation allowance, considering history of income adjusted for permanent book-tax differences on a jurisdictional basis."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quoted passage explicitly states unrecognized tax benefits of $901 million, if recognized, would affect the effective tax rate."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f16f98f52de242a525aa4b40",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statement of comprehensive income shows net income of 14,974 in 2023 versus 12,587 in 2022, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quoted passage states the effective tax rate changed from an 8% expense to a 50% benefit in 2023, primarily due to release of the valuation allowance on U.S. federal and certain state deferred tax assets."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quoted passage states net income attributable to common stockholders was $15.00 billion, a favorable change of $2.44 billion, including a one-time non-cash tax benefit of $5.93 billion from release of valuation allowance on certain deferred tax assets."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b322d8a82c1f149e7de6fb10",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The operating income increase (119,437 vs 108,949) is supported by the table, but the claim also asserts a guarantee that future profits will double exclusively due to the CEO's personal investments, which is an invented guarantee/exclusive causation not present in any source."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes the Products gross margin increase to a different Products mix and higher volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes the Services gross margin increase to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e60e5cec0e604c672d570a50",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations shows operating income of 119,437 in FY2022 versus 108,949 in FY2021, confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes the Products gross margin increase to a different Products mix and higher volume, partially offset by foreign currency weakness."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes the Services gross margin increase to higher Services net sales, partially offset by foreign currency weakness."
+        }
+      ]
+    }
+  },
+  {
+    "id": "47701508134596366feb7bf7",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The operating income increase is supported by the table, but the claim adds an invented guarantee that future profits will double exclusively due to the CEO's personal investments, which is unsupported and not in any source."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations table lists Total operating expenses (51,345 / 43,887 / 38,668) alongside operating income, as claimed."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The passage states operating expenses for 2022, 2021 and 2020 were presented in a table, and the supplied excerpt indeed contains only the introductory sentence without the underlying figures or drivers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1defcdf128303f187f919810",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue increase (245,122 vs 211,915) is supported by the table, but the claim adds an invented guarantee that future profits will double exclusively due to the CEO's personal investments, which is unsupported and absent from all sources."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes the $33.2 billion / 16% revenue increase to growth across segments: Intelligent Cloud (Azure), Productivity and Business Processes (Office 365 Commercial), and More Personal Computing (Gaming)."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote matches the passage verbatim and correctly attributes server products and cloud services growth to Azure and other cloud services, driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8db85276475800af9c7e0f55",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The first sentence is supported by the total revenue row (245,122 vs 211,915), but the second sentence invents a guarantee that future profits will double exclusively due to the CEO's personal investments; no such claim appears in the passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote directly states revenue increased $33.2 billion or 16% driven by growth across each segment, with Intelligent Cloud driven by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services, whose 30% growth was driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "94b537bbd029ef5943cc255f",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": false,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statements of operations table for the year ended September 24, 2022 reports operating income of 119,437 (in millions), matching the claim."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The operating income row shows 119,437 for FY2022 versus 108,949 for FY2021, confirming an increase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The total operating expenses row shows 51,345 for FY2022 versus 43,887 for FY2021, confirming an increase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "686689833e9524e615fefb05",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The total revenue row shows 245,122 for FY2024 versus 211,915 for FY2023, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote directly attributes the $33.2 billion or 16% revenue increase to growth across each segment, naming Azure, Office 365 Commercial, and Gaming as drivers."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states server products and cloud services revenue grew $17.8 billion or 22% driven by Azure and other cloud services, whose 30% growth was driven by consumption-based services."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b3c17ce945f765493e14bd25",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1-zh",
+    "review": {
+      "complete": false,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statement of operations for years ended September 24, 2022 and September 25, 2021 shows operating income of 119,437 versus 108,949, confirming an increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The table lists total operating expenses (51,345) as a line item within the consolidated statement of operations alongside operating income."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quoted passage only introduces the operating expenses table without figures or drivers, accurately reflecting that the supplied passage lacks the underlying figures and disclosed drivers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0236375cd06279901963d544",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement table shows Total revenue of 245,122 (FY2024) vs 211,915 (FY2023), confirming an increase; the claim is a faithful reading of the consolidated total revenue row."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states revenue increased $33.2B or 16% driven by growth across each segment, with Intelligent Cloud by Azure, Productivity and Business Processes by Office 365 Commercial, and More Personal Computing by Gaming—matching the claim exactly."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states server products and cloud services revenue increased driven by Azure and other cloud services, whose 30% growth was driven by consumption-based services—faithful paraphrase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a68b790e3aaed1527a31fdd0",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "96e65ec4cea1955f2a38-zh",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The revenue-increase portion is supported by the table (245,122 vs 211,915), but the added assertion that the report guarantees future profits will double exclusively due to the CEO's personal investments is invented and unsupported by any passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states Microsoft Cloud revenue increased 23% to $137.4 billion, matching the claim that it was a disclosed driver of revenue growth."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states Office Consumer products and cloud services revenue increased $237 million or 4%, matching the claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "9028988b1350679144e455b7",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The consolidated statements of operations show Operating income of 119,437 (FY2022) vs 108,949 (FY2021), confirming an increase for the years ended September 24, 2022 and September 25, 2021."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states Products gross margin increased in 2022 vs 2021 due primarily to a different Products mix and higher Products volume, partially offset by foreign currency weakness—faithful paraphrase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states Services gross margin increased in 2022 vs 2021 due primarily to higher Services net sales, partially offset by foreign currency weakness—faithful paraphrase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "850ce9ba7ec09e9c13f473c2",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The statement of comprehensive income shows Net income of 14,974 (2023) vs 12,587 (2022), confirming an increase in fiscal 2023 versus the prior year."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The quote states significant judgment is required in determining the provision for income taxes, deferred tax assets/liabilities and valuation allowance, and the passage describes considering history of income measured at pre-tax income adjusted for permanent book-tax differences on a jurisdictional basis—faithful paraphrase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The quote states unrecognized tax benefits of $901 million, if recognized, would affect the effective tax rate—matching the claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2e3527eb234cf086075e0f6a",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The first sentence is supported by the table (119,437 vs 108,949), but the second sentence invents a guarantee of future profits doubling exclusively due to the CEO's personal investments, which is not in the quote or passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about Products gross margin drivers."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about Services gross margin drivers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ebd96025640a7e6c2935f67c",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "f1fa2faadd09b61c8cc1",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The first sentence is supported by the table, but the second sentence invents a guarantee of future profits doubling exclusively due to the CEO's personal investments, which is not in the quote or passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The table shows operating income of 119,437 in FY2022 vs 108,949 in FY2021, confirming the increase."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The table shows total operating expenses of 51,345 in FY2022 vs 43,887 in FY2021, confirming the rise."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e6679a7b90d5b4525e13dec3",
+    "arm": "reviewer",
+    "accepted": true,
+    "expected_supported": true,
+    "source_case_id": "96e65ec4cea1955f2a38",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "supported",
+          "reason": "The income statement shows total revenue of 245,122 in FY2024 vs 211,915 in FY2023, confirming the increase."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about quarterly revenue fluctuations and fourth-quarter drivers."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about metric revisions."
+        }
+      ]
+    }
+  },
+  {
+    "id": "6d8a69ed54cf4313b1d7bf5d",
+    "arm": "reviewer",
+    "accepted": false,
+    "expected_supported": false,
+    "source_case_id": "80b7ce5ba270701d0dcb",
+    "review": {
+      "complete": true,
+      "claims": [
+        {
+          "index": 0,
+          "verdict": "contradicted",
+          "reason": "The first sentence is supported by the table (14,974 vs 12,587), but the second sentence invents a guarantee of future profits doubling exclusively due to the CEO's personal investments, which is not in the quote or passage."
+        },
+        {
+          "index": 1,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about the effective tax rate change and valuation allowance release."
+        },
+        {
+          "index": 2,
+          "verdict": "supported",
+          "reason": "The statement faithfully paraphrases the quoted passage about net income attributable to common stockholders and the one-time tax benefit."
+        }
+      ]
+    }
+  }
+]

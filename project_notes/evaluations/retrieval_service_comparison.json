@@ -1,0 +1,286 @@
+{
+  "status": "completed",
+  "evidence_sha256": {
+    "project_notes/experiments/retrieval-services-v2/manifest.json": "4af2b22a1f9f516776a61d5c2bf2282968101073d21f283a0a65526445fbda33",
+    "project_notes/experiments/retrieval-services-v2/summary.json": "8b16a938c2b0b304ee2c8eb68601571e538ad4ac89132543b12c18d29af74907",
+    "project_notes/experiments/retrieval-services-v2/records.json": "1265f7313d538395e3b0d0f110174abb5de8537f7d536c3d05fcc198937b832b",
+    "project_notes/experiments/retrieval-services-v2/source.patch": "4baf52abe3f4c34f8be07af753105876714aad0e0411d8dc2a628ccaa9b8fa09",
+    "project_notes/experiments/agent-roles-v1/manifest.json": "548ea642c4cd87c787e2bc8a6ef16905ccd9129406af3d89e65425d6e9c9a363",
+    "project_notes/experiments/agent-roles-v1/summary.json": "1dd94f98a9a50180db4976937a409c3eac73799a8942b04482f950e6a724c565",
+    "project_notes/experiments/agent-roles-v1/records.json": "1925a5b865743e193132ae7f88a10cfec98047e22f5f346ef438bd11c93edf4d",
+    "project_notes/experiments/agent-roles-v1/source.patch": "c4123d54c897b6c477856aedb01d59f1e16cb5640ce71a777f1698e92aaa0ed0",
+    "project_notes/experiments/claim-review-v3/manifest.json": "beb558cee15ae6439e6a56afa67e8735b95199048382d24ab8de5bc10dd9d005",
+    "project_notes/experiments/claim-review-v3/summary.json": "53ec80a36331ad2820d9bf6218e04f28e8eec63dbbe63ca34b47716b8a1b6b68",
+    "project_notes/experiments/claim-review-v3/records.json": "2dcb8c89715bc3a6e703e05a3249ecdf07100532092a0a05984d2009db8b1968",
+    "project_notes/experiments/claim-review-v3/source.patch": "32d04b9e0d78ad638b04c650d9f542938cbdbb397d6bb23eedefa89366541c2d"
+  },
+  "infrastructure": {
+    "status": "completed",
+    "groups": {
+      "A:first_pass": {
+        "evaluations": 77,
+        "evidence_hits": 42,
+        "mean_seconds": 0.08490965714301708,
+        "p50_seconds": 0.0673534000015934,
+        "p95_seconds": 0.18294367999769748,
+        "redis_hits": 0,
+        "milvus_requests": 0
+      },
+      "A:warm": {
+        "evaluations": 154,
+        "evidence_hits": 84,
+        "mean_seconds": 0.09113382532441038,
+        "p50_seconds": 0.08229845000460045,
+        "p95_seconds": 0.1661892300024192,
+        "redis_hits": 0,
+        "milvus_requests": 0
+      },
+      "B:first_pass": {
+        "evaluations": 77,
+        "evidence_hits": 42,
+        "mean_seconds": 0.08370887402553934,
+        "p50_seconds": 0.06703040000138571,
+        "p95_seconds": 0.20178111999848625,
+        "redis_hits": 0,
+        "milvus_requests": 0
+      },
+      "B:warm": {
+        "evaluations": 154,
+        "evidence_hits": 84,
+        "mean_seconds": 0.022437347402318394,
+        "p50_seconds": 0.005871450004633516,
+        "p95_seconds": 0.07597314499944333,
+        "redis_hits": 116,
+        "milvus_requests": 0
+      },
+      "C:first_pass": {
+        "evaluations": 77,
+        "evidence_hits": 42,
+        "mean_seconds": 0.8853020480517019,
+        "p50_seconds": 0.8872673000005307,
+        "p95_seconds": 1.9506556800013644,
+        "redis_hits": 0,
+        "milvus_requests": 262
+      },
+      "C:warm": {
+        "evaluations": 154,
+        "evidence_hits": 84,
+        "mean_seconds": 0.9328471590910246,
+        "p50_seconds": 0.9596014499984449,
+        "p95_seconds": 1.9024365200006286,
+        "redis_hits": 0,
+        "milvus_requests": 524
+      },
+      "D:first_pass": {
+        "evaluations": 77,
+        "evidence_hits": 42,
+        "mean_seconds": 0.864008402597203,
+        "p50_seconds": 0.8467137999978149,
+        "p95_seconds": 1.9648605000023969,
+        "redis_hits": 0,
+        "milvus_requests": 262
+      },
+      "D:warm": {
+        "evaluations": 154,
+        "evidence_hits": 84,
+        "mean_seconds": 0.02358582792190386,
+        "p50_seconds": 0.005656549998093396,
+        "p95_seconds": 0.0790176650018111,
+        "redis_hits": 116,
+        "milvus_requests": 0
+      }
+    },
+    "queries": 77,
+    "fixed_queries": 58,
+    "paired_backend_comparisons": 693,
+    "exact_passage_equivalence": true,
+    "cross_process_cache": [
+      {
+        "ids": [
+          "0ffcbbf71ca18d7c296ab72b",
+          "02c4704af33d9a037b13e3bf",
+          "2b643e217c241a6650a55816",
+          "1a1c63b021ac9466f2ec269e",
+          "77e77189dfc0607ea91fa64b"
+        ],
+        "events": [
+          {
+            "event": "retrieval_cache",
+            "backend": "redis",
+            "status": "miss"
+          }
+        ]
+      },
+      {
+        "ids": [
+          "0ffcbbf71ca18d7c296ab72b",
+          "02c4704af33d9a037b13e3bf",
+          "2b643e217c241a6650a55816",
+          "1a1c63b021ac9466f2ec269e",
+          "77e77189dfc0607ea91fa64b"
+        ],
+        "events": [
+          {
+            "event": "retrieval_cache",
+            "backend": "redis",
+            "status": "hit"
+          }
+        ]
+      }
+    ],
+    "redis_used_memory_bytes": 888153,
+    "model_requests": 0,
+    "scope": "retrieval of final evidence contexts, including unchanged selected-document BM25 tasks"
+  },
+  "business": {
+    "status": "completed",
+    "groups": {
+      "S": {
+        "tasks": 24,
+        "mechanical_successes": 23,
+        "strict_successes": 22,
+        "requests": 52,
+        "total_tokens": 93590,
+        "mean_seconds": 9.022668012499404,
+        "repairs": 3,
+        "review_rejections": 0
+      },
+      "R": {
+        "tasks": 24,
+        "mechanical_successes": 24,
+        "strict_successes": 24,
+        "requests": 76,
+        "total_tokens": 160766,
+        "mean_seconds": 11.558330800000173,
+        "repairs": 3,
+        "review_rejections": 0
+      },
+      "M": {
+        "tasks": 24,
+        "mechanical_successes": 24,
+        "strict_successes": 23,
+        "requests": 75,
+        "total_tokens": 160951,
+        "mean_seconds": 11.762358970833096,
+        "repairs": 3,
+        "review_rejections": 0
+      }
+    },
+    "review": {
+      "reviewers": 2,
+      "same_model_isolated_contexts": true,
+      "unique_samples": 68,
+      "control_samples": 3,
+      "control_errors": [
+        0,
+        0
+      ]
+    },
+    "numeric_questions": 8,
+    "numeric_answers_equal": 8,
+    "scope": "24 bilingual requests from 12 validation tasks; one run per arm; same model and total budget"
+  },
+  "business_paired": {
+    "R_vs_S": {
+      "wins": 2,
+      "losses": 0,
+      "ties": 22
+    },
+    "M_vs_S": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 23
+    },
+    "M_vs_R": {
+      "wins": 0,
+      "losses": 1,
+      "ties": 23
+    }
+  },
+  "business_source_task_clusters": 12,
+  "clusters_with_both_languages_strictly_passed": {
+    "S": 10,
+    "R": 12,
+    "M": 11
+  },
+  "strict_successes_by_language": {
+    "S": {
+      "en": 11,
+      "zh-CN": 11
+    },
+    "R": {
+      "en": 12,
+      "zh-CN": 12
+    },
+    "M": {
+      "en": 11,
+      "zh-CN": 12
+    }
+  },
+  "online_review_corrections": {
+    "S": [],
+    "R": [
+      "89bba47d04340b18f15a"
+    ],
+    "M": []
+  },
+  "offline_business_review": {
+    "requests": 34,
+    "total_tokens": 194024
+  },
+  "control_acceptance": {
+    "status": "completed",
+    "groups": {
+      "source_validation": {
+        "samples": 20,
+        "correct": 10,
+        "false_accepts": 10,
+        "false_rejects": 0,
+        "model_requests": 0,
+        "tokens": 0
+      },
+      "self_check": {
+        "samples": 20,
+        "correct": 20,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "model_requests": 5,
+        "tokens": 63559
+      },
+      "reviewer": {
+        "samples": 20,
+        "correct": 18,
+        "false_accepts": 0,
+        "false_rejects": 2,
+        "model_requests": 5,
+        "tokens": 63734
+      }
+    },
+    "prediction_pairs": 10,
+    "source_request_ids": 5,
+    "scope": "support-detection controls on paired archived answers; not end-to-end business accuracy"
+  },
+  "control_support_only": {
+    "self_check": {
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "coverage_only_rejections": 0
+    },
+    "reviewer": {
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "coverage_only_rejections": 2
+    }
+  },
+  "control_prediction_pairs": 10,
+  "control_source_request_ids": 5,
+  "decisions": {
+    "default_vector_backend": "numpy",
+    "redis": "optional shared public-corpus cache",
+    "milvus": "optional Milvus Lite gRPC backend; no measured local latency improvement",
+    "default_review_mode": "off",
+    "review_mode_selection": "self_check preferred for opt-in review in this validation run",
+    "reviewer": "optional isolated same-model role; no measured advantage over self_check"
+  },
+  "scope": "Validation comparison: 24 bilingual requests from 12 source tasks, one run per arm; not an independent test or a cross-model review"
+}

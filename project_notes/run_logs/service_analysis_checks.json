@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "transport": "FastAPI TestClient with real model and services",
+  "cases": [
+    {
+      "arm": "B",
+      "review_mode": "self_check",
+      "task_id": "bbd3143ad2674017b1eb11186d730bc9",
+      "validation": "passed",
+      "review": "passed",
+      "reports": [
+        "html",
+        "pdf"
+      ],
+      "usage": {
+        "requests": 3,
+        "input_tokens": 6698,
+        "output_tokens": 439,
+        "total_tokens": 7137
+      },
+      "anonymous_access_rejected": true,
+      "logout_access_rejected": true,
+      "retrieval": [
+        {
+          "event": "retrieval_cache",
+          "backend": "redis",
+          "status": "hit"
+        }
+      ]
+    },
+    {
+      "arm": "D",
+      "review_mode": "reviewer",
+      "task_id": "b6c970170b2c4b48987761f347ab5e65",
+      "validation": "passed",
+      "review": "passed",
+      "reports": [
+        "html",
+        "pdf"
+      ],
+      "usage": {
+        "requests": 3,
+        "input_tokens": 6411,
+        "output_tokens": 467,
+        "total_tokens": 6878
+      },
+      "anonymous_access_rejected": true,
+      "logout_access_rejected": true,
+      "retrieval": [
+        {
+          "event": "retrieval_cache",
+          "backend": "redis",
+          "status": "miss"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        },
+        {
+          "event": "vector_backend",
+          "status": "complete",
+          "configured_backend": "milvus",
+          "actual_backend": "milvus"
+        }
+      ]
+    }
+  ],
+  "public_service_modified": false
+}

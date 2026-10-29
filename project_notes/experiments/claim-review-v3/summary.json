@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "groups": {
+    "source_validation": {
+      "samples": 20,
+      "correct": 10,
+      "false_accepts": 10,
+      "false_rejects": 0,
+      "model_requests": 0,
+      "tokens": 0
+    },
+    "self_check": {
+      "samples": 20,
+      "correct": 20,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "model_requests": 5,
+      "tokens": 63559
+    },
+    "reviewer": {
+      "samples": 20,
+      "correct": 18,
+      "false_accepts": 0,
+      "false_rejects": 2,
+      "model_requests": 5,
+      "tokens": 63734
+    }
+  },
+  "prediction_pairs": 10,
+  "source_request_ids": 5,
+  "scope": "support-detection controls on paired archived answers; not end-to-end business accuracy"
+}

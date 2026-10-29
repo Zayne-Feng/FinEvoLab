@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "groups": {
+    "S": {
+      "tasks": 24,
+      "mechanical_successes": 23,
+      "strict_successes": 22,
+      "requests": 52,
+      "total_tokens": 93590,
+      "mean_seconds": 9.022668012499404,
+      "repairs": 3,
+      "review_rejections": 0
+    },
+    "R": {
+      "tasks": 24,
+      "mechanical_successes": 24,
+      "strict_successes": 24,
+      "requests": 76,
+      "total_tokens": 160766,
+      "mean_seconds": 11.558330800000173,
+      "repairs": 3,
+      "review_rejections": 0
+    },
+    "M": {
+      "tasks": 24,
+      "mechanical_successes": 24,
+      "strict_successes": 23,
+      "requests": 75,
+      "total_tokens": 160951,
+      "mean_seconds": 11.762358970833096,
+      "repairs": 3,
+      "review_rejections": 0
+    }
+  },
+  "review": {
+    "reviewers": 2,
+    "same_model_isolated_contexts": true,
+    "unique_samples": 68,
+    "control_samples": 3,
+    "control_errors": [
+      0,
+      0
+    ]
+  },
+  "numeric_questions": 8,
+  "numeric_answers_equal": 8,
+  "scope": "24 bilingual requests from 12 validation tasks; one run per arm; same model and total budget"
+}

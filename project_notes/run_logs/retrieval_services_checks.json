@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "frozen_query_configurations": 135,
+  "exact_result_equivalence": true,
+  "milvus_outage_detected": true,
+  "milvus_fallback_recorded": true,
+  "milvus_restart_results_equal": true,
+  "redis_ttl_expiry": true,
+  "redis_corruption_recomputed": true,
+  "redis_outage_fallback": true,
+  "redis_restart_recovered": true,
+  "redis_server_version": "8.4.0",
+  "milvus_deployment": "Milvus Lite gRPC",
+  "server_rss_bytes": {
+    "19530": 390791168,
+    "6379": 10653696
+  },
+  "milvus_reimport_idempotent": true,
+  "milvus_idle_reconnect_seconds": 65,
+  "model_requests": 0
+}
