@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "queries": 135,
+  "repeats": 5,
+  "paired_evaluations": 675,
+  "exact_result_equivalence": true,
+  "groups": {
+    "original:first_pass": {
+      "samples": 135,
+      "mean_seconds": 0.06862589259256277,
+      "p50_seconds": 0.06392729999788571,
+      "p95_seconds": 0.11122253000248747
+    },
+    "original:warm": {
+      "samples": 540,
+      "mean_seconds": 0.06851739240731453,
+      "p50_seconds": 0.06260865000149352,
+      "p95_seconds": 0.1130384000001868
+    },
+    "cached:first_pass": {
+      "samples": 135,
+      "mean_seconds": 0.020914337037215267,
+      "p50_seconds": 0.008491600001434563,
+      "p95_seconds": 0.06190654999845717
+    },
+    "cached:warm": {
+      "samples": 540,
+      "mean_seconds": 0.006159585740836822,
+      "p50_seconds": 0.005096599999887985,
+      "p95_seconds": 0.01215338499860081
+    }
+  },
+  "python_cache_heap_bytes": 30499384,
+  "python_cache_peak_bytes": 33166510,
+  "scope_capacity_per_index": 32,
+  "query_capacity_per_index": 128,
+  "reference_source_sha256": "36193fe96de7196b42f6d39db6952cbcf5d81391e6642b1b7899bcd41e9480db",
+  "warm_mean_speedup": 11.12370138028243,
+  "model_requests": 0
+}

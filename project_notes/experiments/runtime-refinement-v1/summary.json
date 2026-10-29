@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "groups": {
+    "current": {
+      "tasks": 8,
+      "mechanical_successes": 8,
+      "strict_successes": 8,
+      "requests": 18,
+      "total_tokens": 33438
+    },
+    "cross_encoder": {
+      "tasks": 8,
+      "mechanical_successes": 8,
+      "strict_successes": 8,
+      "requests": 18,
+      "total_tokens": 36228
+    }
+  },
+  "review": {
+    "reviewers": 2,
+    "same_model_isolated_contexts": true,
+    "unique_samples": 19,
+    "control_errors": [
+      0,
+      0
+    ],
+    "control_samples": 3
+  },
+  "numeric_pairs": 6,
+  "numeric_pairs_equal": 6,
+  "scope": "paired bilingual workflow regression; one execution per arm and question"
+}

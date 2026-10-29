@@ -94,3 +94,8 @@ tests/frontend/** text eol=lf
 showcase/** text eol=lf
 
 .github/workflows/showcase-pages.yml text eol=lf
+project_notes/experiments/retrieval-cache-v1/** -text whitespace=cr-at-eol
+project_notes/experiments/reranker-bilingual-v1/** -text whitespace=cr-at-eol
+project_notes/experiments/runtime-refinement-v1/** -text whitespace=cr-at-eol
+project_notes/run_logs/runtime_refinement_checks.json -text whitespace=cr-at-eol
+project_notes/experiments/*/source.patch -text whitespace=-blank-at-eol,cr-at-eol

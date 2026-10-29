@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "workspace_tests": {
+    "passed": true,
+    "tests": 205,
+    "elapsed_seconds": 25.314
+  },
+  "frontend_static": {
+    "passed": true,
+    "checks": 158
+  },
+  "frontend_browser": {
+    "passed": true,
+    "checks": 66,
+    "transport": "intercepted local routes with recorded real workflow results",
+    "new_model_requests": 0
+  },
+  "workflow": {
+    "tasks": 16,
+    "paired_cases": 8,
+    "numeric_pairs_equal": 6,
+    "numeric_pairs": 6,
+    "operation_usage_matches": 16,
+    "analysis_api_requests": 36,
+    "analysis_tokens": 69666,
+    "review_api_requests": 10,
+    "review_tokens": 55109,
+    "blind_review_control_errors": [
+      0,
+      0
+    ]
+  },
+  "git_commit": "8a10053a4909ee5cd0a4a3da3dde38217ad9c154",
+  "gpu_used": false,
+  "reranker_default_enabled": false,
+  "completed_task_recovery": {
+    "bytes_unchanged": true,
+    "added_model_requests": 0
+  },
+  "source_patch_verified": {
+    "retrieval-cache-v1": "ab744bdf8b74176519582d18cb2bf0364339e951e52336548cea5302a7152c3e",
+    "reranker-bilingual-v1": "f157c9bf7332057498f7f1ca8f3878e0256ed7bb73465990e563c3e27eafe2af",
+    "runtime-refinement-v1": "582b456ae60fbfcf2044354e7fd3d031e24d643ef3b7e410ff42c9258272e682"
+  },
+  "provider_faults": {
+    "without_circuit": {
+      "logical_requests": 12,
+      "provider_failure_calls": 12,
+      "blocked_failure_calls": 0,
+      "recovery_status": 200
+    },
+    "with_circuit": {
+      "logical_requests": 12,
+      "provider_failure_calls": 3,
+      "blocked_failure_calls": 9,
+      "recovery_status": 200
+    }
+  },
+  "change_audit": {
+    "status": "passed",
+    "candidate_files_checked": 49,
+    "parsed": {
+      "python": 19,
+      "json": 19
+    },
+    "violations": [],
+    "no_raw_financial_changes": true,
+    "index_empty": true,
+    "git_head_unchanged": true
+  },
+  "distribution": {
+    "status": "passed",
+    "required_files_checked": 39,
+    "source_snapshots_verified": 31,
+    "business_frozen_files_verified": 3,
+    "readme_local_links_checked": 23
+  },
+  "implementation_sha256": {
+    "configs/reranker.json": "e901395fe791119c45108380aaf68d7b72c47aaab46d96d3efa3bdac043890b2",
+    "data/evaluation/retrieval_refinement/bilingual_queries.json": "c65665b91574830a8536d675d1ce6aaec4cca699c28c59d830a64949cab0df29",
+    "data/evaluation/retrieval_refinement/runtime_cases.json": "136bc069f9b50bc6817bdfc507b33a5de205c830ee21b74c2403cba97b4114a2",
+    "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+    "finevolab/agent.py": "0fcd63160e0f14469f1ecb39030ae4eab46cca9318ab2ef8576dc0bd600187ad",
+    "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+    "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+    "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+    "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+    "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+    "finevolab/evaluation.py": "15551c6153e667843ea09b79aeaab17b573759fbd439e841cf2978be3dfc1e66",
+    "finevolab/experience.py": "d48e670ad52105afe0e36265392a4e4effefbb86da46f60a94f350f84c09d3f0",
+    "finevolab/experience_data.py": "6543e5bc41ae35ac4652ae0f4e6909df60aaeabb2697c89565b29eb48a42203b",
+    "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+    "finevolab/grounded.py": "ddd48cbbb7e1652473f6536ca2cbb5ad3b194a6790e70205d605e34a3a4c5b77",
+    "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+    "finevolab/integrated_web.py": "840174cc5fd82b4d70cb98f22a021f99bca1cdf69d2e9490ffe7b3ec0d475753",
+    "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+    "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+    "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+    "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+    "finevolab/provider.py": "50ca13ed86e7327528a4009438abda070a59ac203881e681d63cef6ee9bd2936",
+    "finevolab/reporting.py": "dc3772aa8eaad8436438c441991317a8e2f9f13506de93185b9605bb90591550",
+    "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+    "finevolab/retrieval.py": "66313de01047ce85088cb29a98011bcfae950be1e2b7fd2466b2293c3cf66b1b",
+    "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+    "finevolab/runtime.py": "529d62a108f9777c38483984b5c5467855c507281b8ad1903cad5759ed0f26ea",
+    "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+    "finevolab/sdk_runtime.py": "fe1dede073a013218dc4c206c8280e68ca77227adc7a20fa02e66b9cce561858",
+    "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+    "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+    "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+    "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+    "finevolab/tools.py": "2669f13d2e8346b5dbd2a93187a2b8971c51ccaba6467c84625f8acc4d67edc7",
+    "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+    "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+    "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+    "finevolab/validation.py": "ff2d890f887de832a9e2ff6fc70c01fcf053ca2cbc7acfe02d96f539cb8669c1",
+    "finevolab/web.py": "f20eb1fc9429d951a4579ab8f0fa1c101fd230d07a1c04a132794c6208edbe73",
+    "finevolab/workflow.py": "c48a41dcac3ec3b97d93c43c27aac1fde05955651f150580c704bf994b1ad01b",
+    "scripts/benchmark_retrieval.py": "981d5b222a5244fca654bc0108457f0da00be7e733cabba77f04a339daadd086",
+    "scripts/benchmark_runtime_refinement.py": "c32afa93306429cd6d9e78c9845ff047d35833ebf7e2aecce014ac69f9b35d11",
+    "scripts/prepare_reranker.py": "be97ef52c14fab12f223e56e39d6c9ecc8e210560b7560fa85a9a40d558dcd9d",
+    "showcase/experience.css": "6e04ff03e99bfc0607d3093ff3bbcfb75bc873d0d36a848f1011f7bd5ccd8c0b",
+    "showcase/experience.js": "82f8335cad7b9b60711887fc9e4dcdd3533e6f3bdac670155e60f83cc770c47a"
+  },
+  "evidence_sha256": {
+    "retrieval-cache-v1": "218c47ad5fb2f9e9aed5a39b861beea93532651cdc637b2205131d6207394261",
+    "reranker-bilingual-v1": "fc9684fe4679ceb66badffb139d2298f59d02895f05884c08f6f3aa602bfa47e",
+    "runtime-refinement-v1": "6a4c3fca478788c458971f1817205cda0adabc607fcdbc6e2261c6db499b67a5"
+  }
+}

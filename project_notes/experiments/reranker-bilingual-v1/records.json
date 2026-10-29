@@ -1,0 +1,1838 @@
+[
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.02348320000237436,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "d105f5494d6c973c890ef35c",
+      "99c9ebeb29a9ce790b499497"
+    ],
+    "context_chars": 3836
+  },
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.3444538000003377,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "9ffbf7ed3df2c7494c6961fc",
+      "a35a61db7f6ff6d03b270e8e",
+      "2deaf9745837f1760aa0b059",
+      "9cc561ab59d5649ff26ad279"
+    ],
+    "context_chars": 3793
+  },
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.022465400001237867,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "d105f5494d6c973c890ef35c",
+      "99c9ebeb29a9ce790b499497"
+    ],
+    "context_chars": 3836
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.354777500000637,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "9cc561ab59d5649ff26ad279",
+      "9ffbf7ed3df2c7494c6961fc",
+      "d105f5494d6c973c890ef35c",
+      "a35a61db7f6ff6d03b270e8e"
+    ],
+    "context_chars": 4139
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.022961400001804577,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "d105f5494d6c973c890ef35c",
+      "4e36c25307ad91ce062d46ab"
+    ],
+    "context_chars": 3592
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.02132970000093337,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "d105f5494d6c973c890ef35c",
+      "4e36c25307ad91ce062d46ab"
+    ],
+    "context_chars": 3592
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.8817048000018985,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4fd9a19e1b50ae572448eb19",
+      "8ec2cf08cc1420575161015e",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.019313200002216036,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.017716099999233847,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.01795019999917713,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.097089299997606,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4fd9a19e1b50ae572448eb19",
+      "2e22a1a94026bbe8f5c62870",
+      "8ec2cf08cc1420575161015e",
+      "dd310e42a932c801802be3a5"
+    ],
+    "context_chars": 3260
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.01765719999821158,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.443475700001727,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "7d8eba4ad125861e0f097747",
+      "e164a380033cbef7eef792be",
+      "393e6be53e082a840ee519fd"
+    ],
+    "context_chars": 2384
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.0319826999984798,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "393e6be53e082a840ee519fd",
+      "e164a380033cbef7eef792be",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.02616219999981695,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "393e6be53e082a840ee519fd",
+      "e164a380033cbef7eef792be",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.02461570000014035,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.024349100000108592,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.3460348999979033,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "71289aca2ef6b63464123bc8",
+      "7d8eba4ad125861e0f097747"
+    ],
+    "context_chars": 2412
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.017200400001456728,
+    "chunk_ids": [
+      "79643618f907378e81aa563c",
+      "92366cb3d8341c65e99bc708",
+      "3e714f8fcb511a58ee62c022",
+      "26030d5514b66911ab769654",
+      "785f440803a89f2059494c69"
+    ],
+    "context_chars": 2336
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.6621496000007028,
+    "chunk_ids": [
+      "79643618f907378e81aa563c",
+      "92366cb3d8341c65e99bc708",
+      "3e714f8fcb511a58ee62c022",
+      "26030d5514b66911ab769654",
+      "2e22a1a94026bbe8f5c62870"
+    ],
+    "context_chars": 3382
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.016276999998808606,
+    "chunk_ids": [
+      "79643618f907378e81aa563c",
+      "92366cb3d8341c65e99bc708",
+      "3e714f8fcb511a58ee62c022",
+      "26030d5514b66911ab769654",
+      "785f440803a89f2059494c69"
+    ],
+    "context_chars": 2336
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.016828599997097626,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "a9293e9e87edebbb5b901dae",
+      "3a4f25f4d0586f8b616d017d",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 3901
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.018672199999855366,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "a9293e9e87edebbb5b901dae",
+      "3a4f25f4d0586f8b616d017d",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 3901
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.7150044000009075,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "a9293e9e87edebbb5b901dae",
+      "3a4f25f4d0586f8b616d017d",
+      "66f1aed8e8a9a3793bd0966a",
+      "d8343468cc4a9ff5e25dc46a"
+    ],
+    "context_chars": 3781
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.055315599998721154,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.8961960999986331,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "c67b27f80977a13a09c3e880",
+      "4ef6c56a2056af0aa0624c38",
+      "ca833315459436f7ce0dbadb",
+      "48723adc5f6df1b6944b33bb"
+    ],
+    "context_chars": 3324
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.053380099998321384,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.05248850000134553,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.3634672000007413,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "02562ca5b2bcbd9c2df8239f",
+      "07be3e3e0bd8239bb347fc1a",
+      "6dd5667fe867749c912ae3ba",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 4501
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.05375330000242684,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.05299409999861382,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 0.6796166000021913,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "19f72805899cfa4eba076102",
+      "b6d3a4fb81a1dfcd3082aa5a",
+      "164674dfe77bdb02d68c6946",
+      "27bd36455b47bd355dbef5a6"
+    ],
+    "context_chars": 1442
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.054359800000383984,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.04813569999896572,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.05008359999919776,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 0.7083094000008714,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "c67b27f80977a13a09c3e880",
+      "1aee69acb828726c4445a51f",
+      "4ef6c56a2056af0aa0624c38",
+      "27bd36455b47bd355dbef5a6"
+    ],
+    "context_chars": 2233
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.06772760000239941,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "887075fc496a4e11019cc957",
+      "2b643e217c241a6650a55816",
+      "1a1c63b021ac9466f2ec269e"
+    ],
+    "context_chars": 2533
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.07575640000140993,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "887075fc496a4e11019cc957",
+      "2b643e217c241a6650a55816",
+      "1a1c63b021ac9466f2ec269e"
+    ],
+    "context_chars": 2533
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.4330604999995558,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "25d132642283b7fe05897d62",
+      "aca445e97a36c927fc864d51",
+      "5d1ff7f8af0f989b27242148",
+      "887075fc496a4e11019cc957"
+    ],
+    "context_chars": 3452
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.06272340000214172,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "13aa4483d109f4585524a100"
+    ],
+    "context_chars": 2495
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.06119850000322913,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "13aa4483d109f4585524a100"
+    ],
+    "context_chars": 2495
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.692814100002579,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "6dd5667fe867749c912ae3ba",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "94a7313c7a7bfad9d9d73e75",
+      "6702018b9fcd62710b04309e"
+    ],
+    "context_chars": 5193
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.7930347000001348,
+    "chunk_ids": [
+      "6a9ffc31594a96fe4b3dab2a",
+      "802047bb667782e2f0b7848b",
+      "1f5ef1585397fbf8b6233a60",
+      "1c0dafa17098a486f4768b60",
+      "2cda158afa787e53b5e584df"
+    ],
+    "context_chars": 4380
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.040285899998707464,
+    "chunk_ids": [
+      "6a9ffc31594a96fe4b3dab2a",
+      "802047bb667782e2f0b7848b",
+      "1f5ef1585397fbf8b6233a60",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 3292
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.18875169999955688,
+    "chunk_ids": [
+      "6a9ffc31594a96fe4b3dab2a",
+      "802047bb667782e2f0b7848b",
+      "1f5ef1585397fbf8b6233a60",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 3292
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.0439263000007486,
+    "chunk_ids": [
+      "941dcfebd18ec8214b08d1a5",
+      "8484dddba92753193c5f5daf",
+      "b190448dad94c46ee8bda394",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 5070
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.043842499999300344,
+    "chunk_ids": [
+      "941dcfebd18ec8214b08d1a5",
+      "8484dddba92753193c5f5daf",
+      "b190448dad94c46ee8bda394",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 5070
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.7219057000002067,
+    "chunk_ids": [
+      "941dcfebd18ec8214b08d1a5",
+      "8484dddba92753193c5f5daf",
+      "b190448dad94c46ee8bda394",
+      "2cda158afa787e53b5e584df",
+      "18a57efdade3d11deea7fe33"
+    ],
+    "context_chars": 6157
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.08125899999868125,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.0771915999976045,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.022961700000451,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "6f8471c0853ccbf003c38fde",
+      "b063ef41072edd780e282e81",
+      "d50fe15485a959864a09b1ad",
+      "92546477f066ff9be0288fc5"
+    ],
+    "context_chars": 2403
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.0778987000012421,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.07481360000019777,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "en",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.178663400001824,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "992e9b02bc396ab649a3fd72"
+    ],
+    "context_chars": 2683
+  },
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.02071300000170595,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "99c9ebeb29a9ce790b499497",
+      "3ef4f22a9188c84276bb94db"
+    ],
+    "context_chars": 3562
+  },
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.02012240000112797,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "99c9ebeb29a9ce790b499497",
+      "3ef4f22a9188c84276bb94db"
+    ],
+    "context_chars": 3562
+  },
+  {
+    "case_id": "cd1388c3cbac0ec684bc7e6a-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.4884387999991304,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "9ffbf7ed3df2c7494c6961fc",
+      "a35a61db7f6ff6d03b270e8e",
+      "9cc561ab59d5649ff26ad279",
+      "2deaf9745837f1760aa0b059"
+    ],
+    "context_chars": 3793
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.02516779999859864,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "99c9ebeb29a9ce790b499497",
+      "3ef4f22a9188c84276bb94db"
+    ],
+    "context_chars": 3562
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 2.6852997000023606,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "9cc561ab59d5649ff26ad279",
+      "9ffbf7ed3df2c7494c6961fc",
+      "a35a61db7f6ff6d03b270e8e",
+      "2deaf9745837f1760aa0b059"
+    ],
+    "context_chars": 3793
+  },
+  {
+    "case_id": "c3a9278d450429b7cf530968-zh-CN",
+    "profile": "AAPL:2022:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.03021720000106143,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "a35a61db7f6ff6d03b270e8e",
+      "9ffbf7ed3df2c7494c6961fc",
+      "99c9ebeb29a9ce790b499497",
+      "3ef4f22a9188c84276bb94db"
+    ],
+    "context_chars": 3562
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.02299959999800194,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 2.3585831000018516,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4fd9a19e1b50ae572448eb19",
+      "8ec2cf08cc1420575161015e",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "f88a6118d108cccd18152d56-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.022403399998438545,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.01850170000034268,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.018804800001817057,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4b4603d07e31bb3f63a3273d",
+      "dd310e42a932c801802be3a5",
+      "8ec2cf08cc1420575161015e",
+      "4fd9a19e1b50ae572448eb19"
+    ],
+    "context_chars": 2257
+  },
+  {
+    "case_id": "31fd75a6f24b4836853de89f-zh-CN",
+    "profile": "AAPL:2022:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.102387399998406,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "4fd9a19e1b50ae572448eb19",
+      "2e22a1a94026bbe8f5c62870",
+      "ad64831c6fab9fd0cf6ad146",
+      "4b4603d07e31bb3f63a3273d"
+    ],
+    "context_chars": 3867
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.02849169999899459,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8",
+      "e164a380033cbef7eef792be"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.025031200002558762,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8",
+      "e164a380033cbef7eef792be"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "03598a680907691e94a34e9e-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.4477099999967322,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "7d8eba4ad125861e0f097747",
+      "87535773381220052a2d496a",
+      "8671ca13a63c9234d4deb7b4",
+      "1142dbcf9bc1f49492b8f836"
+    ],
+    "context_chars": 2182
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.4218344000000798,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "71289aca2ef6b63464123bc8",
+      "8ec2cf08cc1420575161015e"
+    ],
+    "context_chars": 2458
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.03717479999977513,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "b83096622b2ce851db37b4e2-zh-CN",
+    "profile": "AAPL:2022:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.04003449999800068,
+    "chunk_ids": [
+      "5623a48dbc9edd718cdfa640",
+      "87535773381220052a2d496a",
+      "e164a380033cbef7eef792be",
+      "393e6be53e082a840ee519fd",
+      "71289aca2ef6b63464123bc8"
+    ],
+    "context_chars": 2525
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.02430140000069514,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "41c0995d7503f40048ff261f",
+      "28c0f1ada32ff1fbe2ee266c",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 4096
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.02145089999976335,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "41c0995d7503f40048ff261f",
+      "28c0f1ada32ff1fbe2ee266c",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 4096
+  },
+  {
+    "case_id": "ec23172d5185d9b631212ab3-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.945321999999578,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "41c0995d7503f40048ff261f",
+      "28c0f1ada32ff1fbe2ee266c",
+      "79643618f907378e81aa563c",
+      "92366cb3d8341c65e99bc708"
+    ],
+    "context_chars": 4096
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.01657829999749083,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "3a4f25f4d0586f8b616d017d",
+      "d8343468cc4a9ff5e25dc46a",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 3132
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.7400950999981433,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "3a4f25f4d0586f8b616d017d",
+      "d8343468cc4a9ff5e25dc46a",
+      "939cf2aad5e88858793bcb1e",
+      "9127d1ad220fb685dec77d30"
+    ],
+    "context_chars": 2616
+  },
+  {
+    "case_id": "1a2ff268220247494bf0b386-zh-CN",
+    "profile": "AAPL:2022:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.018222699996840674,
+    "chunk_ids": [
+      "b468ff533566ef5d8409ce88",
+      "3a4f25f4d0586f8b616d017d",
+      "d8343468cc4a9ff5e25dc46a",
+      "92366cb3d8341c65e99bc708",
+      "79643618f907378e81aa563c"
+    ],
+    "context_chars": 3132
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.05554560000018682,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 2.4691970000021684,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "02562ca5b2bcbd9c2df8239f",
+      "07be3e3e0bd8239bb347fc1a",
+      "6dd5667fe867749c912ae3ba",
+      "c493ebd726012f71b8669112"
+    ],
+    "context_chars": 5012
+  },
+  {
+    "case_id": "69b8992acf12538fe5c59426-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.059800500002893386,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.05706060000011348,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.4491902999980084,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "02562ca5b2bcbd9c2df8239f",
+      "07be3e3e0bd8239bb347fc1a",
+      "2931664fc13badedcfa38573",
+      "c36e6cefcbe32292130e0177"
+    ],
+    "context_chars": 3214
+  },
+  {
+    "case_id": "fe9bf05f16b5ca86f65b0e8d-zh-CN",
+    "profile": "MSFT:2024:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.04911139999967418,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "49c1fcd955c97fc1151be618",
+      "07be3e3e0bd8239bb347fc1a",
+      "25de0d5414d0757a0f7eedd0",
+      "2931664fc13badedcfa38573"
+    ],
+    "context_chars": 2717
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.05367810000097961,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.051079099997878075,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "27e8b24a17bcdf1b66cb970c-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 0.6919624000001932,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "19f72805899cfa4eba076102",
+      "b6d3a4fb81a1dfcd3082aa5a",
+      "27bd36455b47bd355dbef5a6",
+      "a59971c2ff416601593c70d7"
+    ],
+    "context_chars": 1527
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.0550559000002977,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.05968900000152644,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "4a33ecdaf8dcab29e325d023",
+      "94ef4881bd714f20965f81f4",
+      "2296405b543779ce259d6378",
+      "7f2a7222d820861018aa4775"
+    ],
+    "context_chars": 2040
+  },
+  {
+    "case_id": "056713f7bd353a58b59e0037-zh-CN",
+    "profile": "MSFT:2024:operating_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 1.1921958999992057,
+    "chunk_ids": [
+      "b2a944d4eac50309ccbf6c53",
+      "1aee69acb828726c4445a51f",
+      "c67b27f80977a13a09c3e880",
+      "27bd36455b47bd355dbef5a6",
+      "19f72805899cfa4eba076102"
+    ],
+    "context_chars": 1603
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.06529349999982514,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "887075fc496a4e11019cc957",
+      "1a1c63b021ac9466f2ec269e"
+    ],
+    "context_chars": 2533
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.06629370000155177,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "887075fc496a4e11019cc957",
+      "1a1c63b021ac9466f2ec269e"
+    ],
+    "context_chars": 2533
+  },
+  {
+    "case_id": "6a7291275d524ea34de59b92-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.417322299999796,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "aca445e97a36c927fc864d51",
+      "25d132642283b7fe05897d62",
+      "6dd5667fe867749c912ae3ba",
+      "27bf1f876a213d4d73b36a9f"
+    ],
+    "context_chars": 5089
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.6824980999990657,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "6dd5667fe867749c912ae3ba",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "27bf1f876a213d4d73b36a9f",
+      "2b643e217c241a6650a55816"
+    ],
+    "context_chars": 4049
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.07166349999897648,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "13aa4483d109f4585524a100"
+    ],
+    "context_chars": 2495
+  },
+  {
+    "case_id": "6c09544ab2f717b923d86016-zh-CN",
+    "profile": "MSFT:2024:revenue",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.06855189999987488,
+    "chunk_ids": [
+      "0ffcbbf71ca18d7c296ab72b",
+      "02c4704af33d9a037b13e3bf",
+      "2b643e217c241a6650a55816",
+      "c3f5d85c64b16bc8fa19d9ce",
+      "13aa4483d109f4585524a100"
+    ],
+    "context_chars": 2495
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 1.726601300000766,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "e7d17a3dd048fe89631fe7a5",
+      "1c0dafa17098a486f4768b60",
+      "aa34cd732ac93026ff81b24e"
+    ],
+    "context_chars": 2693
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.043527699999685865,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "e7d17a3dd048fe89631fe7a5",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 1849
+  },
+  {
+    "case_id": "3ef65907f7e00b235abc5717-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.04997460000231513,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "e7d17a3dd048fe89631fe7a5",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 1849
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": false,
+    "elapsed_seconds": 0.05175009999948088,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "0230de510b7b54aa360aa4ad",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 2231
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": false,
+    "elapsed_seconds": 2.1237636000005296,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "0230de510b7b54aa360aa4ad",
+      "aa34cd732ac93026ff81b24e",
+      "800e478547a1bd7cc27c120b"
+    ],
+    "context_chars": 2530
+  },
+  {
+    "case_id": "f6a0540d671ced607ac589d1-zh-CN",
+    "profile": "MSFT:2024:risk",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": false,
+    "elapsed_seconds": 0.05411810000077821,
+    "chunk_ids": [
+      "9bb02887a892b3d21e76ec92",
+      "4a6931fdb641c469a45dd3a4",
+      "0230de510b7b54aa360aa4ad",
+      "c147ab198ea526fbc6835b60",
+      "de98fe0a06783017966f3ef4"
+    ],
+    "context_chars": 2231
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.0851208999993105,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.07998560000123689,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "f587f30a0198714cbe13320f-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.3993708999987575,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "6f8471c0853ccbf003c38fde",
+      "b063ef41072edd780e282e81",
+      "d50fe15485a959864a09b1ad",
+      "126f452ddce3f13b59aea40a"
+    ],
+    "context_chars": 2709
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "pooled",
+    "hit": true,
+    "elapsed_seconds": 0.08715890000166837,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "current",
+    "hit": true,
+    "elapsed_seconds": 0.08111160000044038,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "77a4306b2d74434b86eaad0b"
+    ],
+    "context_chars": 2461
+  },
+  {
+    "case_id": "16237d219b10a92b0101dd00-zh-CN",
+    "profile": "TSLA:2023:net_income",
+    "split": "validation",
+    "language": "zh-CN",
+    "arm": "cross_encoder",
+    "hit": true,
+    "elapsed_seconds": 2.2709190000023227,
+    "chunk_ids": [
+      "c59e3d12955d247c7c385db6",
+      "b063ef41072edd780e282e81",
+      "6f8471c0853ccbf003c38fde",
+      "d50fe15485a959864a09b1ad",
+      "60f3f0cc44602156925228e6"
+    ],
+    "context_chars": 2769
+  }
+]

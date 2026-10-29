@@ -1,0 +1,97 @@
+{
+  "version": "retrieval-bilingual-v1",
+  "source_gold": "project_notes/evaluations/scope-evidence-v1/gold.json",
+  "source_sha256": "a022eae0df6b3cf68e233db0566616cdf213e64ca4007d8ad153bc45a0aa044d",
+  "queries": [
+    {
+      "source_case_id": "cd1388c3cbac0ec684bc7e6a",
+      "language": "zh-CN",
+      "question": "根据 Apple 2022 年报，哪些因素使其 2022 年有效税率高于 2021 年？"
+    },
+    {
+      "source_case_id": "c3a9278d450429b7cf530968",
+      "language": "zh-CN",
+      "question": "Apple 2022 年报如何说明有效税率上升，或实际应缴税额超过此前计提金额，可能对经营业绩造成的影响？"
+    },
+    {
+      "source_case_id": "f88a6118d108cccd18152d56",
+      "language": "zh-CN",
+      "question": "根据 Apple 2022 年报，哪些竞争性定价因素会影响其毛利率？"
+    },
+    {
+      "source_case_id": "31fd75a6f24b4836853de89f",
+      "language": "zh-CN",
+      "question": "Apple 2022 年报如何说明关税对成本和毛利率的影响？"
+    },
+    {
+      "source_case_id": "03598a680907691e94a34e9e",
+      "language": "zh-CN",
+      "question": "根据 Apple 2022 年报，哪些产品类别主要推动了净销售总额的同比增长？"
+    },
+    {
+      "source_case_id": "b83096622b2ce851db37b4e2",
+      "language": "zh-CN",
+      "question": "Apple 2022 年报如何说明外币走弱对净销售额的影响？"
+    },
+    {
+      "source_case_id": "ec23172d5185d9b631212ab3",
+      "language": "zh-CN",
+      "question": "根据 Apple 2022 年 Form 10-K，通货膨胀、关税和信贷收紧等不利宏观经济条件会如何影响公司业务？"
+    },
+    {
+      "source_case_id": "1a2ff268220247494bf0b386",
+      "language": "zh-CN",
+      "question": "Apple 2022 年 Form 10-K 披露了哪些与 COVID-19 疫情有关的供应链和需求风险？"
+    },
+    {
+      "source_case_id": "69b8992acf12538fe5c59426",
+      "language": "zh-CN",
+      "question": "Microsoft 2024 年报如何说明上年第二季度费用对净利润及其他指标的影响？"
+    },
+    {
+      "source_case_id": "fe9bf05f16b5ca86f65b0e8d",
+      "language": "zh-CN",
+      "question": "Microsoft 2024 年报指出，其有效税率较上年下降的主要原因是什么？"
+    },
+    {
+      "source_case_id": "27e8b24a17bcdf1b66cb970c",
+      "language": "zh-CN",
+      "question": "哪些因素推动了 Microsoft 2024 财年营业费用的增长？"
+    },
+    {
+      "source_case_id": "056713f7bd353a58b59e0037",
+      "language": "zh-CN",
+      "question": "在 Microsoft 2024 年报的年度对比中，上年第二季度费用如何影响营业利润？"
+    },
+    {
+      "source_case_id": "6a7291275d524ea34de59b92",
+      "language": "zh-CN",
+      "question": "根据 Microsoft 2024 年报，哪些因素主要影响 Office Commercial 收入？"
+    },
+    {
+      "source_case_id": "6c09544ab2f717b923d86016",
+      "language": "zh-CN",
+      "question": "根据 Microsoft 2024 年报，哪些因素主要影响 LinkedIn 收入？"
+    },
+    {
+      "source_case_id": "3ef65907f7e00b235abc5717",
+      "language": "zh-CN",
+      "question": "Microsoft 2024 年报披露了哪些与竞争环境及创新能力有关的风险？"
+    },
+    {
+      "source_case_id": "f6a0540d671ced607ac589d1",
+      "language": "zh-CN",
+      "question": "Microsoft 2024 年报描述了哪起涉及国家支持的行为主体及公司电子邮件账户的网络安全风险？"
+    },
+    {
+      "source_case_id": "f587f30a0198714cbe13320f",
+      "language": "zh-CN",
+      "question": "与 2022 年相比，哪些因素主要导致 Tesla 截至 2023 年 12 月 31 日年度的所得税计提发生变化？"
+    },
+    {
+      "source_case_id": "16237d219b10a92b0101dd00",
+      "language": "zh-CN",
+      "question": "与 2022 年相比，哪些因素主要推动 Tesla 截至 2023 年 12 月 31 日年度的有效税率由 8% 的税费变为 50% 的税收收益？"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "groups": {
+    "current:validation": {
+      "facts": 36,
+      "hits_at_5": 15,
+      "evidence_recall_at_5": 0.4166666666666667,
+      "samples": 36,
+      "mean_seconds": 0.04380592777791511,
+      "p50_seconds": 0.04647694999948726,
+      "p95_seconds": 0.07870192500104167
+    },
+    "pooled:validation": {
+      "facts": 36,
+      "hits_at_5": 15,
+      "evidence_recall_at_5": 0.4166666666666667,
+      "samples": 36,
+      "mean_seconds": 0.04760062500008644,
+      "p50_seconds": 0.04603099999985716,
+      "p95_seconds": 0.08273397499942803
+    },
+    "cross_encoder:validation": {
+      "facts": 36,
+      "hits_at_5": 23,
+      "evidence_recall_at_5": 0.6388888888888888,
+      "samples": 36,
+      "mean_seconds": 1.8318725194446113,
+      "p50_seconds": 1.8373697500010167,
+      "p95_seconds": 2.474007450001409
+    }
+  },
+  "languages": {
+    "current:en": {
+      "facts": 18,
+      "hits_at_5": 8
+    },
+    "pooled:en": {
+      "facts": 18,
+      "hits_at_5": 8
+    },
+    "cross_encoder:en": {
+      "facts": 18,
+      "hits_at_5": 12
+    },
+    "current:zh-CN": {
+      "facts": 18,
+      "hits_at_5": 7
+    },
+    "pooled:zh-CN": {
+      "facts": 18,
+      "hits_at_5": 7
+    },
+    "cross_encoder:zh-CN": {
+      "facts": 18,
+      "hits_at_5": 11
+    }
+  },
+  "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "revision": "1427fd652930e4ba29e8149678df786c240d8825",
+  "model_load_seconds": 10.918458700001793,
+  "model_requests": 0,
+  "source_profiles": 9,
+  "metric": "complete exact gold quote coverage in top five, clustered by source profile"
+}

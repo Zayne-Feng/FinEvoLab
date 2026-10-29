@@ -1,0 +1,747 @@
+{
+  "72ba2c5ba4f2803fbe3c7ab41e08f01cc308394432c76d5e81fa783bf6bfd382": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in FY2024 compared with FY2023, as shown by the consolidated total revenue row.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      },
+      {
+        "statement": "MSFT attributes the overall revenue increase to growth across each of its segments, with Intelligent Cloud driven by Azure, Productivity and Business Processes driven by Office 365 Commercial, and More Personal Computing driven by Gaming.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      },
+      {
+        "statement": "Within server products and cloud services, revenue growth was driven by Azure and other cloud services, whose growth was attributed to consumption-based services.",
+        "chunk_id": "passage:13aa4483d109f4585524a100",
+        "quote": "Server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "780a2cd3a1ca6d833340d1e592f44c755c115d72ec569dae91b4276917e6488c": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in fiscal year 2024 compared with fiscal year 2023, as shown in the consolidated income statement.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      },
+      {
+        "statement": "MSFT's revenue is generally higher in the fourth quarter of its fiscal year, driven by a higher volume of multi-year contracts executed during that period.",
+        "chunk_id": "passage:9774433a008d6b8db68b307a",
+        "quote": "Our revenue fluctuates quarterly and is generally higher in the fourth quarter of our fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period."
+      },
+      {
+        "statement": "MSFT revised its Microsoft Cloud revenue metric to include revenue growth and expanded its Microsoft 365 Consumer subscribers metric to include Microsoft 365 Basic subscribers.",
+        "chunk_id": "passage:be942d513d240e13f6a988de",
+        "quote": "In the first quarter of fiscal year 2024, we made updates to the presentation and method of calculation for certain metrics, revising our Microsoft Cloud revenue metric to include revenue growth and expanding our Microsoft 365 Consumer subscribers metric to include Microsoft 365 Basic subscribers, aligning with how we manage our business."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:9774433a008d6b8db68b307a",
+        "text": "MSFT FY2024 discussion analysis\nOur revenue fluctuates quarterly and is generally higher in the fourth quarter of our fiscal year. Fourth quarter revenue is driven by a higher volume of multi-year contracts executed during the period.",
+        "locator": "article#discussion-analysis|structured=14",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:be942d513d240e13f6a988de",
+        "text": "MSFT FY2024 item-7\nIn the first quarter of fiscal year 2024, we made updates to the presentation and method of calculation for certain metrics, revising our Microsoft Cloud revenue metric to include revenue growth and expanding our Microsoft 365 Consumer subscribers metric to include Microsoft 365 Basic subscribers, aligning with how we manage our business.",
+        "locator": "dom-block=1723|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "9441793b7ca29a5c320430eca1c8e6f803cfcfb90ea3ea30fb8e17b260ee2322": {
+    "question": "计算 MSFT 2024 财年收入相对上一财年的年度增长率，并根据其 2024 财年年报解释收入变化与披露的业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in fiscal year 2024 compared with fiscal year 2023, as shown in the consolidated income statement.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      },
+      {
+        "statement": "A disclosed business driver of revenue growth was Microsoft Cloud revenue, which the report states increased.",
+        "chunk_id": "passage:c7261929f01f2ae489fb4eb3",
+        "quote": "Microsoft Cloud revenue increased 23% to $137.4 billion."
+      },
+      {
+        "statement": "Another disclosed driver was Office Consumer products and cloud services revenue, which the report states increased.",
+        "chunk_id": "passage:70a4596cf75f3676482f48f0",
+        "quote": "Office Consumer products and cloud services revenue increased $237 million or 4%."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:70a4596cf75f3676482f48f0",
+        "text": "MSFT FY2024 item-7\nOffice Consumer products and cloud services revenue increased $237 million or 4%. Microsoft 365 Consumer subscribers grew 10% to 82.5 million.",
+        "locator": "dom-block=2288|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:c7261929f01f2ae489fb4eb3",
+        "text": "MSFT FY2024 item-7\nMicrosoft Cloud revenue increased 23% to $137.4 billion.",
+        "locator": "dom-block=1672|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "4bf97707a4d02141f1389159c40afa5046a30a11cb03dab94c57d73cff0e826f": {
+    "question": "计算 MSFT 2024 财年收入相对上一财年的年度增长率，并根据其 2024 财年年报解释收入变化与披露的业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "MSFT's total revenue increased in fiscal 2024 compared with fiscal 2023, as shown by the consolidated total revenue row.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      },
+      {
+        "statement": "The company attributes the revenue increase to growth across each of its segments, with Intelligent Cloud driven by Azure, Productivity and Business Processes driven by Office 365 Commercial, and More Personal Computing driven by Gaming.",
+        "chunk_id": "passage:2b643e217c241a6650a55816",
+        "quote": "Revenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming."
+      },
+      {
+        "statement": "Within server products and cloud services, revenue growth was driven by Azure and other cloud services, whose growth was attributed to consumption-based services.",
+        "chunk_id": "passage:13aa4483d109f4585524a100",
+        "quote": "Server products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "8144299b85c62efa2b80ad70c6b8ffc9f7a88129d873c233619f88ce05dcdc09": {
+    "question": "Give AAPL's FY2022 operating income, with original units and fiscal dates. Also explain operating income changes and disclosed cost or business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL's consolidated operating income increased in fiscal 2022 compared to fiscal 2021, as shown in the consolidated statements of operations for the years ended September 24, 2022 and September 25, 2021.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "AAPL's Products gross margin increased in 2022 versus 2021 primarily due to a different Products mix and higher Products volume, partially offset by foreign currency weakness relative to the U.S. dollar.",
+        "chunk_id": "passage:4fd9a19e1b50ae572448eb19",
+        "quote": "Products gross margin increased during 2022 compared to 2021 due primarily to a different Products mix and higher Products volume, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      },
+      {
+        "statement": "AAPL's Services gross margin increased in 2022 versus 2021 primarily due to higher Services net sales, partially offset by foreign currency weakness relative to the U.S. dollar.",
+        "chunk_id": "passage:8ec2cf08cc1420575161015e",
+        "quote": "Services gross margin increased during 2022 compared to 2021 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4fd9a19e1b50ae572448eb19",
+        "text": "AAPL FY2022 item-7\nProducts gross margin increased during 2022 compared to 2021 due primarily to a different Products mix and higher Products volume, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=599|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      },
+      {
+        "id": "passage:8ec2cf08cc1420575161015e",
+        "text": "AAPL FY2022 item-7\nServices gross margin increased during 2022 compared to 2021 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=602|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      }
+    ]
+  },
+  "d813ad725d647899c85c4e6cbb725da87f98c72de40dce743f05b3a6e3932446": {
+    "question": "Give AAPL's FY2022 operating income, with original units and fiscal dates. Also explain operating income changes and disclosed cost or business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "AAPL's consolidated operating income for FY2022 is reported in the consolidated statements of operations for the year ended September 24, 2022.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "AAPL's consolidated operating income increased in FY2022 compared with FY2021, as shown by the consolidated operating income row.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "AAPL's total operating expenses rose in FY2022 compared with FY2021, as reflected in the consolidated total operating expenses row.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Total operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      }
+    ]
+  },
+  "7477eb19fb7ed00dca07f6bcd0ba79f7ccee537f4f19b9b128394404d3952d8c": {
+    "question": "给出 AAPL 2022 财年营业利润，保留原始单位和财年日期，并根据其 2022 财年年报解释营业利润变化与披露的成本或业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "AAPL's operating income increased in fiscal 2022 compared with fiscal 2021, as shown in the consolidated statement of operations for the years ended September 24, 2022 and September 25, 2021.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "Total operating expenses are disclosed as a component of the consolidated statement of operations alongside operating income.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Total operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668"
+      },
+      {
+        "statement": "The report indicates that operating expenses for 2022, 2021 and 2020 are presented in a table, but the supplied passage does not include the underlying figures or disclosed drivers.",
+        "chunk_id": "passage:e0c422cbb8d275bb99633cd7",
+        "quote": "Operating expenses for 2022, 2021 and 2020 were as follows (dollars in millions):"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      },
+      {
+        "id": "passage:e0c422cbb8d275bb99633cd7",
+        "text": "AAPL FY2022 item-7\nOperating expenses for 2022, 2021 and 2020 were as follows (dollars in millions):",
+        "locator": "dom-block=607|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      }
+    ]
+  },
+  "4453c4c17fcfdb95880a38ea9e44505c899112d7dc3ce5d9510160608e21c60e": {
+    "question": "给出 AAPL 2022 财年营业利润，保留原始单位和财年日期，并根据其 2022 财年年报解释营业利润变化与披露的成本或业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "AAPL's consolidated operating income increased in fiscal 2022 compared to fiscal 2021, as shown in the consolidated statements of operations.",
+        "chunk_id": "passage:5623a48dbc9edd718cdfa640",
+        "quote": "Operating income | 119,437 |  |  | 108,949 |  |  | 66,288"
+      },
+      {
+        "statement": "The report attributes the increase in Products gross margin during 2022 versus 2021 primarily to a different Products mix and higher Products volume, partially offset by weakness in foreign currencies relative to the U.S. dollar.",
+        "chunk_id": "passage:4fd9a19e1b50ae572448eb19",
+        "quote": "Products gross margin increased during 2022 compared to 2021 due primarily to a different Products mix and higher Products volume, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      },
+      {
+        "statement": "The report attributes the increase in Services gross margin during 2022 versus 2021 primarily to higher Services net sales, partially offset by weakness in foreign currencies relative to the U.S. dollar.",
+        "chunk_id": "passage:8ec2cf08cc1420575161015e",
+        "quote": "Services gross margin increased during 2022 compared to 2021 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:4fd9a19e1b50ae572448eb19",
+        "text": "AAPL FY2022 item-7\nProducts gross margin increased during 2022 compared to 2021 due primarily to a different Products mix and higher Products volume, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=599|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      },
+      {
+        "id": "passage:5623a48dbc9edd718cdfa640",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=731|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2022 item-8\n | Years ended\n | September 24, 2022 |  | September 25, 2021 |  | September 26, 2020\nNet sales: |  |  |  |  | \nProducts | $ | 316,199 |  |  | $ | 297,392 |  |  | $ | 220,747 | \nServices | 78,129 |  |  | 68,425 |  |  | 53,768 | \nTotal net sales | 394,328 |  |  | 365,817 |  |  | 274,515 | \nCost of sales: |  |  |  |  | \nProducts | 201,471 |  |  | 192,266 |  |  | 151,286 | \nServices | 22,075 |  |  | 20,715 |  |  | 18,273 | \nTotal cost of sales | 223,546 |  |  | 212,981 |  |  | 169,559 | \nGross margin | 170,782 |  |  | 152,836 |  |  | 104,956 | \nOperating expenses: |  |  |  |  | \nResearch and development | 26,251 |  |  | 21,914 |  |  | 18,752 | \nSelling, general and administrative | 25,094 |  |  | 21,973 |  |  | 19,916 | \nTotal operating expenses | 51,345 |  |  | 43,887 |  |  | 38,668 | \nOperating income | 119,437 |  |  | 108,949 |  |  | 66,288 | \nOther income/(expense), net | ( 334 ) |  |  | 258 |  |  | 803 | \nIncome before provision for income taxes | 119,103 |  |  | 109,207 |  |  | 67,091 | \nProvision for income taxes | 19,300 |  |  | 14,527 |  |  | 9,680 | \nNet income | $ | 99,803 |  |  | $ | 94,680 |  |  | $ | 57,411 | \nEarnings per share: |  |  |  |  | ",
+        "locator": "dom-block=731|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      },
+      {
+        "id": "passage:8ec2cf08cc1420575161015e",
+        "text": "AAPL FY2022 item-7\nServices gross margin increased during 2022 compared to 2021 due primarily to higher Services net sales, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+        "locator": "dom-block=602|part=0|strategy=structured",
+        "company": "AAPL",
+        "report_year": 2022
+      }
+    ]
+  },
+  "9bc93040a26cbe18a9d5754a5baa5c56549b463a32d54626f1db98a34dc784a1": {
+    "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in net income from the immediately prior fiscal year. Also explain net income changes and disclosed tax or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "TSLA's net income increased in fiscal year 2023 compared to the prior year, as shown in the consolidated statement of comprehensive income.",
+        "chunk_id": "passage:c59e3d12955d247c7c385db6",
+        "quote": "Net income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644"
+      },
+      {
+        "statement": "TSLA's effective tax rate shifted from an expense to a benefit in 2023, primarily due to the release of the valuation allowance regarding U.S. federal and certain state deferred tax assets.",
+        "chunk_id": "passage:b063ef41072edd780e282e81",
+        "quote": "Our effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets."
+      },
+      {
+        "statement": "TSLA's net income attributable to common stockholders rose in 2023, and this included a one-time non-cash tax benefit from the release of valuation allowance on certain deferred tax assets.",
+        "chunk_id": "passage:77a4306b2d74434b86eaad0b",
+        "quote": "In 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a4306b2d74434b86eaad0b",
+        "text": "TSLA FY2023 item-7\nIn 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets. We continue to focus on further cost reductions and operational efficiencies while maximizing delivery volumes.",
+        "locator": "dom-block=667|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:b063ef41072edd780e282e81",
+        "text": "TSLA FY2023 item-7\nOur effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:c59e3d12955d247c7c385db6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=964|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nNet income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 | \nOther comprehensive income (loss): |  |  |  |  | \nForeign currency translation adjustment | 198 |  |  | ( 392 ) |  |  | ( 308 ) | \nUnrealized net gain (loss) on investments | 16 |  |  | ( 23 ) |  |  | ( 1 ) | \nAdjustment for net loss realized and included in net income | 4 |  |  | — |  |  | — | \nComprehensive income | 15,192 |  |  | 12,172 |  |  | 5,335 | \nLess: Comprehensive (loss) income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | ( 23 ) |  |  | 31 |  |  | 125 | \nComprehensive income attributable to common stockholders | $ | 15,215 |  |  | $ | 12,141 |  |  | $ | 5,210 | ",
+        "locator": "dom-block=964|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      }
+    ]
+  },
+  "94591755f569bf46d947ad530087327c050d2e742a04a635cb2f42e5c6802e77": {
+    "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in net income from the immediately prior fiscal year. Also explain net income changes and disclosed tax or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "TSLA's net income increased in fiscal 2023 compared with the prior fiscal year, as shown in the consolidated statement of comprehensive income.",
+        "chunk_id": "passage:c59e3d12955d247c7c385db6",
+        "quote": "Net income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 |"
+      },
+      {
+        "statement": "TSLA discloses that determining its income tax provision, deferred tax assets and liabilities, and any valuation allowance requires significant judgment, including consideration of its history of income measured at pre-tax income adjusted for permanent book-tax differences on a jurisdictional basis.",
+        "chunk_id": "passage:bd387f5938b2398447515de4",
+        "quote": "Significant judgment is required in determining our provision for income taxes, our deferred tax assets and liabilities and any valuation allowance recorded against our net deferred tax assets that are not more likely than not to be realized."
+      },
+      {
+        "statement": "TSLA reports that unrecognized tax benefits, if recognized, would affect its effective tax rate.",
+        "chunk_id": "passage:992e9b02bc396ab649a3fd72",
+        "quote": "Unrecognized tax benefits of $ 901 million, if recognized, would affect our effective tax rate."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:992e9b02bc396ab649a3fd72",
+        "text": "TSLA FY2023 item-8\nWe include interest and penalties related to unrecognized tax benefits in income tax expense. We recognized net interest and penalties related to unrecognized tax benefits in provision for income taxes line of our consolidated statements of operations of $ 17 million, $ 27 million and $ 4 million for the years ended December 31, 2023, 2022 and 2021, respectively. As of December 31, 2023, and 2022, we have accrued $ 47 million and $ 31 million, respectively, related to interest and penalties on our unrecognized tax benefits. Unrecognized tax benefits of $ 901 million, if recognized, would affect our effective tax rate.",
+        "locator": "dom-block=1580|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:bd387f5938b2398447515de4",
+        "text": "TSLA FY2023 item-8\nWe monitor the realizability of our deferred tax assets taking into account all relevant factors at each reporting period. Significant judgment is required in determining our provision for income taxes, our deferred tax assets and liabilities and any valuation allowance recorded against our net deferred tax assets that are not more likely than not to be realized. In completing our assessment of realizability of our deferred tax assets, we consider our history of income (loss) measured at pre-tax income (loss) adjusted for permanent book-tax differences on a jurisdictional basis, volatility in actual earnings, excess tax benefits related to stock-based compensation in recent prior years, and impacts of the timing of reversal of existing temporary differences. We also rely on our assessment of the Company’s projected future results of business operations, including uncertainty in future operating results relative to historical results, volatility in the market price of our common stock and its performance over time, variable macroeconomic conditions impacting our ability to forecast future taxable income, and changes in business that may affect the existence and magnitude of future t",
+        "locator": "dom-block=1117|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:c59e3d12955d247c7c385db6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=964|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nNet income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 | \nOther comprehensive income (loss): |  |  |  |  | \nForeign currency translation adjustment | 198 |  |  | ( 392 ) |  |  | ( 308 ) | \nUnrealized net gain (loss) on investments | 16 |  |  | ( 23 ) |  |  | ( 1 ) | \nAdjustment for net loss realized and included in net income | 4 |  |  | — |  |  | — | \nComprehensive income | 15,192 |  |  | 12,172 |  |  | 5,335 | \nLess: Comprehensive (loss) income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | ( 23 ) |  |  | 31 |  |  | 125 | \nComprehensive income attributable to common stockholders | $ | 15,215 |  |  | $ | 12,141 |  |  | $ | 5,210 | ",
+        "locator": "dom-block=964|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      }
+    ]
+  },
+  "6ad413a21cae15bed17366fa6ef169997550fcbb982892b6300ac99e76750f0c": {
+    "question": "仅使用已选财报，计算 TSLA 2023 财年净利润相对上一财年的年度增长率，并根据其 2023 财年年报解释净利润变化与披露的税务或业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "TSLA's net income increased in fiscal 2023 compared with the prior year, as shown in the consolidated statement of operations.",
+        "chunk_id": "passage:c59e3d12955d247c7c385db6",
+        "quote": "Net income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 |"
+      },
+      {
+        "statement": "TSLA disclosed that its 2023 net income attributable to common stockholders included a one-time non-cash tax benefit from the release of a valuation allowance on certain deferred tax assets.",
+        "chunk_id": "passage:77a4306b2d74434b86eaad0b",
+        "quote": "This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets."
+      },
+      {
+        "statement": "TSLA attributes the favorable change in net income attributable to common stockholders to the year's result including the one-time non-cash tax benefit, while noting continued focus on cost reductions and operational efficiencies.",
+        "chunk_id": "passage:77a4306b2d74434b86eaad0b",
+        "quote": "In 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a4306b2d74434b86eaad0b",
+        "text": "TSLA FY2023 item-7\nIn 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets. We continue to focus on further cost reductions and operational efficiencies while maximizing delivery volumes.",
+        "locator": "dom-block=667|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:c59e3d12955d247c7c385db6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=964|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nNet income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 | \nOther comprehensive income (loss): |  |  |  |  | \nForeign currency translation adjustment | 198 |  |  | ( 392 ) |  |  | ( 308 ) | \nUnrealized net gain (loss) on investments | 16 |  |  | ( 23 ) |  |  | ( 1 ) | \nAdjustment for net loss realized and included in net income | 4 |  |  | — |  |  | — | \nComprehensive income | 15,192 |  |  | 12,172 |  |  | 5,335 | \nLess: Comprehensive (loss) income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | ( 23 ) |  |  | 31 |  |  | 125 | \nComprehensive income attributable to common stockholders | $ | 15,215 |  |  | $ | 12,141 |  |  | $ | 5,210 | ",
+        "locator": "dom-block=964|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      }
+    ]
+  },
+  "cfeccfa3b11487e4355ff565dc8327aa6a7a183f0b068726d72ce5e0262c1dd5": {
+    "question": "仅使用已选财报，计算 TSLA 2023 财年净利润相对上一财年的年度增长率，并根据其 2023 财年年报解释净利润变化与披露的税务或业务驱动因素，引用原文证据。",
+    "claims": [
+      {
+        "statement": "TSLA's net income increased in fiscal 2023 compared with the prior year, as shown in the consolidated net income row.",
+        "chunk_id": "passage:c59e3d12955d247c7c385db6",
+        "quote": "Net income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644"
+      },
+      {
+        "statement": "TSLA disclosed that its effective tax rate shifted from an expense to a benefit in 2023, primarily due to the release of the valuation allowance on U.S. federal and certain state deferred tax assets.",
+        "chunk_id": "passage:b063ef41072edd780e282e81",
+        "quote": "Our effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets."
+      },
+      {
+        "statement": "TSLA attributed the favorable change in net income attributable to common stockholders partly to a one-time non-cash tax benefit from releasing a valuation allowance on certain deferred tax assets.",
+        "chunk_id": "passage:77a4306b2d74434b86eaad0b",
+        "quote": "In 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:77a4306b2d74434b86eaad0b",
+        "text": "TSLA FY2023 item-7\nIn 2023, our net income attributable to common stockholders was $15.00 billion, representing a favorable change of $2.44 billion, compared to the prior year. This included a one-time non-cash tax benefit of $5.93 billion for the release of valuation allowance on certain deferred tax assets. We continue to focus on further cost reductions and operational efficiencies while maximizing delivery volumes.",
+        "locator": "dom-block=667|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:b063ef41072edd780e282e81",
+        "text": "TSLA FY2023 item-7\nOur effective tax rate changed from an expense of 8% to a benefit of 50% in the year ended December 31, 2023 as compared to the year ended December 31, 2022, primarily due to the release of the valuation allowance regarding our U.S. federal and certain state deferred tax assets.",
+        "locator": "dom-block=817|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      },
+      {
+        "id": "passage:c59e3d12955d247c7c385db6",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=964|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nTSLA FY2023 item-8\n |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n | Year Ended December 31,\n | 2023 |  | 2022 |  | 2021\nNet income | $ | 14,974 |  |  | $ | 12,587 |  |  | $ | 5,644 | \nOther comprehensive income (loss): |  |  |  |  | \nForeign currency translation adjustment | 198 |  |  | ( 392 ) |  |  | ( 308 ) | \nUnrealized net gain (loss) on investments | 16 |  |  | ( 23 ) |  |  | ( 1 ) | \nAdjustment for net loss realized and included in net income | 4 |  |  | — |  |  | — | \nComprehensive income | 15,192 |  |  | 12,172 |  |  | 5,335 | \nLess: Comprehensive (loss) income attributable to noncontrolling interests and redeemable noncontrolling interests in subsidiaries | ( 23 ) |  |  | 31 |  |  | 125 | \nComprehensive income attributable to common stockholders | $ | 15,215 |  |  | $ | 12,141 |  |  | $ | 5,210 | ",
+        "locator": "dom-block=964|part=0|strategy=structured",
+        "company": "TSLA",
+        "report_year": 2023
+      }
+    ]
+  },
+  "33024358e38d85afcebe71bdffb0edf17ad58ee715582d6b8c7a08f030117c21": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      },
+      {
+        "statement": "MSFT states that global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect its results of operations.",
+        "chunk_id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "quote": "Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations."
+      },
+      {
+        "statement": "MSFT discloses that competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and related revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "text": "MSFT FY2024 item-1a\nOur global business exposes us to operational and economic risks. Our customers are located throughout the world and a significant part of our revenue comes from international sales. The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations. In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, the environment, and political expression in specific countries may significantly alter the trade and commercial environments. Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe",
+        "locator": "dom-block=1199|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "a03b17eb4b5dfb76a7fb641da1c43e2dcfa0939de7acd9bb0ca15f1c2e94c194": {
+    "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+    "claims": [
+      {
+        "statement": "MSFT discloses that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and stock price.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      },
+      {
+        "statement": "MSFT states that abrupt political change, terrorist activity, and armed conflict pose economic and other risks that may negatively impact its ability to sell to and collect from customers, increase operating costs, or otherwise disrupt operations.",
+        "chunk_id": "passage:74c606ae9ae63dd59ca7f9ec",
+        "quote": "Abrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our operating costs, or otherwise disrupt our operations in markets both directly and indirectly impacted by such events."
+      },
+      {
+        "statement": "MSFT discloses that worsening economic conditions, including inflation, recession, or pandemic, may cause lower IT spending and adversely affect its results of operations.",
+        "chunk_id": "passage:1a7c0ca010dd0ff3b77fd1fd",
+        "quote": "Worsening economic conditions, including inflation, recession, pandemic, or other changes in economic conditions, may cause lower IT spending and adversely affect our results of operations."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:1a7c0ca010dd0ff3b77fd1fd",
+        "text": "MSFT FY2024 item-1a\nAdverse economic or market conditions may harm our business. Worsening economic conditions, including inflation, recession, pandemic, or other changes in economic conditions, may cause lower IT spending and adversely affect our results of operations. If demand for PCs, servers, and other computing devices declines, or consumer or business spending for those products declines, our results of operations may be adversely affected.",
+        "locator": "dom-block=1184|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:74c606ae9ae63dd59ca7f9ec",
+        "text": "MSFT FY2024 item-1a\nAbrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect from customers, increase our operating costs, or otherwise disrupt our operations in markets both directly and indirectly impacted by such events. These conditions also may add uncertainty to the timing and budget for technology investment decisions by our customers and may cause supply chain disruptions for hardware manufacturers. Geopolitical change may result in changing regulatory systems and requirements and market interventions that could impact our operating strategies, access to national, regional, and global markets, hiring, and profitability. Geopolitical instability may lead to sanctions and impact our ability to do business in some markets or with some public-sector customers. Any of these changes may negatively affect our results of operations.",
+        "locator": "dom-block=1196|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "b3f55da777b783d7f389ecec51e4fcc4222a3bd01a74a912d86f760c6376be2c": {
+    "question": "根据 MSFT 2024 财年年报，解释具体经营风险及其可能影响，引用原文证据。",
+    "claims": [
+      {
+        "statement": "MSFT discloses that the global nature of its business creates operational, economic, and geopolitical risks, and that global, regional, and local economic developments such as monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect its results of operations.",
+        "chunk_id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "quote": "The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations."
+      },
+      {
+        "statement": "MSFT discloses that changes to trade policy or agreements arising from populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, non-local sourcing restrictions, export controls, and investment restrictions.",
+        "chunk_id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "quote": "Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe"
+      },
+      {
+        "statement": "MSFT states that its operations and financial results are subject to various risks and uncertainties that could adversely affect its business, operations, financial condition, results of operations, liquidity, and the trading price of its common stock.",
+        "chunk_id": "passage:bbef091ae940669cf8830987",
+        "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:3cbc354f9cf14cb9ca8ee65c",
+        "text": "MSFT FY2024 item-1a\nOur global business exposes us to operational and economic risks. Our customers are located throughout the world and a significant part of our revenue comes from international sales. The global nature of our business creates operational, economic, and geopolitical risks. Global, regional, and local economic developments, monetary policy, inflation, and recession, as well as political and military disputes, may adversely affect our results of operations. In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditions in a country or region, and difficulties in staffing and managing foreign operations. Emerging nationalist and protectionist trends and concerns about human rights, the environment, and political expression in specific countries may significantly alter the trade and commercial environments. Changes to trade policy or agreements as a result of populism, protectionism, or economic nationalism may result in higher tariffs, local sourcing initiatives, and non-local sourcing restrictions, export controls, investment restrictions, or othe",
+        "locator": "dom-block=1199|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:bbef091ae940669cf8830987",
+        "text": "MSFT FY2024 item-1a\nOur operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.",
+        "locator": "dom-block=995|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "9a1c0a0eb6f963f7d4c6b5211fa16b3c79481bd8414a5e2b616e84eefc215d8c": {
+    "question": "根据 MSFT 2024 财年年报，解释具体经营风险及其可能影响，引用原文证据。",
+    "claims": [
+      {
+        "statement": "MSFT discloses that competition law enforcement actions and court decisions, along with new market regulations, may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and related revenue.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+      },
+      {
+        "statement": "MSFT states that the outcome of competition law actions, or steps taken to avoid them, could adversely affect it in various ways, including withdrawing or modifying products for certain markets, decreasing asset value, harming monetization, or inhibiting acquisitions.",
+        "chunk_id": "passage:c147ab198ea526fbc6835b60",
+        "quote": "The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+      },
+      {
+        "statement": "MSFT discloses that disruptions in developed or emerging markets could negatively impact demand for its products and services, impair its ability to operate in certain regions, or increase operating costs.",
+        "chunk_id": "passage:de98fe0a06783017966f3ef4",
+        "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:c147ab198ea526fbc6835b60",
+        "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+        "locator": "dom-block=1129|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:de98fe0a06783017966f3ef4",
+        "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+        "locator": "dom-block=1199|part=1|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "46f92339fa8a76e723bfcd308cb7ddd74c030270961a6e3d1955a40dabb644c1": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Total revenue | 245,122 |  | 211,915 |  | 198,270",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "2a3e56ef5a9ed6d24a970abb53b7642f2d572ec3aa41cb019c07f756da1a20da": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Management guarantees that financial performance will double next year without any risks.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  },
+  "7f53db05adfc51dd9cf979c29a29e1ab2a6709f9afe95b7ad25d1ca108d924af": {
+    "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+    "claims": [
+      {
+        "statement": "Every disclosed change was caused exclusively by the chief executive's personal investments.",
+        "chunk_id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "quote": "Total revenue | 245,122 |  | 211,915 |  | 198,270"
+      }
+    ],
+    "sources": [
+      {
+        "id": "passage:0ffcbbf71ca18d7c296ab72b",
+        "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#income-statements|block=0|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 income statements\n(In millions, except per share amounts)\nYear Ended June 30, | 2024 |  | 2023 |  | 2022\nRevenue: |  |  |  |  | \nProduct | $ 64,773 |  | $ 64,699 |  | $ 72,732\nService and other | 180,349 |  | 147,216 |  | 125,538\nTotal revenue | 245,122 |  | 211,915 |  | 198,270\nCost of revenue: |  |  |  |  | \nProduct | 15,272 |  | 17,804 |  | 19,064\nService and other | 58,842 |  | 48,059 |  | 43,586\nTotal cost of revenue | 74,114 |  | 65,863 |  | 62,650\nGross margin | 171,008 |  | 146,052 |  | 135,620\nResearch and development | 29,510 |  | 27,195 |  | 24,512\nSales and marketing | 24,456 |  | 22,759 |  | 21,825\nGeneral and administrative | 7,609 |  | 7,575 |  | 5,900\nOperating income | 109,433 |  | 88,523 |  | 83,383\nOther income (expense), net | (1,646) |  | 788 |  | 333\nIncome before income taxes | 107,787 |  | 89,311 |  | 83,716\nProvision for income taxes | 19,651 |  | 16,950 |  | 10,978\nNet income | $ 88,136 |  | $ 72,361 |  | $ 72,738\nEarnings per share: |  |  |  |  | \nBasic | $ 11.86 |  | $ 9.72 |  | $ 9.70\nDiluted | $ 11.80 |  | $ 9.68 |  | $ 9.65\nWeighted average shares outstanding: |  |  |  |  | \nBasic | 7,431 |  | 7,446 |  | 7,496\nDiluted | 7,469 |  | 7,472 |  | 7,540",
+        "locator": "article#income-statements|structured=0",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:13aa4483d109f4585524a100",
+        "text": "MSFT FY2024 item-7\nServer products and cloud services revenue increased $17.8 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 30% driven by growth in our consumption-based services. Server products revenue increased 3% driven by continued demand for our hybrid solutions, including Windows Server and SQL Server running in multi-cloud environments.",
+        "locator": "dom-block=2301|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      },
+      {
+        "id": "passage:2b643e217c241a6650a55816",
+        "text": "MSFT FY2024 item-7\nRevenue increased $33.2 billion or 16% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Office 365 Commercial. More Personal Computing revenue increased driven by Gaming.",
+        "locator": "dom-block=2013|part=0|strategy=structured",
+        "company": "MSFT",
+        "report_year": 2024
+      }
+    ]
+  }
+}
