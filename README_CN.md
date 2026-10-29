@@ -14,9 +14,9 @@ FinEvoLab 是基于 FinRobot Equity V1 的独立衍生项目，将公开财报�
 ## 核心能力
 
 - **财报与证据**：SEC / 公司 IR 快照、财务指标抽取、期间与单位核对，以及可定位到原始来源的引用；支持指定上传的 HTML / 可读文本 PDF。
-- **RAG**：固定语料使用 BM25、multilingual E5 和 RRF 混合检索；上传文件使用限定文档内检索，支持数值与正文联合分析。
+- **RAG**：固定语料使用 BM25、multilingual E5 和 RRF 混合检索；上传文件使用限定文档内检索，支持数值与正文联合分析；可选 Redis 共享检索缓存及版本化 Milvus 向量后端。
 - **Agent 与工具**：通过 Agents SDK 理解请求，调用指标查询、增长计算、跨公司比较和报告工具；金额与公式由程序计算，财务对象从真实工具结果组装。
-- **Harness**：schema、来源与业务状态校验，最多一次定向修复，以及带版本签名的阶段检查点和断点恢复。
+- **Harness**：schema、来源与业务状态校验，最多一次定向修复，以及带版本签名的阶段检查点和断点恢复；支持同一任务预算内的自检与隔离证据审查角色。
 - **模型与界面**：DeepSeek API、Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 规划后端，FastAPI 接口、双语网页及 HTML / PDF 报告。
 
 默认 API 模式配合 CPU 检索运行。LoRA 服务部署于外部 GPU，通过 SSH 转发接入；LoRA 负责 `RequestPlan` 规划，API 模型生成解释性正文，各后端共用财务工具、RAG 和 harness。
@@ -67,11 +67,14 @@ openai_base_url = https://api.deepseek.com/
 | 请求规划器正式 test | Qwen base 109/240；LoRA 两个 seed 为 212/240、213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
 | 同权重 BF16 / NF4 推理 | 严格成功 212/240、211/240；NF4 峰值已分配显存降低 62.58%，平均延时增加 47.18% | [量化结果](project_notes/evaluations/planner_quantization.json) |
 | 检索缓存对照 | 135 组查询配置 × 5 次重复；返回结果一致；预热均值 68.52 → 6.16 ms，11.12× | [缓存对照](project_notes/experiments/retrieval-cache-v1/summary.json) |
+| Redis 共享检索缓存 | 四组对照，77 题 × 3 次；693 次配对的片段完全一致；热查询均值 91.13 → 22.44 ms，4.06× | [服务对照](project_notes/evaluations/retrieval_service_comparison.json) |
+| 同预算正文审查 | 原分析者 22/24；自检 24/24；隔离 Reviewer 23/24；72 次真实工作流，经两个隔离上下文盲评 | [角色对照](project_notes/experiments/agent-roles-v1/summary.json) |
+| 无依据结论受控测试 | 接受决策：来源校验 10/20，自检 20/20，Reviewer 18/20；两种模型审查均拒绝全部 10 个无依据对照 | [支持关系对照](project_notes/experiments/claim-review-v3/summary.json) |
 | 可选语义重排 | top 5 完整标准原文命中 15/36 → 23/36；业务配对严格成功均为 8/8 | [证据对照](project_notes/experiments/reranker-bilingual-v1/summary.json)、[业务验收](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **205 项通过**，见[运行验证](project_notes/run_logs/runtime_refinement_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **224 项通过**，见[运行验证](project_notes/run_logs/service_integration_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 ## 复现实验
 
@@ -145,6 +148,38 @@ for document in documents:
 & $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode rerank --split validation --queries data/evaluation/retrieval_refinement/bilingual_queries.json --output output/reproduction/reranker_bilingual
 & $condaExe run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py --output output/reproduction/runtime_refinement
 ```
+
+## 可选检索服务与证据审查
+
+安装可选 CPU 依赖，并将 Redis 服务端可执行文件加入 PATH。已验证服务为 Redis 8.4.0、通过 gRPC 提供服务的 Milvus Lite 3.2.2，客户端为 pymilvus 3.0.2。管理器启动本机回环服务，复用已健康运行的服务，只停止自身管理的进程。Milvus 导入已有的 13,426 × 384 contextual 向量，采用版本化 ID 和 FLAT/IP 打分。
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python -m pip install -r requirements/retrieval_services.in
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py start
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py import
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py status
+```
+
+在 `configs/retrieval_services.json` 中将 `redis.enabled` 设为 `true`，即可跨进程共享公开语料的片段排名。缓存 ID 从当前来源索引还原并继续校验；上传数据保持文档内 BM25 检索。将 `vector_backend` 设为 `milvus`，即可使用已导入的 collection。通过 `FINEVOLAB_REDIS_URL` 和 `FINEVOLAB_MILVUS_TOKEN` 私下提供连接凭证，通过 `FINEVOLAB_RETRIEVAL_SERVICES_CONFIG` 指定私有服务配置。默认后端为 `numpy`，Redis 默认关闭。在当前语料上，未缓存的 Milvus Lite 热查询均值为 932.85 ms，Redis 加 Milvus 为 23.59 ms。已测得的延时收益来自 Redis；Milvus 提供保持最终检索结果一致的可选存储后端。
+
+将 `configs/agent_review.json` 的 `mode`，或 `FINEVOLAB_REVIEW_MODE`，设为 `off`、`self_check` 或 `reviewer`。审查模式检查解释题与混合题的结论，共用既有调用、Token、时间预算和一次修复额度，保留确定性数值答案。页面和报告展示审查决定。两种审查角色使用已配置模型的独立调用；Reviewer 采用独立角色和上下文。
+
+角色对照使用 `deepseek-flash`，覆盖来自 12 道 validation 原题的 24 个双语请求，每组运行一次。三组采用相同检索配置及总预算。原分析者、自检、Reviewer 的平均工作流耗时分别为 9.02 / 11.56 / 11.76 s，模型调用为 52 / 76 / 75 次。8 道混合题的数值答案在三组间一致。本轮自检严格得分最高，作为需要审查时的优先选项；默认仍为 `off`。20 个受控预测构成来自 3 道底层任务的 10 对正负样本，接受决策同时包含结论支持与正文覆盖。Reviewer 因覆盖不完整拒绝了 2 个来源支持的正样本。逐题决定、源码补丁、配置与配对结果见[服务对照](project_notes/evaluations/retrieval_service_comparison.json)。
+
+重建检索资源后，使用新的 run ID 复现实验。以下命令中，角色对照、结论审查对照及认证 HTTP 验收调用真实模型，服务验收及汇总不调用模型。
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/verify_retrieval_services.py --output output/reproduction/service_checks.json
+& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py --output output/reproduction/service_site
+& $condaExe run --no-capture-output -n finevolab python scripts/verify_service_analysis.py --site output/reproduction/service_site --output output/reproduction/service_analysis_checks.json
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval_services.py --repeats 3 --output output/reproduction/retrieval_services
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_agent_roles.py --output output/reproduction/agent_roles
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_claim_review.py --output output/reproduction/claim_review
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_service_experiments.py --retrieval-run output/reproduction/retrieval_services --roles-run output/reproduction/agent_roles --controls-run output/reproduction/claim_review --output output/reproduction/service_summary.json
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py stop
+```
+
+汇总命令聚合仓库内版本化的归档运行。[服务验收](project_notes/run_logs/retrieval_services_checks.json)覆盖 135 组查询配置、向量幂等导入、空闲连接、服务故障、显式回退、缓存过期与损坏，以及服务重启恢复。
 
 ## 静态展示
 

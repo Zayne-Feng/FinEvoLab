@@ -14,9 +14,9 @@ FinEvoLab is an independent derivative project built on FinRobot Equity V1. It c
 ## Features
 
 - **Reports and evidence**: SEC / company IR snapshots, financial metric extraction, period and unit checks, and citations that locate the original sources; supports selected HTML files and PDFs with extractable text.
-- **RAG**: BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis.
+- **RAG**: BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis; optional shared Redis caching and a versioned Milvus vector backend.
 - **Agent and tools**: Agents SDK interprets requests and invokes metric lookup, growth calculation, company comparison, and report tools. Programs compute amounts and formulas and assemble financial objects from actual tool results.
-- **Harness**: Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, and execution recovery.
+- **Harness**: Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, execution recovery, and optional self-check or isolated evidence-review roles within the same task budget.
 - **Models and interface**: DeepSeek API, Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planning backends, FastAPI endpoints, a bilingual web interface, and HTML / PDF reports.
 
 The default API mode runs with CPU retrieval. The LoRA service runs on an external GPU and connects through SSH port forwarding. LoRA handles `RequestPlan` planning, while the API model generates explanatory narratives. All backends share the financial tools, RAG, and harness.
@@ -67,11 +67,14 @@ Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft rev
 | Request-planner formal test | Qwen base 109/240; two LoRA seeds: 212/240 and 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
 | BF16 / NF4 inference with the same weights | Strict successes: 212/240 and 211/240; NF4 reduced peak allocated memory by 62.58% and increased mean latency by 47.18% | [Quantization results](project_notes/evaluations/planner_quantization.json) |
 | Retrieval cache comparison | 135 query configurations × 5 repetitions; identical results; warm mean 68.52 → 6.16 ms, 11.12× | [Cache comparison](project_notes/experiments/retrieval-cache-v1/summary.json) |
+| Shared Redis retrieval cache | Four arms, 77 questions × 3 repetitions; 693 paired comparisons with identical passages; warm mean 91.13 → 22.44 ms, 4.06× | [Service comparison](project_notes/evaluations/retrieval_service_comparison.json) |
+| Same-budget narrative review | Analyst 22/24; self-check 24/24; isolated Reviewer 23/24; 72 real workflows with two blind scoring contexts | [Role comparison](project_notes/experiments/agent-roles-v1/summary.json) |
+| Controlled unsupported claims | Acceptance decisions: source validation 10/20, self-check 20/20, Reviewer 18/20; both model review modes rejected all 10 unsupported controls | [Support controls](project_notes/experiments/claim-review-v3/summary.json) |
 | Optional semantic reranking | Complete gold-quote hits in top 5: 15/36 → 23/36; paired workflow strict successes 8/8 for both arms | [Evidence comparison](project_notes/experiments/reranker-bilingual-v1/summary.json), [Workflow verification](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean generation latency was 3.759 / 5.532 s.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **205 tests**; see [runtime verification](project_notes/run_logs/runtime_refinement_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **224 tests**; see [runtime verification](project_notes/run_logs/service_integration_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 ## Reproducing experiments
 
@@ -145,6 +148,38 @@ for document in documents:
 & $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode rerank --split validation --queries data/evaluation/retrieval_refinement/bilingual_queries.json --output output/reproduction/reranker_bilingual
 & $condaExe run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py --output output/reproduction/runtime_refinement
 ```
+
+## Optional retrieval services and evidence review
+
+Install the optional CPU dependencies and put a Redis server executable on PATH. The verified services are Redis 8.4.0 and Milvus Lite 3.2.2 over gRPC, using pymilvus 3.0.2. The manager starts loopback services, reuses an existing healthy service, and stops only processes it owns. Milvus imports the existing 13,426 × 384 contextual vectors with versioned IDs and FLAT/IP scoring.
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python -m pip install -r requirements/retrieval_services.in
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py start
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py import
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py status
+```
+
+Set `redis.enabled` to `true` in `configs/retrieval_services.json` to share public-corpus passage rankings across processes. Cached IDs are restored from the current source index and checked before use; uploads retain document-scoped BM25 retrieval. Set `vector_backend` to `milvus` to use the imported collection. Credentials can be supplied privately through `FINEVOLAB_REDIS_URL` and `FINEVOLAB_MILVUS_TOKEN`; use `FINEVOLAB_RETRIEVAL_SERVICES_CONFIG` for a private service configuration. The default backend is `numpy`, with Redis disabled. On this corpus, uncached Milvus Lite warm retrieval averaged 932.85 ms; Redis plus Milvus averaged 23.59 ms. Redis provides the measured latency improvement; Milvus provides the optional storage backend while preserving final retrieval results.
+
+Set `mode` in `configs/agent_review.json`, or `FINEVOLAB_REVIEW_MODE`, to `off`, `self_check`, or `reviewer`. The review modes inspect explanation and hybrid claims, share the existing total call/token/time budget and single repair allowance, and preserve deterministic numerical answers. The interface and reports display review decisions. Both review roles use the configured model in separate calls; the Reviewer has its own role and context.
+
+The role comparison used `deepseek-flash`, 24 bilingual requests from 12 validation tasks, and one run per arm. All three arms used the same retrieval configuration and total budget. Mean workflow latency was 9.02 / 11.56 / 11.76 s; model calls were 52 / 76 / 75 for analyst / self-check / Reviewer. The 8 hybrid numerical answers matched across arms. In this comparison, self-check achieved the best strict score and is the preferred opt-in review mode; the default remains `off`. The 20 controlled predictions form 10 positive/negative pairs from 3 underlying tasks. Their acceptance score includes both claim support and narrative coverage. Reviewer rejected 2 supported controls for incomplete coverage. Per-case decisions, source patches, configurations, and paired results are archived in the [service comparison](project_notes/evaluations/retrieval_service_comparison.json).
+
+Reproduce the comparisons under new run IDs after rebuilding retrieval resources. These commands use the live model for the role, claim-review, and authenticated HTTP comparisons; the service checks and summary use no model calls.
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/verify_retrieval_services.py --output output/reproduction/service_checks.json
+& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py --output output/reproduction/service_site
+& $condaExe run --no-capture-output -n finevolab python scripts/verify_service_analysis.py --site output/reproduction/service_site --output output/reproduction/service_analysis_checks.json
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval_services.py --repeats 3 --output output/reproduction/retrieval_services
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_agent_roles.py --output output/reproduction/agent_roles
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_claim_review.py --output output/reproduction/claim_review
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_service_experiments.py --retrieval-run output/reproduction/retrieval_services --roles-run output/reproduction/agent_roles --controls-run output/reproduction/claim_review --output output/reproduction/service_summary.json
+& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py stop
+```
+
+Without run-path options, the summary command aggregates the versioned archived runs. [Service acceptance](project_notes/run_logs/retrieval_services_checks.json) covers 135 query configurations, idempotent vector imports, idle connections, outages, explicit fallback, cache expiry and corruption, and service restart recovery.
 
 ## Static showcase
 
