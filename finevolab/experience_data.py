@@ -23,13 +23,17 @@ def public_result(state: dict) -> dict:
                                   else output)
             events.append(item)
     return {"task_id": state["task_id"], "status": state["status"],
-        "phases": {key: {field: value[field] for field in ("status", "error_type") if field in value}
+        "phases": {key: {field: value[field] for field in ("status", "error_type", "duration_seconds", "attempt_seconds", "attempts") if field in value}
                    for key, value in phases.items()},
         "request": result.get("request"), "answer_type": result.get("answer_type"),
         "business_status": result.get("overall_status", result.get("answer", {}).get("status")),
         "answer": result.get("answer"), "narrative": result.get("narrative"),
         "evidence": [public_evidence(item) for item in result.get("evidence", [])],
-        "events": events, "validation": phases.get("validate", {}).get("result"),
+        "events": events,
+        "operations": [{key: event[key] for key in ("kind", "operation", "phase", "status", "duration_seconds",
+            "error_type", "call", "cache_hit", "model", "tokens", "attempt") if key in event}
+            for event in state.get("operations", result.get("events", [])) if event.get("event") == "operation"],
+        "validation": phases.get("validate", {}).get("result"),
         "repair": result.get("repair"), "usage": result.get("usage"),
         "elapsed_seconds": state.get("elapsed_seconds", result.get("elapsed_seconds")),
         "data_version": result.get("data_version"), "runtime_backend": result.get("runtime_backend")}

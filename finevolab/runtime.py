@@ -6,7 +6,8 @@ from functools import cache
 import hashlib
 import json
 import os
-from datetime import datetime, timezone
+from contextlib import contextmanager
+from contextvars import ContextVar
 from pathlib import Path
 import time
 from threading import RLock
@@ -14,6 +15,31 @@ from uuid import uuid4
 
 from agents import RunHooks
 from filelock import FileLock
+
+
+ACTIVE_PHASE = ContextVar("execution_phase", default="analyze")
+ACTIVE_ATTEMPT = ContextVar("execution_attempt", default=1)
+ACTIVE_OPERATIONS = ContextVar("execution_operations", default=None)
+
+
+@contextmanager
+def observe(events: list, kind: str, operation: str, **attributes):
+    record = {"event": "operation", "kind": kind, "operation": operation,
+              "phase": ACTIVE_PHASE.get(), "attempt": ACTIVE_ATTEMPT.get(), "status": "running", **attributes}
+    events.append(record)
+    operations = ACTIVE_OPERATIONS.get()
+    if operations is not None and operations is not events:
+        operations.append(record)
+    started = time.perf_counter()
+    try:
+        yield record
+    except BaseException as error:
+        record.update(status="failed", error_type=type(error).__name__)
+        raise
+    else:
+        record["status"] = "complete"
+    finally:
+        record["duration_seconds"] = round(time.perf_counter() - started, 6)
 
 
 def fingerprint(value: dict) -> str:
@@ -75,6 +101,12 @@ class ToolExecutor:
         self.cache_root, self.calls, self.started = cache_root, 0, time.monotonic()
 
     def call(self, name: str, parameters: dict, function, schema=None):
+        with observe(self.events, "tool", name, call=self.calls + 1) as record:
+            result = self._call(name, parameters, function, schema)
+            record["cache_hit"] = self.events[-1].get("cache_hit", False)
+            return result
+
+    def _call(self, name: str, parameters: dict, function, schema=None):
         if self.calls >= self.budget.max_tool_calls:
             self.events.append({"event": "tool_rejected", "tool": name, "parameters": parameters,
                                 "reason": "tool_budget", "completed_calls": self.calls})
@@ -164,36 +196,53 @@ class PhaseRunner:
             }
             if state["signature"] != self.signature:
                 raise ValueError("Task versions differ from the saved checkpoint")
-            started = time.monotonic()
+            if state["status"] == "complete" and all(
+                    state["phases"].get(name, {}).get("status") == "complete" for name in phases):
+                return state
+            started = time.perf_counter()
+            elapsed = state.get("elapsed_seconds", 0.0)
             state.setdefault("history", [])
             state["status"] = "running"
             write_json(self.path, state)
-            for name, function in phases.items():
-                saved = state["phases"].get(name, {})
-                if saved.get("status") == "complete":
-                    continue
-                state["phases"][name] = {"status": "running"}
-                state["history"].append({"phase": name, "status": "running",
-                                         "at": datetime.now(timezone.utc).isoformat()})
-                write_json(self.path, state)
-                try:
-                    remaining = timeout_seconds - (time.monotonic() - started)
-                    if remaining <= 0:
-                        raise TimeoutError("Task timeout exceeded")
-                    result = await asyncio.wait_for(function(state), timeout=remaining)
-                except Exception as error:
-                    state["status"] = "failed"
-                    state["phases"][name] = {"status": "failed", "error_type": type(error).__name__}
-                    state["history"].append({"phase": name, "status": "failed",
-                                             "error_type": type(error).__name__,
-                                             "at": datetime.now(timezone.utc).isoformat()})
+            try:
+                for name, function in phases.items():
+                    saved = state["phases"].get(name, {})
+                    if saved.get("status") == "complete":
+                        continue
+                    attempt = saved.get("attempts", 0) + 1
+                    phase_elapsed = saved.get("duration_seconds", 0.0)
+                    state["phases"][name] = {"status": "running", "attempts": attempt}
+                    state["history"].append({"phase": name, "status": "running", "attempt": attempt})
                     write_json(self.path, state)
-                    raise
-                state["phases"][name] = {"status": "complete", "result": result}
-                state["history"].append({"phase": name, "status": "complete",
-                                         "at": datetime.now(timezone.utc).isoformat()})
+                    phase_started = time.perf_counter()
+                    token = ACTIVE_PHASE.set(name)
+                    attempt_token = ACTIVE_ATTEMPT.set(attempt)
+                    operations_token = ACTIVE_OPERATIONS.set(state.setdefault("operations", []))
+                    try:
+                        remaining = timeout_seconds - (time.perf_counter() - started)
+                        if remaining <= 0:
+                            raise TimeoutError("Task timeout exceeded")
+                        result = await asyncio.wait_for(function(state), timeout=remaining)
+                    except BaseException as error:
+                        state["status"] = "failed"
+                        state["phases"][name].update(status="failed", error_type=type(error).__name__)
+                        raise
+                    else:
+                        state["phases"][name].update(status="complete", result=result)
+                    finally:
+                        ACTIVE_PHASE.reset(token)
+                        ACTIVE_ATTEMPT.reset(attempt_token)
+                        ACTIVE_OPERATIONS.reset(operations_token)
+                        duration = time.perf_counter() - phase_started
+                        phase = state["phases"][name]
+                        phase.update(attempt_seconds=round(duration, 6),
+                                     duration_seconds=round(phase_elapsed + duration, 6))
+                        state["history"].append({"phase": name, "status": phase["status"],
+                            "attempt": attempt, "duration_seconds": phase["attempt_seconds"],
+                            **({"error_type": phase["error_type"]} if "error_type" in phase else {})})
+                        write_json(self.path, state)
+                state["status"] = "complete"
+            finally:
+                state["elapsed_seconds"] = round(elapsed + time.perf_counter() - started, 6)
                 write_json(self.path, state)
-            state["status"] = "complete"
-            state["elapsed_seconds"] = round(time.monotonic() - started, 3)
-            write_json(self.path, state)
             return state

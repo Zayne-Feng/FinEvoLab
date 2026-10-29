@@ -11,6 +11,7 @@ import httpx
 from openai import AsyncOpenAI, OpenAI
 
 from finevolab.config import ModelConfig
+from finevolab.circuit import provider_circuit, unavailable_response
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +35,8 @@ def save_cooldown(path: Path, status: int | None) -> None:
 
 
 class SerializedAsyncTransport(httpx.AsyncBaseTransport):
-    def __init__(self, base_url: str, transport=None):
+    def __init__(self, base_url: str, transport=None, circuit=None):
+        self.circuit = circuit or provider_circuit(base_url.rstrip("/"))
         self.lock, self.path = lock_paths(base_url)
         self.local_lock = asyncio.Lock()
         self.transport = transport or httpx.AsyncHTTPTransport()
@@ -53,15 +55,27 @@ class SerializedAsyncTransport(httpx.AsyncBaseTransport):
                 if time.monotonic() - started > 60:
                     raise httpx.PoolTimeout("Provider request queue timed out")
                 await asyncio.sleep(0.1)
-        status = None
         try:
-            await asyncio.sleep(delay_remaining(self.path))
-            response = await self.transport.handle_async_request(request)
-            await response.aread()
-            status = response.status_code
-            return response
+            if not self.circuit.allow():
+                return unavailable_response(request)
+            status = None
+            try:
+                await asyncio.sleep(delay_remaining(self.path))
+                response = await self.transport.handle_async_request(request)
+                await response.aread()
+                status = response.status_code
+            except httpx.TransportError:
+                self.circuit.record(None)
+                raise
+            except BaseException:
+                self.circuit.release()
+                raise
+            else:
+                self.circuit.record(status)
+                return response
+            finally:
+                save_cooldown(self.path, status)
         finally:
-            save_cooldown(self.path, status)
             self.lock.release()
 
     async def aclose(self):
@@ -69,18 +83,29 @@ class SerializedAsyncTransport(httpx.AsyncBaseTransport):
 
 
 class SerializedTransport(httpx.BaseTransport):
-    def __init__(self, base_url: str):
+    def __init__(self, base_url: str, transport=None, circuit=None):
+        self.circuit = circuit or provider_circuit(base_url.rstrip("/"))
         self.lock, self.path = lock_paths(base_url)
-        self.transport = httpx.HTTPTransport()
+        self.transport = transport or httpx.HTTPTransport()
 
     def handle_request(self, request):
         with self.lock.acquire(timeout=60):
-            time.sleep(delay_remaining(self.path))
+            if not self.circuit.allow():
+                return unavailable_response(request)
             status = None
             try:
+                time.sleep(delay_remaining(self.path))
                 response = self.transport.handle_request(request)
                 response.read()
                 status = response.status_code
+            except httpx.TransportError:
+                self.circuit.record(None)
+                raise
+            except BaseException:
+                self.circuit.release()
+                raise
+            else:
+                self.circuit.record(status)
                 return response
             finally:
                 save_cooldown(self.path, status)

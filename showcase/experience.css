@@ -206,3 +206,18 @@ button:disabled {
     display: none;
   }
 }
+
+.execution-timing {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #d5dfdc;
+  border-radius: 12px;
+  background: #f5f3ed;
+}
+.execution-timing ol,
+.execution-timing ul {
+  padding-left: 22px;
+}
+.execution-timing li {
+  margin: 8px 0;
+}

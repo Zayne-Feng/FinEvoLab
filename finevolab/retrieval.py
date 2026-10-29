@@ -1,11 +1,12 @@
 """Retrieve versioned report passages with BM25 and rank fusion."""
 
-from collections import defaultdict
+from collections import OrderedDict, defaultdict
 from functools import lru_cache
 import hashlib
 import json
 from pathlib import Path
 import re
+from threading import RLock
 
 from bs4 import BeautifulSoup
 import numpy as np
@@ -181,8 +182,13 @@ def reciprocal_rank_fusion(rankings: list[list[str]], constant: int = 60) -> lis
 
 
 class ReportIndex:
-    def __init__(self, chunks: list[dict], vectors=None, encoder=None):
+    def __init__(self, chunks: list[dict], vectors=None, encoder=None, cache_size: int = 32):
+        if cache_size < 0:
+            raise ValueError("Cache capacity must be nonnegative")
         self.chunks = chunks
+        self.cache_size = cache_size
+        self._scopes, self._queries = OrderedDict(), OrderedDict()
+        self._lock = RLock()
         self.vectors = vectors
         self.encoder = encoder
         self.positions = {item["id"]: index for index, item in enumerate(chunks)}
@@ -196,20 +202,17 @@ class ReportIndex:
             raise ValueError("Positive retrieval limits are required")
         if mode not in {"bm25", "vector", "hybrid"}:
             raise ValueError("Unknown retrieval mode")
-        filtered = [item for item in self.chunks
-                    if (company is None or item["company"] == company)
-                    and (year is None or item["report_year"] == year)
-                    and (report_type is None or item["report_type"] == report_type)]
-        if not filtered or not tokenize(query):
+        if not tokenize(query):
             return []
-        lexical = BM25Okapi([tokenize(item["text"]) for item in filtered])
-        lexical.idf = {token: max(0.0, weight) for token, weight in lexical.idf.items()}
+        filtered, lexical = self._scope(company, year, report_type)
+        if not filtered:
+            return []
         scores = lexical.get_scores(tokenize(query))
         ranked = sorted(zip(filtered, scores), key=lambda item: (-item[1], item[0]["id"]))
         if mode != "bm25":
             if self.vectors is None or self.encoder is None:
                 raise ValueError("Vector retrieval requires a loaded index and encoder")
-            query_vector = self.encoder.encode([query], query=True)[0]
+            query_vector = self._query_vector(query)
             positions = [self.positions[item["id"]] for item in filtered]
             similarities = self.vectors[positions] @ query_vector
             vector_ranked = sorted(zip(filtered, similarities), key=lambda item: (-item[1], item[0]["id"]))
@@ -233,6 +236,38 @@ class ReportIndex:
             if len(results) >= limit:
                 break
         return results
+
+
+    def _remember(self, cache, key, value, capacity):
+        if capacity:
+            cache[key] = value
+            cache.move_to_end(key)
+            while len(cache) > capacity:
+                cache.popitem(last=False)
+        return value
+
+    def _scope(self, company, year, report_type):
+        key = (company, year, report_type)
+        with self._lock:
+            if key in self._scopes:
+                self._scopes.move_to_end(key)
+                return self._scopes[key]
+            filtered = [item for item in self.chunks
+                        if (company is None or item["company"] == company)
+                        and (year is None or item["report_year"] == year)
+                        and (report_type is None or item["report_type"] == report_type)]
+            lexical = BM25Okapi([tokenize(item["text"]) for item in filtered]) if filtered else None
+            if lexical is not None:
+                lexical.idf = {token: max(0.0, weight) for token, weight in lexical.idf.items()}
+            return self._remember(self._scopes, key, (filtered, lexical), self.cache_size)
+
+    def _query_vector(self, query):
+        with self._lock:
+            if query in self._queries:
+                self._queries.move_to_end(query)
+                return self._queries[query]
+            vector = self.encoder.encode([query], query=True)[0]
+            return self._remember(self._queries, query, vector, self.cache_size * 4)
 
 
 @lru_cache(maxsize=2)
@@ -274,10 +309,15 @@ def _cached_index(root_path: str, strategy: str, mode: str, signature: tuple, pr
 def explanation_passages(root: Path, query: str, company: str, year: int, topic: str,
                          variant: str = "improved", profile: str = "legacy", uploads: list[dict] | None = None,
                          metric_focus: str | None = None) -> list[dict]:
-    if variant not in {"baseline", "improved", "no_expansion", "no_priority", "none"}:
+    if variant not in {"baseline", "improved", "no_expansion", "no_priority", "none", "pooled", "reranked"}:
         raise ValueError("Unknown explanation retrieval variant")
     if variant == "none":
         return []
+    from finevolab.reranking import load_config
+    reranker_path = root / "configs/reranker.json"
+    reranker_config = load_config(root) if reranker_path.exists() else None
+    if variant == "improved" and reranker_config is not None and reranker_config.enabled:
+        variant = "reranked"
     mode = "bm25" if uploads else "hybrid"
     index = ReportIndex([chunk for document in uploads for chunk in document["chunks"]]) if uploads else load_index(root, mode=mode, profile=profile)
     if variant == "baseline":
@@ -343,6 +383,13 @@ def explanation_passages(root: Path, query: str, company: str, year: int, topic:
             and any(word in text for word in ("increas", "decreas", "driven", "primarily", "offset")))
         return (int(narrative and relevant), int(relevant), item["score"], item["id"])
     ranked = sorted(lookup.values(), key=priority, reverse=True)
+    if variant in {"pooled", "reranked"}:
+        if reranker_config is None:
+            raise ValueError("A pinned reranker configuration is required")
+        ranked = ranked[:reranker_config.max_candidates]
+        if variant == "reranked":
+            from finevolab.reranking import rerank_passages
+            ranked = rerank_passages(root, query, ranked)
     selected, used = [], 0
     if focused and topic in {"profit", "revenue"} and variant != "no_priority":
         label = (r"(?:total\s+)?(?:net\s+)?(?:revenue[s]?|sales)\b" if topic == "revenue" else

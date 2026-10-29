@@ -9,7 +9,7 @@ from pathlib import Path
 from finevolab.agent import analyze_revenue
 from finevolab.config import ModelConfig
 from finevolab.reporting import build_report
-from finevolab.runtime import BudgetExceeded, PhaseRunner, RunBudget, fingerprint, read_json, write_json
+from finevolab.runtime import BudgetExceeded, PhaseRunner, RunBudget, fingerprint, read_json, write_json, observe
 from dataclasses import asdict, replace
 from finevolab.tools import FinancialStore
 from finevolab.storage import save_task
@@ -22,7 +22,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                        root: Path = ROOT, events: list | None = None, telemetry: dict | None = None,
                        render: bool = True, timeout_seconds: int = 240, upload_ids: list[str] | None = None,
                        budget: RunBudget | None = None, corpus_profile: str = "contextual",
-                       planner_backend: str = "api") -> dict:
+                       planner_backend: str = "api", retrieval_variant: str = "improved") -> dict:
     from finevolab.evaluation import analyze_task
     from finevolab.reporting import build_analysis_report
     from finevolab.validation import validate_answer
@@ -44,7 +44,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
         "model": settings.model, "base_url": settings.base_url, "data_version": store.version,
         "candidate": fingerprint(candidate), "render": render, "timeout_seconds": timeout_seconds,
         "upload_ids": upload_ids, "source_signature": store.source_signature, "budget": asdict(budget),
-        "corpus_profile": corpus_profile, "runtime_backend": "agents_sdk" if online_planner is None else "lora_planner_with_sdk_narrative",
+        "corpus_profile": corpus_profile, "retrieval_variant": retrieval_variant, "runtime_backend": "agents_sdk" if online_planner is None else "lora_planner_with_sdk_narrative",
         "planner_backend": planner_backend,
         "planner_identity": online_planner.identity(planner_backend) if online_planner else None,
         "company_aliases": hashlib.sha256((ROOT / "configs/company_aliases.json").read_bytes()).hexdigest(),
@@ -55,6 +55,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
         "passage_sources": hashlib.sha256((ROOT / "data/filing_sources.json").read_bytes()).hexdigest(),
         "passage_index": hashlib.sha256((ROOT / "data/indexes" /
             ("contextual" if corpus_profile == "contextual" else "") / "structured.json").read_bytes()).hexdigest(),
+        "reranker_config": hashlib.sha256((ROOT / "configs/reranker.json").read_bytes()).hexdigest(),
         "retrieval_config": hashlib.sha256((ROOT / "configs/retrieval.json").read_bytes()).hexdigest(),
         "vector_metadata": hashlib.sha256((ROOT / "data/indexes" /
             ("contextual" if corpus_profile == "contextual" else "") / "structured.metadata.json").read_bytes()).hexdigest(),
@@ -70,7 +71,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     async def analyze(state):
         if online_planner is None:
             result = await analyze_task(settings, store, question, candidate, events, telemetry=telemetry,
-                                        root=root, budget=budget, corpus_profile=corpus_profile)
+                                        root=root, budget=budget, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant)
         else:
             from finevolab.grounded import analyze_grounded
             from finevolab.planning import PlannerServiceError
@@ -80,8 +81,11 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
             started = time.monotonic()
             documents = [{key: item[key] for key in ("company", "report_year", "id")} for item in store.uploads]
             try:
-                plan, prediction = await online_planner.plan(planner_backend, question, documents, candidate,
-                                                              budget.timeout_seconds)
+                with observe(events if events is not None else [], "model", "RequestPlan",
+                             model=versions["planner_identity"]["model"], backend=planner_backend) as operation:
+                    plan, prediction = await online_planner.plan(planner_backend, question, documents, candidate,
+                                                                  budget.timeout_seconds)
+                    operation["tokens"] = prediction["usage"]["total_tokens"]
             except PlannerServiceError as error:
                 if error.usage is not None:
                     observed["usage"] = error.usage
@@ -98,7 +102,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                 timeout_seconds=budget.timeout_seconds - planning_seconds)
             try:
                 result = await analyze_grounded(settings, store, question, candidate, events, remaining,
-                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile)
+                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant)
             finally:
                 narrative_usage = observed.get("usage", {})
                 observed["usage"] = {key: narrative_usage.get(key, 0) + value for key, value in plan_usage.items()}
@@ -125,8 +129,9 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
         result["tool_calls"] = result.get("tool_calls", 0) + 1
         result.setdefault("events", []).append({"event": "tool_execution", "tool": "build_report",
                                                "call": result["tool_calls"], "cache_hit": False})
-        return await asyncio.to_thread(build_analysis_report, store, question,
-                                       result, root / "output/tasks" / task_id / "report")
+        with observe(result["events"], "tool", "build_report", call=result["tool_calls"]):
+            return await asyncio.to_thread(build_analysis_report, store, question,
+                                           result, root / "output/tasks" / task_id / "report")
     runner = PhaseRunner(root / "output/tasks", task_id, versions)
     try:
         return await runner.run({"prepare": prepare, "analyze": analyze, "validate": validate, "report": report},

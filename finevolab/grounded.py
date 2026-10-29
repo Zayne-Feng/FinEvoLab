@@ -13,7 +13,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from finevolab.config import ModelConfig
 from finevolab.provider import async_client
-from finevolab.runtime import BudgetExceeded, RunBudget, ToolExecutor, fingerprint
+from finevolab.runtime import BudgetExceeded, RunBudget, ToolExecutor, fingerprint, observe
 from finevolab.tools import FinancialStore, BoundedFinancialStore, GrowthResult
 from finevolab.provenance import file_digest
 from finevolab.tool_outputs import SearchReportsOutput
@@ -299,8 +299,9 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
     repair_used = False
     version = {"source": store.source_signature, "corpus_profile": corpus_profile,
         "code": {name: file_digest(ROOT / "finevolab" / name) for name in
-                 ("tools.py", "retrieval.py", "uploads.py", "upload_metrics.py", "table_context.py")},
+                 ("tools.py", "retrieval.py", "uploads.py", "upload_metrics.py", "table_context.py", "reranking.py")},
         "retrieval": file_digest(ROOT / "configs/retrieval.json")}
+    version["reranker"] = file_digest(ROOT / "configs/reranker.json")
     version["aliases"] = file_digest(ROOT / "configs/company_aliases.json")
     if not store.uploads:
         index_path = root / "data/indexes" / ("contextual" if corpus_profile == "contextual" else "") / "structured.json"
@@ -324,36 +325,40 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 model_attempts += 1
                 telemetry["model_attempts"] = model_attempts
                 telemetry["messages"].append({"schema": schema.__name__, "input": [dict(item) for item in messages]})
-                if backend == "sdk":
-                    from finevolab.sdk_runtime import generate_json
-                    def recorded(response):
-                        usage["requests"] += 1
-                        for name in ("input_tokens", "output_tokens", "total_tokens"):
-                            usage[name] += getattr(response.usage, name)
-                        if not response.usage.requests:
+                tokens_before = usage["total_tokens"]
+                with observe(events, "model", schema.__name__, model=settings.model,
+                             call=model_attempts) as operation:
+                    if backend == "sdk":
+                        from finevolab.sdk_runtime import generate_json
+                        def recorded(response):
+                            usage["requests"] += 1
+                            for name in ("input_tokens", "output_tokens", "total_tokens"):
+                                usage[name] += getattr(response.usage, name)
+                            if not response.usage.requests:
+                                telemetry["unknown_usage"] = True
+                            visible = [item.model_dump(mode="json") for item in response.output if item.type != "reasoning"]
+                            telemetry["messages"][-1]["output"] = visible
+                        try:
+                            raw = await asyncio.wait_for(generate_json(client, settings, messages, recorded), timeout=remaining)
+                        except Exception:
                             telemetry["unknown_usage"] = True
-                        visible = [item.model_dump(mode="json") for item in response.output if item.type != "reasoning"]
-                        telemetry["messages"][-1]["output"] = visible
-                    try:
-                        raw = await asyncio.wait_for(generate_json(client, settings, messages, recorded), timeout=remaining)
-                    except Exception:
-                        telemetry["unknown_usage"] = True
-                        raise
-                elif backend == "direct":
-                    response = await asyncio.wait_for(client.chat.completions.create(
-                        model=settings.model, messages=messages, response_format={"type": "json_object"},
-                        extra_body=settings.extra_body, temperature=0, max_tokens=1600), timeout=remaining)
-                    usage["requests"] += 1
-                    if response.usage:
-                        for name, field in (("input_tokens", "prompt_tokens"), ("output_tokens", "completion_tokens"),
-                                            ("total_tokens", "total_tokens")):
-                            usage[name] += getattr(response.usage, field)
+                            raise
+                    elif backend == "direct":
+                        response = await asyncio.wait_for(client.chat.completions.create(
+                            model=settings.model, messages=messages, response_format={"type": "json_object"},
+                            extra_body=settings.extra_body, temperature=0, max_tokens=1600), timeout=remaining)
+                        usage["requests"] += 1
+                        if response.usage:
+                            for name, field in (("input_tokens", "prompt_tokens"), ("output_tokens", "completion_tokens"),
+                                                ("total_tokens", "total_tokens")):
+                                usage[name] += getattr(response.usage, field)
+                        else:
+                            telemetry["unknown_usage"] = True
+                        raw = response.choices[0].message.content or ""
+                        telemetry["messages"][-1]["output"] = raw
                     else:
-                        telemetry["unknown_usage"] = True
-                    raw = response.choices[0].message.content or ""
-                    telemetry["messages"][-1]["output"] = raw
-                else:
-                    raise ValueError("Unknown model runtime backend")
+                        raise ValueError("Unknown model runtime backend")
+                    operation["tokens"] = usage["total_tokens"] - tokens_before
                 try:
                     parsed = schema.model_validate_json(raw)
                     if validate:

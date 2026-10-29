@@ -129,10 +129,11 @@ def score_task(case: dict, output: dict) -> dict:
 async def analyze_task(settings: ModelConfig, store: FinancialStore, question: str,
                        candidate: dict, events: list | None = None, variant: str = "tools",
                        budget: RunBudget | None = None, telemetry: dict | None = None,
-                       root: Path | None = None, corpus_profile: str = "contextual", backend: str = "sdk") -> dict:
+                       root: Path | None = None, corpus_profile: str = "contextual", backend: str = "sdk",
+                       retrieval_variant: str = "improved") -> dict:
     if variant == "tools":
         from finevolab.grounded import analyze_grounded
-        options = {"corpus_profile": corpus_profile, "backend": backend}
+        options = {"corpus_profile": corpus_profile, "backend": backend, "retrieval_variant": retrieval_variant}
         if root is not None:
             options["root"] = root
         return await analyze_grounded(settings, store, question, candidate, events, budget, telemetry, **options)

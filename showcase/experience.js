@@ -37,6 +37,11 @@
       answer: "分析结果",
       validation: "校验与修复",
       usage: "用量与身份",
+      timeline: "执行耗时",
+      seconds: "秒",
+      cacheHit: "缓存命中",
+      modelStep: "模型",
+      toolStep: "工具",
       liveNote:
         "登录后，使用服务端 DeepSeek 配置执行请求规划、财报检索、金融工具、harness 校验与报告生成。",
       connectedMode: "真实分析服务已接入，请使用邀请口令登录。",
@@ -114,6 +119,11 @@
       answer: "Analysis result",
       validation: "Validation & repair",
       usage: "Usage & identity",
+      timeline: "Execution timing",
+      seconds: "s",
+      cacheHit: "Cache hit",
+      modelStep: "Model",
+      toolStep: "Tool",
       liveNote:
         "After signing in, use the server-side DeepSeek configuration for request planning, report retrieval, financial tools, harness validation, and report generation.",
       connectedMode:
@@ -325,6 +335,43 @@
       phases.append(node("span", `${t(key)} · ${t(value.status)}`)),
     );
     target.append(phases, node("p", t(state.status)));
+    const timedPhases = Object.entries(state.phases || {}).filter(([, value]) =>
+      Number.isFinite(value.duration_seconds),
+    );
+    if (timedPhases.length || state.operations?.length) {
+      const timing = node("details", undefined, "execution-timing");
+      timing.append(node("summary", t("timeline")));
+      const rows = node("ol");
+      const duration = (value) =>
+        `${Number(value).toLocaleString(language, { maximumFractionDigits: 3 })} ${t("seconds")}`;
+      timedPhases.forEach(([phase, value]) => {
+        const row = node(
+          "li",
+          `${t(phase)} · ${t(value.status)} · ${duration(value.duration_seconds)}`,
+        );
+        const children = node("ul");
+        (state.operations || [])
+          .filter((operation) => operation.phase === phase)
+          .forEach((operation) => {
+            const label =
+              operation.kind === "model" ? t("modelStep") : t("toolStep");
+            const tokens = Number.isFinite(operation.tokens)
+              ? ` · ${operation.tokens} Tokens`
+              : "";
+            const text = `${label} · ${operation.operation} · ${t(operation.status)} · ${duration(operation.duration_seconds)}${tokens}`;
+            children.append(
+              node(
+                "li",
+                text + (operation.cache_hit ? ` · ${t("cacheHit")}` : ""),
+              ),
+            );
+          });
+        if (children.children.length) row.append(children);
+        rows.append(row);
+      });
+      timing.append(rows);
+      target.append(timing);
+    }
     if (state.business_status)
       target.append(
         node(

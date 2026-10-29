@@ -4,7 +4,9 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { JSDOM } = require("jsdom");
 const root = path.resolve(__dirname, "../..");
-const site = path.join(root, "output/showcase");
+const site = path.resolve(
+  process.argv[2] || path.join(root, "output/showcase"),
+);
 let checks = 0;
 function check(value, message) {
   assert.ok(value, message);
@@ -160,7 +162,20 @@ function open(live = false) {
     task_id: "a".repeat(32),
     status: "complete",
     question: "test",
-    phases: { validate: { status: "complete" } },
+    phases: {
+      analyze: { status: "complete", duration_seconds: 1.25 },
+      validate: { status: "complete", duration_seconds: 0.01 },
+    },
+    operations: [
+      {
+        kind: "tool",
+        phase: "analyze",
+        operation: "search_reports",
+        status: "complete",
+        duration_seconds: 0.125,
+        cache_hit: true,
+      },
+    ],
     answer: {
       status: "complete",
       calculations: [
@@ -259,6 +274,11 @@ function open(live = false) {
       .href.endsWith("/report/pdf"),
     "Download must target the owned report route",
   );
+  check(
+    ld.querySelector(".execution-timing").textContent.includes("0.125 秒") &&
+      ld.querySelector(".execution-timing").textContent.includes("缓存命中"),
+    "Execution timing must show tool duration and cache status",
+  );
   const evidence = ld.querySelector('details[data-evidence-id="metric-one"]');
   check(
     evidence.querySelector("summary").textContent.includes("FY2024") &&
@@ -274,6 +294,13 @@ function open(live = false) {
   check(
     ld.getElementById("live-mode").textContent.startsWith("Signed in."),
     "Authenticated status must follow the selected language",
+  );
+  check(
+    ld
+      .querySelector(".execution-timing")
+      .textContent.includes("Execution timing") &&
+      ld.querySelector(".execution-timing").textContent.includes("Cache hit"),
+    "Execution timing must follow the selected language",
   );
   check(
     ld

@@ -74,6 +74,10 @@ class PlannerClientTests(unittest.IsolatedAsyncioTestCase):
                 self.assertEqual(first["phases"], resumed["phases"])
                 self.assertEqual(first["phases"]["analyze"]["result"]["usage"]["total_tokens"], 20)
                 self.assertEqual(first["phases"]["analyze"]["result"]["usage"]["requests"], 1)
+                planning = next(op for op in first["operations"] if op["operation"] == "RequestPlan")
+                self.assertEqual(planning["tokens"], 20)
+                self.assertEqual(planning["phase"], "analyze")
+                self.assertEqual(planning["model"], client.identity("lora_bf16")["model"])
                 client.plan.assert_awaited_once()
                 with self.assertRaises(ValueError):
                     await run_question("lora1", "Give MSFT FY2024 revenue.", settings, candidate, root,
