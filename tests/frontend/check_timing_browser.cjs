@@ -4,19 +4,26 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 const { chromium } = require("playwright-core");
 const root = path.resolve(__dirname, "../..");
-const site = path.join(root, "output/refinement/site");
+const site =
+  process.env.FINEVOLAB_BROWSER_SITE ||
+  path.join(root, "output/refinement/site");
 (async () => {
   const records = JSON.parse(
     await fs.readFile(
-      path.join(
-        root,
-        "project_notes/experiments/runtime-refinement-v1/records.json",
-      ),
+      process.env.FINEVOLAB_BROWSER_RECORDS ||
+        path.join(
+          root,
+          "project_notes/experiments/runtime-refinement-v1/records.json",
+        ),
       "utf8",
     ),
   );
   const row = records.find(
-    (record) => record.execution_status === "completed" && record.score === 1,
+    (record) =>
+      record.execution_status === "completed" &&
+      record.score === 1 &&
+      (!process.env.FINEVOLAB_BROWSER_ARM ||
+        record.arm === process.env.FINEVOLAB_BROWSER_ARM),
   );
   assert(row, "A successful recorded workflow is required");
   const dataset = JSON.parse(
@@ -28,9 +35,9 @@ const site = path.join(root, "output/refinement/site");
       "utf8",
     ),
   );
-  const question = dataset.tasks.find(
-    (item) => item.id === row.case_id,
-  ).question;
+  const question =
+    row.output.question ||
+    dataset.tasks.find((item) => item.id === row.case_id).question;
   const saved = {
     ...row.output,
     task_id: row.task_id,
@@ -38,6 +45,9 @@ const site = path.join(root, "output/refinement/site");
     question,
     phases: row.phases,
     operations: row.operations,
+    retrieval: row.output.events.filter((event) =>
+      ["retrieval_cache", "vector_backend"].includes(event.event),
+    ),
     reports: ["html", "pdf"],
   };
   const browser = await chromium.launch({
@@ -133,6 +143,22 @@ const site = path.join(root, "output/refinement/site");
           `${width}:${language}:timing-label`,
           text.includes(language === "en" ? "Execution timing" : "执行耗时"),
         );
+        if (saved.review) {
+          check(
+            `${width}:${language}:review`,
+            (await page.locator("#task-output").innerText()).includes(
+              language === "en" ? "Evidence review" : "证据审查",
+            ),
+          );
+        }
+        if (saved.retrieval.length) {
+          check(
+            `${width}:${language}:retrieval`,
+            (await page.locator("#task-output").innerText()).includes(
+              language === "en" ? "Retrieval services" : "检索服务",
+            ),
+          );
+        }
         check(
           `${width}:${language}:model`,
           text.includes("RequestPlan") && text.includes("Tokens"),

@@ -1,0 +1,1132 @@
+{
+  "data_version": "service-agents-v1",
+  "source": "data/evaluation/scope_v3/validation.json",
+  "source_sha256": "12e93af5151f9ee19bb55e74752ef1893c8ecad0a906bb83ea723f119599d1dd",
+  "independent_source_tasks": 12,
+  "tasks": [
+    {
+      "id": "89bba47d04340b18f15a",
+      "semantic_key": "89bba47d04340b18f15a92df4523b3397b8ff8f6787f7e6f03755afbd22d95e8",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "Explain MSFT's FY2024 revenue changes and disclosed business drivers using its FY2024 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:revenue"
+      ],
+      "language": "en",
+      "source_case_id": "89bba47d04340b18f15a"
+    },
+    {
+      "id": "89bba47d04340b18f15a-zh",
+      "semantic_key": "89bba47d04340b18f15a92df4523b3397b8ff8f6787f7e6f03755afbd22d95e8",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "根据 MSFT 2024 财年年报，解释该财年收入的变化和披露的业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:revenue"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "89bba47d04340b18f15a"
+    },
+    {
+      "id": "8f0247b9c8c8e7343a1d",
+      "semantic_key": "8f0247b9c8c8e7343a1d2bcfe32576dc0dc64fc20b4cadfbdd67f733b3391504",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "Explain MSFT's FY2024 operating income changes and disclosed cost or business drivers using its FY2024 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:operating_income"
+      ],
+      "language": "en",
+      "source_case_id": "8f0247b9c8c8e7343a1d"
+    },
+    {
+      "id": "8f0247b9c8c8e7343a1d-zh",
+      "semantic_key": "8f0247b9c8c8e7343a1d2bcfe32576dc0dc64fc20b4cadfbdd67f733b3391504",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "根据 MSFT 2024 财年年报，解释该财年营业利润的变化和披露的成本或业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:operating_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "8f0247b9c8c8e7343a1d"
+    },
+    {
+      "id": "f1938bdb9ea377d2168f",
+      "semantic_key": "f1938bdb9ea377d2168fcd1c6fe79ee041c9286a9b74ddf1c9522b884e92229b",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "Explain MSFT's FY2024 net income changes and disclosed tax or business drivers using its FY2024 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:net_income"
+      ],
+      "language": "en",
+      "source_case_id": "f1938bdb9ea377d2168f"
+    },
+    {
+      "id": "f1938bdb9ea377d2168f-zh",
+      "semantic_key": "f1938bdb9ea377d2168fcd1c6fe79ee041c9286a9b74ddf1c9522b884e92229b",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "根据 MSFT 2024 财年年报，解释该财年净利润的变化和披露的税务或业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:net_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "f1938bdb9ea377d2168f"
+    },
+    {
+      "id": "f5448d849f9a9e8506a8",
+      "semantic_key": "f5448d849f9a9e8506a878ae48d4a29612188e147f66e8503c53fb7ac9048493",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "risk",
+      "focus": "risk",
+      "scenario": null,
+      "question": "Explain MSFT's FY2024 specific operating risks and their possible effects using its FY2024 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:risk"
+      ],
+      "language": "en",
+      "source_case_id": "f5448d849f9a9e8506a8"
+    },
+    {
+      "id": "f5448d849f9a9e8506a8-zh",
+      "semantic_key": "f5448d849f9a9e8506a878ae48d4a29612188e147f66e8503c53fb7ac9048493",
+      "split": "validation",
+      "category": "explanation",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "risk",
+      "focus": "risk",
+      "scenario": null,
+      "question": "根据 MSFT 2024 财年年报，解释该财年具体经营风险及其可能影响，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "MSFT:2024:risk"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "f5448d849f9a9e8506a8"
+    },
+    {
+      "id": "4597689c641f19120579",
+      "semantic_key": "4597689c641f19120579df6deebbdcd29b544ee251bb67699f1ebdbe7db5e8b8",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "Explain AAPL's FY2022 revenue changes and disclosed business drivers using its FY2022 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:revenue"
+      ],
+      "language": "en",
+      "source_case_id": "4597689c641f19120579"
+    },
+    {
+      "id": "4597689c641f19120579-zh",
+      "semantic_key": "4597689c641f19120579df6deebbdcd29b544ee251bb67699f1ebdbe7db5e8b8",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "根据 AAPL 2022 财年年报，解释该财年收入的变化和披露的业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:revenue"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "4597689c641f19120579"
+    },
+    {
+      "id": "aaf41e7fbe15945e147e",
+      "semantic_key": "aaf41e7fbe15945e147e69c3ad0afdd7baa4bcff6b588c32f335585b0ab9e48c",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "Explain AAPL's FY2022 operating income changes and disclosed cost or business drivers using its FY2022 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:operating_income"
+      ],
+      "language": "en",
+      "source_case_id": "aaf41e7fbe15945e147e"
+    },
+    {
+      "id": "aaf41e7fbe15945e147e-zh",
+      "semantic_key": "aaf41e7fbe15945e147e69c3ad0afdd7baa4bcff6b588c32f335585b0ab9e48c",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "根据 AAPL 2022 财年年报，解释该财年营业利润的变化和披露的成本或业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:operating_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "aaf41e7fbe15945e147e"
+    },
+    {
+      "id": "911af61323be7b4590f6",
+      "semantic_key": "911af61323be7b4590f6fe62526f6fb392e1e1d75e0b50caaf78e2a382021a19",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "Explain AAPL's FY2022 net income changes and disclosed tax or business drivers using its FY2022 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:net_income"
+      ],
+      "language": "en",
+      "source_case_id": "911af61323be7b4590f6"
+    },
+    {
+      "id": "911af61323be7b4590f6-zh",
+      "semantic_key": "911af61323be7b4590f6fe62526f6fb392e1e1d75e0b50caaf78e2a382021a19",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "根据 AAPL 2022 财年年报，解释该财年净利润的变化和披露的税务或业务驱动因素，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:net_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "911af61323be7b4590f6"
+    },
+    {
+      "id": "f347f124dbf9d165da2f",
+      "semantic_key": "f347f124dbf9d165da2f347ce5f6caa3b85c16ac65a3cdd4d33ce5967aa1a3d9",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "risk",
+      "focus": "risk",
+      "scenario": null,
+      "question": "Explain AAPL's FY2022 specific operating risks and their possible effects using its FY2022 annual report. Cite exact passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:risk"
+      ],
+      "language": "en",
+      "source_case_id": "f347f124dbf9d165da2f"
+    },
+    {
+      "id": "f347f124dbf9d165da2f-zh",
+      "semantic_key": "f347f124dbf9d165da2f347ce5f6caa3b85c16ac65a3cdd4d33ce5967aa1a3d9",
+      "split": "validation",
+      "category": "explanation",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "explanation",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "risk",
+      "focus": "risk",
+      "scenario": null,
+      "question": "根据 AAPL 2022 财年年报，解释该财年具体经营风险及其可能影响，引用准确的原文片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": null,
+      "common_support": true,
+      "anchor_groups": [
+        "AAPL:2022:risk"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "f347f124dbf9d165da2f"
+    },
+    {
+      "id": "96e65ec4cea1955f2a38",
+      "semantic_key": "96e65ec4cea1955f2a38279f3ec57a2002b13861e5b38ddf3e0c51da3e837aad",
+      "split": "validation",
+      "category": "hybrid",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "Calculate MSFT's FY2024 annual change in revenue from the immediately prior fiscal year. Also explain revenue changes and disclosed business drivers for MSFT using the FY2024 annual report prose and cite the supporting passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "MSFT",
+            "metric": "revenue",
+            "fiscal_year": 2024,
+            "previous_year": 2023,
+            "value": "15.66996201307127857867541231",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "211915000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-07-01",
+                "period_end": "2023-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "59176976080d645a51e629d8",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              },
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2024,
+                "value": "245122000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "9a794a03f299890a16d8dd3c",
+                "report_year": 2026,
+                "extraction_method": "sec_companyfacts_annual_context"
+              }
+            ],
+            "evidence_ids": [
+              "59176976080d645a51e629d8",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "59176976080d645a51e629d8",
+          "9a794a03f299890a16d8dd3c"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "MSFT:2024:revenue"
+      ],
+      "language": "en",
+      "source_case_id": "96e65ec4cea1955f2a38"
+    },
+    {
+      "id": "96e65ec4cea1955f2a38-zh",
+      "semantic_key": "96e65ec4cea1955f2a38279f3ec57a2002b13861e5b38ddf3e0c51da3e837aad",
+      "split": "validation",
+      "category": "hybrid",
+      "company": "MSFT",
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "report_year": 2024,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "revenue"
+      ],
+      "topic": "revenue",
+      "focus": "revenue",
+      "scenario": null,
+      "question": "计算 MSFT 2024 财年收入相对紧邻上一财年的年度变化率，并依据 2024 财年年报正文解释收入变化和披露的业务驱动因素，引用支持片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "MSFT:2024"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "MSFT",
+            "metric": "revenue",
+            "fiscal_year": 2024,
+            "previous_year": 2023,
+            "value": "15.66996201307127857867541231",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2023,
+                "value": "211915000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-07-01",
+                "period_end": "2023-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "59176976080d645a51e629d8",
+                "report_year": 2025,
+                "extraction_method": "sec_companyfacts_annual_context"
+              },
+              {
+                "company": "MSFT",
+                "name": "revenue",
+                "fiscal_year": 2024,
+                "value": "245122000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-07-01",
+                "period_end": "2024-06-30",
+                "period_kind": "annual_flow",
+                "evidence_id": "9a794a03f299890a16d8dd3c",
+                "report_year": 2026,
+                "extraction_method": "sec_companyfacts_annual_context"
+              }
+            ],
+            "evidence_ids": [
+              "59176976080d645a51e629d8",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "59176976080d645a51e629d8",
+          "9a794a03f299890a16d8dd3c"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "MSFT:2024:revenue"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "96e65ec4cea1955f2a38"
+    },
+    {
+      "id": "f1fa2faadd09b61c8cc1",
+      "semantic_key": "f1fa2faadd09b61c8cc1efcfe11cfcfa940b1b8d8a895c4bac6ebea8344f20c4",
+      "split": "validation",
+      "category": "hybrid",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "Give AAPL's FY2022 operating income, with original units and fiscal dates. Also explain operating income changes and disclosed cost or business drivers for AAPL using the FY2022 annual report prose and cite the supporting passages.",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "AAPL",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "119437000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-09-26",
+            "period_end": "2022-09-24",
+            "period_kind": "annual_flow",
+            "evidence_id": "6936a7a9eb7e10815dec7e9a",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6936a7a9eb7e10815dec7e9a"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "AAPL:2022:operating_income"
+      ],
+      "language": "en",
+      "source_case_id": "f1fa2faadd09b61c8cc1"
+    },
+    {
+      "id": "f1fa2faadd09b61c8cc1-zh",
+      "semantic_key": "f1fa2faadd09b61c8cc1efcfe11cfcfa940b1b8d8a895c4bac6ebea8344f20c4",
+      "split": "validation",
+      "category": "hybrid",
+      "company": "AAPL",
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2022,
+      "report_year": 2022,
+      "operation": "hybrid_metric",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "给出 AAPL 2022 财年的营业利润，保留原始单位和财年起止日期，并根据 2022 财年年报正文解释营业利润变化和披露的成本或业务驱动因素，引用支持片段。",
+      "upload_ids": [],
+      "fact_clusters": [
+        "AAPL:2022"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [
+          {
+            "company": "AAPL",
+            "name": "operating_income",
+            "fiscal_year": 2022,
+            "value": "119437000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2021-09-26",
+            "period_end": "2022-09-24",
+            "period_kind": "annual_flow",
+            "evidence_id": "6936a7a9eb7e10815dec7e9a",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          }
+        ],
+        "calculations": [],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "6936a7a9eb7e10815dec7e9a"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "AAPL:2022:operating_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "f1fa2faadd09b61c8cc1"
+    },
+    {
+      "id": "1a49ffe6f87df1ec3e68",
+      "semantic_key": "1a49ffe6f87df1ec3e689b29e0004dcc4bdf7a60f87e87164c74b6a2a78b1f7b",
+      "split": "validation",
+      "category": "upload",
+      "company": "TSLA",
+      "companies": [
+        "TSLA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in operating income from the immediately prior fiscal year. Also explain operating income changes and disclosed cost or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+      "upload_ids": [
+        "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"
+      ],
+      "fact_clusters": [
+        "TSLA:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "TSLA",
+            "metric": "operating_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-34.89308728763913298183948448",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "TSLA",
+                "name": "operating_income",
+                "fiscal_year": 2022,
+                "value": "13656000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-01",
+                "period_end": "2022-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "8e889b7cb44af0c3cedd25cd",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "TSLA",
+                "name": "operating_income",
+                "fiscal_year": 2023,
+                "value": "8891000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-01-01",
+                "period_end": "2023-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "c7f1cafa90668d2c3e8bf4ea",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "8e889b7cb44af0c3cedd25cd",
+              "c7f1cafa90668d2c3e8bf4ea"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "8e889b7cb44af0c3cedd25cd",
+          "c7f1cafa90668d2c3e8bf4ea"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "TSLA:2023:operating_income"
+      ],
+      "language": "en",
+      "source_case_id": "1a49ffe6f87df1ec3e68"
+    },
+    {
+      "id": "1a49ffe6f87df1ec3e68-zh",
+      "semantic_key": "1a49ffe6f87df1ec3e689b29e0004dcc4bdf7a60f87e87164c74b6a2a78b1f7b",
+      "split": "validation",
+      "category": "upload",
+      "company": "TSLA",
+      "companies": [
+        "TSLA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "operating_income"
+      ],
+      "topic": "profit",
+      "focus": "operating_income",
+      "scenario": null,
+      "question": "仅使用选定报告，计算 TSLA 2023 财年营业利润相对紧邻上一财年的年度变化率，并根据该年报正文解释营业利润变化和披露的成本或业务驱动因素，引用支持片段。",
+      "upload_ids": [
+        "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"
+      ],
+      "fact_clusters": [
+        "TSLA:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "TSLA",
+            "metric": "operating_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "-34.89308728763913298183948448",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "TSLA",
+                "name": "operating_income",
+                "fiscal_year": 2022,
+                "value": "13656000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-01",
+                "period_end": "2022-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "8e889b7cb44af0c3cedd25cd",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "TSLA",
+                "name": "operating_income",
+                "fiscal_year": 2023,
+                "value": "8891000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-01-01",
+                "period_end": "2023-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "c7f1cafa90668d2c3e8bf4ea",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "8e889b7cb44af0c3cedd25cd",
+              "c7f1cafa90668d2c3e8bf4ea"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "8e889b7cb44af0c3cedd25cd",
+          "c7f1cafa90668d2c3e8bf4ea"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "TSLA:2023:operating_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "1a49ffe6f87df1ec3e68"
+    },
+    {
+      "id": "80b7ce5ba270701d0dcb",
+      "semantic_key": "80b7ce5ba270701d0dcb2d57daf1911f81ac19f0ece8f8c0674fbba82457f0ae",
+      "split": "validation",
+      "category": "upload",
+      "company": "TSLA",
+      "companies": [
+        "TSLA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "Using only the selected reports, Calculate TSLA's FY2023 annual change in net income from the immediately prior fiscal year. Also explain net income changes and disclosed tax or business drivers for TSLA using the FY2023 annual report prose and cite the supporting passages.",
+      "upload_ids": [
+        "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"
+      ],
+      "fact_clusters": [
+        "TSLA:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "TSLA",
+            "metric": "net_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "19.44090474673462886269512584",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "TSLA",
+                "name": "net_income",
+                "fiscal_year": 2022,
+                "value": "12556000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-01",
+                "period_end": "2022-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "cfe6b38f20a547fa3d280c3e",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "TSLA",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "14997000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-01-01",
+                "period_end": "2023-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "77886f8e1dbef6ed548281fe",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "cfe6b38f20a547fa3d280c3e",
+              "77886f8e1dbef6ed548281fe"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "77886f8e1dbef6ed548281fe",
+          "cfe6b38f20a547fa3d280c3e"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "TSLA:2023:net_income"
+      ],
+      "language": "en",
+      "source_case_id": "80b7ce5ba270701d0dcb"
+    },
+    {
+      "id": "80b7ce5ba270701d0dcb-zh",
+      "semantic_key": "80b7ce5ba270701d0dcb2d57daf1911f81ac19f0ece8f8c0674fbba82457f0ae",
+      "split": "validation",
+      "category": "upload",
+      "company": "TSLA",
+      "companies": [
+        "TSLA"
+      ],
+      "fiscal_year": 2023,
+      "report_year": 2023,
+      "operation": "hybrid_growth",
+      "metrics": [
+        "net_income"
+      ],
+      "topic": "profit",
+      "focus": "net_income",
+      "scenario": null,
+      "question": "仅使用选定报告，计算 TSLA 2023 财年净利润相对紧邻上一财年的年度变化率，并根据该年报正文解释净利润变化和披露的税务或业务驱动因素，引用支持片段。",
+      "upload_ids": [
+        "ccb6b9ddf9e9a10a40522a731e23b7f3cf2c82142542aadcb6903817c63833ce"
+      ],
+      "fact_clusters": [
+        "TSLA:2023"
+      ],
+      "reference_answer": {
+        "status": "complete",
+        "answer": "Source-bound reference",
+        "metrics": [],
+        "calculations": [
+          {
+            "company": "TSLA",
+            "metric": "net_income",
+            "fiscal_year": 2023,
+            "previous_year": 2022,
+            "value": "19.44090474673462886269512584",
+            "unit": "percent",
+            "formula": "(current / previous - 1) * 100",
+            "inputs": [
+              {
+                "company": "TSLA",
+                "name": "net_income",
+                "fiscal_year": 2022,
+                "value": "12556000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2022-01-01",
+                "period_end": "2022-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "cfe6b38f20a547fa3d280c3e",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              },
+              {
+                "company": "TSLA",
+                "name": "net_income",
+                "fiscal_year": 2023,
+                "value": "14997000000",
+                "currency": "USD",
+                "unit": "USD",
+                "period_start": "2023-01-01",
+                "period_end": "2023-12-31",
+                "period_kind": "annual_flow",
+                "evidence_id": "77886f8e1dbef6ed548281fe",
+                "report_year": 2023,
+                "extraction_method": "independent_companyfacts_accession_reference"
+              }
+            ],
+            "evidence_ids": [
+              "cfe6b38f20a547fa3d280c3e",
+              "77886f8e1dbef6ed548281fe"
+            ]
+          }
+        ],
+        "periods_aligned": null,
+        "evidence_ids": [
+          "77886f8e1dbef6ed548281fe",
+          "cfe6b38f20a547fa3d280c3e"
+        ]
+      },
+      "common_support": false,
+      "anchor_groups": [
+        "TSLA:2023:net_income"
+      ],
+      "language": "zh-CN",
+      "source_case_id": "80b7ce5ba270701d0dcb"
+    }
+  ]
+}

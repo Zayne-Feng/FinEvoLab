@@ -162,6 +162,8 @@ function open(live = false) {
     task_id: "a".repeat(32),
     status: "complete",
     question: "test",
+    review: { mode: "reviewer", status: "passed" },
+    retrieval: [{ event: "retrieval_cache", backend: "redis", status: "hit" }],
     phases: {
       analyze: { status: "complete", duration_seconds: 1.25 },
       validate: { status: "complete", duration_seconds: 0.01 },
@@ -279,6 +281,14 @@ function open(live = false) {
       ld.querySelector(".execution-timing").textContent.includes("缓存命中"),
     "Execution timing must show tool duration and cache status",
   );
+  check(
+    ld.getElementById("task-output").textContent.includes("证据审查"),
+    "Review heading must follow Chinese selection",
+  );
+  check(
+    ld.getElementById("task-output").textContent.includes("检索服务"),
+    "Retrieval heading must follow Chinese selection",
+  );
   const evidence = ld.querySelector('details[data-evidence-id="metric-one"]');
   check(
     evidence.querySelector("summary").textContent.includes("FY2024") &&
@@ -301,6 +311,14 @@ function open(live = false) {
       .textContent.includes("Execution timing") &&
       ld.querySelector(".execution-timing").textContent.includes("Cache hit"),
     "Execution timing must follow the selected language",
+  );
+  check(
+    ld.getElementById("task-output").textContent.includes("Evidence review"),
+    "Review heading must follow English selection",
+  );
+  check(
+    ld.getElementById("task-output").textContent.includes("Retrieval services"),
+    "Retrieval heading must follow English selection",
   );
   check(
     ld
