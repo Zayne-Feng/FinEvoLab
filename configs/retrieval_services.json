@@ -1,0 +1,15 @@
+{
+  "vector_backend": "numpy",
+  "redis": {
+    "enabled": false,
+    "url": "redis://127.0.0.1:6379/0",
+    "prefix": "finevolab:retrieval",
+    "ttl_seconds": 3600,
+    "timeout_seconds": 0.5
+  },
+  "milvus": {
+    "uri": "http://127.0.0.1:19530",
+    "timeout_seconds": 10,
+    "fallback": false
+  }
+}

@@ -34,7 +34,10 @@ def public_result(state: dict) -> dict:
             "error_type", "call", "cache_hit", "model", "tokens", "attempt") if key in event}
             for event in state.get("operations", result.get("events", [])) if event.get("event") == "operation"],
         "validation": phases.get("validate", {}).get("result"),
-        "repair": result.get("repair"), "usage": result.get("usage"),
+        "repair": result.get("repair"), "review": result.get("review"),
+        "retrieval": [{key: event[key] for key in ("event", "backend", "status", "error_type", "configured_backend", "actual_backend") if key in event}
+            for event in result.get("events", []) if event.get("event") in {"retrieval_cache", "vector_backend"}],
+        "usage": result.get("usage"),
         "elapsed_seconds": state.get("elapsed_seconds", result.get("elapsed_seconds")),
         "data_version": result.get("data_version"), "runtime_backend": result.get("runtime_backend")}
 

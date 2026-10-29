@@ -98,4 +98,15 @@ project_notes/experiments/retrieval-cache-v1/** -text whitespace=cr-at-eol
 project_notes/experiments/reranker-bilingual-v1/** -text whitespace=cr-at-eol
 project_notes/experiments/runtime-refinement-v1/** -text whitespace=cr-at-eol
 project_notes/run_logs/runtime_refinement_checks.json -text whitespace=cr-at-eol
+
+project_notes/experiments/retrieval-services-*/** -text whitespace=cr-at-eol
+project_notes/experiments/agent-roles-*/** -text whitespace=cr-at-eol
+project_notes/experiments/claim-review-*/** -text whitespace=cr-at-eol
+
+project_notes/run_logs/service*_checks.json -text whitespace=cr-at-eol
+project_notes/run_logs/retrieval_services_checks.json -text whitespace=cr-at-eol
+project_notes/evaluations/retrieval_service_comparison.json -text whitespace=cr-at-eol
 project_notes/experiments/*/source.patch -text whitespace=-blank-at-eol,cr-at-eol
+configs/agent_review.json -text whitespace=cr-at-eol
+configs/retrieval_services.json -text whitespace=cr-at-eol
+requirements/retrieval_services.in -text whitespace=cr-at-eol

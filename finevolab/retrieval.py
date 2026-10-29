@@ -182,13 +182,14 @@ def reciprocal_rank_fusion(rankings: list[list[str]], constant: int = 60) -> lis
 
 
 class ReportIndex:
-    def __init__(self, chunks: list[dict], vectors=None, encoder=None, cache_size: int = 32):
+    def __init__(self, chunks: list[dict], vectors=None, encoder=None, cache_size: int = 32, vector_backend=None):
         if cache_size < 0:
             raise ValueError("Cache capacity must be nonnegative")
         self.chunks = chunks
         self.cache_size = cache_size
         self._scopes, self._queries = OrderedDict(), OrderedDict()
         self._lock = RLock()
+        self.vector_backend = vector_backend
         self.vectors = vectors
         self.encoder = encoder
         self.positions = {item["id"]: index for index, item in enumerate(chunks)}
@@ -214,8 +215,20 @@ class ReportIndex:
                 raise ValueError("Vector retrieval requires a loaded index and encoder")
             query_vector = self._query_vector(query)
             positions = [self.positions[item["id"]] for item in filtered]
-            similarities = self.vectors[positions] @ query_vector
-            vector_ranked = sorted(zip(filtered, similarities), key=lambda item: (-item[1], item[0]["id"]))
+            if self.vector_backend is None:
+                similarities = self.vectors[positions] @ query_vector
+                vector_ranked = sorted(zip(filtered, similarities), key=lambda item: (-item[1], item[0]["id"]))
+            else:
+                try:
+                    vector_ranked = self.vector_backend.rank(query_vector, filtered)
+                except Exception as error:
+                    if not self.vector_backend.settings.fallback:
+                        raise
+                    from finevolab.retrieval_settings import service_event
+                    service_event("vector_backend", configured_backend="milvus", actual_backend="numpy",
+                                  status="fallback", error_type=type(error).__name__)
+                    similarities = self.vectors[positions] @ query_vector
+                    vector_ranked = sorted(zip(filtered, similarities), key=lambda item: (-item[1], item[0]["id"]))
             if mode == "vector":
                 ranked = vector_ranked
             else:
@@ -287,11 +300,14 @@ def load_index(root: Path, strategy: str = "structured", mode: str = "bm25", pro
     signature = tuple((item.stat().st_mtime_ns, item.stat().st_size) for item in
                       ([path, config] if mode == "bm25" else
                        [path, config, path.with_suffix(".metadata.json"), path.with_suffix(".npy")]))
-    return _cached_index(str(root.resolve()), strategy, mode, signature, profile)
+    from finevolab.retrieval_settings import load_settings, RetrievalSettings
+    settings = load_settings(root)
+    index_settings = RetrievalSettings(vector_backend=settings.vector_backend, milvus=settings.milvus) if mode != "bm25" else RetrievalSettings()
+    return _cached_index(str(root.resolve()), strategy, mode, signature, profile, index_settings.model_dump_json())
 
 
 @lru_cache(maxsize=4)
-def _cached_index(root_path: str, strategy: str, mode: str, signature: tuple, profile: str = "legacy") -> ReportIndex:
+def _cached_index(root_path: str, strategy: str, mode: str, signature: tuple, profile: str = "legacy", services_json: str = "{}") -> ReportIndex:
     root = Path(root_path)
     if strategy not in {"fixed", "structured"}:
         raise ValueError("Unknown chunk strategy")
@@ -303,10 +319,14 @@ def _cached_index(root_path: str, strategy: str, mode: str, signature: tuple, pr
     config = json.loads((root / "configs/retrieval.json").read_text())
     vectors = load_vectors(path, chunks, config)
     encoder = cached_encoder(json.dumps(config, sort_keys=True), str(root / "data/models"))
-    return ReportIndex(chunks, vectors, encoder)
+    from finevolab.retrieval_settings import RetrievalSettings
+    from finevolab.vector_backends import MilvusVectorBackend, corpus_identity
+    settings = RetrievalSettings.model_validate_json(services_json)
+    backend = MilvusVectorBackend(settings.milvus, corpus_identity(path)) if settings.vector_backend == "milvus" else None
+    return ReportIndex(chunks, vectors, encoder, vector_backend=backend)
 
 
-def explanation_passages(root: Path, query: str, company: str, year: int, topic: str,
+def _explanation_passages(root: Path, query: str, company: str, year: int, topic: str,
                          variant: str = "improved", profile: str = "legacy", uploads: list[dict] | None = None,
                          metric_focus: str | None = None) -> list[dict]:
     if variant not in {"baseline", "improved", "no_expansion", "no_priority", "none", "pooled", "reranked"}:
@@ -440,3 +460,28 @@ def search_corpus(root: Path, query: str, company: str, year: int, mode: str = "
     lookup = {item["id"]: item for item in main + uploads}
     ranked = reciprocal_rank_fusion([[item["id"] for item in main], [item["id"] for item in uploads]])
     return [{**lookup[identifier], "score": score} for identifier, score in ranked[:5]]
+
+
+def explanation_passages(root: Path, query: str, company: str, year: int, topic: str,
+                         variant: str = "improved", profile: str = "legacy", uploads: list[dict] | None = None,
+                         metric_focus: str | None = None) -> list[dict]:
+    from finevolab.retrieval_settings import load_settings
+    settings = load_settings(root)
+    def compute():
+        return _explanation_passages(root, query, company, year, topic, variant, profile, uploads, metric_focus)
+    if not settings.redis.enabled or uploads or variant == "none":
+        return compute()
+    from finevolab.retrieval_cache import cached_passages
+    from finevolab.runtime import fingerprint
+    from finevolab.vector_backends import corpus_identity
+    index_path = root / "data/indexes" / ("contextual" if profile == "contextual" else "") / "structured.json"
+    identity = fingerprint({"query": query, "company": company, "report_year": year, "topic": topic,
+        "variant": variant, "profile": profile, "metric_focus": metric_focus, "schema": 1,
+        "corpus": corpus_identity(index_path), "vector_backend": settings.vector_backend,
+        "milvus": settings.milvus.model_dump(), "limit": 5, "max_chars": 10000,
+        "code": {name: hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+                 for name in ("retrieval.py", "retrieval_cache.py", "vector_backends.py", "reranking.py")},
+        "reranker": (root / "configs/reranker.json").read_text(encoding="utf-8")})
+    chunks = [item for item in load_index(root, mode="bm25", profile=profile).chunks
+              if item["company"] == company and item["report_year"] == year]
+    return cached_passages(settings.redis, identity, chunks, compute)

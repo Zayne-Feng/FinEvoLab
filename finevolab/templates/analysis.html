@@ -12,5 +12,6 @@
 {% if narrative %}<h2>Report explanation</h2><p>Status: {{ narrative.status }}</p>{% endif %}
 {% for claim in narrative.claims | default([]) %}<article class="source"><p>{{ claim.statement }}</p><p class="meta">Reference: {{ claim.chunk_id }}</p><blockquote>{{ claim.quote }}</blockquote></article>{% endfor %}
 {% if source_issues %}<p>Selected document values differ from the pinned snapshot; the selected source was used.</p>{% endif %}
+{% if review %}<h2>Evidence review</h2><p>Mode: {{ review.mode }} | Status: {{ review.status }}</p>{% endif %}
 <h2>Evidence</h2>{% for item in evidence %}<article class="source"><strong>{{ item.id }}</strong><br><a href="{{ item.source_url }}" rel="noopener noreferrer">{{ item.company }} FY{{ item.report_year }} source</a><pre>{{ item.text }}</pre><p class="meta">Location: {{ item.locator }}<br>SHA256: {{ item.source_sha256 }}</p></article>{% endfor %}
 <p class="meta">Data version: {{ data_version }}</p></body></html>

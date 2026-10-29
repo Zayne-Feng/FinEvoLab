@@ -38,6 +38,8 @@
       validation: "校验与修复",
       usage: "用量与身份",
       timeline: "执行耗时",
+      review: "证据审查",
+      retrieval: "检索服务",
       seconds: "秒",
       cacheHit: "缓存命中",
       modelStep: "模型",
@@ -120,6 +122,8 @@
       validation: "Validation & repair",
       usage: "Usage & identity",
       timeline: "Execution timing",
+      review: "Evidence review",
+      retrieval: "Retrieval services",
       seconds: "s",
       cacheHit: "Cache hit",
       modelStep: "Model",
@@ -415,6 +419,13 @@
         node("h3", t("validation")),
         pretty({ validation: state.validation, repair: state.repair }),
       );
+    if (state.review)
+      target.append(node("h3", t("review")), pretty(state.review));
+    if (state.retrieval?.length) {
+      const services = node("details");
+      services.append(node("summary", t("retrieval")), pretty(state.retrieval));
+      target.append(services);
+    }
     if (state.usage)
       target.append(
         node("h3", t("usage")),

@@ -89,7 +89,7 @@ def build_analysis_report(store: FinancialStore, question: str, result: dict, ou
     html_path.write_text(environment.get_template("analysis.html").render(
         question=question, answer=answer, observations=observations, evidence=evidence,
         data_version=store.version, narrative=narrative, overall_status=result.get("overall_status", answer["status"]),
-        source_issues=result.get("source_issues", [])), encoding="utf-8")
+        source_issues=result.get("source_issues", []), review=result.get("review")), encoding="utf-8")
     font_path = Path(os.environ.get("FINEVOLAB_REPORT_FONT", "C:/Windows/Fonts/simhei.ttf"))
     font_name = "FinancialReport" if font_path.is_file() else "STSong-Light"
     if font_name not in pdfmetrics.getRegisteredFontNames():
@@ -134,6 +134,10 @@ def build_analysis_report(store: FinancialStore, question: str, result: dict, ou
                       paragraph(item.get("text", "")), Spacer(1, 8)])
     if result.get("source_issues"):
         story.append(paragraph("Selected document values differ from the pinned snapshot; the selected source was used."))
+    if result.get("review"):
+        review = result["review"]
+        story.extend([Paragraph("Evidence review", styles["Heading2"]),
+                      paragraph("Mode: " + review["mode"] + " | Status: " + review["status"])])
     story.extend([Spacer(1, 8), paragraph("Data version: " + store.version)])
     def footer(canvas, document):
         canvas.setFont("Helvetica", 8)

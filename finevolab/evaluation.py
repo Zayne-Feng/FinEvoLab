@@ -130,10 +130,10 @@ async def analyze_task(settings: ModelConfig, store: FinancialStore, question: s
                        candidate: dict, events: list | None = None, variant: str = "tools",
                        budget: RunBudget | None = None, telemetry: dict | None = None,
                        root: Path | None = None, corpus_profile: str = "contextual", backend: str = "sdk",
-                       retrieval_variant: str = "improved") -> dict:
+                       retrieval_variant: str = "improved", review_mode: str = "off") -> dict:
     if variant == "tools":
         from finevolab.grounded import analyze_grounded
-        options = {"corpus_profile": corpus_profile, "backend": backend, "retrieval_variant": retrieval_variant}
+        options = {"corpus_profile": corpus_profile, "backend": backend, "retrieval_variant": retrieval_variant, "review_mode": review_mode}
         if root is not None:
             options["root"] = root
         return await analyze_grounded(settings, store, question, candidate, events, budget, telemetry, **options)

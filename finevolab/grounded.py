@@ -262,8 +262,23 @@ def validate_explanation(root: Path, output: dict, store: FinancialStore | None 
                                  "cost/business-driver claims, without adding amounts or invented causes")
     if draft.status == "insufficient_data" and draft.claims:
         raise ValueError("An unresolved explanation must not include claims")
+    support = "requires_blind_review"
+    review = output.get("review")
+    if review and review.get("mode") in {"self_check", "reviewer"}:
+        if draft.status == "complete":
+            from finevolab.reviewing import ClaimReview
+            assessment = ClaimReview.model_validate({key: review[key] for key in ("complete", "claims")})
+            if (review.get("status") != "passed" or not assessment.complete or
+                    sorted(item.index for item in assessment.claims) != list(range(len(draft.claims))) or
+                    any(item.verdict != "supported" for item in assessment.claims)):
+                raise ValueError("Completed narrative does not have a passing claim review")
+            support = "online_review_passed"
+        elif review.get("status") == "passed":
+            raise ValueError("An unresolved narrative cannot have a passing claim review")
+        else:
+            support = review.get("status", "not_applicable")
     return {"status": "passed", "claims": len(draft.claims), "source_integrity": True,
-            "semantic_support": "requires_blind_review"}
+            "semantic_support": support}
 
 
 def source_quote(text: str, quote: str) -> str:
@@ -287,7 +302,10 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                            events: list | None = None, budget: RunBudget | None = None,
                            telemetry: dict | None = None, root: Path = ROOT,
                            retrieval_variant: str = "improved", request_plan: RequestPlan | None = None,
-                           allow_repair: bool = True, corpus_profile: str = "contextual", backend: str = "sdk") -> dict:
+                           allow_repair: bool = True, corpus_profile: str = "contextual", backend: str = "sdk",
+                           review_mode: str = "off") -> dict:
+    if review_mode not in {"off", "self_check", "reviewer"}:
+        raise ValueError("Unknown narrative review mode")
     events = events if events is not None else []
     budget = budget or RunBudget(max_context_chars=60000)
     telemetry = telemetry if telemetry is not None else {}
@@ -299,9 +317,11 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
     repair_used = False
     version = {"source": store.source_signature, "corpus_profile": corpus_profile,
         "code": {name: file_digest(ROOT / "finevolab" / name) for name in
-                 ("tools.py", "retrieval.py", "uploads.py", "upload_metrics.py", "table_context.py", "reranking.py")},
+                 ("tools.py", "retrieval.py", "uploads.py", "upload_metrics.py", "table_context.py", "reranking.py", "retrieval_cache.py", "vector_backends.py", "retrieval_settings.py")},
         "retrieval": file_digest(ROOT / "configs/retrieval.json")}
     version["reranker"] = file_digest(ROOT / "configs/reranker.json")
+    from finevolab.retrieval_settings import load_settings, retrieval_observations
+    version["services"] = load_settings(root).model_dump(mode="json")
     version["aliases"] = file_digest(ROOT / "configs/company_aliases.json")
     if not store.uploads:
         index_path = root / "data/indexes" / ("contextual" if corpus_profile == "contextual" else "") / "structured.json"
@@ -339,7 +359,8 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                             visible = [item.model_dump(mode="json") for item in response.output if item.type != "reasoning"]
                             telemetry["messages"][-1]["output"] = visible
                         try:
-                            raw = await asyncio.wait_for(generate_json(client, settings, messages, recorded), timeout=remaining)
+                            options = {"agent_name": "EvidenceReviewer" if review_mode == "reviewer" else "FinancialAnalyst"} if schema.__name__ == "ClaimReview" else {}
+                            raw = await asyncio.wait_for(generate_json(client, settings, messages, recorded, **options), timeout=remaining)
                         except Exception:
                             telemetry["unknown_usage"] = True
                             raise
@@ -391,10 +412,11 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 parameters = {"query": question, "company": company, "year": plan.report_year or plan.fiscal_year,
                               "topic": plan.topic, "variant": retrieval_variant,
                               "metric_focus": plan.metrics[0] if len(plan.metrics) == 1 else None}
-                retrieved = executor.call("search_reports", parameters,
-                    lambda company=company: SearchReportsOutput.model_validate(explanation_passages(root, question, store.company_id(company),
-                        plan.report_year or plan.fiscal_year, plan.topic, retrieval_variant, corpus_profile, store.uploads,
-                        parameters["metric_focus"])), SearchReportsOutput)
+                with retrieval_observations(events):
+                    retrieved = await asyncio.to_thread(executor.call, "search_reports", parameters,
+                        lambda company=company: SearchReportsOutput.model_validate(explanation_passages(root, question, store.company_id(company),
+                            plan.report_year or plan.fiscal_year, plan.topic, retrieval_variant, corpus_profile, store.uploads,
+                            parameters["metric_focus"])), SearchReportsOutput)
                 passages.extend(retrieved.model_dump(mode="json", exclude_unset=True))
             evidence = checked_passages(root, passages, store)
             events.append({"tool": "search_reports", "query": question, "output": evidence})
@@ -458,6 +480,18 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
             answer = numeric or assemble_numeric(plan, bounded, events)
             output = {"answer_type": "numeric", "answer": answer,
                       "evidence": [store.evidence[key] for key in answer["evidence_ids"]]}
+        if review_mode != "off" and output["answer_type"] in {"explanation", "hybrid"}:
+            from finevolab.reviewing import review_output
+            output.update(question=question, request=plan.model_dump(), corpus_profile=corpus_profile, upload_ids=store.upload_ids)
+            def reserve_review_repair(report):
+                nonlocal repair_used
+                if repair_used or not allow_repair:
+                    return False
+                repair_used = True
+                telemetry["repairs"].append({"schema": "ClaimReview", "error_type": "UnsupportedClaim",
+                                             "review": report})
+                return True
+            output = await review_output(root, store, output, generate, review_mode, reserve_review_repair)
     output.update(question=question, request=plan.model_dump(), events=events, data_version=store.version, usage=usage.copy(),
                   corpus_profile=corpus_profile, upload_ids=store.upload_ids, source_issues=store.source_issues,
                   runtime_backend=backend, tool_calls=executor.calls, messages=telemetry["messages"],

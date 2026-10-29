@@ -22,7 +22,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                        root: Path = ROOT, events: list | None = None, telemetry: dict | None = None,
                        render: bool = True, timeout_seconds: int = 240, upload_ids: list[str] | None = None,
                        budget: RunBudget | None = None, corpus_profile: str = "contextual",
-                       planner_backend: str = "api", retrieval_variant: str = "improved") -> dict:
+                       planner_backend: str = "api", retrieval_variant: str = "improved", review_mode: str | None = None) -> dict:
     from finevolab.evaluation import analyze_task
     from finevolab.reporting import build_analysis_report
     from finevolab.validation import validate_answer
@@ -39,7 +39,10 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     upload_ids = sorted(set(upload_ids or []))
     store = (FinancialStore.from_uploads(root / "data/processed/reports.json", upload_ids, root / "data/uploads")
              if upload_ids else FinancialStore(root / "data/processed/reports.json"))
-    versions = {
+    from finevolab.retrieval_settings import load_settings
+    from finevolab.reviewing import ReviewSettings, review_mode as configured_review_mode
+    review_mode = ReviewSettings(mode=review_mode or configured_review_mode(root)).mode
+    versions = {"retrieval_services": load_settings(root).model_dump(mode="json"), "review_mode": review_mode,
         "workflow": "question", "question": question, "company": "MULTI", "fiscal_year": None,
         "model": settings.model, "base_url": settings.base_url, "data_version": store.version,
         "candidate": fingerprint(candidate), "render": render, "timeout_seconds": timeout_seconds,
@@ -71,7 +74,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     async def analyze(state):
         if online_planner is None:
             result = await analyze_task(settings, store, question, candidate, events, telemetry=telemetry,
-                                        root=root, budget=budget, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant)
+                                        root=root, budget=budget, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode)
         else:
             from finevolab.grounded import analyze_grounded
             from finevolab.planning import PlannerServiceError
@@ -102,7 +105,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                 timeout_seconds=budget.timeout_seconds - planning_seconds)
             try:
                 result = await analyze_grounded(settings, store, question, candidate, events, remaining,
-                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant)
+                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode)
             finally:
                 narrative_usage = observed.get("usage", {})
                 observed["usage"] = {key: narrative_usage.get(key, 0) + value for key, value in plan_usage.items()}
