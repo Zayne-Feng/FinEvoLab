@@ -51,7 +51,7 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/run_logs/site_layout_checks.json")
+    verification = load("project_notes/run_logs/runtime_refinement_checks.json")
     if not verification["workspace_tests"]["passed"]:
         raise ValueError("The regression record must contain a passing result")
     if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:

@@ -25,7 +25,7 @@ FinEvoLab 是基于 FinRobot Equity V1 的独立衍生项目，将公开财报�
 
 ## 快速启动
 
-以下为已验证的 Windows / PowerShell 入口。将 `$condaExe` 改为自己的 Conda 路径；已有 `finevolab` 环境可跳过环境创建和依赖安装两条命令。
+以下命令均在仓库根目录运行，启动入口已在 Windows / PowerShell 验证。将 `$condaExe` 改为自己的 Conda 路径；已有 `finevolab` 环境可跳过环境创建和依赖安装两条命令。
 
 ```powershell
 $condaExe = 'D:\ProgramSoftware\Miniconda3\Scripts\conda.exe'
@@ -66,16 +66,18 @@ openai_base_url = https://api.deepseek.com/
 | 扩展业务 Agent 主测试 | 291/300，97.00%；100 题各重复 3 次 | [完整结果](project_notes/experiments/scope-test-v1/assessment.json) |
 | 请求规划器正式 test | Qwen base 109/240；LoRA 两个 seed 为 212/240、213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
 | 同权重 BF16 / NF4 推理 | 严格成功 212/240、211/240；NF4 峰值已分配显存降低 62.58%，平均延时增加 47.18% | [量化结果](project_notes/evaluations/planner_quantization.json) |
+| 检索缓存对照 | 135 组查询配置 × 5 次重复；返回结果一致；预热均值 68.52 → 6.16 ms，11.12× | [缓存对照](project_notes/experiments/retrieval-cache-v1/summary.json) |
+| 可选语义重排 | top 5 完整标准原文命中 15/36 → 23/36；业务配对严格成功均为 8/8 | [证据对照](project_notes/experiments/reranker-bilingual-v1/summary.json)、[业务验收](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **189 项通过**，见[页面验收](project_notes/run_logs/site_layout_checks.json)。按提交范围导出的独立文件副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **205 项通过**，见[运行验证](project_notes/run_logs/runtime_refinement_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 ## 复现实验
 
 代码与输入按以下目录组织：`finevolab/` 为业务模块，`scripts/` 为数据与实验入口，`configs/`、`prompts/` 为功能配置，`finevolab/templates/` 为网页与业务报告的 HTML 模板，`data/` 为来源快照与冻结数据，`tests/` 为回归与前端检查。`project_notes/` 中的 JSON / JSONL、环境快照与代表性图片提供版本化实验依据；开发说明及可选实验报告 Markdown 模板在本地集中保存，正式汇总以 JSON 结果记录。
 
-按 development / validation / test 划分，主业务任务为 50/50/100，内部编写的双语规划任务为 600/120/240；规划集的 development 部分用于 SFT 训练。直接使用仓库内冻结数据及 manifest；以下命令从现有结果重新生成数值回放，或以新的 run ID 开展 3 轮业务对照：
+按 development / validation / test 划分，主业务任务为 50/50/100，内部编写的双语规划任务为 600/120/240；规划集的 development 部分用于 SFT 训练。直接使用仓库内冻结数据及 manifest；以下命令从现有结果重新生成数值回放，或以新的 run ID 开展 3 轮业务对照、复核正文证据并汇总严格评分：
 
 配对实验从 Git 历史读取原版引擎，使用保留完整提交历史的 clone。`scripts/verify_repository_distribution.py` 可核对提交范围、来源快照、冻结输入和法律文件。
 
@@ -83,6 +85,8 @@ openai_base_url = https://api.deepseek.com/
 & $condaExe run --no-capture-output -n finevolab python -m unittest discover -s tests -q
 & $condaExe run --no-capture-output -n finevolab python scripts/replay_planner_predictions.py --bundle data/training/planner_formal/frozen_v1 --split test --runs project_notes/experiments/planner-formal-deepseek-test project_notes/experiments/planner-formal-base-test project_notes/experiments/planner-formal-lora17-test --case-ids data/training/planner_formal/replay_case_ids.json --output output/reproduction/replay17
 & $condaExe run --no-capture-output -n finevolab python scripts/run_scope_experiments.py --split test --paired --repeats 3 --run-id reproduction_scope_test
+& $condaExe run --no-capture-output -n finevolab python scripts/review_scope_answers.py --experiment reproduction_scope_test --split test --run-id reproduction_scope_review
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_scope_results.py --experiment reproduction_scope_test --review reproduction_scope_review
 ```
 
 业务对照使用配置的真实 API。训练与量化已在 24 GB 显存的 RTX 3090 上验证，模型 revision 由 `configs/planner_model.json` 固定；正式运行的完整环境快照见 [planner_serving_environment.txt](project_notes/run_logs/planner_serving_environment.txt)。在独立 CUDA GPU Python 环境安装依赖后执行：
@@ -115,6 +119,32 @@ python scripts/run_quantization_comparison.py --bundle data/training/planner_for
 LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`；通过 SSH 将远端 `127.0.0.1:8082` 转发至本地 `127.0.0.1:8787`，与 [planner_service.json](configs/planner_service.json) 的 loopback 地址对应。网页可选择 BF16 / NF4。原 FinNLP 子模块按固定 commit 保留，可用 `git submodule update --init --recursive` 获取。
 
 使用重新训练的 adapter 时，将服务 `GET /health` 返回的 `adapter_sha256` 填入对应的规划器配置，并通过 `FINEVOLAB_PLANNER_CONFIG` 指定该配置文件，保持客户端与实际权重身份一致。
+
+过滤后的 BM25 索引与查询向量使用有容量限制的内存缓存。邀请制分析工作台展示阶段、模型与工具耗时，以及 Token 用量和缓存命中情况；完成任务恢复时保留原有总耗时。共享 API 熔断器阻止连续临时故障，并在恢复窗口后进行探测。
+
+可选 CPU Cross-Encoder 固定在 [reranker.json](configs/reranker.json)。默认 `enabled=false` 保留快速检索，并作为下方实验的对照组；实验命令显式评估语义重排，比较完成后可将 `enabled` 设为 `true`，用于常规分析。双语证据对照包含 18 对中英文查询、9 个来源主题组；业务配对验收包含 8 个请求、4 对双语任务，每组各执行一次，并由 2 个隔离上下文的同模型 AI 评审复核。下方业务验收命令使用已配置的 API。各组对照记录均附带已验证的 `source.patch`，可基于 manifest 中的提交还原运行源码。
+
+先从已版本化的来源快照准备本地选定文档缓存，复用冻结的文档标识与财务数据：
+
+```powershell
+@'
+import json
+from pathlib import Path
+from finevolab.scope_evaluation import task_store
+
+root = Path.cwd()
+documents = json.loads((root / "data/evaluation/scope_v3/documents.json").read_text(encoding="utf-8"))
+for document in documents:
+    task_store(root, {"upload_ids": [document["id"]]}, documents)
+'@ | & $condaExe run --no-capture-output -n finevolab python -
+```
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode cache --baseline 8a10053a --output output/reproduction/retrieval_cache
+& $condaExe run --no-capture-output -n finevolab python scripts/prepare_reranker.py
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode rerank --split validation --queries data/evaluation/retrieval_refinement/bilingual_queries.json --output output/reproduction/reranker_bilingual
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py --output output/reproduction/runtime_refinement
+```
 
 ## 静态展示
 

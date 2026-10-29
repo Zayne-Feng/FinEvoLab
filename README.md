@@ -25,7 +25,7 @@ The primary application is `finevolab/`, with reused Equity V1 modules and the w
 
 ## Quick start
 
-The following entry point has been verified on Windows / PowerShell. Set `$condaExe` to your Conda executable. If the `finevolab` environment already exists, skip the environment creation and dependency installation commands.
+Run the following commands from the repository root. The entry point has been verified on Windows / PowerShell. Set `$condaExe` to your Conda executable. If the `finevolab` environment already exists, skip the environment creation and dependency installation commands.
 
 ```powershell
 $condaExe = 'D:\ProgramSoftware\Miniconda3\Scripts\conda.exe'
@@ -66,16 +66,18 @@ Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft rev
 | Expanded business-Agent main test | 291/300, 97.00%; 100 questions, 3 repetitions each | [Full results](project_notes/experiments/scope-test-v1/assessment.json) |
 | Request-planner formal test | Qwen base 109/240; two LoRA seeds: 212/240 and 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
 | BF16 / NF4 inference with the same weights | Strict successes: 212/240 and 211/240; NF4 reduced peak allocated memory by 62.58% and increased mean latency by 47.18% | [Quantization results](project_notes/evaluations/planner_quantization.json) |
+| Retrieval cache comparison | 135 query configurations × 5 repetitions; identical results; warm mean 68.52 → 6.16 ms, 11.12× | [Cache comparison](project_notes/experiments/retrieval-cache-v1/summary.json) |
+| Optional semantic reranking | Complete gold-quote hits in top 5: 15/36 → 23/36; paired workflow strict successes 8/8 for both arms | [Evidence comparison](project_notes/experiments/reranker-bilingual-v1/summary.json), [Workflow verification](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean generation latency was 3.759 / 5.532 s.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **189 tests**; see [page acceptance](project_notes/run_logs/site_layout_checks.json). An independent file copy exported from the submission scope passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **205 tests**; see [runtime verification](project_notes/run_logs/runtime_refinement_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 ## Reproducing experiments
 
 Code and inputs are organized as follows: `finevolab/` contains business modules, `scripts/` contains data and experiment entry points, `configs/` and `prompts/` contain functional configuration, `finevolab/templates/` contains HTML templates for the web interface and business reports, `data/` contains source snapshots and frozen datasets, and `tests/` contains regression and frontend checks. JSON / JSONL files, environment snapshots, and representative images under `project_notes/` provide versioned experimental evidence. Development notes and optional Markdown report templates remain local; formal summaries are recorded as JSON results.
 
-The development / validation / test splits contain 50/50/100 business tasks and 600/120/240 internally authored bilingual planner tasks. The planner development split supplies the SFT training examples. Use the frozen datasets and manifests in the repository. The following commands replay numerical results from archived predictions or run a business comparison with 3 repetitions under a new run ID:
+The development / validation / test splits contain 50/50/100 business tasks and 600/120/240 internally authored bilingual planner tasks. The planner development split supplies the SFT training examples. Use the frozen datasets and manifests in the repository. The following commands replay numerical results from archived predictions or run a business comparison with 3 repetitions under a new run ID, review narrative evidence, and aggregate strict scores:
 
 Paired experiments load the original engine from Git history, so use a clone with the complete commit history. `scripts/verify_repository_distribution.py` checks the submission scope, source snapshots, frozen inputs, and legal files.
 
@@ -83,6 +85,8 @@ Paired experiments load the original engine from Git history, so use a clone wit
 & $condaExe run --no-capture-output -n finevolab python -m unittest discover -s tests -q
 & $condaExe run --no-capture-output -n finevolab python scripts/replay_planner_predictions.py --bundle data/training/planner_formal/frozen_v1 --split test --runs project_notes/experiments/planner-formal-deepseek-test project_notes/experiments/planner-formal-base-test project_notes/experiments/planner-formal-lora17-test --case-ids data/training/planner_formal/replay_case_ids.json --output output/reproduction/replay17
 & $condaExe run --no-capture-output -n finevolab python scripts/run_scope_experiments.py --split test --paired --repeats 3 --run-id reproduction_scope_test
+& $condaExe run --no-capture-output -n finevolab python scripts/review_scope_answers.py --experiment reproduction_scope_test --split test --run-id reproduction_scope_review
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_scope_results.py --experiment reproduction_scope_test --review reproduction_scope_review
 ```
 
 Business comparisons use the configured live API. Training and quantization were verified on an RTX 3090 with 24 GB VRAM, with the model revision pinned in `configs/planner_model.json`. The complete environment snapshot from the formal run is recorded in [planner_serving_environment.txt](project_notes/run_logs/planner_serving_environment.txt). Install dependencies in a separate CUDA GPU Python environment and run:
@@ -115,6 +119,32 @@ Each CLI lists its complete arguments through `--help`. Original predictions and
 Start the LoRA service with `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`. Use SSH to forward remote `127.0.0.1:8082` to local `127.0.0.1:8787`, matching the loopback address in [planner_service.json](configs/planner_service.json). The web interface supports BF16 / NF4 selection. The original FinNLP submodule retains its pinned commit and can be fetched with `git submodule update --init --recursive`.
 
 When using a retrained adapter, copy the `adapter_sha256` returned by the service's `GET /health` into the corresponding planner configuration and select that file through `FINEVOLAB_PLANNER_CONFIG`, keeping the client identity consistent with the actual weights.
+
+Filtered BM25 indexes and query vectors use bounded in-memory caches. The invited analysis workspace shows phase, model, and tool durations with token usage and cache hits. Completed-task recovery preserves the recorded total duration. Shared provider circuits stop repeated transient failures and probe for recovery.
+
+The optional CPU Cross-Encoder is pinned in [reranker.json](configs/reranker.json). The default `enabled=false` retains fast retrieval and supplies the control arm for the comparisons below. These commands evaluate semantic reranking explicitly; set `enabled` to `true` after comparison to use it for normal analysis. The bilingual evidence comparison uses 18 Chinese/English query pairs across 9 source profiles; paired workflow verification uses 8 requests across 4 bilingual task pairs, one execution per arm, with 2 isolated same-model AI reviews. The workflow command below uses the configured API. Each recorded comparison includes a verified `source.patch` against its manifest commit.
+
+Prepare the local selected-document cache from the versioned source snapshots. This step reuses the frozen document identities and financial data:
+
+```powershell
+@'
+import json
+from pathlib import Path
+from finevolab.scope_evaluation import task_store
+
+root = Path.cwd()
+documents = json.loads((root / "data/evaluation/scope_v3/documents.json").read_text(encoding="utf-8"))
+for document in documents:
+    task_store(root, {"upload_ids": [document["id"]]}, documents)
+'@ | & $condaExe run --no-capture-output -n finevolab python -
+```
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode cache --baseline 8a10053a --output output/reproduction/retrieval_cache
+& $condaExe run --no-capture-output -n finevolab python scripts/prepare_reranker.py
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode rerank --split validation --queries data/evaluation/retrieval_refinement/bilingual_queries.json --output output/reproduction/reranker_bilingual
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py --output output/reproduction/runtime_refinement
+```
 
 ## Static showcase
 
