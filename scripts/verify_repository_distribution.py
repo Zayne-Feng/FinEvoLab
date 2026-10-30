@@ -50,8 +50,26 @@ def publication_candidates() -> tuple[list[str], list[str]]:
 def check() -> dict:
     candidates, ignored_tracked = publication_candidates()
     required = ["README.md", "README_CN.md", "AGENTS.md", ".gitignore", ".dockerignore", ".gitattributes",
-                "LICENSE", "NOTICE", "TRADEMARK_POLICY.md", "COPYRIGHT",
+                "LICENSE", "NOTICE", "COPYRIGHT", "licenses/finrobot/LICENSE",
+                "licenses/finrobot/NOTICE", "licenses/finrobot/TRADEMARK_POLICY.md",
                 "configs/readme_sync.json", "scripts/check_readme_sync.py",
+                "finevolab/derived.py", "scripts/calculate_derived.py", "tests/test_derived.py",
+                "finevolab/context_encoding.py", "finevolab/subtasks.py", "finevolab/singleflight.py",
+                "finevolab/reconciliation.py", "finevolab/scenarios.py", "finevolab/methods.py",
+                "configs/analysis_extensions.json", "configs/analysis_methods.json", "tests/test_analysis_extensions.py",
+                "scripts/benchmark_analysis_extensions.py", "scripts/review_analysis_extensions.py",
+                "data/evaluation/analysis_extensions/cases.json",
+                "project_notes/experiments/analysis-extensions-release/manifest.json",
+                "project_notes/experiments/analysis-extensions-release/summary.json",
+                "project_notes/experiments/analysis-extensions-release/offline.json",
+                "project_notes/experiments/analysis-extensions-release/source.patch",
+                "scripts/summarize_analysis_extensions.py", "tests/test_analysis_assessment.py",
+                "project_notes/experiments/analysis-extensions-release/model_records.json",
+                "project_notes/experiments/analysis-extensions-release/blind_samples.json",
+                "project_notes/experiments/analysis-extensions-release/blind_reviews.json",
+                "project_notes/experiments/analysis-extensions-release/blind_summary.json",
+                "project_notes/experiments/analysis-extensions-release/assessment.json",
+                "project_notes/run_logs/analysis_extensions_checks.json",
                 "configs/retrieval.json", "configs/reranker.json", "configs/planner_model.json",
                 "configs/retrieval_services.json", "configs/agent_review.json", "requirements/retrieval_services.in",
                 "finevolab/retrieval_cache.py", "finevolab/vector_backends.py", "finevolab/reviewing.py",
@@ -82,9 +100,17 @@ def check() -> dict:
     baseline = "2717499b8e30f242640af08c4ad9afd1113c2d45"
     legal = {}
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
-        if git("show", baseline + ":" + name) != (ROOT / name).read_bytes():
+        if git("show", baseline + ":" + name) != (ROOT / "licenses/finrobot" / name).read_bytes():
             raise ValueError("An upstream legal file changed: " + name)
-        legal[name] = digest(ROOT / name)
+        legal[name] = digest(ROOT / "licenses/finrobot" / name)
+    original_license = git("show", baseline + ":LICENSE")
+    project_license = original_license.replace(b"Copyright 2026 AI4Finance Foundation",
+        b"Copyright 2026 Zehao Feng (Zayne-Feng) and FinEvoLab contributors", 1)
+    if (ROOT / "LICENSE").read_bytes() != project_license:
+        raise ValueError("The project license terms or copyright notice differ")
+    for name in ("NOTICE", "COPYRIGHT"):
+        if "Zehao Feng (Zayne-Feng)" not in (ROOT / name).read_text(encoding="utf-8"):
+            raise ValueError("The project copyright attribution is missing: " + name)
     ast.parse((ROOT / "scripts/finalize_planner_formal.py").read_text(encoding="utf-8"))
     counts = {}
     for split in ("development", "validation", "test"):

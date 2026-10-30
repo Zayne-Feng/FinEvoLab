@@ -7,9 +7,9 @@
 
 **面向财报分析的可追溯金融 Agent：用 RAG 获取证据，用工具计算数值，用 harness 校验与恢复执行。**
 
-Built on FinRobot Equity V1. This README has been modified for FinEvoLab.
+**在线体验：**[项目展示](https://finevolab.lunelu.com/) · [邀请制分析](https://app.lunelu.com/)。
 
-FinEvoLab 是基于 FinRobot Equity V1 的独立衍生项目，将公开财报、结构化财务指标、模型规划和报告生成贯通为可运行的分析工作流，并通过组件对照、QLoRA 微调和推理量化实验评估效果。网页支持中文 / English，可选择 API 或 LoRA 规划后端。
+FinEvoLab 是面向财报分析的金融 Agent 项目，将公开财报、结构化财务指标、模型规划和报告生成贯通为可运行的分析工作流，并通过组件对照、QLoRA 微调和推理量化实验评估效果。网页支持中文 / English，可选择 API 或 LoRA 规划后端。
 
 ## 核心能力
 
@@ -21,7 +21,7 @@ FinEvoLab 是基于 FinRobot Equity V1 的独立衍生项目，将公开财报�
 
 默认 API 模式配合 CPU 检索运行。LoRA 服务部署于外部 GPU，通过 SSH 转发接入；LoRA 负责 `RequestPlan` 规划，API 模型生成解释性正文，各后端共用财务工具、RAG 和 harness。
 
-主应用位于 `finevolab/`，复用的 Equity V1 模块与网页外壳位于 `finrobot_equity/`。安装与启动使用下方的 Conda 配置和应用命令。
+FinEvoLab 的核心流程位于 `finevolab/`，配套目录提供数据准备、训练与实验入口。复用的基础模块及固定版本对照基线保存在 `finrobot_equity/`。
 
 ## 快速启动
 
@@ -58,6 +58,27 @@ openai_base_url = https://api.deepseek.com/
 
 打开 **http://127.0.0.1:8003/finevolab**。可尝试“比较 Apple 与 Microsoft 2023 财年的收入，并说明财年期间差异”，或“计算 Microsoft 2023 财年收入同比，并引用财报解释变化”。依赖锁定位于 [environments/](environments/) 和 [requirements/](requirements/)，检索模型与 revision 固定在 [retrieval.json](configs/retrieval.json)。
 
+确定性计算工具还支持 `operating_margin`、`net_margin`、`operating_margin_change` 和 `net_margin_change`。利润率使用百分比，利润率变化使用百分点。每项结果保留来源输入、实际财务期间、披露年份、公式、引用、数据签名与字段级审计检查；每项输入采用其最新可用披露。本地 `POST /api/derived-metrics` 接口和以下命令可直接完成计算，无需模型调用：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/calculate_derived.py --company MSFT --fiscal-year 2024 --metric operating_margin_change --report-dir output/derived_report
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/derived-metrics' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"net_margin"}'
+```
+
+分析控制包括带累计用量与修复次数核算的公司级模型步骤检查点、按事实期间与披露血缘进行的来源核对，以及用于合并重叠确定性缓存请求的进程内 singleflight。版本化任务方法和无损财务上下文编码通过 `configs/analysis_extensions.json`、`configs/analysis_methods.json` 配置。本地 `POST /api/scenarios` 接口根据明确的收入和利润率假设生成敏感性表格，保留历史基准及其审计。
+
+[工程对照结果](project_notes/experiments/analysis-extensions-release/summary.json) 记录了配对恢复与并发负载、来源状态控制样本、上下文可逆编码和独立核算的情景计算。可通过以下命令使用已配置的模型服务运行对照，并调用结构化接口：
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_analysis_extensions.py --output output/reproduction/analysis_extensions --live
+& $condaExe run --no-capture-output -n finevolab python scripts/review_analysis_extensions.py --run output/reproduction/analysis_extensions --execute
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_analysis_extensions.py --run output/reproduction/analysis_extensions
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/source-reconciliation' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"revenue"}'
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"margin":"operating_margin","revenue_changes_percent":[-10,0,10],"margin_changes_percentage_points":[-2,0,2]}'
+```
+
+[固定规划 DeepSeek 对照](project_notes/experiments/analysis-extensions-release/assessment.json)对四个问题按每组各重复两次。baseline / encoding / methods / combined 的来源与结构校验分别通过 **7/8、6/8、8/8、6/8**；加入两个隔离评审上下文对证据支持和内容完整性的共同认可后，分别为 **4/8、4/8、5/8、4/8**。上下文编码减少输入 Token **6.90%**；方法配置增加输入 Token **1.29%**。这些数值描述本批固定工作负载，编码与方法选择保留为可选项。两个评审上下文使用同一 `deepseek-flash` 模型。
+
 ## 实验结果
 
 | 实验范围 | 严格成功次数与资源指标 | 记录 |
@@ -74,7 +95,7 @@ openai_base_url = https://api.deepseek.com/
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **224 项通过**，见[运行验证](project_notes/run_logs/service_integration_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **272 项通过**，见[运行验证](project_notes/run_logs/analysis_extensions_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 ## 复现实验
 
@@ -225,4 +246,4 @@ for document in documents:
 
 ## 许可证
 
-FinEvoLab 自有代码与文档采用 **Apache-2.0**，版权与许可声明见 [COPYRIGHT](COPYRIGHT)。保留上游 [LICENSE](LICENSE)、[NOTICE](NOTICE) 和 [Trademark policy](TRADEMARK_POLICY.md)。第三方数据、模型与其他材料遵循各自条款。
+FinEvoLab 自有代码、文档与修改部分采用 **Apache-2.0**，版权归 **Zehao Feng (Zayne-Feng) and FinEvoLab contributors**，见 [LICENSE](LICENSE)、[COPYRIGHT](COPYRIGHT) 和 [NOTICE](NOTICE)。部分组件衍生自 FinRobot Equity V1，原始声明集中保存在 [licenses/finrobot/](licenses/finrobot/)。

@@ -7,9 +7,9 @@
 
 **A financial Agent with traceable sources: RAG retrieves evidence, tools compute values, and a harness validates and resumes execution.**
 
-Built on FinRobot Equity V1. This README has been modified for FinEvoLab.
+**Explore:** [Project showcase](https://finevolab.lunelu.com/) · [Invited analysis](https://app.lunelu.com/).
 
-FinEvoLab is an independent derivative project built on FinRobot Equity V1. It connects public financial reports, structured financial metrics, model planning, and report generation into an executable analysis workflow, evaluated through component comparisons, QLoRA fine-tuning, and inference quantization experiments. The web interface supports Chinese / English and offers API or LoRA planning backends.
+FinEvoLab is a financial analysis project that connects public financial reports, structured financial metrics, model planning, and report generation into an executable analysis workflow, evaluated through component comparisons, QLoRA fine-tuning, and inference quantization experiments. The web interface supports Chinese / English and offers API or LoRA planning backends.
 
 ## Features
 
@@ -21,7 +21,7 @@ FinEvoLab is an independent derivative project built on FinRobot Equity V1. It c
 
 The default API mode runs with CPU retrieval. The LoRA service runs on an external GPU and connects through SSH port forwarding. LoRA handles `RequestPlan` planning, while the API model generates explanatory narratives. All backends share the financial tools, RAG, and harness.
 
-The primary application is `finevolab/`, with reused Equity V1 modules and the web application shell in `finrobot_equity/`. Use the Conda setup and application commands below.
+FinEvoLab's core workflows are implemented in `finevolab/`, with data preparation, training, and experiments in the supporting directories. Reused infrastructure and the pinned comparison baseline are kept in `finrobot_equity/`.
 
 ## Quick start
 
@@ -58,6 +58,27 @@ openai_base_url = https://api.deepseek.com/
 
 Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft revenue for fiscal year 2023 and explain the fiscal-period differences,” or “Calculate Microsoft year-over-year revenue growth for fiscal year 2023 and cite the report to explain the change.” Dependency locks are in [environments/](environments/) and [requirements/](requirements/). The retrieval model and revision are pinned in [retrieval.json](configs/retrieval.json).
 
+The deterministic calculation tool also supports `operating_margin`, `net_margin`, `operating_margin_change`, and `net_margin_change`. Margins use percent; changes use percentage points. Each result retains the source inputs, actual fiscal periods, disclosure years, formula, citations, data signature, and field-level audit checks. Each input uses its latest available disclosure. The local `POST /api/derived-metrics` endpoint and the following command execute these calculations without model calls:
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/calculate_derived.py --company MSFT --fiscal-year 2024 --metric operating_margin_change --report-dir output/derived_report
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/derived-metrics' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"net_margin"}'
+```
+
+Analysis controls include validated company-level model-step checkpoints with cumulative usage and repair accounting, source reconciliation by fiscal scope and filing lineage, and in-process singleflight for overlapping deterministic cache misses. Versioned task methods and lossless financial-context encoding are configurable in `configs/analysis_extensions.json` and `configs/analysis_methods.json`. The local `POST /api/scenarios` endpoint produces sensitivity grids from explicit revenue and margin assumptions, retaining the observed baseline and its audit.
+
+The [engineering comparison](project_notes/experiments/analysis-extensions-release/summary.json) records paired recovery and concurrency workloads, source-status controls, reversible context encoding, and independently checked scenario arithmetic. Run the model comparison with the configured provider and call the structured endpoints with:
+
+```powershell
+& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_analysis_extensions.py --output output/reproduction/analysis_extensions --live
+& $condaExe run --no-capture-output -n finevolab python scripts/review_analysis_extensions.py --run output/reproduction/analysis_extensions --execute
+& $condaExe run --no-capture-output -n finevolab python scripts/summarize_analysis_extensions.py --run output/reproduction/analysis_extensions
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/source-reconciliation' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"revenue"}'
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"margin":"operating_margin","revenue_changes_percent":[-10,0,10],"margin_changes_percentage_points":[-2,0,2]}'
+```
+
+The [fixed-plan DeepSeek comparison](project_notes/experiments/analysis-extensions-release/assessment.json) evaluates four questions twice per arm. Baseline / encoding / methods / combined passed source-and-schema checks on **7/8, 6/8, 8/8, 6/8** tasks; adding support and completeness agreement from two isolated review contexts gave **4/8, 4/8, 5/8, 4/8**. Encoding reduced input tokens by **6.90%**; methods increased them by **1.29%**. These are descriptive results for this fixed workload. Encoding and method selection remain opt-in. The two review contexts use the same `deepseek-flash` model.
+
 ## Results
 
 | Evaluation scope | Strict successes and resource metrics | Evidence |
@@ -74,7 +95,7 @@ Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft rev
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean generation latency was 3.759 / 5.532 s.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **224 tests**; see [runtime verification](project_notes/run_logs/service_integration_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **272 tests**; see [runtime verification](project_notes/run_logs/analysis_extensions_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 ## Reproducing experiments
 
@@ -225,4 +246,4 @@ Workspace acceptance is recorded in [workspace checks](project_notes/run_logs/ex
 
 ## License
 
-FinEvoLab's own code and documentation use **Apache-2.0**; copyright and licensing are stated in [COPYRIGHT](COPYRIGHT). The upstream [LICENSE](LICENSE), [NOTICE](NOTICE), and [Trademark policy](TRADEMARK_POLICY.md) are retained. Third-party data, models, and other materials remain subject to their respective terms.
+FinEvoLab-specific code, documentation, and modifications are licensed under **Apache-2.0**, copyright **Zehao Feng (Zayne-Feng) and FinEvoLab contributors**. See [LICENSE](LICENSE), [COPYRIGHT](COPYRIGHT), and [NOTICE](NOTICE). Selected components derive from FinRobot Equity V1; their original notices are retained in [licenses/finrobot/](licenses/finrobot/).
