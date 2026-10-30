@@ -1,0 +1,3890 @@
+{
+  "source_controls": [
+    {
+      "id": "MSFT:single",
+      "expected": "single_source",
+      "baseline": "single_source",
+      "coordinated": "single_source",
+      "detail": {
+        "status": "single_source",
+        "selected": "a",
+        "source_groups": 1,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:corroborated",
+      "expected": "corroborated",
+      "baseline": "corroborated",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:same_filing",
+      "expected": "same_filing",
+      "baseline": "corroborated",
+      "coordinated": "same_filing",
+      "detail": {
+        "status": "same_filing",
+        "selected": "b",
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:period_end",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:currency",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "EUR",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:name",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "net_income",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:company",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "OTHER",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:fiscal_year",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:scaled",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122",
+              "currency": "USD",
+              "unit": "USD_millions",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1000000",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:rounding",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0.4",
+            "tolerance": "0.5",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000.4",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "1",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:restated",
+      "expected": "restated",
+      "baseline": "conflict",
+      "coordinated": "restated",
+      "detail": {
+        "status": "restated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:same_filing_conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT:unit",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "unsupported_unit_or_scale",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "MSFT",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "245122000000",
+              "currency": "USD",
+              "unit": "unknown",
+              "period_start": "2023-07-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "9a794a03f299890a16d8dd3c",
+              "report_year": 2026,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:single",
+      "expected": "single_source",
+      "baseline": "single_source",
+      "coordinated": "single_source",
+      "detail": {
+        "status": "single_source",
+        "selected": "a",
+        "source_groups": 1,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:corroborated",
+      "expected": "corroborated",
+      "baseline": "corroborated",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:same_filing",
+      "expected": "same_filing",
+      "baseline": "corroborated",
+      "coordinated": "same_filing",
+      "detail": {
+        "status": "same_filing",
+        "selected": "b",
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:period_end",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:currency",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "EUR",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:name",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "net_income",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:company",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "OTHER",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:fiscal_year",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:scaled",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035",
+              "currency": "USD",
+              "unit": "USD_millions",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1000000",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:rounding",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0.4",
+            "tolerance": "0.5",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000.4",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "1",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:restated",
+      "expected": "restated",
+      "baseline": "conflict",
+      "coordinated": "restated",
+      "detail": {
+        "status": "restated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:same_filing_conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL:unit",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "unsupported_unit_or_scale",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "AAPL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "391035000000",
+              "currency": "USD",
+              "unit": "unknown",
+              "period_start": "2023-10-01",
+              "period_end": "2024-09-28",
+              "period_kind": "annual_flow",
+              "evidence_id": "3a4cc27cbd17e4635166de5a",
+              "report_year": 2025,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:single",
+      "expected": "single_source",
+      "baseline": "single_source",
+      "coordinated": "single_source",
+      "detail": {
+        "status": "single_source",
+        "selected": "a",
+        "source_groups": 1,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:corroborated",
+      "expected": "corroborated",
+      "baseline": "corroborated",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:same_filing",
+      "expected": "same_filing",
+      "baseline": "corroborated",
+      "coordinated": "same_filing",
+      "detail": {
+        "status": "same_filing",
+        "selected": "b",
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:period_end",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-06-30",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:currency",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "EUR",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:name",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "net_income",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:company",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "OTHER",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:fiscal_year",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "fact_scope_mismatch",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2023,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:scaled",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0",
+            "tolerance": "0",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018",
+              "currency": "USD",
+              "unit": "USD_millions",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1000000",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:rounding",
+      "expected": "corroborated",
+      "baseline": "conflict",
+      "coordinated": "corroborated",
+      "detail": {
+        "status": "corroborated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "0.4",
+            "tolerance": "0.5",
+            "agrees": true
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000.4",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "1",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:restated",
+      "expected": "restated",
+      "baseline": "conflict",
+      "coordinated": "restated",
+      "detail": {
+        "status": "restated",
+        "selected": "b",
+        "source_groups": 2,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:same_filing_conflict",
+      "expected": "conflict",
+      "baseline": "conflict",
+      "coordinated": "conflict",
+      "detail": {
+        "status": "conflict",
+        "selected": null,
+        "source_groups": 1,
+        "comparisons": [
+          {
+            "left": "a",
+            "right": "b",
+            "difference": "1000",
+            "tolerance": "0",
+            "agrees": false
+          }
+        ],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018001000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "a",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "GOOGL:unit",
+      "expected": "not_comparable",
+      "baseline": "corroborated",
+      "coordinated": "not_comparable",
+      "detail": {
+        "status": "not_comparable",
+        "reason": "unsupported_unit_or_scale",
+        "selected": null,
+        "source_groups": 0,
+        "comparisons": [],
+        "observations": [
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "USD",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "a",
+            "filing_id": "a",
+            "disclosed_on": "2024-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          },
+          {
+            "metric": {
+              "company": "GOOGL",
+              "name": "revenue",
+              "fiscal_year": 2024,
+              "value": "350018000000",
+              "currency": "USD",
+              "unit": "unknown",
+              "period_start": "2024-01-01",
+              "period_end": "2024-12-31",
+              "period_kind": "annual_flow",
+              "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+              "report_year": 2024,
+              "extraction_method": "sec_companyfacts_annual_context"
+            },
+            "source_id": "b",
+            "filing_id": "b",
+            "disclosed_on": "2025-06-30",
+            "scale": "1",
+            "rounding_unit": "0",
+            "restated": false
+          }
+        ]
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "351931500000.0",
+      "profit": "103855770000.0",
+      "margin_percent": "29.51022287007556868311020752618052",
+      "reference_profit": "103855770000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "351931500000.0",
+      "profit": "110894400000.0",
+      "margin_percent": "31.51022287007556868311020752618052",
+      "reference_profit": "110894400000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "351931500000.0",
+      "profit": "117933030000.0",
+      "margin_percent": "33.51022287007556868311020752618052",
+      "reference_profit": "117933030000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "391035000000",
+      "profit": "115395300000",
+      "margin_percent": "29.51022287007556868311020752618052",
+      "reference_profit": "115395300000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "391035000000",
+      "profit": "123216000000",
+      "margin_percent": "31.51022287007556868311020752618052",
+      "reference_profit": "123216000000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "391035000000",
+      "profit": "131036700000",
+      "margin_percent": "33.51022287007556868311020752618052",
+      "reference_profit": "131036700000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "430138500000.0",
+      "profit": "126934830000.0",
+      "margin_percent": "29.51022287007556868311020752618052",
+      "reference_profit": "126934830000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "430138500000.0",
+      "profit": "135537600000.0",
+      "margin_percent": "31.51022287007556868311020752618052",
+      "reference_profit": "135537600000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "430138500000.0",
+      "profit": "144140370000.0",
+      "margin_percent": "33.51022287007556868311020752618052",
+      "reference_profit": "144140370000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "351931500000.0",
+      "profit": "77323770000.0",
+      "margin_percent": "21.97125576994386691728361911337860",
+      "reference_profit": "77323770000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "351931500000.0",
+      "profit": "84362400000.0",
+      "margin_percent": "23.97125576994386691728361911337860",
+      "reference_profit": "84362400000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "351931500000.0",
+      "profit": "91401030000.0",
+      "margin_percent": "25.97125576994386691728361911337860",
+      "reference_profit": "91401030000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "391035000000",
+      "profit": "85915300000",
+      "margin_percent": "21.97125576994386691728361911337860",
+      "reference_profit": "85915300000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "391035000000",
+      "profit": "93736000000",
+      "margin_percent": "23.97125576994386691728361911337860",
+      "reference_profit": "93736000000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "391035000000",
+      "profit": "101556700000",
+      "margin_percent": "25.97125576994386691728361911337860",
+      "reference_profit": "101556700000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "430138500000.0",
+      "profit": "94506830000.0",
+      "margin_percent": "21.97125576994386691728361911337860",
+      "reference_profit": "94506830000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "430138500000.0",
+      "profit": "103109600000.0",
+      "margin_percent": "23.97125576994386691728361911337860",
+      "reference_profit": "103109600000",
+      "correct": true
+    },
+    {
+      "company": "AAPL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "430138500000.0",
+      "profit": "111712370000.0",
+      "margin_percent": "25.97125576994386691728361911337860",
+      "reference_profit": "111712370000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "574163100000.0",
+      "profit": "50250438000.0",
+      "margin_percent": "8.751944874200379648221907677452630",
+      "reference_profit": "50250438000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "574163100000.0",
+      "profit": "61733700000.0",
+      "margin_percent": "10.75194487420037964822190767745263",
+      "reference_profit": "61733700000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "574163100000.0",
+      "profit": "73216962000.0",
+      "margin_percent": "12.75194487420037964822190767745263",
+      "reference_profit": "73216962000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "637959000000",
+      "profit": "55833820000",
+      "margin_percent": "8.751944874200379648221907677452630",
+      "reference_profit": "55833820000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "637959000000",
+      "profit": "68593000000",
+      "margin_percent": "10.75194487420037964822190767745263",
+      "reference_profit": "68593000000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "637959000000",
+      "profit": "81352180000",
+      "margin_percent": "12.75194487420037964822190767745263",
+      "reference_profit": "81352180000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "701754900000.0",
+      "profit": "61417202000.0",
+      "margin_percent": "8.751944874200379648221907677452630",
+      "reference_profit": "61417202000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "701754900000.0",
+      "profit": "75452300000.0",
+      "margin_percent": "10.75194487420037964822190767745263",
+      "reference_profit": "75452300000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "701754900000.0",
+      "profit": "89487398000.0",
+      "margin_percent": "12.75194487420037964822190767745263",
+      "reference_profit": "89487398000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "574163100000.0",
+      "profit": "41839938000.0",
+      "margin_percent": "7.287117197186653060776632981116341",
+      "reference_profit": "41839938000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "574163100000.0",
+      "profit": "53323200000.0",
+      "margin_percent": "9.287117197186653060776632981116341",
+      "reference_profit": "53323200000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "574163100000.0",
+      "profit": "64806462000.0",
+      "margin_percent": "11.28711719718665306077663298111634",
+      "reference_profit": "64806462000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "637959000000",
+      "profit": "46488820000",
+      "margin_percent": "7.287117197186653060776632981116341",
+      "reference_profit": "46488820000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "637959000000",
+      "profit": "59248000000",
+      "margin_percent": "9.287117197186653060776632981116341",
+      "reference_profit": "59248000000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "637959000000",
+      "profit": "72007180000",
+      "margin_percent": "11.28711719718665306077663298111634",
+      "reference_profit": "72007180000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "701754900000.0",
+      "profit": "51137702000.0",
+      "margin_percent": "7.287117197186653060776632981116341",
+      "reference_profit": "51137702000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "701754900000.0",
+      "profit": "65172800000.0",
+      "margin_percent": "9.287117197186653060776632981116341",
+      "reference_profit": "65172800000",
+      "correct": true
+    },
+    {
+      "company": "AMZN",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "701754900000.0",
+      "profit": "79207898000.0",
+      "margin_percent": "11.28711719718665306077663298111634",
+      "reference_profit": "79207898000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "315016200000.0",
+      "profit": "94850676000.0",
+      "margin_percent": "30.10977721145769646132484615076939",
+      "reference_profit": "94850676000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "315016200000.0",
+      "profit": "101151000000.0",
+      "margin_percent": "32.10977721145769646132484615076939",
+      "reference_profit": "101151000000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "315016200000.0",
+      "profit": "107451324000.0",
+      "margin_percent": "34.10977721145769646132484615076939",
+      "reference_profit": "107451324000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "350018000000",
+      "profit": "105389640000",
+      "margin_percent": "30.10977721145769646132484615076939",
+      "reference_profit": "105389640000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "350018000000",
+      "profit": "112390000000",
+      "margin_percent": "32.10977721145769646132484615076939",
+      "reference_profit": "112390000000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "350018000000",
+      "profit": "119390360000",
+      "margin_percent": "34.10977721145769646132484615076939",
+      "reference_profit": "119390360000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "385019800000.0",
+      "profit": "115928604000.0",
+      "margin_percent": "30.10977721145769646132484615076939",
+      "reference_profit": "115928604000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "385019800000.0",
+      "profit": "123629000000.0",
+      "margin_percent": "32.10977721145769646132484615076939",
+      "reference_profit": "123629000000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "385019800000.0",
+      "profit": "131329396000.0",
+      "margin_percent": "34.10977721145769646132484615076939",
+      "reference_profit": "131329396000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "315016200000.0",
+      "profit": "83805876000.0",
+      "margin_percent": "26.60367181116399728013987852053323",
+      "reference_profit": "83805876000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "315016200000.0",
+      "profit": "90106200000.0",
+      "margin_percent": "28.60367181116399728013987852053323",
+      "reference_profit": "90106200000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "315016200000.0",
+      "profit": "96406524000.0",
+      "margin_percent": "30.60367181116399728013987852053323",
+      "reference_profit": "96406524000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "350018000000",
+      "profit": "93117640000",
+      "margin_percent": "26.60367181116399728013987852053323",
+      "reference_profit": "93117640000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "350018000000",
+      "profit": "100118000000",
+      "margin_percent": "28.60367181116399728013987852053323",
+      "reference_profit": "100118000000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "350018000000",
+      "profit": "107118360000",
+      "margin_percent": "30.60367181116399728013987852053323",
+      "reference_profit": "107118360000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "385019800000.0",
+      "profit": "102429404000.0",
+      "margin_percent": "26.60367181116399728013987852053323",
+      "reference_profit": "102429404000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "385019800000.0",
+      "profit": "110129800000.0",
+      "margin_percent": "28.60367181116399728013987852053323",
+      "reference_profit": "110129800000",
+      "correct": true
+    },
+    {
+      "company": "GOOGL",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "385019800000.0",
+      "profit": "117830196000.0",
+      "margin_percent": "30.60367181116399728013987852053323",
+      "reference_profit": "117830196000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "148050900000.0",
+      "profit": "59480982000.0",
+      "margin_percent": "40.17603540404009702068680433553595",
+      "reference_profit": "59480982000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "148050900000.0",
+      "profit": "62442000000.0",
+      "margin_percent": "42.17603540404009702068680433553595",
+      "reference_profit": "62442000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "148050900000.0",
+      "profit": "65403018000.0",
+      "margin_percent": "44.17603540404009702068680433553595",
+      "reference_profit": "65403018000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "164501000000",
+      "profit": "66089980000",
+      "margin_percent": "40.17603540404009702068680433553595",
+      "reference_profit": "66089980000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "164501000000",
+      "profit": "69380000000",
+      "margin_percent": "42.17603540404009702068680433553595",
+      "reference_profit": "69380000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "164501000000",
+      "profit": "72670020000",
+      "margin_percent": "44.17603540404009702068680433553595",
+      "reference_profit": "72670020000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "180951100000.0",
+      "profit": "72698978000.0",
+      "margin_percent": "40.17603540404009702068680433553595",
+      "reference_profit": "72698978000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "180951100000.0",
+      "profit": "76318000000.0",
+      "margin_percent": "42.17603540404009702068680433553595",
+      "reference_profit": "76318000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "180951100000.0",
+      "profit": "79937022000.0",
+      "margin_percent": "44.17603540404009702068680433553595",
+      "reference_profit": "79937022000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "148050900000.0",
+      "profit": "53162982000.0",
+      "margin_percent": "35.90858414234563923623564598391499",
+      "reference_profit": "53162982000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "148050900000.0",
+      "profit": "56124000000.0",
+      "margin_percent": "37.90858414234563923623564598391499",
+      "reference_profit": "56124000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "148050900000.0",
+      "profit": "59085018000.0",
+      "margin_percent": "39.90858414234563923623564598391499",
+      "reference_profit": "59085018000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "164501000000",
+      "profit": "59069980000",
+      "margin_percent": "35.90858414234563923623564598391499",
+      "reference_profit": "59069980000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "164501000000",
+      "profit": "62360000000",
+      "margin_percent": "37.90858414234563923623564598391499",
+      "reference_profit": "62360000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "164501000000",
+      "profit": "65650020000",
+      "margin_percent": "39.90858414234563923623564598391499",
+      "reference_profit": "65650020000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "180951100000.0",
+      "profit": "64976978000.0",
+      "margin_percent": "35.90858414234563923623564598391499",
+      "reference_profit": "64976978000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "180951100000.0",
+      "profit": "68596000000.0",
+      "margin_percent": "37.90858414234563923623564598391499",
+      "reference_profit": "68596000000",
+      "correct": true
+    },
+    {
+      "company": "META",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "180951100000.0",
+      "profit": "72215022000.0",
+      "margin_percent": "39.90858414234563923623564598391499",
+      "reference_profit": "72215022000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "220609800000.0",
+      "profit": "94077504000.0",
+      "margin_percent": "42.64429957327371676144940070658692",
+      "reference_profit": "94077504000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "220609800000.0",
+      "profit": "98489700000.0",
+      "margin_percent": "44.64429957327371676144940070658692",
+      "reference_profit": "98489700000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "220609800000.0",
+      "profit": "102901896000.0",
+      "margin_percent": "46.64429957327371676144940070658692",
+      "reference_profit": "102901896000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "245122000000",
+      "profit": "104530560000",
+      "margin_percent": "42.64429957327371676144940070658692",
+      "reference_profit": "104530560000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "245122000000",
+      "profit": "109433000000",
+      "margin_percent": "44.64429957327371676144940070658692",
+      "reference_profit": "109433000000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "245122000000",
+      "profit": "114335440000",
+      "margin_percent": "46.64429957327371676144940070658692",
+      "reference_profit": "114335440000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "269634200000.0",
+      "profit": "114983616000.0",
+      "margin_percent": "42.64429957327371676144940070658692",
+      "reference_profit": "114983616000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "269634200000.0",
+      "profit": "120376300000.0",
+      "margin_percent": "44.64429957327371676144940070658692",
+      "reference_profit": "120376300000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "operating_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "269634200000.0",
+      "profit": "125768984000.0",
+      "margin_percent": "46.64429957327371676144940070658692",
+      "reference_profit": "125768984000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "220609800000.0",
+      "profit": "74910204000.0",
+      "margin_percent": "33.95597294408498625174402950367572",
+      "reference_profit": "74910204000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "0",
+      "revenue": "220609800000.0",
+      "profit": "79322400000.0",
+      "margin_percent": "35.95597294408498625174402950367572",
+      "reference_profit": "79322400000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "-10",
+      "margin_change_percentage_points": "2",
+      "revenue": "220609800000.0",
+      "profit": "83734596000.0",
+      "margin_percent": "37.95597294408498625174402950367572",
+      "reference_profit": "83734596000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "-2",
+      "revenue": "245122000000",
+      "profit": "83233560000",
+      "margin_percent": "33.95597294408498625174402950367572",
+      "reference_profit": "83233560000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "0",
+      "revenue": "245122000000",
+      "profit": "88136000000",
+      "margin_percent": "35.95597294408498625174402950367572",
+      "reference_profit": "88136000000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "0",
+      "margin_change_percentage_points": "2",
+      "revenue": "245122000000",
+      "profit": "93038440000",
+      "margin_percent": "37.95597294408498625174402950367572",
+      "reference_profit": "93038440000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "-2",
+      "revenue": "269634200000.0",
+      "profit": "91556916000.0",
+      "margin_percent": "33.95597294408498625174402950367572",
+      "reference_profit": "91556916000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "0",
+      "revenue": "269634200000.0",
+      "profit": "96949600000.0",
+      "margin_percent": "35.95597294408498625174402950367572",
+      "reference_profit": "96949600000",
+      "correct": true
+    },
+    {
+      "company": "MSFT",
+      "margin": "net_margin",
+      "revenue_change_percent": "10",
+      "margin_change_percentage_points": "2",
+      "revenue": "269634200000.0",
+      "profit": "102342284000.0",
+      "margin_percent": "37.95597294408498625174402950367572",
+      "reference_profit": "102342284000",
+      "correct": true
+    }
+  ],
+  "context": [
+    {
+      "id": "MSFT:profit",
+      "original_chars": 8906,
+      "encoded_chars": 8097,
+      "observation_rows": 6,
+      "lossless": true,
+      "instruction_overhead_chars": 258
+    },
+    {
+      "id": "AAPL:profit",
+      "original_chars": 10754,
+      "encoded_chars": 9937,
+      "observation_rows": 6,
+      "lossless": true,
+      "instruction_overhead_chars": 258
+    },
+    {
+      "id": "MSFT:risk",
+      "original_chars": 10267,
+      "encoded_chars": 10267,
+      "observation_rows": 0,
+      "lossless": true,
+      "instruction_overhead_chars": 0
+    },
+    {
+      "id": "AAPL:revenue",
+      "original_chars": 7914,
+      "encoded_chars": 7914,
+      "observation_rows": 0,
+      "lossless": true,
+      "instruction_overhead_chars": 0
+    }
+  ],
+  "recovery": [
+    {
+      "repeat": 0,
+      "enabled": false,
+      "executions": 5,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "enabled": true,
+      "executions": 3,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "enabled": false,
+      "executions": 5,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "enabled": true,
+      "executions": 3,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "enabled": false,
+      "executions": 5,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "enabled": true,
+      "executions": 3,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "enabled": false,
+      "executions": 5,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "enabled": true,
+      "executions": 3,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 4,
+      "enabled": false,
+      "executions": 5,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    },
+    {
+      "repeat": 4,
+      "enabled": true,
+      "executions": 3,
+      "result": [
+        {
+          "company": "MSFT",
+          "value": "245122000000"
+        },
+        {
+          "company": "AAPL",
+          "value": "391035000000"
+        },
+        {
+          "company": "GOOGL",
+          "value": "350018000000"
+        }
+      ]
+    }
+  ],
+  "concurrency": [
+    {
+      "repeat": 0,
+      "enabled": false,
+      "requests": 8,
+      "computations": 8,
+      "elapsed_seconds": 0.34546889999182895,
+      "cpu_seconds": 0.40625,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 0,
+      "enabled": true,
+      "requests": 8,
+      "computations": 1,
+      "elapsed_seconds": 0.06890460000431631,
+      "cpu_seconds": 0.03125,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 1,
+      "enabled": false,
+      "requests": 8,
+      "computations": 8,
+      "elapsed_seconds": 0.3528967000020202,
+      "cpu_seconds": 0.421875,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 1,
+      "enabled": true,
+      "requests": 8,
+      "computations": 1,
+      "elapsed_seconds": 0.05621689998952206,
+      "cpu_seconds": 0.03125,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 2,
+      "enabled": false,
+      "requests": 8,
+      "computations": 8,
+      "elapsed_seconds": 0.3248107999970671,
+      "cpu_seconds": 0.34375,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 2,
+      "enabled": true,
+      "requests": 8,
+      "computations": 1,
+      "elapsed_seconds": 0.06628270000510383,
+      "cpu_seconds": 0.109375,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 3,
+      "enabled": false,
+      "requests": 8,
+      "computations": 8,
+      "elapsed_seconds": 0.3767329999973299,
+      "cpu_seconds": 0.375,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 3,
+      "enabled": true,
+      "requests": 8,
+      "computations": 1,
+      "elapsed_seconds": 0.06724079999548849,
+      "cpu_seconds": 0.03125,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 4,
+      "enabled": false,
+      "requests": 8,
+      "computations": 8,
+      "elapsed_seconds": 0.3994348000123864,
+      "cpu_seconds": 0.4375,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    },
+    {
+      "repeat": 4,
+      "enabled": true,
+      "requests": 8,
+      "computations": 1,
+      "elapsed_seconds": 0.0779303000017535,
+      "cpu_seconds": 0.03125,
+      "result": {
+        "digest": "8dee1c58b3a9f1733a8d12d7724e8cb81037a68cacf8cadc06403ea17a208a55"
+      }
+    }
+  ]
+}

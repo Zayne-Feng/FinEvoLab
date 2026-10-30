@@ -1,0 +1,26 @@
+{
+  "model": "deepseek-flash",
+  "reviewer_contexts": 2,
+  "controls_passed": true,
+  "review_requests": 14,
+  "review_input_tokens": 67184,
+  "review_output_tokens": 5672,
+  "arms": {
+    "baseline": {
+      "tasks": 8,
+      "both_supported_and_complete": 4
+    },
+    "combined": {
+      "tasks": 8,
+      "both_supported_and_complete": 4
+    },
+    "methods": {
+      "tasks": 8,
+      "both_supported_and_complete": 5
+    },
+    "encoding": {
+      "tasks": 8,
+      "both_supported_and_complete": 4
+    }
+  }
+}

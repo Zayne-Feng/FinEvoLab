@@ -1,0 +1,2475 @@
+{
+  "version": "analysis_extensions_v1",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "source_signature": "3c486b626658017e314173f30b3cbafdda18853e944f57f228990904dbc628c7",
+  "source_controls": [
+    {
+      "id": "MSFT:single",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "single_source"
+    },
+    {
+      "id": "MSFT:corroborated",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "MSFT:same_filing",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "same_filing"
+    },
+    {
+      "id": "MSFT:period_end",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "MSFT:currency",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "EUR",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "MSFT:name",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "MSFT:company",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "OTHER",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "MSFT:fiscal_year",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "MSFT:scaled",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122",
+            "currency": "USD",
+            "unit": "USD_millions",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1000000",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "MSFT:rounding",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000.4",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "1",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "MSFT:conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "MSFT:restated",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "restated"
+    },
+    {
+      "id": "MSFT:same_filing_conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "MSFT:unit",
+      "observations": [
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "MSFT",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "245122000000",
+            "currency": "USD",
+            "unit": "unknown",
+            "period_start": "2023-07-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "9a794a03f299890a16d8dd3c",
+            "report_year": 2026,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:single",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "single_source"
+    },
+    {
+      "id": "AAPL:corroborated",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "AAPL:same_filing",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "same_filing"
+    },
+    {
+      "id": "AAPL:period_end",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:currency",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "EUR",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:name",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:company",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "OTHER",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:fiscal_year",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "AAPL:scaled",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035",
+            "currency": "USD",
+            "unit": "USD_millions",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1000000",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "AAPL:rounding",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000.4",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "1",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "AAPL:conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "AAPL:restated",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "restated"
+    },
+    {
+      "id": "AAPL:same_filing_conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "AAPL:unit",
+      "observations": [
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "AAPL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "391035000000",
+            "currency": "USD",
+            "unit": "unknown",
+            "period_start": "2023-10-01",
+            "period_end": "2024-09-28",
+            "period_kind": "annual_flow",
+            "evidence_id": "3a4cc27cbd17e4635166de5a",
+            "report_year": 2025,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:single",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "single_source"
+    },
+    {
+      "id": "GOOGL:corroborated",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "GOOGL:same_filing",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "same_filing"
+    },
+    {
+      "id": "GOOGL:period_end",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-06-30",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:currency",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "EUR",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:name",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "net_income",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:company",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "OTHER",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:fiscal_year",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2023,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    },
+    {
+      "id": "GOOGL:scaled",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018",
+            "currency": "USD",
+            "unit": "USD_millions",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1000000",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "GOOGL:rounding",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000.4",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "1",
+          "restated": false
+        }
+      ],
+      "expected": "corroborated"
+    },
+    {
+      "id": "GOOGL:conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "GOOGL:restated",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "restated"
+    },
+    {
+      "id": "GOOGL:same_filing_conflict",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018001000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "a",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": true
+        }
+      ],
+      "expected": "conflict"
+    },
+    {
+      "id": "GOOGL:unit",
+      "observations": [
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "USD",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "a",
+          "filing_id": "a",
+          "disclosed_on": "2024-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        },
+        {
+          "metric": {
+            "company": "GOOGL",
+            "name": "revenue",
+            "fiscal_year": 2024,
+            "value": "350018000000",
+            "currency": "USD",
+            "unit": "unknown",
+            "period_start": "2024-01-01",
+            "period_end": "2024-12-31",
+            "period_kind": "annual_flow",
+            "evidence_id": "bdf4bbf53f0eb3c5f6b3883e",
+            "report_year": 2024,
+            "extraction_method": "sec_companyfacts_annual_context"
+          },
+          "source_id": "b",
+          "filing_id": "b",
+          "disclosed_on": "2025-06-30",
+          "scale": "1",
+          "rounding_unit": "0",
+          "restated": false
+        }
+      ],
+      "expected": "not_comparable"
+    }
+  ],
+  "model_cases": [
+    {
+      "id": "MSFT:profit",
+      "question": "Explain how MSFT revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "plan": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "passages": [
+        {
+          "id": "b2a944d4eac50309ccbf6c53",
+          "source_sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+          "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "annual",
+          "section": "discussion-analysis",
+          "locator": "article#discussion-analysis|structured=62",
+          "kind": "table",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+          "body_text": "(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%",
+          "unit_context": {
+            "status": "verified",
+            "currency": "USD",
+            "scale": 6,
+            "multiplier": "1000000",
+            "method": "source_declaration",
+            "locator": "article#discussion-analysis|block=62|table-text",
+            "declarations": [
+              {
+                "locator": "article#discussion-analysis|block=62|table-text",
+                "text": "(In millions, except percentages and per share amounts) 2024 2023 Percentage Change Revenue $ 245,122 $ 211,915 16% Gross margin 171,008 146,052 17% Operating income 109,433 88,523 24% Net income 88,136 72,361 22% Diluted earnings per share 11.80 9.68 22% Adjusted gross margin (non-GAAP) 171,008 146,204 17% Adjusted operating income (non-GAAP) 109,433 89,694 22% Adjusted net income (non-GAAP) 88,136 73,307 20% Adjusted diluted earnings per share (non-GAAP) 11.80 9.81 20%"
+              }
+            ]
+          }
+        },
+        {
+          "id": "4a33ecdaf8dcab29e325d023",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=2313|part=0|strategy=structured",
+          "kind": "div",
+          "text": "MSFT FY2024 item-7\nGross margin increased $11.6 billion or 19% driven by growth in Azure. Gross margin percentage decreased slightly. Excluding the impact of the change in accounting estimate, gross margin percentage increased slightly primarily driven by improvement in Azure, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+          "body_text": "Gross margin increased $11.6 billion or 19% driven by growth in Azure. Gross margin percentage decreased slightly. Excluding the impact of the change in accounting estimate, gross margin percentage increased slightly primarily driven by improvement in Azure, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+          "score": 0.027629397679130595
+        },
+        {
+          "id": "94ef4881bd714f20965f81f4",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=2019|part=0|strategy=structured",
+          "kind": "div",
+          "text": "MSFT FY2024 item-7\nMicrosoft Cloud gross margin percentage decreased slightly to 71%. Excluding the impact of the change in accounting estimate, Microsoft Cloud gross margin percentage increased slightly driven by improvements in Azure and Office 365 Commercial, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+          "body_text": "Microsoft Cloud gross margin percentage decreased slightly to 71%. Excluding the impact of the change in accounting estimate, Microsoft Cloud gross margin percentage increased slightly driven by improvements in Azure and Office 365 Commercial, inclusive of scaling our AI infrastructure, offset in part by sales mix shift to Azure.",
+          "score": 0.026862026862026864
+        },
+        {
+          "id": "2296405b543779ce259d6378",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=2295|part=0|strategy=structured",
+          "kind": "div",
+          "text": "MSFT FY2024 item-7\nGross margin increased $6.5 billion or 12% driven by growth in Office 365 Commercial. Gross margin percentage decreased slightly. Excluding the impact of the change in accounting estimate, gross margin percentage increased slightly driven by improvement in Office 365 Commercial.",
+          "body_text": "Gross margin increased $6.5 billion or 12% driven by growth in Office 365 Commercial. Gross margin percentage decreased slightly. Excluding the impact of the change in accounting estimate, gross margin percentage increased slightly driven by improvement in Office 365 Commercial.",
+          "score": 0.025219941348973606
+        },
+        {
+          "id": "7f2a7222d820861018aa4775",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=2017|part=0|strategy=structured",
+          "kind": "div",
+          "text": "MSFT FY2024 item-7\nGross margin percentage increased slightly. Excluding the impact of the change in accounting estimate for the useful lives of our server and network equipment, gross margin percentage increased 2 points driven by improvement in More Personal Computing.",
+          "body_text": "Gross margin percentage increased slightly. Excluding the impact of the change in accounting estimate for the useful lives of our server and network equipment, gross margin percentage increased 2 points driven by improvement in More Personal Computing.",
+          "score": 0.025093353248693055
+        }
+      ]
+    },
+    {
+      "id": "AAPL:profit",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "plan": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue",
+          "operating_income",
+          "net_income"
+        ],
+        "topic": "profit",
+        "scope": "annual_fiscal"
+      },
+      "passages": [
+        {
+          "id": "622d4b6dd32e1d4f08ee00f9",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-8",
+          "locator": "dom-block=735|part=0|strategy=structured",
+          "kind": "table",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | ",
+          "unit_context": {
+            "status": "verified",
+            "currency": "USD",
+            "scale": 6,
+            "multiplier": "1000000",
+            "method": "inline_xbrl_table_facts",
+            "locator": "dom-block=735|ix:nonfraction",
+            "declarations": [
+              {
+                "locator": "dom-block=735|ix:nonfraction=0",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              },
+              {
+                "locator": "dom-block=735|ix:nonfraction=1",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              },
+              {
+                "locator": "dom-block=735|ix:nonfraction=2",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              }
+            ]
+          },
+          "body_text": " | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "d69ced14fc2939d437e1eaae",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=605|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nProducts gross margin and Products gross margin percentage increased during 2024 compared to 2023 due to cost savings, partially offset by a different Products mix and the weakness in foreign currencies relative to the U.S. dollar.",
+          "body_text": "Products gross margin and Products gross margin percentage increased during 2024 compared to 2023 due to cost savings, partially offset by a different Products mix and the weakness in foreign currencies relative to the U.S. dollar.",
+          "score": 0.03252247488101534
+        },
+        {
+          "id": "12cd7a09e4d23ab53cddde84",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-1a",
+          "locator": "dom-block=413|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-1a\nThe Company’s profit margins vary across its products, services, geographic segments and distribution channels. For example, the gross margins on the Company’s products and services vary significantly and can change over time. The Company’s gross margins are subject to volatility and downward pressure due to a variety of factors, including: continued industry-wide global product pricing pressures and product pricing actions that the Company may take in response to such pressures; increased competition; the Company’s ability to effectively stimulate demand for certain of its products and services; compressed product life cycles; supply shortages; potential increases in the cost of components, outside manufacturing services, and developing, acquiring and delivering content for the Company’s services; the Company’s ability to manage product quality and warranty costs effectively; shifts in the mix of products and services, or in the geographic, currency or channel mix, including to the extent that regulatory changes require the Company to modify its product and service offerings; fluctuations in foreign exchange rates; inflation and other macroeconomic pressures; and the introduction ",
+          "body_text": "The Company’s profit margins vary across its products, services, geographic segments and distribution channels. For example, the gross margins on the Company’s products and services vary significantly and can change over time. The Company’s gross margins are subject to volatility and downward pressure due to a variety of factors, including: continued industry-wide global product pricing pressures and product pricing actions that the Company may take in response to such pressures; increased competition; the Company’s ability to effectively stimulate demand for certain of its products and services; compressed product life cycles; supply shortages; potential increases in the cost of components, outside manufacturing services, and developing, acquiring and delivering content for the Company’s services; the Company’s ability to manage product quality and warranty costs effectively; shifts in the mix of products and services, or in the geographic, currency or channel mix, including to the extent that regulatory changes require the Company to modify its product and service offerings; fluctuations in foreign exchange rates; inflation and other macroeconomic pressures; and the introduction ",
+          "score": 0.026182294223531334
+        },
+        {
+          "id": "7c46bbebc5679fd1207f70fa",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=609|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nServices gross margin percentage increased during 2024 compared to 2023 due to a different Services mix.",
+          "body_text": "Services gross margin percentage increased during 2024 compared to 2023 due to a different Services mix.",
+          "score": 0.03200204813108039
+        },
+        {
+          "id": "543a23e42525b5425fd3de79",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=608|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nServices gross margin increased during 2024 compared to 2023 due primarily to higher Services net sales.",
+          "body_text": "Services gross margin increased during 2024 compared to 2023 due primarily to higher Services net sales.",
+          "score": 0.030679156908665108
+        }
+      ]
+    },
+    {
+      "id": "MSFT:risk",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "plan": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "MSFT"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "risk",
+        "scope": "annual_fiscal"
+      },
+      "passages": [
+        {
+          "id": "2a37ea7dc9cc781b4cc8a42b",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-1a",
+          "locator": "dom-block=1049|part=0|strategy=structured",
+          "kind": "p",
+          "text": "MSFT FY2024 item-1a\nRISKS RELATING TO THE EVOLUTION OF OUR BUSINESS",
+          "body_text": "RISKS RELATING TO THE EVOLUTION OF OUR BUSINESS",
+          "score": 0.03125
+        },
+        {
+          "id": "f04a1f230ee5ce9b40b17546",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "report",
+          "locator": "dom-block=535|part=0|strategy=structured",
+          "kind": "p",
+          "text": "MSFT FY2024 report\nThis report includes estimates, projections, statements relating to our business plans, objectives, and expected operating results that are “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995, Section 27A of the Securities Act of 1933, and Section 21E of the Securities Exchange Act of 1934. Forward-looking statements may appear throughout this report, including the following sections: “Business” (Part I, Item 1 of this Form 10-K), “Risk Factors” (Part I, Item 1A of this Form 10-K), and “Management’s Discussion and Analysis of Financial Condition and Results of Operations” (Part II, Item 7 of this Form 10-K). These forward-looking statements generally are identified by the words “believe,” “project,” “expect,” “anticipate,” “estimate,” “intend,” “strategy,” “future,” “opportunity,” “plan,” “may,” “should,” “will,” “would,” “will be,” “will continue,” “will likely result,” and similar expressions. Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties that may cause actual results to differ materially. We describe risks and uncertainties that could cause actual result",
+          "body_text": "This report includes estimates, projections, statements relating to our business plans, objectives, and expected operating results that are “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995, Section 27A of the Securities Act of 1933, and Section 21E of the Securities Exchange Act of 1934. Forward-looking statements may appear throughout this report, including the following sections: “Business” (Part I, Item 1 of this Form 10-K), “Risk Factors” (Part I, Item 1A of this Form 10-K), and “Management’s Discussion and Analysis of Financial Condition and Results of Operations” (Part II, Item 7 of this Form 10-K). These forward-looking statements generally are identified by the words “believe,” “project,” “expect,” “anticipate,” “estimate,” “intend,” “strategy,” “future,” “opportunity,” “plan,” “may,” “should,” “will,” “would,” “will be,” “will continue,” “will likely result,” and similar expressions. Forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties that may cause actual results to differ materially. We describe risks and uncertainties that could cause actual result",
+          "score": 0.030886196246139225
+        },
+        {
+          "id": "bed2da8aebf107a5fdebc13b",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-1c",
+          "locator": "dom-block=1232|part=0|strategy=structured",
+          "kind": "p",
+          "text": "MSFT FY2024 item-1c\nWe describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency.",
+          "body_text": "We describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency.",
+          "score": 0.030834914611005692
+        },
+        {
+          "id": "c147ab198ea526fbc6835b60",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-1a",
+          "locator": "dom-block=1129|part=0|strategy=structured",
+          "kind": "p",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+          "body_text": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations.",
+          "score": 0.03252247488101534
+        },
+        {
+          "id": "de98fe0a06783017966f3ef4",
+          "source_sha256": "38d8fd278c8cf54d64a383fb75145b8b1aabbb137a051935732b40420b1b7280",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+          "company": "MSFT",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-1a",
+          "locator": "dom-block=1199|part=1|strategy=structured",
+          "kind": "p",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+          "body_text": "r developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations.",
+          "score": 0.029957522915269395
+        }
+      ]
+    },
+    {
+      "id": "AAPL:revenue",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "plan": {
+        "intent": "explanation",
+        "numeric_intent": "metric",
+        "companies": [
+          "AAPL"
+        ],
+        "fiscal_year": 2024,
+        "report_year": 2024,
+        "metrics": [
+          "revenue"
+        ],
+        "topic": "revenue",
+        "scope": "annual_fiscal"
+      },
+      "passages": [
+        {
+          "id": "622d4b6dd32e1d4f08ee00f9",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-8",
+          "locator": "dom-block=735|part=0|strategy=structured",
+          "kind": "table",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | ",
+          "unit_context": {
+            "status": "verified",
+            "currency": "USD",
+            "scale": 6,
+            "multiplier": "1000000",
+            "method": "inline_xbrl_table_facts",
+            "locator": "dom-block=735|ix:nonfraction",
+            "declarations": [
+              {
+                "locator": "dom-block=735|ix:nonfraction=0",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              },
+              {
+                "locator": "dom-block=735|ix:nonfraction=1",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              },
+              {
+                "locator": "dom-block=735|ix:nonfraction=2",
+                "text": "unitRef=usd; scale=6; unit=USD"
+              }
+            ]
+          },
+          "body_text": " | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "19b03c3f3701422127377441",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=557|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nGreater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad. The weakness in the renminbi relative to the U.S. dollar had an unfavorable year-over-year impact on Greater China net sales during 2024.",
+          "body_text": "Greater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad. The weakness in the renminbi relative to the U.S. dollar had an unfavorable year-over-year impact on Greater China net sales during 2024.",
+          "score": 0.032266458495966696
+        },
+        {
+          "id": "1352ad9a7c46898f2e11a8ea",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=584|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\niPad net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPad Pro and the entry-level iPad models, partially offset by higher net sales of iPad Air.",
+          "body_text": "iPad net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPad Pro and the entry-level iPad models, partially offset by higher net sales of iPad Air.",
+          "score": 0.031754032258064516
+        },
+        {
+          "id": "804c59ff65162f57e89bacd3",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=563|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024.",
+          "body_text": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024.",
+          "score": 0.022285714285714284
+        },
+        {
+          "id": "f4338f0b9932cd37134c7746",
+          "source_sha256": "800a2f3398b83e2ebbd706407611d22328a8c5857426b9dec1a749e6ea841253",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+          "company": "AAPL",
+          "report_year": 2024,
+          "report_type": "10-K",
+          "section": "item-7",
+          "locator": "dom-block=560|part=0|strategy=structured",
+          "kind": "div",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024.",
+          "body_text": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024.",
+          "score": 0.020766488413547238
+        }
+      ]
+    }
+  ],
+  "repeats": 2,
+  "concurrency": 8,
+  "cold_repeats": 5,
+  "revenue_assumptions_percent": [
+    -10,
+    0,
+    10
+  ],
+  "margin_assumptions_percentage_points": [
+    -2,
+    0,
+    2
+  ]
+}

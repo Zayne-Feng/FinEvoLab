@@ -1,0 +1,460 @@
+{
+  "run_id": "analysis-extensions-release",
+  "model": "deepseek-flash",
+  "scope": "Four fixed questions with two repeats; descriptive engineering ablation",
+  "strict_definition": "Mechanical acceptance and support/completeness agreement in both calibrated review contexts",
+  "review_contexts": "Two isolated requests to the same model family",
+  "controls_passed": true,
+  "review_disagreements": 7,
+  "reviewed_answers": 27,
+  "arms": {
+    "baseline": {
+      "tasks": 8,
+      "mechanical_passed": 7,
+      "both_supported": 7,
+      "strict_passed": 4,
+      "strict_pair_wins": 0,
+      "strict_pair_losses": 0,
+      "cases": {
+        "MSFT:profit": {
+          "tasks": 2,
+          "strict_passed": 1
+        },
+        "AAPL:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "MSFT:risk": {
+          "tasks": 2,
+          "strict_passed": 2
+        },
+        "AAPL:revenue": {
+          "tasks": 2,
+          "strict_passed": 1
+        }
+      }
+    },
+    "encoding": {
+      "tasks": 8,
+      "mechanical_passed": 6,
+      "both_supported": 6,
+      "strict_passed": 4,
+      "strict_pair_wins": 1,
+      "strict_pair_losses": 1,
+      "cases": {
+        "MSFT:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "AAPL:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "MSFT:risk": {
+          "tasks": 2,
+          "strict_passed": 2
+        },
+        "AAPL:revenue": {
+          "tasks": 2,
+          "strict_passed": 2
+        }
+      }
+    },
+    "methods": {
+      "tasks": 8,
+      "mechanical_passed": 8,
+      "both_supported": 8,
+      "strict_passed": 5,
+      "strict_pair_wins": 2,
+      "strict_pair_losses": 1,
+      "cases": {
+        "MSFT:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "AAPL:profit": {
+          "tasks": 2,
+          "strict_passed": 1
+        },
+        "MSFT:risk": {
+          "tasks": 2,
+          "strict_passed": 2
+        },
+        "AAPL:revenue": {
+          "tasks": 2,
+          "strict_passed": 2
+        }
+      }
+    },
+    "combined": {
+      "tasks": 8,
+      "mechanical_passed": 6,
+      "both_supported": 6,
+      "strict_passed": 4,
+      "strict_pair_wins": 1,
+      "strict_pair_losses": 1,
+      "cases": {
+        "MSFT:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "AAPL:profit": {
+          "tasks": 2,
+          "strict_passed": 0
+        },
+        "MSFT:risk": {
+          "tasks": 2,
+          "strict_passed": 2
+        },
+        "AAPL:revenue": {
+          "tasks": 2,
+          "strict_passed": 2
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "combined",
+      "mechanical_passed": false,
+      "both_supported": false,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "baseline",
+      "mechanical_passed": false,
+      "both_supported": false,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "encoding",
+      "mechanical_passed": false,
+      "both_supported": false,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "combined",
+      "mechanical_passed": false,
+      "both_supported": false,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": true
+    },
+    {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "encoding",
+      "mechanical_passed": false,
+      "both_supported": false,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "baseline",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": false,
+      "strict_passed": false,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "combined",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "encoding",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    },
+    {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "methods",
+      "mechanical_passed": true,
+      "both_supported": true,
+      "both_complete": true,
+      "strict_passed": true,
+      "review_disagreement": false
+    }
+  ],
+  "analysis_usage": {
+    "requests": 32,
+    "input_tokens": 66132,
+    "output_tokens": 8660
+  },
+  "review_usage": {
+    "requests": 14,
+    "input_tokens": 67184,
+    "output_tokens": 5672
+  },
+  "failures": {
+    "A claim quote must be an exact source substring": 5
+  },
+  "input_sha256": "649b32dc404994f3169a191e628e65c242158f771a11b9084e8044facd1eecc5",
+  "source_patch_sha256": "c9a5807c728bb8484ff051c02d9049898287e14e05e34b87e9857a6f07f98234",
+  "artifact_sha256": {
+    "manifest.json": "330ee373e59a0d7c0ec8df6e5170919a3bca12a6aa4bb876be745486189875a3",
+    "model_records.json": "71f1caae6b7aa9b33019cc6de2468da634fbd1bea6cc830715a72b02c2b656e3",
+    "blind_samples.json": "392806aac17e2e20a8fcd76bffa348ac47d4689ba020e0bfc1c5eb1e0ce2bed5",
+    "blind_reviews.json": "9cf1c946595bf4054323a4721000cb84a41a57a40c54a19f9974f87f15095e9a"
+  },
+  "summarizer_sha256": "86bb93ec42ad2bdb32c3c0917c56b317e31c4434079af183b256d7e3b261f3ea"
+}

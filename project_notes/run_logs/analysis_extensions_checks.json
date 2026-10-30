@@ -1,0 +1,138 @@
+{
+  "run_id": "analysis_extensions_acceptance",
+  "scope": "local_engineering_reproduction_and_fixed_plan_model_comparison",
+  "status": "passed",
+  "code_commit": "1a2133673e62283921d1e53048cb171a7c28dff4",
+  "source_patch_sha256": "c9a5807c728bb8484ff051c02d9049898287e14e05e34b87e9857a6f07f98234",
+  "data_version": "7116bc0faf5c193476e02d9aeaa8cac3e3f68558c09bf4d3e744ed7b25c47a0c",
+  "source_signature": "3c486b626658017e314173f30b3cbafdda18853e944f57f228990904dbc628c7",
+  "configuration": {
+    "context_encoding": false,
+    "subtask_recovery": true,
+    "method_selection": false,
+    "source_reconciliation": true,
+    "singleflight": true
+  },
+  "unit_tests": {
+    "status": "passed",
+    "tests": 272,
+    "assessment_regressions": 6,
+    "elapsed_seconds": 32.637
+  },
+  "source_reproduction": {
+    "status": "passed",
+    "source_files": 56,
+    "source_patch_verified": true,
+    "newline_normalizations": [
+      "finevolab/scenarios.py",
+      "finevolab/agent.py",
+      "finevolab/subtasks.py",
+      "finevolab/grounded.py",
+      "finevolab/evaluation.py",
+      "finevolab/singleflight.py",
+      "finevolab/validation.py",
+      "scripts/benchmark_analysis_extensions.py",
+      "finevolab/derived.py",
+      "tests/test_derived.py",
+      "finevolab/templates/analysis.html"
+    ],
+    "replica_source_controls": 42,
+    "replica_scenario_checks": 90,
+    "external_model_calls": 0
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      {
+        "width": 1440,
+        "status": "passed",
+        "errors": []
+      },
+      {
+        "width": 390,
+        "status": "passed",
+        "errors": []
+      },
+      {
+        "local_page": true,
+        "language_switch": true
+      }
+    ]
+  },
+  "http": {
+    "status": "passed",
+    "source_status": "corroborated",
+    "scenario_points": 4,
+    "report_html": true,
+    "report_pdf": true,
+    "external_model_calls": 0
+  },
+  "protected_files_unchanged": 816,
+  "external_model_calls": 46,
+  "gpu_used": false,
+  "evidence": {
+    "manifest": "project_notes/experiments/analysis-extensions-release/manifest.json",
+    "results": "project_notes/experiments/analysis-extensions-release/summary.json"
+  },
+  "model_comparison": {
+    "run_id": "analysis-extensions-release",
+    "model": "deepseek-flash",
+    "thinking": "disabled",
+    "analysis_requests": 32,
+    "review_requests": 14,
+    "controls_passed": true,
+    "strict_passed": {
+      "baseline": 4,
+      "encoding": 4,
+      "methods": 5,
+      "combined": 4
+    },
+    "tasks_per_arm": 8,
+    "review_disagreements": 7,
+    "reviewed_answers": 27,
+    "analysis_usage": {
+      "requests": 32,
+      "input_tokens": 66132,
+      "output_tokens": 8660
+    },
+    "review_usage": {
+      "requests": 14,
+      "input_tokens": 67184,
+      "output_tokens": 5672
+    },
+    "assessment": "project_notes/experiments/analysis-extensions-release/assessment.json"
+  },
+  "publication_integrity": {
+    "frozen_source_files_unchanged": 56,
+    "protected_files_unchanged": 816,
+    "publication_files_scanned": 1209,
+    "credential_matches": 0,
+    "local_timestamp_matches": []
+  },
+  "distribution": {
+    "status": "passed",
+    "candidate_files": 1209,
+    "required_files_checked": 85,
+    "source_snapshots_verified": 31,
+    "business_frozen_files_verified": 3,
+    "readme_local_links_checked": 30
+  },
+  "readme_sync": {
+    "status": "passed",
+    "files": {
+      "README.md": "99a69c4a6b841e46a446fadb35f33f659b545b2acf195dcc14e767f599594489",
+      "README_CN.md": "674ae72ecc1cb9d28f422a254b6ba15a05c0e1878bb7a470a88da18e5b750f96"
+    },
+    "sections": 8,
+    "code_blocks": 18,
+    "evidence_links": 35,
+    "technical_identifiers": 88,
+    "language_links_per_file": 2
+  },
+  "git": {
+    "new_commits": 0,
+    "pushed": false,
+    "staged_files": 0,
+    "diff_check": "passed"
+  }
+}

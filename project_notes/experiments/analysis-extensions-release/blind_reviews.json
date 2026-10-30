@@ -1,0 +1,788 @@
+[
+  {
+    "reviewer": "A",
+    "batch": 0,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "f5f2c1e343b50470ce4f",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the supplied passages: total net sales rose from 383,285 to 391,035 (FY2023 to FY2024), and the Rest of Asia Pacific and Japan explanations are quoted verbatim from the report."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was attributed to the discovery of a new planet is unsupported; the evidence is only a financial table showing revenue growth and contains no such cause."
+      },
+      {
+        "id": "12cb24da18efccc9bd6b",
+        "supported": true,
+        "complete": true,
+        "reason": "Each risk statement is directly supported by the quoted passages on competition law/regulation, market disruptions, and foreign exchange fluctuations."
+      },
+      {
+        "id": "21bcf77450d0c2389255",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims accurately reflect the income statement figures and the verbatim segment explanations for Rest of Asia Pacific (Services) and Japan (iPhone)."
+      },
+      {
+        "id": "4cbb25906eb2f950a716",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims correctly state the total net sales increase and accurately paraphrase the disclosed primary drivers for Rest of Asia Pacific and Japan."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The cited quotation appears verbatim in the supplied passage."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 325,
+      "prompt_tokens": 5399,
+      "total_tokens": 5724,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 5399
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 1,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "c442b7c8dbffa7ee06c8",
+        "supported": true,
+        "complete": false,
+        "reason": "All three claims match the income statement figures (net sales 391,035 vs 383,285; operating income 123,216 vs 114,301; net income 93,736 vs 96,995). However, the question also asks to separate disclosed drivers from inference, and the answer provides no disclosed drivers or discussion of inference, so it is incomplete."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied MSFT passage, and the question only asks whether the quotation is present."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth is attributed to the discovery of a new planet is not supported by the evidence, which contains only a financial table with no causal explanation. The answer also fails to address the actual disclosed cause."
+      },
+      {
+        "id": "b018a534f7607623c8a5",
+        "supported": true,
+        "complete": true,
+        "reason": "The total net sales increase is supported by the income statement, and the Rest of Asia Pacific and Japan driver statements are directly supported by the quoted passages."
+      },
+      {
+        "id": "e263c2984ae3853b4ed3",
+        "supported": true,
+        "complete": false,
+        "reason": "The three metric changes are correctly supported by the income statement figures, but the answer omits the requested separation of disclosed drivers from inference, making it incomplete."
+      },
+      {
+        "id": "69230c6eeccaff342508",
+        "supported": true,
+        "complete": true,
+        "reason": "Each of the three risk statements is directly supported by the corresponding quoted passages from MSFT's FY2024 filing."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 382,
+      "prompt_tokens": 5250,
+      "total_tokens": 5632,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 5122
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 2,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "95824497d6eb2e23b414",
+        "supported": true,
+        "complete": false,
+        "reason": "All three directional claims match the income statement (net sales 391,035 vs 383,285; operating income 123,216 vs 114,301; net income 93,736 vs 96,995). However, the question asks to explain changes, cite exact passages, and separate disclosed drivers from inference; the answer only states directions and does not address drivers or inference."
+      },
+      {
+        "id": "105696c933f560f73434",
+        "supported": true,
+        "complete": false,
+        "reason": "Revenue, operating income, and net income increases are correctly supported by the table. But the question requests explanation, exact passages, and separation of disclosed drivers from inference; the answer only reports directions and omits drivers/inference discussion."
+      },
+      {
+        "id": "44f9175c1178d312a0ee",
+        "supported": true,
+        "complete": false,
+        "reason": "The directional claims are supported by the income statement figures. The answer is incomplete because it does not explain drivers or separate disclosed drivers from inference as requested."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied passage, and the answer directly addresses the verbatim-presence question."
+      },
+      {
+        "id": "496512ea0103cf5b27b3",
+        "supported": true,
+        "complete": false,
+        "reason": "The three directional claims are supported by the discussion-analysis table. The answer is incomplete because it does not explain drivers or separate disclosed drivers from inference as the question requires."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth is attributed to discovering a new planet is not supported by the evidence; the passage contains only financial table figures and no such cause. The answer also fails to address the actual disclosed cause."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 404,
+      "prompt_tokens": 4441,
+      "total_tokens": 4845,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4313
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 3,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted table text appears verbatim in the supplied passage, and the question about verbatim presence is fully answered."
+      },
+      {
+        "id": "a384b717727e4014c44a",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the income statement: total net sales 391,035 vs 383,285 (increase), operating income 123,216 vs 114,301 (increase), net income 93,736 vs 96,995 (decrease). The question asks for revenue, operating income, and net income changes with exact passages; all are addressed and supported."
+      },
+      {
+        "id": "acc4f42a6ec718275f5f",
+        "supported": true,
+        "complete": true,
+        "reason": "Total net sales increased (391,035 vs 383,285); Rest of Asia Pacific and Japan passages verbatim support the stated drivers. All claims follow from the evidence and address FY2024 revenue changes."
+      },
+      {
+        "id": "4e36380a203df81234a1",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are verbatim from the cited MSFT risk-factor passages and accurately describe disclosed risks."
+      },
+      {
+        "id": "6881b64d450714a92a24",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are verbatim from the cited passages (competition law, market disruptions, cybersecurity) and accurately describe disclosed risks."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was caused by discovery of a new planet is not supported by the evidence; the quoted table only shows revenue figures and percentage change, with no causal explanation."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 376,
+      "prompt_tokens": 5105,
+      "total_tokens": 5481,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4977
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 4,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "34b80973e6781a1533bb",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are directly supported by the quoted passages from the two item-1a excerpts, and the answer addresses the request for disclosed FY2024 business risks with exact passages."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was caused by discovery of a new planet is not supported by the evidence, which only shows a revenue table with no causal explanation. The answer also fails to address the requested cause."
+      },
+      {
+        "id": "5ae5fc0d649732b91ec1",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is directly supported by the quoted item-1a passages, and the answer covers disclosed FY2024 business risks with exact passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The cited quotation appears verbatim in the supplied passage, so the yes/no question is answered correctly."
+      },
+      {
+        "id": "751be1f84ee9d80ff6f4",
+        "supported": true,
+        "complete": true,
+        "reason": "The total net sales figures and the Rest of Asia Pacific and Japan explanations are directly supported by the quoted passages, and the answer addresses AAPL's FY2024 revenue changes with exact passages."
+      },
+      {
+        "id": "c26b6dc1f7b996c94ad8",
+        "supported": true,
+        "complete": true,
+        "reason": "The revenue, operating income, and net income changes are directly supported by the quoted table rows, and the answer cites exact passages while separating disclosed figures from inference."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 354,
+      "prompt_tokens": 4581,
+      "total_tokens": 4935,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4453
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 5,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "c8b6c143287f4c8ea7cf",
+        "supported": true,
+        "complete": false,
+        "reason": "All three directional claims (net sales up, operating income up, net income down) match the cited income statement figures. However, the question also asks to separate disclosed drivers from inference; the answer provides no disclosed drivers or inference discussion, so it is incomplete."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied passage, and the question only asks whether the quotation is present verbatim."
+      },
+      {
+        "id": "9a481bb4d074081c8d6c",
+        "supported": true,
+        "complete": true,
+        "reason": "Each of the three risk statements is directly supported by the corresponding verbatim passages on competition law, market disruptions, and cybersecurity threats."
+      },
+      {
+        "id": "2645b9af6e3250985886",
+        "supported": true,
+        "complete": false,
+        "reason": "The directional claims are supported by the income statement figures, but the answer omits the requested separation of disclosed drivers from inference, so it does not fully address the question."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth is attributed to the discovery of a new planet is not supported by the evidence, which only contains a financial table with no causal explanation."
+      },
+      {
+        "id": "f1f5b15f86e29c8c5140",
+        "supported": true,
+        "complete": false,
+        "reason": "The revenue, operating income, and net income increases are all supported by the cited table. However, the question also asks to separate disclosed drivers from inference, which the answer does not do, making it incomplete."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 372,
+      "prompt_tokens": 4749,
+      "total_tokens": 5121,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4621
+    }
+  },
+  {
+    "reviewer": "A",
+    "batch": 6,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The answer claims revenue growth was attributed to discovering a new planet, but the evidence only shows a revenue table with a 16% change and contains no such cause. The question asks what caused the revenue change, and the answer provides an unsupported cause rather than a supported explanation."
+      },
+      {
+        "id": "8a9980592c08a663684a",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the supplied AAPL income statement: total net sales rose from 383,285 to 391,035; Services rose from 85,200 to 96,169; Products declined from 298,085 to 294,866. The answer addresses FY2024 revenue changes with exact passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied MSFT passage, including the table header and revenue/gross margin/operating income lines. The question asks only whether the quotation is present verbatim, and it is."
+      },
+      {
+        "id": "7a1e2e1305be85d95dbb",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims match the AAPL income statement: total net sales increased (383,285 to 391,035), operating income increased (114,301 to 123,216), and net income decreased (96,995 to 93,736). The answer covers revenue, operating income, and net income with exact passages and does not assert unsupported drivers."
+      },
+      {
+        "id": "015ed53133422e50b2f8",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is directly supported by the cited MSFT risk-factor passages: competition law/regulatory actions reducing product attractiveness and revenue, market disruptions affecting demand/operations/costs, and the increasingly challenging cybersecurity threat environment. The answer describes disclosed risks with exact passages."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 419,
+      "prompt_tokens": 4067,
+      "total_tokens": 4486,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 3939
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 0,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The answer claims revenue growth was caused by the discovery of a new planet, but the evidence only provides revenue figures and percentages without any causal explanation. The quote does not support the claim, and the answer fails to address the question of what caused the revenue change."
+      },
+      {
+        "id": "c442b7c8dbffa7ee06c8",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are directly supported by the quoted income statement figures: total net sales increased (391,035 vs 383,285), operating income increased (123,216 vs 114,301), and net income decreased (93,736 vs 96,995). The answer addresses revenue, operating income, and net income changes, and cites exact passages without adding inference."
+      },
+      {
+        "id": "f5f2c1e343b50470ce4f",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims are supported by the provided evidence: total net sales increased per the income statement, and the regional drivers (Rest of Asia Pacific and Japan) are quoted verbatim from the passages. The answer explains revenue changes using exact annual-report passages."
+      },
+      {
+        "id": "a384b717727e4014c44a",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims accurately reflect the quoted income statement figures: total net sales increased, operating income increased, and net income decreased. The answer addresses all three metrics and cites exact passages."
+      },
+      {
+        "id": "751be1f84ee9d80ff6f4",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims are supported by the evidence: total net sales increased per the income statement, and the regional drivers are quoted verbatim. The answer explains revenue changes using exact annual-report passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The cited quotation is present verbatim in the supplied passage, as confirmed by direct comparison. The answer correctly addresses the question."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 516,
+      "prompt_tokens": 5512,
+      "total_tokens": 6028,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 5000
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 1,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "105696c933f560f73434",
+        "supported": true,
+        "complete": false,
+        "reason": "All three claims (revenue, operating income, net income increased in FY2024 vs FY2023) are directly supported by the discussion-analysis table. However, the question also asks to cite exact annual-report passages and separate disclosed drivers from inference; the answer provides no disclosed drivers and does not distinguish drivers from inference, so it is incomplete."
+      },
+      {
+        "id": "12cb24da18efccc9bd6b",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is a faithful paraphrase of the quoted passages: competition law/regulations reducing product attractiveness and revenue; market disruptions impacting demand, operations, or costs; and FX fluctuations adversely affecting results despite partial hedging. All three claims are supported and the answer addresses the request for disclosed risks with exact passages."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth is attributed to the discovery of a new planet is not supported by the evidence, which only contains a financial table with no causal explanation. The answer also fails to provide any actual disclosed cause of the revenue change."
+      },
+      {
+        "id": "95824497d6eb2e23b414",
+        "supported": true,
+        "complete": false,
+        "reason": "The three claims are supported by the income statement: total net sales rose from 383,285 to 391,035; operating income rose from 114,301 to 123,216; net income fell from 96,995 to 93,736. However, the question asks to separate disclosed drivers from inference, and the answer provides no drivers or inference discussion, so it is incomplete."
+      },
+      {
+        "id": "69230c6eeccaff342508",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match their quoted passages: competition law/regulations reducing attractiveness and revenue; market disruptions impacting demand, operations, or costs; and the increasingly challenging cybersecurity threat environment. The answer is supported and addresses the request for disclosed risks with exact passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied passage (the discussion-analysis table), so the claim that the quotation is present verbatim is supported and complete."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 487,
+      "prompt_tokens": 4480,
+      "total_tokens": 4967,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4352
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 2,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "5ae5fc0d649732b91ec1",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are directly supported by the two MSFT FY2024 item-1a passages, with quotes matching the evidence. The answer addresses disclosed business risks with exact passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted table text appears verbatim in the supplied passage, so the claim that the quotation is present verbatim is supported and complete."
+      },
+      {
+        "id": "f1f5b15f86e29c8c5140",
+        "supported": true,
+        "complete": true,
+        "reason": "Revenue, operating income, and net income figures and percentage changes are directly quoted from the discussion-analysis table; the answer reports changes without unsupported causal inference."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was attributed to discovery of a new planet is not supported by the evidence, which contains only a financial table with no causal explanation. The question asks for the cause, which the evidence does not provide."
+      },
+      {
+        "id": "4cbb25906eb2f950a716",
+        "supported": true,
+        "complete": true,
+        "reason": "Total net sales increase is supported by the income statement, and the Rest of Asia Pacific and Japan drivers are directly quoted from item-7 passages."
+      },
+      {
+        "id": "21bcf77450d0c2389255",
+        "supported": true,
+        "complete": true,
+        "reason": "Same as the prior AAPL answer: total net sales and segment drivers are directly supported by the cited passages."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 348,
+      "prompt_tokens": 5002,
+      "total_tokens": 5350,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4874
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 3,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "496512ea0103cf5b27b3",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the FY2024 vs FY2023 figures in the discussion-analysis table (revenue 245,122 vs 211,915; operating income 109,433 vs 88,523; net income 88,136 vs 72,361), and the answer addresses all requested metrics. It does not separate disclosed drivers from inference, but the evidence contains no drivers, so no unsupported causal claims are made."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth is attributed to the discovery of a new planet is not supported by the evidence; the quoted table only shows revenue figures and percentage change, with no causal driver. The question asks for the cause, which the evidence does not provide."
+      },
+      {
+        "id": "c26b6dc1f7b996c94ad8",
+        "supported": true,
+        "complete": true,
+        "reason": "The three claims accurately reflect the table: revenue rose from 211,915 to 245,122, operating income from 88,523 to 109,433, and net income from 72,361 to 88,136. All requested metrics are covered. The answer does not separate disclosed drivers from inference, but no drivers are present in the evidence, so no unsupported causal assertions are made."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied passage, including the header line and the revenue, gross margin, and partial operating income rows."
+      },
+      {
+        "id": "e263c2984ae3853b4ed3",
+        "supported": true,
+        "complete": true,
+        "reason": "The claims match the AAPL income statement: total net sales 391,035 vs 383,285 (increase), operating income 123,216 vs 114,301 (increase), and net income 93,736 vs 96,995 (decrease). All requested metrics are addressed. No drivers are asserted, consistent with the evidence."
+      },
+      {
+        "id": "34b80973e6781a1533bb",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is directly supported by the cited passages: competition law/regulatory fines and reduced revenue, market disruptions affecting demand and costs, and foreign exchange fluctuations adversely affecting results despite hedging. The answer describes the disclosed risks as requested."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 522,
+      "prompt_tokens": 4172,
+      "total_tokens": 4694,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4044
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 4,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "8a9980592c08a663684a",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the cited income statement figures: total net sales 391,035 vs 383,285 (increase), Services 96,169 vs 85,200 (increase), Products 294,866 vs 298,085 (decline). The answer addresses FY2024 revenue changes with exact passages."
+      },
+      {
+        "id": "9a481bb4d074081c8d6c",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is directly supported by the quoted passages on competition law/regulations, market disruptions, and cybersecurity threats. The answer describes MSFT's disclosed FY2024 business risks with exact passages."
+      },
+      {
+        "id": "015ed53133422e50b2f8",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are verbatim-supported by the cited passages on competition law, market disruptions, and cybersecurity threats, fully addressing the question."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was caused by discovery of a new planet is not supported by the evidence, which only shows revenue figures and percentage changes with no causal explanation. The answer does not address the actual cause."
+      },
+      {
+        "id": "acc4f42a6ec718275f5f",
+        "supported": true,
+        "complete": true,
+        "reason": "Total net sales increase is supported by the income statement figures; Rest of Asia Pacific and Japan increases and their drivers (Services, iPhone) are directly quoted from the passages. All claims follow from evidence."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied passage, so the claim is accurate and the question is fully answered."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 391,
+      "prompt_tokens": 5165,
+      "total_tokens": 5556,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 5037
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 5,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "7a1e2e1305be85d95dbb",
+        "supported": true,
+        "complete": false,
+        "reason": "All three numeric claims match the AAPL income statement (net sales 391,035 vs 383,285; operating income 123,216 vs 114,301; net income 93,736 vs 96,995). However, the question also asks to separate disclosed drivers from inference, and the answer provides no driver discussion or inference labeling, so it is incomplete."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The claim that revenue growth was attributed to discovering a new planet is not supported by the evidence, which only shows a revenue table with no causal explanation. The answer also fails to address the actual cause of the disclosed revenue change."
+      },
+      {
+        "id": "44f9175c1178d312a0ee",
+        "supported": true,
+        "complete": false,
+        "reason": "The three numeric claims are supported by the AAPL income statement figures. But the question requires separating disclosed drivers from inference, which the answer does not do, so it is incomplete."
+      },
+      {
+        "id": "4e36380a203df81234a1",
+        "supported": true,
+        "complete": true,
+        "reason": "Each claim is a verbatim-supported risk disclosure from the MSFT passages (competition law/regulations, market disruptions, and FX fluctuations with hedging), and the answer addresses the request for disclosed business risks with exact passages."
+      },
+      {
+        "id": "6881b64d450714a92a24",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims are directly supported by the cited MSFT passages, including the cybersecurity risk statement, and the answer describes disclosed FY2024 business risks with exact report passages."
+      },
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted text appears verbatim in the supplied control-source passage, so the verbatim-presence question is answered correctly."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 417,
+      "prompt_tokens": 4934,
+      "total_tokens": 5351,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4806
+    }
+  },
+  {
+    "reviewer": "B",
+    "batch": 6,
+    "model": "deepseek-flash",
+    "context_isolation": "separate_request_same_model",
+    "controls_passed": true,
+    "decisions": [
+      {
+        "id": "3af51b719ed89831d314",
+        "supported": true,
+        "complete": true,
+        "reason": "The quoted table text appears verbatim in the supplied passage, so the claim that the quotation is present verbatim is supported and the question is fully answered."
+      },
+      {
+        "id": "b018a534f7607623c8a5",
+        "supported": true,
+        "complete": true,
+        "reason": "All three claims match the cited passages: total net sales rose from 383,285 to 391,035; Rest of Asia Pacific increase attributed primarily to Services; Japan increase attributed primarily to iPhone. The question asks for revenue changes with exact passages, which is addressed."
+      },
+      {
+        "id": "c8b6c143287f4c8ea7cf",
+        "supported": true,
+        "complete": true,
+        "reason": "The income statement shows total net sales 391,035 vs 383,285 (increase), operating income 123,216 vs 114,301 (increase), and net income 93,736 vs 96,995 (decrease). All three metrics requested are covered and the claims follow from the evidence."
+      },
+      {
+        "id": "2645b9af6e3250985886",
+        "supported": true,
+        "complete": true,
+        "reason": "Same as the prior item: the cited income statement supports the revenue increase, operating income increase, and net income decrease, covering all requested metrics."
+      },
+      {
+        "id": "71706949c2ee2d221039",
+        "supported": false,
+        "complete": false,
+        "reason": "The evidence is a financial table showing revenue figures and percentage changes; it contains no statement attributing revenue growth to the discovery of a new planet. The causal claim is unsupported, and the question about the cause of the revenue change is not answered."
+      }
+    ],
+    "usage": {
+      "completion_tokens": 359,
+      "prompt_tokens": 4327,
+      "total_tokens": 4686,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3815
+    }
+  }
+]

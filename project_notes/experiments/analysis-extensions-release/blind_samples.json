@@ -1,0 +1,1141 @@
+{
+  "samples": [
+    {
+      "id": "c26b6dc1f7b996c94ad8",
+      "question": "Explain how MSFT revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Revenue | $ 245,122 | $ 211,915 | 16%"
+          },
+          {
+            "statement": "MSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Operating income | 109,433 | 88,523 | 24%"
+          },
+          {
+            "statement": "MSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Net income | 88,136 | 72,361 | 22%"
+          }
+        ],
+        "answer": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table."
+      },
+      "evidence": [
+        {
+          "id": "passage:b2a944d4eac50309ccbf6c53",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ]
+    },
+    {
+      "id": "e263c2984ae3853b4ed3",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "Total net sales increased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "Operating income increased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "Net income decreased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "Total net sales increased in FY2024 compared with FY2023, as shown in the consolidated income statement.\nOperating income increased in FY2024 compared with FY2023, as shown in the consolidated income statement.\nNet income decreased in FY2024 compared with FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "b018a534f7607623c8a5",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated net sales table.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "For Rest of Asia Pacific, higher Services net sales were the disclosed primary driver of the segment's net sales increase in 2024.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "For Japan, higher iPhone net sales were the disclosed primary driver of the segment's net sales increase in 2024.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated net sales table.\nFor Rest of Asia Pacific, higher Services net sales were the disclosed primary driver of the segment's net sales increase in 2024.\nFor Japan, higher iPhone net sales were the disclosed primary driver of the segment's net sales increase in 2024."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "5ae5fc0d649732b91ec1",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and related revenue.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that the outcome of competition law actions, or steps taken to avoid them, could adversely affect the business, financial condition, and results of operations in a variety of ways.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+          },
+          {
+            "statement": "MSFT discloses that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs, and that significant foreign exchange rate fluctuations may adversely affect results of operations.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and related revenue.\nMSFT states that the outcome of competition law actions, or steps taken to avoid them, could adversely affect the business, financial condition, and results of operations in a variety of ways.\nMSFT discloses that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs, and that significant foreign exchange rate fluctuations may adversely affect results of operations."
+      },
+      "evidence": [
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "105696c933f560f73434",
+      "question": "Explain how MSFT revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Revenue | $ 245,122 | $ 211,915 | 16%"
+          },
+          {
+            "statement": "MSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Operating income | 109,433 | 88,523 | 24%"
+          },
+          {
+            "statement": "MSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Net income | 88,136 | 72,361 | 22%"
+          }
+        ],
+        "answer": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table."
+      },
+      "evidence": [
+        {
+          "id": "passage:b2a944d4eac50309ccbf6c53",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ]
+    },
+    {
+      "id": "f1f5b15f86e29c8c5140",
+      "question": "Explain how MSFT revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Revenue | $ 245,122 | $ 211,915 | 16%"
+          },
+          {
+            "statement": "MSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Operating income | 109,433 | 88,523 | 24%"
+          },
+          {
+            "statement": "MSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Net income | 88,136 | 72,361 | 22%"
+          }
+        ],
+        "answer": "MSFT's consolidated revenue increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated operating income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table.\nMSFT's consolidated net income increased in FY2024 compared with FY2023, as shown in the discussion-analysis table."
+      },
+      "evidence": [
+        {
+          "id": "passage:b2a944d4eac50309ccbf6c53",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ]
+    },
+    {
+      "id": "a384b717727e4014c44a",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "AAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "34b80973e6781a1533bb",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT notes that significant foreign exchange rate fluctuations may adversely affect its results of operations, though it hedges a portion of its international currency exposure.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.\nMSFT notes that significant foreign exchange rate fluctuations may adversely affect its results of operations, though it hedges a portion of its international currency exposure."
+      },
+      "evidence": [
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "751be1f84ee9d80ff6f4",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL disclosed that Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "AAPL disclosed that Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL disclosed that Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services.\nAAPL disclosed that Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "7a1e2e1305be85d95dbb",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "AAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "4cbb25906eb2f950a716",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "For Rest of Asia Pacific, higher Services net sales were the disclosed primary driver of the segment's net sales increase in 2024.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "For Japan, higher iPhone net sales were the disclosed primary driver of the segment's net sales increase in 2024.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nFor Rest of Asia Pacific, higher Services net sales were the disclosed primary driver of the segment's net sales increase in 2024.\nFor Japan, higher iPhone net sales were the disclosed primary driver of the segment's net sales increase in 2024."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "c8b6c143287f4c8ea7cf",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "AAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "acc4f42a6ec718275f5f",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's Rest of Asia Pacific net sales increased in FY2024 compared to FY2023, driven primarily by higher Services net sales.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "AAPL's Japan net sales increased in FY2024 compared to FY2023, driven primarily by higher iPhone net sales.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's Rest of Asia Pacific net sales increased in FY2024 compared to FY2023, driven primarily by higher Services net sales.\nAAPL's Japan net sales increased in FY2024 compared to FY2023, driven primarily by higher iPhone net sales."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "8a9980592c08a663684a",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's Services net sales rose in FY2024 relative to FY2023 according to the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Services | 96,169 |  |  | 85,200 |  |  | 78,129"
+          },
+          {
+            "statement": "AAPL's Products net sales declined in FY2024 compared to FY2023 per the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Products | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's Services net sales rose in FY2024 relative to FY2023 according to the consolidated income statement.\nAAPL's Products net sales declined in FY2024 compared to FY2023 per the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "c442b7c8dbffa7ee06c8",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "Total net sales increased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "Operating income increased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "Net income decreased in FY2024 compared with FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "Total net sales increased in FY2024 compared with FY2023, as shown in the consolidated income statement.\nOperating income increased in FY2024 compared with FY2023, as shown in the consolidated income statement.\nNet income decreased in FY2024 compared with FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "496512ea0103cf5b27b3",
+      "question": "Explain how MSFT revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT's revenue increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Revenue | $ 245,122 | $ 211,915 | 16%"
+          },
+          {
+            "statement": "MSFT's operating income increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Operating income | 109,433 | 88,523 | 24%"
+          },
+          {
+            "statement": "MSFT's net income increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table.",
+            "chunk_id": "passage:b2a944d4eac50309ccbf6c53",
+            "quote": "Net income | 88,136 | 72,361 | 22%"
+          }
+        ],
+        "answer": "MSFT's revenue increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table.\nMSFT's operating income increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table.\nMSFT's net income increased in FY2024 compared with FY2023, as shown in the consolidated discussion-analysis table."
+      },
+      "evidence": [
+        {
+          "id": "passage:b2a944d4eac50309ccbf6c53",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ]
+    },
+    {
+      "id": "015ed53133422e50b2f8",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations could reduce the attractiveness of its products and the revenue derived from them.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT discloses that the cybersecurity threat environment is increasingly challenging and that it, along with the entire digital ecosystem, is under constant and increasing threat.",
+            "chunk_id": "passage:bed2da8aebf107a5fdebc13b",
+            "quote": "However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations could reduce the attractiveness of its products and the revenue derived from them.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.\nMSFT discloses that the cybersecurity threat environment is increasingly challenging and that it, along with the entire digital ecosystem, is under constant and increasing threat."
+      },
+      "evidence": [
+        {
+          "id": "passage:bed2da8aebf107a5fdebc13b",
+          "text": "MSFT FY2024 item-1c\nWe describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency."
+        },
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "2645b9af6e3250985886",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "AAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "f5f2c1e343b50470ce4f",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL disclosed that Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "AAPL disclosed that Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL disclosed that Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services.\nAAPL disclosed that Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "44f9175c1178d312a0ee",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "Total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "Operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "Net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "Total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nOperating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nNet income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "69230c6eeccaff342508",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand for its products and services, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT discloses that the cybersecurity threat environment is increasingly challenging and that it, along with the entire digital ecosystem, is under constant and increasing threat.",
+            "chunk_id": "passage:bed2da8aebf107a5fdebc13b",
+            "quote": "However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand for its products and services, impair its ability to operate in certain regions, or increase operating costs.\nMSFT discloses that the cybersecurity threat environment is increasingly challenging and that it, along with the entire digital ecosystem, is under constant and increasing threat."
+      },
+      "evidence": [
+        {
+          "id": "passage:bed2da8aebf107a5fdebc13b",
+          "text": "MSFT FY2024 item-1c\nWe describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency."
+        },
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "95824497d6eb2e23b414",
+      "question": "Explain how AAPL revenue, operating income and net income changed in FY2024; cite exact annual-report passages and separate disclosed drivers from inference.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Operating income | 123,216 |  |  | 114,301 |  |  | 119,437"
+          },
+          {
+            "statement": "AAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Net income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803"
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's operating income increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's net income decreased in FY2024 compared to FY2023, as shown in the consolidated income statement."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        }
+      ]
+    },
+    {
+      "id": "21bcf77450d0c2389255",
+      "question": "Explain AAPL's FY2024 revenue changes using exact annual-report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.",
+            "chunk_id": "passage:622d4b6dd32e1d4f08ee00f9",
+            "quote": "Total net sales | 391,035 |  |  | 383,285 |  |  | 394,328"
+          },
+          {
+            "statement": "AAPL's Rest of Asia Pacific net sales increased in FY2024 compared to FY2023, driven primarily by higher Services net sales.",
+            "chunk_id": "passage:804c59ff65162f57e89bacd3",
+            "quote": "Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services."
+          },
+          {
+            "statement": "AAPL's Japan net sales increased in FY2024 compared to FY2023, driven primarily by higher iPhone net sales.",
+            "chunk_id": "passage:f4338f0b9932cd37134c7746",
+            "quote": "Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone."
+          }
+        ],
+        "answer": "AAPL's total net sales increased in FY2024 compared to FY2023, as shown in the consolidated income statement.\nAAPL's Rest of Asia Pacific net sales increased in FY2024 compared to FY2023, driven primarily by higher Services net sales.\nAAPL's Japan net sales increased in FY2024 compared to FY2023, driven primarily by higher iPhone net sales."
+      },
+      "evidence": [
+        {
+          "id": "passage:622d4b6dd32e1d4f08ee00f9",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=dom-block=735|ix:nonfraction. Per-share and nonmonetary measures retain their own units.\nAAPL FY2024 item-8\n | Years ended\n | September 28, 2024 |  | September 30, 2023 |  | September 24, 2022\nNet sales: |  |  |  |  | \nProducts | $ | 294,866 |  |  | $ | 298,085 |  |  | $ | 316,199 | \nServices | 96,169 |  |  | 85,200 |  |  | 78,129 | \nTotal net sales | 391,035 |  |  | 383,285 |  |  | 394,328 | \nCost of sales: |  |  |  |  | \nProducts | 185,233 |  |  | 189,282 |  |  | 201,471 | \nServices | 25,119 |  |  | 24,855 |  |  | 22,075 | \nTotal cost of sales | 210,352 |  |  | 214,137 |  |  | 223,546 | \nGross margin | 180,683 |  |  | 169,148 |  |  | 170,782 | \nOperating expenses: |  |  |  |  | \nResearch and development | 31,370 |  |  | 29,915 |  |  | 26,251 | \nSelling, general and administrative | 26,097 |  |  | 24,932 |  |  | 25,094 | \nTotal operating expenses | 57,467 |  |  | 54,847 |  |  | 51,345 | \nOperating income | 123,216 |  |  | 114,301 |  |  | 119,437 | \nOther income/(expense), net | 269 |  |  | ( 565 ) |  |  | ( 334 ) | \nIncome before provision for income taxes | 123,485 |  |  | 113,736 |  |  | 119,103 | \nProvision for income taxes | 29,749 |  |  | 16,741 |  |  | 19,300 | \nNet income | $ | 93,736 |  |  | $ | 96,995 |  |  | $ | 99,803 | \nEarnings per share: |  |  |  |  | "
+        },
+        {
+          "id": "passage:804c59ff65162f57e89bacd3",
+          "text": "AAPL FY2024 item-7\nRest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024."
+        },
+        {
+          "id": "passage:f4338f0b9932cd37134c7746",
+          "text": "AAPL FY2024 item-7\nJapan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024."
+        }
+      ]
+    },
+    {
+      "id": "6881b64d450714a92a24",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "The report states that competition law enforcement actions and court decisions, along with new market regulations, may result in fines or hinder the company's ability to provide the benefits of its software, reducing product attractiveness and revenue.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "The report states that disruptions in developed or emerging markets could negatively impact demand for products and services, impair the ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "The report states that although the company does not believe cybersecurity risks have materially affected it as of the report date, the cybersecurity threat environment is increasingly challenging and the company is under constant and increasing threat.",
+            "chunk_id": "passage:bed2da8aebf107a5fdebc13b",
+            "quote": "As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat."
+          }
+        ],
+        "answer": "The report states that competition law enforcement actions and court decisions, along with new market regulations, may result in fines or hinder the company's ability to provide the benefits of its software, reducing product attractiveness and revenue.\nThe report states that disruptions in developed or emerging markets could negatively impact demand for products and services, impair the ability to operate in certain regions, or increase operating costs.\nThe report states that although the company does not believe cybersecurity risks have materially affected it as of the report date, the cybersecurity threat environment is increasingly challenging and the company is under constant and increasing threat."
+      },
+      "evidence": [
+        {
+          "id": "passage:bed2da8aebf107a5fdebc13b",
+          "text": "MSFT FY2024 item-1c\nWe describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency."
+        },
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "9a481bb4d074081c8d6c",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT describes the cybersecurity threat environment as increasingly challenging, with the company and the entire digital ecosystem under constant and increasing threat.",
+            "chunk_id": "passage:bed2da8aebf107a5fdebc13b",
+            "quote": "However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.\nMSFT describes the cybersecurity threat environment as increasingly challenging, with the company and the entire digital ecosystem under constant and increasing threat."
+      },
+      "evidence": [
+        {
+          "id": "passage:bed2da8aebf107a5fdebc13b",
+          "text": "MSFT FY2024 item-1c\nWe describe the risks from cybersecurity threats, including previous cybersecurity incidents, in section “Risk Factors” (Part I, Item 1A of this Form 10-K). As of the date of this Form 10-K, we do not believe any risks from cybersecurity threats have materially affected or are reasonably likely to materially affect us, including our results of operations or financial condition. However, the cybersecurity threat environment is increasingly challenging, and we, along with the entire digital ecosystem, are under constant and increasing threat. As discussed above, our business strategy is tied to the SFI and we are committed to continuously monitoring cybersecurity threats, enhancing the security of our products, investing in our cybersecurity infrastructure, and collaborating with peers, customers, service providers, regulators, and governments to advance our and the entire digital ecosystem’s cybersecurity defenses and resiliency."
+        },
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "4e36380a203df81234a1",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT discloses that significant foreign exchange rate fluctuations between the U.S. dollar and foreign currencies may adversely affect its results of operations despite hedging a portion of its international currency exposure.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may reduce the attractiveness of its products and the revenue derived from them.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.\nMSFT discloses that significant foreign exchange rate fluctuations between the U.S. dollar and foreign currencies may adversely affect its results of operations despite hedging a portion of its international currency exposure."
+      },
+      "evidence": [
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    },
+    {
+      "id": "12cb24da18efccc9bd6b",
+      "question": "Describe MSFT's disclosed FY2024 business risks with exact report passages.",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.",
+            "chunk_id": "passage:c147ab198ea526fbc6835b60",
+            "quote": "Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them."
+          },
+          {
+            "statement": "MSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs."
+          },
+          {
+            "statement": "MSFT notes that significant foreign exchange rate fluctuations may adversely affect its results of operations, though it hedges a portion of its international currency exposure.",
+            "chunk_id": "passage:de98fe0a06783017966f3ef4",
+            "quote": "Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+          }
+        ],
+        "answer": "MSFT discloses that competition law enforcement actions and new market regulations may result in fines or hinder its ability to provide software benefits, reducing product attractiveness and revenue.\nMSFT states that disruptions in developed or emerging markets could negatively impact demand, impair its ability to operate in certain regions, or increase operating costs.\nMSFT notes that significant foreign exchange rate fluctuations may adversely affect its results of operations, though it hedges a portion of its international currency exposure."
+      },
+      "evidence": [
+        {
+          "id": "passage:c147ab198ea526fbc6835b60",
+          "text": "MSFT FY2024 item-1a\nCompetition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent. The outcome of such actions, or steps taken to avoid them, could adversely affect us in a variety of ways, including causing us to withdraw products from or modify products for certain markets, decreasing the value of our assets, adversely affecting our ability to monetize our products, or inhibiting our ability to consummate acquisition or impose conditions on acquisitions that may reduce their value, which may adversely affect our business, financial condition, and results of operations."
+        },
+        {
+          "id": "passage:de98fe0a06783017966f3ef4",
+          "text": "MSFT FY2024 item-1a\nr developments that make it more difficult to sell our products in foreign countries. Disruptions of these kinds in developed or emerging markets could negatively impact demand for our products and services, impair our ability to operate in certain regions, or increase operating costs. Although we hedge a portion of our international currency exposure, significant fluctuations in foreign exchange rates between the U.S. dollar and foreign currencies may adversely affect our results of operations."
+        }
+      ]
+    }
+  ],
+  "identities": {
+    "c26b6dc1f7b996c94ad8": {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "baseline"
+    },
+    "e263c2984ae3853b4ed3": {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "combined"
+    },
+    "43cf0a24b980c67564cd": {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "combined"
+    },
+    "b018a534f7607623c8a5": {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "methods"
+    },
+    "eb64869ca9753f0c1486": {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "baseline"
+    },
+    "5ae5fc0d649732b91ec1": {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "combined"
+    },
+    "aae28523323eacbd33af": {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "encoding"
+    },
+    "105696c933f560f73434": {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "methods"
+    },
+    "f1f5b15f86e29c8c5140": {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "methods"
+    },
+    "a384b717727e4014c44a": {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "methods"
+    },
+    "34b80973e6781a1533bb": {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "methods"
+    },
+    "751be1f84ee9d80ff6f4": {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "combined"
+    },
+    "7a1e2e1305be85d95dbb": {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "baseline"
+    },
+    "4cbb25906eb2f950a716": {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "combined"
+    },
+    "c8b6c143287f4c8ea7cf": {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "baseline"
+    },
+    "acc4f42a6ec718275f5f": {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "encoding"
+    },
+    "8a9980592c08a663684a": {
+      "case_id": "AAPL:revenue",
+      "repeat": 0,
+      "arm": "baseline"
+    },
+    "c442b7c8dbffa7ee06c8": {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "combined"
+    },
+    "496512ea0103cf5b27b3": {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "baseline"
+    },
+    "67831a0bfdb66ea4ab3d": {
+      "case_id": "MSFT:profit",
+      "repeat": 0,
+      "arm": "combined"
+    },
+    "015ed53133422e50b2f8": {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "baseline"
+    },
+    "2645b9af6e3250985886": {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "encoding"
+    },
+    "15e825ff6623ab39dfae": {
+      "case_id": "MSFT:profit",
+      "repeat": 1,
+      "arm": "encoding"
+    },
+    "f5f2c1e343b50470ce4f": {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "methods"
+    },
+    "44f9175c1178d312a0ee": {
+      "case_id": "AAPL:profit",
+      "repeat": 1,
+      "arm": "methods"
+    },
+    "69230c6eeccaff342508": {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "baseline"
+    },
+    "95824497d6eb2e23b414": {
+      "case_id": "AAPL:profit",
+      "repeat": 0,
+      "arm": "encoding"
+    },
+    "21bcf77450d0c2389255": {
+      "case_id": "AAPL:revenue",
+      "repeat": 1,
+      "arm": "encoding"
+    },
+    "6881b64d450714a92a24": {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "combined"
+    },
+    "9a481bb4d074081c8d6c": {
+      "case_id": "MSFT:risk",
+      "repeat": 0,
+      "arm": "encoding"
+    },
+    "4e36380a203df81234a1": {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "encoding"
+    },
+    "12cb24da18efccc9bd6b": {
+      "case_id": "MSFT:risk",
+      "repeat": 1,
+      "arm": "methods"
+    }
+  },
+  "controls": [
+    {
+      "id": "3af51b719ed89831d314",
+      "question": "Is the cited quotation present verbatim in the supplied passage?",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "The cited quotation is present verbatim in the supplied passage.",
+            "quote": "(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating inc"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "control-source",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ],
+      "expected": true
+    },
+    {
+      "id": "71706949c2ee2d221039",
+      "question": "What caused the disclosed revenue change?",
+      "answer": {
+        "status": "complete",
+        "claims": [
+          {
+            "statement": "The report attributes revenue growth to the discovery of a new planet.",
+            "quote": "(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating inc"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "control-source",
+          "text": "Monetary context: currency=USD; multiply raw monetary figures by 1000000; source=article#discussion-analysis|block=62|table-text. Per-share and nonmonetary measures retain their own units.\nMSFT FY2024 discussion analysis\n(In millions, except percentages and per share amounts) | 2024 | 2023 | Percentage Change\nRevenue | $ 245,122 | $ 211,915 | 16%\nGross margin | 171,008 | 146,052 | 17%\nOperating income | 109,433 | 88,523 | 24%\nNet income | 88,136 | 72,361 | 22%\nDiluted earnings per share | 11.80 | 9.68 | 22%\nAdjusted gross margin (non-GAAP) | 171,008 | 146,204 | 17%\nAdjusted operating income (non-GAAP) | 109,433 | 89,694 | 22%\nAdjusted net income (non-GAAP) | 88,136 | 73,307 | 20%\nAdjusted diluted earnings per share (non-GAAP) | 11.80 | 9.81 | 20%"
+        }
+      ],
+      "expected": false
+    }
+  ]
+}

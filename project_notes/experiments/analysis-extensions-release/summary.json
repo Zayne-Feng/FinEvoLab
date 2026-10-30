@@ -1,0 +1,108 @@
+{
+  "offline": {
+    "source_controls": {
+      "cases": 42,
+      "value_only_correct": 12,
+      "coordinated_correct": 42
+    },
+    "scenario_reference_checks": {
+      "correct": 90,
+      "cases": 90
+    },
+    "context": [
+      {
+        "id": "MSFT:profit",
+        "original_chars": 8906,
+        "encoded_chars": 8097,
+        "observation_rows": 6,
+        "lossless": true,
+        "instruction_overhead_chars": 258
+      },
+      {
+        "id": "AAPL:profit",
+        "original_chars": 10754,
+        "encoded_chars": 9937,
+        "observation_rows": 6,
+        "lossless": true,
+        "instruction_overhead_chars": 258
+      },
+      {
+        "id": "MSFT:risk",
+        "original_chars": 10267,
+        "encoded_chars": 10267,
+        "observation_rows": 0,
+        "lossless": true,
+        "instruction_overhead_chars": 0
+      },
+      {
+        "id": "AAPL:revenue",
+        "original_chars": 7914,
+        "encoded_chars": 7914,
+        "observation_rows": 0,
+        "lossless": true,
+        "instruction_overhead_chars": 0
+      }
+    ],
+    "recovery": [
+      {
+        "enabled": false,
+        "executions": 25
+      },
+      {
+        "enabled": true,
+        "executions": 15
+      }
+    ],
+    "concurrency": [
+      {
+        "enabled": false,
+        "requests": 40,
+        "computations": 40,
+        "median_seconds": 0.3528967000020202,
+        "cpu_seconds": 1.984375
+      },
+      {
+        "enabled": true,
+        "requests": 40,
+        "computations": 5,
+        "median_seconds": 0.06724079999548849,
+        "cpu_seconds": 0.234375
+      }
+    ]
+  },
+  "metric_scope": "Paired engineering controls and source/schema acceptance; model cases use fixed plans and evidence.",
+  "model_ablation": {
+    "baseline": {
+      "tasks": 8,
+      "mechanical_passed": 7,
+      "model_requests": 8,
+      "input_tokens": 17010,
+      "output_tokens": 2228,
+      "mean_seconds": 3.3633850749993144
+    },
+    "encoding": {
+      "tasks": 8,
+      "mechanical_passed": 6,
+      "model_requests": 8,
+      "input_tokens": 15836,
+      "output_tokens": 2049,
+      "mean_seconds": 3.66839495000022
+    },
+    "methods": {
+      "tasks": 8,
+      "mechanical_passed": 8,
+      "model_requests": 8,
+      "input_tokens": 17230,
+      "output_tokens": 2152,
+      "mean_seconds": 3.6315692125008354
+    },
+    "combined": {
+      "tasks": 8,
+      "mechanical_passed": 6,
+      "model_requests": 8,
+      "input_tokens": 16056,
+      "output_tokens": 2231,
+      "mean_seconds": 3.543143249997229
+    }
+  }
+}
