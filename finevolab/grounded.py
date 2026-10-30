@@ -303,7 +303,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                            telemetry: dict | None = None, root: Path = ROOT,
                            retrieval_variant: str = "improved", request_plan: RequestPlan | None = None,
                            allow_repair: bool = True, corpus_profile: str = "contextual", backend: str = "sdk",
-                           review_mode: str = "off") -> dict:
+                           review_mode: str = "off", extensions=None, checkpoint_root: Path | None = None) -> dict:
     if review_mode not in {"off", "self_check", "reviewer"}:
         raise ValueError("Unknown narrative review mode")
     events = events if events is not None else []
@@ -313,6 +313,8 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
     telemetry["usage"] = usage
     telemetry["repairs"] = []
     telemetry["messages"] = []
+    from finevolab.methods import load_analysis_settings, method_for
+    extensions = extensions or load_analysis_settings(root)
     started = time.monotonic()
     repair_used = False
     version = {"source": store.source_signature, "corpus_profile": corpus_profile,
@@ -323,10 +325,25 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
     from finevolab.retrieval_settings import load_settings, retrieval_observations
     version["services"] = load_settings(root).model_dump(mode="json")
     version["aliases"] = file_digest(ROOT / "configs/company_aliases.json")
+    version["extensions"] = extensions.model_dump()
+    version["methods"] = file_digest(ROOT / "configs/analysis_methods.json")
+    version["extension_code"] = {name: file_digest(ROOT / "finevolab" / name) for name in
+                                 ("context_encoding.py", "methods.py", "subtasks.py", "singleflight.py", "derived.py", "grounded.py", "validation.py", "sdk_runtime.py", "reconciliation.py")}
     if not store.uploads:
         index_path = root / "data/indexes" / ("contextual" if corpus_profile == "contextual" else "") / "structured.json"
         version["index"] = file_digest(index_path) if index_path.exists() else None
+    journal = None
+    if checkpoint_root is not None and extensions.subtask_recovery:
+        from finevolab.subtasks import SubtaskJournal
+        journal = SubtaskJournal(checkpoint_root, {"version": version, "question": question,
+            "model": settings.model, "base_url": settings.base_url, "candidate": candidate,
+            "backend": backend, "budget": vars(budget), "review_mode": review_mode}, budget)
     executor = ToolExecutor(budget, events, version, root / "output/cache/deterministic")
+    executor.coalesce = extensions.singleflight
+    executor.on_call = journal.tool_called if journal else None
+    if journal:
+        executor.calls = journal.usage["tools"]
+        repair_used = bool(journal.usage.get("repairs", 0))
     bounded = BoundedFinancialStore(store, executor)
     model_attempts = 0
     async with async_client(settings) as client:
@@ -334,6 +351,18 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
             nonlocal repair_used, model_attempts
             from finevolab.sdk_runtime import json_messages
             messages = json_messages(schema, instruction, payload)
+            key = fingerprint({"messages": messages, "schema": schema.__name__})
+            if journal:
+                restored = journal.load(key, schema, validate)
+                if restored is not None:
+                    events.append({"event": "subtask_restored", "schema": schema.__name__, "key": key})
+                    return restored
+            if extensions.context_encoding:
+                from finevolab.context_encoding import encode_context, GUIDANCE
+                messages[1]["content"], encoding = encode_context(payload)
+                if encoding["observation_rows"]:
+                    messages[0]["content"] += "\n" + GUIDANCE
+                events.append({"event": "context_encoding", "schema": schema.__name__, **encoding})
             while True:
                 if model_attempts >= budget.max_model_calls or usage["total_tokens"] >= budget.max_total_tokens:
                     raise BudgetExceeded("Model or token budget exceeded")
@@ -342,6 +371,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 remaining = budget.timeout_seconds - (time.monotonic() - started)
                 if remaining <= 0:
                     raise TimeoutError("Analysis time budget exceeded")
+                reservation = journal.reserve() if journal else None
                 model_attempts += 1
                 telemetry["model_attempts"] = model_attempts
                 telemetry["messages"].append({"schema": schema.__name__, "input": [dict(item) for item in messages]})
@@ -380,17 +410,25 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                     else:
                         raise ValueError("Unknown model runtime backend")
                     operation["tokens"] = usage["total_tokens"] - tokens_before
+                if journal:
+                    if telemetry.get("unknown_usage"):
+                        raise BudgetExceeded("Model usage must be resolved before continuing subtasks")
+                    journal.complete(reservation, usage["total_tokens"] - tokens_before)
                 try:
                     parsed = schema.model_validate_json(raw)
                     if validate:
                         validate(parsed)
                     if usage["total_tokens"] > budget.max_total_tokens:
                         raise BudgetExceeded("Token budget exceeded")
+                    if journal:
+                        journal.save(key, parsed)
                     return parsed
                 except (ValueError, KeyError) as error:
                     if isinstance(error, BudgetExceeded) or repair_used or not allow_repair:
                         raise
                     repair_used = True
+                    if journal:
+                        journal.repair_used()
                     telemetry["repairs"].append({"schema": schema.__name__, "error_type": type(error).__name__,
                                                  "original": raw, "error": str(error)[:1200]})
                     messages += [{"role": "assistant", "content": raw}, {"role": "user", "content":
@@ -400,6 +438,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 "selected_documents": [{"company": item["company"], "report_year": item["report_year"], "id": item["id"]}
                                        for item in store.uploads]})
         plan = plan.model_copy(update={"companies": [store.company_id(company) for company in plan.companies]})
+        method = method_for(plan, root) if extensions.method_selection else None
         numeric = None
         if plan.intent != "explanation":
             numeric = assemble_numeric(plan, bounded, events)
@@ -459,6 +498,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                         "question": question, "evidence": [evidence_by_id[key] for key in sorted(used)],
                         "corpus_profile": corpus_profile}, store)
                 drafts.append(await generate(ExplanationDraft, EXPLANATION_PROMPT +
+                    ("\nAnalysis method: " + method["guidance"] if method else "") +
                     f"\nAddress only {company} in this subtask. Other companies are handled separately. "
                     f"Use at most {min(3, max(1, 8 // len(set(plan.companies))))} claims.",
                     {"question": question, "company": company, "request": company_plan.model_dump(),
@@ -488,10 +528,19 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 if repair_used or not allow_repair:
                     return False
                 repair_used = True
+                if journal:
+                    journal.repair_used()
                 telemetry["repairs"].append({"schema": "ClaimReview", "error_type": "UnsupportedClaim",
                                              "review": report})
                 return True
             output = await review_output(root, store, output, generate, review_mode, reserve_review_repair)
+    output["analysis_method"] = method
+    output["logical_usage"] = journal.usage if journal else None
+    if extensions.source_reconciliation and numeric:
+        from finevolab.reconciliation import reconcile_metric
+        observed = numeric.get("metrics", []) + [item for calculation in numeric.get("calculations", []) for item in calculation["inputs"]]
+        output["source_reconciliation"] = {"|".join(map(str, key)): reconcile_metric(store, *key)
+            for key in sorted({(item["company"], item["name"], item["fiscal_year"]) for item in observed})}
     output.update(question=question, request=plan.model_dump(), events=events, data_version=store.version, usage=usage.copy(),
                   corpus_profile=corpus_profile, upload_ids=store.upload_ids, source_issues=store.source_issues,
                   runtime_backend=backend, tool_calls=executor.calls, messages=telemetry["messages"],

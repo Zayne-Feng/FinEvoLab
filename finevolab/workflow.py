@@ -30,6 +30,8 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     if not question.strip() or len(question) > 12000:
         raise ValueError("A question between 1 and 12000 characters is required")
     budget = budget or RunBudget(max_context_chars=60000)
+    telemetry = telemetry if telemetry is not None else {}
+    telemetry["checkpoint_root"] = str(root / "output/tasks" / task_id / "subtasks")
     if planner_backend not in {"api", "lora_bf16", "lora_nf4"}:
         raise ValueError("Unknown planner backend")
     online_planner = None
@@ -42,7 +44,10 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     from finevolab.retrieval_settings import load_settings
     from finevolab.reviewing import ReviewSettings, review_mode as configured_review_mode
     review_mode = ReviewSettings(mode=review_mode or configured_review_mode(root)).mode
-    versions = {"retrieval_services": load_settings(root).model_dump(mode="json"), "review_mode": review_mode,
+    from finevolab.methods import load_analysis_settings
+    versions = {"analysis_extensions": load_analysis_settings(root).model_dump(),
+        "analysis_methods": hashlib.sha256((ROOT / "configs/analysis_methods.json").read_bytes()).hexdigest(),
+        "retrieval_services": load_settings(root).model_dump(mode="json"), "review_mode": review_mode,
         "workflow": "question", "question": question, "company": "MULTI", "fiscal_year": None,
         "model": settings.model, "base_url": settings.base_url, "data_version": store.version,
         "candidate": fingerprint(candidate), "render": render, "timeout_seconds": timeout_seconds,

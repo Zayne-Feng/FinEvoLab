@@ -96,9 +96,10 @@ class BudgetExceeded(ValueError):
 
 
 class ToolExecutor:
-    def __init__(self, budget: RunBudget, events: list, version: dict, cache_root: Path | None = None):
+    def __init__(self, budget: RunBudget, events: list, version: dict, cache_root: Path | None = None, coalesce: bool = True, on_call=None):
         self.budget, self.events, self.version = budget, events, version
         self.cache_root, self.calls, self.started = cache_root, 0, time.monotonic()
+        self.coalesce, self.on_call = coalesce, on_call
 
     def call(self, name: str, parameters: dict, function, schema=None):
         with observe(self.events, "tool", name, call=self.calls + 1) as record:
@@ -116,6 +117,8 @@ class ToolExecutor:
                                 "reason": "time_budget", "completed_calls": self.calls})
             raise BudgetExceeded("Tool execution time budget exceeded")
         self.calls += 1
+        if self.on_call:
+            self.on_call(self.calls)
         key = fingerprint({"tool": name, "parameters": parameters, "version": self.version})
         path = self.cache_root / (key + ".json") if self.cache_root else None
         hit, value = False, None
@@ -127,19 +130,35 @@ class ToolExecutor:
                     hit = True
             except (ValueError, KeyError):
                 pass
+        coalesced = False
         if not hit:
+            def compute():
+                if path and path.exists():
+                    try:
+                        cached = read_json(path)
+                        if cached["key"] == key and fingerprint({"value": cached["value"]}) == cached["value_hash"]:
+                            return schema.model_validate(cached["value"]) if schema else cached["value"]
+                    except (ValueError, KeyError):
+                        pass
+                result = function()
+                if path:
+                    payload = result.model_dump(mode="json", exclude_unset=True) if hasattr(result, "model_dump") else result
+                    write_json(path, {"key": key, "value": payload, "value_hash": fingerprint({"value": payload})})
+                return result
             try:
-                value = function()
+                if self.coalesce and path:
+                    from finevolab.singleflight import SINGLEFLIGHT
+                    value, coalesced = SINGLEFLIGHT.run(str(path.resolve()), compute,
+                        timeout=max(0.001, self.budget.timeout_seconds - (time.monotonic() - self.started)))
+                else:
+                    value = compute()
             except Exception as error:
                 self.events.append({"event": "tool_execution", "tool": name, "call": self.calls,
                     "parameters": parameters, "cache_hit": False, "cache_key": key,
                     "status": "failed", "error_type": type(error).__name__})
                 raise
-            if path:
-                payload = value.model_dump(mode="json", exclude_unset=True) if hasattr(value, "model_dump") else value
-                write_json(path, {"key": key, "value": payload, "value_hash": fingerprint({"value": payload})})
         self.events.append({"event": "tool_execution", "tool": name, "call": self.calls,
-                            "parameters": parameters, "cache_hit": hit, "cache_key": key})
+                            "parameters": parameters, "cache_hit": hit, "coalesced": coalesced, "cache_key": key})
         if time.monotonic() - self.started >= self.budget.timeout_seconds:
             raise BudgetExceeded("Tool execution time budget exceeded")
         return value

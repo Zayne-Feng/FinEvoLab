@@ -1,0 +1,112 @@
+{
+  "version": "financial_methods_v1",
+  "methods": {
+    "metric": {
+      "guidance": "Report the requested annual value, actual fiscal dates, currency, unit and supporting source.",
+      "required": [
+        "value",
+        "period",
+        "unit",
+        "evidence"
+      ]
+    },
+    "growth": {
+      "guidance": "Use consecutive annual values; preserve the denominator sign and state the signed growth definition.",
+      "required": [
+        "previous",
+        "current",
+        "formula",
+        "evidence"
+      ]
+    },
+    "comparison": {
+      "guidance": "Cover every requested company and show actual fiscal dates; distinguish amount comparison from period alignment.",
+      "required": [
+        "company_coverage",
+        "period_alignment",
+        "evidence"
+      ]
+    },
+    "alignment": {
+      "guidance": "Compare actual start and end dates explicitly before assessing alignment.",
+      "required": [
+        "period_alignment",
+        "evidence"
+      ]
+    },
+    "summary": {
+      "guidance": "Cover revenue, operating income and net income with source-bound annual periods.",
+      "required": [
+        "revenue",
+        "operating_income",
+        "net_income",
+        "evidence"
+      ]
+    },
+    "explanation": {
+      "guidance": "Identify the disclosed driver of the requested financial change. Separate management statements from inference; cite a verbatim supporting passage.",
+      "required": [
+        "driver",
+        "source_quote",
+        "evidence"
+      ]
+    },
+    "hybrid": {
+      "guidance": "Use deterministic numeric results for amounts and rates; use verbatim report evidence for disclosed drivers. Keep their fiscal scope consistent.",
+      "required": [
+        "numeric_result",
+        "driver",
+        "source_quote",
+        "evidence"
+      ]
+    },
+    "risk": {
+      "guidance": "Describe the disclosed risk and how the report says it can affect the business. Preserve conditional language; do not assert that a risk already occurred.",
+      "required": [
+        "risk",
+        "mechanism",
+        "source_quote",
+        "evidence"
+      ]
+    },
+    "margin": {
+      "guidance": "Divide annual profit by matching annual revenue; express margin changes in percentage points.",
+      "required": [
+        "inputs",
+        "formula",
+        "unit",
+        "audit"
+      ]
+    },
+    "scenario": {
+      "guidance": "Distinguish observed baseline from explicit user assumptions; calculate revenue and profit jointly without presenting hypothetical values as disclosures.",
+      "required": [
+        "baseline",
+        "assumptions",
+        "sensitivity_grid",
+        "audit"
+      ]
+    },
+    "unavailable": {
+      "guidance": "Preserve the unresolved request status and ask only for the missing supported scope. Do not infer financial conclusions.",
+      "required": [
+        "status",
+        "scope"
+      ]
+    },
+    "clarification": {
+      "guidance": "Preserve the unresolved request status and ask only for the missing supported scope. Do not infer financial conclusions.",
+      "required": [
+        "status",
+        "scope"
+      ]
+    },
+    "invalid": {
+      "guidance": "Preserve the unresolved request status and ask only for the missing supported scope. Do not infer financial conclusions.",
+      "required": [
+        "status",
+        "scope"
+      ]
+    }
+  }
+}
