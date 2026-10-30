@@ -1,47 +1,75 @@
 # FinEvoLab
 
-<p>
+<p align="center">
   <a href="README.md"><kbd>English</kbd></a>
   <a href="README_CN.md"><kbd>简体中文</kbd></a>
 </p>
 
-**A financial Agent with traceable sources: RAG retrieves evidence, tools compute values, and a harness validates and resumes execution.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11">
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/License-Apache--2.0-7B6DAA" alt="Apache-2.0">
+</p>
+
+**Financial questions. Verifiable calculations. Traceable answers.**
 
 **Explore:** [Project showcase](https://finevolab.lunelu.com/) · [Invited analysis](https://app.lunelu.com/).
 
-FinEvoLab is a financial analysis project that connects public financial reports, structured financial metrics, model planning, and report generation into an executable analysis workflow, evaluated through component comparisons, QLoRA fine-tuning, and inference quantization experiments. The web interface supports Chinese / English and offers API or LoRA planning backends.
+FinEvoLab answers questions about financial reports, compares companies, calculates growth and profit margins, and generates reports with traceable citations. It combines hybrid RAG, deterministic financial tools, a resumable execution harness, and QLoRA request planning, with a bilingual web interface and reproducible evaluations.
+
+[Capabilities](#section-capabilities) · [Quick start](#section-quick-start) · [Results](#section-results) · [Reproduce](#section-reproduce) · [Optional services](#section-services) · [Web deployment](#section-web) · [License](#section-license)
+
+---
+
+<div id="section-capabilities"></div>
 
 ## Features
 
-- **Reports and evidence**: SEC / company IR snapshots, financial metric extraction, period and unit checks, and citations that locate the original sources; supports selected HTML files and PDFs with extractable text.
-- **RAG**: BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis; optional shared Redis caching and a versioned Milvus vector backend.
-- **Agent and tools**: Agents SDK interprets requests and invokes metric lookup, growth calculation, company comparison, and report tools. Programs compute amounts and formulas and assemble financial objects from actual tool results.
-- **Harness**: Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, execution recovery, and optional self-check or isolated evidence-review roles within the same task budget.
-- **Models and interface**: DeepSeek API, Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planning backends, FastAPI endpoints, a bilingual web interface, and HTML / PDF reports.
+| Capability | Implementation and output |
+| --- | --- |
+| **Reports and evidence** | SEC / company IR snapshots, financial metric extraction, period and unit checks, and citations that locate the original sources; supports selected HTML files and PDFs with extractable text. |
+| **RAG** | BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis; optional shared Redis caching and a versioned Milvus vector backend. |
+| **Agent and tools** | Agents SDK interprets requests and invokes metric lookup, growth calculation, company comparison, and report tools. Programs compute amounts and formulas and assemble financial objects from actual tool results. |
+| **Harness** | Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, execution recovery, and optional self-check or isolated evidence-review roles within the same task budget. |
+| **Models and interface** | DeepSeek API, Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planning backends, FastAPI endpoints, a bilingual web interface, and HTML / PDF reports. |
+
+```text
+Question → RequestPlan → Evidence retrieval & financial tools → Validation → Report
+```
 
 The default API mode runs with CPU retrieval. The LoRA service runs on an external GPU and connects through SSH port forwarding. LoRA handles `RequestPlan` planning, while the API model generates explanatory narratives. All backends share the financial tools, RAG, and harness.
 
 FinEvoLab's core workflows are implemented in `finevolab/`, with data preparation, training, and experiments in the supporting directories. Reused infrastructure and the pinned comparison baseline are kept in `finrobot_equity/`.
 
+<div id="section-quick-start"></div>
+
 ## Quick start
 
-Run the following commands from the repository root. The entry point has been verified on Windows / PowerShell. Set `$condaExe` to your Conda executable. If the `finevolab` environment already exists, skip the environment creation and dependency installation commands.
+Use a terminal where `conda` is available. The commands below use PowerShell and start from a full clone of the repository. An existing `finevolab` environment can be reused; skip its environment creation and dependency installation commands.
+
+### 1. Create the environment
 
 ```powershell
-$condaExe = 'D:\ProgramSoftware\Miniconda3\Scripts\conda.exe'
-& $condaExe env create -f environments/development.yml
-& $condaExe run -n finevolab python -m pip install -r requirements/development.lock.txt
+git clone https://github.com/Zayne-Feng/FinEvoLab.git
+cd FinEvoLab
+
+conda env create -f environments/development.yml
+conda run -n finevolab python -m pip install -r requirements/development.lock.txt
 $env:PYTHONUTF8 = '1'
 $env:PYTHONIOENCODING = 'utf-8'
 ```
 
+### 2. Build retrieval resources
+
 Build the retrieval resources from the repository root on first use; reuse existing matching resources. The encoding scripts download the pinned Embedding model revision and generate vectors and caches locally.
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/build_index.py
-& $condaExe run --no-capture-output -n finevolab python scripts/build_vectors.py
-& $condaExe run --no-capture-output -n finevolab python scripts/build_contextual_index.py
+conda run --no-capture-output -n finevolab python scripts/build_index.py
+conda run --no-capture-output -n finevolab python scripts/build_vectors.py
+conda run --no-capture-output -n finevolab python scripts/build_contextual_index.py
 ```
+
+### 3. Configure the model provider
 
 Offline mode uses fixed financial-report snapshots. The natural-language Agent reads the local `finrobot_equity/core/config/config.ini`, or a private configuration specified through `FINEVOLAB_MODEL_CONFIG`. Fill in a valid key and model name in the minimal configuration below. DeepSeek requests explicitly disable Thinking.
 
@@ -52,32 +80,38 @@ openai_model = YOUR_MODEL_NAME
 openai_base_url = https://api.deepseek.com/
 ```
 
+### 4. Start the application
+
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python -m uvicorn finevolab.integrated_web:app --host 127.0.0.1 --port 8003
+conda run --no-capture-output -n finevolab python -m uvicorn finevolab.integrated_web:app --host 127.0.0.1 --port 8003
 ```
 
 Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft revenue for fiscal year 2023 and explain the fiscal-period differences,” or “Calculate Microsoft year-over-year revenue growth for fiscal year 2023 and cite the report to explain the change.” Dependency locks are in [environments/](environments/) and [requirements/](requirements/). The retrieval model and revision are pinned in [retrieval.json](configs/retrieval.json).
 
+<details>
+<summary><strong>Financial APIs, audited margins, and explicit scenarios</strong></summary>
+
 The deterministic calculation tool also supports `operating_margin`, `net_margin`, `operating_margin_change`, and `net_margin_change`. Margins use percent; changes use percentage points. Each result retains the source inputs, actual fiscal periods, disclosure years, formula, citations, data signature, and field-level audit checks. Each input uses its latest available disclosure. The local `POST /api/derived-metrics` endpoint and the following command execute these calculations without model calls:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/calculate_derived.py --company MSFT --fiscal-year 2024 --metric operating_margin_change --report-dir output/derived_report
+conda run --no-capture-output -n finevolab python scripts/calculate_derived.py `
+  --company MSFT `
+  --fiscal-year 2024 `
+  --metric operating_margin_change `
+  --report-dir output/derived_report
 Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/derived-metrics' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"net_margin"}'
 ```
 
 Analysis controls include validated company-level model-step checkpoints with cumulative usage and repair accounting, source reconciliation by fiscal scope and filing lineage, and in-process singleflight for overlapping deterministic cache misses. Versioned task methods and lossless financial-context encoding are configurable in `configs/analysis_extensions.json` and `configs/analysis_methods.json`. The local `POST /api/scenarios` endpoint produces sensitivity grids from explicit revenue and margin assumptions, retaining the observed baseline and its audit.
 
-The [engineering comparison](project_notes/experiments/analysis-extensions-release/summary.json) records paired recovery and concurrency workloads, source-status controls, reversible context encoding, and independently checked scenario arithmetic. Run the model comparison with the configured provider and call the structured endpoints with:
-
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_analysis_extensions.py --output output/reproduction/analysis_extensions --live
-& $condaExe run --no-capture-output -n finevolab python scripts/review_analysis_extensions.py --run output/reproduction/analysis_extensions --execute
-& $condaExe run --no-capture-output -n finevolab python scripts/summarize_analysis_extensions.py --run output/reproduction/analysis_extensions
 Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/source-reconciliation' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"metric":"revenue"}'
 Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -ContentType 'application/json' -Body '{"company":"MSFT","fiscal_year":2024,"margin":"operating_margin","revenue_changes_percent":[-10,0,10],"margin_changes_percentage_points":[-2,0,2]}'
 ```
 
-The [fixed-plan DeepSeek comparison](project_notes/experiments/analysis-extensions-release/assessment.json) evaluates four questions twice per arm. Baseline / encoding / methods / combined passed source-and-schema checks on **7/8, 6/8, 8/8, 6/8** tasks; adding support and completeness agreement from two isolated review contexts gave **4/8, 4/8, 5/8, 4/8**. Encoding reduced input tokens by **6.90%**; methods increased them by **1.29%**. These are descriptive results for this fixed workload. Encoding and method selection remain opt-in. The two review contexts use the same `deepseek-flash` model.
+</details>
+
+<div id="section-results"></div>
 
 ## Results
 
@@ -97,6 +131,28 @@ Business strict scores combine the numerical, period, source, and task-contract 
 
 The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **272 tests**; see [runtime verification](project_notes/run_logs/analysis_extensions_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
+<details>
+<summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
+
+The [fixed-plan DeepSeek comparison](project_notes/experiments/analysis-extensions-release/assessment.json) evaluates four questions twice per arm. Baseline / encoding / methods / combined passed source-and-schema checks on **7/8, 6/8, 8/8, 6/8** tasks; adding support and completeness agreement from two isolated review contexts gave **4/8, 4/8, 5/8, 4/8**. Encoding reduced input tokens by **6.90%**; methods increased them by **1.29%**. These are descriptive results for this fixed workload. Encoding and method selection remain opt-in. The two review contexts use the same `deepseek-flash` model.
+
+The [engineering comparison](project_notes/experiments/analysis-extensions-release/summary.json) records paired recovery and concurrency workloads, source-status controls, reversible context encoding, and independently checked scenario arithmetic. Run the model comparison with the configured provider and call the structured endpoints with:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_analysis_extensions.py `
+  --output output/reproduction/analysis_extensions `
+  --live
+conda run --no-capture-output -n finevolab python scripts/review_analysis_extensions.py `
+  --run output/reproduction/analysis_extensions `
+  --execute
+conda run --no-capture-output -n finevolab python scripts/summarize_analysis_extensions.py `
+  --run output/reproduction/analysis_extensions
+```
+
+</details>
+
+<div id="section-reproduce"></div>
+
 ## Reproducing experiments
 
 Code and inputs are organized as follows: `finevolab/` contains business modules, `scripts/` contains data and experiment entry points, `configs/` and `prompts/` contain functional configuration, `finevolab/templates/` contains HTML templates for the web interface and business reports, `data/` contains source snapshots and frozen datasets, and `tests/` contains regression and frontend checks. JSON / JSONL files, environment snapshots, and representative images under `project_notes/` provide versioned experimental evidence. Development notes and optional Markdown report templates remain local; formal summaries are recorded as JSON results.
@@ -105,22 +161,58 @@ The development / validation / test splits contain 50/50/100 business tasks and 
 
 Paired experiments load the original engine from Git history, so use a clone with the complete commit history. `scripts/verify_repository_distribution.py` checks the submission scope, source snapshots, frozen inputs, and legal files.
 
+<details>
+<summary><strong>Regression checks, prediction replay, and business evaluation</strong></summary>
+
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python -m unittest discover -s tests -q
-& $condaExe run --no-capture-output -n finevolab python scripts/replay_planner_predictions.py --bundle data/training/planner_formal/frozen_v1 --split test --runs project_notes/experiments/planner-formal-deepseek-test project_notes/experiments/planner-formal-base-test project_notes/experiments/planner-formal-lora17-test --case-ids data/training/planner_formal/replay_case_ids.json --output output/reproduction/replay17
-& $condaExe run --no-capture-output -n finevolab python scripts/run_scope_experiments.py --split test --paired --repeats 3 --run-id reproduction_scope_test
-& $condaExe run --no-capture-output -n finevolab python scripts/review_scope_answers.py --experiment reproduction_scope_test --split test --run-id reproduction_scope_review
-& $condaExe run --no-capture-output -n finevolab python scripts/summarize_scope_results.py --experiment reproduction_scope_test --review reproduction_scope_review
+conda run --no-capture-output -n finevolab python -m unittest discover -s tests -q
+conda run --no-capture-output -n finevolab python scripts/replay_planner_predictions.py `
+  --bundle data/training/planner_formal/frozen_v1 `
+  --split test `
+  --runs project_notes/experiments/planner-formal-deepseek-test project_notes/experiments/planner-formal-base-test project_notes/experiments/planner-formal-lora17-test `
+  --case-ids data/training/planner_formal/replay_case_ids.json `
+  --output output/reproduction/replay17
+conda run --no-capture-output -n finevolab python scripts/run_scope_experiments.py `
+  --split test `
+  --paired `
+  --repeats 3 `
+  --run-id reproduction_scope_test
+conda run --no-capture-output -n finevolab python scripts/review_scope_answers.py `
+  --experiment reproduction_scope_test `
+  --split test `
+  --run-id reproduction_scope_review
+conda run --no-capture-output -n finevolab python scripts/summarize_scope_results.py `
+  --experiment reproduction_scope_test `
+  --review reproduction_scope_review
 ```
+
+</details>
+
+<details>
+<summary><strong>QLoRA training, planner evaluation, and inference quantization</strong></summary>
 
 Business comparisons use the configured live API. Training and quantization were verified on an RTX 3090 with 24 GB VRAM, with the model revision pinned in `configs/planner_model.json`. The complete environment snapshot from the formal run is recorded in [planner_serving_environment.txt](project_notes/run_logs/planner_serving_environment.txt). Install dependencies in a separate CUDA GPU Python environment and run:
 
 ```bash
 python -m pip install -r requirements/planner_training.in -r requirements/planner_serving.in
-python scripts/train_planner.py --bundle data/training/planner_formal/frozen_v1 --config configs/planner_formal_seed17.json --output output/training/reproduction-seed17
-python scripts/train_planner.py --bundle data/training/planner_formal/frozen_v1 --config configs/planner_formal_seed29.json --output output/training/reproduction-seed29
-python scripts/run_quantization_comparison.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --mode none --output output/reproduction/quant-bf16
-python scripts/run_quantization_comparison.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --mode nf4 --output output/reproduction/quant-nf4
+python scripts/train_planner.py \
+  --bundle data/training/planner_formal/frozen_v1 \
+  --config configs/planner_formal_seed17.json \
+  --output output/training/reproduction-seed17
+python scripts/train_planner.py \
+  --bundle data/training/planner_formal/frozen_v1 \
+  --config configs/planner_formal_seed29.json \
+  --output output/training/reproduction-seed29
+python scripts/run_quantization_comparison.py \
+  --bundle data/training/planner_formal/frozen_v1 \
+  --adapter output/training/reproduction-seed17/checkpoint-75 \
+  --mode none \
+  --output output/reproduction/quant-bf16
+python scripts/run_quantization_comparison.py \
+  --bundle data/training/planner_formal/frozen_v1 \
+  --adapter output/training/reproduction-seed17/checkpoint-75 \
+  --mode nf4 \
+  --output output/reproduction/quant-nf4
 ```
 
 For planner evaluation on the same questions, use `scripts/planner_benchmark.py predict`. Select the arm with `--arm deepseek --backend api`, `--arm qwen_base --backend transformers`, or `--arm qwen_lora --backend transformers --adapter <checkpoint>`. The formal settings are `--repeats 1 --repairs 0 --max-new-tokens 512 --max-input-tokens 8192`, with the same `--bundle` and a separate `--output` for each run. The reported comparison uses the validation-selected common epoch 1, corresponding to checkpoint 75.
@@ -128,14 +220,29 @@ For planner evaluation on the same questions, use `scripts/planner_benchmark.py 
 First run `--split validation` for DeepSeek, Qwen base, and both LoRA seeds, saving their outputs in the directories below. Freeze the validation selection with seed 17 as the primary LoRA arm and seed 29 as its replicate:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/planner_benchmark.py seal --bundle data/training/planner_formal/frozen_v1 --runs output/reproduction/deepseek-validation output/reproduction/base-validation output/reproduction/lora17-validation --replicate-runs output/reproduction/lora29-validation --output output/reproduction/selection.json
+conda run --no-capture-output -n finevolab python scripts/planner_benchmark.py `
+  seal `
+  --bundle data/training/planner_formal/frozen_v1 `
+  --runs output/reproduction/deepseek-validation output/reproduction/base-validation output/reproduction/lora17-validation `
+  --replicate-runs output/reproduction/lora29-validation `
+  --output output/reproduction/selection.json
 ```
 
 Then run each arm with `--split test --selection output/reproduction/selection.json`, retaining its validation model / adapter, environment, and generation settings. Save the test outputs under the matching directories below and compare each LoRA seed against the shared DeepSeek and Qwen base controls:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/planner_benchmark.py compare --bundle data/training/planner_formal/frozen_v1 --split test --runs output/reproduction/deepseek-test output/reproduction/base-test output/reproduction/lora17-test --output output/reproduction/planner_seed17.json
-& $condaExe run --no-capture-output -n finevolab python scripts/planner_benchmark.py compare --bundle data/training/planner_formal/frozen_v1 --split test --runs output/reproduction/deepseek-test output/reproduction/base-test output/reproduction/lora29-test --output output/reproduction/planner_seed29.json
+conda run --no-capture-output -n finevolab python scripts/planner_benchmark.py `
+  compare `
+  --bundle data/training/planner_formal/frozen_v1 `
+  --split test `
+  --runs output/reproduction/deepseek-test output/reproduction/base-test output/reproduction/lora17-test `
+  --output output/reproduction/planner_seed17.json
+conda run --no-capture-output -n finevolab python scripts/planner_benchmark.py `
+  compare `
+  --bundle data/training/planner_formal/frozen_v1 `
+  --split test `
+  --runs output/reproduction/deepseek-test output/reproduction/base-test output/reproduction/lora29-test `
+  --output output/reproduction/planner_seed29.json
 ```
 
 Each CLI lists its complete arguments through `--help`. Original predictions and per-arm manifests are stored under `project_notes/experiments/planner-formal-*`.
@@ -143,6 +250,11 @@ Each CLI lists its complete arguments through `--help`. Original predictions and
 Start the LoRA service with `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`. Use SSH to forward remote `127.0.0.1:8082` to local `127.0.0.1:8787`, matching the loopback address in [planner_service.json](configs/planner_service.json). The web interface supports BF16 / NF4 selection.
 
 When using a retrained adapter, copy the `adapter_sha256` returned by the service's `GET /health` into the corresponding planner configuration and select that file through `FINEVOLAB_PLANNER_CONFIG`, keeping the client identity consistent with the actual weights.
+
+</details>
+
+<details>
+<summary><strong>Retrieval caching and semantic reranking</strong></summary>
 
 Filtered BM25 indexes and query vectors use bounded in-memory caches. The invited analysis workspace shows phase, model, and tool durations with token usage and cache hits. Completed-task recovery preserves the recorded total duration. Shared provider circuits stop repeated transient failures and probe for recovery.
 
@@ -160,28 +272,48 @@ root = Path.cwd()
 documents = json.loads((root / "data/evaluation/scope_v3/documents.json").read_text(encoding="utf-8"))
 for document in documents:
     task_store(root, {"upload_ids": [document["id"]]}, documents)
-'@ | & $condaExe run --no-capture-output -n finevolab python -
+'@ | conda run --no-capture-output -n finevolab python -
 ```
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode cache --baseline 8a10053a --output output/reproduction/retrieval_cache
-& $condaExe run --no-capture-output -n finevolab python scripts/prepare_reranker.py
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py --mode rerank --split validation --queries data/evaluation/retrieval_refinement/bilingual_queries.json --output output/reproduction/reranker_bilingual
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py --output output/reproduction/runtime_refinement
+conda run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py `
+  --mode cache `
+  --baseline 8a10053a `
+  --output output/reproduction/retrieval_cache
+conda run --no-capture-output -n finevolab python scripts/prepare_reranker.py
+conda run --no-capture-output -n finevolab python scripts/benchmark_retrieval.py `
+  --mode rerank `
+  --split validation `
+  --queries data/evaluation/retrieval_refinement/bilingual_queries.json `
+  --output output/reproduction/reranker_bilingual
+conda run --no-capture-output -n finevolab python scripts/benchmark_runtime_refinement.py `
+  --output output/reproduction/runtime_refinement
 ```
 
+</details>
+
+<div id="section-services"></div>
+
 ## Optional retrieval services and evidence review
+
+<details>
+<summary><strong>Redis and Milvus setup</strong></summary>
 
 Install the optional CPU dependencies and put a Redis server executable on PATH. The verified services are Redis 8.4.0 and Milvus Lite 3.2.2 over gRPC, using pymilvus 3.0.2. The manager starts loopback services, reuses an existing healthy service, and stops only processes it owns. Milvus imports the existing 13,426 × 384 contextual vectors with versioned IDs and FLAT/IP scoring.
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python -m pip install -r requirements/retrieval_services.in
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py start
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py import
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py status
+conda run --no-capture-output -n finevolab python -m pip install -r requirements/retrieval_services.in
+conda run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py start
+conda run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py import
+conda run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py status
 ```
 
 Set `redis.enabled` to `true` in `configs/retrieval_services.json` to share public-corpus passage rankings across processes. Cached IDs are restored from the current source index and checked before use; uploads retain document-scoped BM25 retrieval. Set `vector_backend` to `milvus` to use the imported collection. Credentials can be supplied privately through `FINEVOLAB_REDIS_URL` and `FINEVOLAB_MILVUS_TOKEN`; use `FINEVOLAB_RETRIEVAL_SERVICES_CONFIG` for a private service configuration. The default backend is `numpy`, with Redis disabled. On this corpus, uncached Milvus Lite warm retrieval averaged 932.85 ms; Redis plus Milvus averaged 23.59 ms. Redis provides the measured latency improvement; Milvus provides the optional storage backend while preserving final retrieval results.
+
+</details>
+
+<details>
+<summary><strong>Evidence review and service experiments</strong></summary>
 
 Set `mode` in `configs/agent_review.json`, or `FINEVOLAB_REVIEW_MODE`, to `off`, `self_check`, or `reviewer`. The review modes inspect explanation and hybrid claims, share the existing total call/token/time budget and single repair allowance, and preserve deterministic numerical answers. The interface and reports display review decisions. Both review roles use the configured model in separate calls; the Reviewer has its own role and context.
 
@@ -190,24 +322,37 @@ The role comparison used `deepseek-flash`, 24 bilingual requests from 12 validat
 Reproduce the comparisons under new run IDs after rebuilding retrieval resources. These commands use the live model for the role, claim-review, and authenticated HTTP comparisons; the service checks and summary use no model calls.
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/verify_retrieval_services.py --output output/reproduction/service_checks.json
-& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py --output output/reproduction/service_site
-& $condaExe run --no-capture-output -n finevolab python scripts/verify_service_analysis.py --site output/reproduction/service_site --output output/reproduction/service_analysis_checks.json
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_retrieval_services.py --repeats 3 --output output/reproduction/retrieval_services
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_agent_roles.py --output output/reproduction/agent_roles
-& $condaExe run --no-capture-output -n finevolab python scripts/benchmark_claim_review.py --output output/reproduction/claim_review
-& $condaExe run --no-capture-output -n finevolab python scripts/summarize_service_experiments.py --retrieval-run output/reproduction/retrieval_services --roles-run output/reproduction/agent_roles --controls-run output/reproduction/claim_review --output output/reproduction/service_summary.json
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py stop
+conda run --no-capture-output -n finevolab python scripts/verify_retrieval_services.py `
+  --output output/reproduction/service_checks.json
+conda run --no-capture-output -n finevolab python scripts/build_showcase.py --output output/reproduction/service_site
+conda run --no-capture-output -n finevolab python scripts/verify_service_analysis.py `
+  --site output/reproduction/service_site `
+  --output output/reproduction/service_analysis_checks.json
+conda run --no-capture-output -n finevolab python scripts/benchmark_retrieval_services.py `
+  --repeats 3 `
+  --output output/reproduction/retrieval_services
+conda run --no-capture-output -n finevolab python scripts/benchmark_agent_roles.py --output output/reproduction/agent_roles
+conda run --no-capture-output -n finevolab python scripts/benchmark_claim_review.py --output output/reproduction/claim_review
+conda run --no-capture-output -n finevolab python scripts/summarize_service_experiments.py `
+  --retrieval-run output/reproduction/retrieval_services `
+  --roles-run output/reproduction/agent_roles `
+  --controls-run output/reproduction/claim_review `
+  --output output/reproduction/service_summary.json
+conda run --no-capture-output -n finevolab python scripts/manage_retrieval_services.py stop
 ```
 
 Without run-path options, the summary command aggregates the versioned archived runs. [Service acceptance](project_notes/run_logs/retrieval_services_checks.json) covers 135 query configurations, idempotent vector imports, idle connections, outages, explicit fallback, cache expiry and corruption, and service restart recovery.
+
+</details>
+
+<div id="section-web"></div>
 
 ## Static showcase
 
 The [live showcase](https://finevolab.lunelu.com/) provides Chinese / English navigation, source-linked financial cases, and interactive experiment comparisons. It runs entirely as static files. Build it from the frozen observations and recorded results:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/build_showcase.py
+conda run --no-capture-output -n finevolab python scripts/build_showcase.py
 ```
 
 The output is in `output/showcase/`. The Pages workflow publishes this directory. Source files are in `showcase/`; frontend checks run with `npm run test:showcase --prefix tests/frontend` after installing the frontend dependencies.
@@ -216,33 +361,45 @@ The [project showcase](https://finevolab.lunelu.com/) includes a real archived h
 
 The showcase combines project results, archived execution replay, and evidence browsing. Its primary action opens the dedicated analysis application, which provides invitation login, questions, execution status, cited results, task history, and HTML/PDF downloads. The legacy `experience.html` address redirects to the corresponding showcase section. Page routing and bilingual checks are recorded in [page acceptance](project_notes/run_logs/site_layout_checks.json).
 
+<details>
+<summary><strong>Invited analysis application</strong></summary>
+
 Run invite-only analysis locally with the existing model configuration:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve
 ```
 
 Open `http://127.0.0.1:8085/` and use the invitation saved under `output/experience/invite-*.txt`. The server reads the existing `FINEVOLAB_MODEL_CONFIG` setting. Invitation hashes and policy are stored in `output/experience/access.json`; sessions and task ownership are stored in `output/experience/access.sqlite3`. All remain local. The dedicated application exposes owner-scoped tasks and report downloads. It enforces atomic per-user and global daily task quotas, concurrency, idempotent submissions, and per-task `RunBudget`. Daily quotas use UTC and count failed or interrupted executions. Restarted tasks are marked interrupted. Default limits are 5 tasks per user per day, 20 globally, and 1 concurrent task; each task allows 6 model calls, 10 tool calls, 20,000 tokens, and 240 seconds. Configure invitations and quotas before starting the server. Browser sessions last 12 hours. The default service binds to loopback. With `--public-url`, the public hostname requires HTTPS and uses secure session cookies; forwarded headers are trusted only from the local connector. The public Pages workspace runs replay and evidence browsing without model requests.
 
+</details>
+
+<details>
+<summary><strong>Cloudflare Tunnel deployment</strong></summary>
+
 To expose the same invited application through Cloudflare Tunnel, configure `configs/tunnel.json` and save only the connector token in `output/tunnel/token.txt`. The connector installer verifies the pinned release SHA-256. Start the backend in one terminal:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py install
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_experience.py serve --public-url https://app.lunelu.com
+conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py install
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve --public-url https://app.lunelu.com
 ```
 
 In a second terminal, start the hidden connector and check readiness:
 
 ```powershell
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py start
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py status
-& $condaExe run --no-capture-output -n finevolab python scripts/manage_tunnel.py verify
+conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py start
+conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py status
+conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py verify
 ```
 
 In the Cloudflare tunnel configuration, add a published application route: hostname `app.lunelu.com`, service `http://127.0.0.1:8085`, and no path filter. The [live analysis workspace](https://app.lunelu.com/) uses this route. Both the local backend and connector must remain running. `verify` checks HTTPS routing, the live workspace, and rejection of anonymous task access without calling a model. Use `--proxy` for connector installation or public verification when a network proxy is required. `stop` stops only the managed connector. Set `FINEVOLAB_BROWSER_REPORT` to a distinct report filename when recording a separate browser acceptance run.
 
 Workspace acceptance is recorded in [workspace checks](project_notes/run_logs/experience_acceptance.json). For rendered-browser checks, set `FINEVOLAB_CHROMIUM` to an installed Chromium executable and run `node tests/frontend/check_experience_live.cjs` while the local service is running. Set `FINEVOLAB_INVITATION_FILE` to the local invitation file and add `--real` to execute a real model-backed analysis, verify tools, citations, validation, reports, refresh recovery, and idempotency. The driver reads the invitation without printing it.
+
+</details>
+
+<div id="section-license"></div>
 
 ## License
 
