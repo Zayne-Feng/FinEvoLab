@@ -11,6 +11,7 @@ from pydantic import BaseModel, ConfigDict
 
 from finevolab.config import ModelConfig
 from finevolab.tools import FinancialStore
+from finevolab.derived import DERIVED_METRICS
 from finevolab.runtime import BudgetHooks, RunBudget
 from finevolab.reporting import build_report as render_report
 from finevolab.retrieval import search_corpus
@@ -80,10 +81,13 @@ def make_tools(store: FinancialStore, events: list, candidate: dict):
         return output
 
     @function_tool
-    def calculate_metrics(company: str, metric: Literal["revenue", "operating_income", "net_income"], fiscal_year: int) -> dict:
-        """Compute annual growth from comparable source-bound metrics; return percent, formula, inputs, and citations."""
+    def calculate_metrics(company: str, metric: Literal["revenue", "operating_income", "net_income", "operating_margin",
+                          "net_margin", "operating_margin_change", "net_margin_change"], fiscal_year: int) -> dict:
+        """Compute annual growth or audited profit margins; margin changes use percentage points."""
         try:
-            output = store.growth(company, metric, fiscal_year).model_dump(mode="json")
+            result = (store.derive(company, metric, fiscal_year) if metric in DERIVED_METRICS
+                      else store.growth(company, metric, fiscal_year))
+            output = result.model_dump(mode="json")
         except ValueError as error:
             output = ToolError(error=str(error)).model_dump(mode="json")
         events.append({"tool": "calculate_metrics", "company": company, "metric": metric,
@@ -96,6 +100,10 @@ def make_tools(store: FinancialStore, events: list, candidate: dict):
         if not isinstance(description, str) or not description.strip():
             raise ValueError("Tool descriptions must be nonempty strings")
         tool.description = description
+        if tool.name == "calculate_metrics":
+            tool.description += (" For operating_margin or net_margin, compute annual profit / revenue percent. "
+                                 "For operating_margin_change or net_margin_change, return the difference "
+                                 "from the previous fiscal year in percentage_points, with field audits.")
     return tools
 
 

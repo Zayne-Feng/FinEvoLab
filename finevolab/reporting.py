@@ -89,7 +89,8 @@ def build_analysis_report(store: FinancialStore, question: str, result: dict, ou
     html_path.write_text(environment.get_template("analysis.html").render(
         question=question, answer=answer, observations=observations, evidence=evidence,
         data_version=store.version, narrative=narrative, overall_status=result.get("overall_status", answer["status"]),
-        source_issues=result.get("source_issues", []), review=result.get("review")), encoding="utf-8")
+        source_issues=result.get("source_issues", []), review=result.get("review"),
+        source_reconciliation=result.get("source_reconciliation", {})), encoding="utf-8")
     font_path = Path(os.environ.get("FINEVOLAB_REPORT_FONT", "C:/Windows/Fonts/simhei.ttf"))
     font_name = "FinancialReport" if font_path.is_file() else "STSong-Light"
     if font_name not in pdfmetrics.getRegisteredFontNames():
@@ -118,8 +119,12 @@ def build_analysis_report(store: FinancialStore, question: str, result: dict, ou
                                    ("PADDING", (0, 0), (-1, -1), 7)]))
         story.extend([table, Spacer(1, 12)])
     for calculation in answer.get("calculations", []):
-        story.extend([paragraph(f"{calculation['company']} FY{calculation['fiscal_year']} {calculation['metric']} "
-                                f"growth: {calculation['value']} percent"), paragraph("Formula: " + calculation["formula"])])
+        label = calculation["metric"] if calculation.get("kind") == "derived" else calculation["metric"] + " growth"
+        story.extend([paragraph(f"{calculation['company']} FY{calculation['fiscal_year']} {label}: "
+                                f"{calculation['value']} {calculation['unit']}"), paragraph("Formula: " + calculation["formula"])])
+        for check in calculation.get("audit", []):
+            story.append(paragraph(f"Audit {check['field']}: {check['status']} | {check['rule']} | "
+                                   + ", ".join(check["evidence_ids"])))
     if answer.get("periods_aligned") is not None:
         story.append(paragraph("Fiscal periods aligned: " + str(answer["periods_aligned"])))
     story.append(Paragraph("Evidence", styles["Heading2"]))
@@ -132,6 +137,10 @@ def build_analysis_report(store: FinancialStore, question: str, result: dict, ou
         story.extend([paragraph(item["id"] + " | " + item["company"]), paragraph(item["source_url"]),
                       paragraph("Location: " + item["locator"]), paragraph("SHA256: " + item["source_sha256"]),
                       paragraph(item.get("text", "")), Spacer(1, 8)])
+    if result.get("source_reconciliation"):
+        story.append(Paragraph("Source reconciliation", styles["Heading2"]))
+        for scope, check in result["source_reconciliation"].items():
+            story.append(paragraph(f"{scope}: {check['status']} | Source groups: {check['source_groups']}"))
     if result.get("source_issues"):
         story.append(paragraph("Selected document values differ from the pinned snapshot; the selected source was used."))
     if result.get("review"):

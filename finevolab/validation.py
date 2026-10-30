@@ -4,6 +4,7 @@ from decimal import Decimal
 
 from finevolab.evaluation import TaskAnswer
 from finevolab.tools import FinancialStore
+from finevolab.derived import DerivedResult, validate_derived
 
 
 def validate_answer(store: FinancialStore, output: dict) -> dict:
@@ -29,7 +30,17 @@ def validate_answer(store: FinancialStore, output: dict) -> dict:
     answer = TaskAnswer.model_validate(output["answer"])
     if not answer.answer.strip():
         raise ValueError("An explanation is required")
-    observations = answer.metrics + [item for calculation in answer.calculations for item in calculation.inputs]
+    calculation_ids = [(item.company, item.metric, item.fiscal_year) for item in answer.calculations]
+    if len(calculation_ids) != len(set(calculation_ids)):
+        raise ValueError("Duplicate financial calculations")
+    observations = answer.metrics + [item for calculation in answer.calculations
+                                     if not isinstance(calculation, DerivedResult) for item in calculation.inputs]
+    for calculation in answer.calculations:
+        if isinstance(calculation, DerivedResult):
+            validate_derived(store, calculation)
+            for item in calculation.inputs:
+                if not any(item.model_dump() == existing.model_dump() for existing in observations):
+                    observations.append(item)
     identities = [(item.company, item.name, item.fiscal_year) for item in observations]
     if len(identities) != len(set(identities)):
         raise ValueError("Duplicate financial observations")
@@ -38,6 +49,8 @@ def validate_answer(store: FinancialStore, output: dict) -> dict:
         if item.model_dump() != expected.model_dump():
             raise ValueError("An observation differs from the source snapshot")
     for calculation in answer.calculations:
+        if isinstance(calculation, DerivedResult):
+            continue
         expected = store.growth(calculation.company, calculation.metric, calculation.fiscal_year)
         if not calculation.value.is_finite() or abs(calculation.value - expected.value) > Decimal("0.000001"):
             raise ValueError("The annual calculation is incorrect")
@@ -71,4 +84,10 @@ def validate_answer(store: FinancialStore, output: dict) -> dict:
                     {(item.company, item.metric, item.fiscal_year) for item in value.calculations})
         if identities_of(answer) != identities_of(expected):
             raise ValueError("Answer observations do not cover the request")
+    if "source_reconciliation" in output:
+        from finevolab.reconciliation import reconcile_metric
+        expected_sources = {"|".join(map(str, key)): reconcile_metric(store, *key)
+            for key in sorted({(item.company, item.name, item.fiscal_year) for item in observations})}
+        if output["source_reconciliation"] != expected_sources:
+            raise ValueError("Source reconciliation differs from the observed financial facts")
     return {"status": "passed", "observations": len(observations), "evidence_ids": sorted(identifiers)}

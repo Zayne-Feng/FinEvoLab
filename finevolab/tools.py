@@ -6,6 +6,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict
 from finevolab.ingestion import FinancialMetric
+from finevolab.derived import DerivedMetric, DerivedResult, calculate_derived
 from finevolab.runtime import fingerprint
 from finevolab.provenance import file_digest
 
@@ -107,6 +108,9 @@ class FinancialStore:
         return ComparisonResult(metric=name, fiscal_year=fiscal_year, values=metrics,
                                 periods_aligned=len({(item.period_start, item.period_end) for item in metrics}) == 1)
 
+    def derive(self, company: str, metric: DerivedMetric, fiscal_year: int) -> DerivedResult:
+        return calculate_derived(self, company, metric, fiscal_year)
+
     def growth(self, company: str, name: str, fiscal_year: int) -> GrowthResult:
         current = self.get_metric(company, name, fiscal_year)
         previous = self.get_metric(company, name, fiscal_year - 1)
@@ -138,6 +142,12 @@ class BoundedFinancialStore:
     def growth(self, company, name, fiscal_year):
         return self.executor.call("calculate_metrics", {"company": company, "metric": name, "fiscal_year": fiscal_year},
             lambda: self.store.growth(company, name, fiscal_year), GrowthResult)
+
+    def derive(self, company, metric, fiscal_year):
+        from finevolab.derived import validate_derived
+        result = self.executor.call("calculate_metrics", {"company": company, "metric": metric, "fiscal_year": fiscal_year},
+            lambda: self.store.derive(company, metric, fiscal_year), DerivedResult)
+        return validate_derived(self.store, result)
 
     def compare(self, companies, name, fiscal_year):
         return self.executor.call("compare_companies", {"companies": companies, "metric": name, "fiscal_year": fiscal_year},

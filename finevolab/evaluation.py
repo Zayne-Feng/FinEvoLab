@@ -18,6 +18,7 @@ from finevolab.provider import async_client
 from finevolab.retrieval import ReportIndex
 from finevolab.runtime import BudgetHooks, RunBudget
 from finevolab.tools import FinancialStore, GrowthResult
+from finevolab.derived import DerivedResult
 
 
 class TaskAnswer(BaseModel):
@@ -26,7 +27,7 @@ class TaskAnswer(BaseModel):
                     "periods_not_aligned", "invalid_parameters"]
     answer: str
     metrics: list[FinancialMetric]
-    calculations: list[GrowthResult]
+    calculations: list[GrowthResult | DerivedResult]
     periods_aligned: bool | None
     evidence_ids: list[str]
 
@@ -100,6 +101,10 @@ def score_task(case: dict, output: dict) -> dict:
         valid = (found.get("formula") == item["formula"] and found.get("unit") == "percent"
                  and found.get("previous_year") == item["previous_year"]
                  and set(found.get("evidence_ids", [])) == set(item["evidence_ids"]))
+        if item.get("kind") == "derived":
+            valid = all(found.get(field) == item.get(field) for field in
+                        ("kind", "contract_version", "formula", "unit", "previous_year", "evidence_ids",
+                         "data_version", "source_signature", "audit"))
         checks["formula"] = checks["formula"] and valid
         checks["numeric"] = checks["numeric"] and _number_equal(found.get("value"), item["value"], Decimal("0.000001"))
     required = {"metric_query": "get_financial_metrics", "annual_growth": "calculate_metrics",
@@ -130,10 +135,16 @@ async def analyze_task(settings: ModelConfig, store: FinancialStore, question: s
                        candidate: dict, events: list | None = None, variant: str = "tools",
                        budget: RunBudget | None = None, telemetry: dict | None = None,
                        root: Path | None = None, corpus_profile: str = "contextual", backend: str = "sdk",
-                       retrieval_variant: str = "improved", review_mode: str = "off") -> dict:
+                       retrieval_variant: str = "improved", review_mode: str = "off", checkpoint_root: Path | None = None,
+                       extensions=None) -> dict:
     if variant == "tools":
         from finevolab.grounded import analyze_grounded
         options = {"corpus_profile": corpus_profile, "backend": backend, "retrieval_variant": retrieval_variant, "review_mode": review_mode}
+        checkpoint_root = checkpoint_root or (Path(telemetry["checkpoint_root"]) if telemetry and telemetry.get("checkpoint_root") else None)
+        if checkpoint_root is not None:
+            options["checkpoint_root"] = checkpoint_root
+        if extensions is not None:
+            options["extensions"] = extensions
         if root is not None:
             options["root"] = root
         return await analyze_grounded(settings, store, question, candidate, events, budget, telemetry, **options)

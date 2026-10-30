@@ -7,10 +7,12 @@ import json
 from fastapi import APIRouter, FastAPI, HTTPException, File, Form, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from typing import Annotated, Literal
 
 from finevolab.tools import FinancialStore
+from finevolab.derived import DerivedMetric, DerivedResult, validate_derived
+from finevolab.scenarios import ScenarioRequest
 from finevolab.retrieval import search_corpus
 from finevolab.workflow import run_task, run_question
 from finevolab.config import ModelConfig
@@ -34,6 +36,55 @@ class QuestionRequest(BaseModel):
     question: str = Field(min_length=1, max_length=12000)
     upload_ids: list[Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]] = Field(default_factory=list, max_length=5)
     planner_backend: PlannerBackend = "api"
+
+
+class DerivedMetricRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    company: str = Field(min_length=1, max_length=100)
+    fiscal_year: int = Field(ge=1900, le=2200)
+    metric: DerivedMetric
+    upload_ids: list[Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]] = Field(default_factory=list, max_length=5)
+
+
+@router.post("/api/derived-metrics", response_model=DerivedResult)
+def derived_metric(request: DerivedMetricRequest):
+    try:
+        path = ROOT / "data/processed/reports.json"
+        store = (FinancialStore.from_uploads(path, request.upload_ids, ROOT / "data/uploads")
+                 if request.upload_ids else FinancialStore(path))
+        return validate_derived(store, store.derive(request.company, request.metric, request.fiscal_year))
+    except ValueError as error:
+        raise HTTPException(status_code=422, detail=str(error)) from None
+
+
+@router.post("/api/scenarios")
+def scenarios(request: ScenarioRequest):
+    from finevolab.scenarios import calculate_scenarios, validate_scenarios
+    store = FinancialStore(ROOT / "data/processed/reports.json")
+    try:
+        return validate_scenarios(store, calculate_scenarios(store, request)).model_dump(mode="json")
+    except ValueError as error:
+        raise HTTPException(status_code=422, detail=str(error)) from None
+
+
+class SourceMetricRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    company: str = Field(min_length=1, max_length=100)
+    fiscal_year: int = Field(ge=1900, le=2200)
+    metric: Literal["revenue", "operating_income", "net_income"]
+    upload_ids: list[Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]] = Field(default_factory=list, max_length=5)
+
+
+@router.post("/api/source-reconciliation")
+def source_reconciliation(request: SourceMetricRequest):
+    from finevolab.reconciliation import reconcile_metric
+    path = ROOT / "data/processed/reports.json"
+    try:
+        store = (FinancialStore.from_uploads(path, request.upload_ids, ROOT / "data/uploads")
+                 if request.upload_ids else FinancialStore(path))
+        return reconcile_metric(store, request.company, request.metric, request.fiscal_year)
+    except ValueError as error:
+        raise HTTPException(status_code=422, detail=str(error)) from None
 
 
 @router.get("/api/planners")
