@@ -1,7 +1,6 @@
 .gitattributes text eol=lf
 .gitignore text eol=lf
 .dockerignore text eol=lf
-.gitmodules text eol=lf
 README.md text eol=lf
 README_CN.md text eol=lf
 AGENTS.md text eol=lf
@@ -110,3 +109,5 @@ project_notes/experiments/*/source.patch -text whitespace=-blank-at-eol,cr-at-eo
 configs/agent_review.json -text whitespace=cr-at-eol
 configs/retrieval_services.json -text whitespace=cr-at-eol
 requirements/retrieval_services.in -text whitespace=cr-at-eol
+
+data/raw/** linguist-vendored

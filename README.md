@@ -21,7 +21,7 @@ FinEvoLab is an independent derivative project built on FinRobot Equity V1. It c
 
 The default API mode runs with CPU retrieval. The LoRA service runs on an external GPU and connects through SSH port forwarding. LoRA handles `RequestPlan` planning, while the API model generates explanatory narratives. All backends share the financial tools, RAG, and harness.
 
-The primary application is `finevolab/`, with reused Equity V1 modules and the web application shell in `finrobot_equity/`. The `finrobot_autogen/` and `finrobot_desktop/` directories retain the other upstream implementations.
+The primary application is `finevolab/`, with reused Equity V1 modules and the web application shell in `finrobot_equity/`. Use the Conda setup and application commands below.
 
 ## Quick start
 
@@ -119,7 +119,7 @@ Then run each arm with `--split test --selection output/reproduction/selection.j
 
 Each CLI lists its complete arguments through `--help`. Original predictions and per-arm manifests are stored under `project_notes/experiments/planner-formal-*`.
 
-Start the LoRA service with `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`. Use SSH to forward remote `127.0.0.1:8082` to local `127.0.0.1:8787`, matching the loopback address in [planner_service.json](configs/planner_service.json). The web interface supports BF16 / NF4 selection. The original FinNLP submodule retains its pinned commit and can be fetched with `git submodule update --init --recursive`.
+Start the LoRA service with `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`. Use SSH to forward remote `127.0.0.1:8082` to local `127.0.0.1:8787`, matching the loopback address in [planner_service.json](configs/planner_service.json). The web interface supports BF16 / NF4 selection.
 
 When using a retrained adapter, copy the `adapter_sha256` returned by the service's `GET /health` into the corresponding planner configuration and select that file through `FINEVOLAB_PLANNER_CONFIG`, keeping the client identity consistent with the actual weights.
 

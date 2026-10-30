@@ -49,7 +49,7 @@ def publication_candidates() -> tuple[list[str], list[str]]:
 
 def check() -> dict:
     candidates, ignored_tracked = publication_candidates()
-    required = ["README.md", "README_CN.md", "AGENTS.md", ".gitignore", ".dockerignore", ".gitattributes", ".gitmodules",
+    required = ["README.md", "README_CN.md", "AGENTS.md", ".gitignore", ".dockerignore", ".gitattributes",
                 "LICENSE", "NOTICE", "TRADEMARK_POLICY.md", "COPYRIGHT",
                 "configs/readme_sync.json", "scripts/check_readme_sync.py",
                 "configs/retrieval.json", "configs/reranker.json", "configs/planner_model.json",

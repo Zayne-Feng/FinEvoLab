@@ -21,7 +21,7 @@ FinEvoLab 是基于 FinRobot Equity V1 的独立衍生项目，将公开财报�
 
 默认 API 模式配合 CPU 检索运行。LoRA 服务部署于外部 GPU，通过 SSH 转发接入；LoRA 负责 `RequestPlan` 规划，API 模型生成解释性正文，各后端共用财务工具、RAG 和 harness。
 
-主应用位于 `finevolab/`，复用的 Equity V1 模块与网页外壳位于 `finrobot_equity/`；`finrobot_autogen/` 和 `finrobot_desktop/` 保留上游的其他实现。
+主应用位于 `finevolab/`，复用的 Equity V1 模块与网页外壳位于 `finrobot_equity/`。安装与启动使用下方的 Conda 配置和应用命令。
 
 ## 快速启动
 
@@ -119,7 +119,7 @@ python scripts/run_quantization_comparison.py --bundle data/training/planner_for
 
 各 CLI 的 `--help` 列出完整参数；原始预测与各组 manifest 保存在 `project_notes/experiments/planner-formal-*`。
 
-LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`；通过 SSH 将远端 `127.0.0.1:8082` 转发至本地 `127.0.0.1:8787`，与 [planner_service.json](configs/planner_service.json) 的 loopback 地址对应。网页可选择 BF16 / NF4。原 FinNLP 子模块按固定 commit 保留，可用 `git submodule update --init --recursive` 获取。
+LoRA 在线服务使用 `python scripts/serve_planner.py --bundle data/training/planner_formal/frozen_v1 --adapter output/training/reproduction-seed17/checkpoint-75 --port 8082`；通过 SSH 将远端 `127.0.0.1:8082` 转发至本地 `127.0.0.1:8787`，与 [planner_service.json](configs/planner_service.json) 的 loopback 地址对应。网页可选择 BF16 / NF4。
 
 使用重新训练的 adapter 时，将服务 `GET /health` 返回的 `adapter_sha256` 填入对应的规划器配置，并通过 `FINEVOLAB_PLANNER_CONFIG` 指定该配置文件，保持客户端与实际权重身份一致。
 
