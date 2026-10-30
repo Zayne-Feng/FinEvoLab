@@ -5,10 +5,10 @@ README.md text eol=lf
 README_CN.md text eol=lf
 AGENTS.md text eol=lf
 
-LICENSE -text
+LICENSE -text whitespace=cr-at-eol
 NOTICE -text
 COPYRIGHT -text
-TRADEMARK_POLICY.md -text
+licenses/finrobot/** -text whitespace=cr-at-eol
 
 *.png -text
 *.jpg -text
@@ -105,6 +105,7 @@ project_notes/experiments/claim-review-*/** -text whitespace=cr-at-eol
 project_notes/run_logs/service*_checks.json -text whitespace=cr-at-eol
 project_notes/run_logs/retrieval_services_checks.json -text whitespace=cr-at-eol
 project_notes/evaluations/retrieval_service_comparison.json -text whitespace=cr-at-eol
+project_notes/experiments/analysis-extensions-release/** -text whitespace=cr-at-eol
 project_notes/experiments/*/source.patch -text whitespace=-blank-at-eol,cr-at-eol
 configs/agent_review.json -text whitespace=cr-at-eol
 configs/retrieval_services.json -text whitespace=cr-at-eol

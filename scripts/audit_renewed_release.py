@@ -136,7 +136,7 @@ def main():
         raise ValueError("The current PDF visual review is incomplete")
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
         original = subprocess.check_output(["git", "show", f"{UPSTREAM}:{name}"], cwd=ROOT)
-        if (ROOT / name).read_bytes().replace(b"\r\n", b"\n") != original.replace(b"\r\n", b"\n"):
+        if (ROOT / "licenses/finrobot" / name).read_bytes().replace(b"\r\n", b"\n") != original.replace(b"\r\n", b"\n"):
             raise ValueError("An upstream legal file changed")
     if subprocess.check_output(["git", "ls-files", "--", "**/config.ini", ".env"], cwd=ROOT, text=True).strip():
         raise ValueError("Private configuration is tracked")

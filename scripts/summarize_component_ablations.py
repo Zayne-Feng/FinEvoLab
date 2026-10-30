@@ -248,9 +248,9 @@ def run(args):
     write_json(output / "usage.json", usage)
     legal = {}
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
-        path = ROOT / name
+        path = ROOT / "licenses/finrobot" / name
         if path.exists():
-            original = subprocess.check_output(["git", "show", f"b4618391:{name}"], cwd=ROOT)
+            original = subprocess.check_output(["git", "show", f"2717499b8e30f242640af08c4ad9afd1113c2d45:{name}"], cwd=ROOT)
             legal[name] = original == path.read_bytes()
     assert all(legal.values())
     ignored = subprocess.run(["git", "check-ignore", "finrobot_equity/core/config/config.ini"], cwd=ROOT, capture_output=True).returncode == 0

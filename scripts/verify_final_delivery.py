@@ -48,7 +48,7 @@ def main(args):
     baseline = "2717499b8e30f242640af08c4ad9afd1113c2d45"
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
         historical = subprocess.check_output(["git", "show", f"{baseline}:{name}"], cwd=ROOT)
-        if historical != (ROOT / name).read_bytes():
+        if historical != (ROOT / "licenses/finrobot" / name).read_bytes():
             raise ValueError("A mandatory upstream legal file changed")
     private_config = "finrobot_equity/core/config/config.ini"
     tracked = subprocess.check_output(["git", "ls-files", "--", private_config], cwd=ROOT, text=True)

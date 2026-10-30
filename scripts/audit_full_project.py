@@ -66,7 +66,7 @@ def main():
     checks = {}
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
         original = subprocess.check_output(["git", "show", f"2717499b8e30f242640af08c4ad9afd1113c2d45:{name}"], cwd=ROOT)
-        if original.replace(b"\r\n", b"\n") != (ROOT / name).read_bytes().replace(b"\r\n", b"\n"):
+        if original.replace(b"\r\n", b"\n") != (ROOT / "licenses/finrobot" / name).read_bytes().replace(b"\r\n", b"\n"):
             raise ValueError("An upstream legal file changed")
     checks["legal_files"] = "passed"
     checks["branch"] = subprocess.check_output(["git", "branch", "--show-current"], cwd=ROOT, text=True).strip()

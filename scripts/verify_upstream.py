@@ -92,7 +92,7 @@ def main() -> None:
             getattr(settings, "model", None) == "local-schema-check"
         )
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
-        checks[name] = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+        checks[name] = hashlib.sha256((ROOT / "licenses/finrobot" / name).read_bytes()).hexdigest()
     if args.base_url:
         checks["live_http"] = {}
         for path in ("/login", "/static/style.css"):

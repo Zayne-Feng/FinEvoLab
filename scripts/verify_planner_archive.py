@@ -20,7 +20,7 @@ def main():
         raise ValueError("No staged delivery files")
     forbidden = [name for name in names if name.endswith((".ini", ".safetensors", ".db"))
                  or "node_modules/" in name or name.split("/")[-1].startswith(".env")]
-    if forbidden or any(name in names for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md")):
+    if forbidden or any(name in {"LICENSE", "NOTICE", "COPYRIGHT", "TRADEMARK_POLICY.md"} or name.startswith("licenses/") for name in names):
         raise ValueError("Credentials, runtime weights, or legal changes entered the archive")
     mismatches = []
     verified = 0

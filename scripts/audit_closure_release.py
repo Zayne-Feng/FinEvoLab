@@ -25,9 +25,9 @@ def main():
         json.loads(path.read_text(encoding="utf-8-sig"))
         report["json_files"] += 1
     for name in ("LICENSE", "NOTICE", "TRADEMARK_POLICY.md"):
-        prior = subprocess.check_output(["git", "show", "c5f4cb8b:" + name], cwd=ROOT)
-        assert (ROOT / name).read_bytes() == prior
-        report["legal_files"][name] = sha256(ROOT / name)
+        prior = subprocess.check_output(["git", "show", "2717499b8e30f242640af08c4ad9afd1113c2d45:" + name], cwd=ROOT)
+        assert (ROOT / "licenses/finrobot" / name).read_bytes() == prior
+        report["legal_files"][name] = sha256(ROOT / "licenses/finrobot" / name)
     config = "finrobot_equity/core/config/config.ini"
     assert not subprocess.check_output(["git", "ls-files", "--", config], cwd=ROOT).strip()
     assert subprocess.run(["git", "check-ignore", "-q", config], cwd=ROOT).returncode == 0
