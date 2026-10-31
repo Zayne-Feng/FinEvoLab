@@ -227,7 +227,8 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
                 settings = ModelConfig.load()
                 candidate = read_json(root / "prompts/benchmark.json")
                 state = await run_question(row["id"], row["question"], settings, candidate,
-                                           root=root, budget=budget, timeout_seconds=budget.timeout_seconds)
+                                           root=root, budget=budget, timeout_seconds=budget.timeout_seconds,
+                                           tool_backend=policy.get("tool_backend", "direct"))
             access.finish(row["id"], state["status"])
         except asyncio.CancelledError:
             access.finish(row["id"], "interrupted", "ProcessShutdown")

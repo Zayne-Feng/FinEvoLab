@@ -136,11 +136,13 @@ async def analyze_task(settings: ModelConfig, store: FinancialStore, question: s
                        budget: RunBudget | None = None, telemetry: dict | None = None,
                        root: Path | None = None, corpus_profile: str = "contextual", backend: str = "sdk",
                        retrieval_variant: str = "improved", review_mode: str = "off", checkpoint_root: Path | None = None,
-                       extensions=None) -> dict:
+                       extensions=None, tool_backend: str = "direct") -> dict:
     if variant == "tools":
         from finevolab.grounded import analyze_grounded
         options = {"corpus_profile": corpus_profile, "backend": backend, "retrieval_variant": retrieval_variant, "review_mode": review_mode}
         checkpoint_root = checkpoint_root or (Path(telemetry["checkpoint_root"]) if telemetry and telemetry.get("checkpoint_root") else None)
+        if tool_backend != "direct":
+            options["tool_backend"] = tool_backend
         if checkpoint_root is not None:
             options["checkpoint_root"] = checkpoint_root
         if extensions is not None:

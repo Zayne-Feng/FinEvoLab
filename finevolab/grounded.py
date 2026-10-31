@@ -1,6 +1,7 @@
 """Plan requests and assemble source-bound financial and passage answers."""
 
 import asyncio
+from contextlib import AsyncExitStack
 from functools import lru_cache
 import hashlib
 import json
@@ -303,7 +304,8 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                            telemetry: dict | None = None, root: Path = ROOT,
                            retrieval_variant: str = "improved", request_plan: RequestPlan | None = None,
                            allow_repair: bool = True, corpus_profile: str = "contextual", backend: str = "sdk",
-                           review_mode: str = "off", extensions=None, checkpoint_root: Path | None = None) -> dict:
+                           review_mode: str = "off", extensions=None, checkpoint_root: Path | None = None,
+                           tool_backend: str = "direct") -> dict:
     if review_mode not in {"off", "self_check", "reviewer"}:
         raise ValueError("Unknown narrative review mode")
     events = events if events is not None else []
@@ -321,6 +323,14 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
         "code": {name: file_digest(ROOT / "finevolab" / name) for name in
                  ("tools.py", "retrieval.py", "uploads.py", "upload_metrics.py", "table_context.py", "reranking.py", "retrieval_cache.py", "vector_backends.py", "retrieval_settings.py")},
         "retrieval": file_digest(ROOT / "configs/retrieval.json")}
+    if tool_backend not in {"direct", "mcp"}:
+        raise ValueError("Unknown financial tool backend")
+    if tool_backend == "mcp" and store.upload_ids:
+        raise ValueError("The MCP backend accepts only the fixed public snapshot")
+    version["tool_backend"] = tool_backend
+    version["mcp_policy"] = file_digest(root / "configs/mcp.json") if tool_backend == "mcp" else None
+    version["mcp_code"] = {name: file_digest(ROOT / "finevolab" / name) for name in
+                           ("mcp_server.py", "mcp_client.py", "tool_backends.py")}
     version["reranker"] = file_digest(ROOT / "configs/reranker.json")
     from finevolab.retrieval_settings import load_settings, retrieval_observations
     version["services"] = load_settings(root).model_dump(mode="json")
@@ -344,9 +354,10 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
     if journal:
         executor.calls = journal.usage["tools"]
         repair_used = bool(journal.usage.get("repairs", 0))
-    bounded = BoundedFinancialStore(store, executor)
     model_attempts = 0
-    async with async_client(settings) as client:
+    from finevolab.tool_backends import financial_backend
+    async with AsyncExitStack() as stack:
+        client = await stack.enter_async_context(async_client(settings))
         async def generate(schema, instruction, payload, validate=None):
             nonlocal repair_used, model_attempts
             from finevolab.sdk_runtime import json_messages
@@ -438,10 +449,14 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                 "selected_documents": [{"company": item["company"], "report_year": item["report_year"], "id": item["id"]}
                                        for item in store.uploads]})
         plan = plan.model_copy(update={"companies": [store.company_id(company) for company in plan.companies]})
+        execution_store = await stack.enter_async_context(financial_backend(store, root, tool_backend,
+            max(0.001, budget.timeout_seconds - (time.monotonic() - started)),
+            preload_retrieval=plan.intent in {"explanation", "hybrid"}))
+        bounded = BoundedFinancialStore(execution_store, executor)
         method = method_for(plan, root) if extensions.method_selection else None
         numeric = None
         if plan.intent != "explanation":
-            numeric = assemble_numeric(plan, bounded, events)
+            numeric = await asyncio.to_thread(assemble_numeric, plan, bounded, events)
             from finevolab.validation import validate_answer
             validate_answer(store, {"answer": numeric, "request": plan.model_dump(), "upload_ids": store.upload_ids})
         if plan.intent in {"explanation", "hybrid"} and plan.scope == "annual_fiscal" and plan.companies:
@@ -452,10 +467,15 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                               "topic": plan.topic, "variant": retrieval_variant,
                               "metric_focus": plan.metrics[0] if len(plan.metrics) == 1 else None}
                 with retrieval_observations(events):
-                    retrieved = await asyncio.to_thread(executor.call, "search_reports", parameters,
-                        lambda company=company: SearchReportsOutput.model_validate(explanation_passages(root, question, store.company_id(company),
-                            plan.report_year or plan.fiscal_year, plan.topic, retrieval_variant, corpus_profile, store.uploads,
-                            parameters["metric_focus"])), SearchReportsOutput)
+                    def search(company=company):
+                        value = (execution_store.search(question, store.company_id(company),
+                            plan.report_year or plan.fiscal_year, plan.topic, retrieval_variant, corpus_profile,
+                            parameters["metric_focus"]) if tool_backend == "mcp" else
+                            explanation_passages(root, question, store.company_id(company),
+                                plan.report_year or plan.fiscal_year, plan.topic, retrieval_variant, corpus_profile,
+                                store.uploads, parameters["metric_focus"]))
+                        return SearchReportsOutput.model_validate(value)
+                    retrieved = await asyncio.to_thread(executor.call, "search_reports", parameters, search, SearchReportsOutput)
                 passages.extend(retrieved.model_dump(mode="json", exclude_unset=True))
             evidence = checked_passages(root, passages, store)
             events.append({"tool": "search_reports", "query": question, "output": evidence})
@@ -471,7 +491,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                             existing = next((item for item in (numeric or {}).get("calculations", [])
                                 if item["company"] == company and item["metric"] == metric
                                 and item["fiscal_year"] == plan.fiscal_year), None)
-                            calculation = GrowthResult.model_validate(existing) if existing else bounded.growth(company, metric, plan.fiscal_year)
+                            calculation = GrowthResult.model_validate(existing) if existing else await asyncio.to_thread(bounded.growth, company, metric, plan.fiscal_year)
                             observations = sorted(calculation.inputs, key=lambda item: item.fiscal_year)
                             previous, current = observations[0], observations[-1]
                             changes.append({"metric": metric, "previous_year": previous.fiscal_year,
@@ -517,7 +537,7 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                     "overall_status": "complete" if numeric["status"] == "complete" and draft.status == "complete" else
                         "partial" if numeric["status"] == "complete" or draft.status == "complete" else "insufficient_data"}
         else:
-            answer = numeric or assemble_numeric(plan, bounded, events)
+            answer = numeric or await asyncio.to_thread(assemble_numeric, plan, bounded, events)
             output = {"answer_type": "numeric", "answer": answer,
                       "evidence": [store.evidence[key] for key in answer["evidence_ids"]]}
         if review_mode != "off" and output["answer_type"] in {"explanation", "hybrid"}:
@@ -534,6 +554,9 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                                              "review": report})
                 return True
             output = await review_output(root, store, output, generate, review_mode, reserve_review_repair)
+    output["tool_backend"] = tool_backend
+    output["tool_backend_startup_seconds"] = getattr(execution_store, "startup_seconds", 0.0)
+    output["remote_tool_calls"] = getattr(execution_store, "remote_calls", 0)
     output["analysis_method"] = method
     output["logical_usage"] = journal.usage if journal else None
     if extensions.source_reconciliation and numeric:

@@ -27,6 +27,12 @@ from finevolab.tracing import ACTIVE_TRACE, TraceMiddleware, parse_traceparent, 
 
 
 class TraceTests(unittest.IsolatedAsyncioTestCase):
+    def setUp(self):
+        from finevolab.tracing import tracing_mode
+        scope = tracing_mode("file")
+        scope.__enter__()
+        self.addCleanup(scope.__exit__, None, None, None)
+
     def test_traceparent_validation(self):
         for value in (None, "bad", "00-" + "0" * 32 + "-" + "1" * 16 + "-01",
                       "00-" + "1" * 32 + "-" + "0" * 16 + "-01"):
@@ -205,3 +211,69 @@ class ServiceMetricTests(unittest.TestCase):
                            ([{"elapsed_seconds": 1, "status": "complete"}], 0)):
             with self.assertRaises(ValueError):
                 summarize(rows, wall)
+
+
+class ExportModeTests(unittest.TestCase):
+    def test_off_and_memory_modes_preserve_context_without_export(self):
+        from finevolab.tracing import tracing_mode
+        with tempfile.TemporaryDirectory() as directory:
+            for mode, count in (("off", 0), ("memory", 2)):
+                with tracing_mode(mode), trace_scope("request", Path(directory)) as (trace, _):
+                    with span("tool"):
+                        self.assertIsNotNone(traceparent())
+                self.assertEqual(len(trace.spans), count)
+            self.assertEqual(list(Path(directory).glob("*.json")), [])
+
+    def test_batch_flush_persists_final_spans(self):
+        from finevolab.tracing import tracing_mode, flush_exports
+        with tempfile.TemporaryDirectory() as directory:
+            with tracing_mode("batch"), trace_scope("request", Path(directory)):
+                with span("tool"):
+                    pass
+            stats = flush_exports()
+            self.assertEqual(stats["pending"], 0)
+            payload = json.loads(next(Path(directory).glob("*.json")).read_text())
+            self.assertEqual(len(payload["spans"]), 2)
+            self.assertTrue(all(s["status"] == "complete" for s in payload["spans"]))
+
+    def test_batch_failure_is_counted_without_replacing_result(self):
+        from finevolab.tracing import tracing_mode, flush_exports
+        before = flush_exports()["failed"]
+        with tempfile.TemporaryDirectory() as directory:
+            with patch("finevolab.runtime.write_json", side_effect=OSError("Disk unavailable")):
+                with tracing_mode("batch"), trace_scope("request", Path(directory)) as (trace, _):
+                    result = 42
+                stats = flush_exports()
+            self.assertEqual(result, 42)
+            self.assertEqual(trace.export_errors, 1)
+            self.assertEqual(stats["failed"], before + 1)
+
+    def test_bounded_export_queue_applies_backpressure(self):
+        from finevolab.tracing import TraceExporter
+        from threading import Event, Thread
+        started, release, submitted = Event(), Event(), Event()
+        def write(*args):
+            started.set()
+            release.wait(timeout=2)
+        owner = SimpleNamespace(export_errors=0)
+        with patch("finevolab.runtime.write_json", side_effect=write):
+            queue = TraceExporter(capacity=1)
+            try:
+                queue.submit(Path("unused.json"), {}, owner)
+                self.assertTrue(started.wait(timeout=1))
+                queue.submit(Path("unused.json"), {}, owner)
+                def third():
+                    queue.submit(Path("unused.json"), {}, owner)
+                    submitted.set()
+                thread = Thread(target=third)
+                thread.start()
+                self.assertFalse(submitted.wait(timeout=0.02))
+                release.set()
+                thread.join(timeout=2)
+                stats = queue.flush()
+                self.assertEqual(stats["written"], 3)
+                self.assertEqual(stats["pending"], 0)
+                self.assertGreaterEqual(stats["backpressure"], 1)
+            finally:
+                release.set()
+                queue.close()

@@ -72,3 +72,9 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
     def test_strict_schema_rejects_unknown_fields(self):
         with self.assertRaises(ValidationError):
             MetricRequest.model_validate({"company": "MSFT", "metric": "revenue", "fiscal_year": 2024, "upload_ids": ["private"]})
+
+
+    async def test_business_timeout_keeps_its_exception_type(self):
+        with self.assertRaises(TimeoutError):
+            async with financial_session(ROOT):
+                raise TimeoutError("The business deadline expired")

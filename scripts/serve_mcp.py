@@ -12,8 +12,13 @@ def main():
     from finevolab.mcp_server import create_server
     parser = argparse.ArgumentParser()
     parser.add_argument("--policy", type=Path, default=ROOT / "configs/mcp.json")
+    parser.add_argument("--preload-retrieval", action="store_true")
     args = parser.parse_args()
-    create_server(ROOT, args.policy).run(transport="stdio")
+    from finevolab.tracing import flush_exports
+    try:
+        create_server(ROOT, args.policy, args.preload_retrieval).run(transport="stdio")
+    finally:
+        flush_exports()
 
 
 if __name__ == "__main__":

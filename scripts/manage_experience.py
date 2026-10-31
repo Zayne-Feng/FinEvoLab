@@ -37,6 +37,7 @@ def main():
         print(json.dumps({"status": "created", "user": args.user, "invitation_file": str(invitation)}))
     else:
         os.environ["FINEVOLAB_ACCESS_CONFIG"] = str(args.config.resolve())
+        os.environ.setdefault("FINEVOLAB_TRACE_MODE", "batch")
         import uvicorn
         from finevolab.experience import create_app
         uvicorn.run(create_app(public_url=args.public_url), host=args.host, port=args.port, access_log=False,

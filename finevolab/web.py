@@ -37,6 +37,7 @@ class QuestionRequest(BaseModel):
     question: str = Field(min_length=1, max_length=12000)
     upload_ids: list[Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]] = Field(default_factory=list, max_length=5)
     planner_backend: PlannerBackend = "api"
+    tool_backend: Literal["direct", "mcp"] = "direct"
 
 
 class DerivedMetricRequest(BaseModel):
@@ -127,7 +128,7 @@ async def create_question(request: QuestionRequest):
         settings = ModelConfig.load()
         candidate = json.loads((ROOT / "prompts/benchmark.json").read_text(encoding="utf-8"))
         return await run_question(task_id, request.question, settings, candidate, upload_ids=request.upload_ids,
-                                  planner_backend=request.planner_backend)
+                                  planner_backend=request.planner_backend, tool_backend=request.tool_backend)
     except ValueError as error:
         raise HTTPException(status_code=422, detail={"task_id": task_id, "error_type": type(error).__name__}) from None
     except Exception as error:

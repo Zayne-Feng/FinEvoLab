@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from finevolab.derived import DERIVED_METRICS
 from finevolab.runtime import observe, read_json
 from finevolab.tools import FinancialStore
-from finevolab.tracing import trace_scope
+from finevolab.tracing import trace_scope, flush_exports
 
 ROOT = Path(__file__).resolve().parents[1]
 Metric = Literal["revenue", "operating_income", "net_income"]
@@ -47,14 +47,22 @@ class SearchRequest(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
     company: Company
     report_year: Year
-    query: Annotated[str, Field(min_length=1, max_length=2000)]
+    query: Annotated[str, Field(min_length=1, max_length=12000)]
+    topic: Literal["revenue", "profit", "risk"] | None = None
+    variant: Literal["baseline", "improved", "no_expansion", "no_priority", "none", "pooled", "reranked"] = "improved"
+    profile: Literal["legacy", "contextual"] = "legacy"
+    metric_focus: Metric | None = None
 
 
 class ToolResponse(BaseModel):
     model_config = ConfigDict(extra="forbid")
     data: dict | list[dict]
     data_version: str
+    source_signature: str
     trace_id: str
+    trace_mode: str
+    span_count: int
+    export_stats: dict = Field(default_factory=dict)
 
 
 class Policy(BaseModel):
@@ -93,7 +101,10 @@ class FinancialToolService:
         elif name == "compare_companies":
             value = self.store.compare(request.companies, request.metric, request.fiscal_year)
         elif name == "search_reports":
-            from finevolab.retrieval import load_index
+            from finevolab.retrieval import load_index, explanation_passages
+            if request.topic is not None:
+                return explanation_passages(self.root, request.query.strip(), self.store.company_id(request.company),
+                    request.report_year, request.topic, request.variant, request.profile, [], request.metric_focus)
             # The fixed index excludes uploaded documents and private user scope.
             value = load_index(self.root, mode=self.policy.retrieval_mode).search(
                 request.query.strip(), company=self.store.company_id(request.company),
@@ -103,11 +114,15 @@ class FinancialToolService:
         return value.model_dump(mode="json") if hasattr(value, "model_dump") else value
 
 
-def create_server(root: Path = ROOT, policy_path: Path | None = None):
+def create_server(root: Path = ROOT, policy_path: Path | None = None, preload_retrieval: bool = False):
     service = FinancialToolService(root, policy_path)
     from finevolab.retrieval import load_index
     if "search_reports" in service.policy.allowed_tools:
         load_index(root, mode=service.policy.retrieval_mode)
+    if preload_retrieval:
+        # Native encoder dependencies initialize before worker threads start.
+        from importlib import import_module
+        import_module("sentence_transformers")
     server = FastMCP("FinEvoLab", log_level="ERROR")
     annotations = ToolAnnotations(readOnlyHint=True, destructiveHint=False,
                                   idempotentHint=True, openWorldHint=False)
@@ -118,7 +133,11 @@ def create_server(root: Path = ROOT, policy_path: Path | None = None):
         with trace_scope("mcp." + name, root / "output/mcp/traces", incoming) as (trace, _):
             with observe([], "tool", name):
                 data = await asyncio.to_thread(service.invoke, name, request)
-            return {"data": data, "data_version": service.store.version, "trace_id": trace.trace_id}
+            response = {"data": data, "data_version": service.store.version, "source_signature": service.store.source_signature, "trace_id": trace.trace_id,
+                        "trace_mode": trace.mode, "span_count": len(trace.spans)}
+        if getattr(meta, "flush_trace", False):
+            response["export_stats"] = await asyncio.to_thread(flush_exports)
+        return response
 
     async def get_financial_metrics(request: MetricRequest, ctx: Context) -> ToolResponse:
         """Return an annual metric with its exact fiscal dates, units, and source citation."""

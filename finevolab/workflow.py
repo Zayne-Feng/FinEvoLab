@@ -22,13 +22,15 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                        root: Path = ROOT, events: list | None = None, telemetry: dict | None = None,
                        render: bool = True, timeout_seconds: int = 240, upload_ids: list[str] | None = None,
                        budget: RunBudget | None = None, corpus_profile: str = "contextual",
-                       planner_backend: str = "api", retrieval_variant: str = "improved", review_mode: str | None = None) -> dict:
+                       planner_backend: str = "api", retrieval_variant: str = "improved", review_mode: str | None = None, tool_backend: str = "direct") -> dict:
     from finevolab.evaluation import analyze_task
     from finevolab.reporting import build_analysis_report
     from finevolab.validation import validate_answer
 
     if not question.strip() or len(question) > 12000:
         raise ValueError("A question between 1 and 12000 characters is required")
+    if tool_backend not in {"direct", "mcp"} or (tool_backend == "mcp" and upload_ids):
+        raise ValueError("Invalid tool backend or document scope")
     budget = budget or RunBudget(max_context_chars=60000)
     telemetry = telemetry if telemetry is not None else {}
     telemetry["checkpoint_root"] = str(root / "output/tasks" / task_id / "subtasks")
@@ -45,7 +47,9 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     from finevolab.reviewing import ReviewSettings, review_mode as configured_review_mode
     review_mode = ReviewSettings(mode=review_mode or configured_review_mode(root)).mode
     from finevolab.methods import load_analysis_settings
-    versions = {"analysis_extensions": load_analysis_settings(root).model_dump(),
+    versions = {"tool_backend": tool_backend,
+        "mcp_policy": hashlib.sha256((root / "configs/mcp.json").read_bytes()).hexdigest() if tool_backend == "mcp" else None,
+        "analysis_extensions": load_analysis_settings(root).model_dump(),
         "analysis_methods": hashlib.sha256((ROOT / "configs/analysis_methods.json").read_bytes()).hexdigest(),
         "retrieval_services": load_settings(root).model_dump(mode="json"), "review_mode": review_mode,
         "workflow": "question", "question": question, "company": "MULTI", "fiscal_year": None,
@@ -79,7 +83,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
     async def analyze(state):
         if online_planner is None:
             result = await analyze_task(settings, store, question, candidate, events, telemetry=telemetry,
-                                        root=root, budget=budget, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode)
+                                        root=root, budget=budget, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode, **({"tool_backend": tool_backend} if tool_backend != "direct" else {}))
         else:
             from finevolab.grounded import analyze_grounded
             from finevolab.planning import PlannerServiceError
@@ -110,7 +114,7 @@ async def run_question(task_id: str, question: str, settings: ModelConfig, candi
                 timeout_seconds=budget.timeout_seconds - planning_seconds)
             try:
                 result = await analyze_grounded(settings, store, question, candidate, events, remaining,
-                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode)
+                    observed, root=root, request_plan=plan, corpus_profile=corpus_profile, retrieval_variant=retrieval_variant, review_mode=review_mode, **({"tool_backend": tool_backend} if tool_backend != "direct" else {}))
             finally:
                 narrative_usage = observed.get("usage", {})
                 observed["usage"] = {key: narrative_usage.get(key, 0) + value for key, value in plan_usage.items()}
