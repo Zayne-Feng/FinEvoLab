@@ -51,12 +51,12 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/run_logs/analysis_extensions_checks.json")
+    verification = load("project_notes/evaluations/trace_export_comparison.json")["verification"]["regression"]
     extensions = load("project_notes/experiments/analysis-extensions-release/assessment.json")
     extension_usage = load("project_notes/experiments/analysis-extensions-release/summary.json")["model_ablation"]
     if not extensions["controls_passed"] or extensions["input_sha256"] != load("project_notes/experiments/analysis-extensions-release/manifest.json")["input_sha256"]:
         raise ValueError("Analysis comparisons require calibrated reviews and frozen inputs")
-    if verification["unit_tests"]["status"] != "passed":
+    if verification["status"] != "passed":
         raise ValueError("The regression record must contain a passing result")
     if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:
         raise ValueError("Planner results must match the frozen test manifest")
@@ -105,7 +105,7 @@ def build(output):
         "splits": {"business": business_manifest["counts"],
             "planner": {name: split["cases"] for name, split in planner_manifest["splits"].items()}},
         "planner_template_clusters": planner["template_clusters"], "selected_epoch": planner["selection"]["selected_epoch"],
-        "regression_tests": verification["unit_tests"]["tests"],
+        "regression_tests": verification["tests"],
         "extensions": [{"arm": arm, **extensions["arms"][arm],
                         "input_tokens": extension_usage[arm]["input_tokens"]}
                        for arm in ("baseline", "encoding", "methods", "combined")],

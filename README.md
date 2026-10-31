@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **286 tests**; see [runtime verification](project_notes/evaluations/mcp_trace_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **296 tests**; see [runtime verification](project_notes/evaluations/trace_export_comparison.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 <details>
 <summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
@@ -350,7 +350,7 @@ Without run-path options, the summary command aggregates the versioned archived 
 <details>
 <summary><strong>Read-only MCP tools and correlated execution traces</strong></summary>
 
-The local MCP Server exposes metric lookup, growth and margin calculations, company comparison, and fixed-corpus report retrieval. The service enforces tool and company allowlists in [mcp.json](configs/mcp.json), strict request schemas, and read-only tool annotations. It uses the local stdio transport. The SDK Client discovers tools and validates structured results:
+The local MCP Server exposes metric lookup, growth and margin calculations, company comparison, and fixed-corpus report retrieval. The business workflow selects `direct` or `mcp` through `tool_backend`, retains the same planning and validation contracts, and verifies snapshot identity on remote results. The service enforces tool and company allowlists in [mcp.json](configs/mcp.json), strict request schemas, and read-only tool annotations. It uses the local stdio transport. The SDK Client discovers tools and validates structured results:
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/call_mcp.py
@@ -361,7 +361,11 @@ conda run --no-capture-output -n finevolab python scripts/call_mcp.py `
 
 For MCP host integration, launch `scripts/serve_mcp.py` using the Python interpreter from the installed environment. Search is restricted to the public fixed index and takes `report_year`; metric and calculation tools take `fiscal_year`. Complex requests can be supplied through `--request-file`. Financial dates and disclosure years are retained in the returned source objects.
 
-HTTP responses propagate `traceparent`; workflow phases, model calls, deterministic tools, and MCP calls share correlated trace and parent-span identifiers. Trace files contain relative durations, status, attempts, cache hits, and observed tokens. Local exports are stored in `output/traces/`, `output/mcp/`, and task trace directories. The complete HTTP workflow test uses an isolated model response while running actual SDK planning, financial tools, validation, and report generation.
+HTTP responses propagate `traceparent`; workflow phases, model calls, deterministic tools, and MCP calls share correlated trace and parent-span identifiers. Trace files contain relative durations, status, attempts, cache hits, and observed tokens. `FINEVOLAB_TRACE_MODE` selects `off`, `memory`, `file`, or `batch`; the managed invited service defaults to `batch`. Buffered export uses a bounded queue, backpressure, failure counters, and explicit shutdown flushing. Local exports are stored in `output/traces/`, `output/mcp/`, and task trace directories. The complete HTTP workflow test uses an isolated model response while running actual SDK planning, financial tools, validation, and report generation. Both tool backends are exercised through the same HTTP endpoint:
+
+```powershell
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/questions' -ContentType 'application/json' -Body '{"question":"Calculate Microsoft revenue growth for fiscal year 2024.","tool_backend":"mcp"}'
+```
 
 ```powershell
 conda run --no-capture-output -n finevolab python -m unittest tests.test_mcp tests.test_tracing -v
@@ -373,7 +377,25 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_services.py 
 
 The benchmark measures equivalent direct and MCP calls, loopback TCP HTTP requests, strict parameter and access-scope rejection, and injected timeout / connection-failure recovery. It records per-request outcomes, nearest-rank p50 / p95, throughput, failure rate, timeout counts, source hashes, and data identities. Model-backed smoke runs are selected separately with `--real-model`.
 
+The paired workflow benchmark uses 10 fixed numeric plans or 12 real-model regression questions, with the same questions, model, prompts, budgets, and three repetitions across both tool backends. Real-model requests travel through TCP HTTP and produce validated reports. The trace benchmark separately measures response latency and the time needed to drain client and server exports:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_tool_backends.py `
+  --mode fixed --repeats 3 --trace-mode batch `
+  --output output/reproduction/mcp_fixed
+conda run --no-capture-output -n finevolab python scripts/benchmark_tool_backends.py `
+  --mode real --repeats 3 --trace-mode batch `
+  --output output/reproduction/mcp_workflow
+conda run --no-capture-output -n finevolab python scripts/benchmark_trace_modes.py `
+  --modes off memory file batch --requests 40 --repeats 3 --concurrency 1 4 8 `
+  --output output/reproduction/trace_export
+```
+
 Formal local acceptance completed **1080/1080 requests**, **15/15 permission checks**, **1080 correlated traces / 2880 spans**, and **10/10 injected-failure recoveries**. Normal-load failure and timeout counts were zero. These measurements cover fixed tools and services; business-task accuracy retains its original evaluation scope. Per-request records, p50 / p95, throughput, source identities, and representative traces are in [MCP and Trace acceptance](project_notes/evaluations/mcp_trace_acceptance.json).
+
+Controlled export measurement completed **2880/2880 requests** across four trace modes. At concurrency 4, MCP response p95 decreased from **2627.01 to 80.79 ms** with buffered export, a **96.92%** reduction; throughput including export draining increased from **2.50 to 4.68 requests/s**. File-backed groups retained **1440 complete traces / 4320 spans**. See [trace export comparison](project_notes/evaluations/trace_export_comparison.json).
+
+The uncached business comparison passed **36/36 tasks per backend**, using **12 development-regression questions** with **3 repetitions**. The MCP arm executed **42 remote financial-tool calls**; both arms completed source validation and HTML/PDF reporting. Fixed-plan execution passed **60/60 tasks** without model requests. These runs measure planning, numerical and source checks, and narrative completeness. Process initialization is included in workflow latency; `direct` remains the default backend. The cache-enabled comparison is archived separately in the same [paired workflow evidence](project_notes/evaluations/mcp_workflow_comparison.json).
 
 </details>
 

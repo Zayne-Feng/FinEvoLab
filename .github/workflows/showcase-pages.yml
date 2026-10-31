@@ -22,6 +22,7 @@ on:
       - "project_notes/experiments/scope-test-v1/assessment.json"
       - "project_notes/evaluations/planner_formal_results.json"
       - "project_notes/evaluations/planner_quantization.json"
+      - "project_notes/evaluations/trace_export_comparison.json"
       - ".github/workflows/showcase-pages.yml"
   workflow_dispatch:
 

@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **286 项通过**，见[运行验证](project_notes/evaluations/mcp_trace_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **296 项通过**，见[运行验证](project_notes/evaluations/trace_export_comparison.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 <details>
 <summary><strong>分析扩展：配对结果与复现命令</strong></summary>
@@ -350,7 +350,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_retrieval_servi
 <details>
 <summary><strong>只读 MCP 工具与关联执行 Trace</strong></summary>
 
-本地 MCP Server 提供指标查询、同比及利润率计算、公司比较和固定语料的财报检索。服务端执行 [mcp.json](configs/mcp.json) 中的工具与公司白名单、严格请求 schema 和只读工具标注，使用本地 stdio 传输。SDK Client 支持工具发现与结构化结果校验：
+本地 MCP Server 提供指标查询、同比及利润率计算、公司比较和固定语料的财报检索。业务工作流通过 `tool_backend` 选择 `direct` 或 `mcp`，保留相同的规划与校验合同，并验证远程结果的快照身份。服务端执行 [mcp.json](configs/mcp.json) 中的工具与公司白名单、严格请求 schema 和只读工具标注，使用本地 stdio 传输。SDK Client 支持工具发现与结构化结果校验：
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/call_mcp.py
@@ -361,7 +361,11 @@ conda run --no-capture-output -n finevolab python scripts/call_mcp.py `
 
 接入 MCP host 时，使用已安装环境的 Python 解释器启动 `scripts/serve_mcp.py`。检索范围限定为公开固定索引，使用 `report_year`；指标与计算工具使用 `fiscal_year`。复杂请求可以通过 `--request-file` 提供。返回的来源对象保留实际财务日期与披露年份。
 
-HTTP 响应传递 `traceparent`；工作流阶段、模型调用、确定性工具和 MCP 调用共享可关联的 Trace 与父 span 标识。Trace 文件记录相对耗时、状态、尝试次数、缓存命中及已观测 Token。本地导出位于 `output/traces/`、`output/mcp/` 和任务 Trace 目录。完整 HTTP 工作流测试隔离模型响应，实际执行 SDK 规划、金融工具、校验及报告生成。
+HTTP 响应传递 `traceparent`；工作流阶段、模型调用、确定性工具和 MCP 调用共享可关联的 Trace 与父 span 标识。Trace 文件记录相对耗时、状态、尝试次数、缓存命中及已观测 Token。`FINEVOLAB_TRACE_MODE` 支持 `off`、`memory`、`file`、`batch`，托管的邀请服务默认使用 `batch`。后台导出提供有界队列、背压、失败计数及关闭时的显式刷新。本地导出位于 `output/traces/`、`output/mcp/` 和任务 Trace 目录。完整 HTTP 工作流测试隔离模型响应，实际执行 SDK 规划、金融工具、校验及报告生成。两种工具后端使用同一 HTTP 端点：
+
+```powershell
+Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/questions' -ContentType 'application/json' -Body '{"question":"Calculate Microsoft revenue growth for fiscal year 2024.","tool_backend":"mcp"}'
+```
 
 ```powershell
 conda run --no-capture-output -n finevolab python -m unittest tests.test_mcp tests.test_tracing -v
@@ -373,7 +377,25 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_services.py 
 
 该实验比较等价的 direct 与 MCP 调用，并测量回环 TCP HTTP 请求、严格参数及访问范围拒绝、注入超时与连接故障后的恢复。结果记录逐请求输出、nearest-rank p50 / p95、吞吐、失败率、超时数、源码校验值和数据身份。真实模型烟测通过 `--real-model` 单独选择。
 
+配对工作流使用 10 个固定数值计划或 12 个真实模型回归问题，两种工具后端保持相同问题、模型、提示词、预算及三轮重复。真实模型请求经过 TCP HTTP 并生成经过校验的报告。Trace 实验分别测量响应延迟和客户端、服务端导出排空所需时间：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_tool_backends.py `
+  --mode fixed --repeats 3 --trace-mode batch `
+  --output output/reproduction/mcp_fixed
+conda run --no-capture-output -n finevolab python scripts/benchmark_tool_backends.py `
+  --mode real --repeats 3 --trace-mode batch `
+  --output output/reproduction/mcp_workflow
+conda run --no-capture-output -n finevolab python scripts/benchmark_trace_modes.py `
+  --modes off memory file batch --requests 40 --repeats 3 --concurrency 1 4 8 `
+  --output output/reproduction/trace_export
+```
+
 正式本地验收通过 **1080/1080 次请求**、**15/15 项权限检查**、**1080 条关联 Trace / 2880 个 span**，以及 **10/10 次注入故障恢复**。正常负载的失败与超时数均为零。这些测量覆盖固定工具及服务，业务题准确率保持原评测口径。逐请求记录、p50 / p95、吞吐、源码身份和代表性 Trace 见 [MCP 与 Trace 验收](project_notes/evaluations/mcp_trace_acceptance.json)。
+
+四种 Trace 模式的受控测量通过 **2880/2880 次请求**。并发 4 时，后台导出使 MCP 响应 p95 从 **2627.01 降至 80.79 ms**，降低 **96.92%**；包含导出排空的吞吐从 **2.50 提高到 4.68 次请求/s**。文件导出组保留 **1440 条完整 Trace / 4320 个 span**。详见 [Trace 导出对照](project_notes/evaluations/trace_export_comparison.json)。
+
+关闭工具结果缓存的业务对照中，两种后端各通过 **36/36 次任务**，使用 **12 个开发回归问题**、各重复 **3 轮**。MCP 组实际执行 **42 次远程金融工具调用**；两组均完成来源校验及 HTML/PDF 报告。固定计划组在不请求模型的情况下通过 **60/60 次任务**。该组测量规划、数值与来源检查，以及正文完成度。工作流延时包含进程初始化；`direct` 继续作为默认后端。缓存开启组独立保存在同一份[配对工作流证据](project_notes/evaluations/mcp_workflow_comparison.json)中。
 
 </details>
 
