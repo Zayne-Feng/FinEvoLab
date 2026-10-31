@@ -13,6 +13,8 @@ import time
 from threading import RLock
 from uuid import uuid4
 
+from finevolab.tracing import ACTIVE_TRACE, span, trace_scope
+
 from agents import RunHooks
 from filelock import FileLock
 
@@ -32,7 +34,15 @@ def observe(events: list, kind: str, operation: str, **attributes):
         operations.append(record)
     started = time.perf_counter()
     try:
-        yield record
+        with span(operation, kind=kind, phase=record["phase"], attempt=record["attempt"]) as traced:
+            if traced:
+                record.update(trace_id=traced["trace_id"], span_id=traced["span_id"],
+                              parent_span_id=traced["parent_span_id"])
+            try:
+                yield record
+            finally:
+                if traced:
+                    traced["attributes"].update({key: record[key] for key in ("cache_hit", "tokens", "backend", "model") if key in record})
     except BaseException as error:
         record.update(status="failed", error_type=type(error).__name__)
         raise
@@ -208,6 +218,11 @@ class PhaseRunner:
         self.lock = FileLock(str(self.directory / "run.lock"))
 
     async def run(self, phases: dict, timeout_seconds: int = 240) -> dict:
+        with trace_scope("workflow", self.directory / "traces") as (_, operation):
+            operation["attributes"]["task_id"] = self.directory.name
+            return await self._run(phases, timeout_seconds)
+
+    async def _run(self, phases: dict, timeout_seconds: int) -> dict:
         with self.lock.acquire(timeout=0):
             state = read_json(self.path) if self.path.exists() else {
                 "task_id": self.directory.name, "signature": self.signature,
@@ -220,6 +235,7 @@ class PhaseRunner:
                 return state
             started = time.perf_counter()
             elapsed = state.get("elapsed_seconds", 0.0)
+            state["trace_id"] = ACTIVE_TRACE.get().trace_id
             state.setdefault("history", [])
             state["status"] = "running"
             write_json(self.path, state)
@@ -241,7 +257,8 @@ class PhaseRunner:
                         remaining = timeout_seconds - (time.perf_counter() - started)
                         if remaining <= 0:
                             raise TimeoutError("Task timeout exceeded")
-                        result = await asyncio.wait_for(function(state), timeout=remaining)
+                        with span("phase." + name, kind="phase", phase=name, attempt=attempt, recovered=attempt > 1):
+                            result = await asyncio.wait_for(function(state), timeout=remaining)
                     except BaseException as error:
                         state["status"] = "failed"
                         state["phases"][name].update(status="failed", error_type=type(error).__name__)

@@ -10,6 +10,7 @@ from filelock import FileLock, Timeout
 import httpx
 from openai import AsyncOpenAI, OpenAI
 
+from finevolab.tracing import span
 from finevolab.config import ModelConfig
 from finevolab.circuit import provider_circuit, unavailable_response
 
@@ -42,8 +43,14 @@ class SerializedAsyncTransport(httpx.AsyncBaseTransport):
         self.transport = transport or httpx.AsyncHTTPTransport()
 
     async def handle_async_request(self, request):
-        async with self.local_lock:
-            return await self.handle_serialized(request)
+        with span("provider.request", kind="client") as operation:
+            async with self.local_lock:
+                response = await self.handle_serialized(request)
+            if operation:
+                operation["attributes"]["status_code"] = response.status_code
+                if response.status_code >= 500:
+                    operation["status"] = "failed"
+            return response
 
     async def handle_serialized(self, request):
         started = time.monotonic()
@@ -89,6 +96,15 @@ class SerializedTransport(httpx.BaseTransport):
         self.transport = transport or httpx.HTTPTransport()
 
     def handle_request(self, request):
+        with span("provider.request", kind="client") as operation:
+            response = self.handle_serialized(request)
+            if operation:
+                operation["attributes"]["status_code"] = response.status_code
+                if response.status_code >= 500:
+                    operation["status"] = "failed"
+            return response
+
+    def handle_serialized(self, request):
         with self.lock.acquire(timeout=60):
             if not self.circuit.allow():
                 return unavailable_response(request)

@@ -165,6 +165,8 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
             await asyncio.gather(*jobs, return_exceptions=True)
 
     app = FastAPI(title="FinEvoLab Experience", lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
+    from finevolab.tracing import TraceMiddleware
+    app.add_middleware(TraceMiddleware, directory=root / "output/traces")
     app.state.access = access
     if public_host:
         app.add_middleware(TrustedHostMiddleware, allowed_hosts=[public_host, "127.0.0.1", "localhost"],

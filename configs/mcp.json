@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "allowed_tools": [
+    "get_financial_metrics",
+    "calculate_metrics",
+    "compare_companies",
+    "search_reports"
+  ],
+  "allowed_companies": [
+    "AAPL",
+    "AMZN",
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "retrieval_mode": "bm25"
+}

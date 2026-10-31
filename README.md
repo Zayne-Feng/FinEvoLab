@@ -32,6 +32,7 @@ FinEvoLab answers questions about financial reports, compares companies, calcula
 | **RAG** | BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis; optional shared Redis caching and a versioned Milvus vector backend. |
 | **Agent and tools** | Agents SDK interprets requests and invokes metric lookup, growth calculation, company comparison, and report tools. Programs compute amounts and formulas and assemble financial objects from actual tool results. |
 | **Harness** | Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, execution recovery, and optional self-check or isolated evidence-review roles within the same task budget. |
+| **MCP and observability** | Read-only financial MCP Server / Client, strict schemas and server-side access scopes, correlated execution traces, and repeatable load / recovery measurements. |
 | **Models and interface** | DeepSeek API, Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planning backends, FastAPI endpoints, a bilingual web interface, and HTML / PDF reports. |
 
 ```text
@@ -130,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **272 tests**; see [runtime verification](project_notes/run_logs/analysis_extensions_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **286 tests**; see [runtime verification](project_notes/evaluations/mcp_trace_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 <details>
 <summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
@@ -343,6 +344,36 @@ conda run --no-capture-output -n finevolab python scripts/manage_retrieval_servi
 ```
 
 Without run-path options, the summary command aggregates the versioned archived runs. [Service acceptance](project_notes/run_logs/retrieval_services_checks.json) covers 135 query configurations, idempotent vector imports, idle connections, outages, explicit fallback, cache expiry and corruption, and service restart recovery.
+
+</details>
+
+<details>
+<summary><strong>Read-only MCP tools and correlated execution traces</strong></summary>
+
+The local MCP Server exposes metric lookup, growth and margin calculations, company comparison, and fixed-corpus report retrieval. The service enforces tool and company allowlists in [mcp.json](configs/mcp.json), strict request schemas, and read-only tool annotations. It uses the local stdio transport. The SDK Client discovers tools and validates structured results:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/call_mcp.py
+conda run --no-capture-output -n finevolab python scripts/call_mcp.py `
+  --tool get_financial_metrics `
+  --company MSFT --metric revenue --fiscal-year 2024
+```
+
+For MCP host integration, launch `scripts/serve_mcp.py` using the Python interpreter from the installed environment. Search is restricted to the public fixed index and takes `report_year`; metric and calculation tools take `fiscal_year`. Complex requests can be supplied through `--request-file`. Financial dates and disclosure years are retained in the returned source objects.
+
+HTTP responses propagate `traceparent`; workflow phases, model calls, deterministic tools, and MCP calls share correlated trace and parent-span identifiers. Trace files contain relative durations, status, attempts, cache hits, and observed tokens. Local exports are stored in `output/traces/`, `output/mcp/`, and task trace directories. The complete HTTP workflow test uses an isolated model response while running actual SDK planning, financial tools, validation, and report generation.
+
+```powershell
+conda run --no-capture-output -n finevolab python -m unittest tests.test_mcp tests.test_tracing -v
+conda run --no-capture-output -n finevolab python scripts/benchmark_services.py `
+  --run-id mcp-trace-reproduction `
+  --output output/reproduction/mcp_trace `
+  --requests 40 --repeats 3 --concurrency 1 4 8
+```
+
+The benchmark measures equivalent direct and MCP calls, loopback TCP HTTP requests, strict parameter and access-scope rejection, and injected timeout / connection-failure recovery. It records per-request outcomes, nearest-rank p50 / p95, throughput, failure rate, timeout counts, source hashes, and data identities. Model-backed smoke runs are selected separately with `--real-model`.
+
+Formal local acceptance completed **1080/1080 requests**, **15/15 permission checks**, **1080 correlated traces / 2880 spans**, and **10/10 injected-failure recoveries**. Normal-load failure and timeout counts were zero. These measurements cover fixed tools and services; business-task accuracy retains its original evaluation scope. Per-request records, p50 / p95, throughput, source identities, and representative traces are in [MCP and Trace acceptance](project_notes/evaluations/mcp_trace_acceptance.json).
 
 </details>
 

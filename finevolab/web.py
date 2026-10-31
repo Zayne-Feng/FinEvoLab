@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Annotated, Literal
 
+from finevolab.tracing import TraceMiddleware
 from finevolab.tools import FinancialStore
 from finevolab.derived import DerivedMetric, DerivedResult, validate_derived
 from finevolab.scenarios import ScenarioRequest
@@ -19,7 +20,7 @@ from finevolab.config import ModelConfig
 from finevolab.uploads import ingest_upload
 from finevolab.storage import recent_tasks
 from finevolab.planning import PlannerBackend, PlannerClient
-from finevolab.runtime import read_json
+from finevolab.runtime import read_json, observe
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,7 +53,8 @@ def derived_metric(request: DerivedMetricRequest):
         path = ROOT / "data/processed/reports.json"
         store = (FinancialStore.from_uploads(path, request.upload_ids, ROOT / "data/uploads")
                  if request.upload_ids else FinancialStore(path))
-        return validate_derived(store, store.derive(request.company, request.metric, request.fiscal_year))
+        with observe([], "tool", "calculate_metrics"):
+            return validate_derived(store, store.derive(request.company, request.metric, request.fiscal_year))
     except ValueError as error:
         raise HTTPException(status_code=422, detail=str(error)) from None
 
@@ -234,3 +236,5 @@ def task_history():
 app = FastAPI(title="FinEvoLab")
 app.include_router(router)
 app.mount("/upstream-static", StaticFiles(directory=ROOT / "finrobot_equity/web_app/static"), name="upstream-static")
+
+app.add_middleware(TraceMiddleware, directory=Path(__file__).resolve().parents[1] / "output/traces")

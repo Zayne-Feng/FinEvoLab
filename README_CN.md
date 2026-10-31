@@ -32,6 +32,7 @@ FinEvoLab 支持财报问答、跨公司比较、增长率与利润率计算，�
 | **RAG** | 固定语料使用 BM25、multilingual E5 和 RRF 混合检索；上传文件使用限定文档内检索，支持数值与正文联合分析；可选 Redis 共享检索缓存及版本化 Milvus 向量后端。 |
 | **Agent 与工具** | 通过 Agents SDK 理解请求，调用指标查询、增长计算、跨公司比较和报告工具；金额与公式由程序计算，财务对象从真实工具结果组装。 |
 | **Harness** | schema、来源与业务状态校验，最多一次定向修复，以及带版本签名的阶段检查点和断点恢复；支持同一任务预算内的自检与隔离证据审查角色。 |
+| **MCP 与可观测性** | 只读金融 MCP Server / Client、严格 schema 与服务端访问范围、关联执行 Trace，以及可重复的负载与恢复测量。 |
 | **模型与界面** | DeepSeek API、Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 规划后端，FastAPI 接口、双语网页及 HTML / PDF 报告。 |
 
 ```text
@@ -130,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **272 项通过**，见[运行验证](project_notes/run_logs/analysis_extensions_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **286 项通过**，见[运行验证](project_notes/evaluations/mcp_trace_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 <details>
 <summary><strong>分析扩展：配对结果与复现命令</strong></summary>
@@ -343,6 +344,36 @@ conda run --no-capture-output -n finevolab python scripts/manage_retrieval_servi
 ```
 
 不传运行目录选项时，汇总命令聚合仓库内版本化的归档运行。[服务验收](project_notes/run_logs/retrieval_services_checks.json)覆盖 135 组查询配置、向量幂等导入、空闲连接、服务故障、显式回退、缓存过期与损坏，以及服务重启恢复。
+
+</details>
+
+<details>
+<summary><strong>只读 MCP 工具与关联执行 Trace</strong></summary>
+
+本地 MCP Server 提供指标查询、同比及利润率计算、公司比较和固定语料的财报检索。服务端执行 [mcp.json](configs/mcp.json) 中的工具与公司白名单、严格请求 schema 和只读工具标注，使用本地 stdio 传输。SDK Client 支持工具发现与结构化结果校验：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/call_mcp.py
+conda run --no-capture-output -n finevolab python scripts/call_mcp.py `
+  --tool get_financial_metrics `
+  --company MSFT --metric revenue --fiscal-year 2024
+```
+
+接入 MCP host 时，使用已安装环境的 Python 解释器启动 `scripts/serve_mcp.py`。检索范围限定为公开固定索引，使用 `report_year`；指标与计算工具使用 `fiscal_year`。复杂请求可以通过 `--request-file` 提供。返回的来源对象保留实际财务日期与披露年份。
+
+HTTP 响应传递 `traceparent`；工作流阶段、模型调用、确定性工具和 MCP 调用共享可关联的 Trace 与父 span 标识。Trace 文件记录相对耗时、状态、尝试次数、缓存命中及已观测 Token。本地导出位于 `output/traces/`、`output/mcp/` 和任务 Trace 目录。完整 HTTP 工作流测试隔离模型响应，实际执行 SDK 规划、金融工具、校验及报告生成。
+
+```powershell
+conda run --no-capture-output -n finevolab python -m unittest tests.test_mcp tests.test_tracing -v
+conda run --no-capture-output -n finevolab python scripts/benchmark_services.py `
+  --run-id mcp-trace-reproduction `
+  --output output/reproduction/mcp_trace `
+  --requests 40 --repeats 3 --concurrency 1 4 8
+```
+
+该实验比较等价的 direct 与 MCP 调用，并测量回环 TCP HTTP 请求、严格参数及访问范围拒绝、注入超时与连接故障后的恢复。结果记录逐请求输出、nearest-rank p50 / p95、吞吐、失败率、超时数、源码校验值和数据身份。真实模型烟测通过 `--real-model` 单独选择。
+
+正式本地验收通过 **1080/1080 次请求**、**15/15 项权限检查**、**1080 条关联 Trace / 2880 个 span**，以及 **10/10 次注入故障恢复**。正常负载的失败与超时数均为零。这些测量覆盖固定工具及服务，业务题准确率保持原评测口径。逐请求记录、p50 / p95、吞吐、源码身份和代表性 Trace 见 [MCP 与 Trace 验收](project_notes/evaluations/mcp_trace_acceptance.json)。
 
 </details>
 
