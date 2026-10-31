@@ -6,6 +6,7 @@
   const copy = {
     "zh-CN": {
       technicalDetails: "技术详情",
+      dataVersion: "数据版本",
       skip: "跳转到正文",
       title: "让问题，成为有据可循的分析。",
       intro:
@@ -36,6 +37,9 @@
       tools: "工具与检索",
       answer: "分析结果",
       validation: "校验与修复",
+      validationPassed: "程序校验通过。",
+      semanticReviewPending: "程序校验通过；正文语义支持待盲审。",
+      semanticReviewRecorded: "程序校验通过；另有正文评审记录。",
       usage: "用量与身份",
       timeline: "执行耗时",
       review: "证据审查",
@@ -45,6 +49,9 @@
       modelStep: "模型",
       toolStep: "工具",
       connectedMode: "真实分析服务已接入，请使用邀请口令登录。",
+      checkingMode: "正在连接真实分析服务。",
+      offlineMode: "暂时无法连接真实分析服务。",
+      unavailableMode: "真实分析服务暂时不可用。",
       signedInMode: "已登录，可提交分析问题或查看历史任务。",
       sourceYearNote:
         "指标财年由实际期间确定；来源报告可披露较早财年的对比数据。",
@@ -88,6 +95,7 @@
     },
     en: {
       technicalDetails: "Technical details",
+      dataVersion: "Data version",
       skip: "Skip to content",
       title: "Your question. An evidence-backed answer.",
       intro:
@@ -118,6 +126,11 @@
       tools: "Tools & retrieval",
       answer: "Analysis result",
       validation: "Validation & repair",
+      validationPassed: "Program checks passed.",
+      semanticReviewPending:
+        "Program checks passed; narrative semantic support awaits blind review.",
+      semanticReviewRecorded:
+        "Program checks passed; a separate narrative review is recorded.",
       usage: "Usage & identity",
       timeline: "Execution timing",
       review: "Evidence review",
@@ -128,6 +141,9 @@
       toolStep: "Tool",
       connectedMode:
         "Analysis service connected. Sign in with your invitation.",
+      checkingMode: "Connecting to the analysis service.",
+      offlineMode: "Cannot connect to the analysis service.",
+      unavailableMode: "The analysis service is temporarily unavailable.",
       signedInMode: "Signed in. Ask a question or open a saved analysis.",
       sourceYearNote:
         "The metric fiscal year follows its actual period. A later source report can disclose earlier comparative figures.",
@@ -181,6 +197,7 @@
     generation = 0,
     lastState = null;
   let requestIdentity = null;
+  let connection = "checking";
   const t = (key) => copy[language][key] || key;
   const node = (tag, text, cls) => {
     const element = document.createElement(tag);
@@ -189,6 +206,25 @@
     return element;
   };
   const pretty = (value) => node("pre", JSON.stringify(value, null, 2));
+  function validationView(validation, repair, review) {
+    const block = node("div");
+    if (validation?.status === "passed")
+      block.append(
+        node(
+          "p",
+          t(
+            (validation.narrative || validation).semantic_support ===
+              "requires_blind_review"
+              ? review
+                ? "semanticReviewRecorded"
+                : "semanticReviewPending"
+              : "validationPassed",
+          ),
+        ),
+      );
+    block.append(pretty({ validation, repair }));
+    return block;
+  }
   function link(url, text) {
     const element = node("a", text, "text-link");
     if (new URL(url, location.href).protocol !== "https:")
@@ -257,7 +293,7 @@
       );
     if (stage === "validation")
       detail.append(
-        pretty({ validation: replay.validation, repair: replay.repair }),
+        validationView(replay.validation, replay.repair, replay.review),
       );
     if (stage === "usage")
       detail.append(
@@ -313,12 +349,23 @@
       );
       id("evidence-rows").append(details);
     });
-    id("data-version").textContent = `Data version · ${data.data_version}`;
+    id("data-version").textContent =
+      `${t("dataVersion")} · ${data.data_version}`;
   }
   function renderSession() {
     id("login-form").hidden = !live || Boolean(session);
     id("analysis-workspace").hidden = !session;
-    id("live-mode").textContent = t(session ? "signedInMode" : "connectedMode");
+    const mode =
+      connection === "online"
+        ? session
+          ? "signedInMode"
+          : "connectedMode"
+        : connection === "offline"
+          ? "offlineMode"
+          : connection === "unavailable"
+            ? "unavailableMode"
+            : "checkingMode";
+    id("live-mode").textContent = t(mode);
     if (session)
       id("session-info").textContent =
         `${session.user} · ${t("quota")} ${session.used}/${session.daily_tasks} · UTC`;
@@ -413,7 +460,7 @@
     if (state.validation)
       target.append(
         node("h3", t("validation")),
-        pretty({ validation: state.validation, repair: state.repair }),
+        validationView(state.validation, state.repair, state.review),
       );
     if (state.review)
       target.append(node("h3", t("review")), pretty(state.review));
@@ -443,15 +490,24 @@
     id("live-status").textContent = text;
   }
   async function api(path, body) {
-    const response = await fetch("/experience/api/" + path, {
-      method: body ? "POST" : "GET",
-      credentials: "same-origin",
-      cache: "no-store",
-      headers: body
-        ? { "Content-Type": "application/json", "X-FinEvoLab": "1" }
-        : {},
-      body: body ? JSON.stringify(body) : undefined,
-    });
+    let response;
+    try {
+      response = await fetch("/experience/api/" + path, {
+        method: body ? "POST" : "GET",
+        credentials: "same-origin",
+        cache: "no-store",
+        headers: body
+          ? { "Content-Type": "application/json", "X-FinEvoLab": "1" }
+          : {},
+        body: body ? JSON.stringify(body) : undefined,
+      });
+    } catch (error) {
+      connection = "offline";
+      renderSession();
+      throw error;
+    }
+    connection = response.status >= 500 ? "unavailable" : "online";
+    renderSession();
     if (!response.ok) {
       const key =
         {
@@ -563,7 +619,6 @@
         "aria-label",
         language === "en" ? "切换为简体中文" : "Switch to English",
       );
-      id("live-mode").textContent = t("connectedMode");
     }
     document.querySelectorAll("[data-text]").forEach((element) => {
       element.textContent = t(element.dataset.text);

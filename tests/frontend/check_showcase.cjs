@@ -197,6 +197,16 @@ function open(options = {}) {
       }
       if (kind === "quantization")
         check(
+          ["212/240", "211/240", "47.18%"].every((text) =>
+            id("result-description").textContent.includes(text),
+          ) &&
+            id("result-description").textContent.includes(
+              language === "en" ? "tokenization" : "输入编码",
+            ),
+          "Quantization accuracy and timing scope must match the recorded comparison",
+        );
+      if (kind === "quantization")
+        check(
           ["7.995", "2.992", "3.759", "5.532"].every((text) =>
             id("result-chart").textContent.includes(text),
           ),

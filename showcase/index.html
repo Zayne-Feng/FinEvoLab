@@ -130,13 +130,15 @@
             <strong id="planner-gain">+42.92<span>pp</span></strong>
             <p data-i18n="plannerMetric">微调后规划严格成功率提升</p>
             <small data-i18n="plannerScope"
-              >seed 17 对比 Qwen base · 240 题</small
+              >seed 17 对比 Qwen base · 240 条规划请求</small
             >
           </article>
           <article class="metric-card peach">
             <strong id="memory-saving">62.58<span>%</span></strong>
             <p data-i18n="memoryMetric">NF4 峰值分配显存降低</p>
-            <small data-i18n="memoryScope">同权重 BF16 / NF4 配对对照</small>
+            <small data-i18n="memoryScope"
+              >规划器同权重 BF16 / NF4 配对对照</small
+            >
           </article>
           <article class="metric-card blue">
             <strong id="regression-tests">272</strong>
@@ -174,7 +176,7 @@
             <article>
               <h3 data-i18n="harnessTitle">计算与校验</h3>
               <p data-i18n="harnessText">
-                程序计算金额与同比；校验来源，定向修复并恢复执行。
+                程序计算金额与同比；校验来源，最多一次定向修复并恢复执行。
               </p>
             </article>
             <article>
@@ -376,8 +378,9 @@
             <div>
               <strong data-i18n="datasetTitle">冻结数据，让实验可复现。</strong>
               <p data-i18n="datasetText">
-                业务任务 50 / 50 / 100；双语规划任务 600 / 120 / 240，分别用于
-                development / validation / test。
+                业务任务 50 / 50 / 100，用于 development / validation /
+                test；自建双语合成规划数据 600 / 120 / 240，用于训练 / 验证 /
+                测试。
               </p>
             </div>
             <a

@@ -61,6 +61,12 @@ function open(live = false) {
     if (d.documentElement.lang !== lang) id("language-toggle").click();
     check(d.documentElement.lang === lang, "Language must change");
     check(
+      id("data-version").textContent.startsWith(
+        lang === "en" ? "Data version" : "数据版本",
+      ),
+      "Data identity labels must follow the selected language",
+    );
+    check(
       [...d.querySelectorAll(".technical-details > summary")].every(
         (summary) =>
           summary.textContent ===
@@ -78,6 +84,14 @@ function open(live = false) {
     );
     for (const stage of ["plan", "tools", "answer", "validation", "usage"]) {
       d.querySelector(`[data-stage="${stage}"]`).click();
+      if (stage === "validation")
+        check(
+          id("replay-detail").textContent.includes(
+            lang === "en" ? "awaits blind review" : "正文语义支持待盲审",
+          ) &&
+            id("replay-detail").textContent.includes("requires_blind_review"),
+          "Source validation must remain distinct from narrative semantic review",
+        );
       check(
         d
           .querySelector(`[data-stage="${stage}"]`)
@@ -215,7 +229,10 @@ function open(live = false) {
         },
       ],
     },
-    validation: { status: "passed" },
+    validation: {
+      status: "passed",
+      narrative: { semantic_support: "requires_blind_review" },
+    },
     evidence: [
       {
         id: "metric-one",
@@ -291,6 +308,13 @@ function open(live = false) {
   check(
     ld.getElementById("task-output").textContent.includes("passed"),
     "Validation result must be rendered",
+  );
+  check(
+    ld.getElementById("task-output").textContent.includes("另有正文评审记录") &&
+      !ld
+        .getElementById("task-output")
+        .textContent.includes("正文语义支持待盲审"),
+    "Existing narrative review records must remain distinct from pending review",
   );
   check(
     ld
@@ -391,6 +415,52 @@ function open(live = false) {
     "Logout must restore the login instruction",
   );
   lw.close();
+  const disconnected = open(true),
+    dw = disconnected.window,
+    dd = dw.document;
+  let rejectConnection;
+  dw.fetch = () =>
+    new Promise((resolve, reject) => {
+      rejectConnection = reject;
+    });
+  dw.eval(fs.readFileSync(path.join(site, "experience.js"), "utf8"));
+  check(
+    dd.getElementById("live-mode").textContent.includes("正在连接"),
+    "Connection status must wait for an API response",
+  );
+  rejectConnection(new Error("Connection unavailable"));
+  await tick();
+  check(
+    dd.getElementById("live-mode").textContent.includes("无法连接"),
+    "Network failures must not display a connected service",
+  );
+  dd.getElementById("language-toggle").click();
+  check(
+    dd.getElementById("live-mode").textContent.includes("Cannot connect"),
+    "Language changes must preserve the disconnected state",
+  );
+  dw.fetch = async () => ({ ok: false, status: 503 });
+  dd.getElementById("login-form").dispatchEvent(
+    new dw.Event("submit", { cancelable: true }),
+  );
+  await tick();
+  check(
+    dd
+      .getElementById("live-mode")
+      .textContent.includes("temporarily unavailable"),
+    "Service errors must not display a connected service",
+  );
+  dw.fetch = async () => ({ ok: false, status: 401 });
+  dd.getElementById("login-form").dispatchEvent(
+    new dw.Event("submit", { cancelable: true }),
+  );
+  await tick();
+  check(
+    dd.getElementById("live-mode").textContent.includes("service connected") &&
+      !dd.getElementById("login-form").hidden,
+    "A reachable API requiring authentication must show the login state",
+  );
+  dw.close();
   console.log(
     JSON.stringify({
       status: "passed",

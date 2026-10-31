@@ -34,7 +34,7 @@
       plannerMetric: "微调后规划严格成功率提升",
       plannerScope: "seed 17 对比 Qwen base · {plannerTest} 条规划请求",
       memoryMetric: "NF4 峰值分配显存降低",
-      memoryScope: "同权重 BF16 / NF4 配对对照",
+      memoryScope: "规划器同权重 BF16 / NF4 配对对照",
       testsMetric: "核心回归测试通过",
       workflowTitle: "从来源，到结论。",
       workflowDescription:
@@ -93,23 +93,23 @@
       businessLabel: "严格业务成功 · 扩展主测",
       businessTitle: "{businessSuccesses} / {businessTotal} 次严格成功",
       businessDescription:
-        "主测包含 {businessQuestions} 道题，每题重复 {businessRepetitions} 次；严格评分按题型检查数值、期间、来源、任务合同及正文证据支持。右侧在 {commonQuestions} 道共同题、{commonTotal} 次运行的相同范围内比较两代引擎。",
+        "主测包含 {businessQuestions} 道题，每题重复 {businessRepetitions} 次；严格评分按题型检查数值、期间、来源、任务合同及正文证据支持。共同题对照使用 {commonQuestions} 道题，每组 {commonTotal} 次运行。",
       earlierEngine: "早期引擎 · 共同题",
-      currentEngine: "当前引擎 · 共同题",
+      currentEngine: "优化后引擎 · 共同题",
       plannerLabel: "Qwen3-4B-Instruct-2507 · RequestPlan",
       plannerTitle: "{plannerTrain} 条训练样本，{plannerTest} 条请求检验。",
       plannerDescription:
         "QLoRA 微调 RequestPlan 规划器，严格评分检查 schema 与请求语义。各组共用 {plannerTest} 条 test 请求（{plannerClusters} 个模板簇）、生成预算与评分规则，修复次数为 0。两个 seed 采用 validation 选定的共同 epoch {selectedEpoch}；DeepSeek 为共用 API 对照。",
-      quantLabel: "同一 LoRA 权重 · 配对推理",
+      quantLabel: "同一 LoRA 规划器权重 · 配对推理",
       quantTitle: "以更少显存，完成同题推理。",
       quantDescription:
-        "同权重、同题、同预算对照。NF4 峰值分配显存降低 {memory}%；平均生成延时增加 {latency}%。严格成功次数为 BF16 {bf16Successes}/{quantTotal}、NF4 {nf4Successes}/{quantTotal}。",
+        "同一规划器权重、同题、同预算对照。NF4 峰值分配显存降低 {memory}%；平均单次推理耗时增加 {latency}%，计时包含输入编码、生成与解码。严格成功次数为 BF16 {bf16Successes}/{quantTotal}、NF4 {nf4Successes}/{quantTotal}。",
       quantPrecision: "推理精度",
       quantMemory: "峰值分配显存",
-      quantLatency: "平均延时",
+      quantLatency: "平均推理耗时",
       datasetTitle: "冻结数据，让实验可复现。",
       datasetText:
-        "业务任务 {businessDevelopment} / {businessValidation} / {businessTest}；自建双语合成规划任务 {plannerTrain} / {plannerValidation} / {plannerTest}，分别用于 development / validation / test。",
+        "业务任务 {businessDevelopment} / {businessValidation} / {businessTest}，用于 development / validation / test；自建双语合成规划数据 {plannerTrain} / {plannerValidation} / {plannerTest}，用于训练 / 验证 / 测试。",
       viewData: "查看数据 ↗",
       reproduceTitle: "从阅读结果，到运行实验。",
       reproduceText:
@@ -153,7 +153,7 @@
       plannerMetric: "Planner strict success gain after fine-tuning",
       plannerScope: "seed 17 vs. Qwen base · {plannerTest} planning requests",
       memoryMetric: "Lower NF4 peak allocated GPU memory",
-      memoryScope: "Same-weight BF16 / NF4 comparison",
+      memoryScope: "Same-planner-weight BF16 / NF4 comparison",
       testsMetric: "Core regression tests passed",
       workflowTitle: "From sources to conclusions.",
       workflowDescription:
@@ -181,8 +181,8 @@
       comparisonTitle: "Company comparison",
       marginTitle: "Operating margin",
       staticLabel: "Preset cases · Local interaction",
-      financialObservations: "FINANCIAL OBSERVATIONS",
-      sourceTrail: "ORIGINAL EVIDENCE",
+      financialObservations: "Financial observations",
+      sourceTrail: "Original evidence",
       periodsAligned: "Matching fiscal periods",
       periodsDiffer: "Fiscal periods differ",
       annualPeriods: "Consecutive full fiscal years",
@@ -221,21 +221,21 @@
       businessDescription:
         "The main test contains {businessQuestions} tasks with {businessRepetitions} repetitions each. Strict scoring applies task-specific checks for values, periods, sources, task contracts, and narrative evidence support. The chart compares both engines on {commonQuestions} common tasks, totaling {commonTotal} runs per engine.",
       earlierEngine: "Earlier engine · Common tasks",
-      currentEngine: "Current engine · Common tasks",
+      currentEngine: "Updated engine · Common tasks",
       plannerLabel: "Qwen3-4B-Instruct-2507 · RequestPlan",
       plannerTitle: "Train on {plannerTrain}. Evaluate {plannerTest} requests.",
       plannerDescription:
         "QLoRA tunes the RequestPlan planner; strict scoring checks schema and request semantics. All arms share {plannerTest} test requests ({plannerClusters} template clusters), the generation budget, and scoring rules, with 0 repairs. Both seeds use validation-selected epoch {selectedEpoch}; DeepSeek is the shared API control.",
-      quantLabel: "SAME LORA WEIGHTS · PAIRED INFERENCE",
+      quantLabel: "Same LoRA planner weights · Paired inference",
       quantTitle: "Same tasks. A smaller memory footprint.",
       quantDescription:
-        "Same weights, tasks, and budget. NF4 reduces peak allocated memory by {memory}% and increases mean generation latency by {latency}%. Strict successes: BF16 {bf16Successes}/{quantTotal}, NF4 {nf4Successes}/{quantTotal}.",
+        "Same planner weights, tasks, and budget. NF4 reduces peak allocated memory by {memory}% and increases mean inference time by {latency}%. Timing includes tokenization, generation, and decoding. Strict successes: BF16 {bf16Successes}/{quantTotal}, NF4 {nf4Successes}/{quantTotal}.",
       quantPrecision: "Inference precision",
       quantMemory: "Peak allocated memory",
-      quantLatency: "Mean latency",
+      quantLatency: "Mean inference time",
       datasetTitle: "Frozen inputs. Reproducible experiments.",
       datasetText:
-        "Business tasks: {businessDevelopment} / {businessValidation} / {businessTest}. Internally authored synthetic bilingual planner tasks: {plannerTrain} / {plannerValidation} / {plannerTest} for development / validation / test.",
+        "Business tasks: {businessDevelopment} / {businessValidation} / {businessTest} for development / validation / test. Internally authored synthetic bilingual planner data: {plannerTrain} / {plannerValidation} / {plannerTest} for training / validation / test.",
       viewData: "Explore the data ↗",
       reproduceTitle: "From reading results to running experiments.",
       reproduceText:
