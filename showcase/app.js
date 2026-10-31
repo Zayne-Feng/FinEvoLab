@@ -13,7 +13,9 @@
       navResults: "实验结果",
       navReplay: "执行回放",
       navEvidence: "证据浏览",
-      startAnalysis: "开始分析",
+      startAnalysis: "邀请制真实分析",
+      liveAccessNote:
+        "需邀请口令；本机后端与 Tunnel 在线时可用，也可直接浏览下方回放和证据。",
       eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
       heroLine1: "让每一个财务判断",
       heroLine2: "都有据可循。",
@@ -83,6 +85,20 @@
       businessTab: "业务 Agent",
       plannerTab: "QLoRA 微调",
       quantTab: "推理量化",
+      extensionsTab: "执行优化",
+      extensionsLabel: "固定规划 · 首轮分析 · 同模型隔离盲审",
+      extensionsTitle: "比较收益，也保留取舍。",
+      extensionsDescription:
+        "4 个固定问题，每题各运行 2 次。来源与结构通过后，再检查两个隔离评审上下文是否均认定有依据且完整；评审使用同一 deepseek-flash 模型。编码节省输入 Token，但引用通过数下降，因此编码和任务方法均保留为可选配置。",
+      extensionConfiguration: "配置",
+      extensionMechanical: "来源与结构",
+      extensionStrict: "支持且完整",
+      extensionTokens: "输入 Token",
+      extension_baseline: "基线",
+      extension_encoding: "上下文编码",
+      extension_methods: "任务方法",
+      extension_combined: "编码与任务方法",
+
       viewEvidence: "查看实验依据",
       businessLabel: "严格业务成功 · 扩展主测",
       businessTitle: "{businessSuccesses} / {businessTotal} 次严格成功",
@@ -128,7 +144,9 @@
       navResults: "Results",
       navReplay: "Replay",
       navEvidence: "Evidence",
-      startAnalysis: "Start analysis",
+      startAnalysis: "Invited live analysis",
+      liveAccessNote:
+        "Invitation required. Available while the local backend and Tunnel are running; replay and evidence remain available below.",
       eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
       heroLine1: "Financial insight.",
       heroLine2: "Evidence, attached.",
@@ -205,6 +223,20 @@
       businessTab: "Business Agent",
       plannerTab: "QLoRA tuning",
       quantTab: "Quantization",
+      extensionsTab: "Execution controls",
+      extensionsLabel: "Fixed plans · first pass · isolated same-model review",
+      extensionsTitle: "Measure gains and retain trade-offs.",
+      extensionsDescription:
+        "4 fixed questions, 2 runs per question and arm. After source and schema checks, both isolated review contexts must judge the answer supported and complete; both use deepseek-flash. Encoding saves input tokens but reduces citation acceptance, so encoding and task methods remain opt-in.",
+      extensionConfiguration: "Configuration",
+      extensionMechanical: "Source / schema",
+      extensionStrict: "Supported / complete",
+      extensionTokens: "Input tokens",
+      extension_baseline: "Baseline",
+      extension_encoding: "Context encoding",
+      extension_methods: "Task methods",
+      extension_combined: "Encoding + methods",
+
       viewEvidence: "Read the evidence",
       businessLabel: "STRICT BUSINESS SUCCESS · EXPANDED TEST",
       businessTitle: "{businessSuccesses} / {businessTotal} strict successes",
@@ -418,6 +450,30 @@
           ),
         ),
       );
+    } else if (kind === "extensions") {
+      const table = create("table", "quant-table extension-table");
+      const head = create("thead");
+      const heading = create("tr");
+      [
+        t("extensionConfiguration"),
+        t("extensionMechanical"),
+        t("extensionStrict"),
+        t("extensionTokens"),
+      ].forEach((text) => heading.append(create("th", "", text)));
+      head.append(heading);
+      const body = create("tbody");
+      data.extensions.forEach((row) => {
+        const line = create("tr");
+        [
+          t("extension_" + row.arm),
+          `${row.mechanical_passed}/${row.tasks}`,
+          `${row.strict_passed}/${row.tasks}`,
+          String(row.input_tokens),
+        ].forEach((text) => line.append(create("td", "", text)));
+        body.append(line);
+      });
+      table.append(head, body);
+      chart.append(table);
     } else {
       chart.append(
         ...data.quantization.map((row) =>

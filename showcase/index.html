@@ -73,13 +73,17 @@
             </p>
             <div class="hero-actions">
               <a class="button primary" href="https://app.lunelu.com/"
-                ><span data-i18n="startAnalysis">开始分析</span
+                ><span data-i18n="startAnalysis">邀请制真实分析</span
                 ><span aria-hidden="true">↗</span></a
               >
               <a class="button secondary" href="#cases" data-i18n="exploreCases"
                 >探索分析案例</a
               >
             </div>
+            <p class="hero-description" data-i18n="liveAccessNote">
+              需邀请口令；本机后端与 Tunnel
+              在线时可用，也可直接浏览下方回放和证据。
+            </p>
             <div class="hero-tags">
               <span>RAG</span><span>Agents SDK</span><span>QLoRA</span
               ><span>BF16 / NF4</span>
@@ -159,7 +163,7 @@
           </article>
           <article class="metric-card blue">
             <span class="metric-index">04 / ENGINEERING</span
-            ><strong id="regression-tests">189</strong>
+            ><strong id="regression-tests">272</strong>
             <p data-i18n="testsMetric">核心回归测试通过</p>
             <small data-i18n="testsScope">覆盖工具、工作流、服务与交付</small>
           </article>
@@ -377,6 +381,18 @@
               data-i18n="quantTab"
             >
               推理量化
+            </button>
+            <button
+              type="button"
+              id="result-extensions"
+              role="tab"
+              aria-selected="false"
+              aria-controls="result-panel"
+              tabindex="-1"
+              data-result="extensions"
+              data-i18n="extensionsTab"
+            >
+              执行优化
             </button>
           </div>
           <article

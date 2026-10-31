@@ -1363,3 +1363,42 @@ noscript {
   border-color: #ead9c0;
   color: #987341;
 }
+
+.result-tabs {
+  flex-wrap: wrap;
+}
+.result-summary {
+  min-width: 0;
+}
+.result-summary h3 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.result-summary > p:last-of-type {
+  font-size: 13px;
+}
+.extension-table {
+  width: 100%;
+  table-layout: fixed;
+}
+.extension-table th,
+.extension-table td {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.metric-growth span:first-child,
+.step-number,
+.pipeline article:nth-child(2) .step-number,
+.pipeline article:nth-child(4) .step-number,
+.dataset-icon,
+.code-card button {
+  color: var(--green);
+}
+.pipeline article:nth-child(3) .step-number,
+.quant-table th {
+  color: var(--purple);
+}
+.formula,
+.mini-pill.unaligned {
+  color: var(--ink);
+}

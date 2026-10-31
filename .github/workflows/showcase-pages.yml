@@ -17,6 +17,8 @@ on:
       - "project_notes/run_logs/repository_distribution_checks.json"
       - "project_notes/run_logs/site_layout_checks.json"
       - "project_notes/run_logs/service_integration_checks.json"
+      - "project_notes/run_logs/analysis_extensions_checks.json"
+      - "project_notes/experiments/analysis-extensions-release/**"
       - "project_notes/experiments/scope-test-v1/assessment.json"
       - "project_notes/evaluations/planner_formal_results.json"
       - "project_notes/evaluations/planner_quantization.json"

@@ -142,7 +142,7 @@ function open(options = {}) {
           "Operating margin must use matching periods",
         );
     }
-    for (const kind of ["business", "planner", "quantization"]) {
+    for (const kind of ["business", "planner", "quantization", "extensions"]) {
       id("result-" + kind).click();
       check(
         id("result-" + kind).getAttribute("aria-selected") === "true",
@@ -165,6 +165,22 @@ function open(options = {}) {
           ),
           "All planner arms must share 240 test tasks",
         );
+      if (kind === "extensions") {
+        check(
+          id("result-chart").querySelectorAll("tbody tr").length === 4,
+          "Analysis comparisons must show all four arms",
+        );
+        check(
+          ["7/8", "6/8", "8/8", "4/8", "5/8", "17010", "15836"].every((value) =>
+            id("result-chart").textContent.includes(value),
+          ),
+          "Mechanical acceptance, semantic coverage and tokens must remain distinct",
+        );
+        check(
+          id("result-description").textContent.includes("deepseek-flash"),
+          "Review model identity must remain visible",
+        );
+      }
       if (kind === "quantization")
         check(
           ["7.995", "2.992", "3.759", "5.532"].every((text) =>
@@ -279,6 +295,8 @@ function open(options = {}) {
       value.business.successes = 290;
       value.quantization[1].successes = 210;
       value.regression_tests = 169;
+      value.extensions[0].strict_passed = 3;
+      value.extensions[0].input_tokens = 12345;
     },
   });
   const changed = updated.window.document;
@@ -300,6 +318,12 @@ function open(options = {}) {
   check(
     changed.getElementById("regression-tests").textContent === "169",
     "Regression counts must follow the verification record",
+  );
+  changed.getElementById("result-extensions").click();
+  check(
+    changed.getElementById("result-chart").textContent.includes("3/8") &&
+      changed.getElementById("result-chart").textContent.includes("12345"),
+    "Analysis comparison cells must follow versioned data",
   );
   updated.window.close();
   const ids = [...document.querySelectorAll("[id]")].map((node) => node.id);
