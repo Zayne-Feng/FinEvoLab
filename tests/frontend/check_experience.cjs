@@ -43,9 +43,31 @@ function open(live = false) {
   };
   w.eval(fs.readFileSync(path.join(site, "experience.js"), "utf8"));
   const rows = w.FINEVOLAB_SHOWCASE.experience.observations;
+  for (const name of ["replay-identity", "data-version"]) {
+    const disclosure = id(name).closest("details");
+    check(
+      disclosure && !disclosure.open,
+      "Replay metadata must be collapsed initially",
+    );
+    disclosure.open = true;
+    check(
+      id(name).textContent.trim(),
+      "Expanded metadata must remain available",
+    );
+    disclosure.open = false;
+  }
+
   for (const lang of ["zh-CN", "en"]) {
     if (d.documentElement.lang !== lang) id("language-toggle").click();
     check(d.documentElement.lang === lang, "Language must change");
+    check(
+      [...d.querySelectorAll(".technical-details > summary")].every(
+        (summary) =>
+          summary.textContent ===
+          (lang === "en" ? "Technical details" : "技术详情"),
+      ),
+      "Technical disclosures must follow the selected language",
+    );
     check(
       !id("login-form"),
       "The showcase must not contain an analysis login form",

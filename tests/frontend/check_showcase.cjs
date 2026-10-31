@@ -62,6 +62,20 @@ function open(options = {}) {
   const { document } = dom.window;
   const id = (name) => document.getElementById(name);
   check(
+    !document.querySelector(
+      ".eyebrow, .metric-index, .step-number, .hero-tags, .floating-note",
+    ),
+    "Decorative labels must not clutter the showcase",
+  );
+  for (const name of ["replay-identity", "data-version", "result-label"]) {
+    const disclosure = id(name).closest("details");
+    check(
+      disclosure && !disclosure.open,
+      "Technical metadata must be collapsed initially",
+    );
+  }
+
+  check(
     document.documentElement.lang === "zh-CN",
     "The default language must be Chinese",
   );

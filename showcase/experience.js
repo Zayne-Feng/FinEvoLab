@@ -5,6 +5,7 @@
   const id = (name) => document.getElementById(name);
   const copy = {
     "zh-CN": {
+      technicalDetails: "技术详情",
       skip: "跳转到正文",
       title: "让问题，成为有据可循的分析。",
       intro:
@@ -15,7 +16,6 @@
       live: "真实分析",
       replayNote:
         "真实归档记录，按阶段查看。回放不发起新的模型调用；原始请求、财报片段与模型回答保留原文。",
-      archive: "归档执行 · 非实时运行",
       record: "查看原始记录 ↗",
       evidenceNote:
         "按事实所属财年筛选。报告年份单独展示，保留原始单位、实际期间和原文定位。",
@@ -44,8 +44,6 @@
       cacheHit: "缓存命中",
       modelStep: "模型",
       toolStep: "工具",
-      liveNote:
-        "登录后，使用服务端 DeepSeek 配置执行请求规划、财报检索、金融工具、harness 校验与报告生成。",
       connectedMode: "真实分析服务已接入，请使用邀请口令登录。",
       signedInMode: "已登录，可提交分析问题或查看历史任务。",
       sourceYearNote:
@@ -89,6 +87,7 @@
       loading: "正在读取任务。",
     },
     en: {
+      technicalDetails: "Technical details",
       skip: "Skip to content",
       title: "Your question. An evidence-backed answer.",
       intro:
@@ -99,7 +98,6 @@
       live: "Live analysis",
       replayNote:
         "Inspect a real archived execution by stage. Replay makes no new model calls. Original requests, source passages, and model answers retain their recorded language.",
-      archive: "Archived execution · Recorded run",
       record: "View original record ↗",
       evidenceNote:
         "Filter by the fiscal year of the fact. Report year, original units, actual periods, and source locators remain explicit.",
@@ -128,8 +126,6 @@
       cacheHit: "Cache hit",
       modelStep: "Model",
       toolStep: "Tool",
-      liveNote:
-        "After signing in, use the server-side DeepSeek configuration for request planning, report retrieval, financial tools, harness validation, and report generation.",
       connectedMode:
         "Analysis service connected. Sign in with your invitation.",
       signedInMode: "Signed in. Ask a question or open a saved analysis.",

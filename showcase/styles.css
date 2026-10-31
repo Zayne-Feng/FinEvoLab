@@ -146,25 +146,7 @@ button:disabled {
   gap: 50px;
   padding: 85px 0 72px;
 }
-.eyebrow {
-  font-size: 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: #687668;
-  line-height: 1.6;
-}
-.status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #83a18a;
-  display: inline-block;
-  flex-shrink: 0;
-  box-shadow: 0 0 0 4px #83a18a12;
-}
+
 h1 {
   font-size: clamp(39px, 4.45vw, 62px);
   line-height: 1.35;
@@ -238,20 +220,7 @@ h2 {
 .secondary:hover {
   background: #ecefe6;
 }
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 28px;
-  color: #7b8278;
-  font-size: 10px;
-  letter-spacing: 0.6px;
-}
-.hero-tags span + span:before {
-  content: "\00b7";
-  padding-right: 14px;
-  color: #a0aa9c;
-}
+
 .hero-visual {
   position: relative;
   min-height: 410px;
@@ -410,37 +379,7 @@ h2 {
   color: #66885d;
   font-size: 13px;
 }
-.floating-note {
-  position: absolute;
-  bottom: 0;
-  right: -4px;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  background: #eee8f3;
-  border: 1px solid #dfd6e8;
-  border-radius: 14px;
-  padding: 13px 18px;
-  box-shadow: 0 7px 20px #6758750a;
-  transform: rotate(3deg);
-}
-.note-icon {
-  font-size: 26px;
-  color: #9279a7;
-}
-.floating-note div {
-  display: flex;
-  flex-direction: column;
-}
-.floating-note strong {
-  font-size: 13px;
-  color: var(--purple);
-  font-weight: 650;
-}
-.floating-note div > span {
-  font-size: 10px;
-  color: #9889a1;
-}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -464,11 +403,7 @@ h2 {
 .blue {
   background: var(--blue);
 }
-.metric-index {
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  color: #727970;
-}
+
 .metric-card strong {
   display: block;
   font-size: 39px;
@@ -530,27 +465,7 @@ h2 {
 .pipeline article + article {
   border-left: 1px solid var(--line);
 }
-.step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 29px;
-  height: 29px;
-  border-radius: 9px;
-  background: #eeeaf1;
-  color: #8a7599;
-  font-size: 10px;
-  margin-bottom: 23px;
-}
-.pipeline article:nth-child(2) .step-number,
-.pipeline article:nth-child(4) .step-number {
-  background: var(--mint);
-  color: #6e8a71;
-}
-.pipeline article:nth-child(3) .step-number {
-  background: var(--peach);
-  color: #a58a6d;
-}
+
 .pipeline h3 {
   font-size: 14px;
   font-weight: 600;
@@ -640,11 +555,6 @@ h2 {
   padding: 20px 25px;
   border-bottom: 1px solid var(--line);
   background: #f0f2ea;
-}
-.case-question > span {
-  font-size: 9px;
-  color: #88927d;
-  letter-spacing: 1px;
 }
 .case-question h3 {
   font-size: 15px;
@@ -926,7 +836,7 @@ h2 {
   font-size: 27px;
   margin: 14px 0;
 }
-.reproduction > div > p:not(.eyebrow) {
+.reproduction > div > p {
   font-size: 12px;
   line-height: 1.9;
   color: #85818b;
@@ -1055,9 +965,7 @@ noscript {
     width: 300px;
     padding: 21px 22px 0;
   }
-  .floating-note {
-    right: -8px;
-  }
+
   .orbit-one {
     width: 300px;
     height: 300px;
@@ -1143,10 +1051,7 @@ noscript {
     right: 0;
     top: 10px;
   }
-  .floating-note {
-    right: 0;
-    bottom: 0;
-  }
+
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
@@ -1193,9 +1098,7 @@ noscript {
   :lang(en) .pipeline p {
     min-height: 0;
   }
-  .step-number {
-    margin-bottom: 15px;
-  }
+
   .case-layout {
     grid-template-columns: 1fr;
   }
@@ -1294,10 +1197,7 @@ noscript {
   h1 {
     font-size: 41px;
   }
-  .hero .eyebrow {
-    letter-spacing: 1px;
-    font-size: 9px;
-  }
+
   .hero-visual {
     min-height: 350px;
   }
@@ -1308,9 +1208,7 @@ noscript {
     width: 280px;
     height: 280px;
   }
-  .floating-note {
-    right: -2px;
-  }
+
   .metric-card {
     padding: 18px 14px;
   }
@@ -1387,18 +1285,36 @@ noscript {
   overflow-wrap: break-word;
 }
 .metric-growth span:first-child,
-.step-number,
-.pipeline article:nth-child(2) .step-number,
-.pipeline article:nth-child(4) .step-number,
 .dataset-icon,
 .code-card button {
   color: var(--green);
 }
-.pipeline article:nth-child(3) .step-number,
 .quant-table th {
   color: var(--purple);
 }
 .formula,
 .mini-pill.unaligned {
   color: var(--ink);
+}
+
+.technical-details {
+  margin-block: 12px;
+}
+.technical-details > summary {
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+}
+.technical-details > summary:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 4px;
+}
+.mini-label {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.mini-pill {
+  font-size: 12px;
+  letter-spacing: normal;
 }

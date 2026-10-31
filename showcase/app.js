@@ -6,6 +6,7 @@
       title: "FinEvoLab · 有据可循的金融分析",
       description:
         "以公开财报为依据的金融 Agent，融合 RAG、工具调用、执行校验与 QLoRA。探索真实实验结果和财务分析案例。",
+      technicalDetails: "技术详情",
       skip: "跳转到正文",
       navigation: "主导航",
       navWorkflow: "工作流",
@@ -14,23 +15,18 @@
       navReplay: "执行回放",
       navEvidence: "证据浏览",
       startAnalysis: "邀请制真实分析",
-      liveAccessNote:
-        "需邀请口令；本机后端与 Tunnel 在线时可用，也可直接浏览下方回放和证据。",
-      eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
+      liveAccessNote: "真实分析需邀请口令。",
       heroLine1: "让每一个财务判断",
       heroLine2: "都有据可循。",
       heroDescription:
         "从公开财报到可追溯的分析报告。融合 RAG、金融工具与执行校验，让模型理解问题，让程序保障计算。",
       exploreCases: "探索分析案例",
       exploreResults: "查看实验结果",
-      researchDesk: "财报研究台",
       annualRevenue: "年度收入",
       usdBillions: "十亿美元 · USD",
       yearOverYear: "同比增长",
       heroChart: "Microsoft 年度收入比较",
       sourceBound: "数值计算与财报来源绑定",
-      evidenceFirst: "Evidence first.",
-      evidenceFirstSub: "每一步，都可追溯。",
       keyResults: "主要实测结果",
       businessMetric: "扩展业务主测严格成功率",
       businessScope:
@@ -40,8 +36,6 @@
       memoryMetric: "NF4 峰值分配显存降低",
       memoryScope: "同权重 BF16 / NF4 配对对照",
       testsMetric: "核心回归测试通过",
-      testsScope: "覆盖工具、工作流、服务与交付",
-      workflowEyebrow: "01 / THE WORKFLOW",
       workflowTitle: "从来源，到结论。",
       workflowDescription:
         "把检索、推理、计算和校验连接起来，保留完整的证据路径。",
@@ -55,7 +49,6 @@
       harnessText: "程序计算金额与同比；校验来源，最多一次定向修复并恢复执行。",
       reportTitle: "证据化报告",
       reportText: "呈现数值、期间、公式与引用，输出 HTML 和 PDF。",
-      casesEyebrow: "02 / FINANCIAL CASE STUDIES",
       casesTitle: "打开一份分析，沿着证据阅读。",
       casesDescription:
         "基于仓库固定财报观测的交互案例。选择问题，查看计算、财务期间与原始来源。",
@@ -64,10 +57,8 @@
       comparisonTitle: "跨公司比较",
       marginTitle: "经营利润率",
       staticLabel: "预设案例 · 本地交互",
-      researchQuestion: "研究问题",
       financialObservations: "财务观测",
       sourceTrail: "原始证据",
-      sourceTrailNote: "公司财报 · 可定位引用",
       periodsAligned: "财务期间一致",
       periodsDiffer: "财年期间存在差异",
       annualPeriods: "相邻完整财年",
@@ -77,7 +68,6 @@
       comparisonQuestion:
         "比较 Apple 与 Microsoft 2023 财年的收入，并说明期间差异。",
       marginQuestion: "Microsoft 2024 财年的经营利润率是多少？",
-      resultsEyebrow: "03 / MEASURED RESULTS",
       resultsTitle: "用实验，回答性能问题。",
       resultsDescription:
         "从组件对照到双 seed 微调，再到同权重量化。每组结果都链接到仓库中的实验依据。",
@@ -121,7 +111,6 @@
       datasetText:
         "业务任务 {businessDevelopment} / {businessValidation} / {businessTest}；自建双语合成规划任务 {plannerTrain} / {plannerValidation} / {plannerTest}，分别用于 development / validation / test。",
       viewData: "查看数据 ↗",
-      reproduceEyebrow: "06 / BUILD ON THE WORK",
       reproduceTitle: "从阅读结果，到运行实验。",
       reproduceText:
         "源码、冻结数据、预测记录与评测入口均已公开。按照 README 准备环境，即可在本地运行完整分析工作流。",
@@ -130,13 +119,13 @@
       copy: "复制命令",
       copied: "命令已复制",
       copyFallback: "请选中上方命令进行复制。",
-      footerText: "以公开数据为基础，以可复现实验为依据。",
       upstream: "基于 FinRobot Equity V1",
     },
     en: {
       title: "FinEvoLab · Evidence-backed financial analysis",
       description:
         "A financial Agent grounded in public filings, combining RAG, financial tools, execution validation, and QLoRA. Explore measured results and financial case studies.",
+      technicalDetails: "Technical details",
       skip: "Skip to content",
       navigation: "Main navigation",
       navWorkflow: "Workflow",
@@ -145,23 +134,18 @@
       navReplay: "Replay",
       navEvidence: "Evidence",
       startAnalysis: "Invited live analysis",
-      liveAccessNote:
-        "Invitation required. Available while the local backend and Tunnel are running; replay and evidence remain available below.",
-      eyebrow: "FINANCIAL AGENT · RESEARCH & ENGINEERING",
+      liveAccessNote: "An invitation is required for live analysis.",
       heroLine1: "Financial insight.",
       heroLine2: "Evidence, attached.",
       heroDescription:
         "From public filings to traceable financial reports. RAG finds evidence, models interpret requests, and financial tools keep calculations precise.",
       exploreCases: "Explore the cases",
       exploreResults: "View the results",
-      researchDesk: "RESEARCH DESK",
       annualRevenue: "Annual revenue",
       usdBillions: "USD billions",
       yearOverYear: "year over year",
       heroChart: "Microsoft annual revenue comparison",
       sourceBound: "Computed values, linked to original filings",
-      evidenceFirst: "Evidence first.",
-      evidenceFirstSub: "Trace every step.",
       keyResults: "Key measured results",
       businessMetric: "Strict success on the expanded business test",
       businessScope:
@@ -171,8 +155,6 @@
       memoryMetric: "Lower NF4 peak allocated GPU memory",
       memoryScope: "Same-weight BF16 / NF4 comparison",
       testsMetric: "Core regression tests passed",
-      testsScope: "Tools, workflows, serving, and delivery",
-      workflowEyebrow: "01 / THE WORKFLOW",
       workflowTitle: "From sources to conclusions.",
       workflowDescription:
         "Connect retrieval, reasoning, computation, and validation while preserving the evidence trail.",
@@ -191,7 +173,6 @@
       reportTitle: "Cited reports",
       reportText:
         "Present values, periods, formulas, and citations in HTML and PDF reports.",
-      casesEyebrow: "02 / FINANCIAL CASE STUDIES",
       casesTitle: "Open an analysis. Follow the evidence.",
       casesDescription:
         "Interactive cases computed from frozen financial observations. Choose a question to explore values, fiscal periods, and original sources.",
@@ -200,10 +181,8 @@
       comparisonTitle: "Company comparison",
       marginTitle: "Operating margin",
       staticLabel: "Preset cases · Local interaction",
-      researchQuestion: "RESEARCH QUESTION",
       financialObservations: "FINANCIAL OBSERVATIONS",
       sourceTrail: "ORIGINAL EVIDENCE",
-      sourceTrailNote: "Company filings · Located citations",
       periodsAligned: "Matching fiscal periods",
       periodsDiffer: "Fiscal periods differ",
       annualPeriods: "Consecutive full fiscal years",
@@ -215,7 +194,6 @@
         "Compare Apple and Microsoft FY2023 revenue and explain their fiscal-period differences.",
       marginQuestion:
         "What was Microsoft operating margin in fiscal year 2024?",
-      resultsEyebrow: "03 / MEASURED RESULTS",
       resultsTitle: "Performance, answered by experiments.",
       resultsDescription:
         "Component comparisons, two-seed fine-tuning, and same-weight quantization. Every result links to its recorded experimental evidence.",
@@ -259,7 +237,6 @@
       datasetText:
         "Business tasks: {businessDevelopment} / {businessValidation} / {businessTest}. Internally authored synthetic bilingual planner tasks: {plannerTrain} / {plannerValidation} / {plannerTest} for development / validation / test.",
       viewData: "Explore the data ↗",
-      reproduceEyebrow: "06 / BUILD ON THE WORK",
       reproduceTitle: "From reading results to running experiments.",
       reproduceText:
         "Source code, frozen data, predictions, and scoring tools are public. Follow the README to set up the environment and run the analysis workflow locally.",
@@ -268,8 +245,6 @@
       copy: "Copy commands",
       copied: "Commands copied",
       copyFallback: "Select and copy the commands above.",
-      footerText:
-        "Grounded in public data. Supported by reproducible experiments.",
       upstream: "Built on FinRobot Equity V1",
     },
   };
@@ -393,9 +368,9 @@
           "",
           `${row.company} · FY${row.year} · ${t(row.metric)}`,
         );
-        details.append(
-          create("small", "", `${row.evidence_id} · ${row.locator}`),
-        );
+        link.dataset.evidenceId = row.evidence_id;
+        link.dataset.locator = row.locator;
+        link.title = row.locator;
         link.append(details, create("span", "", "↗"));
         return link;
       }),

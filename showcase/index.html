@@ -55,12 +55,6 @@
       <main id="main">
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">
-              <span class="status-dot"></span
-              ><span data-i18n="eyebrow"
-                >FINANCIAL AGENT · RESEARCH & ENGINEERING</span
-              >
-            </p>
             <h1>
               <span data-i18n="heroLine1">让每一个财务判断</span><br /><em
                 data-i18n="heroLine2"
@@ -81,22 +75,15 @@
               >
             </div>
             <p class="hero-description" data-i18n="liveAccessNote">
-              需邀请口令；本机后端与 Tunnel
-              在线时可用，也可直接浏览下方回放和证据。
+              真实分析需邀请口令。
             </p>
-            <div class="hero-tags">
-              <span>RAG</span><span>Agents SDK</span><span>QLoRA</span
-              ><span>BF16 / NF4</span>
-            </div>
           </div>
           <div class="hero-visual">
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="research-card">
               <div class="card-topline">
-                <span class="mini-label" data-i18n="researchDesk"
-                  >财报研究台</span
-                ><span class="mini-pill">MSFT · FY2024</span>
+                <span class="mini-pill">MSFT · FY2024</span>
               </div>
               <div class="hero-metric">
                 <span data-i18n="annualRevenue">年度收入</span
@@ -127,13 +114,6 @@
                 ><span data-i18n="sourceBound">数值计算与财报来源绑定</span>
               </div>
             </div>
-            <div class="floating-note">
-              <span class="note-icon">↗</span>
-              <div>
-                <strong data-i18n="evidenceFirst">Evidence first.</strong
-                ><span data-i18n="evidenceFirstSub">每一步，都可追溯。</span>
-              </div>
-            </div>
           </div>
         </section>
         <section
@@ -142,38 +122,30 @@
           data-i18n-aria="keyResults"
         >
           <article class="metric-card mint">
-            <span class="metric-index">01 / AGENT</span
-            ><strong id="business-rate">97.00<span>%</span></strong>
+            <strong id="business-rate">97.00<span>%</span></strong>
             <p data-i18n="businessMetric">扩展业务主测严格成功率</p>
             <small data-i18n="businessScope">100 道任务 · 每题重复 3 次</small>
           </article>
           <article class="metric-card lavender">
-            <span class="metric-index">02 / QLORA</span
-            ><strong id="planner-gain">+42.92<span>pp</span></strong>
+            <strong id="planner-gain">+42.92<span>pp</span></strong>
             <p data-i18n="plannerMetric">微调后规划严格成功率提升</p>
             <small data-i18n="plannerScope"
               >seed 17 对比 Qwen base · 240 题</small
             >
           </article>
           <article class="metric-card peach">
-            <span class="metric-index">03 / INFERENCE</span
-            ><strong id="memory-saving">62.58<span>%</span></strong>
+            <strong id="memory-saving">62.58<span>%</span></strong>
             <p data-i18n="memoryMetric">NF4 峰值分配显存降低</p>
             <small data-i18n="memoryScope">同权重 BF16 / NF4 配对对照</small>
           </article>
           <article class="metric-card blue">
-            <span class="metric-index">04 / ENGINEERING</span
-            ><strong id="regression-tests">272</strong>
+            <strong id="regression-tests">272</strong>
             <p data-i18n="testsMetric">核心回归测试通过</p>
-            <small data-i18n="testsScope">覆盖工具、工作流、服务与交付</small>
           </article>
         </section>
         <section class="section" id="workflow">
           <div class="section-heading">
             <div>
-              <p class="eyebrow" data-i18n="workflowEyebrow">
-                01 / THE WORKFLOW
-              </p>
               <h2 data-i18n="workflowTitle">从来源，到结论。</h2>
             </div>
             <p data-i18n="workflowDescription">
@@ -182,53 +154,40 @@
           </div>
           <div class="pipeline">
             <article>
-              <span class="step-number">01</span>
               <h3 data-i18n="sourceTitle">公开财报</h3>
               <p data-i18n="sourceText">
                 SEC 与公司 IR 快照，保留财年、单位及来源身份。
               </p>
-              <span class="technical">SEC / Inline XBRL</span>
             </article>
             <article>
-              <span class="step-number">02</span>
               <h3 data-i18n="ragTitle">混合检索</h3>
               <p data-i18n="ragText">
                 结合关键词与语义召回，保留正文和表格上下文。
               </p>
-              <span class="technical">BM25 · E5 · RRF</span>
             </article>
             <article>
-              <span class="step-number">03</span>
               <h3 data-i18n="agentTitle">请求规划</h3>
               <p data-i18n="agentText">
                 识别公司、指标、期间与意图，调度财务工具。
               </p>
-              <span class="technical">Agents SDK · QLoRA</span>
             </article>
             <article>
-              <span class="step-number">04</span>
               <h3 data-i18n="harnessTitle">计算与校验</h3>
               <p data-i18n="harnessText">
                 程序计算金额与同比；校验来源，定向修复并恢复执行。
               </p>
-              <span class="technical">Tools · Harness</span>
             </article>
             <article>
-              <span class="step-number">05</span>
               <h3 data-i18n="reportTitle">证据化报告</h3>
               <p data-i18n="reportText">
                 呈现数值、期间、公式与引用，输出 HTML 和 PDF。
               </p>
-              <span class="technical">Sources → HTML / PDF</span>
             </article>
           </div>
         </section>
         <section class="section" id="cases">
           <div class="section-heading">
             <div>
-              <p class="eyebrow" data-i18n="casesEyebrow">
-                02 / FINANCIAL CASE STUDIES
-              </p>
               <h2 data-i18n="casesTitle">打开一份分析，沿着证据阅读。</h2>
             </div>
             <p data-i18n="casesDescription">
@@ -303,7 +262,6 @@
               tabindex="0"
             >
               <div class="case-question">
-                <span data-i18n="researchQuestion">研究问题</span>
                 <h3 id="case-question"></h3>
               </div>
               <div class="case-content">
@@ -319,10 +277,7 @@
                 </div>
                 <div class="formula" id="case-formula"></div>
                 <div class="sources-heading">
-                  <span data-i18n="sourceTrail">原始证据</span
-                  ><small data-i18n="sourceTrailNote"
-                    >公司财报 · 可定位引用</small
-                  >
+                  <span data-i18n="sourceTrail">原始证据</span>
                 </div>
                 <div id="case-sources" class="source-list"></div>
               </div>
@@ -332,9 +287,6 @@
         <section class="section" id="results">
           <div class="section-heading">
             <div>
-              <p class="eyebrow" data-i18n="resultsEyebrow">
-                03 / MEASURED RESULTS
-              </p>
               <h2 data-i18n="resultsTitle">用实验，回答性能问题。</h2>
             </div>
             <p data-i18n="resultsDescription">
@@ -403,9 +355,12 @@
             tabindex="0"
           >
             <div class="result-summary">
-              <p class="mini-label" id="result-label"></p>
               <h3 id="result-title"></h3>
               <p id="result-description"></p>
+              <details class="technical-details">
+                <summary data-i18n="technicalDetails">技术详情</summary>
+                <p class="mini-label" id="result-label"></p>
+              </details>
               <a
                 id="result-evidence"
                 class="text-link"
@@ -438,7 +393,6 @@
         <section class="section" id="replay">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">04 / EXECUTION REPLAY</p>
               <h2 data-text="replay">执行回放</h2>
             </div>
             <p data-text="replayNote">
@@ -446,11 +400,11 @@
             </p>
           </div>
           <article class="workspace-card">
-            <span class="mini-pill" data-text="archive"
-              >归档执行 · 非实时运行</span
-            >
             <h3 id="replay-question"></h3>
-            <p id="replay-identity" class="technical"></p>
+            <details class="technical-details">
+              <summary data-text="technicalDetails">技术详情</summary>
+              <p id="replay-identity" class="technical"></p>
+            </details>
             <a
               id="replay-source"
               class="text-link"
@@ -470,7 +424,6 @@
         <section class="section" id="evidence">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">05 / EVIDENCE EXPLORER</p>
               <h2 data-text="evidence">证据浏览器</h2>
             </div>
             <p data-text="evidenceNote">
@@ -495,14 +448,14 @@
             </div>
             <p id="evidence-count" role="status"></p>
             <div id="evidence-rows"></div>
-            <p class="technical" id="data-version"></p>
+            <details class="technical-details">
+              <summary data-text="technicalDetails">技术详情</summary>
+              <p class="technical" id="data-version"></p>
+            </details>
           </article>
         </section>
         <section class="reproduction" id="reproduce">
           <div>
-            <p class="eyebrow" data-i18n="reproduceEyebrow">
-              06 / BUILD ON THE WORK
-            </p>
             <h2 data-i18n="reproduceTitle">从阅读结果，到运行实验。</h2>
             <p data-i18n="reproduceText">
               源码、冻结数据、预测记录与评测入口均已公开。按照 README
@@ -550,7 +503,6 @@ conda run -n finevolab python -m unittest discover -s tests -q</code></pre>
               >FinEvoLab<span class="brand-dot">.</span></span
             ></a
           >
-          <p data-i18n="footerText">以公开数据为基础，以可复现实验为依据。</p>
         </div>
         <div class="footer-links">
           <a href="https://lunelu.com/">LUNELU ↗</a
