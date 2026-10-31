@@ -1,19 +1,20 @@
+<div align="center">
+
 # FinEvoLab
 
-<p align="center">
-  <a href="README.md"><kbd>English</kbd></a>
-  <a href="README_CN.md"><kbd>简体中文</kbd></a>
-</p>
+**Evidence-backed financial analysis with RAG, tools, and QLoRA planning.**
 
 <p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/English-64748B" alt="English"></a>
+  <a href="README_CN.md"><img src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-7B6DAA" alt="简体中文"></a>
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11">
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI">
   <img src="https://img.shields.io/badge/License-Apache--2.0-7B6DAA" alt="Apache-2.0">
 </p>
 
-**Financial questions. Verifiable calculations. Traceable answers.**
+[Project showcase](https://finevolab.lunelu.com/) · [Invited analysis](https://app.lunelu.com/)
 
-**Explore:** [Project showcase](https://finevolab.lunelu.com/) · [Invited analysis](https://app.lunelu.com/).
+</div>
 
 FinEvoLab answers questions about financial reports, compares companies, calculates growth and profit margins, and generates reports with traceable citations. It combines hybrid RAG, deterministic financial tools, a resumable execution harness, and QLoRA request planning, with a bilingual web interface and reproducible evaluations.
 
@@ -71,7 +72,7 @@ conda run --no-capture-output -n finevolab python scripts/build_contextual_index
 
 ### 3. Configure the model provider
 
-Offline mode uses fixed financial-report snapshots. The natural-language Agent reads the local `finrobot_equity/core/config/config.ini`, or a private configuration specified through `FINEVOLAB_MODEL_CONFIG`. Fill in a valid key and model name in the minimal configuration below. DeepSeek requests explicitly disable Thinking.
+The financial tools use pinned report snapshots. Natural-language analysis uses the provider configured in the local `finrobot_equity/core/config/config.ini`, or a private configuration specified through `FINEVOLAB_MODEL_CONFIG`. Fill in a valid key and model name in the minimal configuration below. DeepSeek requests explicitly disable Thinking.
 
 ```ini
 [API_KEYS]
@@ -119,15 +120,15 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 | --- | --- | --- |
 | Common supported business-Agent tasks | Earlier FinEvoLab engine 179/195 → improved engine 195/195; 65 questions, 3 repetitions each | [Business evaluation](project_notes/experiments/scope-test-v1/assessment.json) |
 | Expanded business-Agent main test | 291/300, 97.00%; 100 questions, 3 repetitions each | [Full results](project_notes/experiments/scope-test-v1/assessment.json) |
-| Request-planner formal test | Qwen base 109/240; two LoRA seeds: 212/240 and 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
-| BF16 / NF4 inference with the same weights | Strict successes: 212/240 and 211/240; NF4 reduced peak allocated memory by 62.58% and increased mean latency by 47.18% | [Quantization results](project_notes/evaluations/planner_quantization.json) |
+| Request-planner formal test | Qwen base 109/240; LoRA seed 17: 212/240, seed 29: 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
+| Same-weight planner BF16 / NF4 inference | Strict successes: 212/240 and 211/240; NF4 reduced peak allocated memory by 62.58% and increased mean inference time by 47.18% | [Quantization results](project_notes/evaluations/planner_quantization.json) |
 | Retrieval cache comparison | 135 query configurations × 5 repetitions; identical results; warm mean 68.52 → 6.16 ms, 11.12× | [Cache comparison](project_notes/experiments/retrieval-cache-v1/summary.json) |
 | Shared Redis retrieval cache | Four arms, 77 questions × 3 repetitions; 693 paired comparisons with identical passages; warm mean 91.13 → 22.44 ms, 4.06× | [Service comparison](project_notes/evaluations/retrieval_service_comparison.json) |
 | Same-budget narrative review | Analyst 22/24; self-check 24/24; isolated Reviewer 23/24; 72 real workflows with two blind scoring contexts | [Role comparison](project_notes/experiments/agent-roles-v1/summary.json) |
-| Controlled unsupported claims | Acceptance decisions: source validation 10/20, self-check 20/20, Reviewer 18/20; both model review modes rejected all 10 unsupported controls | [Support controls](project_notes/experiments/claim-review-v3/summary.json) |
+| Controlled unsupported claims | Correct accept/reject decisions: source validation 10/20, self-check 20/20, Reviewer 18/20; both model review modes rejected all 10 unsupported controls | [Support controls](project_notes/experiments/claim-review-v3/summary.json) |
 | Optional semantic reranking | Complete gold-quote hits in top 5: 15/36 → 23/36; paired workflow strict successes 8/8 for both arms | [Evidence comparison](project_notes/experiments/reranker-bilingual-v1/summary.json), [Workflow verification](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
-Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean generation latency was 3.759 / 5.532 s.
+Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
 The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **272 tests**; see [runtime verification](project_notes/run_logs/analysis_extensions_checks.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
@@ -347,7 +348,7 @@ Without run-path options, the summary command aggregates the versioned archived 
 
 <div id="section-web"></div>
 
-## Static showcase
+## Web interface and deployment
 
 The [live showcase](https://finevolab.lunelu.com/) provides Chinese / English navigation, source-linked financial cases, and interactive experiment comparisons. It runs entirely as static files. Build it from the frozen observations and recorded results:
 
@@ -355,7 +356,12 @@ The [live showcase](https://finevolab.lunelu.com/) provides Chinese / English na
 conda run --no-capture-output -n finevolab python scripts/build_showcase.py
 ```
 
-The output is in `output/showcase/`. The Pages workflow publishes this directory. Source files are in `showcase/`; frontend checks run with `npm run test:showcase --prefix tests/frontend` after installing the frontend dependencies.
+The output is in `output/showcase/`. The Pages workflow publishes this directory. Source files are in `showcase/`. The frontend checks use Node.js 24. Install the dependencies and run the interaction checks with:
+
+```powershell
+npm ci --prefix tests/frontend
+npm run test:showcase --prefix tests/frontend
+```
 
 The [project showcase](https://finevolab.lunelu.com/) includes a real archived hybrid analysis with request planning, retrieved passages, tool outputs, validation, repair status, and recorded usage. Its source links resolve uploaded evidence to public SEC snapshots by matching SHA-256. The evidence explorer filters financial observations by company, fact fiscal year, metric, and original text, preserving report year, units, and actual periods.
 

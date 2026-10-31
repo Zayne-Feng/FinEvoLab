@@ -1,19 +1,20 @@
+<div align="center">
+
 # FinEvoLab
 
-<p align="center">
-  <a href="README.md"><kbd>English</kbd></a>
-  <a href="README_CN.md"><kbd>简体中文</kbd></a>
-</p>
+**融合 RAG、金融工具与 QLoRA 规划的可追溯财务分析。**
 
 <p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/English-64748B" alt="English"></a>
+  <a href="README_CN.md"><img src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-7B6DAA" alt="简体中文"></a>
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11">
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI">
   <img src="https://img.shields.io/badge/License-Apache--2.0-7B6DAA" alt="Apache-2.0">
 </p>
 
-**财报有依据，计算可复核，分析可追溯。**
+[项目展示](https://finevolab.lunelu.com/) · [邀请制分析](https://app.lunelu.com/)
 
-**在线体验：**[项目展示](https://finevolab.lunelu.com/) · [邀请制分析](https://app.lunelu.com/)。
+</div>
 
 FinEvoLab 支持财报问答、跨公司比较、增长率与利润率计算，以及带来源引用的报告生成。项目融合混合 RAG、确定性财务工具、可恢复执行框架与 QLoRA 请求规划，提供中英文 Web 界面及可复现评测。
 
@@ -71,7 +72,7 @@ conda run --no-capture-output -n finevolab python scripts/build_contextual_index
 
 ### 3. 配置模型服务
 
-离线模式使用固定财报快照。自然语言 Agent 读取本地 `finrobot_equity/core/config/config.ini`，也可通过 `FINEVOLAB_MODEL_CONFIG` 指定私有配置。最小配置如下，在本机填写有效 key 和模型名称；DeepSeek 请求显式关闭 Thinking。
+财务工具使用固定财报快照。自然语言分析使用本地 `finrobot_equity/core/config/config.ini` 中配置的模型服务，也可通过 `FINEVOLAB_MODEL_CONFIG` 指定私有配置。最小配置如下，在本机填写有效 key 和模型名称；DeepSeek 请求显式关闭 Thinking。
 
 ```ini
 [API_KEYS]
@@ -119,15 +120,15 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 | --- | --- | --- |
 | 业务 Agent 共同支持任务 | FinEvoLab 旧引擎 179/195 → 改进引擎 195/195；65 题各重复 3 次 | [业务评测](project_notes/experiments/scope-test-v1/assessment.json) |
 | 扩展业务 Agent 主测试 | 291/300，97.00%；100 题各重复 3 次 | [完整结果](project_notes/experiments/scope-test-v1/assessment.json) |
-| 请求规划器正式 test | Qwen base 109/240；LoRA 两个 seed 为 212/240、213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
-| 同权重 BF16 / NF4 推理 | 严格成功 212/240、211/240；NF4 峰值已分配显存降低 62.58%，平均延时增加 47.18% | [量化结果](project_notes/evaluations/planner_quantization.json) |
+| 请求规划器正式 test | Qwen base 109/240；LoRA seed 17 为 212/240、seed 29 为 213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
+| 同权重规划器 BF16 / NF4 推理 | 严格成功 212/240、211/240；NF4 峰值已分配显存降低 62.58%，平均推理耗时增加 47.18% | [量化结果](project_notes/evaluations/planner_quantization.json) |
 | 检索缓存对照 | 135 组查询配置 × 5 次重复；返回结果一致；预热均值 68.52 → 6.16 ms，11.12× | [缓存对照](project_notes/experiments/retrieval-cache-v1/summary.json) |
 | Redis 共享检索缓存 | 四组对照，77 题 × 3 次；693 次配对的片段完全一致；热查询均值 91.13 → 22.44 ms，4.06× | [服务对照](project_notes/evaluations/retrieval_service_comparison.json) |
 | 同预算正文审查 | 原分析者 22/24；自检 24/24；隔离 Reviewer 23/24；72 次真实工作流，经两个隔离上下文盲评 | [角色对照](project_notes/experiments/agent-roles-v1/summary.json) |
-| 无依据结论受控测试 | 接受决策：来源校验 10/20，自检 20/20，Reviewer 18/20；两种模型审查均拒绝全部 10 个无依据对照 | [支持关系对照](project_notes/experiments/claim-review-v3/summary.json) |
+| 无依据结论受控测试 | 接受／拒绝决策正确数：来源校验 10/20，自检 20/20，Reviewer 18/20；两种模型审查均拒绝全部 10 个无依据对照 | [支持关系对照](project_notes/experiments/claim-review-v3/summary.json) |
 | 可选语义重排 | top 5 完整标准原文命中 15/36 → 23/36；业务配对严格成功均为 8/8 | [证据对照](project_notes/experiments/reranker-bilingual-v1/summary.json)、[业务验收](project_notes/experiments/runtime-refinement-v1/summary.json) |
 
-业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均生成延时为 3.759 / 5.532 s。
+业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
 项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **272 项通过**，见[运行验证](project_notes/run_logs/analysis_extensions_checks.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
@@ -347,7 +348,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_retrieval_servi
 
 <div id="section-web"></div>
 
-## 静态展示
+## 网页界面与部署
 
 [在线展示页](https://finevolab.lunelu.com/)提供中英文切换、带来源引用的财务案例及可交互的实验对比，完全由静态文件运行。使用固定财务观测和已记录的实验结果构建：
 
@@ -355,7 +356,12 @@ conda run --no-capture-output -n finevolab python scripts/manage_retrieval_servi
 conda run --no-capture-output -n finevolab python scripts/build_showcase.py
 ```
 
-产物位于 `output/showcase/`，Pages 工作流发布该目录。源文件位于 `showcase/`；安装前端依赖后，可通过 `npm run test:showcase --prefix tests/frontend` 运行前端检查。
+产物位于 `output/showcase/`，Pages 工作流发布该目录；源文件位于 `showcase/`。前端检查使用 Node.js 24，安装依赖并运行交互检查：
+
+```powershell
+npm ci --prefix tests/frontend
+npm run test:showcase --prefix tests/frontend
+```
 
 [项目展示首页](https://finevolab.lunelu.com/)提供真实归档混合分析回放，包括请求计划、检索片段、工具输出、校验、修复状态和实际用量。上传证据通过 SHA-256 匹配公开 SEC 快照，提供可访问的来源链接。证据浏览器支持按公司、事实所属财年、指标和原文筛选，保留报告年份、单位和实际期间。
 
