@@ -12,14 +12,27 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from benchmark_services import identity, http_server
+from scripts.benchmark_services import identity, http_server
 from finevolab.config import ModelConfig
 from finevolab.grounded import RequestPlan, analyze_grounded, assemble_numeric
-from finevolab.runtime import RunBudget, write_json
+from finevolab.runtime import RunBudget, ToolExecutor, write_json
+from unittest.mock import patch
 from finevolab.service_metrics import summarize
 from finevolab.tools import FinancialStore
 from finevolab.tracing import trace_scope, tracing_mode, flush_exports
 from finevolab.validation import validate_answer
+
+
+class UncachedToolExecutor(ToolExecutor):
+    def __init__(self, budget, events, version, cache_root=None, **kwargs):
+        super().__init__(budget, events, version, cache_root=None, **kwargs)
+
+
+def create_uncached_app():
+    import finevolab.grounded as grounded
+    from finevolab.web import app
+    grounded.ToolExecutor = UncachedToolExecutor
+    return app
 
 
 def case(identifier, question, intent, companies, metric="revenue", year=2024, **extra):
@@ -77,7 +90,7 @@ async def run(args):
     manifest = identity(args)
     manifest["source_hashes"]["scripts/benchmark_tool_backends.py"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     manifest["config"].update(mode=args.mode, cases=cases, warmup_per_case=0, tool_backends=["direct", "mcp"], review_mode="off",
-        budget=vars(RunBudget(max_context_chars=60000)), trace_mode=args.trace_mode,
+        budget=vars(RunBudget(max_context_chars=60000)), trace_mode=args.trace_mode, tool_cache=args.tool_cache,
         scoring_scope="planning_numeric_and_source_validation")
     if (directory / "manifest.json").exists():
         saved = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
@@ -126,7 +139,7 @@ async def run(args):
         completed.add(key)
         write_json(path, {"run_id": args.run_id, "records": records})
         print(json.dumps({key: row[key] for key in ("case_id", "repeat", "tool_backend", "status", "elapsed_seconds")}), flush=True)
-    with tracing_mode(args.trace_mode):
+    with tracing_mode(args.trace_mode), patch("finevolab.grounded.ToolExecutor", UncachedToolExecutor if args.tool_cache == "disabled" else ToolExecutor):
         if args.mode == "fixed":
             for repeat in range(args.repeats):
                 for item in cases:
@@ -137,7 +150,7 @@ async def run(args):
             old = os.environ.get("FINEVOLAB_TRACE_MODE")
             os.environ["FINEVOLAB_TRACE_MODE"] = args.trace_mode
             try:
-                async with http_server(directory) as client:
+                async with http_server(directory, "scripts.benchmark_tool_backends:create_uncached_app" if args.tool_cache == "disabled" else "finevolab.web:app", factory=args.tool_cache == "disabled") as client:
                     for repeat in range(args.repeats):
                         ordered = list(cases)
                         random.Random(17 + repeat).shuffle(ordered)
@@ -165,6 +178,7 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / "output/tool_backends")
     parser.add_argument("--repeats", type=int, default=3)
     parser.add_argument("--trace-mode", default="file")
+    parser.add_argument("--tool-cache", choices=["enabled", "disabled"], default="disabled")
     asyncio.run(run(parser.parse_args()))
 
 

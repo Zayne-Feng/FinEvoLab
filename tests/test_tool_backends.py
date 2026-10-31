@@ -60,6 +60,7 @@ class ToolBackendTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_http_sdk_plan_executes_mcp_and_builds_report(self):
         from finevolab.web import app
+        from scripts.benchmark_tool_backends import UncachedToolExecutor
         plan = RequestPlan(intent="growth", companies=["MSFT"], fiscal_year=2023, metrics=["revenue"])
         async def respond(request):
             return httpx.Response(200, json={"id": "local-plan", "object": "chat.completion", "created": 0,
@@ -72,7 +73,7 @@ class ToolBackendTests(unittest.IsolatedAsyncioTestCase):
         settings = ModelConfig("fixture", "https://fixture.invalid/", "local-fixture")
         task = None
         try:
-            with patch("finevolab.workflow.save_task"), patch("finevolab.web.ModelConfig.load", return_value=settings), patch("finevolab.grounded.async_client", side_effect=client):
+            with patch("finevolab.grounded.ToolExecutor", UncachedToolExecutor), patch("finevolab.workflow.save_task"), patch("finevolab.web.ModelConfig.load", return_value=settings), patch("finevolab.grounded.async_client", side_effect=client):
                 async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
                     response = await http.post("/api/questions", json={"question": "Calculate Microsoft FY2023 revenue growth.", "tool_backend": "mcp"})
             self.assertEqual(response.status_code, 200, response.text[:300])
@@ -80,6 +81,9 @@ class ToolBackendTests(unittest.IsolatedAsyncioTestCase):
             task = ROOT / "output/tasks" / state["task_id"]
             output = state["phases"]["analyze"]["result"]
             self.assertEqual(output["tool_backend"], "mcp")
+            self.assertEqual(output["remote_tool_calls"], 1)
+            self.assertFalse(next(event["cache_hit"] for event in output["events"]
+                                  if event.get("event") == "tool_execution" and event.get("tool") == "calculate_metrics"))
             self.assertEqual(state["phases"]["validate"]["result"]["status"], "passed")
             self.assertEqual(output["answer"]["calculations"][0]["company"], "MSFT")
             self.assertTrue(list(task.rglob("*.pdf")))

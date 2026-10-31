@@ -62,12 +62,12 @@ def identity(args):
 
 
 @asynccontextmanager
-async def http_server(directory):
+async def http_server(directory, application="finevolab.web:app", factory=False):
     with socket.socket() as sock:
         sock.bind(("127.0.0.1", 0))
         port = sock.getsockname()[1]
     with (directory / "http_server.log").open("w", encoding="utf-8") as log:
-        process = subprocess.Popen([sys.executable, "-m", "uvicorn", "finevolab.web:app", "--host", "127.0.0.1",
+        process = subprocess.Popen([sys.executable, "-m", "uvicorn", application, *(["--factory"] if factory else []), "--host", "127.0.0.1",
                                     "--port", str(port), "--no-access-log"], cwd=ROOT, stdout=log, stderr=log)
         try:
             async with httpx.AsyncClient(base_url=f"http://127.0.0.1:{port}", trust_env=False, timeout=240) as client:
