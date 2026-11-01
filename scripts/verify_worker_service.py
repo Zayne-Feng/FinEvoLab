@@ -23,7 +23,7 @@ CASES = [
     ('followup', '上一年呢？', ['MSFT'], 2023, ['revenue']),
     ('hybrid', 'Calculate MSFT FY2024 revenue growth and explain the disclosed reasons using annual report passages.', ['MSFT'], 2024, ['revenue']),
     ('comparison', 'Compare MSFT and AAPL FY2024 revenue and state their fiscal period differences.', ['MSFT', 'AAPL'], 2024, ['revenue']),
-    ('derived', 'Calculate MSFT FY2024 operating margin.', ['MSFT'], 2024, []),
+    ('derived', 'Calculate MSFT FY2024 operating margin.', ['MSFT'], 2024, ['operating_margin']),
 ]
 
 
@@ -92,9 +92,13 @@ async def verify(args):
             correct = set(plan.get('companies', [])) == set(companies) and plan.get('fiscal_year') == year
             correct &= all(metric in plan.get('metrics', []) for metric in metrics)
             if name == 'hybrid':
-                correct &= detail.get('answer_type') == 'hybrid' and bool(detail.get('narrative', {}).get('claims'))
+                correct &= (plan.get('numeric_intent') == 'growth' and detail.get('answer_type') == 'hybrid'
+                            and bool((detail.get('narrative') or {}).get('claims')))
             if name == 'derived':
-                correct &= any(item.get('kind') == 'derived' for item in (detail.get('answer') or {}).get('calculations', []))
+                correct &= any(item.get('kind') == 'derived' and item.get('metric') == 'operating_margin'
+                               and item.get('company') == 'MSFT' and item.get('fiscal_year') == year
+                               and item.get('unit') == 'percent'
+                               for item in (detail.get('answer') or {}).get('calculations', []))
             record = {'case_id': name, 'question': question, 'status': detail['status'],
                 'error_type': detail.get('error_type'), 'request': plan, 'answer_type': detail.get('answer_type'),
                 'validation': detail.get('validation'), 'usage': detail.get('usage'),

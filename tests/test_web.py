@@ -20,6 +20,25 @@ class WebTests(unittest.TestCase):
             self.assertEqual(resumed.status_code, 200, resumed.text)
             self.assertEqual(resumed.json()["phases"], state["phases"])
 
+    def test_resume_preserves_saved_question_execution_options(self):
+        from unittest.mock import AsyncMock, patch
+        from finevolab.config import ModelConfig
+        versions = {"workflow": "question", "question": "MSFT FY2024 revenue", "tool_backend": "mcp",
+                    "retrieval_variant": "baseline", "review_mode": "self_check", "render": False,
+                    "timeout_seconds": 73, "corpus_profile": "contextual", "planner_backend": "api",
+                    "upload_ids": [], "budget": {"max_model_calls": 3}}
+        state = {"versions": versions, "status": "complete"}
+        runner = AsyncMock(return_value=state)
+        with patch("finevolab.web.get_task", return_value=state), patch("finevolab.web.run_question", runner), \
+             patch("finevolab.web.ModelConfig.load", return_value=ModelConfig("fixture", "https://fixture.invalid/", "fixture")):
+            with TestClient(app) as client:
+                response = client.post("/api/tasks/" + "a" * 32 + "/resume")
+        self.assertEqual(response.status_code, 200)
+        for name in ("tool_backend", "retrieval_variant", "review_mode", "render", "timeout_seconds",
+                     "corpus_profile", "planner_backend", "upload_ids"):
+            self.assertEqual(runner.await_args.kwargs.get(name), versions[name], name)
+        self.assertEqual(runner.await_args.kwargs["budget"].max_model_calls, 3)
+
     def test_invalid_parameters_and_missing_task(self):
         with TestClient(app) as client:
             self.assertEqual(client.post("/api/tasks", json={"company": "../config"}).status_code, 422)

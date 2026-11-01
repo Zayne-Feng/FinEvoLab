@@ -190,11 +190,21 @@ def main():
                                'total': sum(r['arm'] == arm for r in memory)} for arm in ['off', 'on']},
                'faults': {'passed': sum(r['passed'] for r in faults), 'total': len(faults)}}
     summary['restart'] = {arm: {'automatic_complete': sum(r['automatic_complete'] for r in restarts if r['arm'] == arm),
-                         'final_complete': sum(r['final_complete'] for r in restarts if r['arm'] == arm), 'total': 10}
+                         'final_complete': sum(r['final_complete'] for r in restarts if r['arm'] == arm),
+                         'total': sum(r['arm'] == arm for r in restarts)}
                          for arm in ['inline', 'worker']}
-    write_json(args.output / 'results.json', {'manifest': manifest, 'memory': memory, 'faults': faults, 'restarts': restarts, 'summary': summary})
-    print(json.dumps(summary))
-    if not all(r['passed'] for r in faults):
+    passed = (len(cases) > 0 and all(summary['memory'][arm]['total'] == len(cases) * manifest['repeats']
+                                  for arm in ('off', 'on'))
+              and summary['memory']['on']['passed'] == summary['memory']['on']['total']
+              and summary['faults']['total'] == 8 * manifest['fault_repeats']
+              and summary['faults']['passed'] == summary['faults']['total']
+              and all(summary['restart'][arm]['total'] == 10
+                      and summary['restart'][arm]['final_complete'] == 10 for arm in ('inline', 'worker'))
+              and summary['restart']['worker']['automatic_complete'] == 10)
+    write_json(args.output / 'results.json', {'manifest': manifest, 'memory': memory, 'faults': faults,
+               'restarts': restarts, 'summary': summary, 'passed': passed})
+    print(json.dumps({'passed': passed, **summary}))
+    if not passed:
         raise SystemExit(1)
 
 

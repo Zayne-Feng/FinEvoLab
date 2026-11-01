@@ -76,6 +76,13 @@ class ToolBackendTests(unittest.IsolatedAsyncioTestCase):
             with patch("finevolab.grounded.ToolExecutor", UncachedToolExecutor), patch("finevolab.workflow.save_task"), patch("finevolab.web.ModelConfig.load", return_value=settings), patch("finevolab.grounded.async_client", side_effect=client):
                 async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
                     response = await http.post("/api/questions", json={"question": "Calculate Microsoft FY2023 revenue growth.", "tool_backend": "mcp"})
+                    self.assertEqual(response.status_code, 200, response.text[:300])
+                    state = response.json()
+                    task = ROOT / "output/tasks" / state["task_id"]
+                    resumed = await http.post(f"/api/tasks/{state['task_id']}/resume")
+                    self.assertEqual(resumed.status_code, 200, resumed.text[:300])
+                    self.assertEqual(resumed.json()["versions"], state["versions"])
+                    self.assertEqual(resumed.json()["phases"], state["phases"])
             self.assertEqual(response.status_code, 200, response.text[:300])
             state = response.json()
             task = ROOT / "output/tasks" / state["task_id"]

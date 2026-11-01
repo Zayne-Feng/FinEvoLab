@@ -160,7 +160,10 @@ async def resume_task(task_id: str):
             from finevolab.runtime import RunBudget
             return await run_question(task_id, versions["question"], settings, candidate,
                 upload_ids=versions.get("upload_ids", []), budget=RunBudget(**versions["budget"]) if "budget" in versions else None,
-                corpus_profile=versions.get("corpus_profile", "legacy"), planner_backend=versions.get("planner_backend", "api"))
+                corpus_profile=versions.get("corpus_profile", "legacy"), planner_backend=versions.get("planner_backend", "api"),
+                tool_backend=versions.get("tool_backend", "direct"),
+                retrieval_variant=versions.get("retrieval_variant", "improved"), review_mode=versions.get("review_mode"),
+                timeout_seconds=versions.get("timeout_seconds", 240), render=versions.get("render", True))
         return await run_task(task_id, versions["company"], versions["fiscal_year"], versions["mode"])
     except Exception as error:
         raise HTTPException(status_code=409, detail={"task_id": task_id, "error_type": type(error).__name__}) from None
