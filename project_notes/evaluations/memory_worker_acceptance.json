@@ -1,0 +1,2468 @@
+{
+  "schema_version": 1,
+  "cpu": {
+    "manifest": {
+      "run_id": "memory-worker-cpu",
+      "base_commit": "358aebd9ca74a946561042a7300e26a877de0bda",
+      "source_sha256": {
+        "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/task_worker.py": "aa2ed667a580da312ed7dd6e591503447cc605a2959baa62b24ce13f68bbbcce",
+        "finevolab/experience.py": "bf9db2b2374694490453ba91d3c4c2b8d96916f7cf3c1e8195f178e2799a7b47",
+        "scripts/benchmark_memory_worker.py": "fbe7189dba75d706550eceeab8dd72ecb39c49c5153ed909d5ddeb96f5b98e2a",
+        "data/evaluation/memory_worker/cases.json": "bb47869a970506f8d4296c7ce860eeae9a4ca6b732b9fcd51de436f935b92c38"
+      },
+      "data_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+      "scope": "CPU context resolution and controlled task recovery; no model-quality score",
+      "model_calls": 0,
+      "repeats": 3,
+      "fault_repeats": 5,
+      "git_source_sha256": {
+        "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/task_worker.py": "aa2ed667a580da312ed7dd6e591503447cc605a2959baa62b24ce13f68bbbcce",
+        "finevolab/experience.py": "dda112343f5a521ff484e906bffa23d2adbbfcf6f24a4992d686be6cdfd3f2d0",
+        "scripts/benchmark_memory_worker.py": "fbe7189dba75d706550eceeab8dd72ecb39c49c5153ed909d5ddeb96f5b98e2a",
+        "data/evaluation/memory_worker/cases.json": "bb47869a970506f8d4296c7ce860eeae9a4ca6b732b9fcd51de436f935b92c38"
+      },
+      "source_byte_policy": "Original measurement bytes and Git attribute normalized blobs are recorded separately."
+    },
+    "memory": [
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 6.89999433234334e-06
+      },
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company MSFT, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 0.00043900000309804454
+      },
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 2.2000021999701858e-06
+      },
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company MSFT, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 1.0899995686486363e-05
+      },
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.2000018614344299e-06
+      },
+      {
+        "case_id": "msft-previous",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company MSFT, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 9.60000033956021e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.600004907231778e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use MSFT and metrics revenue unless explicitly overridden above.",
+        "seconds": 9.900002623908222e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use MSFT and metrics revenue unless explicitly overridden above.",
+        "seconds": 6.200003554113209e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "msft-growth",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use MSFT and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.600006261374801e-06
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company MSFT, fiscal year 2024, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.000001692678779e-06
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company MSFT, fiscal year 2024, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.599998646881431e-06
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "msft-follow",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company MSFT, fiscal year 2024, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.199995601084083e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 1.3000026228837669e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 5.800000508315861e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 4.3000036384910345e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "msft-override",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "MSFT FY2022 revenue",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.399997123982757e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "msft-explicit",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company MSFT, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 7.90000194683671e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company MSFT, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.299996701069176e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "msft-year",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company MSFT, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.900001269765198e-06
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.500004145782441e-06
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 1.3899996702093631e-05
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 7.100003131199628e-06
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "aapl-previous",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 6.399997801054269e-06
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.4999968698248267e-06
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use AAPL and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.900001269765198e-06
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use AAPL and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.299996701069176e-06
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-growth",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use AAPL and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.200003215577453e-06
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AAPL, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.5000051613897085e-06
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AAPL, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.099994839634746e-06
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-follow",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AAPL, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.1000021155923605e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 3.9000005926936865e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "aapl-override",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2022 revenue",
+        "seconds": 3.9000005926936865e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "aapl-explicit",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.199995601084083e-06
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 5.49999822396785e-06
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.999994416721165e-06
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "aapl-year",
+        "split": "development",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AAPL, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.7000066842883825e-06
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2021呢？\nMissing-field context only: company GOOGL, fiscal year 2021, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 7.099995855242014e-06
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 2.1999949240125716e-06
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2021呢？\nMissing-field context only: company GOOGL, fiscal year 2021, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 6.70000008540228e-06
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "googl-previous",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2021呢？\nMissing-field context only: company GOOGL, fiscal year 2021, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 6.299997039604932e-06
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2022. Use GOOGL and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.800000508315861e-06
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2022. Use GOOGL and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.099995178170502e-06
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "googl-growth",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2022. Use GOOGL and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.000001692678779e-06
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.699999408330768e-06
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.399997462518513e-06
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "googl-follow",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.3000036384910345e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 4.1000021155923605e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-override",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "GOOGL FY2022 revenue",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.5000051613897085e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-explicit",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.599998985417187e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 7.099995855242014e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "googl-year",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company GOOGL, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.000001692678779e-06
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company AMZN, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 6.800000846851617e-06
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company AMZN, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 6.300004315562546e-06
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-previous",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2023呢？\nMissing-field context only: company AMZN, fiscal year 2023, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 6.199996278155595e-06
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use AMZN and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.599998985417187e-06
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use AMZN and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.399997462518513e-06
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-growth",
+        "split": "validation",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2024. Use AMZN and metrics net_income unless explicitly overridden above.",
+        "seconds": 5.100002454128116e-06
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AMZN, fiscal year 2024, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.5000051613897085e-06
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AMZN, fiscal year 2024, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-follow",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company AMZN, fiscal year 2024, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 1.2000018614344299e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 3.899993316736072e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 3.9000005926936865e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "amzn-override",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AMZN FY2022 revenue",
+        "seconds": 3.7999998312443495e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "amzn-explicit",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.2000028770416975e-06
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AMZN, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 5.30000397702679e-06
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AMZN, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.800000169780105e-06
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "amzn-year",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company AMZN, fiscal year 2022, metrics net_income. Explicit fields in the question take precedence.",
+        "seconds": 4.900000931229442e-06
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 7.700000423938036e-06
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 6.70000008540228e-06
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "上一年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "meta-previous",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "fiscal year 2022呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 6.399997801054269e-06
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use META and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.49999822396785e-06
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use META and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.200003215577453e-06
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "再和上一年比较",
+        "seconds": 7.999988156370819e-07
+      },
+      {
+        "case_id": "meta-growth",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "再和上一年比较\nCalculate annual percentage growth for fiscal year 2023. Use META and metrics revenue unless explicitly overridden above.",
+        "seconds": 5.099995178170502e-06
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company META, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.900000931229442e-06
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company META, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.099994839634746e-06
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那它呢？",
+        "seconds": 7.999988156370819e-07
+      },
+      {
+        "case_id": "meta-follow",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那它呢？\nMissing-field context only: company META, fiscal year 2023, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.1000021155923605e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 1.2000018614344299e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 4.0000013541430235e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 3.7999998312443495e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "meta-override",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "META FY2022 revenue",
+        "seconds": 3.7999998312443495e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.0999938240274787e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 1.1000010999850929e-06
+      },
+      {
+        "case_id": "meta-explicit",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "AAPL FY2023 net income",
+        "seconds": 4.29999636253342e-06
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 0,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 0,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.199995939619839e-06
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 1,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 1.0000003385357559e-06
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 1,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 5.900001269765198e-06
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 2,
+        "arm": "off",
+        "passed": false,
+        "resolved_question": "那2022年呢？",
+        "seconds": 8.999995770864189e-07
+      },
+      {
+        "case_id": "meta-year",
+        "split": "test",
+        "repeat": 2,
+        "arm": "on",
+        "passed": true,
+        "resolved_question": "那2022年呢？\nMissing-field context only: company META, fiscal year 2022, metrics revenue. Explicit fields in the question take precedence.",
+        "seconds": 4.800000169780105e-06
+      }
+    ],
+    "faults": [
+      {
+        "kind": "queued_restart",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 3.7803160999974352,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "queued_restart",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 3.7720140000019455,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "queued_restart",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 3.7574586999980966,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "queued_restart",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 3.7594346000041696,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "queued_restart",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 3.7643049000034807,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claimed_exit",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 7.540993800001161,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "claimed_exit",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 7.968742900004145,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "claimed_exit",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 7.567588400001114,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "claimed_exit",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 7.167238900001394,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "claimed_exit",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 7.194760499995027,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "checkpoint_exit",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 7.203434900002321,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "checkpoint_exit",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 7.172727599994687,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "checkpoint_exit",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 7.41732090000005,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "checkpoint_exit",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 7.204370300001756,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "checkpoint_exit",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 7.200411899997562,
+        "process_exit_injected": true
+      },
+      {
+        "kind": "duplicate",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 0.004265000003215391,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "duplicate",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 0.004561900001135655,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "duplicate",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 0.0042198999944957905,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "duplicate",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 0.004499300004681572,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "duplicate",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 0.004135499999392778,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claim_race",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 0.050468900000851136,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claim_race",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 0.049736200002371334,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claim_race",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 0.03295329999673413,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claim_race",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 0.05051079999975627,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "claim_race",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 0.048789799999212846,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "stale_lease",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 0.021783399999549147,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "stale_lease",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 0.021180199997616,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "stale_lease",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 0.02226350000273669,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "stale_lease",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 0.021341200001188554,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "stale_lease",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 0.022158699997817166,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "cancel",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 0.014542099997925106,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "cancel",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 0.014213800001016352,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "cancel",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 0.014224300000932999,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "cancel",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 0.014312100000097416,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "cancel",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 0.013741000002482906,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "unknown_usage",
+        "repeat": 0,
+        "passed": true,
+        "seconds": 0.004798999994818587,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "unknown_usage",
+        "repeat": 1,
+        "passed": true,
+        "seconds": 0.004189300001598895,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "unknown_usage",
+        "repeat": 2,
+        "passed": true,
+        "seconds": 0.004209000006085262,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "unknown_usage",
+        "repeat": 3,
+        "passed": true,
+        "seconds": 0.004279799999494571,
+        "process_exit_injected": false
+      },
+      {
+        "kind": "unknown_usage",
+        "repeat": 4,
+        "passed": true,
+        "seconds": 0.004212399995594751,
+        "process_exit_injected": false
+      }
+    ],
+    "restarts": [
+      {
+        "arm": "inline",
+        "stage": "claim",
+        "repeat": 0,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "claim",
+        "repeat": 0,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "claim",
+        "repeat": 1,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "claim",
+        "repeat": 1,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "claim",
+        "repeat": 2,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "claim",
+        "repeat": 2,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "claim",
+        "repeat": 3,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "claim",
+        "repeat": 3,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "claim",
+        "repeat": 4,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "claim",
+        "repeat": 4,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "checkpoint",
+        "repeat": 0,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "checkpoint",
+        "repeat": 0,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "checkpoint",
+        "repeat": 1,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "checkpoint",
+        "repeat": 1,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "checkpoint",
+        "repeat": 2,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "checkpoint",
+        "repeat": 2,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "checkpoint",
+        "repeat": 3,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "checkpoint",
+        "repeat": 3,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "inline",
+        "stage": "checkpoint",
+        "repeat": 4,
+        "automatic_complete": false,
+        "final_complete": true,
+        "manual_resume": true,
+        "prepare_calls": 1
+      },
+      {
+        "arm": "worker",
+        "stage": "checkpoint",
+        "repeat": 4,
+        "automatic_complete": true,
+        "final_complete": true,
+        "manual_resume": false,
+        "prepare_calls": 1
+      }
+    ],
+    "summary": {
+      "memory": {
+        "off": {
+          "passed": 30,
+          "total": 90
+        },
+        "on": {
+          "passed": 90,
+          "total": 90
+        }
+      },
+      "faults": {
+        "passed": 40,
+        "total": 40
+      },
+      "restart": {
+        "inline": {
+          "automatic_complete": 0,
+          "final_complete": 10,
+          "total": 10
+        },
+        "worker": {
+          "automatic_complete": 10,
+          "final_complete": 10,
+          "total": 10
+        }
+      }
+    }
+  },
+  "live": {
+    "run_id": "memory-worker-live",
+    "manifest": {
+      "model": "deepseek-flash",
+      "options": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "base_commit": "358aebd9ca74a946561042a7300e26a877de0bda",
+      "source_sha256": {
+        "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/task_worker.py": "aa2ed667a580da312ed7dd6e591503447cc605a2959baa62b24ce13f68bbbcce",
+        "finevolab/experience.py": "bf9db2b2374694490453ba91d3c4c2b8d96916f7cf3c1e8195f178e2799a7b47",
+        "scripts/verify_memory_worker_live.py": "1122563993d47a968b8c5db9f03dc2131ae814e24c3d171a3941393fcdd096b5",
+        "scripts/manage_experience.py": "4caed1bdd62aab652edbfef169cd17ac4ada78dd9cf371f5666492dd0214d2d6"
+      },
+      "scope": "Six real model worker smoke tasks; planning context and source validation, no narrative quality estimate",
+      "git_source_sha256": {
+        "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/task_worker.py": "aa2ed667a580da312ed7dd6e591503447cc605a2959baa62b24ce13f68bbbcce",
+        "finevolab/experience.py": "dda112343f5a521ff484e906bffa23d2adbbfcf6f24a4992d686be6cdfd3f2d0",
+        "scripts/verify_memory_worker_live.py": "1122563993d47a968b8c5db9f03dc2131ae814e24c3d171a3941393fcdd096b5",
+        "scripts/manage_experience.py": "61eaa563cad8f545da247636200dc21f44b5d0c08bc83871394a47c8c388037e"
+      },
+      "source_byte_policy": "Original measurement bytes and Git attribute normalized blobs are recorded separately."
+    },
+    "records": [
+      {
+        "arm": "off",
+        "index": 0,
+        "question": "Microsoft FY2024 revenue",
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "context_correct": true,
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1268,
+          "output_tokens": 43,
+          "total_tokens": 1311
+        },
+        "report_pdf": true,
+        "seconds": 6.801267199996801
+      },
+      {
+        "arm": "off",
+        "index": 1,
+        "question": "上一年呢？",
+        "request": {
+          "intent": "clarification",
+          "numeric_intent": "metric",
+          "companies": [],
+          "fiscal_year": 1900,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "ambiguous"
+        },
+        "context_correct": false,
+        "validation": {
+          "status": "passed",
+          "observations": 0,
+          "evidence_ids": []
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1267,
+          "output_tokens": 47,
+          "total_tokens": 1314
+        },
+        "report_pdf": true,
+        "seconds": 6.471474099998886
+      },
+      {
+        "arm": "off",
+        "index": 2,
+        "question": "AAPL FY2024 net income",
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "AAPL"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "net_income"
+          ],
+          "topic": "profit",
+          "scope": "annual_fiscal"
+        },
+        "context_correct": true,
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "7dbcb598fc034f946ef3ad52"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1270,
+          "output_tokens": 49,
+          "total_tokens": 1319
+        },
+        "report_pdf": true,
+        "seconds": 6.279746399995929
+      },
+      {
+        "arm": "on",
+        "index": 0,
+        "question": "Microsoft FY2024 revenue",
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "context_correct": true,
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1268,
+          "output_tokens": 43,
+          "total_tokens": 1311
+        },
+        "report_pdf": true,
+        "seconds": 6.183594300004188
+      },
+      {
+        "arm": "on",
+        "index": 1,
+        "question": "上一年呢？",
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2023,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "context_correct": true,
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "59176976080d645a51e629d8"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1298,
+          "output_tokens": 43,
+          "total_tokens": 1341
+        },
+        "report_pdf": true,
+        "seconds": 6.419109999995271
+      },
+      {
+        "arm": "on",
+        "index": 2,
+        "question": "AAPL FY2024 net income",
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "AAPL"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "net_income"
+          ],
+          "topic": "profit",
+          "scope": "annual_fiscal"
+        },
+        "context_correct": true,
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "7dbcb598fc034f946ef3ad52"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1270,
+          "output_tokens": 49,
+          "total_tokens": 1319
+        },
+        "report_pdf": true,
+        "seconds": 6.80854410000029
+      }
+    ]
+  },
+  "verification": {
+    "regression": {
+      "status": "passed",
+      "tests": 306,
+      "seconds": 46.063,
+      "transcript_sha256": "4ddca2dc4196565654bb8ec4eaee925a8db2cf4e5506ade4e1654ec9670f6861"
+    },
+    "targeted_tests": 24,
+    "frontend_checks": {
+      "showcase": 106,
+      "experience": 89,
+      "memory_worker": 15
+    },
+    "publication_audit": {
+      "status": "passed",
+      "files": 21,
+      "private_matches": 0,
+      "local_timestamp_matches": 0,
+      "technical_docstrings": 10
+    },
+    "clean_export": {
+      "status": "passed",
+      "tests": 53,
+      "failures": 0,
+      "errors": 0,
+      "transcript_sha256": "dfb4ca20c2d8f515ab6e45e77d611350018a9331c7e9ebd59f1bc454e0ab7744"
+    },
+    "environment": {
+      "python": "3.11.17",
+      "sqlite": "3.53.4",
+      "worker_storage": "same-host SQLite WAL"
+    },
+    "compatible_service_reload": {
+      "status": "passed",
+      "checks": [
+        {
+          "path": "/",
+          "status": 200
+        },
+        {
+          "path": "/experience/api/health",
+          "status": 200
+        },
+        {
+          "path": "/experience/api/tasks",
+          "status": 401
+        },
+        {
+          "path": "/experience/api/memory",
+          "status": 401
+        },
+        {
+          "path": "/mcp",
+          "status": 404
+        }
+      ],
+      "private_policy_changed": false
+    }
+  },
+  "operational_usage": {
+    "memory_worker_live": {
+      "requests": 6,
+      "input_tokens": 7637,
+      "output_tokens": 261,
+      "total_tokens": 7898
+    },
+    "memory_worker_live_fixed": {
+      "requests": 6,
+      "input_tokens": 7641,
+      "output_tokens": 272,
+      "total_tokens": 7913
+    },
+    "memory_worker_live_frozen": {
+      "requests": 6,
+      "input_tokens": 7641,
+      "output_tokens": 274,
+      "total_tokens": 7915
+    }
+  },
+  "development_correction": {
+    "case": "relative_year_followup",
+    "observed_fiscal_year": 2022,
+    "expected_fiscal_year": 2023,
+    "resolution": "Replace the relative-year phrase with its resolved fiscal year before model planning."
+  }
+}

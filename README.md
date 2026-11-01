@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **296 tests**; see [runtime verification](project_notes/evaluations/trace_export_comparison.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **306 tests**; see [runtime verification](project_notes/evaluations/memory_worker_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 <details>
 <summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
@@ -396,6 +396,35 @@ Formal local acceptance completed **1080/1080 requests**, **15/15 permission che
 Controlled export measurement completed **2880/2880 requests** across four trace modes. At concurrency 4, MCP response p95 decreased from **2627.01 to 80.79 ms** with buffered export, a **96.92%** reduction; throughput including export draining increased from **2.50 to 4.68 requests/s**. File-backed groups retained **1440 complete traces / 4320 spans**. See [trace export comparison](project_notes/evaluations/trace_export_comparison.json).
 
 The uncached business comparison passed **36/36 tasks per backend**, using **12 development-regression questions** with **3 repetitions**. The MCP arm executed **42 remote financial-tool calls**; both arms completed source validation and HTML/PDF reporting. Fixed-plan execution passed **60/60 tasks** without model requests. These runs measure planning, numerical and source checks, and narrative completeness. Process initialization is included in workflow latency; `direct` remains the default backend. The cache-enabled comparison is archived separately in the same [paired workflow evidence](project_notes/evaluations/mcp_workflow_comparison.json).
+
+</details>
+
+<details>
+<summary><strong>Business memory and durable task workers</strong></summary>
+
+The invited workspace supports owner-scoped conversation context and explicit language/amount-scale preferences. Opt in to context inheritance in the workspace, start a new conversation, or clear business memory. Relative years are resolved before planning; context retains validated request fields and task references, while financial amounts continue to come from tools. Display scaling preserves canonical financial objects. Context expires after 24 hours and is invalidated by source/configuration changes; clearing memory prevents pending tasks from restoring it.
+
+The default execution mode is `inline`. Select `worker` to atomically reserve quota and enqueue tasks in the existing local SQLite database:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve
+```
+
+Start the independent worker in another terminal using the same environment and private access configuration:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py worker
+```
+
+Tasks expose queued/running/complete/failed/cancelled states, queue duration, and execution attempts. Leases, heartbeats, execution generations, and task locks coordinate recovery and fenced publication. Existing phase checkpoints and cumulative usage are retained; unresolved model usage remains explicit. The worker supports the existing API model, direct/MCP tools, source validation, and reports on CPU.
+
+Controlled context-resolution checks passed 30/90 without memory and 90/90 with memory: 30 cases, each repeated 3 times. All 40 fault checks passed. In 10 abrupt-process restart scenarios per arm, automatic completion was 0/10 for inline scheduling and 10/10 for workers; both reached 10/10 final completion with existing checkpoint recovery, with manual intervention in the inline arm. 6 real-model worker smoke tasks passed validation and produced PDFs; context correctness was 2/3 without memory and 3/3 with memory. These smoke tasks verify the integration. Inputs and per-case results are in [memory and worker acceptance](project_notes/evaluations/memory_worker_acceptance.json).
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worker.py --output output/reproduction/memory_worker
+conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
+```
 
 </details>
 

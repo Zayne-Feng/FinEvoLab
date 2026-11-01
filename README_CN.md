@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **296 项通过**，见[运行验证](project_notes/evaluations/trace_export_comparison.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **306 项通过**，见[运行验证](project_notes/evaluations/memory_worker_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 <details>
 <summary><strong>分析扩展：配对结果与复现命令</strong></summary>
@@ -396,6 +396,35 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_trace_modes.
 四种 Trace 模式的受控测量通过 **2880/2880 次请求**。并发 4 时，后台导出使 MCP 响应 p95 从 **2627.01 降至 80.79 ms**，降低 **96.92%**；包含导出排空的吞吐从 **2.50 提高到 4.68 次请求/s**。文件导出组保留 **1440 条完整 Trace / 4320 个 span**。详见 [Trace 导出对照](project_notes/evaluations/trace_export_comparison.json)。
 
 关闭工具结果缓存的业务对照中，两种后端各通过 **36/36 次任务**，使用 **12 个开发回归问题**、各重复 **3 轮**。MCP 组实际执行 **42 次远程金融工具调用**；两组均完成来源校验及 HTML/PDF 报告。固定计划组在不请求模型的情况下通过 **60/60 次任务**。该组测量规划、数值与来源检查，以及正文完成度。工作流延时包含进程初始化；`direct` 继续作为默认后端。缓存开启组独立保存在同一份[配对工作流证据](project_notes/evaluations/mcp_workflow_comparison.json)中。
+
+</details>
+
+<details>
+<summary><strong>业务记忆与持久任务 worker</strong></summary>
+
+邀请工作台支持用户隔离的会话上下文，以及明确保存的语言、金额展示单位偏好。可勾选上下文继承、新建会话或清除业务记忆。相对财年在规划前解析；记忆保留已校验的请求字段和任务引用，财务金额仍通过工具获取。展示缩放保留标准财务对象。会话上下文在 24 小时后过期，来源或配置变化会使其失效；清除操作阻止等待中的旧任务重新写回记忆。
+
+默认执行模式为 `inline`。选择 `worker` 后，在现有本地 SQLite 数据库中原子完成配额预留和任务入队：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve
+```
+
+在另一个终端使用相同环境和私有访问配置启动独立 worker：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py worker
+```
+
+任务提供排队、执行、完成、失败和取消状态，以及排队耗时和执行次数。租约、心跳、执行代次及任务锁协调恢复与结果发布。已有阶段检查点和累计用量继续复用，未知模型调用用量保持明确状态。worker 在 CPU 上衔接现有 API 模型、direct/MCP 工具、来源校验和报告。
+
+受控上下文解析检查中，关闭记忆为 30/90，开启后为 90/90：30 个场景，各重复 3 次。40 项故障检查全部通过。每组 10 次进程异常退出场景中，进程内调度自动完成 0/10，worker 为 10/10；两组使用已有检查点最终均完成 10/10，其中进程内组需要手动恢复。6 个真实模型 worker 烟测任务均通过校验并生成 PDF；上下文正确数为关闭记忆 2/3、开启记忆 3/3。该烟测验证集成链路。输入及逐例结果见[记忆与 worker 验收](project_notes/evaluations/memory_worker_acceptance.json)。
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worker.py --output output/reproduction/memory_worker
+conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
+```
 
 </details>
 
