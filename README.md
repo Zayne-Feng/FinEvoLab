@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **306 tests**; see [runtime verification](project_notes/evaluations/memory_worker_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **311 tests**; see [runtime verification](project_notes/evaluations/worker_service_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 <details>
 <summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
@@ -426,6 +426,26 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worke
 conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
 ```
 
+
+The daily service uses independent Web and worker processes. HTTP admission runs the synchronous quota/enqueue transaction outside the event loop. Explicit margin requests use `AnalysisRequestPlan` and the existing audited operators; the frozen `RequestPlan` training contract is preserved.
+
+The TCP HTTP mixed-load comparison repeated the same 12-task workload 3 times with 1 and 2 workers. All 72 task outcomes matched their contracts: 60 completed, 6 produced injected errors, and 6 reached injected timeouts. All 6 queued cancellations and 6 abrupt-worker/Web restart recoveries passed. Both arms retained durable checkpoints and the daily 30-second lease, 0.5-second idle polling, and batch Trace.
+
+| Workers | Expected outcomes | Enqueue-to-publication p50 (s) | p95 (s) |
+| --- | --- | --- | --- |
+| 1 | 36/36 | 10.591 | 44.713 |
+| 2 | 36/36 | 8.396 | 48.500 |
+
+These local measurements include cold worker startup and durable writes. Two workers reduced median latency but did not consistently improve tail latency; the daily configuration retains 1 worker. Five real business tasks passed source validation and HTML/PDF generation, followed by a separate real margin check of asynchronous admission. The real browser passed 17 checks for worker controls, history, context restoration, reports, and bilingual layouts. Per-task results, repeated measurements, and all development model usage are in [worker service acceptance](project_notes/evaluations/worker_service_acceptance.json).
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_worker_load.py --output output/reproduction/worker_load
+$invitationFile = (Get-ChildItem output/experience/invite-*.txt | Select-Object -First 1).FullName
+conda run --no-capture-output -n finevolab python scripts/verify_worker_service.py --invitation-file $invitationFile --output output/reproduction/worker_service
+```
+
+The real-service command uses the existing invitation quota and requires 5 available tasks. Set `FINEVOLAB_CHROMIUM` and `FINEVOLAB_INVITATION_FILE`, then run `npm run test:worker:live --prefix tests/frontend` to inspect completed tasks without new model calls.
+
 </details>
 
 <div id="section-web"></div>
@@ -459,7 +479,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_experience.py i
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve
 ```
 
-Open `http://127.0.0.1:8085/` and use the invitation saved under `output/experience/invite-*.txt`. The server reads the existing `FINEVOLAB_MODEL_CONFIG` setting. Invitation hashes and policy are stored in `output/experience/access.json`; sessions and task ownership are stored in `output/experience/access.sqlite3`. All remain local. The dedicated application exposes owner-scoped tasks and report downloads. It enforces atomic per-user and global daily task quotas, concurrency, idempotent submissions, and per-task `RunBudget`. Daily quotas use UTC and count failed or interrupted executions. Restarted tasks are marked interrupted. Default limits are 5 tasks per user per day, 20 globally, and 1 concurrent task; each task allows 6 model calls, 10 tool calls, 20,000 tokens, and 240 seconds. Configure invitations and quotas before starting the server. Browser sessions last 12 hours. The default service binds to loopback. With `--public-url`, the public hostname requires HTTPS and uses secure session cookies; forwarded headers are trusted only from the local connector. The public Pages workspace runs replay and evidence browsing without model requests.
+Open `http://127.0.0.1:8085/` and use the invitation saved under `output/experience/invite-*.txt`. The server reads the existing `FINEVOLAB_MODEL_CONFIG` setting. Invitation hashes and policy are stored in `output/experience/access.json`; sessions and task ownership are stored in `output/experience/access.sqlite3`. All remain local. The dedicated application exposes owner-scoped tasks and report downloads. It enforces atomic per-user and global daily task quotas, concurrency, idempotent submissions, and per-task `RunBudget`. Daily quotas use UTC and count failed or interrupted executions. In-flight `inline` tasks are marked interrupted after a restart; `worker` mode retains queued tasks and resumable execution. Default limits are 5 tasks per user per day, 20 globally, and 1 concurrent task; each task allows 6 model calls, 10 tool calls, 20,000 tokens, and 240 seconds. Configure invitations and quotas before starting the server. Browser sessions last 12 hours. The default service binds to loopback. With `--public-url`, the public hostname requires HTTPS and uses secure session cookies; forwarded headers are trusted only from the local connector. The public Pages workspace runs replay and evidence browsing without model requests.
 
 </details>
 

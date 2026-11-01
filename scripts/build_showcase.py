@@ -51,7 +51,7 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/evaluations/memory_worker_acceptance.json")["verification"]["regression"]
+    verification = load("project_notes/evaluations/worker_service_acceptance.json")["verification"]["regression"]
     extensions = load("project_notes/experiments/analysis-extensions-release/assessment.json")
     extension_usage = load("project_notes/experiments/analysis-extensions-release/summary.json")["model_ablation"]
     if not extensions["controls_passed"] or extensions["input_sha256"] != load("project_notes/experiments/analysis-extensions-release/manifest.json")["input_sha256"]:

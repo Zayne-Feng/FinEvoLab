@@ -24,6 +24,7 @@ on:
       - "project_notes/evaluations/planner_quantization.json"
       - "project_notes/evaluations/trace_export_comparison.json"
       - "project_notes/evaluations/memory_worker_acceptance.json"
+      - "project_notes/evaluations/worker_service_acceptance.json"
       - ".github/workflows/showcase-pages.yml"
   workflow_dispatch:
 

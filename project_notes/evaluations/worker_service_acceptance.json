@@ -1,0 +1,2743 @@
+{
+  "schema_version": 1,
+  "run_id": "worker-service-acceptance",
+  "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+  "mixed_load": {
+    "manifest": {
+      "run_id": "worker-mixed-load",
+      "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+      "source_sha256": {
+        "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+        "finevolab/agent.py": "24be6788245ad4a59d51068a00d7b6692c448bd0139f6f2fc3b1fa6815d382f9",
+        "finevolab/business_memory.py": "a43ae8c17c36a9c8487c0a1503553afbfbe8cb04b0d586a1c9cb4cf9d6f2435a",
+        "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+        "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+        "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+        "finevolab/context_encoding.py": "037b001dbbbc7c2ab1afc999d04479a2d4b454df37e354476408dce269f01821",
+        "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+        "finevolab/derived.py": "cbeaab86d4026ab0381912ab17580b4059923ba58ab327cc65faffd8046b3b9c",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+        "finevolab/evaluation.py": "a8392890ede04968e441532c2b4212ce4fd508015c2b73d99a3b4d800b041a69",
+        "finevolab/experience.py": "1826759fd3f5182bb7f872e647e878c8fb828d50e0c1fcb58fcc7516db156c6a",
+        "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+        "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+        "finevolab/grounded.py": "7d95acd097b083a4e1592033fc4f33fbf30583221f29b0c5d20420c5d219cbe9",
+        "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+        "finevolab/integrated_web.py": "a6cf3c541f61aea2f0ea5a2ce4c845248cfe420d898322edc4df1dce69ee8080",
+        "finevolab/mcp_client.py": "9995dcfa1872d87082d3024b34ffd78ba42701f0f69dbd3d39833950b7a25e13",
+        "finevolab/mcp_server.py": "1a68b448685dfdb8d761ce548af0001fa20cce2c7c44a4824142a39ba3089c7c",
+        "finevolab/methods.py": "8e37592aeffa4c937745668ef1cad6466bd0089d78a0150960d869692941a228",
+        "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+        "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+        "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+        "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+        "finevolab/provider.py": "a5e9ac5b31ea61d37781721174fd010d22998ee1b7134e48a450aa2e18bd9c16",
+        "finevolab/reconciliation.py": "eb84523d2d72b3c437e3224e5f7e4858192267046621626b20cfc25d0b3ab4e3",
+        "finevolab/reporting.py": "a1396c383ea982f64401aaef76c9e28bd8cc482b666acac32a95740aea3a758c",
+        "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+        "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+        "finevolab/retrieval_cache.py": "366fabe8b4f9e5059ce8268ad7b586124019433c6165cd0527c7fe4c09f60d9e",
+        "finevolab/retrieval_settings.py": "deebd1138c60760c1d82c160ed96a114e209506985d744d3f2dcb9349c8c5d3f",
+        "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+        "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+        "finevolab/runtime.py": "ca10baafe88b66c6b219c60728d02f4174d5ef837f81da845f62c89a8e0eae86",
+        "finevolab/scenarios.py": "acf36cfed4b0390c3713625e2c6a5f96c9758a58e5a3dd58275437f7db76a7be",
+        "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+        "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+        "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+        "finevolab/service_metrics.py": "1eff5cb4400e2644b99751b51cf4cb0d8d49d744fbc695cb74fd6918b5d4633e",
+        "finevolab/singleflight.py": "5c92588ef10a8981b1fc6a6f78d797c3ef00b3e6ceb40824e8f3ab2b5d4cc307",
+        "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+        "finevolab/subtasks.py": "9c475937f0cb7930bf71f93ac04977de1ad98f2fab5b1450400cec134395c21e",
+        "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+        "finevolab/task_worker.py": "b6eede1170947c602c8eb7da3a9ab4fe5bb068ed91387eab2e4800724fed95b1",
+        "finevolab/tool_backends.py": "aaa1fa95f39f2d130455c4a2411e64ca56c69e31e6c800eebbfb254171f97709",
+        "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+        "finevolab/tools.py": "cd6a6408f1e7b7356775eea0cbd9f184c070985f22875378ac54248eba21f5ce",
+        "finevolab/tracing.py": "32b89d740bcb9225e403f6503d0a3c4075f6bb9ed863f2f52976709ba5c46287",
+        "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+        "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+        "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+        "finevolab/validation.py": "632ffeba8dcb98debd392093964c561652623764445f74d4c1027df5961c0d84",
+        "finevolab/vector_backends.py": "7a0342d29d0ee267746516adcadc406e23fcb7531cb7abc9bba2e6c4bbab38b6",
+        "finevolab/web.py": "ad11bbfde63e4c89541de4dad455314e6317629b6ddef6291a02a5d57e07e7b1",
+        "finevolab/workflow.py": "dabb0cc61451004df5dfbf2dc084b5040c08609be1e3dac591e63f2184a61d8c",
+        "scripts/benchmark_worker_load.py": "618f8e26f1ecbd88ed85b6603a1c85cf2ed6320c6d07b9eaf8fcb610569e7fca",
+        "scripts/manage_experience.py": "9ad32d61a28507e57c5aa0ed36702bfa92861e1f657f10e4851ad2042ad1affb"
+      },
+      "model_calls": 0,
+      "repeats": 3,
+      "capacities": [
+        1,
+        2
+      ],
+      "cases_per_cell": [
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "fast",
+        "slow",
+        "slow",
+        "failure",
+        "timeout"
+      ],
+      "trace_mode": "batch",
+      "worker_poll_seconds": 0.5,
+      "observer_poll_seconds": 0.1,
+      "lease_seconds": 30.0,
+      "seed": 17,
+      "scope": "Loopback TCP HTTP and real worker processes with controlled asynchronous fixtures; no model-quality estimate",
+      "latency_scope": "Durable enqueue to result publication; cold worker startup included",
+      "http_timeout_seconds": 40,
+      "injected_failures_per_cell": 2,
+      "cancelled_per_cell": 1,
+      "recovery": "Kill worker after prepare checkpoint, restart Web, reclaim expired lease without database edits"
+    },
+    "cells": [
+      {
+        "capacity": 1,
+        "repeat": 0,
+        "records": [
+          {
+            "kind": "failure",
+            "submit_seconds": 0.07433399999717949,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 5.361121416091919,
+            "queue_seconds": 4.84246301651001,
+            "execution_seconds": 0.5186583995819092,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.1510770999993838,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.556039333343506,
+            "queue_seconds": 6.043352365493774,
+            "execution_seconds": 0.5126869678497314,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.45172919999822625,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.743330240249634,
+            "queue_seconds": 9.187655687332153,
+            "execution_seconds": 0.5556745529174805,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.19568989999970654,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.157633304595947,
+            "queue_seconds": 6.586932897567749,
+            "execution_seconds": 0.5707004070281982,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.5279942999986815,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 10.419535636901855,
+            "queue_seconds": 9.876299619674683,
+            "execution_seconds": 0.5432360172271729,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 0.2532693000030122,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 7.722589731216431,
+            "queue_seconds": 7.187949180603027,
+            "execution_seconds": 0.5346405506134033,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.29641170000104466,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.348721265792847,
+            "queue_seconds": 7.7870776653289795,
+            "execution_seconds": 0.5616436004638672,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.38291860000026645,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.158560037612915,
+            "queue_seconds": 8.368305921554565,
+            "execution_seconds": 0.7902541160583496,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.7543444000002637,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 11.74377179145813,
+            "queue_seconds": 11.280972957611084,
+            "execution_seconds": 0.4627988338470459,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.8711938000014925,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 12.244621753692627,
+            "queue_seconds": 11.716778755187988,
+            "execution_seconds": 0.5278429985046387,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.09593559999848367,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 5.973641395568848,
+            "queue_seconds": 5.426707029342651,
+            "execution_seconds": 0.5469343662261963,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.6415352000003622,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 11.269806146621704,
+            "queue_seconds": 10.399916172027588,
+            "execution_seconds": 0.8698899745941162,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 8.348721265792847,
+          "p95_seconds": 12.244621753692627,
+          "max_seconds": 12.244621753692627,
+          "mean_seconds": 8.808281004428864,
+          "throughput_requests_per_second": 0.9063073303110537,
+          "wall_seconds": 13.240541700000904,
+          "status_counts": {
+            "failed": 1,
+            "complete": 10,
+            "timeout": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 7.7870776653289795,
+          "p95_seconds": 11.716778755187988,
+          "max_seconds": 11.716778755187988,
+          "mean_seconds": 8.225367605686188
+        },
+        "execution": {
+          "p50_seconds": 0.5432360172271729,
+          "p95_seconds": 0.8698899745941162,
+          "max_seconds": 0.8698899745941162,
+          "mean_seconds": 0.5829133987426758
+        },
+        "submission": {
+          "p50_seconds": 0.29641170000104466,
+          "p95_seconds": 0.8711938000014925,
+          "max_seconds": 0.8711938000014925,
+          "mean_seconds": 0.3913694249998419
+        },
+        "max_active_observed": 1,
+        "recovery_seconds": 26.631768100000045,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      },
+      {
+        "capacity": 2,
+        "repeat": 0,
+        "records": [
+          {
+            "kind": "failure",
+            "submit_seconds": 0.1207646000002569,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 6.072508335113525,
+            "queue_seconds": 5.415919303894043,
+            "execution_seconds": 0.6565890312194824,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.3863277999989805,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.349836826324463,
+            "queue_seconds": 6.691109895706177,
+            "execution_seconds": 0.6587269306182861,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.27429399999891757,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.669043064117432,
+            "queue_seconds": 5.9625115394592285,
+            "execution_seconds": 0.7065315246582031,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.3306923000018287,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.932956695556641,
+            "queue_seconds": 6.170655727386475,
+            "execution_seconds": 0.762300968170166,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.5511298000019451,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.16776156425476,
+            "queue_seconds": 7.296411991119385,
+            "execution_seconds": 0.871349573135376,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 0.6643499000019801,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 8.397519588470459,
+            "queue_seconds": 7.679797172546387,
+            "execution_seconds": 0.7177224159240723,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.4415647000023455,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.740947723388672,
+            "queue_seconds": 6.91340446472168,
+            "execution_seconds": 0.8275432586669922,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 1.0055224000025191,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.84495210647583,
+            "queue_seconds": 8.70538592338562,
+            "execution_seconds": 1.13956618309021,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.2074453999994148,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.187118053436279,
+            "queue_seconds": 5.435933351516724,
+            "execution_seconds": 0.7511847019195557,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.8827633000000787,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.128428220748901,
+            "queue_seconds": 8.338525295257568,
+            "execution_seconds": 0.789902925491333,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.77091400000063,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.801259756088257,
+            "queue_seconds": 8.110243558883667,
+            "execution_seconds": 0.6910161972045898,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 1.1607651999984228,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 10.040242433547974,
+            "queue_seconds": 9.217855215072632,
+            "execution_seconds": 0.8223872184753418,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 7.740947723388672,
+          "p95_seconds": 10.040242433547974,
+          "max_seconds": 10.040242433547974,
+          "mean_seconds": 7.944381197293599,
+          "throughput_requests_per_second": 1.0630598133881233,
+          "wall_seconds": 11.28817010000057,
+          "status_counts": {
+            "failed": 1,
+            "complete": 10,
+            "timeout": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 6.91340446472168,
+          "p95_seconds": 9.217855215072632,
+          "max_seconds": 9.217855215072632,
+          "mean_seconds": 7.161479453245799
+        },
+        "execution": {
+          "p50_seconds": 0.7511847019195557,
+          "p95_seconds": 1.13956618309021,
+          "max_seconds": 1.13956618309021,
+          "mean_seconds": 0.7829017440478007
+        },
+        "submission": {
+          "p50_seconds": 0.4415647000023455,
+          "p95_seconds": 1.1607651999984228,
+          "max_seconds": 1.1607651999984228,
+          "mean_seconds": 0.5663777833339433
+        },
+        "max_active_observed": 2,
+        "recovery_seconds": 26.735662299997784,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      },
+      {
+        "capacity": 2,
+        "repeat": 1,
+        "records": [
+          {
+            "kind": "fast",
+            "submit_seconds": 0.09401440000146977,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.042507886886597,
+            "queue_seconds": 5.196731090545654,
+            "execution_seconds": 0.8457767963409424,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 0.13785839999763994,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 5.759318113327026,
+            "queue_seconds": 5.224962472915649,
+            "execution_seconds": 0.534355640411377,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.17153200000029756,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.749643802642822,
+            "queue_seconds": 5.744948148727417,
+            "execution_seconds": 1.0046956539154053,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.23893569999927422,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.20553731918335,
+            "queue_seconds": 6.062043905258179,
+            "execution_seconds": 1.143493413925171,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.2901676999972551,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 12.740079402923584,
+            "queue_seconds": 6.812582969665527,
+            "execution_seconds": 5.927496433258057,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.9743548999977065,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 50.74669027328491,
+            "queue_seconds": 40.59222388267517,
+            "execution_seconds": 10.154466390609741,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "failure",
+            "submit_seconds": 0.7288795999993454,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 39.71805214881897,
+            "queue_seconds": 31.912681818008423,
+            "execution_seconds": 7.805370330810547,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.8361989000004542,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 48.49996519088745,
+            "queue_seconds": 37.379355907440186,
+            "execution_seconds": 11.120609283447266,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.6250781000017014,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 35.745259046554565,
+            "queue_seconds": 26.248971939086914,
+            "execution_seconds": 9.496287107467651,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.5082431999981054,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 31.879634618759155,
+            "queue_seconds": 20.477078676223755,
+            "execution_seconds": 11.4025559425354,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.32623729999977513,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 17.65130305290222,
+            "queue_seconds": 7.196150541305542,
+            "execution_seconds": 10.45515251159668,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.39064280000093277,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 25.456238269805908,
+            "queue_seconds": 13.795044183731079,
+            "execution_seconds": 11.661194086074829,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 17.65130305290222,
+          "p95_seconds": 50.74669027328491,
+          "max_seconds": 50.74669027328491,
+          "mean_seconds": 24.016185760498047,
+          "throughput_requests_per_second": 0.22881202768728676,
+          "wall_seconds": 52.4447954999996,
+          "status_counts": {
+            "complete": 10,
+            "timeout": 1,
+            "failed": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 7.196150541305542,
+          "p95_seconds": 40.59222388267517,
+          "max_seconds": 40.59222388267517,
+          "mean_seconds": 17.220231294631958
+        },
+        "execution": {
+          "p50_seconds": 7.805370330810547,
+          "p95_seconds": 11.661194086074829,
+          "max_seconds": 11.661194086074829,
+          "mean_seconds": 6.795954465866089
+        },
+        "submission": {
+          "p50_seconds": 0.32623729999977513,
+          "p95_seconds": 0.9743548999977065,
+          "max_seconds": 0.9743548999977065,
+          "mean_seconds": 0.44351191666616313
+        },
+        "max_active_observed": 2,
+        "recovery_seconds": 31.91825349999999,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      },
+      {
+        "capacity": 1,
+        "repeat": 1,
+        "records": [
+          {
+            "kind": "fast",
+            "submit_seconds": 0.9594400999994832,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 21.952327013015747,
+            "queue_seconds": 16.229381799697876,
+            "execution_seconds": 5.722945213317871,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 1.920706999997492,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 34.186811685562134,
+            "queue_seconds": 30.11319851875305,
+            "execution_seconds": 4.073613166809082,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 1.4233023000015237,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 29.47212028503418,
+            "queue_seconds": 22.017635107040405,
+            "execution_seconds": 7.454485177993774,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 6.707329599998047,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 44.902512550354004,
+            "queue_seconds": 44.38847756385803,
+            "execution_seconds": 0.5140349864959717,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 2.885387099999207,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 43.519824743270874,
+            "queue_seconds": 41.47606325149536,
+            "execution_seconds": 2.0437614917755127,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 4.761275400000159,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 44.34059953689575,
+            "queue_seconds": 43.59711694717407,
+            "execution_seconds": 0.7434825897216797,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "failure",
+            "submit_seconds": 4.296149100002367,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 43.93883466720581,
+            "queue_seconds": 43.43556880950928,
+            "execution_seconds": 0.5032658576965332,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 5.279019600002357,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 44.51565933227539,
+            "queue_seconds": 43.92902398109436,
+            "execution_seconds": 0.5866353511810303,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 3.360405899999023,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 43.75167965888977,
+            "queue_seconds": 43.14418315887451,
+            "execution_seconds": 0.6074965000152588,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 2.370275199999014,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 40.92582678794861,
+            "queue_seconds": 34.60251069068909,
+            "execution_seconds": 6.3233160972595215,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 5.725376100002904,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 44.71305060386658,
+            "queue_seconds": 44.09035325050354,
+            "execution_seconds": 0.6226973533630371,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 3.830458499996894,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 43.859291791915894,
+            "queue_seconds": 43.37001633644104,
+            "execution_seconds": 0.4892754554748535,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 43.75167965888977,
+          "p95_seconds": 44.902512550354004,
+          "max_seconds": 44.902512550354004,
+          "mean_seconds": 40.00654488801956,
+          "throughput_requests_per_second": 0.23599470912449713,
+          "wall_seconds": 50.84859759999745,
+          "status_counts": {
+            "complete": 10,
+            "timeout": 1,
+            "failed": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 43.14418315887451,
+          "p95_seconds": 44.38847756385803,
+          "max_seconds": 44.38847756385803,
+          "mean_seconds": 37.53279411792755
+        },
+        "execution": {
+          "p50_seconds": 0.6226973533630371,
+          "p95_seconds": 7.454485177993774,
+          "max_seconds": 7.454485177993774,
+          "mean_seconds": 2.4737507700920105
+        },
+        "submission": {
+          "p50_seconds": 3.360405899999023,
+          "p95_seconds": 6.707329599998047,
+          "max_seconds": 6.707329599998047,
+          "mean_seconds": 3.6265938249998726
+        },
+        "max_active_observed": 1,
+        "recovery_seconds": 26.24570920000042,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      },
+      {
+        "capacity": 1,
+        "repeat": 2,
+        "records": [
+          {
+            "kind": "slow",
+            "submit_seconds": 0.1282800999979372,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.0745744705200195,
+            "queue_seconds": 5.2809929847717285,
+            "execution_seconds": 0.793581485748291,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 0.42303870000250754,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 9.015937328338623,
+            "queue_seconds": 8.513928413391113,
+            "execution_seconds": 0.5020089149475098,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.5231804000031843,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.584192752838135,
+            "queue_seconds": 8.99185037612915,
+            "execution_seconds": 0.5923423767089844,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.3876878000010038,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.47647213935852,
+            "queue_seconds": 7.866854906082153,
+            "execution_seconds": 0.6096172332763672,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.24058100000183913,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.23359489440918,
+            "queue_seconds": 6.632404327392578,
+            "execution_seconds": 0.6011905670166016,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.18900850000136415,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.588576078414917,
+            "queue_seconds": 6.065181493759155,
+            "execution_seconds": 0.5233945846557617,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 1.108019700001023,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 12.667015790939331,
+            "queue_seconds": 12.106636047363281,
+            "execution_seconds": 0.5603797435760498,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.30821210000067367,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.846350908279419,
+            "queue_seconds": 7.2785515785217285,
+            "execution_seconds": 0.5677993297576904,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.6830460999990464,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 10.093350887298584,
+            "queue_seconds": 9.575868844985962,
+            "execution_seconds": 0.5174820423126221,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.859221400001843,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 11.446085214614868,
+            "queue_seconds": 10.614787817001343,
+            "execution_seconds": 0.8312973976135254,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.974851499999204,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 12.10730528831482,
+            "queue_seconds": 11.422567129135132,
+            "execution_seconds": 0.6847381591796875,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "failure",
+            "submit_seconds": 0.7481293000018923,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 10.590510606765747,
+            "queue_seconds": 10.070430517196655,
+            "execution_seconds": 0.5200800895690918,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 9.015937328338623,
+          "p95_seconds": 12.667015790939331,
+          "max_seconds": 12.667015790939331,
+          "mean_seconds": 9.31033053000768,
+          "throughput_requests_per_second": 0.8653838706552621,
+          "wall_seconds": 13.866678599999432,
+          "status_counts": {
+            "complete": 10,
+            "timeout": 1,
+            "failed": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 8.513928413391113,
+          "p95_seconds": 12.106636047363281,
+          "max_seconds": 12.106636047363281,
+          "mean_seconds": 8.701671202977499
+        },
+        "execution": {
+          "p50_seconds": 0.5677993297576904,
+          "p95_seconds": 0.8312973976135254,
+          "max_seconds": 0.8312973976135254,
+          "mean_seconds": 0.6086593270301819
+        },
+        "submission": {
+          "p50_seconds": 0.42303870000250754,
+          "p95_seconds": 1.108019700001023,
+          "max_seconds": 1.108019700001023,
+          "mean_seconds": 0.5477713833342932
+        },
+        "max_active_observed": 1,
+        "recovery_seconds": 26.833582499999466,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      },
+      {
+        "capacity": 2,
+        "repeat": 2,
+        "records": [
+          {
+            "kind": "slow",
+            "submit_seconds": 0.07847029999902588,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.231852769851685,
+            "queue_seconds": 5.317827224731445,
+            "execution_seconds": 0.9140255451202393,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "timeout",
+            "submit_seconds": 0.28754250000201864,
+            "status": "timeout",
+            "error_type": "TimeoutError",
+            "elapsed_seconds": 7.620790481567383,
+            "queue_seconds": 7.083826303482056,
+            "execution_seconds": 0.5369641780853271,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.20938749999913853,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.024127244949341,
+            "queue_seconds": 6.154898405075073,
+            "execution_seconds": 0.8692288398742676,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.12319569999817759,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 5.92732572555542,
+            "queue_seconds": 5.331131458282471,
+            "execution_seconds": 0.5961942672729492,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.36867480000000796,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.396135807037354,
+            "queue_seconds": 7.68140435218811,
+            "execution_seconds": 0.7147314548492432,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.5524611000000732,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.072952508926392,
+            "queue_seconds": 8.37999415397644,
+            "execution_seconds": 0.6929583549499512,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.46366820000184816,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 8.748323678970337,
+            "queue_seconds": 7.900702476501465,
+            "execution_seconds": 0.8476212024688721,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.1684821999988344,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 6.891186952590942,
+            "queue_seconds": 6.152252674102783,
+            "execution_seconds": 0.7389342784881592,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.6763587000023108,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.240335464477539,
+            "queue_seconds": 8.607510805130005,
+            "execution_seconds": 0.6328246593475342,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "slow",
+            "submit_seconds": 0.25155959999756305,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 7.935646057128906,
+            "queue_seconds": 6.832074403762817,
+            "execution_seconds": 1.1035716533660889,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "fast",
+            "submit_seconds": 0.7848874000010255,
+            "status": "complete",
+            "error_type": null,
+            "elapsed_seconds": 9.799545288085938,
+            "queue_seconds": 8.939531087875366,
+            "execution_seconds": 0.8600142002105713,
+            "attempts": 1,
+            "passed": true
+          },
+          {
+            "kind": "failure",
+            "submit_seconds": 0.9137938999992912,
+            "status": "failed",
+            "error_type": "ValueError",
+            "elapsed_seconds": 9.903318166732788,
+            "queue_seconds": 9.33706259727478,
+            "execution_seconds": 0.5662555694580078,
+            "attempts": 1,
+            "passed": true
+          }
+        ],
+        "summary": {
+          "requests": 12,
+          "successes": 10,
+          "failures": 2,
+          "timeouts": 1,
+          "failure_rate": 0.16666666666666663,
+          "p50_seconds": 7.935646057128906,
+          "p95_seconds": 9.903318166732788,
+          "max_seconds": 9.903318166732788,
+          "mean_seconds": 8.065961678822836,
+          "throughput_requests_per_second": 1.0994431888293905,
+          "wall_seconds": 10.91461580000032,
+          "status_counts": {
+            "complete": 10,
+            "timeout": 1,
+            "failed": 1
+          },
+          "percentile_method": "nearest_rank",
+          "latency_scope": "request_dispatch_to_completion"
+        },
+        "queue": {
+          "p50_seconds": 7.083826303482056,
+          "p95_seconds": 9.33706259727478,
+          "max_seconds": 9.33706259727478,
+          "mean_seconds": 7.309851328531901
+        },
+        "execution": {
+          "p50_seconds": 0.7147314548492432,
+          "p95_seconds": 1.1035716533660889,
+          "max_seconds": 1.1035716533660889,
+          "mean_seconds": 0.7561103502909342
+        },
+        "submission": {
+          "p50_seconds": 0.28754250000201864,
+          "p95_seconds": 0.9137938999992912,
+          "max_seconds": 0.9137938999992912,
+          "mean_seconds": 0.4065401583332762
+        },
+        "max_active_observed": 2,
+        "recovery_seconds": 26.775674900000013,
+        "assertions": {
+          "anonymous": true,
+          "idempotency": true,
+          "idempotency_conflict": true,
+          "schema": true,
+          "queued_cancel": true,
+          "owner_read": true,
+          "owner_cancel": true,
+          "quota_once": true,
+          "capacity": true,
+          "cancel_not_executed": true,
+          "web_restart": true,
+          "checkpoint_recovery": true
+        },
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "aggregate": {
+    "1": {
+      "expected_outcomes": 36,
+      "total": 36,
+      "unexpected_failures": 0,
+      "observed_outcomes": {
+        "failed": 3,
+        "complete": 30,
+        "timeout": 3
+      },
+      "enqueue_to_publication": {
+        "requests": 36,
+        "successes": 30,
+        "failures": 6,
+        "timeouts": 3,
+        "failure_rate": 0.16666666666666663,
+        "p50_seconds": 10.590510606765747,
+        "p95_seconds": 44.71305060386658,
+        "max_seconds": 44.902512550354004,
+        "mean_seconds": 19.375052140818703,
+        "throughput_requests_per_second": 0.4618000422518949,
+        "wall_seconds": 77.95581789999778,
+        "status_counts": {
+          "failed": 3,
+          "complete": 30,
+          "timeout": 3
+        },
+        "percentile_method": "nearest_rank",
+        "latency_scope": "request_dispatch_to_completion"
+      },
+      "queue_p95_seconds": [
+        11.716778755187988,
+        44.38847756385803,
+        12.106636047363281
+      ],
+      "per_repeat_p95_seconds": [
+        12.244621753692627,
+        44.902512550354004,
+        12.667015790939331
+      ],
+      "recovery_seconds": [
+        26.631768100000045,
+        26.24570920000042,
+        26.833582499999466
+      ]
+    },
+    "2": {
+      "expected_outcomes": 36,
+      "total": 36,
+      "unexpected_failures": 0,
+      "observed_outcomes": {
+        "failed": 3,
+        "complete": 30,
+        "timeout": 3
+      },
+      "enqueue_to_publication": {
+        "requests": 36,
+        "successes": 30,
+        "failures": 6,
+        "timeouts": 3,
+        "failure_rate": 0.16666666666666663,
+        "p50_seconds": 8.396135807037354,
+        "p95_seconds": 48.49996519088745,
+        "max_seconds": 50.74669027328491,
+        "mean_seconds": 13.342176212204826,
+        "throughput_requests_per_second": 0.4822661273791754,
+        "wall_seconds": 74.64758140000049,
+        "status_counts": {
+          "failed": 3,
+          "complete": 30,
+          "timeout": 3
+        },
+        "percentile_method": "nearest_rank",
+        "latency_scope": "request_dispatch_to_completion"
+      },
+      "queue_p95_seconds": [
+        9.217855215072632,
+        40.59222388267517,
+        9.33706259727478
+      ],
+      "per_repeat_p95_seconds": [
+        10.040242433547974,
+        50.74669027328491,
+        9.903318166732788
+      ],
+      "recovery_seconds": [
+        26.735662299997784,
+        31.91825349999999,
+        26.775674900000013
+      ]
+    },
+    "latency_definition": "Durable enqueue to result publication, including cold worker startup; submission latency is measured separately."
+  },
+  "live": {
+    "manifest": {
+      "run_id": "worker-daily-service",
+      "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+      "source_sha256": {
+        "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+        "finevolab/agent.py": "24be6788245ad4a59d51068a00d7b6692c448bd0139f6f2fc3b1fa6815d382f9",
+        "finevolab/business_memory.py": "a43ae8c17c36a9c8487c0a1503553afbfbe8cb04b0d586a1c9cb4cf9d6f2435a",
+        "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+        "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+        "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+        "finevolab/context_encoding.py": "037b001dbbbc7c2ab1afc999d04479a2d4b454df37e354476408dce269f01821",
+        "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+        "finevolab/derived.py": "cbeaab86d4026ab0381912ab17580b4059923ba58ab327cc65faffd8046b3b9c",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+        "finevolab/evaluation.py": "a8392890ede04968e441532c2b4212ce4fd508015c2b73d99a3b4d800b041a69",
+        "finevolab/experience.py": "bf9db2b2374694490453ba91d3c4c2b8d96916f7cf3c1e8195f178e2799a7b47",
+        "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+        "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+        "finevolab/grounded.py": "7d95acd097b083a4e1592033fc4f33fbf30583221f29b0c5d20420c5d219cbe9",
+        "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+        "finevolab/integrated_web.py": "a6cf3c541f61aea2f0ea5a2ce4c845248cfe420d898322edc4df1dce69ee8080",
+        "finevolab/mcp_client.py": "9995dcfa1872d87082d3024b34ffd78ba42701f0f69dbd3d39833950b7a25e13",
+        "finevolab/mcp_server.py": "1a68b448685dfdb8d761ce548af0001fa20cce2c7c44a4824142a39ba3089c7c",
+        "finevolab/methods.py": "8e37592aeffa4c937745668ef1cad6466bd0089d78a0150960d869692941a228",
+        "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+        "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+        "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+        "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+        "finevolab/provider.py": "a5e9ac5b31ea61d37781721174fd010d22998ee1b7134e48a450aa2e18bd9c16",
+        "finevolab/reconciliation.py": "eb84523d2d72b3c437e3224e5f7e4858192267046621626b20cfc25d0b3ab4e3",
+        "finevolab/reporting.py": "a1396c383ea982f64401aaef76c9e28bd8cc482b666acac32a95740aea3a758c",
+        "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+        "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+        "finevolab/retrieval_cache.py": "366fabe8b4f9e5059ce8268ad7b586124019433c6165cd0527c7fe4c09f60d9e",
+        "finevolab/retrieval_settings.py": "deebd1138c60760c1d82c160ed96a114e209506985d744d3f2dcb9349c8c5d3f",
+        "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+        "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+        "finevolab/runtime.py": "ca10baafe88b66c6b219c60728d02f4174d5ef837f81da845f62c89a8e0eae86",
+        "finevolab/scenarios.py": "acf36cfed4b0390c3713625e2c6a5f96c9758a58e5a3dd58275437f7db76a7be",
+        "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+        "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+        "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+        "finevolab/service_metrics.py": "1eff5cb4400e2644b99751b51cf4cb0d8d49d744fbc695cb74fd6918b5d4633e",
+        "finevolab/singleflight.py": "5c92588ef10a8981b1fc6a6f78d797c3ef00b3e6ceb40824e8f3ab2b5d4cc307",
+        "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+        "finevolab/subtasks.py": "9c475937f0cb7930bf71f93ac04977de1ad98f2fab5b1450400cec134395c21e",
+        "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+        "finevolab/task_worker.py": "b6eede1170947c602c8eb7da3a9ab4fe5bb068ed91387eab2e4800724fed95b1",
+        "finevolab/tool_backends.py": "aaa1fa95f39f2d130455c4a2411e64ca56c69e31e6c800eebbfb254171f97709",
+        "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+        "finevolab/tools.py": "cd6a6408f1e7b7356775eea0cbd9f184c070985f22875378ac54248eba21f5ce",
+        "finevolab/tracing.py": "32b89d740bcb9225e403f6503d0a3c4075f6bb9ed863f2f52976709ba5c46287",
+        "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+        "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+        "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+        "finevolab/validation.py": "632ffeba8dcb98debd392093964c561652623764445f74d4c1027df5961c0d84",
+        "finevolab/vector_backends.py": "7a0342d29d0ee267746516adcadc406e23fcb7531cb7abc9bba2e6c4bbab38b6",
+        "finevolab/web.py": "ad11bbfde63e4c89541de4dad455314e6317629b6ddef6291a02a5d57e07e7b1",
+        "finevolab/workflow.py": "dabb0cc61451004df5dfbf2dc084b5040c08609be1e3dac591e63f2184a61d8c",
+        "scripts/verify_worker_service.py": "7fbb5a091626ec2d0419da1150e82db63d36db56f8e023dd3aa9c2fa3f00c454",
+        "scripts/manage_experience.py": "9ad32d61a28507e57c5aa0ed36702bfa92861e1f657f10e4851ad2042ad1affb"
+      },
+      "model": "deepseek-flash",
+      "options": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "data_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+      "case_ids": [
+        "metric",
+        "followup",
+        "hybrid",
+        "comparison",
+        "derived"
+      ],
+      "scope": "Real-model daily-service integration tasks; no generalized accuracy estimate"
+    },
+    "records": [
+      {
+        "case_id": "metric",
+        "question": "Microsoft FY2024 revenue",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "numeric",
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1268,
+          "output_tokens": 43,
+          "total_tokens": 1311
+        },
+        "business_status": "complete",
+        "evidence_count": 1,
+        "claim_count": 0,
+        "cache_hits": 1,
+        "queue_seconds": 0.20631670951843262,
+        "execution_attempts": 1,
+        "elapsed_seconds": 4.35932259999754,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      },
+      {
+        "case_id": "followup",
+        "question": "上一年呢？",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2023,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "numeric",
+        "validation": {
+          "status": "passed",
+          "observations": 1,
+          "evidence_ids": [
+            "59176976080d645a51e629d8"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1298,
+          "output_tokens": 49,
+          "total_tokens": 1347
+        },
+        "business_status": "complete",
+        "evidence_count": 1,
+        "claim_count": 0,
+        "cache_hits": 0,
+        "queue_seconds": 0.2938807010650635,
+        "execution_attempts": 1,
+        "elapsed_seconds": 2.6816527000009955,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      },
+      {
+        "case_id": "hybrid",
+        "question": "Calculate MSFT FY2024 revenue growth and explain the disclosed reasons using annual report passages.",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "hybrid",
+          "numeric_intent": "growth",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "hybrid",
+        "validation": {
+          "status": "passed",
+          "numeric": {
+            "status": "passed",
+            "observations": 2,
+            "evidence_ids": [
+              "59176976080d645a51e629d8",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "narrative": {
+            "status": "passed",
+            "claims": 3,
+            "source_integrity": true,
+            "semantic_support": "requires_blind_review"
+          }
+        },
+        "usage": {
+          "requests": 2,
+          "input_tokens": 3271,
+          "output_tokens": 367,
+          "total_tokens": 3638
+        },
+        "business_status": "complete",
+        "evidence_count": 5,
+        "claim_count": 3,
+        "cache_hits": 1,
+        "queue_seconds": 0.39414095878601074,
+        "execution_attempts": 1,
+        "elapsed_seconds": 31.320846700000402,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      },
+      {
+        "case_id": "comparison",
+        "question": "Compare MSFT and AAPL FY2024 revenue and state their fiscal period differences.",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "comparison",
+          "numeric_intent": "comparison",
+          "companies": [
+            "MSFT",
+            "AAPL"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "revenue"
+          ],
+          "topic": "revenue",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "numeric",
+        "validation": {
+          "status": "passed",
+          "observations": 2,
+          "evidence_ids": [
+            "3a4cc27cbd17e4635166de5a",
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1279,
+          "output_tokens": 54,
+          "total_tokens": 1333
+        },
+        "business_status": "complete",
+        "evidence_count": 2,
+        "claim_count": 0,
+        "cache_hits": 1,
+        "queue_seconds": 30.539602756500244,
+        "execution_attempts": 1,
+        "elapsed_seconds": 48.49795399999857,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      },
+      {
+        "case_id": "derived",
+        "question": "Calculate MSFT FY2024 operating margin.",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "operating_margin"
+          ],
+          "topic": "profit",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "numeric",
+        "validation": {
+          "status": "passed",
+          "observations": 2,
+          "evidence_ids": [
+            "3c34b92f7ebea344a656a5b5",
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1363,
+          "output_tokens": 50,
+          "total_tokens": 1413
+        },
+        "business_status": "complete",
+        "evidence_count": 2,
+        "claim_count": 0,
+        "cache_hits": 0,
+        "queue_seconds": 47.55202579498291,
+        "execution_attempts": 1,
+        "elapsed_seconds": 67.8039897000017,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      }
+    ],
+    "checks": {
+      "anonymous_rejected": true,
+      "worker_mode": true,
+      "preferences_saved": true,
+      "context_persisted": true,
+      "quota_once": true,
+      "preferences_restored": true
+    },
+    "passed": true
+  },
+  "development_runs": {
+    "worker_service_live": {
+      "manifest": {
+        "run_id": "worker-daily-service",
+        "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+        "source_sha256": {
+          "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+          "finevolab/agent.py": "24be6788245ad4a59d51068a00d7b6692c448bd0139f6f2fc3b1fa6815d382f9",
+          "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+          "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+          "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+          "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+          "finevolab/context_encoding.py": "037b001dbbbc7c2ab1afc999d04479a2d4b454df37e354476408dce269f01821",
+          "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+          "finevolab/derived.py": "cbeaab86d4026ab0381912ab17580b4059923ba58ab327cc65faffd8046b3b9c",
+          "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+          "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+          "finevolab/evaluation.py": "a8392890ede04968e441532c2b4212ce4fd508015c2b73d99a3b4d800b041a69",
+          "finevolab/experience.py": "bf9db2b2374694490453ba91d3c4c2b8d96916f7cf3c1e8195f178e2799a7b47",
+          "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+          "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+          "finevolab/grounded.py": "1eb3ca89029315a8d4a9629707d847f6e606ad6c0f8605ccb370b09d07bd674b",
+          "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+          "finevolab/integrated_web.py": "a6cf3c541f61aea2f0ea5a2ce4c845248cfe420d898322edc4df1dce69ee8080",
+          "finevolab/mcp_client.py": "9995dcfa1872d87082d3024b34ffd78ba42701f0f69dbd3d39833950b7a25e13",
+          "finevolab/mcp_server.py": "1a68b448685dfdb8d761ce548af0001fa20cce2c7c44a4824142a39ba3089c7c",
+          "finevolab/methods.py": "8e37592aeffa4c937745668ef1cad6466bd0089d78a0150960d869692941a228",
+          "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+          "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+          "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+          "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+          "finevolab/provider.py": "a5e9ac5b31ea61d37781721174fd010d22998ee1b7134e48a450aa2e18bd9c16",
+          "finevolab/reconciliation.py": "eb84523d2d72b3c437e3224e5f7e4858192267046621626b20cfc25d0b3ab4e3",
+          "finevolab/reporting.py": "a1396c383ea982f64401aaef76c9e28bd8cc482b666acac32a95740aea3a758c",
+          "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+          "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+          "finevolab/retrieval_cache.py": "366fabe8b4f9e5059ce8268ad7b586124019433c6165cd0527c7fe4c09f60d9e",
+          "finevolab/retrieval_settings.py": "deebd1138c60760c1d82c160ed96a114e209506985d744d3f2dcb9349c8c5d3f",
+          "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+          "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+          "finevolab/runtime.py": "ca10baafe88b66c6b219c60728d02f4174d5ef837f81da845f62c89a8e0eae86",
+          "finevolab/scenarios.py": "acf36cfed4b0390c3713625e2c6a5f96c9758a58e5a3dd58275437f7db76a7be",
+          "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+          "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+          "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+          "finevolab/service_metrics.py": "1eff5cb4400e2644b99751b51cf4cb0d8d49d744fbc695cb74fd6918b5d4633e",
+          "finevolab/singleflight.py": "5c92588ef10a8981b1fc6a6f78d797c3ef00b3e6ceb40824e8f3ab2b5d4cc307",
+          "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+          "finevolab/subtasks.py": "9c475937f0cb7930bf71f93ac04977de1ad98f2fab5b1450400cec134395c21e",
+          "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+          "finevolab/task_worker.py": "aa2ed667a580da312ed7dd6e591503447cc605a2959baa62b24ce13f68bbbcce",
+          "finevolab/tool_backends.py": "aaa1fa95f39f2d130455c4a2411e64ca56c69e31e6c800eebbfb254171f97709",
+          "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+          "finevolab/tools.py": "cd6a6408f1e7b7356775eea0cbd9f184c070985f22875378ac54248eba21f5ce",
+          "finevolab/tracing.py": "32b89d740bcb9225e403f6503d0a3c4075f6bb9ed863f2f52976709ba5c46287",
+          "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+          "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+          "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+          "finevolab/validation.py": "9816c1a57f204bb7d412f49d75fe9ef7860839955c68037cca11bb632963cbd5",
+          "finevolab/vector_backends.py": "7a0342d29d0ee267746516adcadc406e23fcb7531cb7abc9bba2e6c4bbab38b6",
+          "finevolab/web.py": "ad11bbfde63e4c89541de4dad455314e6317629b6ddef6291a02a5d57e07e7b1",
+          "finevolab/workflow.py": "dabb0cc61451004df5dfbf2dc084b5040c08609be1e3dac591e63f2184a61d8c",
+          "scripts/verify_worker_service.py": "84b283979c74e1196a07d764c26589ea04c367f60a69d1f548aedfd83405f847",
+          "scripts/manage_experience.py": "9ad32d61a28507e57c5aa0ed36702bfa92861e1f657f10e4851ad2042ad1affb"
+        },
+        "model": "deepseek-flash",
+        "options": {
+          "thinking": {
+            "type": "disabled"
+          }
+        },
+        "data_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+        "scope": "Five real-model daily-service integration tasks; no generalized accuracy estimate"
+      },
+      "records": [
+        {
+          "case_id": "metric",
+          "question": "Microsoft FY2024 revenue",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 1,
+            "evidence_ids": [
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1268,
+            "output_tokens": 43,
+            "total_tokens": 1311
+          },
+          "business_status": "complete",
+          "evidence_count": 1,
+          "claim_count": 0,
+          "cache_hits": 1,
+          "queue_seconds": 0.13204646110534668,
+          "execution_attempts": 1,
+          "elapsed_seconds": 5.479067399999622,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "followup",
+          "question": "上一年呢？",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2023,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 1,
+            "evidence_ids": [
+              "59176976080d645a51e629d8"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1298,
+            "output_tokens": 49,
+            "total_tokens": 1347
+          },
+          "business_status": "complete",
+          "evidence_count": 1,
+          "claim_count": 0,
+          "cache_hits": 0,
+          "queue_seconds": 0.16532421112060547,
+          "execution_attempts": 1,
+          "elapsed_seconds": 2.724690200000623,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "hybrid",
+          "question": "Calculate NVDA FY2024 revenue growth and explain the disclosed reasons using annual report passages.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "hybrid",
+            "numeric_intent": "growth",
+            "companies": [
+              "NVDA"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "hybrid",
+          "validation": {
+            "status": "passed",
+            "numeric": {
+              "status": "passed",
+              "observations": 0,
+              "evidence_ids": []
+            },
+            "narrative": {
+              "status": "passed",
+              "claims": 0,
+              "source_integrity": true,
+              "semantic_support": "requires_blind_review"
+            }
+          },
+          "usage": {
+            "requests": 2,
+            "input_tokens": 2021,
+            "output_tokens": 63,
+            "total_tokens": 2084
+          },
+          "business_status": "insufficient_data",
+          "evidence_count": 0,
+          "claim_count": 0,
+          "cache_hits": 0,
+          "queue_seconds": 0.48811888694763184,
+          "execution_attempts": 1,
+          "elapsed_seconds": 19.379190600000584,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": false,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": false
+        },
+        {
+          "case_id": "comparison",
+          "question": "Compare MSFT and AAPL FY2024 revenue and state their fiscal period differences.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "comparison",
+            "numeric_intent": "comparison",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 2,
+            "evidence_ids": [
+              "3a4cc27cbd17e4635166de5a",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1279,
+            "output_tokens": 54,
+            "total_tokens": 1333
+          },
+          "business_status": "complete",
+          "evidence_count": 2,
+          "claim_count": 0,
+          "cache_hits": 1,
+          "queue_seconds": 18.865220308303833,
+          "execution_attempts": 1,
+          "elapsed_seconds": 22.229483700000856,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "derived",
+          "question": "Calculate MSFT FY2024 operating margin.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "operating_income",
+              "revenue"
+            ],
+            "topic": "profit",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 2,
+            "evidence_ids": [
+              "3c34b92f7ebea344a656a5b5",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1271,
+            "output_tokens": 53,
+            "total_tokens": 1324
+          },
+          "business_status": "complete",
+          "evidence_count": 2,
+          "claim_count": 0,
+          "cache_hits": 2,
+          "queue_seconds": 21.612228393554688,
+          "execution_attempts": 1,
+          "elapsed_seconds": 26.360788300000422,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": false,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": false
+        }
+      ],
+      "checks": {
+        "anonymous_rejected": true,
+        "worker_mode": true,
+        "preferences_saved": true,
+        "context_persisted": true,
+        "quota_once": true,
+        "preferences_restored": true
+      },
+      "passed": false
+    },
+    "worker_service_live_release": {
+      "manifest": {
+        "run_id": "worker-daily-service",
+        "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+        "source_sha256": {
+          "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+          "finevolab/agent.py": "24be6788245ad4a59d51068a00d7b6692c448bd0139f6f2fc3b1fa6815d382f9",
+          "finevolab/business_memory.py": "ec9c3590da78a18ff555e2546d22a21615fc799450a80d23febdc17afbf6a882",
+          "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+          "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+          "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+          "finevolab/context_encoding.py": "037b001dbbbc7c2ab1afc999d04479a2d4b454df37e354476408dce269f01821",
+          "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+          "finevolab/derived.py": "cbeaab86d4026ab0381912ab17580b4059923ba58ab327cc65faffd8046b3b9c",
+          "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+          "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+          "finevolab/evaluation.py": "a8392890ede04968e441532c2b4212ce4fd508015c2b73d99a3b4d800b041a69",
+          "finevolab/experience.py": "bf9db2b2374694490453ba91d3c4c2b8d96916f7cf3c1e8195f178e2799a7b47",
+          "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+          "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+          "finevolab/grounded.py": "aa051649409065f72518d9ade2cf3c99247c38c848c823f87327bffc7fc04dbd",
+          "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+          "finevolab/integrated_web.py": "a6cf3c541f61aea2f0ea5a2ce4c845248cfe420d898322edc4df1dce69ee8080",
+          "finevolab/mcp_client.py": "9995dcfa1872d87082d3024b34ffd78ba42701f0f69dbd3d39833950b7a25e13",
+          "finevolab/mcp_server.py": "1a68b448685dfdb8d761ce548af0001fa20cce2c7c44a4824142a39ba3089c7c",
+          "finevolab/methods.py": "8e37592aeffa4c937745668ef1cad6466bd0089d78a0150960d869692941a228",
+          "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+          "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+          "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+          "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+          "finevolab/provider.py": "a5e9ac5b31ea61d37781721174fd010d22998ee1b7134e48a450aa2e18bd9c16",
+          "finevolab/reconciliation.py": "eb84523d2d72b3c437e3224e5f7e4858192267046621626b20cfc25d0b3ab4e3",
+          "finevolab/reporting.py": "a1396c383ea982f64401aaef76c9e28bd8cc482b666acac32a95740aea3a758c",
+          "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+          "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+          "finevolab/retrieval_cache.py": "366fabe8b4f9e5059ce8268ad7b586124019433c6165cd0527c7fe4c09f60d9e",
+          "finevolab/retrieval_settings.py": "deebd1138c60760c1d82c160ed96a114e209506985d744d3f2dcb9349c8c5d3f",
+          "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+          "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+          "finevolab/runtime.py": "ca10baafe88b66c6b219c60728d02f4174d5ef837f81da845f62c89a8e0eae86",
+          "finevolab/scenarios.py": "acf36cfed4b0390c3713625e2c6a5f96c9758a58e5a3dd58275437f7db76a7be",
+          "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+          "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+          "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+          "finevolab/service_metrics.py": "1eff5cb4400e2644b99751b51cf4cb0d8d49d744fbc695cb74fd6918b5d4633e",
+          "finevolab/singleflight.py": "5c92588ef10a8981b1fc6a6f78d797c3ef00b3e6ceb40824e8f3ab2b5d4cc307",
+          "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+          "finevolab/subtasks.py": "9c475937f0cb7930bf71f93ac04977de1ad98f2fab5b1450400cec134395c21e",
+          "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+          "finevolab/task_worker.py": "b6eede1170947c602c8eb7da3a9ab4fe5bb068ed91387eab2e4800724fed95b1",
+          "finevolab/tool_backends.py": "aaa1fa95f39f2d130455c4a2411e64ca56c69e31e6c800eebbfb254171f97709",
+          "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+          "finevolab/tools.py": "cd6a6408f1e7b7356775eea0cbd9f184c070985f22875378ac54248eba21f5ce",
+          "finevolab/tracing.py": "32b89d740bcb9225e403f6503d0a3c4075f6bb9ed863f2f52976709ba5c46287",
+          "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+          "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+          "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+          "finevolab/validation.py": "9816c1a57f204bb7d412f49d75fe9ef7860839955c68037cca11bb632963cbd5",
+          "finevolab/vector_backends.py": "7a0342d29d0ee267746516adcadc406e23fcb7531cb7abc9bba2e6c4bbab38b6",
+          "finevolab/web.py": "ad11bbfde63e4c89541de4dad455314e6317629b6ddef6291a02a5d57e07e7b1",
+          "finevolab/workflow.py": "dabb0cc61451004df5dfbf2dc084b5040c08609be1e3dac591e63f2184a61d8c",
+          "scripts/verify_worker_service.py": "aeb89599bda93336b39d396a3909d10066611d1dee0e7b88ea554ca316dcc673",
+          "scripts/manage_experience.py": "9ad32d61a28507e57c5aa0ed36702bfa92861e1f657f10e4851ad2042ad1affb"
+        },
+        "model": "deepseek-flash",
+        "options": {
+          "thinking": {
+            "type": "disabled"
+          }
+        },
+        "data_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+        "scope": "Five real-model daily-service integration tasks; no generalized accuracy estimate"
+      },
+      "records": [
+        {
+          "case_id": "metric",
+          "question": "Microsoft FY2024 revenue",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 1,
+            "evidence_ids": [
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1358,
+            "output_tokens": 43,
+            "total_tokens": 1401
+          },
+          "business_status": "complete",
+          "evidence_count": 1,
+          "claim_count": 0,
+          "cache_hits": 0,
+          "queue_seconds": 0.1319718360900879,
+          "execution_attempts": 1,
+          "elapsed_seconds": 5.212091199999122,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "followup",
+          "question": "上一年呢？",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2023,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 1,
+            "evidence_ids": [
+              "59176976080d645a51e629d8"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1388,
+            "output_tokens": 43,
+            "total_tokens": 1431
+          },
+          "business_status": "complete",
+          "evidence_count": 1,
+          "claim_count": 0,
+          "cache_hits": 0,
+          "queue_seconds": 0.20010590553283691,
+          "execution_attempts": 1,
+          "elapsed_seconds": 2.273076999998011,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "hybrid",
+          "question": "Calculate MSFT FY2024 revenue growth and explain the disclosed reasons using annual report passages.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "hybrid",
+            "numeric_intent": "growth",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "hybrid",
+          "validation": {
+            "status": "passed",
+            "numeric": {
+              "status": "passed",
+              "observations": 2,
+              "evidence_ids": [
+                "59176976080d645a51e629d8",
+                "9a794a03f299890a16d8dd3c"
+              ]
+            },
+            "narrative": {
+              "status": "passed",
+              "claims": 3,
+              "source_integrity": true,
+              "semantic_support": "requires_blind_review"
+            }
+          },
+          "usage": {
+            "requests": 2,
+            "input_tokens": 3361,
+            "output_tokens": 371,
+            "total_tokens": 3732
+          },
+          "business_status": "complete",
+          "evidence_count": 5,
+          "claim_count": 3,
+          "cache_hits": 0,
+          "queue_seconds": 0.39842867851257324,
+          "execution_attempts": 1,
+          "elapsed_seconds": 25.300847900001827,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "comparison",
+          "question": "Compare MSFT and AAPL FY2024 revenue and state their fiscal period differences.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "comparison",
+            "numeric_intent": "comparison",
+            "companies": [
+              "MSFT",
+              "AAPL"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "revenue"
+            ],
+            "topic": "revenue",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 2,
+            "evidence_ids": [
+              "3a4cc27cbd17e4635166de5a",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1369,
+            "output_tokens": 54,
+            "total_tokens": 1423
+          },
+          "business_status": "complete",
+          "evidence_count": 2,
+          "claim_count": 0,
+          "cache_hits": 1,
+          "queue_seconds": 24.77516746520996,
+          "execution_attempts": 1,
+          "elapsed_seconds": 27.9372414999998,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        },
+        {
+          "case_id": "derived",
+          "question": "Calculate MSFT FY2024 operating margin.",
+          "status": "complete",
+          "error_type": null,
+          "request": {
+            "intent": "metric",
+            "numeric_intent": "metric",
+            "companies": [
+              "MSFT"
+            ],
+            "fiscal_year": 2024,
+            "report_year": null,
+            "metrics": [
+              "operating_margin"
+            ],
+            "topic": "profit",
+            "scope": "annual_fiscal"
+          },
+          "answer_type": "numeric",
+          "validation": {
+            "status": "passed",
+            "observations": 2,
+            "evidence_ids": [
+              "3c34b92f7ebea344a656a5b5",
+              "9a794a03f299890a16d8dd3c"
+            ]
+          },
+          "usage": {
+            "requests": 1,
+            "input_tokens": 1361,
+            "output_tokens": 50,
+            "total_tokens": 1411
+          },
+          "business_status": "complete",
+          "evidence_count": 2,
+          "claim_count": 0,
+          "cache_hits": 0,
+          "queue_seconds": 27.449224948883057,
+          "execution_attempts": 1,
+          "elapsed_seconds": 30.977305600001273,
+          "reports": {
+            "html": true,
+            "pdf": true
+          },
+          "context_correct": true,
+          "reused": true,
+          "same_task": true,
+          "display_scale": "millions",
+          "trace_propagated": true,
+          "passed": true
+        }
+      ],
+      "checks": {
+        "anonymous_rejected": true,
+        "worker_mode": true,
+        "preferences_saved": true,
+        "context_persisted": true,
+        "quota_once": true,
+        "preferences_restored": true
+      },
+      "passed": true
+    }
+  },
+  "operational_usage": {
+    "worker_service_live": {
+      "requests": 6,
+      "input_tokens": 7137,
+      "output_tokens": 262,
+      "total_tokens": 7399
+    },
+    "worker_service_live_release": {
+      "requests": 6,
+      "input_tokens": 8837,
+      "output_tokens": 561,
+      "total_tokens": 9398
+    },
+    "worker_service_live_final": {
+      "requests": 6,
+      "input_tokens": 8479,
+      "output_tokens": 563,
+      "total_tokens": 9042
+    },
+    "worker_service_queue_final": {
+      "requests": 1,
+      "input_tokens": 1363,
+      "output_tokens": 50,
+      "total_tokens": 1413
+    }
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "invitation-cleared",
+      "memory-enabled",
+      "preferences-enabled",
+      "persisted-history",
+      "memory-restored",
+      "pdf-link",
+      "reload-result",
+      "language-1365-en",
+      "layout-1365-en",
+      "language-1365-zh-CN",
+      "layout-1365-zh-CN",
+      "language-390-en",
+      "layout-390-en",
+      "language-390-zh-CN",
+      "layout-390-zh-CN",
+      "new-conversation",
+      "no-script-errors"
+    ],
+    "errors": [],
+    "real_model_calls": 0
+  },
+  "changes_verified": [
+    "SQLite enqueue leaves the HTTP event loop while retaining transactional quotas and idempotency",
+    "AnalysisRequestPlan supports derived metrics without changing the frozen RequestPlan contract",
+    "Documentation review hashes do not invalidate business task identities"
+  ],
+  "development_findings": [
+    {
+      "case": "unavailable_company",
+      "company": "NVDA",
+      "result": "insufficient_data",
+      "resolution": "Retained as a source-coverage boundary; the supported hybrid smoke uses MSFT"
+    },
+    {
+      "case": "margin_request",
+      "resolution": "Route explicit margins to existing source-audited derived operators"
+    },
+    {
+      "case": "load_parameters",
+      "resolution": "Align lease, idle polling and batch tracing with the daily service",
+      "preserved_local_runs": [
+        "worker_load_preflight",
+        "worker_load_release",
+        "worker_load_final",
+        "worker_load_async_enqueue",
+        "worker_load_production"
+      ]
+    }
+  ],
+  "daily_service": {
+    "execution_mode": "worker",
+    "concurrent_tasks": 1,
+    "worker_lease_seconds": 30,
+    "worker_idle_poll_seconds": 0.5,
+    "trace_mode": "batch"
+  },
+  "verification": {
+    "regression": {
+      "status": "passed",
+      "tests": 311,
+      "seconds": 42.418,
+      "transcript_sha256": "94eb078b537379b4b82f110411de573681e42641d3f4fdffb2f288ef82cd4cdb"
+    },
+    "frontend_checks": {
+      "showcase": 106,
+      "experience": 89,
+      "memory_worker": 15
+    },
+    "real_browser": {
+      "status": "passed",
+      "checks": [
+        "invitation-cleared",
+        "memory-enabled",
+        "preferences-enabled",
+        "persisted-history",
+        "memory-restored",
+        "pdf-link",
+        "reload-result",
+        "language-1365-en",
+        "layout-1365-en",
+        "language-1365-zh-CN",
+        "layout-1365-zh-CN",
+        "language-390-en",
+        "layout-390-en",
+        "language-390-zh-CN",
+        "layout-390-zh-CN",
+        "new-conversation",
+        "no-script-errors"
+      ],
+      "errors": [],
+      "real_model_calls": 0
+    },
+    "publication_audit": {
+      "status": "passed",
+      "files": 21,
+      "private_matches": 0,
+      "local_timestamp_matches": 0,
+      "technical_docstrings": 13,
+      "code_review": "Functional implementation and concise technical comments/docstrings"
+    },
+    "daily_service": {
+      "/": true,
+      "/experience/api/health": true,
+      "/experience/api/tasks": true,
+      "/experience/api/memory": true,
+      "/mcp": true,
+      "anonymous_submit_rejected": true,
+      "cross_origin_rejected": true,
+      "original_invitation_and_quotas_preserved": true,
+      "temporary_invitation_removed": true,
+      "no_active_tasks": true
+    },
+    "public_https": {
+      "status": "passed",
+      "anonymous_tasks": "rejected"
+    },
+    "clean_export": {
+      "status": "passed",
+      "tests": 80,
+      "seconds": 30.805,
+      "transcript_sha256": "55937bb0a3d1aaeedbf9a2cb1c141729eeb1c1bfbbdc46844527e43ec60d42bd",
+      "readme_sync": "passed",
+      "build_files": 11,
+      "frontend_checks": 195
+    },
+    "distribution": {
+      "candidate_files": 1239,
+      "required_paths": 115,
+      "source_snapshots": 31,
+      "business_frozen_inputs": 3,
+      "legal_notices": "unchanged"
+    }
+  },
+  "post_admission_live": {
+    "manifest": {
+      "run_id": "worker-daily-service",
+      "base_commit": "788dbe7472b8fbaf47f3d18e0ddc096d4807fc93",
+      "source_sha256": {
+        "finevolab/__init__.py": "f9258ef0e5efdbaa7406c530bfa4e4ff7c33d370687b4d1a38cce4c99154a320",
+        "finevolab/agent.py": "24be6788245ad4a59d51068a00d7b6692c448bd0139f6f2fc3b1fa6815d382f9",
+        "finevolab/business_memory.py": "a43ae8c17c36a9c8487c0a1503553afbfbe8cb04b0d586a1c9cb4cf9d6f2435a",
+        "finevolab/circuit.py": "62c32eadac4d871c97e4fe41e4c50130d7f38bcb6a4d6d2d5e78de945974020b",
+        "finevolab/closure_evaluation.py": "a09710dcaadb3f6e929de3a699a57fd5905b382ff1256925d0269c10756ccd9b",
+        "finevolab/config.py": "06456666db386fb7153c4e51cf2ccc2f822f54d32c86022b0959c585f1fa3c33",
+        "finevolab/context_encoding.py": "037b001dbbbc7c2ab1afc999d04479a2d4b454df37e354476408dce269f01821",
+        "finevolab/costs.py": "7cfe7ba8bd5bab0c42caecf2783d5d418ebdc3c989394b799d70c3b890e954e1",
+        "finevolab/derived.py": "cbeaab86d4026ab0381912ab17580b4059923ba58ab327cc65faffd8046b3b9c",
+        "finevolab/durable_tasks.py": "6156d69bda89594fb04e09688fa2c80bb38d9c6b4b289616fc4fce236a4aa763",
+        "finevolab/embeddings.py": "1e0fdedf1d9d8f8cf18e887495cd16ebe1907ba598ae97aeb00bbda5c97fc63a",
+        "finevolab/evaluation.py": "a8392890ede04968e441532c2b4212ce4fd508015c2b73d99a3b4d800b041a69",
+        "finevolab/experience.py": "1826759fd3f5182bb7f872e647e878c8fb828d50e0c1fcb58fcc7516db156c6a",
+        "finevolab/experience_data.py": "24a2ab472012d0f5514026ce04a921947e609dee7045e1a191a33857b8e902aa",
+        "finevolab/experiments.py": "13418e6e91787ac610e2972cfe1a1fe60c21388e275ac1db627d212f8a7b27ea",
+        "finevolab/grounded.py": "7d95acd097b083a4e1592033fc4f33fbf30583221f29b0c5d20420c5d219cbe9",
+        "finevolab/ingestion.py": "07e6bbf48072c4dd20769022977a9fd0560110fa2a9700b553a9c36337c89eff",
+        "finevolab/integrated_web.py": "a6cf3c541f61aea2f0ea5a2ce4c845248cfe420d898322edc4df1dce69ee8080",
+        "finevolab/mcp_client.py": "9995dcfa1872d87082d3024b34ffd78ba42701f0f69dbd3d39833950b7a25e13",
+        "finevolab/mcp_server.py": "1a68b448685dfdb8d761ce548af0001fa20cce2c7c44a4824142a39ba3089c7c",
+        "finevolab/methods.py": "8e37592aeffa4c937745668ef1cad6466bd0089d78a0150960d869692941a228",
+        "finevolab/optimization.py": "1a3148bf6828fda4e94bf4c707049b101dfe4c3f90059e99c43c17baeea451a8",
+        "finevolab/planner_benchmark.py": "74d6dbb6a8485e0d8a7df8da5dff592100e46e30eb7c8af50b721c5cbba760ff",
+        "finevolab/planning.py": "db12b76e056beeae72d65c215e304997010b3fcc08eda09a32675f5aaebc52ac",
+        "finevolab/provenance.py": "bf387b3bbde088e9d96f190c75ac98e875816281fcbd770af21f442450222229",
+        "finevolab/provider.py": "a5e9ac5b31ea61d37781721174fd010d22998ee1b7134e48a450aa2e18bd9c16",
+        "finevolab/reconciliation.py": "eb84523d2d72b3c437e3224e5f7e4858192267046621626b20cfc25d0b3ab4e3",
+        "finevolab/reporting.py": "a1396c383ea982f64401aaef76c9e28bd8cc482b666acac32a95740aea3a758c",
+        "finevolab/reranking.py": "322cc879b90d8fbb55a8c73de089161842eca309dfd2c30a19876dddfbfe3abd",
+        "finevolab/retrieval.py": "10e1c50494b429b34629c19bb30f0180d81dca232de8b0e9e681b2703b4b682f",
+        "finevolab/retrieval_cache.py": "366fabe8b4f9e5059ce8268ad7b586124019433c6165cd0527c7fe4c09f60d9e",
+        "finevolab/retrieval_settings.py": "deebd1138c60760c1d82c160ed96a114e209506985d744d3f2dcb9349c8c5d3f",
+        "finevolab/reviewing.py": "e46942e7afdc11bce0bf85a495d44921241df140ae5fccf2a36665a17c23d94e",
+        "finevolab/rubric.py": "2b0003b7e8b123f9730f3557f85b18ab70d91bba9da99bb66e134512be10cd05",
+        "finevolab/runtime.py": "ca10baafe88b66c6b219c60728d02f4174d5ef837f81da845f62c89a8e0eae86",
+        "finevolab/scenarios.py": "acf36cfed4b0390c3713625e2c6a5f96c9758a58e5a3dd58275437f7db76a7be",
+        "finevolab/scope_evaluation.py": "7894ebe53e30556969ebe5b06f1c62ced3bb0ef458d9642e2a12c46443a8c597",
+        "finevolab/sdk_runtime.py": "f2b9697b0431b009522e4004a61685a2b122c46015795e998711e3649464fd06",
+        "finevolab/sec_ingestion.py": "7cbdaf1ca5a91494b337996c0568aa66b3be11ee595c143b4c590fe6ecd6f71f",
+        "finevolab/service_metrics.py": "1eff5cb4400e2644b99751b51cf4cb0d8d49d744fbc695cb74fd6918b5d4633e",
+        "finevolab/singleflight.py": "5c92588ef10a8981b1fc6a6f78d797c3ef00b3e6ceb40824e8f3ab2b5d4cc307",
+        "finevolab/storage.py": "12e8a76929d6fe5d21e6b152f179bd0c4eb6bc7a07524d39dcae351409fccff5",
+        "finevolab/subtasks.py": "9c475937f0cb7930bf71f93ac04977de1ad98f2fab5b1450400cec134395c21e",
+        "finevolab/table_context.py": "e787727a18d9fed168404bc99db8f142353e5c8cae1d4f23a727ccde97fb6886",
+        "finevolab/task_worker.py": "b6eede1170947c602c8eb7da3a9ab4fe5bb068ed91387eab2e4800724fed95b1",
+        "finevolab/tool_backends.py": "aaa1fa95f39f2d130455c4a2411e64ca56c69e31e6c800eebbfb254171f97709",
+        "finevolab/tool_outputs.py": "71edcf6fcbc6f553d1f50ec61286b8cde64c876299a4ee877207e6e5601d1f7e",
+        "finevolab/tools.py": "cd6a6408f1e7b7356775eea0cbd9f184c070985f22875378ac54248eba21f5ce",
+        "finevolab/tracing.py": "32b89d740bcb9225e403f6503d0a3c4075f6bb9ed863f2f52976709ba5c46287",
+        "finevolab/upload_metrics.py": "557c5674deb48b5c310da7aac1c5aaff2e9f60b9ea7ee37a7a47d7de9188871c",
+        "finevolab/uploads.py": "210b3be161a2e67d379906829bf45a6ee62d819652ee8d6f5a1242e67dc2dd36",
+        "finevolab/upstream_baseline.py": "88748d4b5899fdc0b7996b1d3caa918f6ade9617815bcadfc504d0be0c8c153f",
+        "finevolab/validation.py": "632ffeba8dcb98debd392093964c561652623764445f74d4c1027df5961c0d84",
+        "finevolab/vector_backends.py": "7a0342d29d0ee267746516adcadc406e23fcb7531cb7abc9bba2e6c4bbab38b6",
+        "finevolab/web.py": "ad11bbfde63e4c89541de4dad455314e6317629b6ddef6291a02a5d57e07e7b1",
+        "finevolab/workflow.py": "dabb0cc61451004df5dfbf2dc084b5040c08609be1e3dac591e63f2184a61d8c",
+        "scripts/verify_worker_service.py": "7fbb5a091626ec2d0419da1150e82db63d36db56f8e023dd3aa9c2fa3f00c454",
+        "scripts/manage_experience.py": "9ad32d61a28507e57c5aa0ed36702bfa92861e1f657f10e4851ad2042ad1affb"
+      },
+      "model": "deepseek-flash",
+      "options": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "data_sha256": "8bebdcf050511037d070a05e911eb986945174f3cbf89d7760c35756bf4f4fa8",
+      "case_ids": [
+        "derived"
+      ],
+      "scope": "Real-model daily-service integration tasks; no generalized accuracy estimate"
+    },
+    "records": [
+      {
+        "case_id": "derived",
+        "question": "Calculate MSFT FY2024 operating margin.",
+        "status": "complete",
+        "error_type": null,
+        "request": {
+          "intent": "metric",
+          "numeric_intent": "metric",
+          "companies": [
+            "MSFT"
+          ],
+          "fiscal_year": 2024,
+          "report_year": null,
+          "metrics": [
+            "operating_margin"
+          ],
+          "topic": "profit",
+          "scope": "annual_fiscal"
+        },
+        "answer_type": "numeric",
+        "validation": {
+          "status": "passed",
+          "observations": 2,
+          "evidence_ids": [
+            "3c34b92f7ebea344a656a5b5",
+            "9a794a03f299890a16d8dd3c"
+          ]
+        },
+        "usage": {
+          "requests": 1,
+          "input_tokens": 1363,
+          "output_tokens": 50,
+          "total_tokens": 1413
+        },
+        "business_status": "complete",
+        "evidence_count": 2,
+        "claim_count": 0,
+        "cache_hits": 1,
+        "queue_seconds": 0.044060468673706055,
+        "execution_attempts": 1,
+        "elapsed_seconds": 4.468044999997801,
+        "reports": {
+          "html": true,
+          "pdf": true
+        },
+        "context_correct": true,
+        "reused": true,
+        "same_task": true,
+        "display_scale": "millions",
+        "trace_propagated": true,
+        "passed": true
+      }
+    ],
+    "checks": {
+      "anonymous_rejected": true,
+      "worker_mode": true,
+      "preferences_saved": true,
+      "quota_once": true,
+      "preferences_restored": true
+    },
+    "passed": true
+  },
+  "publication_git_blob_sha256": {
+    "finevolab/business_memory.py": "c3c965782b95f3a9964f894616a4bcbe3ede72a5e8fbd5468c42999ac6c7d3da",
+    "finevolab/experience.py": "07afc6f7de86f58dfeef83d29b4452aec587e9bceac4ec5bacd7fc001da2c732",
+    "finevolab/grounded.py": "347a349b338682e110a5a43324bc8f81e79ffd58de7975c98209a6df6cd7a327",
+    "finevolab/task_worker.py": "be30308c9799976a9aa46117277f39602b0de4377b351d5e27a08ef0109b564d",
+    "finevolab/validation.py": "332fc2eb73c5c003249fd68e82ccf32d3f5929532f067ebdb4668a7273bfd8c0",
+    "scripts/benchmark_worker_load.py": "e76d2b43b9649fa096f2fc678fdcb136fa51d2c1c70a66bb2c53b8ff701f96d3",
+    "scripts/build_showcase.py": "9fa2d7844ae1d7bdc2f3aa7c2942e2f3463e44fdc6f05bb5a1b869f2fe98c77f",
+    "scripts/manage_experience.py": "e71830456a112628b373fb8479383901bc0cd2f1f6d717a501a9cb1ab3599bdc",
+    "scripts/verify_repository_distribution.py": "fdaf152a20a7ee477b6b48cdf14e9afc9cd19665000584b05e5439b291a12b79",
+    "scripts/verify_worker_service.py": "bbeb124434e34cf3772d31a183bc016c842b3fe10ddf47b7c7579b2cb0f33b3e",
+    "tests/frontend/check_worker_service_live.cjs": "6bcd2e914e29f16de93bef851431faaebe898cb159c3bc7ed733e39c9e0d0f99",
+    "tests/test_derived.py": "92d6a970d57f0d442b2eddeed4bd2933c23b12f88138e28598cdaa2125b40037",
+    "tests/test_memory_worker.py": "9218149f4c5ebe718f678e33a44e254a11c9adb282597d4a476e5b0ccfb15ae9"
+  },
+  "source_consistency": {
+    "mixed_load": true,
+    "post_admission_live": true
+  },
+  "source_hash_definition": "Measurement hashes use working-tree bytes; publication hashes use Git blob bytes with repository line endings."
+}

@@ -131,7 +131,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **306 项通过**，见[运行验证](project_notes/evaluations/memory_worker_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **311 项通过**，见[运行验证](project_notes/evaluations/worker_service_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 <details>
 <summary><strong>分析扩展：配对结果与复现命令</strong></summary>
@@ -426,6 +426,26 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worke
 conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
 ```
 
+
+日常服务使用独立 Web 与 worker 进程。HTTP 接入将同步配额和入队事务移出事件循环。明确的利润率请求使用 `AnalysisRequestPlan` 和已有审计算子，冻结的 `RequestPlan` 训练合同保持不变。
+
+TCP HTTP 混合负载采用相同的 12 个任务，分别使用 1 和 2 个 worker，各重复 3 次。72 个任务的状态均符合合同：60 个完成，6 个返回注入错误，6 个触发注入超时。额外的 6 次排队取消和 6 次 worker 异常退出及 Web 重启恢复全部通过。两组均保留持久检查点，并使用日常的 30 秒租约、0.5 秒空闲轮询和 batch Trace。
+
+| Worker 数 | 预期结果符合数 | 入队至发布 p50（秒） | p95（秒） |
+| --- | --- | --- | --- |
+| 1 | 36/36 | 10.591 | 44.713 |
+| 2 | 36/36 | 8.396 | 48.500 |
+
+本机测量包含 worker 冷启动与持久写盘。两个 worker 降低了中位延迟，但未稳定改善尾延迟，因此日常配置保留 1 个 worker。五个真实业务任务通过来源校验及 HTML/PDF 生成，之后单独使用真实利润率请求复核异步入队。真实浏览器通过 17 项检查，覆盖 worker 控件、历史、上下文恢复、报告和双语布局。逐例结果、重复测量与全部开发模型用量见[worker 服务验收](project_notes/evaluations/worker_service_acceptance.json)。
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/benchmark_worker_load.py --output output/reproduction/worker_load
+$invitationFile = (Get-ChildItem output/experience/invite-*.txt | Select-Object -First 1).FullName
+conda run --no-capture-output -n finevolab python scripts/verify_worker_service.py --invitation-file $invitationFile --output output/reproduction/worker_service
+```
+
+真实服务命令沿用现有邀请额度，需要剩余 5 个任务。设置 `FINEVOLAB_CHROMIUM` 和 `FINEVOLAB_INVITATION_FILE` 后，运行 `npm run test:worker:live --prefix tests/frontend`，即可检查已完成任务而不新增模型调用。
+
 </details>
 
 <div id="section-web"></div>
@@ -459,7 +479,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_experience.py i
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve
 ```
 
-打开 `http://127.0.0.1:8085/`，使用保存在 `output/experience/invite-*.txt` 的邀请口令。服务读取已有 `FINEVOLAB_MODEL_CONFIG` 设置。邀请摘要与策略保存在 `output/experience/access.json`，会话与任务归属保存在 `output/experience/access.sqlite3`，均留在本地。独立应用按账户隔离任务与报告下载，执行原子化的个人及全站每日任务额度、并发限制、幂等提交和单任务 `RunBudget`。每日额度按 UTC 计算，失败与中断的执行也计入额度；重启后任务标记为中断。默认每人每天 5 个任务，全站每天 20 个任务，同时运行 1 个；单任务最多 6 次模型调用、10 次工具调用、20,000 个 Token 和 240 秒。启动服务前配置邀请与额度。浏览器会话有效期为 12 小时。服务默认仅监听本机。配置 `--public-url` 后，公开主机名要求 HTTPS，并使用安全会话 Cookie；转发头仅信任本机连接器。公开 Pages 工作台的回放与证据浏览不发起模型请求。
+打开 `http://127.0.0.1:8085/`，使用保存在 `output/experience/invite-*.txt` 的邀请口令。服务读取已有 `FINEVOLAB_MODEL_CONFIG` 设置。邀请摘要与策略保存在 `output/experience/access.json`，会话与任务归属保存在 `output/experience/access.sqlite3`，均留在本地。独立应用按账户隔离任务与报告下载，执行原子化的个人及全站每日任务额度、并发限制、幂等提交和单任务 `RunBudget`。每日额度按 UTC 计算，失败与中断的执行也计入额度；重启后，`inline` 模式的在途任务标记为中断；`worker` 模式保留排队任务与可恢复执行。默认每人每天 5 个任务，全站每天 20 个任务，同时运行 1 个；单任务最多 6 次模型调用、10 次工具调用、20,000 个 Token 和 240 秒。启动服务前配置邀请与额度。浏览器会话有效期为 12 小时。服务默认仅监听本机。配置 `--public-url` 后，公开主机名要求 HTTPS，并使用安全会话 Cookie；转发头仅信任本机连接器。公开 Pages 工作台的回放与证据浏览不发起模型请求。
 
 </details>
 
