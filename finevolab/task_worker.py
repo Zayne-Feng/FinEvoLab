@@ -16,7 +16,7 @@ from finevolab.tracing import trace_scope, flush_exports
 def input_identity(root, policy):
     names = ["data/processed/reports.json", "data/indexes/contextual/structured.json", "prompts/benchmark.json"]
     names += [p.relative_to(root).as_posix() for folder in ('finevolab', 'configs')
-              for p in (root / folder).glob('*') if p.suffix in {'.py', '.json'}]
+              for p in (root / folder).glob('*') if p.suffix in {'.py', '.json'} and p.name != 'readme_sync.json']
     model = None
     if (root / 'prompts/benchmark.json').exists():
         from finevolab.config import ModelConfig

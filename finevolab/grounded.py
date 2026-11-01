@@ -17,6 +17,7 @@ from finevolab.provider import async_client
 from finevolab.runtime import BudgetExceeded, RunBudget, ToolExecutor, fingerprint, observe
 from finevolab.tools import FinancialStore, BoundedFinancialStore, GrowthResult
 from finevolab.provenance import file_digest
+from finevolab.derived import DerivedMetric, DERIVED_METRICS
 from finevolab.tool_outputs import SearchReportsOutput
 
 
@@ -35,6 +36,10 @@ class RequestPlan(BaseModel):
     metrics: list[MetricName] = Field(min_length=1, max_length=3)
     topic: Literal["revenue", "profit", "risk"] = "revenue"
     scope: Literal["annual_fiscal", "ambiguous", "unsupported"] = "annual_fiscal"
+
+
+class AnalysisRequestPlan(RequestPlan):
+    metrics: list[MetricName | DerivedMetric] = Field(min_length=1, max_length=3)
 
 
 class PassageClaim(BaseModel):
@@ -151,7 +156,11 @@ def assemble_numeric(plan: RequestPlan, store: FinancialStore, events: list) -> 
                 if plan.intent == "summary":
                     names = ["revenue", "operating_income", "net_income"]
                 for name in names:
-                    if plan.intent == "growth":
+                    if name in DERIVED_METRICS:
+                        output = store.derive(companies[0], name, plan.fiscal_year).model_dump(mode="json")
+                        calculations.append(output)
+                        tool = "calculate_metrics"
+                    elif plan.intent == "growth":
                         output = store.growth(companies[0], name, plan.fiscal_year).model_dump(mode="json")
                         calculations.append(output)
                         tool = "calculate_metrics"
@@ -170,10 +179,11 @@ def assemble_numeric(plan: RequestPlan, store: FinancialStore, events: list) -> 
     if not message:
         lines = [f"{item['company']} FY{item['fiscal_year']} {item['name']}: {item['value']} {item['unit']}; "
                  f"period {item['period_start']} to {item['period_end']}." for item in metrics]
-        lines.extend(f"{item['company']} FY{item['fiscal_year']} {item['metric']} annual change: "
-                     f"{item['value']} percent; formula {item['formula']}." for item in calculations)
+        lines.extend(f"{item['company']} FY{item['fiscal_year']} {item['metric']}"
+                     f"{'' if item.get('kind') == 'derived' else ' annual change'}: "
+                     f"{item['value']} {item['unit']}; formula {item['formula']}." for item in calculations)
         from decimal import Decimal
-        if any(Decimal(item["inputs"][0]["value"]) < 0 for item in calculations):
+        if any(item.get("kind") != "derived" and Decimal(item["inputs"][0]["value"]) < 0 for item in calculations):
             lines.append("The prior value is negative; the signed ratio is not an ordinary positive-base growth measure.")
         if aligned is not None:
             lines.append("Actual fiscal periods are aligned." if aligned else
@@ -444,8 +454,20 @@ async def analyze_grounded(settings: ModelConfig, store: FinancialStore, questio
                                                  "original": raw, "error": str(error)[:1200]})
                     messages += [{"role": "assistant", "content": raw}, {"role": "user", "content":
                         "Correct only the invalid output using the supplied source data. Error: " + str(error)[:1200]}]
-        plan = RequestPlan.model_validate(request_plan) if request_plan is not None else await generate(
-            RequestPlan, request_instruction(candidate), {"question": question,
+        margin_request = re.search(
+            r"operating[\s_-]+margin|net[\s_-]+(?:profit[\s_-]+)?margin|营业利润率|经营利润率|净利率|净利润率",
+            question, re.IGNORECASE)
+        plan_schema = AnalysisRequestPlan if margin_request else RequestPlan
+        instruction = request_instruction(candidate)
+        if margin_request:
+            instruction += (
+                " Profit-to-revenue requests use intent metric and metrics operating_margin or net_margin. "
+                "Year-over-year margin differences use operating_margin_change or net_margin_change, "
+                "measured in percentage points. Do not substitute a raw-input lookup for a ratio calculation.")
+        if isinstance(request_plan, RequestPlan):
+            request_plan = request_plan.model_dump()
+        plan = AnalysisRequestPlan.model_validate(request_plan) if request_plan is not None else await generate(
+            plan_schema, instruction, {"question": question,
                 "selected_documents": [{"company": item["company"], "report_year": item["report_year"], "id": item["id"]}
                                        for item in store.uploads]})
         plan = plan.model_copy(update={"companies": [store.company_id(company) for company in plan.companies]})

@@ -109,6 +109,51 @@ class MemoryWorkerTests(unittest.TestCase):
         asyncio.run(execute_one(self.root, self.policy, runner=runner, lease_seconds=.1))
         self.assertEqual(self.access.task('alice', row['id'])['status'], 'cancelled')
 
+    def test_documentation_review_preserves_input_identity(self):
+        from finevolab.task_worker import input_identity
+        original = input_identity(self.root, self.policy)
+        (self.root / 'configs').mkdir()
+        (self.root / 'configs/readme_sync.json').write_text('{"version": 1}')
+        self.assertEqual(input_identity(self.root, self.policy), original)
+
+    def test_slow_enqueue_does_not_block_health_requests(self):
+        import hashlib
+        from threading import Event
+        from unittest.mock import patch
+        token = 'x' * 43
+        self.policy['users']['alice']['invite_sha256'] = hashlib.sha256(token.encode()).hexdigest()
+        config = self.root / 'access.json'
+        config.write_text(json.dumps(self.policy))
+        application = create_app(self.root, config)
+        entered, release, healthy = Event(), Event(), Event()
+        reserve = application.state.access.reserve
+        def slow_reserve(*args):
+            entered.set()
+            if not release.wait(5):
+                raise TimeoutError('The test did not release enqueue')
+            return reserve(*args)
+        with TestClient(application) as client:
+            headers = {'X-FinEvoLab': '1'}
+            client.post('/experience/api/login', json={'invite': token}, headers=headers)
+            with patch.object(application.state.access, 'reserve', side_effect=slow_reserve):
+                with ThreadPoolExecutor(max_workers=2) as pool:
+                    pending = pool.submit(client.post, '/experience/api/tasks',
+                        json={'question': 'MSFT FY2024 revenue', 'request_id': 'nonblocking-request-0001'}, headers=headers)
+                    self.assertTrue(entered.wait(2))
+                    def probe():
+                        response = client.get('/experience/api/health')
+                        if response.status_code == 200:
+                            healthy.set()
+                        return response
+                    health = pool.submit(probe)
+                    try:
+                        responsive = healthy.wait(2)
+                    finally:
+                        release.set()
+                    self.assertEqual(pending.result().status_code, 202)
+                    self.assertEqual(health.result().status_code, 200)
+                    self.assertTrue(responsive)
+
     def test_source_change_rejects_execution(self):
         row = self.submit()
         (self.root / 'configs').mkdir()

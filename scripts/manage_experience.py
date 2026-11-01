@@ -56,7 +56,7 @@ def main():
         os.environ.setdefault("FINEVOLAB_TRACE_MODE", "batch")
         import uvicorn
         from finevolab.experience import create_app
-        uvicorn.run(create_app(public_url=args.public_url), host=args.host, port=args.port, access_log=False,
+        uvicorn.run(create_app(root=args.root.resolve(), public_url=args.public_url), host=args.host, port=args.port, access_log=False,
                     proxy_headers=True, forwarded_allow_ips="127.0.0.1,::1")
 
 

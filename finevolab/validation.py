@@ -74,7 +74,7 @@ def validate_answer(store: FinancialStore, output: dict) -> dict:
     if answer.status == "periods_not_aligned" and answer.periods_aligned is not False:
         raise ValueError("Misaligned-period status requires a comparison")
     if "request" in output:
-        from finevolab.grounded import RequestPlan, assemble_numeric
+        from finevolab.grounded import AnalysisRequestPlan as RequestPlan, assemble_numeric
         plan = RequestPlan.model_validate(output["request"])
         expected = TaskAnswer.model_validate(assemble_numeric(plan, store, []))
         if (answer.status, answer.periods_aligned) != (expected.status, expected.periods_aligned):

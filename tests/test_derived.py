@@ -28,6 +28,40 @@ class DerivedTests(unittest.TestCase):
     def setUp(self):
         self.store = FinancialStore(ROOT / "data/processed/reports.json")
 
+    def test_planned_margins_use_calculations_and_validate_coverage(self):
+        from finevolab.grounded import AnalysisRequestPlan as RequestPlan, assemble_numeric
+        for name in sorted(DERIVED_METRICS):
+            plan = RequestPlan(intent="metric", companies=["MSFT"], fiscal_year=2024, metrics=[name])
+            events = []
+            answer = assemble_numeric(plan, self.store, events)
+            output = {"answer": answer, "request": plan.model_dump()}
+            self.assertEqual(answer["status"], "complete")
+            self.assertEqual(answer["metrics"], [])
+            self.assertEqual(answer["calculations"][0]["metric"], name)
+            self.assertEqual(validate_answer(self.store, output)["status"], "passed")
+            self.assertEqual(events[-1]["tool"], "calculate_metrics")
+            source_only = plan.model_copy(update={"metrics": ["operating_income", "revenue"]})
+            output["answer"] = assemble_numeric(source_only, self.store, [])
+            with self.assertRaisesRegex(ValueError, "cover the request"):
+                validate_answer(self.store, output)
+
+    def test_planned_margin_changes_preserve_percentage_point_units(self):
+        from finevolab.grounded import AnalysisRequestPlan as RequestPlan, assemble_numeric
+        plan = RequestPlan(intent="metric", companies=["MSFT"], fiscal_year=2024,
+                           metrics=["operating_margin_change"])
+        output = assemble_numeric(plan, self.store, [])
+        self.assertIn("percentage_points", output["answer"])
+        self.assertNotIn("annual change", output["answer"])
+
+    def test_planned_margin_missing_source_has_no_partial_conclusion(self):
+        from finevolab.grounded import AnalysisRequestPlan as RequestPlan, assemble_numeric
+        plan = RequestPlan(intent="metric", companies=["ZZZZ"], fiscal_year=2024,
+                           metrics=["operating_margin"])
+        output = assemble_numeric(plan, self.store, [])
+        self.assertEqual(output["status"], "insufficient_data")
+        self.assertEqual(output["calculations"], [])
+        self.assertEqual(output["evidence_ids"], [])
+
     def set_values(self):
         for year, revenue, operating, net in ((2023, "100", "20", "10"), (2024, "200", "60", "40")):
             for name, value in (("revenue", revenue), ("operating_income", operating), ("net_income", net)):

@@ -66,7 +66,7 @@ def remember(db, owner, memory, state, ttl=86400):
     epoch = db.execute('SELECT epoch FROM memory_epochs WHERE owner=?', (owner,)).fetchone()
     if memory.get('epoch', 0) != (epoch[0] if epoch else 0):
         return False
-    from finevolab.grounded import RequestPlan
+    from finevolab.grounded import AnalysisRequestPlan as RequestPlan
     phases = state.get("phases", {})
     result = phases.get("analyze", {}).get("result", {})
     if state.get("status") != "complete" or phases.get("validate", {}).get("result", {}).get("status") != "passed":

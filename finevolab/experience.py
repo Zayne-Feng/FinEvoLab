@@ -271,7 +271,7 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
             raise HTTPException(422, "A nonempty question is required")
         if body.use_memory and policy.get('execution_mode', 'inline') != 'worker':
             raise HTTPException(409, 'Business memory requires worker execution mode')
-        row, created = access.reserve(owner, body)
+        row, created = await asyncio.to_thread(access.reserve, owner, body)
         if created and policy.get('execution_mode', 'inline') == 'inline':
             job = asyncio.create_task(execute(row))
             jobs.add(job)
