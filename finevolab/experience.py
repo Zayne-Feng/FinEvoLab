@@ -18,7 +18,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from filelock import FileLock
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 from finevolab.config import ModelConfig
 from finevolab.experience_data import public_result
@@ -34,8 +34,11 @@ class LoginRequest(BaseModel):
 
 
 class AnalysisRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     question: str = Field(min_length=1, max_length=2000)
     request_id: str = Field(pattern=r"^[a-zA-Z0-9-]{16,64}$")
+    conversation_id: str | None = Field(default=None, pattern=r"^[a-zA-Z0-9-]{1,64}$")
+    use_memory: bool = False
 
 
 def digest(value: str) -> str:
@@ -54,6 +57,9 @@ class AccessStore:
                     id TEXT PRIMARY KEY, owner TEXT, request_id TEXT, question TEXT, day TEXT,
                     status TEXT, error_type TEXT, UNIQUE(owner, request_id));
             """)
+        from finevolab.durable_tasks import TaskQueue
+        self.queue = TaskQueue(self.path)
+        self.root = directory.parents[1]
 
     @contextmanager
     def connect(self):
@@ -101,6 +107,9 @@ class AccessStore:
             if row:
                 if row["question"] != request.question:
                     raise HTTPException(409, "Request ID belongs to different input")
+                saved = db.execute("SELECT payload FROM durable_jobs WHERE task_id=?", (row['id'],)).fetchone()
+                if saved and json.loads(saved[0])['request'] != request.model_dump():
+                    raise HTTPException(409, "Request ID belongs to different input")
                 return dict(row), False
             if not self.policy.get("enabled", True):
                 raise HTTPException(503, "New analysis is paused")
@@ -109,11 +118,24 @@ class AccessStore:
             if own >= self.policy["users"][owner]["daily_tasks"] or total >= self.policy["daily_tasks"]:
                 raise HTTPException(429, "Daily task quota exceeded")
             running = db.execute("SELECT COUNT(*) FROM tasks WHERE status='running'").fetchone()[0]
-            if running >= self.policy["concurrent_tasks"]:
+            durable = self.policy.get('execution_mode', 'inline') == 'worker'
+            if not durable and running >= self.policy["concurrent_tasks"]:
                 raise HTTPException(429, "Analysis capacity is busy")
             task_id = uuid4().hex
-            db.execute("INSERT INTO tasks VALUES (?,?,?,?,?,'running',NULL)",
-                       (task_id, owner, request.request_id, request.question, day))
+            db.execute("INSERT INTO tasks VALUES (?,?,?,?,?,?,NULL)",
+                       (task_id, owner, request.request_id, request.question, day, 'queued' if durable else 'running'))
+            if durable:
+                from finevolab import business_memory
+                from finevolab.task_worker import input_identity
+                from finevolab.tracing import traceparent
+                source = input_identity(self.root, self.policy)
+                memory = business_memory.snapshot(db, owner, request.conversation_id, source, request.use_memory)
+                candidate_path = self.root / 'prompts/benchmark.json'
+                payload = {'request': request.model_dump(), 'question': request.question, 'identity': source,
+                           'memory': memory, 'budget': self.policy['budget'],
+                           'candidate': read_json(candidate_path) if candidate_path.exists() else {},
+                           'tool_backend': self.policy.get('tool_backend', 'direct')}
+                self.queue.enqueue(db, task_id, payload, traceparent())
             return dict(db.execute("SELECT * FROM tasks WHERE id=?", (task_id,)).fetchone()), True
 
     def task(self, owner: str, task_id: str) -> dict:
@@ -133,6 +155,8 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
     root = root.resolve()
     access_path = access_path or Path(os.environ.get("FINEVOLAB_ACCESS_CONFIG", str(root / "output/experience/access.json")))
     policy = json.loads(access_path.read_text(encoding="utf-8"))
+    if policy.get('execution_mode', 'inline') not in {'inline', 'worker'}:
+        raise ValueError('Unknown task execution mode')
     if not policy.get("users") or policy["daily_tasks"] < 1 or policy["concurrent_tasks"] < 1:
         raise ValueError("An invitation policy and positive quotas are required")
     for owner, user in policy["users"].items():
@@ -158,7 +182,8 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
     async def lifespan(app):
         with instance_lock.acquire(timeout=0):
             with access.connect() as db:
-                db.execute("UPDATE tasks SET status='interrupted', error_type='ProcessRestart' WHERE status='running'")
+                db.execute("UPDATE tasks SET status='interrupted', error_type='ProcessRestart' WHERE status='running' "
+                           "AND id NOT IN (SELECT task_id FROM durable_jobs)")
             yield
             for task in jobs:
                 task.cancel()
@@ -216,7 +241,10 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
         day = datetime.now(timezone.utc).date().isoformat()
         with access.connect() as db:
             used = db.execute("SELECT COUNT(*) FROM tasks WHERE owner=? AND day=?", (owner, day)).fetchone()[0]
+            preferences = db.execute('SELECT value FROM business_preferences WHERE owner=?', (owner,)).fetchone()
         return {"user": owner, "used": used, "daily_tasks": policy["users"][owner]["daily_tasks"],
+                "execution_mode": policy.get('execution_mode', 'inline'),
+                "preferences": json.loads(preferences[0]) if preferences else None,
                 "quota_timezone": "UTC", "budget": policy["budget"], "enabled": policy.get("enabled", True)}
 
     async def execute(row):
@@ -241,12 +269,54 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
         owner = access.owner(request)
         if not body.question.strip():
             raise HTTPException(422, "A nonempty question is required")
+        if body.use_memory and policy.get('execution_mode', 'inline') != 'worker':
+            raise HTTPException(409, 'Business memory requires worker execution mode')
         row, created = access.reserve(owner, body)
-        if created:
+        if created and policy.get('execution_mode', 'inline') == 'inline':
             job = asyncio.create_task(execute(row))
             jobs.add(job)
             job.add_done_callback(jobs.discard)
         return {"task_id": row["id"], "status": row["status"], "reused": not created}
+
+    @app.post('/experience/api/tasks/{task_id}/cancel')
+    async def cancel_task(task_id: str, request: Request):
+        owner = access.owner(request)
+        access.task(owner, task_id)
+        if not access.queue.detail(task_id):
+            raise HTTPException(409, 'Cancellation requires a durable task')
+        access.queue.cancel(owner, task_id)
+        return {'task_id': task_id, 'status': access.task(owner, task_id)['status']}
+
+    @app.get('/experience/api/memory')
+    async def memory(request: Request, conversation_id: str = ''):
+        from finevolab import business_memory
+        from finevolab.task_worker import input_identity
+        with access.connect() as db:
+            return business_memory.snapshot(db, access.owner(request), conversation_id,
+                                            input_identity(root, policy))
+
+    @app.put('/experience/api/memory/preferences')
+    async def preferences(body: dict, request: Request):
+        owner = access.owner(request)
+        from finevolab.business_memory import Preferences
+        from pydantic import ValidationError
+        try:
+            value = Preferences.model_validate(body).model_dump()
+        except ValidationError:
+            raise HTTPException(422, 'Invalid display preferences') from None
+        with access.connect() as db:
+            db.execute('INSERT OR REPLACE INTO business_preferences VALUES (?,?)', (owner, json.dumps(value)))
+        return value
+
+    @app.delete('/experience/api/memory')
+    async def delete_memory(request: Request):
+        owner = access.owner(request)
+        with access.connect() as db:
+            db.execute('BEGIN IMMEDIATE')
+            db.execute('INSERT INTO memory_epochs VALUES (?,1) ON CONFLICT(owner) DO UPDATE SET epoch=epoch+1', (owner,))
+            db.execute("UPDATE business_context SET revision=revision+1,context='{}',source='',expires=0,task_id=NULL WHERE owner=?", (owner,))
+            db.execute('DELETE FROM business_preferences WHERE owner=?', (owner,))
+        return {'status': 'deleted'}
 
     @app.get("/experience/api/tasks")
     async def history(request: Request):
@@ -261,6 +331,19 @@ def create_app(root: Path = ROOT, access_path: Path | None = None, runner=None,
         path = root / "output/tasks" / row["id"] / "state.json"
         result = public_result(read_json(path)) if path.is_file() else {"task_id": task_id, "phases": {}}
         result.update(status=row["status"], question=row["question"], error_type=row["error_type"])
+        detail = access.queue.detail(task_id)
+        if detail:
+            result['queue_seconds'] = detail['queue_seconds']
+            result['execution_attempts'] = detail['attempts']
+            result['memory_context'] = detail['memory']
+            from decimal import Decimal
+            scale_name = detail['memory']['preferences']['amount_scale']
+            divisor = {'units': 1, 'millions': 1000000, 'billions': 1000000000}[scale_name]
+            result['presentation'] = {'preferences': detail['memory']['preferences'], 'metrics': [
+                {'company': item['company'], 'name': item['name'],
+                 'value': format(Decimal(str(item['value'])) / divisor, 'f'),
+                 'scale': scale_name, 'currency': item.get('currency', 'USD')}
+                for item in (result.get('answer') or {}).get('metrics', []) if 'value' in item]}
         result["reports"] = [kind for kind in ("html", "pdf")
             if row["status"] == "complete" and (path.parent / "report" / ("report." + kind)).is_file()]
         return result

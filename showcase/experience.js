@@ -1,10 +1,24 @@
 "use strict";
 (() => {
   const data = window.FINEVOLAB_SHOWCASE?.experience;
+  let conversationId = crypto.randomUUID();
   const live = document.documentElement.dataset.live === "true";
   const id = (name) => document.getElementById(name);
   const copy = {
     "zh-CN": {
+      preferencesSaved: "展示偏好已保存。",
+      memoryCleared: "业务记忆已清除。",
+      amountScale: "金额展示单位",
+      units: "原单位",
+      millions: "百万",
+      billions: "十亿",
+      savePreferences: "保存展示偏好",
+      queued: "排队中",
+      cancelled: "已取消",
+      memoryLabel: "沿用本轮会话上下文",
+      newConversation: "新建会话",
+      clearMemory: "清除业务记忆",
+      cancelTask: "取消任务",
       technicalDetails: "技术详情",
       dataVersion: "数据版本",
       skip: "跳转到正文",
@@ -94,6 +108,19 @@
       loading: "正在读取任务。",
     },
     en: {
+      preferencesSaved: "Display preferences saved.",
+      memoryCleared: "Business memory cleared.",
+      amountScale: "Amount display scale",
+      units: "Original units",
+      millions: "Millions",
+      billions: "Billions",
+      savePreferences: "Save display preferences",
+      queued: "Queued",
+      cancelled: "Cancelled",
+      memoryLabel: "Use this conversation context",
+      newConversation: "New conversation",
+      clearMemory: "Clear business memory",
+      cancelTask: "Cancel task",
       technicalDetails: "Technical details",
       dataVersion: "Data version",
       skip: "Skip to content",
@@ -353,6 +380,13 @@
       `${t("dataVersion")} · ${data.data_version}`;
   }
   function renderSession() {
+    if (id("use-memory")) {
+      id("use-memory").disabled = session?.execution_mode !== "worker";
+      if (id("use-memory").disabled) id("use-memory").checked = false;
+    }
+    for (const name of ["amount-scale", "save-preferences"]) {
+      if (id(name)) id(name).disabled = session?.execution_mode !== "worker";
+    }
     id("login-form").hidden = !live || Boolean(session);
     id("analysis-workspace").hidden = !session;
     const mode =
@@ -371,6 +405,8 @@
         `${session.user} · ${t("quota")} ${session.used}/${session.daily_tasks} · UTC`;
   }
   function renderTask(state) {
+    const duration = (value) =>
+      `${Number(value).toLocaleString(language, { maximumFractionDigits: 3 })} ${t("seconds")}`;
     lastState = state;
     const target = id("task-output");
     target.replaceChildren(
@@ -382,6 +418,40 @@
       phases.append(node("span", `${t(key)} · ${t(value.status)}`)),
     );
     target.append(phases, node("p", t(state.status)));
+    if (
+      live &&
+      Number.isFinite(state.execution_attempts) &&
+      ["queued", "running"].includes(state.status)
+    ) {
+      const cancel = node("button", t("cancelTask"), "language");
+      cancel.type = "button";
+      cancel.onclick = async () => {
+        try {
+          await api("tasks/" + state.task_id + "/cancel", {});
+          await watch(state.task_id);
+        } catch (error) {
+          fail(error);
+        }
+      };
+      target.append(cancel);
+    }
+    if (Number.isFinite(state.queue_seconds))
+      target.append(
+        node("p", `${t("queued")} · ${duration(state.queue_seconds)}`),
+      );
+    if (state.presentation?.metrics?.length) {
+      const amounts = node("details");
+      amounts.append(node("summary", t("amountScale")));
+      state.presentation.metrics.forEach((item) =>
+        amounts.append(
+          node(
+            "p",
+            `${item.company} · ${t(item.name)} · ${item.value} ${t(item.scale)} ${item.currency}`,
+          ),
+        ),
+      );
+      target.append(amounts);
+    }
     const timedPhases = Object.entries(state.phases || {}).filter(([, value]) =>
       Number.isFinite(value.duration_seconds),
     );
@@ -389,8 +459,7 @@
       const timing = node("details", undefined, "execution-timing");
       timing.append(node("summary", t("timeline")));
       const rows = node("ol");
-      const duration = (value) =>
-        `${Number(value).toLocaleString(language, { maximumFractionDigits: 3 })} ${t("seconds")}`;
+
       timedPhases.forEach(([phase, value]) => {
         const row = node(
           "li",
@@ -489,16 +558,17 @@
   function setStatus(text) {
     id("live-status").textContent = text;
   }
-  async function api(path, body) {
+  async function api(path, body, method) {
     let response;
     try {
       response = await fetch("/experience/api/" + path, {
-        method: body ? "POST" : "GET",
+        method: method || (body ? "POST" : "GET"),
         credentials: "same-origin",
         cache: "no-store",
-        headers: body
-          ? { "Content-Type": "application/json", "X-FinEvoLab": "1" }
-          : {},
+        headers:
+          body || method
+            ? { "Content-Type": "application/json", "X-FinEvoLab": "1" }
+            : {},
         body: body ? JSON.stringify(body) : undefined,
       });
     } catch (error) {
@@ -529,6 +599,7 @@
     session = null;
     lastState = null;
     requestIdentity = null;
+    conversationId = crypto.randomUUID();
     try {
       sessionStorage.removeItem("finevolab.experience.task");
     } catch {}
@@ -564,13 +635,23 @@
     try {
       sessionStorage.setItem("finevolab.experience.task", taskId);
     } catch {}
+    let contextRestored = false;
     const poll = async () => {
       try {
         const state = await api("tasks/" + taskId);
         if (version !== generation) return;
+        if (!contextRestored && state.memory_context?.conversation) {
+          conversationId = state.memory_context.conversation;
+          if (id("use-memory"))
+            id("use-memory").checked = state.memory_context.enabled;
+        }
+        contextRestored = true;
         renderTask(state);
-        id("submit-task").disabled = state.status === "running";
-        if (state.status === "running") timer = setTimeout(poll, 1800);
+        id("submit-task").disabled = ["queued", "running"].includes(
+          state.status,
+        );
+        if (["queued", "running"].includes(state.status))
+          timer = setTimeout(poll, 1800);
         else {
           const updated = await api("session");
           if (version !== generation) return;
@@ -594,6 +675,12 @@
       const updated = await api("session");
       if (version !== generation) return;
       session = updated;
+      if (updated.preferences) {
+        language = updated.preferences.language === "en" ? "en" : "zh-CN";
+        if (id("amount-scale"))
+          id("amount-scale").value = updated.preferences.amount_scale;
+        languageChanged();
+      }
       renderSession();
       await history();
       if (version !== generation) return;
@@ -702,7 +789,12 @@
     const question = id("question").value.trim();
     if (!question) return;
     if (!requestIdentity || requestIdentity.question !== question)
-      requestIdentity = { question, request_id: crypto.randomUUID() };
+      requestIdentity = {
+        question,
+        request_id: crypto.randomUUID(),
+        conversation_id: conversationId,
+        use_memory: id("use-memory")?.checked || false,
+      };
     id("submit-task").disabled = true;
     setStatus(t("running"));
     try {
@@ -714,6 +806,38 @@
       fail(error);
     }
   };
+  if (id("save-preferences"))
+    id("save-preferences").onclick = async () => {
+      try {
+        await api(
+          "memory/preferences",
+          {
+            language: language === "en" ? "en" : "zh",
+            amount_scale: id("amount-scale").value,
+          },
+          "PUT",
+        );
+        setStatus(t("preferencesSaved"));
+      } catch (error) {
+        fail(error);
+      }
+    };
+  if (id("new-conversation"))
+    id("new-conversation").onclick = () => {
+      conversationId = crypto.randomUUID();
+      requestIdentity = null;
+      id("question").value = "";
+    };
+  if (id("clear-memory"))
+    id("clear-memory").onclick = async () => {
+      try {
+        await api("memory", undefined, "DELETE");
+        conversationId = crypto.randomUUID();
+        setStatus(t("memoryCleared"));
+      } catch (error) {
+        fail(error);
+      }
+    };
   languageChanged();
   if (live) restore();
 })();

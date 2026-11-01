@@ -14,7 +14,10 @@ sys.path.insert(0, str(ROOT))
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("action", choices=("invite", "serve"))
+    parser.add_argument("action", choices=("invite", "serve", "worker", "configure"))
+    parser.add_argument('--execution-mode', choices=['inline', 'worker'], default='worker')
+    parser.add_argument('--once', action='store_true')
+    parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument("--user", default="owner")
     parser.add_argument("--config", type=Path, default=ROOT / "output/experience/access.json")
     parser.add_argument("--port", type=int, default=8085)
@@ -35,6 +38,19 @@ def main():
         invitation = args.config.parent / ("invite-" + hashlib.sha256(args.user.encode()).hexdigest()[:12] + ".txt")
         invitation.write_text(token + "\n", encoding="utf-8")
         print(json.dumps({"status": "created", "user": args.user, "invitation_file": str(invitation)}))
+    elif args.action == 'configure':
+        policy = json.loads(args.config.read_text(encoding='utf-8'))
+        policy['execution_mode'] = args.execution_mode
+        args.config.write_text(json.dumps(policy, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps({'execution_mode': args.execution_mode}))
+    elif args.action == 'worker':
+        import asyncio
+        from finevolab.task_worker import serve
+        os.environ.setdefault('FINEVOLAB_TRACE_MODE', 'batch')
+        policy = json.loads(args.config.read_text(encoding='utf-8'))
+        if policy.get('execution_mode') != 'worker':
+            raise ValueError('Worker execution mode is required')
+        asyncio.run(serve(args.root.resolve(), policy, args.once))
     else:
         os.environ["FINEVOLAB_ACCESS_CONFIG"] = str(args.config.resolve())
         os.environ.setdefault("FINEVOLAB_TRACE_MODE", "batch")

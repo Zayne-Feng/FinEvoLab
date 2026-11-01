@@ -83,6 +83,48 @@
                   退出登录
                 </button>
               </div>
+              <div class="session-row">
+                <label
+                  ><input type="checkbox" id="use-memory" /><span
+                    data-text="memoryLabel"
+                    >沿用本轮会话上下文</span
+                  ></label
+                >
+                <button
+                  type="button"
+                  class="language"
+                  id="new-conversation"
+                  data-text="newConversation"
+                >
+                  新建会话
+                </button>
+                <button
+                  type="button"
+                  class="language"
+                  id="clear-memory"
+                  data-text="clearMemory"
+                >
+                  清除业务记忆
+                </button>
+              </div>
+              <div class="session-row">
+                <label
+                  ><span data-text="amountScale">金额展示单位</span
+                  ><select id="amount-scale">
+                    <option value="units" data-text="units">原单位</option>
+                    <option value="millions" data-text="millions">百万</option>
+                    <option value="billions" data-text="billions">十亿</option>
+                  </select></label
+                >
+                <button
+                  type="button"
+                  class="language"
+                  id="save-preferences"
+                  data-text="savePreferences"
+                >
+                  保存展示偏好
+                </button>
+              </div>
               <form id="question-form">
                 <label for="question" data-text="question">分析问题</label
                 ><textarea

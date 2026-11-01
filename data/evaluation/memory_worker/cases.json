@@ -1,0 +1,552 @@
+[
+  {
+    "id": "msft-previous",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "上一年呢？",
+    "required": [
+      "MSFT",
+      "fiscal year 2023",
+      "revenue"
+    ]
+  },
+  {
+    "id": "msft-growth",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "再和上一年比较",
+    "required": [
+      "MSFT",
+      "growth for fiscal year 2024",
+      "revenue"
+    ]
+  },
+  {
+    "id": "msft-follow",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那它呢？",
+    "required": [
+      "MSFT",
+      "fiscal year 2024",
+      "revenue"
+    ]
+  },
+  {
+    "id": "msft-override",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "MSFT FY2022 revenue",
+    "required": [
+      "MSFT FY2022 revenue"
+    ]
+  },
+  {
+    "id": "msft-explicit",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "AAPL FY2023 net income",
+    "required": [
+      "AAPL FY2023 net income"
+    ]
+  },
+  {
+    "id": "msft-year",
+    "split": "development",
+    "context": {
+      "companies": [
+        "MSFT"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那2022年呢？",
+    "required": [
+      "MSFT",
+      "fiscal year 2022",
+      "revenue"
+    ]
+  },
+  {
+    "id": "aapl-previous",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "上一年呢？",
+    "required": [
+      "AAPL",
+      "fiscal year 2022",
+      "net_income"
+    ]
+  },
+  {
+    "id": "aapl-growth",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "再和上一年比较",
+    "required": [
+      "AAPL",
+      "growth for fiscal year 2023",
+      "net_income"
+    ]
+  },
+  {
+    "id": "aapl-follow",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "那它呢？",
+    "required": [
+      "AAPL",
+      "fiscal year 2023",
+      "net_income"
+    ]
+  },
+  {
+    "id": "aapl-override",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "AAPL FY2022 revenue",
+    "required": [
+      "AAPL FY2022 revenue"
+    ]
+  },
+  {
+    "id": "aapl-explicit",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "AAPL FY2023 net income",
+    "required": [
+      "AAPL FY2023 net income"
+    ]
+  },
+  {
+    "id": "aapl-year",
+    "split": "development",
+    "context": {
+      "companies": [
+        "AAPL"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "那2022年呢？",
+    "required": [
+      "AAPL",
+      "fiscal year 2022",
+      "net_income"
+    ]
+  },
+  {
+    "id": "googl-previous",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "上一年呢？",
+    "required": [
+      "GOOGL",
+      "fiscal year 2021",
+      "revenue"
+    ]
+  },
+  {
+    "id": "googl-growth",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "再和上一年比较",
+    "required": [
+      "GOOGL",
+      "growth for fiscal year 2022",
+      "revenue"
+    ]
+  },
+  {
+    "id": "googl-follow",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那它呢？",
+    "required": [
+      "GOOGL",
+      "fiscal year 2022",
+      "revenue"
+    ]
+  },
+  {
+    "id": "googl-override",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "GOOGL FY2022 revenue",
+    "required": [
+      "GOOGL FY2022 revenue"
+    ]
+  },
+  {
+    "id": "googl-explicit",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "AAPL FY2023 net income",
+    "required": [
+      "AAPL FY2023 net income"
+    ]
+  },
+  {
+    "id": "googl-year",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "GOOGL"
+      ],
+      "fiscal_year": 2022,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那2022年呢？",
+    "required": [
+      "GOOGL",
+      "fiscal year 2022",
+      "revenue"
+    ]
+  },
+  {
+    "id": "amzn-previous",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "上一年呢？",
+    "required": [
+      "AMZN",
+      "fiscal year 2023",
+      "net_income"
+    ]
+  },
+  {
+    "id": "amzn-growth",
+    "split": "validation",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "再和上一年比较",
+    "required": [
+      "AMZN",
+      "growth for fiscal year 2024",
+      "net_income"
+    ]
+  },
+  {
+    "id": "amzn-follow",
+    "split": "test",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "那它呢？",
+    "required": [
+      "AMZN",
+      "fiscal year 2024",
+      "net_income"
+    ]
+  },
+  {
+    "id": "amzn-override",
+    "split": "test",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "AMZN FY2022 revenue",
+    "required": [
+      "AMZN FY2022 revenue"
+    ]
+  },
+  {
+    "id": "amzn-explicit",
+    "split": "test",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "AAPL FY2023 net income",
+    "required": [
+      "AAPL FY2023 net income"
+    ]
+  },
+  {
+    "id": "amzn-year",
+    "split": "test",
+    "context": {
+      "companies": [
+        "AMZN"
+      ],
+      "fiscal_year": 2024,
+      "metrics": [
+        "net_income"
+      ]
+    },
+    "question": "那2022年呢？",
+    "required": [
+      "AMZN",
+      "fiscal year 2022",
+      "net_income"
+    ]
+  },
+  {
+    "id": "meta-previous",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "上一年呢？",
+    "required": [
+      "META",
+      "fiscal year 2022",
+      "revenue"
+    ]
+  },
+  {
+    "id": "meta-growth",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "再和上一年比较",
+    "required": [
+      "META",
+      "growth for fiscal year 2023",
+      "revenue"
+    ]
+  },
+  {
+    "id": "meta-follow",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那它呢？",
+    "required": [
+      "META",
+      "fiscal year 2023",
+      "revenue"
+    ]
+  },
+  {
+    "id": "meta-override",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "META FY2022 revenue",
+    "required": [
+      "META FY2022 revenue"
+    ]
+  },
+  {
+    "id": "meta-explicit",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "AAPL FY2023 net income",
+    "required": [
+      "AAPL FY2023 net income"
+    ]
+  },
+  {
+    "id": "meta-year",
+    "split": "test",
+    "context": {
+      "companies": [
+        "META"
+      ],
+      "fiscal_year": 2023,
+      "metrics": [
+        "revenue"
+      ]
+    },
+    "question": "那2022年呢？",
+    "required": [
+      "META",
+      "fiscal year 2022",
+      "revenue"
+    ]
+  }
+]
