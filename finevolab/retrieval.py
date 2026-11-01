@@ -4,6 +4,7 @@ from collections import OrderedDict, defaultdict
 from functools import lru_cache
 import hashlib
 import json
+from math import log1p
 from pathlib import Path
 import re
 from threading import RLock
@@ -271,7 +272,9 @@ class ReportIndex:
                         and (report_type is None or item["report_type"] == report_type)]
             lexical = BM25Okapi([tokenize(item["text"]) for item in filtered]) if filtered else None
             if lexical is not None:
-                lexical.idf = {token: max(0.0, weight) for token, weight in lexical.idf.items()}
+                # Use the smoothed IDF of a term present in every scoped passage.
+                floor = log1p(0.5 / (len(filtered) + 0.5))
+                lexical.idf = {token: max(floor, weight) for token, weight in lexical.idf.items()}
             return self._remember(self._scopes, key, (filtered, lexical), self.cache_size)
 
     def _query_vector(self, query):

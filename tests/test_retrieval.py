@@ -20,6 +20,21 @@ class RetrievalTests(unittest.TestCase):
         self.assertTrue(all(item["company"] == "MSFT" and item["report_year"] == 2024 for item in results))
         self.assertEqual(ReportIndex(chunks).search("revenue", company="MISSING"), [])
 
+    def test_matching_terms_survive_small_filtered_scopes(self):
+        chunks = [{"id": "a", "company": "MSFT", "report_year": 2024, "report_type": "uploaded",
+                   "text": "Revenue increased because subscription demand improved."},
+                  {"id": "b", "company": "MSFT", "report_year": 2024, "report_type": "uploaded",
+                   "text": "Revenue increased because subscription demand remained strong."},
+                  {"id": "c", "company": "OTHER", "report_year": 2024, "report_type": "uploaded",
+                   "text": "Subscription demand from an unrelated company."}]
+        for scope in (chunks[:1], chunks):
+            with self.subTest(chunks=len(scope)):
+                index = ReportIndex(scope)
+                results = index.search("subscription demand", company="MSFT", year=2024)
+                self.assertEqual({item["id"] for item in results}, {item["id"] for item in scope if item["company"] == "MSFT"})
+                self.assertTrue(all(item["score"] > 0 for item in results))
+                self.assertEqual(index.search("nonexistentword", company="MSFT", year=2024), [])
+
     def test_table_preserves_header_and_units(self):
         chunks = json.loads((ROOT / "data/indexes/structured.json").read_text())
         statements = [item for item in chunks if item["kind"] == "table"
