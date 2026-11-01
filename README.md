@@ -16,9 +16,9 @@
 
 </div>
 
-FinEvoLab answers questions about financial reports, compares companies, calculates growth and profit margins, and generates reports with traceable citations. It combines hybrid RAG, deterministic financial tools, a resumable execution harness, and QLoRA request planning, with a bilingual web interface and reproducible evaluations.
+FinEvoLab turns financial reports into source-grounded answers, company comparisons, and growth and profit margin calculations. Hybrid RAG retrieves evidence, deterministic tools compute financial results, and a resumable harness validates outputs and generates cited HTML/PDF reports. The system includes QLoRA request planning, a bilingual web interface, and reproducible evaluations.
 
-[Capabilities](#section-capabilities) · [Quick start](#section-quick-start) · [Results](#section-results) · [Reproduce](#section-reproduce) · [Optional services](#section-services) · [Web deployment](#section-web) · [License](#section-license)
+[Capabilities](#section-capabilities) · [Quick start](#section-quick-start) · [Results](#section-results) · [Reproduce](#section-reproduce) · [Runtime services](#section-services) · [Web deployment](#section-web) · [License](#section-license)
 
 ---
 
@@ -28,18 +28,19 @@ FinEvoLab answers questions about financial reports, compares companies, calcula
 
 | Capability | Implementation and output |
 | --- | --- |
-| **Reports and evidence** | SEC / company IR snapshots, financial metric extraction, period and unit checks, and citations that locate the original sources; supports selected HTML files and PDFs with extractable text. |
-| **RAG** | BM25, multilingual E5, and RRF hybrid retrieval over the fixed corpus; retrieval within selected uploaded documents; combined numerical and narrative analysis; optional shared Redis caching and a versioned Milvus vector backend. |
-| **Agent and tools** | Agents SDK interprets requests and invokes metric lookup, growth calculation, company comparison, and report tools. Programs compute amounts and formulas and assemble financial objects from actual tool results. |
-| **Harness** | Schema, source, and task-status validation, at most one targeted repair, version-bound stage checkpoints, execution recovery, and optional self-check or isolated evidence-review roles within the same task budget. |
-| **MCP and observability** | Read-only financial MCP Server / Client, strict schemas and server-side access scopes, correlated execution traces, and repeatable load / recovery measurements. |
-| **Models and interface** | DeepSeek API, Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planning backends, FastAPI endpoints, a bilingual web interface, and HTML / PDF reports. |
+| **Reports and evidence** | SEC / company IR snapshots and selected HTML uploads or PDFs with extractable text, with metric extraction, period and unit checks, and source locations. |
+| **RAG** | BM25, multilingual E5, and RRF hybrid retrieval for the fixed corpus; document-scoped retrieval for uploads; optional Cross-Encoder reranking, Redis caching, and Milvus vector storage. |
+| **Agent and tools** | Agents SDK request planning and tool execution for metrics, growth, margins, company comparison, and reports. Financial values and formulas are computed from source-bound observations. |
+| **Harness** | Schema, source, and task-status validation; at most one targeted repair; version-bound checkpoints and recovery; optional self-check or isolated evidence review within the task budget. |
+| **MCP and observability** | Read-only financial MCP Server / Client, strict schemas and access scopes, correlated traces, and repeatable latency, load, and recovery checks. |
+| **Memory and tasks** | Owner-scoped context and display preferences, transactional admission, persistent workers, task cancellation, and checkpoint recovery. |
+| **Models and interface** | DeepSeek API and Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 planners, FastAPI endpoints, a bilingual interface, and HTML / PDF reports. |
 
 ```text
 Question → RequestPlan → Evidence retrieval & financial tools → Validation → Report
 ```
 
-The default API mode runs with CPU retrieval. The LoRA service runs on an external GPU and connects through SSH port forwarding. LoRA handles `RequestPlan` planning, while the API model generates explanatory narratives. All backends share the financial tools, RAG, and harness.
+The default API backend uses CPU retrieval. The optional LoRA service runs on an external GPU through SSH port forwarding: LoRA produces the `RequestPlan`, and the API model generates explanatory narratives. Both paths share the financial tools, RAG, and harness.
 
 FinEvoLab's core workflows are implemented in `finevolab/`, with data preparation, training, and experiments in the supporting directories. Reused infrastructure and the pinned comparison baseline are kept in `finrobot_equity/`.
 
@@ -88,7 +89,12 @@ openai_base_url = https://api.deepseek.com/
 conda run --no-capture-output -n finevolab python -m uvicorn finevolab.integrated_web:app --host 127.0.0.1 --port 8003
 ```
 
-Open **http://127.0.0.1:8003/finevolab**. Try “Compare Apple and Microsoft revenue for fiscal year 2023 and explain the fiscal-period differences,” or “Calculate Microsoft year-over-year revenue growth for fiscal year 2023 and cite the report to explain the change.” Dependency locks are in [environments/](environments/) and [requirements/](requirements/). The retrieval model and revision are pinned in [retrieval.json](configs/retrieval.json).
+Open **http://127.0.0.1:8003/finevolab** and try:
+
+- **Company comparison:** Compare Apple and Microsoft revenue for fiscal year 2023 and explain their fiscal-period differences.
+- **Evidence-backed explanation:** Calculate Microsoft year-over-year revenue growth for fiscal year 2023 and cite the report to explain the change.
+
+Dependency locks are in [environments/](environments/) and [requirements/](requirements/). The retrieval model and revision are pinned in [retrieval.json](configs/retrieval.json).
 
 <details>
 <summary><strong>Financial APIs, audited margins, and explicit scenarios</strong></summary>
@@ -119,9 +125,9 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 | Evaluation scope | Strict successes and resource metrics | Evidence |
 | --- | --- | --- |
-| Common supported business-Agent tasks | Earlier FinEvoLab engine 179/195 → improved engine 195/195; 65 questions, 3 repetitions each | [Business evaluation](project_notes/experiments/scope-test-v1/assessment.json) |
-| Expanded business-Agent main test | 291/300, 97.00%; 100 questions, 3 repetitions each | [Full results](project_notes/experiments/scope-test-v1/assessment.json) |
-| Request-planner formal test | Qwen base 109/240; LoRA seed 17: 212/240, seed 29: 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
+| Common supported business Agent tasks | Earlier FinEvoLab engine 179/195 → improved engine 195/195; 65 questions, 3 repetitions each | [Business evaluation](project_notes/experiments/scope-test-v1/assessment.json) |
+| Expanded business Agent main test | 291/300, 97.00%; 100 questions, 3 repetitions each | [Full results](project_notes/experiments/scope-test-v1/assessment.json) |
+| Formal request planning test | Qwen base 109/240; LoRA seed 17: 212/240, seed 29: 213/240; DeepSeek 227/240 | [QLoRA comparison](project_notes/evaluations/planner_formal_results.json) |
 | Same-weight planner BF16 / NF4 inference | Strict successes: 212/240 and 211/240; NF4 reduced peak allocated memory by 62.58% and increased mean inference time by 47.18% | [Quantization results](project_notes/evaluations/planner_quantization.json) |
 | Retrieval cache comparison | 135 query configurations × 5 repetitions; identical results; warm mean 68.52 → 6.16 ms, 11.12× | [Cache comparison](project_notes/experiments/retrieval-cache-v1/summary.json) |
 | Shared Redis retrieval cache | Four arms, 77 questions × 3 repetitions; 693 paired comparisons with identical passages; warm mean 91.13 → 22.44 ms, 4.06× | [Service comparison](project_notes/evaluations/retrieval_service_comparison.json) |
@@ -131,7 +137,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 Business strict scores combine the numerical, period, source, and task-contract checks applicable to each question with evidence support for narrative claims. Planner strict scores check the `RequestPlan` schema and relevant request semantics. In the paired quantization run, BF16 / NF4 peak allocated memory was 7.995 / 2.992 GiB and mean per-request inference time was 3.759 / 5.532 s, including input encoding, generation, and decoding.
 
-The project has completed business-Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The complete core regression passed **311 tests**; see [runtime verification](project_notes/evaluations/worker_service_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
+The project has completed business Agent evaluation, component ablations, QLoRA with two seeds, quantization comparisons, and live web acceptance. Run and source references are listed in the [experiment inventory](project_notes/evaluations/experiment_inventory.json); live LoRA service and web checks are recorded in [service acceptance](project_notes/run_logs/planner_deployment_checks.json). The archived core regression passed **311 tests**; see [runtime verification](project_notes/evaluations/worker_service_acceptance.json). The archived reproduction export passed 178 tests; see [reproduction-copy acceptance](project_notes/run_logs/experience_acceptance.json).
 
 <details>
 <summary><strong>Analysis extensions: paired results and reproduction</strong></summary>
@@ -157,7 +163,18 @@ conda run --no-capture-output -n finevolab python scripts/summarize_analysis_ext
 
 ## Reproducing experiments
 
-Code and inputs are organized as follows: `finevolab/` contains business modules, `scripts/` contains data and experiment entry points, `configs/` and `prompts/` contain functional configuration, `finevolab/templates/` contains HTML templates for the web interface and business reports, `data/` contains source snapshots and frozen datasets, and `tests/` contains regression and frontend checks. JSON / JSONL files, environment snapshots, and representative images under `project_notes/` provide versioned experimental evidence. Development notes and optional Markdown report templates remain local; formal summaries are recorded as JSON results.
+The repository separates application code, reproducibility inputs, and experimental evidence:
+
+| Directory | Contents |
+| --- | --- |
+| `finevolab/` | Analysis workflows, financial tools, retrieval, runtime services, and API modules. |
+| `finevolab/templates/` | Application pages and HTML report templates. |
+| `scripts/` | Data preparation, training, evaluation, verification, and service management commands. |
+| `configs/`, `prompts/` | Functional settings, model identities, and versioned prompts. |
+| `data/` | Source snapshots, processed observations, index metadata, and frozen datasets. |
+| `tests/` | Financial, workflow, service, and frontend regression checks. |
+| `finrobot_equity/` | Reused infrastructure and the pinned comparison baseline. |
+| `project_notes/` | Versioned JSON / JSONL results, environment snapshots, and representative figures. Explanatory Markdown and optional report templates remain local. |
 
 The development / validation / test splits contain 50/50/100 business tasks and 600/120/240 internally authored bilingual planner tasks. The planner development split supplies the SFT training examples. Use the frozen datasets and manifests in the repository. The following commands replay numerical results from archived predictions or run a business comparison with 3 repetitions under a new run ID, review narrative evidence, and aggregate strict scores:
 
@@ -296,7 +313,7 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_runtime_refi
 
 <div id="section-services"></div>
 
-## Optional retrieval services and evidence review
+## Runtime services and optional backends
 
 <details>
 <summary><strong>Redis and Milvus setup</strong></summary>
@@ -391,7 +408,7 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_trace_modes.
   --output output/reproduction/trace_export
 ```
 
-Formal local acceptance completed **1080/1080 requests**, **15/15 permission checks**, **1080 correlated traces / 2880 spans**, and **10/10 injected-failure recoveries**. Normal-load failure and timeout counts were zero. These measurements cover fixed tools and services; business-task accuracy retains its original evaluation scope. Per-request records, p50 / p95, throughput, source identities, and representative traces are in [MCP and Trace acceptance](project_notes/evaluations/mcp_trace_acceptance.json).
+Formal local acceptance completed **1080/1080 requests**, **15/15 permission checks**, **1080 correlated traces / 2880 spans**, and **10/10 injected-failure recoveries**. Normal-load failure and timeout counts were zero. These measurements cover fixed tools and services; business task accuracy retains its original evaluation scope. Per-request records, p50 / p95, throughput, source identities, and representative traces are in [MCP and Trace acceptance](project_notes/evaluations/mcp_trace_acceptance.json).
 
 Controlled export measurement completed **2880/2880 requests** across four trace modes. At concurrency 4, MCP response p95 decreased from **2627.01 to 80.79 ms** with buffered export, a **96.92%** reduction; throughput including export draining increased from **2.50 to 4.68 requests/s**. File-backed groups retained **1440 complete traces / 4320 spans**. See [trace export comparison](project_notes/evaluations/trace_export_comparison.json).
 
@@ -402,9 +419,15 @@ The uncached business comparison passed **36/36 tasks per backend**, using **12 
 <details>
 <summary><strong>Business memory and durable task workers</strong></summary>
 
-The invited workspace supports owner-scoped conversation context and explicit language/amount-scale preferences. Opt in to context inheritance in the workspace, start a new conversation, or clear business memory. Relative years are resolved before planning; context retains validated request fields and task references, while financial amounts continue to come from tools. Display scaling preserves canonical financial objects. Context expires after 24 hours and is invalidated by source/configuration changes; clearing memory prevents pending tasks from restoring it.
+The invited workspace supports owner-scoped conversation context and explicit language/amount-scale preferences. Opt in to context inheritance in the workspace, start a new conversation, or clear business memory. Relative years are resolved before planning; context retains validated request fields and task references, while financial amounts continue to come from tools. Display scaling preserves canonical financial objects. Context snapshots are checked at submission against a 24-hour expiry and source/configuration identity. Submitted tasks retain their frozen context; clearing memory prevents those tasks from repopulating it.
 
-The default execution mode is `inline`. Select `worker` to atomically reserve quota and enqueue tasks in the existing local SQLite database:
+The default execution mode is `inline`. On first use, create an invitation and its private access configuration; reuse an existing invitation on subsequent starts:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
+```
+
+Select `worker` execution mode and start the Web process. In this mode, task submission atomically reserves quota and enqueues the task in the existing local SQLite database:
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
@@ -426,7 +449,6 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worke
 conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
 ```
 
-
 The daily service uses independent Web and worker processes. HTTP admission runs the synchronous quota/enqueue transaction outside the event loop. Explicit margin requests use `AnalysisRequestPlan` and the existing audited operators; the frozen `RequestPlan` training contract is preserved.
 
 The TCP HTTP mixed-load comparison repeated the same 12-task workload 3 times with 1 and 2 workers. All 72 task outcomes matched their contracts: 60 completed, 6 produced injected errors, and 6 reached injected timeouts. All 6 queued cancellations and 6 abrupt-worker/Web restart recoveries passed. Both arms retained durable checkpoints and the daily 30-second lease, 0.5-second idle polling, and batch Trace.
@@ -436,15 +458,15 @@ The TCP HTTP mixed-load comparison repeated the same 12-task workload 3 times wi
 | 1 | 36/36 | 10.591 | 44.713 |
 | 2 | 36/36 | 8.396 | 48.500 |
 
-These local measurements include cold worker startup and durable writes. Two workers reduced median latency but did not consistently improve tail latency; the daily configuration retains 1 worker. Five real business tasks passed source validation and HTML/PDF generation, followed by a separate real margin check of asynchronous admission. The real browser passed 17 checks for worker controls, history, context restoration, reports, and bilingual layouts. Per-task results, repeated measurements, and all development model usage are in [worker service acceptance](project_notes/evaluations/worker_service_acceptance.json).
+These local measurements include cold worker startup and durable writes. Two workers reduced median latency but did not consistently improve tail latency; the daily configuration retains 1 worker. Real-service checks passed 5 business tasks with source validation and HTML/PDF generation, plus 1 margin task verifying asynchronous admission. The real browser passed 17 checks for worker controls, history, context restoration, reports, and bilingual layouts. Per-task results, repeated measurements, and all development model usage are in [worker service acceptance](project_notes/evaluations/worker_service_acceptance.json).
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/benchmark_worker_load.py --output output/reproduction/worker_load
-$invitationFile = (Get-ChildItem output/experience/invite-*.txt | Select-Object -First 1).FullName
+$invitationFile = Read-Host 'Invitation file path'
 conda run --no-capture-output -n finevolab python scripts/verify_worker_service.py --invitation-file $invitationFile --output output/reproduction/worker_service
 ```
 
-The real-service command uses the existing invitation quota and requires 5 available tasks. Set `FINEVOLAB_CHROMIUM` and `FINEVOLAB_INVITATION_FILE`, then run `npm run test:worker:live --prefix tests/frontend` to inspect completed tasks without new model calls.
+The load command uses CPU fixtures without model calls. For real-service verification, keep the Web process and worker running and enter the invitation file path printed when creating that user. The command uses the existing quota and requires 5 available tasks. After those tasks pass, use the same invitation for browser checks. Install the frontend dependencies from the web section, set `FINEVOLAB_CHROMIUM` to an installed Chromium executable and `FINEVOLAB_INVITATION_FILE` to that invitation file, then run `npm run test:worker:live --prefix tests/frontend`. The browser inspects the completed history without new model calls.
 
 </details>
 
@@ -472,7 +494,7 @@ The showcase combines project results, archived execution replay, and evidence b
 <details>
 <summary><strong>Invited analysis application</strong></summary>
 
-Run invite-only analysis locally with the existing model configuration:
+Run invite-only analysis locally with the existing model configuration. Create the invitation only on first use; reuse it on later starts. For `worker` mode, also start the independent worker as shown in the runtime section:
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
@@ -486,14 +508,21 @@ Open `http://127.0.0.1:8085/` and use the invitation saved under `output/experie
 <details>
 <summary><strong>Cloudflare Tunnel deployment</strong></summary>
 
-To expose the same invited application through Cloudflare Tunnel, configure `configs/tunnel.json` and save only the connector token in `output/tunnel/token.txt`. The connector installer verifies the pinned release SHA-256. Start the backend in one terminal:
+To expose the same invited application through Cloudflare Tunnel, configure `configs/tunnel.json` and save only the connector token in `output/tunnel/token.txt`. The connector installer verifies the pinned release SHA-256. Reuse the invitation configuration created above. Select `worker` mode and start the backend in one terminal:
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py install
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve --public-url https://app.lunelu.com
 ```
 
-In a second terminal, start the hidden connector and check readiness:
+In a second terminal, start the independent worker with the same private access configuration:
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py worker
+```
+
+In a third terminal, start the hidden connector and check readiness:
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py start
@@ -501,7 +530,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py statu
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py verify
 ```
 
-In the Cloudflare tunnel configuration, add a published application route: hostname `app.lunelu.com`, service `http://127.0.0.1:8085`, and no path filter. The [live analysis workspace](https://app.lunelu.com/) uses this route. Both the local backend and connector must remain running. `verify` checks HTTPS routing, the live workspace, and rejection of anonymous task access without calling a model. Use `--proxy` for connector installation or public verification when a network proxy is required. `stop` stops only the managed connector. Set `FINEVOLAB_BROWSER_REPORT` to a distinct report filename when recording a separate browser acceptance run.
+In the Cloudflare tunnel configuration, add a published application route: hostname `app.lunelu.com`, service `http://127.0.0.1:8085`, and no path filter. The [live analysis workspace](https://app.lunelu.com/) uses this route. Keep the local backend, worker, and connector running in `worker` mode. `verify` checks HTTPS routing, the live workspace, and rejection of anonymous task access without calling a model. Use `--proxy` for connector installation or public verification when a network proxy is required. `stop` stops only the managed connector. Set `FINEVOLAB_BROWSER_REPORT` to a distinct report filename when recording a separate browser acceptance run.
 
 Workspace acceptance is recorded in [workspace checks](project_notes/run_logs/experience_acceptance.json). For rendered-browser checks, set `FINEVOLAB_CHROMIUM` to an installed Chromium executable and run `node tests/frontend/check_experience_live.cjs` while the local service is running. Set `FINEVOLAB_INVITATION_FILE` to the local invitation file and add `--real` to execute a real model-backed analysis, verify tools, citations, validation, reports, refresh recovery, and idempotency. The driver reads the invitation without printing it.
 

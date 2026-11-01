@@ -16,9 +16,9 @@
 
 </div>
 
-FinEvoLab 支持财报问答、跨公司比较、增长率与利润率计算，以及带来源引用的报告生成。项目融合混合 RAG、确定性财务工具、可恢复执行框架与 QLoRA 请求规划，提供中英文 Web 界面及可复现评测。
+FinEvoLab 将财报转化为有据可查的回答、跨公司比较，以及增长率和利润率计算。混合 RAG 检索证据，确定性工具计算财务结果，可恢复的执行框架负责校验输出并生成带引用的 HTML/PDF 报告。系统提供 QLoRA 请求规划、双语网页和可复现评测。
 
-[核心能力](#section-capabilities) · [快速启动](#section-quick-start) · [实验结果](#section-results) · [复现实验](#section-reproduce) · [可选服务](#section-services) · [网页部署](#section-web) · [许可证](#section-license)
+[核心能力](#section-capabilities) · [快速启动](#section-quick-start) · [实验结果](#section-results) · [复现实验](#section-reproduce) · [运行服务](#section-services) · [网页部署](#section-web) · [许可证](#section-license)
 
 ---
 
@@ -28,18 +28,19 @@ FinEvoLab 支持财报问答、跨公司比较、增长率与利润率计算，�
 
 | 能力 | 实现与输出 |
 | --- | --- |
-| **财报与证据** | SEC / 公司 IR 快照、财务指标抽取、期间与单位核对，以及可定位到原始来源的引用；支持指定上传的 HTML / 可读文本 PDF。 |
-| **RAG** | 固定语料使用 BM25、multilingual E5 和 RRF 混合检索；上传文件使用限定文档内检索，支持数值与正文联合分析；可选 Redis 共享检索缓存及版本化 Milvus 向量后端。 |
-| **Agent 与工具** | 通过 Agents SDK 理解请求，调用指标查询、增长计算、跨公司比较和报告工具；金额与公式由程序计算，财务对象从真实工具结果组装。 |
-| **Harness** | schema、来源与业务状态校验，最多一次定向修复，以及带版本签名的阶段检查点和断点恢复；支持同一任务预算内的自检与隔离证据审查角色。 |
-| **MCP 与可观测性** | 只读金融 MCP Server / Client、严格 schema 与服务端访问范围、关联执行 Trace，以及可重复的负载与恢复测量。 |
-| **模型与界面** | DeepSeek API、Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 规划后端，FastAPI 接口、双语网页及 HTML / PDF 报告。 |
+| **财报与证据** | SEC / 公司 IR 快照及指定上传的 HTML 或可提取文本的 PDF，支持指标抽取、期间与单位核对，以及原文定位。 |
+| **RAG** | 固定语料采用 BM25、multilingual E5 与 RRF 混合检索；上传内容限定文档范围；可选 Cross-Encoder 重排、Redis 缓存和 Milvus 向量存储。 |
+| **Agent 与工具** | 通过 Agents SDK 规划请求并执行指标、增长率、利润率、跨公司比较和报告工具；财务数值与公式基于有来源的观测计算。 |
+| **Harness** | schema、来源与任务状态校验，最多一次定向修复，带版本签名的检查点与恢复；支持任务预算内的自检或隔离证据审查。 |
+| **MCP 与可观测性** | 只读金融 MCP Server / Client、严格 schema 与访问范围、关联 Trace，以及可重复的延迟、负载和恢复检查。 |
+| **记忆与任务** | 用户隔离的上下文和展示偏好、事务化任务接入、持久 worker、任务取消及检查点恢复。 |
+| **模型与界面** | DeepSeek API 与 Qwen3-4B-Instruct-2507 LoRA BF16 / NF4 规划器、FastAPI 接口、双语界面及 HTML / PDF 报告。 |
 
 ```text
 Question → RequestPlan → Evidence retrieval & financial tools → Validation → Report
 ```
 
-默认 API 模式配合 CPU 检索运行。LoRA 服务部署于外部 GPU，通过 SSH 转发接入；LoRA 负责 `RequestPlan` 规划，API 模型生成解释性正文，各后端共用财务工具、RAG 和 harness。
+默认 API 后端使用 CPU 检索。可选 LoRA 服务运行于外部 GPU，通过 SSH 端口转发接入：LoRA 生成 `RequestPlan`，API 模型生成解释性正文。两条路径共用财务工具、RAG 和 harness。
 
 FinEvoLab 的核心流程位于 `finevolab/`，配套目录提供数据准备、训练与实验入口。复用的基础模块及固定版本对照基线保存在 `finrobot_equity/`。
 
@@ -88,7 +89,12 @@ openai_base_url = https://api.deepseek.com/
 conda run --no-capture-output -n finevolab python -m uvicorn finevolab.integrated_web:app --host 127.0.0.1 --port 8003
 ```
 
-打开 **http://127.0.0.1:8003/finevolab**。可尝试“比较 Apple 与 Microsoft 2023 财年的收入，并说明财年期间差异”，或“计算 Microsoft 2023 财年收入同比，并引用财报解释变化”。依赖锁定位于 [environments/](environments/) 和 [requirements/](requirements/)，检索模型与 revision 固定在 [retrieval.json](configs/retrieval.json)。
+打开 **http://127.0.0.1:8003/finevolab**，可尝试以下问题：
+
+- **跨公司比较：** 比较 Apple 与 Microsoft 2023 财年的收入，并说明财年期间差异。
+- **带证据的解释：** 计算 Microsoft 2023 财年收入同比，并引用财报解释变化。
+
+依赖锁定位于 [environments/](environments/) 和 [requirements/](requirements/)，检索模型与 revision 固定在 [retrieval.json](configs/retrieval.json)。
 
 <details>
 <summary><strong>财务 API、利润率审计与显式情景计算</strong></summary>
@@ -121,7 +127,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 | --- | --- | --- |
 | 业务 Agent 共同支持任务 | FinEvoLab 旧引擎 179/195 → 改进引擎 195/195；65 题各重复 3 次 | [业务评测](project_notes/experiments/scope-test-v1/assessment.json) |
 | 扩展业务 Agent 主测试 | 291/300，97.00%；100 题各重复 3 次 | [完整结果](project_notes/experiments/scope-test-v1/assessment.json) |
-| 请求规划器正式 test | Qwen base 109/240；LoRA seed 17 为 212/240、seed 29 为 213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
+| 请求规划器正式测试 | Qwen base 109/240；LoRA seed 17 为 212/240、seed 29 为 213/240；DeepSeek 227/240 | [QLoRA 对照](project_notes/evaluations/planner_formal_results.json) |
 | 同权重规划器 BF16 / NF4 推理 | 严格成功 212/240、211/240；NF4 峰值已分配显存降低 62.58%，平均推理耗时增加 47.18% | [量化结果](project_notes/evaluations/planner_quantization.json) |
 | 检索缓存对照 | 135 组查询配置 × 5 次重复；返回结果一致；预热均值 68.52 → 6.16 ms，11.12× | [缓存对照](project_notes/experiments/retrieval-cache-v1/summary.json) |
 | Redis 共享检索缓存 | 四组对照，77 题 × 3 次；693 次配对的片段完全一致；热查询均值 91.13 → 22.44 ms，4.06× | [服务对照](project_notes/evaluations/retrieval_service_comparison.json) |
@@ -131,7 +137,7 @@ Invoke-RestMethod -Method Post -Uri 'http://127.0.0.1:8003/api/scenarios' -Conte
 
 业务严格分按题型核对数值、期间、来源与任务合同，并检查正文结论的证据支持；规划器严格分核对 `RequestPlan` schema 与相关请求语义。配对量化实验中，BF16 / NF4 的峰值已分配显存为 7.995 / 2.992 GiB，平均单次推理耗时为 3.759 / 5.532 s，计时包含输入编码、生成与解码。
 
-项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。完整核心回归 **311 项通过**，见[运行验证](project_notes/evaluations/worker_service_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
+项目已完成业务 Agent 评测、组件消融、双 seed QLoRA、量化对照和真实网页验收。各阶段的运行与来源索引见[实验清单](project_notes/evaluations/experiment_inventory.json)，真实 LoRA 服务及网页验收见[在线验收](project_notes/run_logs/planner_deployment_checks.json)。归档核心回归 **311 项通过**，见[运行验证](project_notes/evaluations/worker_service_acceptance.json)。归档的复现导出副本通过 178 项测试，见[复现副本验收](project_notes/run_logs/experience_acceptance.json)。
 
 <details>
 <summary><strong>分析扩展：配对结果与复现命令</strong></summary>
@@ -157,7 +163,18 @@ conda run --no-capture-output -n finevolab python scripts/summarize_analysis_ext
 
 ## 复现实验
 
-代码与输入按以下目录组织：`finevolab/` 为业务模块，`scripts/` 为数据与实验入口，`configs/`、`prompts/` 为功能配置，`finevolab/templates/` 为网页与业务报告的 HTML 模板，`data/` 为来源快照与冻结数据，`tests/` 为回归与前端检查。`project_notes/` 中的 JSON / JSONL、环境快照与代表性图片提供版本化实验依据；开发说明及可选实验报告 Markdown 模板在本地集中保存，正式汇总以 JSON 结果记录。
+仓库按应用代码、复现输入与实验依据划分职责：
+
+| 目录 | 内容 |
+| --- | --- |
+| `finevolab/` | 分析流程、财务工具、检索、运行服务及 API 模块。 |
+| `finevolab/templates/` | 应用页面与 HTML 报告模板。 |
+| `scripts/` | 数据准备、训练、评测、验证和服务管理命令。 |
+| `configs/`、`prompts/` | 功能配置、模型身份与版本化提示词。 |
+| `data/` | 来源快照、处理后的财务观测、索引元数据与冻结数据集。 |
+| `tests/` | 财务、工作流、服务及前端回归检查。 |
+| `finrobot_equity/` | 复用基础模块与固定版本对照基线。 |
+| `project_notes/` | 版本化 JSON / JSONL 结果、环境快照与代表性图片；说明性 Markdown 和可选报告模板保存在本地。 |
 
 按 development / validation / test 划分，主业务任务为 50/50/100，内部编写的双语规划任务为 600/120/240；规划集的 development 部分用于 SFT 训练。直接使用仓库内冻结数据及 manifest；以下命令从现有结果重新生成数值回放，或以新的 run ID 开展 3 轮业务对照、复核正文证据并汇总严格评分：
 
@@ -296,7 +313,7 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_runtime_refi
 
 <div id="section-services"></div>
 
-## 可选检索服务与证据审查
+## 运行服务与可选后端
 
 <details>
 <summary><strong>Redis 与 Milvus 配置</strong></summary>
@@ -402,9 +419,15 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_trace_modes.
 <details>
 <summary><strong>业务记忆与持久任务 worker</strong></summary>
 
-邀请工作台支持用户隔离的会话上下文，以及明确保存的语言、金额展示单位偏好。可勾选上下文继承、新建会话或清除业务记忆。相对财年在规划前解析；记忆保留已校验的请求字段和任务引用，财务金额仍通过工具获取。展示缩放保留标准财务对象。会话上下文在 24 小时后过期，来源或配置变化会使其失效；清除操作阻止等待中的旧任务重新写回记忆。
+邀请工作台支持用户隔离的会话上下文，以及明确保存的语言、金额展示单位偏好。可勾选上下文继承、新建会话或清除业务记忆。相对财年在规划前解析；记忆保留已校验的请求字段和任务引用，财务金额仍通过工具获取。展示缩放保留标准财务对象。提交任务时，会话快照按 24 小时有效期及来源、配置签名检查。已提交任务保留冻结的上下文；清除记忆会阻止这些任务重新写回上下文。
 
-默认执行模式为 `inline`。选择 `worker` 后，在现有本地 SQLite 数据库中原子完成配额预留和任务入队：
+默认执行模式为 `inline`。首次使用时创建邀请及私有访问配置；后续启动复用已有邀请：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
+```
+
+选择 `worker` 执行模式并启动 Web 进程。该模式在提交任务时，在现有本地 SQLite 数据库中原子完成配额预留与任务入队：
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
@@ -426,7 +449,6 @@ conda run --no-capture-output -n finevolab python scripts/benchmark_memory_worke
 conda run --no-capture-output -n finevolab python scripts/verify_memory_worker_live.py --output output/reproduction/memory_worker_live
 ```
 
-
 日常服务使用独立 Web 与 worker 进程。HTTP 接入将同步配额和入队事务移出事件循环。明确的利润率请求使用 `AnalysisRequestPlan` 和已有审计算子，冻结的 `RequestPlan` 训练合同保持不变。
 
 TCP HTTP 混合负载采用相同的 12 个任务，分别使用 1 和 2 个 worker，各重复 3 次。72 个任务的状态均符合合同：60 个完成，6 个返回注入错误，6 个触发注入超时。额外的 6 次排队取消和 6 次 worker 异常退出及 Web 重启恢复全部通过。两组均保留持久检查点，并使用日常的 30 秒租约、0.5 秒空闲轮询和 batch Trace。
@@ -436,15 +458,15 @@ TCP HTTP 混合负载采用相同的 12 个任务，分别使用 1 和 2 个 wor
 | 1 | 36/36 | 10.591 | 44.713 |
 | 2 | 36/36 | 8.396 | 48.500 |
 
-本机测量包含 worker 冷启动与持久写盘。两个 worker 降低了中位延迟，但未稳定改善尾延迟，因此日常配置保留 1 个 worker。五个真实业务任务通过来源校验及 HTML/PDF 生成，之后单独使用真实利润率请求复核异步入队。真实浏览器通过 17 项检查，覆盖 worker 控件、历史、上下文恢复、报告和双语布局。逐例结果、重复测量与全部开发模型用量见[worker 服务验收](project_notes/evaluations/worker_service_acceptance.json)。
+本机测量包含 worker 冷启动与持久写盘。两个 worker 降低了中位延迟，但未稳定改善尾延迟，因此日常配置保留 1 个 worker。真实服务检查通过 5 个业务任务的来源校验及 HTML/PDF 生成，并通过 1 个利润率任务验证异步入队。真实浏览器通过 17 项检查，覆盖 worker 控件、历史、上下文恢复、报告和双语布局。逐例结果、重复测量与全部开发模型用量见[worker 服务验收](project_notes/evaluations/worker_service_acceptance.json)。
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/benchmark_worker_load.py --output output/reproduction/worker_load
-$invitationFile = (Get-ChildItem output/experience/invite-*.txt | Select-Object -First 1).FullName
+$invitationFile = Read-Host 'Invitation file path'
 conda run --no-capture-output -n finevolab python scripts/verify_worker_service.py --invitation-file $invitationFile --output output/reproduction/worker_service
 ```
 
-真实服务命令沿用现有邀请额度，需要剩余 5 个任务。设置 `FINEVOLAB_CHROMIUM` 和 `FINEVOLAB_INVITATION_FILE` 后，运行 `npm run test:worker:live --prefix tests/frontend`，即可检查已完成任务而不新增模型调用。
+负载命令使用 CPU fixture，不调用模型。真实服务验收需要 Web 与 worker 保持运行，并输入创建对应用户时输出的邀请文件路径；沿用现有额度，需要剩余 5 个任务。这些任务通过后，使用同一邀请进行浏览器检查。按网页章节安装前端依赖，将 `FINEVOLAB_CHROMIUM` 指向已安装的 Chromium 可执行文件、`FINEVOLAB_INVITATION_FILE` 指向该邀请文件，再运行 `npm run test:worker:live --prefix tests/frontend`。浏览器检查已完成的历史任务，不新增模型调用。
 
 </details>
 
@@ -472,7 +494,7 @@ npm run test:showcase --prefix tests/frontend
 <details>
 <summary><strong>邀请制分析应用</strong></summary>
 
-使用已有模型配置，在本地启动邀请制真实分析：
+使用已有模型配置，在本地启动邀请制真实分析。仅首次使用时创建邀请，后续复用；采用 `worker` 模式时，还需按运行服务章节启动独立 worker：
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py invite --user owner
@@ -486,14 +508,21 @@ conda run --no-capture-output -n finevolab python scripts/manage_experience.py s
 <details>
 <summary><strong>Cloudflare Tunnel 部署</strong></summary>
 
-通过 Cloudflare Tunnel 公开同一个邀请制应用时，配置 `configs/tunnel.json`，将连接器令牌本身保存到 `output/tunnel/token.txt`。安装器校验固定发行版的 SHA-256。在一个终端中启动后端：
+通过 Cloudflare Tunnel 公开同一个邀请制应用时，配置 `configs/tunnel.json`，将连接器令牌本身保存到 `output/tunnel/token.txt`。安装器校验固定发行版的 SHA-256。复用上文创建的邀请配置。选择 `worker` 模式，并在一个终端中启动后端：
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py install
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py configure --execution-mode worker
 conda run --no-capture-output -n finevolab python scripts/manage_experience.py serve --public-url https://app.lunelu.com
 ```
 
-在另一个终端中启动隐藏运行的连接器并检查就绪状态：
+在第二个终端中，使用同一私有访问配置启动独立 worker：
+
+```powershell
+conda run --no-capture-output -n finevolab python scripts/manage_experience.py worker
+```
+
+在第三个终端中启动隐藏运行的连接器并检查就绪状态：
 
 ```powershell
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py start
@@ -501,7 +530,7 @@ conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py statu
 conda run --no-capture-output -n finevolab python scripts/manage_tunnel.py verify
 ```
 
-在 Cloudflare 隧道配置中添加已发布应用路由：主机名 `app.lunelu.com`，服务 `http://127.0.0.1:8085`，路径过滤留空。[真实分析工作台](https://app.lunelu.com/)使用这条路由。本地后端与连接器均需保持运行。`verify` 检查 HTTPS 路由、真实工作台和匿名任务访问拦截，不调用模型。安装连接器或验证公网需要代理时使用 `--proxy`。`stop` 仅停止受管理的连接器。另行记录浏览器验收时，可通过 `FINEVOLAB_BROWSER_REPORT` 指定独立的报告文件名。
+在 Cloudflare 隧道配置中添加已发布应用路由：主机名 `app.lunelu.com`，服务 `http://127.0.0.1:8085`，路径过滤留空。[真实分析工作台](https://app.lunelu.com/)使用这条路由。采用 `worker` 模式时，本地后端、worker 与连接器均需保持运行。`verify` 检查 HTTPS 路由、真实工作台和匿名任务访问拦截，不调用模型。安装连接器或验证公网需要代理时使用 `--proxy`。`stop` 仅停止受管理的连接器。另行记录浏览器验收时，可通过 `FINEVOLAB_BROWSER_REPORT` 指定独立的报告文件名。
 
 工作台验收见[工作台检查](project_notes/run_logs/experience_acceptance.json)。实际浏览器检查使用 `FINEVOLAB_CHROMIUM` 指定已安装的 Chromium 可执行文件，在本地服务运行时执行 `node tests/frontend/check_experience_live.cjs`。将 `FINEVOLAB_INVITATION_FILE` 指向本地邀请文件，并添加 `--real`，即可执行真实模型分析，验证工具、引用、校验、报告、刷新恢复及幂等提交。驱动读取邀请口令而不输出其内容。
 
