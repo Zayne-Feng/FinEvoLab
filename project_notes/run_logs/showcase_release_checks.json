@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "run_id": "showcase-release",
-  "base_commit": "655469b826b84b79ab4ea9142a373d000960ecd0",
+  "base_commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
   "regression": {
     "status": "passed",
     "command": "python -m unittest discover -s tests -q",
-    "tests": 317,
-    "seconds": 58.75,
+    "tests": 322,
+    "seconds": 37.467,
     "failures": 0,
     "errors": 0,
-    "transcript_sha256": "58daca97a630dbb76bbfa4b9e61897b456af5009fb841e29b6f5cdf99cc9c72b",
+    "transcript_sha256": "744a11792c1aa80082f00e5c5a97215091b40487b6b22d0425203adb0aaac01b",
     "source_scope": [
       "finevolab/**/*.py",
       "tests/test_*.py"
     ],
     "source_files": 102,
-    "source_sha256": "3a0fed73458750ac09b48152813eacc8ff905d77cef872527ac21ee91906e3e9",
+    "source_sha256": "39497409c76295f72af69a2c4b022106b415b62f2453fa24456453139a58107a",
     "source_byte_policy": "CRLF normalized to LF"
   },
   "evidence": {
@@ -26,6 +26,10 @@
   "frontend": {
     "status": "passed",
     "checks": {
+      "dashboard": 18,
+      "quality": 18,
+      "language": 12,
+      "planner": 4,
       "showcase": 119,
       "experience": 89,
       "memory_worker": 15
@@ -52,6 +56,13 @@
   },
   "clean_export": {
     "status": "passed",
+    "tests": 322,
+    "frontend_checks": 275,
     "build_files": 11
+  },
+  "archive_publication": {
+    "status": "passed",
+    "verified_manifests": 17,
+    "verifier": "scripts/verify_repository_distribution.py"
   }
 }
