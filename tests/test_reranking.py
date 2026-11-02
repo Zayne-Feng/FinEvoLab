@@ -10,7 +10,7 @@ import numpy as np
 from pydantic import ValidationError
 
 from finevolab.reranking import PassageReranker, RerankerConfig, rerank_passages
-from finevolab.retrieval import explanation_passages
+from finevolab.retrieval import explanation_passages, load_index
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -51,9 +51,14 @@ class RerankingTests(unittest.TestCase):
 
     def test_reordering_preserves_the_required_table_and_output_budget(self):
         args = (ROOT, "Explain MSFT FY2024 revenue growth", "MSFT", 2024, "revenue")
-        reference = explanation_passages(*args, variant="pooled", profile="contextual")
-        with patch("finevolab.reranking.rerank_passages", side_effect=lambda root, query, passages: list(reversed(passages))):
-            ranked = explanation_passages(*args, variant="reranked", profile="contextual")
+        index = load_index(ROOT, mode="bm25", profile="contextual")
+        search = index.search
+        def candidates(*arguments, **options):
+            return search(*arguments, **{**options, "mode": "bm25"})
+        with patch("finevolab.retrieval.load_index", return_value=index), patch.object(index, "search", side_effect=candidates):
+            reference = explanation_passages(*args, variant="pooled", profile="contextual")
+            with patch("finevolab.reranking.rerank_passages", side_effect=lambda root, query, passages: list(reversed(passages))):
+                ranked = explanation_passages(*args, variant="reranked", profile="contextual")
         self.assertEqual(ranked[0]["id"], reference[0]["id"])
         self.assertEqual(ranked[0]["kind"], "table")
         self.assertLessEqual(len(ranked), 5)

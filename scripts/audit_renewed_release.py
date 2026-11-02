@@ -14,6 +14,7 @@ from finevolab.upstream_baseline import UPSTREAM
 from finevolab.scope_evaluation import assess_scope, task_store
 from run_followup_uploads import selected_reference
 from summarize_scope_results import approved
+from finevolab.provenance import verify_task_identity
 
 
 def read(path):
@@ -73,8 +74,7 @@ def main():
                 raise ValueError("An evaluated financial snapshot changed")
         review = ROOT / "project_notes/evaluations" / review_id
         review_manifest, review_summary = read(review / "manifest.json"), read(review / "summary.json")
-        if review_manifest["config"]["tasks_sha256"] != sha256(directory / "tasks.jsonl"):
-            raise ValueError("A blind review refers to a different task ledger")
+        verify_task_identity(ROOT, review / "manifest.json", directory / "tasks.jsonl")
         if review_manifest["config"]["dataset_sha256"] != sha256(dataset):
             raise ValueError("A blind review refers to a different question split")
         if review_summary["status"] != "completed" or any(review_summary["control_errors"].values()):

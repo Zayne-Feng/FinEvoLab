@@ -1,5 +1,6 @@
-"""Check semantic defaults and preregistered checkpoint selection tie breaks."""
+"""Check planner semantics, checkpoint selection, and immutable artifact identities."""
 
+import copy
 import json
 from pathlib import Path
 import tempfile
@@ -7,6 +8,7 @@ import unittest
 from unittest.mock import patch
 
 from finevolab.planner_benchmark import PlannerCase, score_prediction
+from finevolab.provenance import digest, verify_manifest, verify_task_identity
 from finevolab.runtime import write_json
 from scripts.analyze_planner_formal import prediction_runs, semantic_score
 from scripts import run_planner_formal
@@ -63,6 +65,100 @@ class FormalTests(unittest.TestCase):
             self.assertIn("--replicate-runs", calls[-1])
             details = json.loads((root / "planner_formal_selection_details.json").read_text())
             self.assertFalse(details["test_used"])
+
+
+class PublicationTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+        self.blobs = {}
+        self.git = patch("finevolab.provenance.subprocess.check_output", side_effect=self.read_blob)
+        self.git.start()
+        self.addCleanup(self.git.stop)
+
+    def read_blob(self, command, **kwargs):
+        return self.blobs[command[-1]]
+
+    def reference(self, path, raw):
+        commit = "a" * 40
+        self.blobs[f"{commit}:{path}"] = raw
+        return {"commit": commit, "path": path, "sha256": digest(raw)}
+
+    def write(self, path, document):
+        target = self.root / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(document), encoding="utf-8")
+        return target
+
+    def fixture(self):
+        rows = [{"score": 1, "evidence": [{"source_path": "C:/archive/data/raw/report.html",
+                                            "source_sha256": "b" * 64, "text": "Revenue increased."}]}]
+        raw = (json.dumps(rows[0]) + "\n").encode()
+        source = self.reference("tasks.jsonl", raw)
+        rows[0]["evidence"][0]["source_path"] = "data/raw/report.html"
+        tasks = self.root / "tasks.jsonl"
+        tasks.write_text(json.dumps(rows[0]) + "\n", encoding="utf-8")
+        config = {"tasks_sha256": source["sha256"]}
+        original = {"config": config, "config_sha256": digest(json.dumps(config, sort_keys=True).encode()),
+                    "source_hashes": {"module.py": "c" * 64}}
+        current = copy.deepcopy(original)
+        current["publication"] = {"source": self.reference("manifest.json", json.dumps(original).encode()),
+            "artifacts": [{"config_key": "tasks_sha256", "source": source,
+                           "published_sha256": digest(tasks.read_bytes()), "transform": "source_paths_v1"}]}
+        return self.write("manifest.json", current), tasks, current
+
+    def test_source_path_normalization_preserves_original_task_identity(self):
+        manifest, tasks, current = self.fixture()
+        verify_task_identity(self.root, manifest, tasks)
+        self.assertNotEqual(digest(tasks.read_bytes()), current["config"]["tasks_sha256"])
+
+    def test_changed_scores_and_citations_are_rejected_even_with_updated_publication_hash(self):
+        for field, value in (("score", 0), ("score", True), ("text", "Different claim."),
+                             ("source_sha256", "d" * 64)):
+            with self.subTest(field=field, value=value):
+                manifest, tasks, current = self.fixture()
+                row = json.loads(tasks.read_bytes())
+                if field == "score":
+                    row[field] = value
+                else:
+                    row["evidence"][0][field] = value
+                tasks.write_text(json.dumps(row) + "\n", encoding="utf-8")
+                current["publication"]["artifacts"][0]["published_sha256"] = digest(tasks.read_bytes())
+                self.write("manifest.json", current)
+                with self.assertRaisesRegex(ValueError, "outside the allowed paths"):
+                    verify_manifest(self.root, manifest)
+
+    def test_changed_original_git_bytes_are_rejected(self):
+        manifest, _, current = self.fixture()
+        reference = current["publication"]["source"]
+        self.blobs[f"{reference['commit']}:{reference['path']}"] += b" "
+        with self.assertRaisesRegex(ValueError, "original Git artifact hash"):
+            verify_manifest(self.root, manifest)
+
+    def test_missing_input_publication_is_rejected(self):
+        manifest, _, current = self.fixture()
+        current["publication"]["artifacts"] = []
+        self.write("manifest.json", current)
+        with self.assertRaisesRegex(ValueError, "lacks an original input identity"):
+            verify_manifest(self.root, manifest)
+
+    def test_replay_publication_keeps_original_configuration_hash(self):
+        for seed in (17, 29):
+            with self.subTest(seed=seed):
+                config = {"runs": {f"C:/archive/project_notes/experiments/replay{seed}": "b" * 64}}
+                original = {"config": config, "config_sha256": digest(json.dumps(config, sort_keys=True).encode())}
+                name = f"replay{seed}/manifest.json"
+                current = {"config_sha256": original["config_sha256"],
+                           "published_config": {"runs": {f"project_notes/experiments/replay{seed}": "b" * 64}},
+                           "publication": {"source": self.reference(name, json.dumps(original).encode()), "artifacts": []}}
+                path = self.write(name, current)
+                self.assertEqual(verify_manifest(self.root, path), config)
+                self.assertNotIn("C:/archive", path.read_text())
+                current["published_config"]["runs"][f"project_notes/experiments/replay{seed}"] = "d" * 64
+                self.write(name, current)
+                with self.assertRaisesRegex(ValueError, "published replay configuration"):
+                    verify_manifest(self.root, path)
 
 
 if __name__ == "__main__":

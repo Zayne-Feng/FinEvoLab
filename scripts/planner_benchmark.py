@@ -5,9 +5,9 @@ import asyncio
 from contextlib import AsyncExitStack
 from importlib.metadata import PackageNotFoundError, version
 import json
+import os
 from pathlib import Path
 import re
-import os
 import sys
 import time
 
@@ -287,8 +287,8 @@ def compare(args):
     result = {"split": args.split, "bundle_sha256": sha256(args.bundle / "manifest.json"),
         "status": "completed", "groups": {arm: summarize_predictions(cases, rows, contract["aliases"])
             for arm, rows in records.items()}, "comparisons": {},
-        "inputs": {str(directory): {"manifest": sha256(directory / "manifest.json"),
-            "predictions": sha256(directory / "predictions.jsonl")} for directory in args.runs}}
+        "inputs": {(directory.resolve().relative_to(ROOT).as_posix() if directory.resolve().is_relative_to(ROOT) else f"external/{index}/{directory.name}"): {"manifest": sha256(directory / "manifest.json"),
+            "predictions": sha256(directory / "predictions.jsonl")} for index, directory in enumerate(args.runs)}}
     for left, right in (("qwen_base", "qwen_lora"), ("deepseek", "qwen_lora")):
         result["comparisons"][f"{left}_to_{right}"] = {phase: paired_report(cases,
             records[left], records[right], contract["aliases"], repeats, phase) for phase in ("first", "final")}
@@ -319,8 +319,8 @@ def seal(args):
     write_json(args.output, {"shared": {key: reference[key] for key in
         ("bundle_sha256", "generation", "implementation")}, "arms": {arm: config["model"] for arm, config in configs.items()},
         "additional_models": {"qwen_lora": additional},
-        "validation_runs": {str(path): {"manifest": sha256(path / "manifest.json"),
-            "predictions": sha256(path / "predictions.jsonl")} for path in args.runs}})
+        "validation_runs": {(path.resolve().relative_to(ROOT).as_posix() if path.resolve().is_relative_to(ROOT) else f"external/{index}/{path.name}"): {"manifest": sha256(path / "manifest.json"),
+            "predictions": sha256(path / "predictions.jsonl")} for index, path in enumerate(args.runs)}})
     print(json.dumps({"status": "sealed", "output": str(args.output)}))
 
 

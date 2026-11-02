@@ -1,12 +1,15 @@
 param(
     [Parameter(Mandatory = $true)][string]$OptimizationDirectory,
-    [string]$CondaPath = 'D:\ProgramSoftware\Miniconda3\Scripts\conda.exe',
+    [string]$CondaPath = $env:CONDA_EXE,
     [string]$EnvironmentName = 'finevolab',
     [string]$DatasetDirectory = 'data/evaluation/v2',
     [string]$RunPrefix = ([Guid]::NewGuid().ToString('N').Substring(0, 12) + '-v2')
 )
 
 $ErrorActionPreference = 'Stop'
+if (-not $CondaPath) {
+    $CondaPath = 'conda'
+}
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
 Push-Location -LiteralPath $repositoryRoot
 try {

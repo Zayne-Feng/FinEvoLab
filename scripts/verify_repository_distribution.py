@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from finevolab.planner_benchmark import load_bundle
 from scripts.check_readme_sync import check as check_readme_sync
+from finevolab.provenance import verify_manifest
 
 
 def git(*arguments: str) -> bytes:
@@ -108,9 +109,16 @@ def check() -> dict:
                 "data/evaluation/scope_v3/manifest.json", "data/training/planner_formal/frozen_v1/manifest.json",
                 "project_notes/evaluations/planner_formal_results.json",
                 "project_notes/evaluations/planner_quantization.json"]
+    required = sorted(set(required + ["finevolab/provenance.py", "tests/test_planner_formal.py"]))
     missing = sorted(set(required) - set(candidates))
     if missing:
         raise ValueError("Required reproducibility files are missing: " + ", ".join(missing))
+    publication_count = 0
+    for directory in ("project_notes/evaluations", "project_notes/experiments"):
+        for path in (ROOT / directory).glob("*/manifest.json"):
+            if "publication" in json.loads(path.read_bytes()):
+                verify_manifest(ROOT, path)
+                publication_count += 1
     readme_sync = check_readme_sync(ROOT)
     baseline = "2717499b8e30f242640af08c4ad9afd1113c2d45"
     legal = {}
@@ -160,6 +168,7 @@ def check() -> dict:
     return {"status": "passed", "base_commit": git("rev-parse", "HEAD").decode().strip(),
             "readme_sync": readme_sync,
             "candidate_files": len(candidates), "required_files_checked": len(required),
+            "publication_manifests_verified": publication_count,
             "ignored_tracked_files": ignored_tracked, "legal_sha256": legal,
             "planner_split_counts": counts,
             "raw_snapshot_files": len(raw_files), "source_snapshots_verified": source_checks,

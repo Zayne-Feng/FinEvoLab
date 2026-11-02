@@ -2,7 +2,6 @@
 
 import argparse
 import base64
-from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -21,8 +20,9 @@ from finevolab.runtime import write_json
 BUNDLE = ROOT / "data/training/planner_formal/frozen_v1"
 EXPERIMENTS = ROOT / "project_notes/experiments"
 EVALUATIONS = ROOT / "project_notes/evaluations"
-REMOTE = "/workspace/FinEvoLab-formal-v1"
-RUNTIME = "/workspace/finevolab-runtime/formal-v1"
+REMOTE = os.environ.get("FINEVOLAB_REMOTE_ROOT", "/workspace/FinEvoLab")
+RUNTIME = os.environ.get("FINEVOLAB_REMOTE_RUNTIME", f"{REMOTE}/output/runtime")
+REMOTE_PYTHON = os.environ.get("FINEVOLAB_REMOTE_PYTHON", "python")
 SELECTION = EVALUATIONS / "planner_formal_selection.json"
 
 
@@ -85,7 +85,7 @@ with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
 print(json.dumps({{'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'files':len(paths)}}))
 '''
         encoded = base64.b64encode(code.encode()).decode()
-        output = self.shell(f"printf %s {encoded} | base64 -d | /workspace/finevolab-venv/bin/python")
+        output = self.shell(f"printf %s {encoded} | base64 -d | {REMOTE_PYTHON}")
         receipt = json.loads(output.strip().splitlines()[-1])
         destination = ROOT / f"output/cloud/planner_formal_{phase}_export.zip"
         self.copy(f"{self.host}:{RUNTIME}/{phase}_export.zip", destination)
@@ -137,9 +137,9 @@ def start_test(connection, epoch):
     connection.copy(SELECTION, f"{connection.host}:{RUNTIME}/selection.json")
     script = f'''#!/bin/bash
 set -euo pipefail
-export PYTHONUNBUFFERED=1 HF_HOME=/workspace/.hf_home HF_HUB_OFFLINE=1 HF_HUB_DISABLE_IMPLICIT_TOKEN=1 HF_HUB_DISABLE_XET=1 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false
+export PYTHONUNBUFFERED=1 HF_HOME=${{HF_HOME:-$HOME/.cache/huggingface}} HF_HUB_OFFLINE=1 HF_HUB_DISABLE_IMPLICIT_TOKEN=1 HF_HUB_DISABLE_XET=1 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false
 cd {REMOTE}
-PY=/workspace/finevolab-venv/bin/python
+PY={REMOTE_PYTHON}
 B=data/training/planner_formal/frozen_v1
 $PY scripts/planner_benchmark.py predict --bundle "$B" --split test --arm qwen_base --backend transformers --repeats 1 --selection {RUNTIME}/selection.json --output project_notes/experiments/planner-formal-base-test
 for seed in 17 29; do
@@ -168,9 +168,10 @@ killasgroup=true
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--host", default="root@163.142.222.112")
-    parser.add_argument("--port", type=int, default=40045)
-    parser.add_argument("--key", type=Path, default=Path.home() / ".ssh/id_vast_ed25519")
+    parser.add_argument("--host", required=True)
+    parser.add_argument("--port", type=int, default=22)
+    parser.add_argument("--key", type=Path, default=Path.home() / ".ssh/id_ed25519")
+    parser.add_argument("--instance-id", help="Vast.ai instance to stop after verified export")
     args = parser.parse_args()
     load_bundle(BUNDLE, "validation")
     connection = Connection(args)
@@ -192,25 +193,27 @@ def main():
               EXPERIMENTS / "planner-formal-deepseek-test", EXPERIMENTS / "planner-formal-base-test",
               EXPERIMENTS / f"planner-formal-lora{seed}-test", "--output",
               EVALUATIONS / f"planner_formal_seed{seed}_test.json")
-    code = '''import os,shutil,subprocess
+    stopped = None
+    if args.instance_id:
+        code = f'''import os,shutil,subprocess
 key=os.environ['CONTAINER_API_KEY']
-result=subprocess.run([shutil.which('vastai'),'stop','instance','57775489','--api-key',key],capture_output=True,text=True)
+result=subprocess.run([shutil.which('vastai'),'stop','instance',{args.instance_id!r},'--api-key',key],capture_output=True,text=True)
 print((result.stdout+result.stderr).replace(key,'[REDACTED]'))
 raise SystemExit(result.returncode)
 '''
-    encoded = base64.b64encode(code.encode()).decode()
-    stopped = connection.shell(f"printf %s {encoded} | base64 -d | /workspace/finevolab-venv/bin/python")
+        encoded = base64.b64encode(code.encode()).decode()
+        stopped = connection.shell(f"printf %s {encoded} | base64 -d | {REMOTE_PYTHON}")
     write_json(EVALUATIONS / "planner_formal_completion.json", {"status": "completed",
-        "completed_at": datetime.now(timezone.utc).isoformat(), "selected_epoch": epoch,
+        "selected_epoch": epoch,
         "selection_sha256": sha256(SELECTION), "instance_stop_response": stopped,
         "test_exports_verified": True, "training_seeds": [17, 29]})
-    print(json.dumps({"status": "completed", "instance_stop_requested": True}), flush=True)
+    print(json.dumps({"status": "completed", "instance_stop_requested": bool(args.instance_id)}), flush=True)
 
 
 if __name__ == "__main__":
     from filelock import FileLock
     with FileLock(str(ROOT / "output/cloud/planner_formal_driver.lock"), timeout=0):
-        if (EVALUATIONS / "planner_formal_completion.json").exists():
+        if (EVALUATIONS / "planner_formal_completion.json").exists() and not any(arg in sys.argv for arg in ("-h", "--help")):
             print(json.dumps({"status": "already_completed"}))
         else:
             main()

@@ -1,11 +1,14 @@
 param(
-    [string]$CondaPath = 'D:\ProgramSoftware\Miniconda3\Scripts\conda.exe',
+    [string]$CondaPath = $env:CONDA_EXE,
     [string]$EnvironmentName = 'finevolab',
     [string]$ConfigPath,
     [switch]$IncludeUpstream
 )
 
 $ErrorActionPreference = 'Stop'
+if (-not $CondaPath) {
+    $CondaPath = 'conda'
+}
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
 if (-not $ConfigPath) {
     $ConfigPath = Join-Path $repositoryRoot 'finrobot_equity/core/config/config.ini'

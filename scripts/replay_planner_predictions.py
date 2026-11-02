@@ -22,6 +22,7 @@ from finevolab.runtime import RunBudget, ToolExecutor, write_json
 from finevolab.scope_evaluation import task_store
 from finevolab.validation import validate_answer
 from scripts.planner_benchmark import checked_run, implementation_hashes, read_rows, validate_arm_contracts
+from finevolab.provenance import verify_manifest
 
 
 class UncachedExecutor(ToolExecutor):
@@ -77,7 +78,7 @@ async def run(args):
         "case_selection_sha256": sha256(selection_path) if selection_path else None,
         "replay_code_sha256": sha256(Path(__file__)),
         "phase": args.phase, "with_narrative": args.with_narrative, "excluded_cases": len(cases) - len(selected),
-        "runs": {str(p): sha256(p / "predictions.jsonl") for p in args.runs},
+        "runs": {(p.resolve().relative_to(ROOT).as_posix() if p.resolve().is_relative_to(ROOT) else f"external/{index}/{p.name}"): sha256(p / "predictions.jsonl") for index, p in enumerate(args.runs)},
         "narrative_model": {"model": settings.model, "endpoint": settings.base_url},
         "reference": "deterministic_execution_of_audited_request_labels", "semantic_review": "separate",
         "source_files": {str(p.relative_to(ROOT)): sha256(p) for p in [
@@ -89,8 +90,12 @@ async def run(args):
     args.output.mkdir(parents=True, exist_ok=True)
     with FileLock(str(args.output / "execution.lock"), timeout=0):
         path = args.output / "manifest.json"
-        if path.exists() and json.loads(path.read_text(encoding="utf-8"))["config"] != config:
-            raise ValueError("The replay configuration changed")
+        if path.exists():
+            retained = json.loads(path.read_text(encoding="utf-8"))
+            if "publication" in retained:
+                verify_manifest(ROOT, path)
+            if retained.get("published_config", retained.get("config")) != config:
+                raise ValueError("The replay configuration changed")
         if not path.exists():
             write_json(path, experiment_manifest(ROOT, args.output.name, config))
         rows = read_rows(args.output / "tasks.jsonl")
