@@ -208,5 +208,24 @@
     "secondary": "all repeat-zero narratives plus controls",
     "method": "same-model isolated blind review; no human calibration; no cross-model claim"
   },
-  "config_sha256": "8cfa55031b99c62c9aa64120c55a362d245313e371a3a000da0b8cf06fcfb908"
+  "config_sha256": "8cfa55031b99c62c9aa64120c55a362d245313e371a3a000da0b8cf06fcfb908",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/evaluations/renewed-regression-review-v1/manifest.json",
+      "sha256": "82f87d1c816107e717c0e81aa2f18956abf1ab1ff3b6bf34fdba872d1381a42f"
+    },
+    "artifacts": [
+      {
+        "config_key": "tasks_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/experiments/renewed-regression-v1/tasks.jsonl",
+          "sha256": "cdf2562b61df223a622e10158c79da9b5addc24391d29a5e49cb72bf32763595"
+        },
+        "published_sha256": "e40365069405e4102c0edba7f320867d347b0f179530a8e956172e4098159c64",
+        "transform": "source_paths_v1"
+      }
+    ]
+  }
 }

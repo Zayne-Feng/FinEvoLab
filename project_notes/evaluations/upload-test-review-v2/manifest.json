@@ -179,5 +179,24 @@
     "secondary": "all repeat-zero narratives plus controls",
     "method": "same-model isolated blind review; no human calibration; no cross-model claim"
   },
-  "config_sha256": "73ecfd3d769c84a8a2fd0b5c83ea5aa0339b7d9d6b65b4e42a691b4a185966d2"
+  "config_sha256": "73ecfd3d769c84a8a2fd0b5c83ea5aa0339b7d9d6b65b4e42a691b4a185966d2",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/evaluations/upload-test-review-v2/manifest.json",
+      "sha256": "7928ee95f9977e67ba7b2c3e3bf3a95732e005c45a67a7d55e4bc4fd5955e03d"
+    },
+    "artifacts": [
+      {
+        "config_key": "tasks_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/experiments/upload-test-v2/tasks.jsonl",
+          "sha256": "a7a4c1183e77421b4400b31e40480f9c2b0a52ac578581971354a804c2052164"
+        },
+        "published_sha256": "a30e0fe0e44b7d68269fd9b2b8ee9e01eb170487a234a58fb33be4a24ec30569",
+        "transform": "source_paths_v1"
+      }
+    ]
+  }
 }

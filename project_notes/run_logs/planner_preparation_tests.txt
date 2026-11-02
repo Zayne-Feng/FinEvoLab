@@ -1,14 +1,3 @@
-Fetching comprehensive company metrics for MSFT...
-Successfully fetched metrics for MSFT
-📄 Building professional equity report...
-✅ Professional report generated: C:\Users\Administrator\AppData\Local\Temp\tmp6r9miqjo\numeric_report.pdf
-{"status": "completed", "output": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\tmpa35ut6s6\\comparison.json"}
-{"status": "completed", "groups": {"deepseek": {"attempts": 1, "mechanical_successes": 1, "downstream_requests": 0, "known_downstream_tokens": 0, "unknown_usage_tasks": 0, "failures": {}}, "qwen_base": {"attempts": 1, "mechanical_successes": 0, "downstream_requests": 0, "known_downstream_tokens": 0, "unknown_usage_tasks": 0, "failures": {"failed_checks": 1}}, "qwen_lora": {"attempts": 1, "mechanical_successes": 1, "downstream_requests": 0, "known_downstream_tokens": 0, "unknown_usage_tasks": 0, "failures": {}}}}
-{"status": "sealed", "output": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\tmpnsfkru2z\\selection.json"}
-{"completed": 1, "planned": 1, "case_id": "validation", "arm": "deepseek"}
-{"status": "already_completed", "model_requests_added": 0}
-D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
-  from starlette.testclient import TestClient as TestClient  # noqa
 test_alias_calculation_satisfies_the_required_tool_check (test_agent.AgentTests.test_alias_calculation_satisfies_the_required_tool_check) ... ok
 test_candidate_and_score_metadata_are_not_sent_to_reviewers (test_blind_review.BlindReviewTests.test_candidate_and_score_metadata_are_not_sent_to_reviewers) ... ok
 test_dimension_scores_require_exact_integer_bounds (test_blind_review.BlindReviewTests.test_dimension_scores_require_exact_integer_bounds) ... ok
@@ -54,15 +43,12 @@ test_archived_and_current_functions_cannot_share_cached_values (test_followup_co
 test_selected_source_changes_only_reference_disclosure_year (test_followup_comparison.FollowupComparisonTests.test_selected_source_changes_only_reference_disclosure_year) ... ok
 test_alias_self_comparison_and_partial_missing_are_unresolved (test_grounded.GroundedTests.test_alias_self_comparison_and_partial_missing_are_unresolved) ... ok
 test_explanation_claims_do_not_infer_amount_scale_from_tables (test_grounded.GroundedTests.test_explanation_claims_do_not_infer_amount_scale_from_tables) ... ok
-test_invalid_json_repairs_once_and_records_usage (test_grounded.GroundedTests.test_invalid_json_repairs_once_and_records_usage) ... Executing <Task pending name='Task-21' coro=<GroundedTests.test_invalid_json_repairs_once_and_records_usage() running at E:\Desktop\FinEvoLab\tests\test_grounded.py:167> wait_for=<Future pending cb=[Task.task_wakeup()] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:428> cb=[_run_until_complete_cb() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:181] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.172 seconds
-ok
+test_invalid_json_repairs_once_and_records_usage (test_grounded.GroundedTests.test_invalid_json_repairs_once_and_records_usage) ... ok
 test_multiple_company_growth_cannot_become_an_amount_comparison (test_grounded.GroundedTests.test_multiple_company_growth_cannot_become_an_amount_comparison) ... ok
 test_numeric_comparison_and_alignment_have_distinct_statuses (test_grounded.GroundedTests.test_numeric_comparison_and_alignment_have_distinct_statuses) ... ok
-test_profit_explanation_requires_the_requested_metric_and_its_quote (test_grounded.GroundedTests.test_profit_explanation_requires_the_requested_metric_and_its_quote) ... Executing <Task finished name='Task-66' coro=<GroundedTests.test_profit_explanation_requires_the_requested_metric_and_its_quote() done, defined at E:\Desktop\FinEvoLab\tests\test_grounded.py:131> result=None created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.219 seconds
-ok
+test_profit_explanation_requires_the_requested_metric_and_its_quote (test_grounded.GroundedTests.test_profit_explanation_requires_the_requested_metric_and_its_quote) ... ok
 test_quote_resolution_preserves_source_values_and_ambiguity (test_grounded.GroundedTests.test_quote_resolution_preserves_source_values_and_ambiguity) ... ok
-test_report_noun_does_not_add_an_unrequested_numeric_branch (test_grounded.GroundedTests.test_report_noun_does_not_add_an_unrequested_numeric_branch) ... Executing <Task pending name='Task-76' coro=<GroundedTests.test_report_noun_does_not_add_an_unrequested_numeric_branch() running at E:\Desktop\FinEvoLab\tests\test_grounded.py:49> wait_for=<Future pending cb=[Task.task_wakeup()] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:428> cb=[_run_until_complete_cb() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:181] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.266 seconds
-ok
+test_report_noun_does_not_add_an_unrequested_numeric_branch (test_grounded.GroundedTests.test_report_noun_does_not_add_an_unrequested_numeric_branch) ... ok
 test_request_contract_rejects_source_valid_status_and_scope_errors (test_grounded.GroundedTests.test_request_contract_rejects_source_valid_status_and_scope_errors) ... ok
 test_second_invalid_response_is_not_retried (test_grounded.GroundedTests.test_second_invalid_response_is_not_retried) ... ok
 test_source_tampering_and_quote_fabrication_are_rejected (test_grounded.GroundedTests.test_source_tampering_and_quote_fabrication_are_rejected) ... ok
@@ -94,20 +80,16 @@ test_selected_documents_require_matching_catalogue_metadata (test_planner_benchm
 test_training_config_rejects_invalid_values_before_ml_imports (test_planner_benchmark.PlannerDataTests.test_training_config_rejects_invalid_values_before_ml_imports) ... ok
 test_comparison_rejects_precision_mismatch_and_input_changes (test_planner_benchmark.PlannerRunTests.test_comparison_rejects_precision_mismatch_and_input_changes) ... ok
 test_cuda_preflight_stops_before_loading_model_weights (test_planner_benchmark.PlannerRunTests.test_cuda_preflight_stops_before_loading_model_weights) ... ok
-test_runtime_replay_keeps_a_source_valid_wrong_plan_as_a_failure (test_planner_benchmark.PlannerRunTests.test_runtime_replay_keeps_a_source_valid_wrong_plan_as_a_failure) ... Executing <Task finished name='Task-179' coro=<PlannerRunTests.test_runtime_replay_keeps_a_source_valid_wrong_plan_as_a_failure() done, defined at E:\Desktop\FinEvoLab\tests\test_planner_benchmark.py:268> result=None created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.312 seconds
-ok
+test_runtime_replay_keeps_a_source_valid_wrong_plan_as_a_failure (test_planner_benchmark.PlannerRunTests.test_runtime_replay_keeps_a_source_valid_wrong_plan_as_a_failure) ... ok
 test_test_split_requires_validation_seal_and_matching_adapter (test_planner_benchmark.PlannerRunTests.test_test_split_requires_validation_seal_and_matching_adapter) ... ok
-test_valid_but_incorrect_semantics_never_trigger_label_based_repair (test_planner_benchmark.PlannerRunTests.test_valid_but_incorrect_semantics_never_trigger_label_based_repair) ... Executing <Task finished name='Task-188' coro=<PlannerRunTests.test_valid_but_incorrect_semantics_never_trigger_label_based_repair() done, defined at E:\Desktop\FinEvoLab\tests\test_planner_benchmark.py:213> result=None created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.156 seconds
-ok
+test_valid_but_incorrect_semantics_never_trigger_label_based_repair (test_planner_benchmark.PlannerRunTests.test_valid_but_incorrect_semantics_never_trigger_label_based_repair) ... ok
 test_one_client_never_runs_two_requests_concurrently (test_provider.ProviderTests.test_one_client_never_runs_two_requests_concurrently) ... ok
 test_rate_limit_sets_longer_cooldown (test_provider.ProviderTests.test_rate_limit_sets_longer_cooldown) ... ok
-test_minimal_request_explicitly_disables_thinking (test_provider_payload.ProviderPayloadTests.test_minimal_request_explicitly_disables_thinking) ... Executing <Task pending name='Task-205' coro=<ProviderPayloadTests.test_minimal_request_explicitly_disables_thinking() running at E:\Desktop\FinEvoLab\tests\test_provider_payload.py:46> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\futures.py:387, Task.task_wakeup()] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:428> cb=[_run_until_complete_cb() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:181] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.391 seconds
-ok
+test_minimal_request_explicitly_disables_thinking (test_provider_payload.ProviderPayloadTests.test_minimal_request_explicitly_disables_thinking) ... ok
 test_structured_request_uses_json_object_and_local_schema (test_provider_payload.ProviderPayloadTests.test_structured_request_uses_json_object_and_local_schema) ... ok
 test_tool_roundtrip_preserves_nonthinking_mode (test_provider_payload.ProviderPayloadTests.test_tool_roundtrip_preserves_nonthinking_mode) ... ok
 test_false_alignment_and_unsupported_citations_fail (test_question_workflow.QuestionWorkflowTests.test_false_alignment_and_unsupported_citations_fail) ... ok
-test_recovery_skips_prepared_and_completed_analysis (test_question_workflow.QuestionWorkflowTests.test_recovery_skips_prepared_and_completed_analysis) ... Executing <Task pending name='Task-270' coro=<QuestionWorkflowTests.test_recovery_skips_prepared_and_completed_analysis() running at E:\Desktop\FinEvoLab\tests\test_question_workflow.py:34> wait_for=<Future pending cb=[Task.task_wakeup()] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:428> cb=[_run_until_complete_cb() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:181] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 0.109 seconds
-ok
+test_recovery_skips_prepared_and_completed_analysis (test_question_workflow.QuestionWorkflowTests.test_recovery_skips_prepared_and_completed_analysis) ... ok
 test_tampered_values_fail_without_evaluation_labels (test_question_workflow.QuestionWorkflowTests.test_tampered_values_fail_without_evaluation_labels) ... ok
 test_company_and_report_year_are_filtered_before_ranking (test_retrieval.RetrievalTests.test_company_and_report_year_are_filtered_before_ranking) ... ok
 test_no_partial_evidence_when_context_budget_is_too_small (test_retrieval.RetrievalTests.test_no_partial_evidence_when_context_budget_is_too_small) ... ok
@@ -117,8 +99,7 @@ test_vector_filter_precedes_rank_fusion (test_retrieval.RetrievalTests.test_vect
 test_disagreement_requires_recalibration (test_rubric.RubricTests.test_disagreement_requires_recalibration) ... ok
 test_distinct_complete_ratings_produce_agreement (test_rubric.RubricTests.test_distinct_complete_ratings_produce_agreement) ... ok
 test_missing_same_rater_or_noninteger_scores_are_rejected (test_rubric.RubricTests.test_missing_same_rater_or_noninteger_scores_are_rejected) ... ok
-test_actual_process_exit_can_resume_running_phase (test_runtime.RuntimeTests.test_actual_process_exit_can_resume_running_phase) ... Executing <Task pending name='Task-285' coro=<RuntimeTests.test_actual_process_exit_can_resume_running_phase() running at E:\Desktop\FinEvoLab\tests\test_runtime.py:70> wait_for=<Future pending cb=[Task.task_wakeup()] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:428> cb=[_run_until_complete_cb() at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\base_events.py:181] created at D:\ProgramSoftware\Miniconda3\envs\finevolab\Lib\asyncio\runners.py:100> took 1.625 seconds
-ok
+test_actual_process_exit_can_resume_running_phase (test_runtime.RuntimeTests.test_actual_process_exit_can_resume_running_phase) ... ok
 test_failed_phase_resumes_without_repeating_complete_phase (test_runtime.RuntimeTests.test_failed_phase_resumes_without_repeating_complete_phase) ... ok
 test_model_call_and_tool_budgets_stop_execution (test_runtime.RuntimeTests.test_model_call_and_tool_budgets_stop_execution) ... ok
 test_phase_timeout_is_persisted (test_runtime.RuntimeTests.test_phase_timeout_is_persisted) ... ok
@@ -162,10 +143,7 @@ test_scope_contains_exactly_the_shared_company_year_observations (test_upstream_
 test_custom_model_reaches_run_config (test_upstream_compatibility.ModelConfigurationTests.test_custom_model_reaches_run_config) ... ok
 test_invalid_parameters_and_missing_task (test_web.WebTests.test_invalid_parameters_and_missing_task) ... ok
 test_offline_workflow_and_download (test_web.WebTests.test_offline_workflow_and_download) ... ok
-test_router_is_available_inside_upstream_application (test_web.WebTests.test_router_is_available_inside_upstream_application) ... INFO:httpx:HTTP Request: GET http://testserver/finevolab "HTTP/1.1 200 OK"
-INFO:httpx:HTTP Request: GET http://testserver/static/style.css "HTTP/1.1 200 OK"
-INFO:httpx:HTTP Request: GET http://testserver/api/finevolab/history "HTTP/1.1 200 OK"
-ok
+test_router_is_available_inside_upstream_application (test_web.WebTests.test_router_is_available_inside_upstream_application) ... ok
 
 ----------------------------------------------------------------------
 Ran 146 tests in 16.827s

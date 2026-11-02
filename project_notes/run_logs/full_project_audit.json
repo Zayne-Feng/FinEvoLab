@@ -388,7 +388,7 @@
             "phase": "completed",
             "gpu_exports_verified": true,
             "final_report_verified": true,
-            "report": "E:\\Desktop\\FinEvoLab\\project_notes\\evaluations\\planner_formal_results.md"
+            "report": "project_notes/evaluations/planner_formal_results.md"
         },
         "model_seed17": {
             "inference_dtype": "bfloat16",
@@ -410,7 +410,7 @@
         "experiment_recheck": {
             "status": "passed",
             "record": "project_notes/run_logs/full_project_experiment_recheck.json",
-            "sha256": "32206b52a9ad1640dde55aa610b23aed87523ada113e65cc77afbc4c3ea4dbfb"
+            "sha256": "cd1ade4e57586b65c19e6b65a7f397f7f6a1440c47d74672c9d80cc49e5222f5"
         },
         "live_http": {
             "status": "passed",

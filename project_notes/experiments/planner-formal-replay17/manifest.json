@@ -267,7 +267,8 @@
     "scripts/verify_upstream.py": "4614e7cac95fe147cc5b9f6bdcd52dc74b1c08c9574dda9179a236793dadde89",
     "scripts/verify_workflow.py": "ee0521c01a4b70159a20aecc356d34bb102dd73ebe2f568051ccfc6dd4c03ab8"
   },
-  "config": {
+  "config_sha256": "bcfaba82a8e507ca3a787bedf446997cc6e0d7e12d89d24e3fc121e90e38e3fe",
+  "published_config": {
     "bundle_sha256": "ed098d2227a4303000af6036fceab8f0e7c758a6d0153c0bda0ebc80f5e147d0",
     "split": "test",
     "case_selection_sha256": "c6a0135ab39701cdfbf4083e1f938cb8ee7a3b7f5358681d43eb0be76fc54126",
@@ -276,9 +277,9 @@
     "with_narrative": false,
     "excluded_cases": 124,
     "runs": {
-      "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-deepseek-test": "675213216ff8171550b89b7d91d63428e082975c7e358b2c2cb85dfc13197bff",
-      "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-base-test": "fdd146a5c97d62fb5005d80569fea03aa0fc4825d5f1c5c3768bcce326bbc308",
-      "E:\\Desktop\\FinEvoLab\\project_notes\\experiments\\planner-formal-lora17-test": "4ab1f6ee461e1686feca0f3754220e96e6021c4a5da0232805805ea16b3b72eb"
+      "project_notes/experiments/planner-formal-deepseek-test": "675213216ff8171550b89b7d91d63428e082975c7e358b2c2cb85dfc13197bff",
+      "project_notes/experiments/planner-formal-base-test": "fdd146a5c97d62fb5005d80569fea03aa0fc4825d5f1c5c3768bcce326bbc308",
+      "project_notes/experiments/planner-formal-lora17-test": "4ab1f6ee461e1686feca0f3754220e96e6021c4a5da0232805805ea16b3b72eb"
     },
     "narrative_model": {
       "model": "offline",
@@ -340,5 +341,12 @@
       "context_chars": 60000
     }
   },
-  "config_sha256": "bcfaba82a8e507ca3a787bedf446997cc6e0d7e12d89d24e3fc121e90e38e3fe"
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/experiments/planner-formal-replay17/manifest.json",
+      "sha256": "796886d28f2fe2e26f8f8c5c5ce2644b1acd4e83805e79e2887494de28fb5ef8"
+    },
+    "artifacts": []
+  }
 }

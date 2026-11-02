@@ -301,5 +301,24 @@
     },
     "selection_sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
   },
-  "config_sha256": "96e09d94cbeb0330cda896b80722efef5fe30fbe6d4e5d6030fd02e1a8d1aa49"
+  "config_sha256": "96e09d94cbeb0330cda896b80722efef5fe30fbe6d4e5d6030fd02e1a8d1aa49",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/experiments/planner-formal-deepseek-test/manifest.json",
+      "sha256": "fbb8e10b236038d84819864d03fc715a9916f6a4575001cddd274615ad859f0a"
+    },
+    "artifacts": [
+      {
+        "config_key": "selection_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/evaluations/planner_formal_selection.json",
+          "sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
+        },
+        "published_sha256": "d76b5c13d54da82ed5787aa001a479fa92cc8365ae4c3899d1f339e3459c93d1",
+        "transform": "validation_run_paths_v1"
+      }
+    ]
+  }
 }

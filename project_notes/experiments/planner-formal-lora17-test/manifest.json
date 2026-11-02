@@ -164,5 +164,24 @@
     "selection_sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
   },
   "config_sha256": "2b18f5cad60a5a1b408eca8a32fb57ea12c3e1d90ef1c4534b23d8f05095d263",
-  "source_snapshot_sha256": "3516c82627cfa797d683d355ecf2cb43195334a5eeb686802c4c185479dc3325"
+  "source_snapshot_sha256": "3516c82627cfa797d683d355ecf2cb43195334a5eeb686802c4c185479dc3325",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/experiments/planner-formal-lora17-test/manifest.json",
+      "sha256": "23675aad3ec12c19c535abb5218d490f42472d7e41cd157101681d1bec3ce220"
+    },
+    "artifacts": [
+      {
+        "config_key": "selection_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/evaluations/planner_formal_selection.json",
+          "sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
+        },
+        "published_sha256": "d76b5c13d54da82ed5787aa001a479fa92cc8365ae4c3899d1f339e3459c93d1",
+        "transform": "validation_run_paths_v1"
+      }
+    ]
+  }
 }

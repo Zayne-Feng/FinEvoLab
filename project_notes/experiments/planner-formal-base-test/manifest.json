@@ -151,5 +151,24 @@
     "selection_sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
   },
   "config_sha256": "4eb6660e4fb05c02818da7c794652b4abbee2c6699feababda11809840555562",
-  "source_snapshot_sha256": "3516c82627cfa797d683d355ecf2cb43195334a5eeb686802c4c185479dc3325"
+  "source_snapshot_sha256": "3516c82627cfa797d683d355ecf2cb43195334a5eeb686802c4c185479dc3325",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/experiments/planner-formal-base-test/manifest.json",
+      "sha256": "42e6a177fd95ee164691af2d9d7b745005ec4dd49cc150b53820ee4ccc8c1c01"
+    },
+    "artifacts": [
+      {
+        "config_key": "selection_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/evaluations/planner_formal_selection.json",
+          "sha256": "b689ee804aa0279e61942645254802be199ce5f46a092de8334353257a6c1f14"
+        },
+        "published_sha256": "d76b5c13d54da82ed5787aa001a479fa92cc8365ae4c3899d1f339e3459c93d1",
+        "transform": "validation_run_paths_v1"
+      }
+    ]
+  }
 }

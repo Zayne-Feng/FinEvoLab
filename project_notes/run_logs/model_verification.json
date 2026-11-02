@@ -422,7 +422,7 @@
   {
     "run_id": "upstream-run-03",
     "stage": "upstream",
-    "python_executable": "D:\\ProgramSoftware\\Miniconda3\\envs\\finevolab-upstream\\python.exe",
+    "python_executable": "conda://finevolab-upstream/python.exe",
     "python_version": "3.11.17",
     "commit": "a8937da2acd6280ed84b186cdd3d4184253ce189",
     "source_sha256": "29b1739ecca22954f14574131d31fa1f50d34650e70c44baef933dcc8e2f4e1c",

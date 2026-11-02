@@ -150,5 +150,24 @@
     "method": "identical injected first responses; repair toggled; actual provider returns recorded separately",
     "injected_responses_are_provider_calls": false
   },
-  "config_sha256": "9eea022491deabeef6696e69688de8d7c4266b8c41d4706abe1ed25fb88f2ec5"
+  "config_sha256": "9eea022491deabeef6696e69688de8d7c4266b8c41d4706abe1ed25fb88f2ec5",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/experiments/scope-sdk-repair/manifest.json",
+      "sha256": "39cc80f5166bc9b4a3840aa988a08fe7746e40f26bf4605df9d9b5e3b33542d4"
+    },
+    "artifacts": [
+      {
+        "config_key": "source_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/experiments/scope-development-v3/tasks.jsonl",
+          "sha256": "721edce676dc54a10d382dd1d97715a538cc904bb5ba47cc1ac12d2797bfede0"
+        },
+        "published_sha256": "3a40f07999d7ba0e75e9aba24c763b7b8eedab3dd5954e508e93c1dc2f59fd73",
+        "transform": "source_paths_v1"
+      }
+    ]
+  }
 }

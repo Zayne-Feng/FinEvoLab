@@ -202,5 +202,24 @@
     "secondary": "all repeat-zero narratives plus controls",
     "method": "same-model isolated blind review; no human calibration; no cross-model claim"
   },
-  "config_sha256": "f09239cda6f7d5d18f13fd1d8210bce72d0d320e1b1a2a9999ea596f3b4b6184"
+  "config_sha256": "f09239cda6f7d5d18f13fd1d8210bce72d0d320e1b1a2a9999ea596f3b4b6184",
+  "publication": {
+    "source": {
+      "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+      "path": "project_notes/evaluations/renewed-planner-review-v3/manifest.json",
+      "sha256": "5f27809a4eeebbd8d8fb379250a41dbca6f908e960e5e0e9b5287c57c0eceacf"
+    },
+    "artifacts": [
+      {
+        "config_key": "tasks_sha256",
+        "source": {
+          "commit": "202f13c65f17e0181cc92207b463b3f990f4e37c",
+          "path": "project_notes/experiments/renewed-planner-test-v3/tasks.jsonl",
+          "sha256": "b2182d175673d96a580ffb62eeb9174fcd7ed2cf833778de9badf07d939e985d"
+        },
+        "published_sha256": "ec2b0ffaf91ce60aba4bea0f733d9b174ec700c42ddc8ff4d033bde648b13d03",
+        "transform": "source_paths_v1"
+      }
+    ]
+  }
 }

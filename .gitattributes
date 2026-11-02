@@ -112,3 +112,15 @@ configs/retrieval_services.json -text whitespace=cr-at-eol
 requirements/retrieval_services.in -text whitespace=cr-at-eol
 
 data/raw/** linguist-vendored
+
+project_notes/experiments/offline-delivery-run-01/summary.json -text
+project_notes/experiments/offline-delivery-run-02/summary.json -text
+project_notes/experiments/offline-delivery-run-03/summary.json -text
+project_notes/optimization/closure-gepa-compact/summary.json -text
+project_notes/optimization/closure-gepa/summary.json -text
+project_notes/optimization/gepa-benchmark/summary.json -text
+project_notes/optimization/gepa-pilot-run-04/summary.json -text
+project_notes/run_logs/full_project_audit.json -text
+project_notes/run_logs/full_project_experiment_recheck.json -text
+tests/frontend/fixtures/task.json -text
+project_notes/run_logs/showcase_release_checks.json text eol=lf
