@@ -156,7 +156,13 @@ function open(options = {}) {
           "Operating margin must use matching periods",
         );
     }
-    for (const kind of ["business", "planner", "quantization", "extensions"]) {
+    for (const kind of [
+      "business",
+      "planner",
+      "quantization",
+      "extensions",
+      "runtime",
+    ]) {
       id("result-" + kind).click();
       check(
         id("result-" + kind).getAttribute("aria-selected") === "true",
@@ -314,6 +320,77 @@ function open(options = {}) {
     id("result-description").textContent.includes("task contracts"),
     "Business strict scoring must state its checks",
   );
+  id("result-runtime").click();
+  const memoryEvidence = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        root,
+        "project_notes/evaluations/memory_worker_acceptance.json",
+      ),
+      "utf8",
+    ),
+  );
+  const summary = memoryEvidence.cpu.summary;
+  const runtimeCells = [...id("result-chart").querySelectorAll("tbody tr")].map(
+    (row) => row.textContent,
+  );
+  check(
+    runtimeCells[0].includes(
+      `${summary.memory.off.passed}/${summary.memory.off.total}`,
+    ) &&
+      runtimeCells[0].includes(
+        `${summary.memory.on.passed}/${summary.memory.on.total}`,
+      ),
+    "Memory comparison must preserve both recorded denominators",
+  );
+  check(
+    runtimeCells[1].includes(
+      `${summary.restart.inline.automatic_complete}/${summary.restart.inline.total}`,
+    ) &&
+      runtimeCells[1].includes(
+        `${summary.restart.worker.automatic_complete}/${summary.restart.worker.total}`,
+      ),
+    "Recovery comparison must use automatic completion, not final manual recovery",
+  );
+  check(
+    id("result-description").textContent.includes("72/72") &&
+      id("result-description").textContent.includes(
+        "injected failures and timeouts",
+      ),
+    "Mixed-load checks must distinguish expected outcomes from successful analyses",
+  );
+  const release = JSON.parse(
+    fs.readFileSync(
+      path.join(root, "project_notes/run_logs/showcase_release_checks.json"),
+      "utf8",
+    ),
+  );
+  check(
+    id("regression-tests").textContent === String(release.regression.tests),
+    "Regression count must match the release verification record",
+  );
+  check(
+    id("verification-evidence").href.endsWith(
+      "/project_notes/run_logs/showcase_release_checks.json",
+    ),
+    "Regression evidence must be publicly traceable",
+  );
+  for (const language of ["zh-CN", "en"]) {
+    if (document.documentElement.lang !== language)
+      id("language-toggle").click();
+    id("result-runtime").click();
+    check(
+      !id("result-panel").textContent.includes("undefined") &&
+        !id("result-panel").textContent.match(/\{\w+\}/),
+      "Runtime results must translate without unresolved fields",
+    );
+    check(
+      id("result-evidence").href.endsWith(
+        "/project_notes/evaluations/memory_worker_acceptance.json",
+      ),
+      "Runtime comparisons must link to their original evidence",
+    );
+  }
   const updated = open({
     transformData(value) {
       value.business.successes = 290;

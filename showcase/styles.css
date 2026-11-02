@@ -3,7 +3,8 @@
   --canvas: #f7f7f2;
   --paper: #fffefa;
   --ink: #34373b;
-  --muted: #71766e;
+  --muted: #60675f;
+  --field-border: #818b80;
   --line: #e0e3d9;
   --lavender: #eae4f2;
   --purple: #69557f;
@@ -751,7 +752,6 @@ h2 {
   background: #b6c6ae;
   border-radius: 4px;
   width: var(--bar-width, 0%);
-  transition: width 0.35s;
 }
 .bar-row:nth-child(even) .bar-fill {
   background: #bdafcb;
@@ -1317,4 +1317,96 @@ noscript {
 .mini-pill {
   font-size: 12px;
   letter-spacing: normal;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  min-width: 0;
+  text-wrap: balance;
+}
+.hero-metric > span,
+.hero-column small,
+.metric-card small,
+.metric-growth,
+.mini-label,
+.obs-name,
+.result-tabs button,
+.formula,
+.footer-links,
+.code-card button {
+  color: var(--muted);
+}
+.metric-growth span:first-child {
+  color: var(--green);
+}
+.metric-card small,
+.pipeline p,
+.hero-column span,
+.hero-column small,
+.hero-metric > span:last-child,
+.metric-growth,
+.footer-links {
+  font-size: 11px;
+}
+.pipeline p {
+  min-height: 0;
+}
+.workspace-card input,
+.workspace-card select {
+  border-color: var(--field-border);
+}
+.repo-link {
+  white-space: nowrap;
+}
+@media (max-width: 360px) {
+  .header {
+    gap: 10px;
+  }
+  .brand {
+    gap: 8px;
+    font-size: 19px;
+  }
+  .header .brand img {
+    width: 28px;
+    height: 28px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .language {
+    padding: 7px 9px;
+  }
+  h1 {
+    font-size: 37px;
+  }
+}
+
+.hero-metric > span:first-child,
+.hero-metric > span:last-child,
+.observation .obs-name,
+.case-button small,
+.dataset-strip p {
+  color: var(--muted);
+}
+#evidence input,
+#evidence select {
+  border-color: var(--field-border);
+}
+.runtime-table td,
+.runtime-table th {
+  font-size: 12px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 390px) {
+  .runtime-table td,
+  .runtime-table th {
+    font-size: 11px;
+  }
 }

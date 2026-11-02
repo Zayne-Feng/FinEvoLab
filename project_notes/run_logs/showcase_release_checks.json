@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "showcase-release",
+  "base_commit": "655469b826b84b79ab4ea9142a373d000960ecd0",
+  "regression": {
+    "status": "passed",
+    "command": "python -m unittest discover -s tests -q",
+    "tests": 317,
+    "seconds": 58.75,
+    "failures": 0,
+    "errors": 0,
+    "transcript_sha256": "58daca97a630dbb76bbfa4b9e61897b456af5009fb841e29b6f5cdf99cc9c72b",
+    "source_scope": [
+      "finevolab/**/*.py",
+      "tests/test_*.py"
+    ],
+    "source_files": 102,
+    "source_sha256": "3a0fed73458750ac09b48152813eacc8ff905d77cef872527ac21ee91906e3e9",
+    "source_byte_policy": "CRLF normalized to LF"
+  },
+  "evidence": {
+    "memory": "project_notes/evaluations/memory_worker_acceptance.json",
+    "worker": "project_notes/evaluations/worker_service_acceptance.json"
+  },
+  "model_calls": 0,
+  "frontend": {
+    "status": "passed",
+    "checks": {
+      "showcase": 119,
+      "experience": 89,
+      "memory_worker": 15
+    },
+    "real_model_calls": 0
+  },
+  "browser": {
+    "status": "passed",
+    "checks": 115,
+    "widths": [
+      320,
+      360,
+      390,
+      768,
+      1280,
+      1440,
+      1920
+    ],
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "errors": []
+  },
+  "clean_export": {
+    "status": "passed",
+    "build_files": 11
+  }
+}

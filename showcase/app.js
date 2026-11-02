@@ -36,9 +36,10 @@
       memoryMetric: "NF4 峰值分配显存降低",
       memoryScope: "规划器同权重 BF16 / NF4 配对对照",
       testsMetric: "核心回归测试通过",
+      verificationEvidence: "验证记录",
       workflowTitle: "从来源，到结论。",
       workflowDescription:
-        "把检索、推理、计算和校验连接起来，保留完整的证据路径。",
+        "沿用会话上下文，后台执行分析；从检索到报告，保留完整证据路径。",
       sourceTitle: "公开财报",
       sourceText: "SEC 与公司 IR 快照，保留财年、单位及来源身份。",
       ragTitle: "混合检索",
@@ -76,6 +77,18 @@
       plannerTab: "QLoRA 微调",
       quantTab: "推理量化",
       extensionsTab: "执行优化",
+      runtimeTab: "记忆与恢复",
+      runtimeLabel:
+        "受控 CPU 实验：30 种上下文场景，各重复 3 次；每组 10 次进程中断。",
+      runtimeTitle: "连续追问，持久执行。",
+      runtimeDescription:
+        "会话记忆补齐公司、财年与指标。独立 worker 在进程重启后继续任务；混合负载中 {mixedPassed}/{mixedTotal} 次状态符合预期，包含注入的失败与超时。",
+      runtimeCheck: "检验项",
+      runtimeControl: "关闭记忆 / 进程内执行",
+      runtimeEnabled: "记忆 / 独立 worker",
+      runtimeMemory: "上下文解析正确",
+      runtimeRestart: "中断后自动完成",
+      workerEvidence: "混合负载依据",
       extensionsLabel: "固定规划 · 首轮分析 · 同模型隔离盲审",
       extensionsTitle: "比较收益，也保留取舍。",
       extensionsDescription:
@@ -155,9 +168,10 @@
       memoryMetric: "Lower NF4 peak allocated GPU memory",
       memoryScope: "Same-planner-weight BF16 / NF4 comparison",
       testsMetric: "Core regression tests passed",
+      verificationEvidence: "Verification record",
       workflowTitle: "From sources to conclusions.",
       workflowDescription:
-        "Connect retrieval, reasoning, computation, and validation while preserving the evidence trail.",
+        "Carry conversation context into background analysis, with evidence preserved from retrieval to report.",
       sourceTitle: "Public filings",
       sourceText:
         "SEC and company IR snapshots with fiscal periods, units, and source identities.",
@@ -202,6 +216,18 @@
       plannerTab: "QLoRA tuning",
       quantTab: "Quantization",
       extensionsTab: "Execution controls",
+      runtimeTab: "Memory & recovery",
+      runtimeLabel:
+        "Controlled CPU experiments: 30 context scenarios, 3 repeats each; 10 process interruptions per arm.",
+      runtimeTitle: "Follow-up questions. Persistent execution.",
+      runtimeDescription:
+        "Conversation memory resolves missing companies, fiscal years, and metrics. Independent workers resume tasks after process restarts; {mixedPassed}/{mixedTotal} mixed-load outcomes matched expectations, including injected failures and timeouts.",
+      runtimeCheck: "Check",
+      runtimeControl: "Memory off / Inline",
+      runtimeEnabled: "Memory on / Worker",
+      runtimeMemory: "Correct context resolution",
+      runtimeRestart: "Automatic completion after interruption",
+      workerEvidence: "Mixed-load evidence",
       extensionsLabel: "Fixed plans · first pass · isolated same-model review",
       extensionsTitle: "Measure gains and retain trade-offs.",
       extensionsDescription:
@@ -265,6 +291,8 @@
   let selectedResult = "business";
   const byId = (id) => document.getElementById(id);
   const values = {
+    mixedPassed: data.runtime.mixed_passed,
+    mixedTotal: data.runtime.mixed_total,
     businessQuestions: data.business.questions,
     businessRepetitions: data.business.repetitions,
     businessSuccesses: data.business.successes,
@@ -425,6 +453,44 @@
           ),
         ),
       );
+    } else if (kind === "runtime") {
+      const table = create("table", "quant-table runtime-table");
+      const head = create("thead");
+      const heading = create("tr");
+      [t("runtimeCheck"), t("runtimeControl"), t("runtimeEnabled")].forEach(
+        (text) => heading.append(create("th", "", text)),
+      );
+      head.append(heading);
+      const body = create("tbody");
+      const count = (value) => `${value.passed}/${value.total}`;
+      const restart = data.runtime.restart;
+      const rows = [
+        [
+          t("runtimeMemory"),
+          count(data.runtime.memory.off),
+          count(data.runtime.memory.on),
+        ],
+        [
+          t("runtimeRestart"),
+          `${restart.inline.automatic_complete}/${restart.inline.total}`,
+          `${restart.worker.automatic_complete}/${restart.worker.total}`,
+        ],
+      ];
+      rows.forEach((values) => {
+        const line = create("tr");
+        values.forEach((text, index) => {
+          const cell = create(index === 0 ? "th" : "td", "", text);
+          if (index === 0) cell.scope = "row";
+          line.append(cell);
+        });
+        body.append(line);
+      });
+      table.append(head, body);
+      const evidence = create("a", "text-link", t("workerEvidence"));
+      evidence.href = data.repository + "/blob/main/" + data.evidence.worker;
+      evidence.target = "_blank";
+      evidence.rel = "noopener noreferrer";
+      chart.append(table, evidence);
     } else if (kind === "extensions") {
       const table = create("table", "quant-table extension-table");
       const head = create("thead");
@@ -525,6 +591,8 @@
     metric("planner-gain", "+" + data.planner_gain, "pp");
     metric("memory-saving", data.memory_reduction, "%");
     byId("regression-tests").textContent = data.regression_tests;
+    byId("verification-evidence").href =
+      data.repository + "/blob/main/" + data.evidence.verification;
     renderCase();
     renderResult();
     document.dispatchEvent(

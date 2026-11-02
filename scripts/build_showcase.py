@@ -51,15 +51,26 @@ def build(output):
     reports = load("data/processed/reports.json")["reports"]
     business_manifest = load("data/evaluation/scope_v3/manifest.json")
     planner_manifest = load("data/training/planner_formal/frozen_v1/manifest.json")
-    verification = load("project_notes/evaluations/worker_service_acceptance.json")["verification"]["regression"]
+    release = load("project_notes/run_logs/showcase_release_checks.json")
+    verification = release["regression"]
+    memory_worker = load(release["evidence"]["memory"])["cpu"]["summary"]
+    worker = load(release["evidence"]["worker"])
     extensions = load("project_notes/experiments/analysis-extensions-release/assessment.json")
     extension_usage = load("project_notes/experiments/analysis-extensions-release/summary.json")["model_ablation"]
     if not extensions["controls_passed"] or extensions["input_sha256"] != load("project_notes/experiments/analysis-extensions-release/manifest.json")["input_sha256"]:
         raise ValueError("Analysis comparisons require calibrated reviews and frozen inputs")
-    if verification["status"] != "passed":
+    if verification["status"] != "passed" or verification["failures"] or verification["errors"]:
         raise ValueError("The regression record must contain a passing result")
+    source_files = sorted({path for pattern in verification["source_scope"] for path in ROOT.glob(pattern)})
+    source_hashes = {path.relative_to(ROOT).as_posix(): hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest() for path in source_files}
+    source_digest = hashlib.sha256(json.dumps(source_hashes, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    if len(source_files) != verification["source_files"] or source_digest != verification["source_sha256"]:
+        raise ValueError("The regression record does not match the Python sources")
+    if not worker["mixed_load"]["passed"]:
+        raise ValueError("Worker evidence requires passing mixed-load checks")
     if planner["test_cases"] != planner_manifest["splits"]["test"]["cases"]:
         raise ValueError("Planner results must match the frozen test manifest")
+    load_groups = [worker["aggregate"][str(capacity)] for capacity in worker["mixed_load"]["manifest"]["capacities"]]
     current = scope["groups"]["current"]
     previous = scope["groups"]["legacy"]
     if current["common"]["attempts"] != previous["common"]["attempts"]:
@@ -106,13 +117,17 @@ def build(output):
             "planner": {name: split["cases"] for name, split in planner_manifest["splits"].items()}},
         "planner_template_clusters": planner["template_clusters"], "selected_epoch": planner["selection"]["selected_epoch"],
         "regression_tests": verification["tests"],
+        "runtime": {"memory": memory_worker["memory"], "restart": memory_worker["restart"],
+            "mixed_passed": sum(cell["expected_outcomes"] for cell in load_groups),
+            "mixed_total": sum(cell["total"] for cell in load_groups)},
         "extensions": [{"arm": arm, **extensions["arms"][arm],
                         "input_tokens": extension_usage[arm]["input_tokens"]}
                        for arm in ("baseline", "encoding", "methods", "combined")],
         "quantization": quant_groups, "memory_reduction": rounded(quant["memory_reduction"] * 100),
         "latency_increase": rounded((quant["mean_latency_ratio"] - 1) * 100),
         "planner_gain": rounded(Decimal(arms[1]["successes"] - arms[0]["successes"]) / planner["test_cases"] * 100),
-        "evidence": {"extensions": "project_notes/experiments/analysis-extensions-release/assessment.json",
+        "evidence": {"verification": "project_notes/run_logs/showcase_release_checks.json",
+            "runtime": release["evidence"]["memory"], "worker": release["evidence"]["worker"], "extensions": "project_notes/experiments/analysis-extensions-release/assessment.json",
                      "business": "project_notes/experiments/scope-test-v1/assessment.json",
             "planner": "project_notes/evaluations/planner_formal_results.json",
             "quantization": "project_notes/evaluations/planner_quantization.json"}}

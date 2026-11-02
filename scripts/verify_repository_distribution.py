@@ -66,6 +66,7 @@ def check() -> dict:
                 "tests/test_memory_worker.py", "tests/frontend/check_memory_worker.cjs",
                 "scripts/benchmark_worker_load.py", "scripts/verify_worker_service.py",
                 "tests/frontend/check_worker_service_live.cjs", "project_notes/evaluations/worker_service_acceptance.json",
+                "project_notes/run_logs/showcase_release_checks.json",
                 "data/evaluation/memory_worker/cases.json", "project_notes/evaluations/memory_worker_acceptance.json",
                 "finevolab/derived.py", "scripts/calculate_derived.py", "tests/test_derived.py",
                 "finevolab/context_encoding.py", "finevolab/subtasks.py", "finevolab/singleflight.py",

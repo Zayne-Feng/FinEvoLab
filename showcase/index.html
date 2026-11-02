@@ -141,8 +141,17 @@
             >
           </article>
           <article class="metric-card blue">
-            <strong id="regression-tests">311</strong>
+            <strong id="regression-tests">317</strong>
             <p data-i18n="testsMetric">核心回归测试通过</p>
+            <a
+              id="verification-evidence"
+              class="text-link"
+              href="https://github.com/Zayne-Feng/FinEvoLab/blob/main/project_notes/run_logs/showcase_release_checks.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="verificationEvidence"
+              >验证记录</a
+            >
           </article>
         </section>
         <section class="section" id="workflow">
@@ -151,7 +160,7 @@
               <h2 data-i18n="workflowTitle">从来源，到结论。</h2>
             </div>
             <p data-i18n="workflowDescription">
-              把检索、推理、计算和校验连接起来，保留完整的证据路径。
+              沿用会话上下文，后台执行分析；从检索到报告，保留完整证据路径。
             </p>
           </div>
           <div class="pipeline">
@@ -347,6 +356,18 @@
               data-i18n="extensionsTab"
             >
               执行优化
+            </button>
+            <button
+              type="button"
+              id="result-runtime"
+              role="tab"
+              aria-selected="false"
+              aria-controls="result-panel"
+              tabindex="-1"
+              data-result="runtime"
+              data-i18n="runtimeTab"
+            >
+              记忆与恢复
             </button>
           </div>
           <article
